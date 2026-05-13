@@ -1,0 +1,457 @@
+{
+  "test_results": [
+    {
+      "query": "Foundation Plan",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "pile cap reinforcement",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "foundation bearing capacity",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "soil bearing pressure",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "footing dimensions",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "diaphragm details",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "soffit details",
+      "success": true,
+      "result_count": 7,
+      "results": [
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 24,
+          "relevance_score": 1.243,
+          "topology_elements": [],
+          "content_sample": "AL TO JOINT \"a\" STAGGER AS SHOWN †\"Á\n60°\nEXPANDED POLYSTYRENE, ‰ 0 ANCHORAGE,\n1(cid:129)\" @ MAXIMUM TEMPERATURE, MATCH EXISTING JOINT ‰ 0 SEE NOTE 6\nEXACT WIDTH TO BE DETERMINED WIDTH FOR CLOSURE POUR 2\" 2\" 60°\nBY ENGINEER\n1\nHIGH SIDE LOW SIDE (cid:129) TOP\nSECTION A-A \" OF\nSCHEMATIC SCHEMATIC\nDECK\n3\" = 1'-0\" BARRIER DETAIL SIDEWALK DETAIL\n* TO SET MINIMUM JOINT OPENING \"W\" FIELD SHOP (cid:129)\n3\" = 1'-0\" 3\" = 1'-0\" TYP \"\n1(cid:129)\"+[(Max Str temperature in °F )-(actual Str temperature in °F)]*",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 33,
+          "relevance_score": 1.253,
+          "topology_elements": [],
+          "content_sample": "and mounting details.\n\n4. **Key Dimensions**:\n   - Railing connection dimensions: 2\" x 2\" x ¼\" and 2\" x 3\" x ¼\" for posts.\n   - Sleeve dimensions: 6\" and 8\" minimum spacing.\n   - Redwood cutout: 8\" aluminum with specific mounting details.\n\n5. **Annotations**:\n   - Notes on fasteners and mounting bolts.\n   - Instructions for welding and drilling.\n\n6. **Material Specifications**:\n   - Mention of aluminum for redwood cutouts.\n   - Use of galvanized paint for drilled holes.\n\n7. **Grid/Reference Sys",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 37,
+          "relevance_score": 1.258,
+          "topology_elements": [
+            "Foundation"
+          ],
+          "content_sample": "l cutouts to be 3/8\" aluminum.\n   - Refer to project specifications for more information on powder coating and material requirements.\n   - For cutout mounting details, see \"Pedestrian Railing Details No. 3\" sheet.\n\n6. **Material Specifications**: \n   - Cutouts made from 3/8\" aluminum.\n   - Powder-coated black as per FED-STD-595 No. 17038.\n\n7. **Grid/Reference System**: Not applicable in this drawing.\n\n8. **Connection Details**: Not applicable in this drawing.\n\nThis drawing focuses on the aesthet",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "wall footing design",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "pilaster details",
+      "success": true,
+      "result_count": 7,
+      "results": [
+        {
+          "pdf_file_name": "Sports Park.pdf",
+          "project_name": "Sports Park",
+          "page_number": 16,
+          "relevance_score": 0.867,
+          "topology_elements": [
+            "Foundation",
+            "Reinforcement"
+          ],
+          "content_sample": "1. **Drawing Type**: Pilaster Details\n\n2. **Structural Elements**: \n   - Pilaster\n   - Rebar (#4 and #6)\n\n3. **Pile/Foundation Information**: \n   - Not applicable (no piles or foundations shown)\n\n4. **Key Dimensions**: \n   - Pilaster width: 7' Max & Var\n   - Pilaster height: 10'-6\"\n   - Recess: 1\"\n   - Top of curb to top of deck: 1'-6\"\n   - Pilaster overhang: 0'-8\"\n\n5. **Annotations**: \n   - #6 rebar to extend 2'-0\" below top of deck\n   - Note: Details to be determined\n\n6. **M",
+          "has_vision_analysis": true
+        },
+        {
+          "pdf_file_name": "Sports Park.pdf",
+          "project_name": "Sports Park",
+          "page_number": 10,
+          "relevance_score": 1.251,
+          "topology_elements": [
+            "Foundation",
+            "Reinforcement"
+          ],
+          "content_sample": "1. **Drawing Type**: Typical Section\n\n2. **Structural Elements**:\n   - Pedestrian railing\n   - Pedestrian light\n   - Pilaster\n   - Electrical conduit\n   - Pull box\n   - Base plate\n   - Anchor bolts\n   - Steel plate\n\n3. **Pile/Foundation Information**: Not applicable (no piles shown)\n\n4. **Key Dimensions**:\n   - Pedestrian light base: 1'-0\" diameter\n   - Base plate: 1/2\" thickness\n   - Chamfer: 1\" and 6\" typical\n   - Fillet: 4\" typical\n   - Pedestrian light bolt circle: 11 1/2\"",
+          "has_vision_analysis": true
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 35,
+          "relevance_score": 1.122,
+          "topology_elements": [
+            "Reinforcement"
+          ],
+          "content_sample": ". **Connection Details**:\n   - Reinforcement bar details for structural integrity\n\nThis drawing provides detailed information on the entry monument, including dimensions, reinforcement details, and specific annotations related to the concrete texture and recesses.",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "beam splice details",
+      "success": true,
+      "result_count": 7,
+      "results": [
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 28,
+          "relevance_score": 0.819,
+          "topology_elements": [
+            "Bent",
+            "Reinforcement",
+            "Bridge Girder"
+          ],
+          "content_sample": "nformation on the additional top and bottom girder reinforcement for Bent 6 through 8, including bar sizes, lengths, and spacing.",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Laguna Creek Plan.pdf",
+          "project_name": "Laguna Creek Plan",
+          "page_number": 14,
+          "relevance_score": 0.839,
+          "topology_elements": [
+            "Foundation",
+            "Reinforcement",
+            "Bridge Girder"
+          ],
+          "content_sample": "1. **Drawing Type**: Girder Details\n\n2. **Structural Elements**:\n   - Welded Wire Reinforcement (WWR)\n   - Girder\n   - Strands\n\n3. **Pile/Foundation Information**:\n   - Not applicable (no piles or foundation details shown)\n\n4. **Key Dimensions**:\n   - Girder width: 3'-10\"\n   - Girder depth: D31.0\n   - Strands spacing: 10\" Typ\n   - Additional bottom girder reinforcement: 32'-6\" and 27'-6\" spans\n\n5. **Annotations**:\n   - No splices allowed in additional bottom girder reinforceme",
+          "has_vision_analysis": true
+        },
+        {
+          "pdf_file_name": "Laguna Creek Plan.pdf",
+          "project_name": "Laguna Creek Plan",
+          "page_number": 13,
+          "relevance_score": 0.869,
+          "topology_elements": [
+            "End Diaphragm",
+            "Reinforcement",
+            "Bridge Girder"
+          ],
+          "content_sample": "0 ksi\n   - Prestressing Strand: 1/2\" 270 ksi\n\n7. **Grid/Reference System**:\n   - Not specified (no grid or reference system shown)\n\n8. **Connection Details**:\n   - Inserts at intermediate diaphragms\n   - 1 1/2\" hole for 1\" bolt with insert assembly\n\nThis drawing provides detailed information on the girder design, including dimensions, reinforcement, and prestressing requirements.",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "rebar lap splice length",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)",
+      "result_count": 0
+    },
+    {
+      "query": "concrete cover requirements",
+      "success": true,
+      "result_count": 9,
+      "results": [
+        {
+          "pdf_file_name": "Alta Mesa Type Selection Report.pdf",
+          "project_name": "Alta Mesa Type Selection Report",
+          "page_number": 6,
+          "relevance_score": 0.936,
+          "topology_elements": [],
+          "content_sample": "ALTERNATIVE 1\nCAST-IN-PLACE REINFORCED CONCRETE SLAB\nMark Thomas & Company, Inc. August 2013\n\n\nI'm unable to view the contents of the CAD drawing from the provided image. To assist you effectively, please provide a detailed description or a list of the elements and annotations visible in the drawing. This will allow me to extract and describe the relevant technical information using proper engineering terminology.",
+          "has_vision_analysis": true
+        },
+        {
+          "pdf_file_name": "Alta Mesa Type Selection Report.pdf",
+          "project_name": "Alta Mesa Type Selection Report",
+          "page_number": 29,
+          "relevance_score": 1.029,
+          "topology_elements": [
+            "CIDH Piles/Shafts"
+          ],
+          "content_sample": "or Class 140 concrete and steel pipe\ndisplacement-type piles appears feasible at this site. The presence of dense to very dense\nconsistency soils and/or cemented soils at shallow depth may preclude the use of such piles or\nrequire undersize drillingto assist driving and obtain adequate embedment for lateralstability.\nDriven steel H-piles may also be feasible at this site and possibly more suitable than displacement-\npiles depending on subsurface conditions encountered, controlled by depth to de",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Alta Mesa Type Selection Report.pdf",
+          "project_name": "Alta Mesa Type Selection Report",
+          "page_number": 30,
+          "relevance_score": 1.05,
+          "topology_elements": [
+            "CIDH Piles/Shafts",
+            "Foundation"
+          ],
+          "content_sample": "Taber\nSlnce 1954\n2072-0128-r\nand the use of minimum 24-inch diameter CIDH piles for tremie concrete placement if granular\nsoils and significant seepage of surface / channel water are encountered. Caltrans Standard\n16-inch diameter CIDH piles are not considered suitable for wet installation methods and should\nnot be considered forfoundation support unless subsurface exploration forthe design level\nfoundation report indicates wet installation methods will not be required.\nStandard (Caltrans) 24-in",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "joint filler material",
+      "success": true,
+      "result_count": 4,
+      "results": [
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 25,
+          "relevance_score": 0.935,
+          "topology_elements": [],
+          "content_sample": "F SIDEWALK\nTOP OF\nDECK\nOPEN JOINT TO A OPEN JOINT TO B\nMATCH DECK MATCH DECK\nJOINT WIDTH JOINT WIDTH\nELEVATION ELEVATION\nTOP OF BARRIER OR CURB\nTAPER EDGE OF\nSTEEL PLATE\n1\"\n…\" X 18\"\nCHECKERED STEEL\nPLATE\nR = ˆ\"\nxs8-050 BRIDGE STANDAR D Th D e e ta c i D o ls m h E p a o v T n e e A b nt e s e I o n L f p t S r h e e p B ar r e id d g u e n S d t e a r n d th a e rd CAL S I T F A O T R E O N F IA DIVISION OF BRID G E NO. responsible charge of the Technical Owner, ENGINEERING SERVICES POST MILE\nFI",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 24,
+          "relevance_score": 0.984,
+          "topology_elements": [],
+          "content_sample": "AL TO JOINT \"a\" STAGGER AS SHOWN †\"Á\n60°\nEXPANDED POLYSTYRENE, ‰ 0 ANCHORAGE,\n1(cid:129)\" @ MAXIMUM TEMPERATURE, MATCH EXISTING JOINT ‰ 0 SEE NOTE 6\nEXACT WIDTH TO BE DETERMINED WIDTH FOR CLOSURE POUR 2\" 2\" 60°\nBY ENGINEER\n1\nHIGH SIDE LOW SIDE (cid:129) TOP\nSECTION A-A \" OF\nSCHEMATIC SCHEMATIC\nDECK\n3\" = 1'-0\" BARRIER DETAIL SIDEWALK DETAIL\n* TO SET MINIMUM JOINT OPENING \"W\" FIELD SHOP (cid:129)\n3\" = 1'-0\" 3\" = 1'-0\" TYP \"\n1(cid:129)\"+[(Max Str temperature in °F )-(actual Str temperature in °F)]*",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 30,
+          "relevance_score": 0.985,
+          "topology_elements": [],
+          "content_sample": "B\nMATCH DECK MATCH DECK\nJOINT WIDTH JOINT WIDTH\nELEVATION ELEVATION\nTOP OF BARRIER OR CURB\nTAPER EDGE OF\nSTEEL PLATE\n1\" …\" X 18\"\nCHECKERED\nSTEEL\nPLATE\nR = ˆ\"\nBRIDGE STANDARD DETAILS STATE OF DIVISION OF BRIDGE NO. xs8-050 D Th e e ta c il o s m h p a o v n e e b n e ts e n o f p t r h e e p a B r r e i d d g u e n S d t e a r n t d h a e rd CALIFORNIA responsible charge of the Technical Owner, ENGINEERING SERVICES POST MILE\nFILE NO. APPROVAL DATE o a f r C eg a i l s if t o er rn ed ia civil eng",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "anchor bolt layout",
+      "success": true,
+      "result_count": 8,
+      "results": [
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 24,
+          "relevance_score": 0.904,
+          "topology_elements": [],
+          "content_sample": "NCHORAGE. PLACE\nANCHOR BOLTS ON LOCATION MO R V A E N M G E E NT SKEW WINTER SPRING SUMMER 8. ac , a ,s are the thermal expansion coefficients for concrete and steel respectively.\nAPPROACHING (MR) & FALL\nTOP OF TRAFFIC END Abut 1 3 1/2\" 37.79° 3\" 2 1/4\" 1 1/2\" 9. Anchor studs shall conform to ASTM A108. BAR 2\" X ‚\" X 8\"\nDECK CENTERED @ BOLTS,\nˆ\" GAP Abut 8 3 1/2\" 45.69° 3\" 2 1/4\" 1 1/2\" WITH ƒ\" Á HOLES\n2\"\nPAVING TYP B ˆ\" GAP\nNOTCH OR STEEL Â BARRIER\nCLOSURE STEEL Â BARRIER …\" X 6\" X 18\" NOTE: 1",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 8,
+          "relevance_score": 1.097,
+          "topology_elements": [
+            "Bearing Pad",
+            "Abutment",
+            "Reinforcement",
+            "Bridge Girder",
+            "Column"
+          ],
+          "content_sample": "tions**:\n   - Joint Seal Assembly details\n   - Steel Reinforced Bearing Pads\n   - Note: Contractor to verify dimensions\n\n6. **Material Specifications**:\n   - Concrete Class 200 for piles\n   - Reinforcement: #4 to #11 bars\n\n7. **Grid/Reference System**:\n   - Abutment 1\n   - Reference to \"AR\" Line\n\n8. **Connection Details**:\n   - Column-to-pile connections: Reinforcement details with #11 Headed Bundle\n   - Cap beam details: C/PS Girder connections\n\nThis drawing provides a comprehensive layout of A",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 10,
+          "relevance_score": 1.109,
+          "topology_elements": [
+            "Bearing Pad",
+            "Abutment",
+            "Foundation",
+            "Reinforcement"
+          ],
+          "content_sample": "tory construction joint must be leveled, smoothed, and lined with 15-pound building paper.\n\n6. **Material Specifications**:\n   - Steel reinforced elastomeric bearing pads\n   - Expanded polystyrene\n\n7. **Grid/Reference System**:\n   - Not explicitly detailed in the drawing.\n\n8. **Connection Details**:\n   - Reinforcement bar extensions into footing\n   - Abutment backwall reinforcement\n   - Section details (C-C, D-D, B-B, Y)\n\nThis drawing primarily focuses on the abutment details, including reinforc",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "dowel bar placement",
+      "success": true,
+      "result_count": 8,
+      "results": [
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 28,
+          "relevance_score": 0.935,
+          "topology_elements": [
+            "Bent",
+            "Foundation",
+            "Reinforcement",
+            "Bridge Girder"
+          ],
+          "content_sample": "1. **Drawing Type**: Girder Reinforcement Detail\n\n2. **Structural Elements**:\n   - Girders\n   - Reinforcement Bars (#11 and #8 bars)\n\n3. **Pile/Foundation Information**:\n   - Not applicable (no pile information shown)\n\n4. **Key Dimensions**:\n   - Spacing between girders: 16'-0\", 10'-0\", 12'-0\", 18'-0\"\n   - Reinforcement bar lengths: #11 x 26'-0\", #8 x 26'-0\", #9 x 30'-0\"\n\n5. **Annotations**:\n   - Note: No splices allowed within 25'-0\" either side of the center span.\n   - Bundl",
+          "has_vision_analysis": true
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 24,
+          "relevance_score": 0.971,
+          "topology_elements": [
+            "Bent",
+            "Reinforcement",
+            "Bridge Girder"
+          ],
+          "content_sample": "ecifications**:\n   - Reinforcement bars: #4, #5, #11\n   - Reinforcement configuration: Continuous, bundled\n\n7. **Grid/Reference System**:\n   - Spans 5 thru 8\n   - Bent references: B7-1, B-1\n\n8. **Connection Details**:\n   - Reinforcement details for girders and slabs\n   - Placement of reinforcement bars normal to \"W\" line\n\nThis drawing provides detailed information on the typical section of spans 5 through 8, including dimensions, reinforcement details, and annotations for construction.",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 35,
+          "relevance_score": 0.974,
+          "topology_elements": [
+            "Reinforcement"
+          ],
+          "content_sample": ". **Connection Details**:\n   - Reinforcement bar details for structural integrity\n\nThis drawing provides detailed information on the entry monument, including dimensions, reinforcement details, and specific annotations related to the concrete texture and recesses.",
+          "has_vision_analysis": false
+        }
+      ]
+    },
+    {
+      "query": "construction joint location",
+      "success": true,
+      "result_count": 4,
+      "results": [
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 25,
+          "relevance_score": 0.857,
+          "topology_elements": [],
+          "content_sample": "F SIDEWALK\nTOP OF\nDECK\nOPEN JOINT TO A OPEN JOINT TO B\nMATCH DECK MATCH DECK\nJOINT WIDTH JOINT WIDTH\nELEVATION ELEVATION\nTOP OF BARRIER OR CURB\nTAPER EDGE OF\nSTEEL PLATE\n1\"\n…\" X 18\"\nCHECKERED STEEL\nPLATE\nR = ˆ\"\nxs8-050 BRIDGE STANDAR D Th D e e ta c i D o ls m h E p a o v T n e e A b nt e s e I o n L f p t S r h e e p B ar r e id d g u e n S d t e a r n d th a e rd CAL S I T F A O T R E O N F IA DIVISION OF BRID G E NO. responsible charge of the Technical Owner, ENGINEERING SERVICES POST MILE\nFI",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "project_name": "Austin Rd OH - Plans - Final Submittal_",
+          "page_number": 24,
+          "relevance_score": 0.929,
+          "topology_elements": [],
+          "content_sample": "AL TO JOINT \"a\" STAGGER AS SHOWN †\"Á\n60°\nEXPANDED POLYSTYRENE, ‰ 0 ANCHORAGE,\n1(cid:129)\" @ MAXIMUM TEMPERATURE, MATCH EXISTING JOINT ‰ 0 SEE NOTE 6\nEXACT WIDTH TO BE DETERMINED WIDTH FOR CLOSURE POUR 2\" 2\" 60°\nBY ENGINEER\n1\nHIGH SIDE LOW SIDE (cid:129) TOP\nSECTION A-A \" OF\nSCHEMATIC SCHEMATIC\nDECK\n3\" = 1'-0\" BARRIER DETAIL SIDEWALK DETAIL\n* TO SET MINIMUM JOINT OPENING \"W\" FIELD SHOP (cid:129)\n3\" = 1'-0\" 3\" = 1'-0\" TYP \"\n1(cid:129)\"+[(Max Str temperature in °F )-(actual Str temperature in °F)]*",
+          "has_vision_analysis": false
+        },
+        {
+          "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+          "page_number": 30,
+          "relevance_score": 0.904,
+          "topology_elements": [],
+          "content_sample": "B\nMATCH DECK MATCH DECK\nJOINT WIDTH JOINT WIDTH\nELEVATION ELEVATION\nTOP OF BARRIER OR CURB\nTAPER EDGE OF\nSTEEL PLATE\n1\" …\" X 18\"\nCHECKERED\nSTEEL\nPLATE\nR = ˆ\"\nBRIDGE STANDARD DETAILS STATE OF DIVISION OF BRIDGE NO. xs8-050 D Th e e ta c il o s m h p a o v n e e b n e ts e n o f p t r h e e p a B r r e i d d g u e n S d t e a r n t d h a e rd CALIFORNIA responsible charge of the Technical Owner, ENGINEERING SERVICES POST MILE\nFILE NO. APPROVAL DATE o a f r C eg a i l s if t o er rn ed ia civil eng",
+          "has_vision_analysis": false
+        }
+      ]
+    }
+  ],
+  "analysis": {
+    "total_tested": 16,
+    "now_working": 6,
+    "still_failing": 8,
+    "zero_results": [],
+    "low_results": [
+      {
+        "query": "joint filler material",
+        "count": 4
+      },
+      {
+        "query": "construction joint location",
+        "count": 4
+      }
+    ],
+    "working_queries": [
+      {
+        "query": "soffit details",
+        "count": 7
+      },
+      {
+        "query": "pilaster details",
+        "count": 7
+      },
+      {
+        "query": "beam splice details",
+        "count": 7
+      },
+      {
+        "query": "concrete cover requirements",
+        "count": 9
+      },
+      {
+        "query": "anchor bolt layout",
+        "count": 8
+      },
+      {
+        "query": "dowel bar placement",
+        "count": 8
+      }
+    ],
+    "issues": [
+      {
+        "query": "Foundation Plan",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "pile cap reinforcement",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "foundation bearing capacity",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "soil bearing pressure",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "footing dimensions",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "diaphragm details",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "wall footing design",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      },
+      {
+        "query": "rebar lap splice length",
+        "issue": "API Error",
+        "details": "HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=10)"
+      }
+    ]
+  }
+}

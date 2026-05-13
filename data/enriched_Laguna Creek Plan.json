@@ -1,0 +1,655 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "QUINCY ENGINEERING, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN",
+        "sheet_number": "2",
+        "scale": null,
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pier",
+          "girder",
+          "bridge rail"
+        ],
+        "detail_types": [
+          "Typical Section",
+          "Elevation",
+          "Plan"
+        ],
+        "grid_references": [
+          "Abut 1",
+          "Pier 2",
+          "Pier 3",
+          "Abut 4"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA 95826",
+        "engineer_on_record": null,
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Index to Plan",
+        "sheet_title": "INDEX TO PLAN",
+        "sheet_number": "2",
+        "scale": null,
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pier"
+        ],
+        "detail_types": [
+          "CONCRETE STRENGTH AND TYPE LIMITS",
+          "ARS CURVE"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 2,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS",
+        "sheet_number": "23",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pier"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Brg Abut 1",
+          "PIER 2",
+          "PIER 3",
+          "Brg Abut 4"
+        ]
+      }
+    },
+    "page_number": 3,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA 95826",
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": "QUINCY ENGINEERING, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Foundation Plan",
+        "sheet_title": "FOUNDATION PLAN",
+        "sheet_number": "2 of 23",
+        "scale": "1\" = 20'",
+        "revision": "5% SUBMITTAL",
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pier",
+          "pile"
+        ],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 4,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Abutment 1 Layout",
+        "sheet_title": "ABUTMENT 1 LAYOUT",
+        "sheet_number": "S-23",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pile",
+          "girder",
+          "shear key",
+          "footing"
+        ],
+        "detail_types": [
+          "PLAN",
+          "ELEVATION",
+          "SECTION A-A",
+          "FOOTING PLAN"
+        ],
+        "grid_references": [
+          "B9-5",
+          "B9-4"
+        ]
+      }
+    },
+    "page_number": 5,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": null,
+        "engineer_on_record": "T. PHAM",
+        "engineering_firm": "MEYERS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Abutment Details",
+        "sheet_title": "ABUTMENT DETAILS NO. 2",
+        "sheet_number": "B-2",
+        "scale": null,
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bearing pad",
+          "shear key",
+          "wingwall",
+          "geocomposite drain"
+        ],
+        "detail_types": [
+          "Elevation",
+          "Plan",
+          "Section E-E",
+          "Section F-F",
+          "Detail Y",
+          "Detail Z"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 8,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Pier Layout",
+        "sheet_title": "PIER LAYOUT",
+        "sheet_number": "9",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "pier",
+          "column",
+          "bearing pad",
+          "reinforcement",
+          "cap",
+          "pile"
+        ],
+        "detail_types": [
+          "Plan",
+          "Elevation",
+          "Section"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 9,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Pier Details",
+        "sheet_title": "PIER DETAILS",
+        "sheet_number": "10",
+        "scale": "1/2\" = 1'-0\"",
+        "revision": "1",
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "footing",
+          "pier",
+          "column",
+          "girder",
+          "diaphragm"
+        ],
+        "detail_types": [
+          "Footing Elevation",
+          "Footing Plan",
+          "Section F-F",
+          "Section G-G",
+          "Section H-H"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 10,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": "24C0066",
+        "client": "SACRAMENTO COUNTY",
+        "location": null,
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Typical Section",
+        "sheet_title": "TYPICAL SECTION",
+        "sheet_number": "03",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "deck",
+          "temporary railing",
+          "closure pour"
+        ],
+        "detail_types": [
+          "Typical Section",
+          "Temporary Railing (Type K) Attachment Details",
+          "Haunch Detail"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 11,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": "700 H STREET, SACRAMENTO, CA 95814",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Layout",
+        "sheet_title": "GIRDER LAYOUT",
+        "sheet_number": "03",
+        "scale": "3/16\" = 1'-0\"",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "pier",
+          "abutment",
+          "deck reinforcement"
+        ],
+        "detail_types": [
+          "additional deck reinforcement",
+          "transverse deck reinforcement",
+          "intermediate diaphragm"
+        ],
+        "grid_references": [
+          "Pier 2",
+          "Pier 3",
+          "Brg Abut 1",
+          "Brg Abut 4"
+        ]
+      }
+    },
+    "page_number": 12,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": null,
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "BRIDGE RAIL DETAILS",
+        "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.1",
+        "sheet_number": "23",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "tubular bicycle railing",
+          "anchor bars",
+          "posts",
+          "bridge deck",
+          "curb"
+        ],
+        "detail_types": [
+          "Typical Section",
+          "Base Plate",
+          "Shim Details",
+          "Type 1 Anchor Bar Detail",
+          "Rail Section at Post"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 17,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": null,
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Bridge Rail Details",
+        "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.2",
+        "sheet_number": "24C0606",
+        "scale": "NO SCALE",
+        "revision": "1",
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "barrier",
+          "post",
+          "anchor bar",
+          "rail end cap"
+        ],
+        "detail_types": [
+          "Departure End Block Detail",
+          "Approach Transition Block Detail",
+          "Type 2 Anchor Bar Detail",
+          "Section B-B",
+          "Section C-C",
+          "Elevation"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 18,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": "CALIFORNIA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "BICYCLE RAILING CONNECTION DETAILS",
+        "sheet_title": "ST-75 BRIDGE RAIL DETAILS No.3",
+        "sheet_number": "03",
+        "scale": "NO SCALE",
+        "revision": "C",
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "post",
+          "rail end cap",
+          "elevation",
+          "section"
+        ],
+        "detail_types": [
+          "POST DETAIL",
+          "SECTION D-D",
+          "SECTION E-E",
+          "SECTION F-F",
+          "SECTION E-E ALTERNATIVE"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 19,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": null,
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Bridge Rail Details",
+        "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.4",
+        "sheet_number": null,
+        "scale": null,
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "sleeves",
+          "splice",
+          "post"
+        ],
+        "detail_types": [
+          "Standard Sleeves Details",
+          "Expansion Sleeves Details",
+          "Alternate Tube Welded Standard Splice"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 20,
+    "filename": "Laguna Creek Plan.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
+        "project_number": null,
+        "client": "SACRAMENTO COUNTY",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "JASON HICKEY",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "project_year": "2020",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Rock Slope Protection",
+        "sheet_title": "ROCK SLOPE PROTECTION",
+        "sheet_number": "24C0606",
+        "scale": "1\"=20'",
+        "revision": null,
+        "date": "11/6/20"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "pier"
+        ],
+        "detail_types": [
+          "sections"
+        ],
+        "grid_references": [
+          "Abut 1",
+          "Abut 4",
+          "Pier 2",
+          "Pier 3"
+        ]
+      }
+    },
+    "page_number": 21,
+    "filename": "Laguna Creek Plan.pdf"
+  }
+]

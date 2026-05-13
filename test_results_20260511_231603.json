@@ -1,0 +1,316 @@
+{
+  "timestamp": "2026-05-11T23:16:03.804834",
+  "total_scenarios": 10,
+  "duration_seconds": 24.13066792488098,
+  "metrics": {
+    "total_tests": 10,
+    "passed": 0,
+    "failed": 10,
+    "partial": 0,
+    "precision_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "recall_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "response_times": [
+      2.4285194873809814,
+      2.2614455223083496,
+      2.2526261806488037,
+      2.2458336353302,
+      2.3707809448242188,
+      2.2567226886749268,
+      2.2577481269836426,
+      2.1996357440948486,
+      2.2822959423065186,
+      2.565065383911133
+    ],
+    "avg_precision": 0.0,
+    "avg_recall": 0.0,
+    "avg_response_time": 2.3120673656463624,
+    "pass_rate": 0.0
+  },
+  "results": [
+    {
+      "scenario_id": 1,
+      "scenario_type": "direct_element",
+      "query": "R/C Slab",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.4285194873809814,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 2,
+      "scenario_type": "direct_element",
+      "query": "R/C Box Girder",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2614455223083496,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 3,
+      "scenario_type": "direct_element",
+      "query": "Bent 1 to Bent 17",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2526261806488037,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 4,
+      "scenario_type": "direct_element",
+      "query": "Abut 1 and Abut 17",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2458336353302,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 5,
+      "scenario_type": "direct_element",
+      "query": "Retaining Wall",
+      "expected_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        29
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        29
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.3707809448242188,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 6,
+      "scenario_type": "direct_element",
+      "query": "Not specified",
+      "expected_pages": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        17,
+        18,
+        20,
+        36,
+        41
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        17,
+        18,
+        20,
+        36,
+        41
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2567226886749268,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 7,
+      "scenario_type": "direct_element",
+      "query": "Total length along 'W' line",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2577481269836426,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 8,
+      "scenario_type": "direct_element",
+      "query": "Bent spacing",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.1996357440948486,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 9,
+      "scenario_type": "direct_element",
+      "query": "Vertical clearance",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.2822959423065186,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 10,
+      "scenario_type": "direct_element",
+      "query": "Paint",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 2.565065383911133,
+      "result_count": 0
+    }
+  ],
+  "feedback": [
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "direct_element",
+      "affected_count": 10,
+      "issue": "Multiple failures in direct_element scenarios",
+      "recommendation": "Review topology extraction - element names may not match search terms",
+      "examples": [
+        "R/C Slab",
+        "R/C Box Girder",
+        "Bent 1 to Bent 17"
+      ]
+    },
+    {
+      "type": "missing_pages",
+      "severity": "medium",
+      "issue": "Some pages frequently missed in searches",
+      "pages": [
+        [
+          1,
+          10
+        ]
+      ],
+      "recommendation": "Review content extraction or vision analysis for these pages"
+    },
+    {
+      "type": "low_recall",
+      "severity": "high",
+      "affected_count": 10,
+      "issue": "Many searches return incomplete results",
+      "recommendation": "Increase k parameter, adjust relevance threshold, or improve chunking strategy"
+    },
+    {
+      "type": "low_precision",
+      "severity": "medium",
+      "affected_count": 10,
+      "issue": "Many searches return irrelevant results",
+      "recommendation": "Adjust relevance threshold, improve topology extraction, or refine embeddings"
+    }
+  ]
+}

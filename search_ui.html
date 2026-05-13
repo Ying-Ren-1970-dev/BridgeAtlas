@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian Agent - Search Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .search-box {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .search-input-container {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        #searchInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        #searchInput:focus {
+            border-color: #667eea;
+        }
+
+        #searchBtn {
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        #searchBtn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        #searchBtn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .quick-searches {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .quick-search-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+            background: #f5f5f5;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-search-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .relevance-filter {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .relevance-label {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .relevance-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .relevance-option {
+            position: relative;
+        }
+
+        .relevance-option input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .relevance-option label {
+            padding: 8px 16px;
+            font-size: 14px;
+            background: #f5f5f5;
+            border: 2px solid #e0e0e0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .relevance-option input[type="radio"]:checked + label {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .relevance-option label:hover {
+            border-color: #667eea;
+        }
+
+        .relevance-help {
+            font-size: 12px;
+            color: #999;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results-container {
+            display: none;
+        }
+
+        .results-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .summary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .summary-title {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .summary-stats {
+            display: flex;
+            gap: 20px;
+        }
+
+        .stat-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .project-info {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-info h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 5px;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .pages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .page-badge {
+            background: #667eea;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .results-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .thumbnail-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .thumbnail-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .thumbnail-item:hover {
+            transform: scale(1.05);
+        }
+
+        .thumbnail-wrapper {
+            width: 100%;
+            height: auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.2s;
+            position: relative;
+        }
+
+        .thumbnail-item:hover .thumbnail-wrapper {
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .thumbnail-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .thumbnail-page-number {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #667eea;
+            margin-top: 10px;
+        }
+
+        .thumbnail-score {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .score-excellent {
+            background: rgba(76, 175, 80, 0.95);
+            color: white;
+        }
+
+        .score-good {
+            background: rgba(139, 195, 74, 0.95);
+            color: white;
+        }
+
+        .score-fair {
+            background: rgba(255, 152, 0, 0.95);
+            color: white;
+        }
+
+        .result-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+            gap: 15px;
+        }
+
+        .page-number {
+            font-size: 2em;
+            font-weight: 700;
+            color: #667eea;
+            min-width: 80px;
+        }
+
+        .result-meta {
+            flex: 1;
+        }
+
+        .score-badge {
+            background: #f0f0f0;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .score-excellent {
+            background: #4caf50;
+            color: white;
+        }
+
+        .score-good {
+            background: #8bc34a;
+            color: white;
+        }
+
+        .score-fair {
+            background: #ff9800;
+            color: white;
+        }
+
+        .topology-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+
+        .topology-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .topology-tag.highlight {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .content-preview {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .vision-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+            color: #667eea;
+            margin-top: 10px;
+        }
+
+        .vision-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .no-results-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .no-results h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .no-results p {
+            color: #666;
+        }
+
+        .error-message {
+            background: #ff5252;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(255, 82, 82, 0.3);
+        }
+
+        /* PDF Page Thumbnail Styles */
+        .result-card-content {
+            display: flex;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .page-thumbnail {
+            flex-shrink: 0;
+            width: 150px;
+            cursor: pointer;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #f0f0f0;
+        }
+
+        .page-thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .page-thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .thumbnail-loading {
+            width: 150px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f0f0f0;
+            border-radius: 8px;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .result-card-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            position: relative;
+            max-width: 95%;
+            max-height: 95%;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-title {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 1;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .modal-body {
+            padding: 20px;
+            max-height: calc(95vh - 100px);
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+
+        .modal-body img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .modal-loading {
+            padding: 60px;
+            text-align: center;
+            color: #666;
+        }
+
+        .modal-loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #e0e0e0;
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .search-input-container {
+                flex-direction: column;
+            }
+
+            #searchBtn {
+                width: 100%;
+            }
+
+            .summary-header {
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .page-number {
+                font-size: 1.5em;
+            }
+
+            .result-card-content {
+                flex-direction: column;
+            }
+
+            .page-thumbnail {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .thumbnail-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🏗️ Librarian Agent</h1>
+            <p>Search structural engineering plans across all projects with AI-powered semantic search</p>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <div class="search-input-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search for structural elements, details, or keywords..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" onclick="performSearch()">
+                    🔍 Search
+                </button>
+            </div>
+            <div class="quick-searches">
+                <span style="color: #666; font-size: 14px; margin-right: 10px;">Quick searches:</span>
+                <button class="quick-search-btn" onclick="quickSearch('I Girder')">I Girder</button>
+                <button class="quick-search-btn" onclick="quickSearch('Shear Key details')">Shear Key details</button>
+                <button class="quick-search-btn" onclick="quickSearch('Drilled shaft')">Drilled shaft</button>
+                <button class="quick-search-btn" onclick="quickSearch('Chain link fence details')">Chain link fence details</button>
+                <button class="quick-search-btn" onclick="quickSearch('LOTB')">LOTB</button>
+                <button class="quick-search-btn" onclick="quickSearch('Railroad')">Railroad</button>
+                <button class="quick-search-btn" onclick="quickSearch('Retaining Wall')">Retaining Wall</button>
+            </div>
+
+            <!-- Relevance Filter -->
+            <div class="relevance-filter">
+                <label class="relevance-label">🎯 Search Precision:</label>
+                <div class="relevance-options">
+                    <div class="relevance-option">
+                        <input type="radio" id="rel-exact" name="relevance" value="0.0">
+                        <label for="rel-exact">Exact Match Only</label>
+                    </div>
+                    <div class="relevance-option">
+                        <input type="radio" id="rel-high" name="relevance" value="0.15" checked>
+                        <label for="rel-high">High Relevance</label>
+                    </div>
+                    <div class="relevance-option">
+                        <input type="radio" id="rel-medium" name="relevance" value="0.25">
+                        <label for="rel-medium">Medium Relevance</label>
+                    </div>
+                    <div class="relevance-option">
+                        <input type="radio" id="rel-all" name="relevance" value="1.0">
+                        <label for="rel-all">All Results</label>
+                    </div>
+                </div>
+                <div class="relevance-help">
+                    "Exact Match Only" shows only the page with actual content (e.g., the camber diagram itself), not general references
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div>Searching through structural plans...</div>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <!-- Results Container -->
+        <div id="resultsContainer" class="results-container">
+            <!-- Results Summary -->
+            <div class="results-summary">
+                <div class="summary-header">
+                    <div class="summary-title" id="searchQuery"></div>
+                    <div class="summary-stats">
+                        <div class="stat-badge" id="totalResults">0 Results</div>
+                        <div class="stat-badge" id="totalPages">0 Pages</div>
+                        <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Search Summary</button>
+                    </div>
+                </div>
+
+                <!-- Project Info -->
+                <div class="project-info">
+                    <h3>📄 Mar Vista POC Project</h3>
+                    <div class="info-row">
+                        <div class="info-item">
+                            <span class="info-label">File:</span>
+                            <span id="projectFile"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Total Pages:</span>
+                            <span id="projectTotalPages"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Categories:</span>
+                            <span id="projectCategories"></span>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-item" style="width: 100%;">
+                            <span class="info-label">Relevant Pages:</span>
+                        </div>
+                    </div>
+                    <div class="pages-list" id="pagesList"></div>
+                </div>
+            </div>
+
+            <!-- Results Grid -->
+            <div class="results-grid" id="resultsGrid"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:8000';
+        
+        // Store current search results for download
+        let currentSearchResults = null;
+        let currentSearchQuery = '';
+
+        // Allow Enter key to trigger search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        function quickSearch(query) {
+            document.getElementById('searchInput').value = query;
+            performSearch();
+        }
+
+        async function performSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            
+            if (!query) {
+                alert('Please enter a search query');
+                return;
+            }
+
+            // Get selected relevance threshold
+            const relevanceThreshold = parseFloat(document.querySelector('input[name="relevance"]:checked').value);
+
+            // Show loading, hide results and errors
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('searchBtn').disabled = true;
+
+            try {
+                const response = await fetch(`${API_URL}/search`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query: query,
+                        k: 20,
+                        relevance_threshold: relevanceThreshold
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                displayResults(data);
+
+            } catch (error) {
+                console.error('Search error:', error);
+                showError(`Failed to perform search: ${error.message}. Make sure the API server is running at ${API_URL}`);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('searchBtn').disabled = false;
+            }
+        }
+
+        function displayResults(data) {
+            if (data.total_results === 0) {
+                showNoResults(data.query);
+                document.getElementById('downloadBtn').style.display = 'none';
+                return;
+            }
+
+            // Store results for download
+            currentSearchResults = data.results;
+            currentSearchQuery = data.query;
+            
+            // Show download button
+            document.getElementById('downloadBtn').style.display = 'inline-block';
+
+            // Update summary
+            document.getElementById('searchQuery').textContent = `"${data.query}"`;
+            document.getElementById('totalResults').textContent = `${data.total_results} Results`;
+            
+            // Get unique pages
+            const uniquePages = [...new Set(data.results.map(r => r.page_number))];
+            document.getElementById('totalPages').textContent = `${uniquePages.length} Pages`;
+
+            // Group results by project
+            const projectGroups = {};
+            data.results.forEach(result => {
+                const projectKey = result.pdf_file_name;
+                if (!projectGroups[projectKey]) {
+                    projectGroups[projectKey] = {
+                        name: result.project_name,
+                        fileName: result.pdf_file_name,
+                        results: []
+                    };
+                }
+                projectGroups[projectKey].results.push(result);
+            });
+
+            // Update project summary section (show count of projects)
+            const projectCount = Object.keys(projectGroups).length;
+            const projectInfo = document.querySelector('.project-info');
+            
+            if (projectCount === 1) {
+                // Single project - show detailed info
+                if (data.project_summaries && data.project_summaries.length > 0) {
+                    const project = data.project_summaries[0];
+                    projectInfo.innerHTML = `
+                        <h3>📄 ${project.project_name}</h3>
+                        <div class="info-row">
+                            <div class="info-item">
+                                <span class="info-label">File:</span>
+                                <span>${project.pdf_file_name}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Total Pages:</span>
+                                <span>${project.total_pages}</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Categories:</span>
+                                <span>${project.categories.join(', ')}</span>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-item" style="width: 100%;">
+                                <span class="info-label">Relevant Pages:</span>
+                            </div>
+                        </div>
+                        <div class="pages-list">
+                            ${project.relevant_pages.map(page => `<div class="page-badge">Page ${page}</div>`).join('')}
+                        </div>
+                    `;
+                }
+            } else {
+                // Multiple projects - show summary
+                projectInfo.innerHTML = `
+                    <h3>📚 ${projectCount} Projects Found</h3>
+                    <div class="info-row">
+                        ${data.project_summaries.map(proj => `
+                            <div class="info-item">
+                                <span class="info-label">${proj.project_name}:</span>
+                                <span>${proj.relevant_pages.length} pages</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            // Display results grouped by project
+            const resultsGrid = document.getElementById('resultsGrid');
+            let resultsHTML = '';
+            
+            Object.values(projectGroups).forEach(project => {
+                resultsHTML += `
+                    <div class="project-section" style="margin-bottom: 40px;">
+                        <div class="project-section-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
+                            <h2 style="margin: 0; font-size: 1.3em;">📄 ${project.name}</h2>
+                            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">${project.results.length} results from this project</p>
+                        </div>
+                        <div class="thumbnail-grid">
+                            ${project.results.map(result => createThumbnailItem(result, data.query)).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            resultsGrid.innerHTML = resultsHTML;
+
+            // Show results
+            document.getElementById('resultsContainer').style.display = 'block';
+            
+            // Smooth scroll to results
+            setTimeout(() => {
+                document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        }
+
+        function createThumbnailItem(result, query) {
+            return `
+                <div class="thumbnail-item" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
+                    <div class="thumbnail-wrapper">
+                        <img src="${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail" 
+                             alt="Page ${result.page_number} thumbnail"
+                             onerror="this.style.display='none'">
+                    </div>
+                    <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                </div>
+            `;
+        }
+
+        function createResultCard(result, query) {
+            // Determine score class
+            let scoreClass = 'score-fair';
+            if (result.relevance_score < 1.0) {
+                scoreClass = 'score-excellent';
+            } else if (result.relevance_score < 1.5) {
+                scoreClass = 'score-good';
+            }
+
+            // Highlight special topology elements
+            const highlightKeywords = ['pipe pin', 'steel shear key', 'shear key'];
+            const topologyHTML = result.topology_elements
+                .map(tag => {
+                    const isHighlighted = highlightKeywords.some(kw => tag.toLowerCase().includes(kw));
+                    return `<div class="topology-tag ${isHighlighted ? 'highlight' : ''}">${tag}</div>`;
+                })
+                .join('');
+
+            const visionHTML = result.has_vision_analysis 
+                ? `<div class="vision-indicator">
+                    <svg class="vision-icon" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                    </svg>
+                    GPT-4 Vision Analysis
+                   </div>`
+                : '';
+
+            return `
+                <div class="result-card">
+                    <div class="result-header">
+                        <div class="page-number">Page ${result.page_number}</div>
+                        <div class="result-meta">
+                            <div class="score-badge ${scoreClass}">
+                                Relevance: ${result.relevance_score.toFixed(3)}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="result-card-content">
+                        <div class="page-thumbnail" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
+                            <img src="${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail" 
+                                 alt="Page ${result.page_number} thumbnail"
+                                 onerror="this.parentElement.innerHTML='<div class=\"thumbnail-loading\">No preview</div>'">
+                        </div>
+                        
+                        <div class="result-card-text">
+                            ${result.topology_elements.length > 0 ? `
+                                <div class="topology-tags">
+                                    ${topologyHTML}
+                                </div>
+                            ` : ''}
+                            
+                            <div class="content-preview">
+                                ${highlightText(result.content_sample, query)}
+                            </div>
+                            
+                            ${visionHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function highlightText(text, query) {
+            if (!query) return text;
+            
+            // Simple highlight - case insensitive
+            const words = query.split(' ').filter(w => w.length > 2);
+            let highlighted = text;
+            
+            words.forEach(word => {
+                const regex = new RegExp(`(${word})`, 'gi');
+                highlighted = highlighted.replace(regex, '<strong style="background: #fff59d; padding: 2px 4px; border-radius: 3px;">$1</strong>');
+            });
+            
+            return highlighted;
+        }
+
+        function showNoResults(query) {
+            const resultsGrid = document.getElementById('resultsGrid');
+            resultsGrid.innerHTML = `
+                <div class="no-results">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>No results found</h3>
+                    <p>No matching pages found for "${query}" in the Mar Vista POC project.</p>
+                    <p style="margin-top: 15px; color: #999;">Try different keywords or check the quick search suggestions above.</p>
+                </div>
+            `;
+            document.getElementById('resultsContainer').style.display = 'block';
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = '⚠️ ' + message;
+            errorDiv.style.display = 'block';
+        }
+
+        // Download spreadsheet function
+        function downloadSpreadsheet() {
+            if (!currentSearchResults || currentSearchResults.length === 0) {
+                alert('No search results to download');
+                return;
+            }
+
+            // Create CSV content with 3 columns (sheet_title empty for now)
+            let csvContent = 'Project Name,Page Number,Sheet Title\n';
+            
+            // Sort results by project name and page number
+            const sortedResults = [...currentSearchResults].sort((a, b) => {
+                if (a.project_name !== b.project_name) {
+                    return a.project_name.localeCompare(b.project_name);
+                }
+                return a.page_number - b.page_number;
+            });
+            
+            // Add data rows (sheet_title will be empty until API is updated)
+            sortedResults.forEach(result => {
+                // Escape quotes in project name
+                const projectName = result.project_name.replace(/"/g, '""');
+                const sheetTitle = ''; // Will be populated when API is updated
+                csvContent += `"${projectName}",${result.page_number},"${sheetTitle}"\n`;
+            });
+
+            // Create blob and download
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            
+            // Create filename with query and timestamp
+            const timestamp = new Date().toISOString().slice(0, 10);
+            const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+            const filename = `search_results_${querySlug}_${timestamp}.csv`;
+            
+            link.setAttribute('href', url);
+            link.setAttribute('download', filename);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Show success message
+            const downloadBtn = document.getElementById('downloadBtn');
+            const originalText = downloadBtn.innerHTML;
+            downloadBtn.innerHTML = '✓ Downloaded!';
+            downloadBtn.style.background = '#45a049';
+            
+            setTimeout(() => {
+                downloadBtn.innerHTML = originalText;
+                downloadBtn.style.background = '#4caf50';
+            }, 2000);
+        }
+
+        // Modal functions
+        function openPageModal(fileName, pageNumber, projectName) {
+            const modal = document.getElementById('pageModal');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalTitle.textContent = `${projectName} - Page ${pageNumber}`;
+            modalBody.innerHTML = '<div class="modal-loading"><div class="modal-loading-spinner"></div>Loading full page...</div>';
+            modal.classList.add('active');
+            
+            // Load full-size image
+            const img = new Image();
+            img.onload = function() {
+                modalBody.innerHTML = '';
+                modalBody.appendChild(img);
+            };
+            img.onerror = function() {
+                modalBody.innerHTML = '<div class="modal-loading">Failed to load page image</div>';
+            };
+            img.src = `${API_URL}/pdf-page/${encodeURIComponent(fileName)}/${pageNumber}?size=full`;
+        }
+
+        function closePageModal() {
+            const modal = document.getElementById('pageModal');
+            modal.classList.remove('active');
+        }
+
+        // Close modal on outside click
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('pageModal');
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closePageModal();
+                }
+            });
+            
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closePageModal();
+                }
+            });
+        });
+    </script>
+
+    <!-- PDF Page Modal -->
+    <div id="pageModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">Page Details</div>
+                <button class="modal-close" onclick="closePageModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Image will be loaded here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

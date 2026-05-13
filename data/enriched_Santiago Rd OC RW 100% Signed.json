@@ -1,0 +1,462 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-0K1402",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "IRVINE, CA 92606",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2023",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN",
+        "sheet_number": "1",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": "12-15-22"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "retaining wall",
+          "cable railing",
+          "concrete barrier",
+          "ground anchors"
+        ],
+        "detail_types": [
+          "mirrored elevation",
+          "typical section"
+        ],
+        "grid_references": [
+          "RW LOL 9+91.08",
+          "RW LOL 11+55.08",
+          "A 214+00",
+          "A 215+00"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-0K4202",
+        "client": "CITY OF TEMECULA",
+        "location": "41000 MAIN STREET, TEMECULA, CA 92590",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "2",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "12-31-19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "retaining wall",
+          "ground anchor",
+          "structure excavation",
+          "structure backfill"
+        ],
+        "detail_types": [
+          "general notes",
+          "benchmarks",
+          "quantities"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 2,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-0E0204",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "RIV 15",
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "Br No. 56-0654"
+      },
+      "plan_type": {
+        "primary_type": "Structure Plan",
+        "sheet_title": "STRUCTURE PLAN No. 1",
+        "sheet_number": "4.1",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "abutment",
+          "gutter",
+          "SHGA wall",
+          "footing"
+        ],
+        "detail_types": [
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "10+00",
+          "10+50"
+        ]
+      }
+    },
+    "page_number": 3,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-0Q2004",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "IRVINE, CA 92606",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2013",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Structure Plan",
+        "sheet_title": "STRUCTURE PLAN No. 2",
+        "sheet_number": "4 of 11",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "12-13-12"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "gutter",
+          "footing"
+        ],
+        "detail_types": [
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "11+00",
+          "11+50"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-0K4202",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "TEMECULA, CA 92590",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Retaining Wall Details",
+        "sheet_title": "RETAINING WALL DETAILS NO. 1",
+        "sheet_number": "51",
+        "scale": "3/4\" = 1'-0\"",
+        "revision": null,
+        "date": "12-31-19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "footing",
+          "cable railing",
+          "geocomposite drain"
+        ],
+        "detail_types": [
+          "Typical Section-Type 7B (Modified)"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 5,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-1K420",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "RIV 15 3.4/5.0",
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2019",
+        "other_info": "CONTRACT NO.: 08-1K4202"
+      },
+      "plan_type": {
+        "primary_type": "Retaining Wall Details",
+        "sheet_title": "RETAINING WALL DETAILS NO. 2",
+        "sheet_number": "6",
+        "scale": "3/4\" = 1'-0\"",
+        "revision": null,
+        "date": "12-13-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "cable railing",
+          "bearing plate",
+          "concrete",
+          "shotcrete"
+        ],
+        "detail_types": [
+          "Typical Section - SHGA Wall",
+          "Anchorage Detail 1",
+          "Anchorage Detail 2",
+          "Fractured Rib Texture Detail"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 6,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-1K402",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2014",
+        "other_info": "PROJECT NUMBER & PHASE: 0800020074"
+      },
+      "plan_type": {
+        "primary_type": "Special Details",
+        "sheet_title": "SUB HORIZONTAL GROUND ANCHOR DETAILS",
+        "sheet_number": "x512-040",
+        "scale": null,
+        "revision": null,
+        "date": "July 2014"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "ground anchor",
+          "tendon",
+          "steel tube",
+          "bearing",
+          "sheathing"
+        ],
+        "detail_types": [
+          "Ground Anchor Tendon Detail (Strands)",
+          "Ground Anchor Tendon Detail Bars",
+          "Anchorage Enclosure Details"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 7,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-1K4202",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "IRVINE, CA 92606",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "100% SUBMITTAL"
+      },
+      "plan_type": {
+        "primary_type": "Wall Drainage Details",
+        "sheet_title": "WALL DRAINAGE DETAILS",
+        "sheet_number": "8",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": "R1",
+        "date": "12-13-19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "drain",
+          "pipe"
+        ],
+        "detail_types": [
+          "WALL DRAIN DETAIL AT WEEPHOLE OPTION A",
+          "WALL DRAIN DETAIL AT WEEPHOLE OPTION B",
+          "PART RETAINING WALL ELEVATION",
+          "SECTION B-B"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 8,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "CITY OF TEMECULA",
+        "engineer_on_record": "YING REN",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "BRIDGE NO.: 56C0210"
+      },
+      "plan_type": {
+        "primary_type": "Architectural Treatment Detail",
+        "sheet_title": "ARCHITECTURAL TREATMENT DETAIL",
+        "sheet_number": "9",
+        "scale": "1/8\" = 1'-0\"",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "wall",
+          "barrier"
+        ],
+        "detail_types": [
+          "elevation"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 9,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": "08-000204",
+        "client": null,
+        "location": "CITY OF TEMECULA",
+        "engineer_on_record": "A. THURAIRAJAH, GE",
+        "engineering_firm": "EARTH MECHANICS, INC.",
+        "project_year": "2020",
+        "other_info": "UNIT 1"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 1 OF 2",
+        "sheet_number": "56-XXXX",
+        "scale": "1\"=20'",
+        "revision": null,
+        "date": "3/25/2020"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "borings",
+          "elevation"
+        ],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 10,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "SANTIAGO ROAD OC RETAINING WALL",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "DIVISION OF ENGINEERING SERVICES - GEOTECHNICAL SERVICES",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 2 OF 2",
+        "sheet_number": "X",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": [
+          "B-1",
+          "B-2",
+          "B-3",
+          "B-4",
+          "B-5",
+          "B-6"
+        ]
+      }
+    },
+    "page_number": 11,
+    "filename": "Santiago Rd OC RW 100% Signed.pdf"
+  }
+]

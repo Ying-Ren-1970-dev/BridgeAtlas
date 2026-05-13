@@ -1,0 +1,651 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1C720",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": null,
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": null,
+        "project_year": "12-21-12",
+        "other_info": "UNIT: PROJECT NUMBER & PHASE: 05-18000116"
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 1",
+        "sheet_number": null,
+        "scale": "1\" = 30'",
+        "revision": null,
+        "date": "12-21-12"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "R/C slab",
+          "R/C box girder"
+        ],
+        "detail_types": [
+          "Developed Elevation",
+          "Plan"
+        ],
+        "grid_references": [
+          "Bent 1",
+          "Bent 2",
+          "Bent 3",
+          "Bent 4",
+          "Bent 5",
+          "Bent 6",
+          "Bent 7",
+          "Bent 8",
+          "Bent 9",
+          "Bent 10",
+          "Bent 11",
+          "Bent 12",
+          "Bent 13",
+          "Bent 14",
+          "Bent 15",
+          "Bent 16",
+          "Bent 17",
+          "Abutment 1",
+          "Abutment 17"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1G731",
+        "client": "STATE OF CALIFORNIA",
+        "location": "SANTA CRUZ, CA 95060",
+        "engineer_on_record": null,
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2023",
+        "other_info": "CONTRACT NO. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 2",
+        "sheet_number": "41",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "03/14/23"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "CIP REINFORCED CONCRETE BOX GIRDER",
+          "TAPERED HEXAGONAL COLUMN",
+          "CIDH PILE",
+          "PEDESTRIAN RAILING",
+          "REINFORCED CONCRETE RETAINING WALL"
+        ],
+        "detail_types": [
+          "SECTION A-A",
+          "SECTION B-B",
+          "SECTION C-C"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 2,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE - POC",
+        "project_number": "36-0128",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SANTA CRUZ, CA 95060",
+        "engineer_on_record": "ERIC FREDERICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2018",
+        "other_info": "REGISTERED STRUCTURAL ENGINEER"
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "3",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "10/5/18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "column",
+          "footing",
+          "CIDH pile"
+        ],
+        "detail_types": [
+          "General Plan",
+          "Foundation Plan",
+          "Deck Contours",
+          "Abutment Details",
+          "Retaining Wall Layout"
+        ],
+        "grid_references": [
+          "Bent 5, 7 thru 9",
+          "Bents 2, 6 and 13"
+        ]
+      }
+    },
+    "page_number": 3,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1B000116",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SACRAMENTO, CA",
+        "engineer_on_record": "ERIC FREDERICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "CONTRACT No. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS No. 1",
+        "sheet_number": "41",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "abutment"
+        ],
+        "detail_types": [
+          "superelevation diagram"
+        ],
+        "grid_references": [
+          "bent numbers",
+          "station numbers"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1B000116",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SANTA CRUZ, CA",
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": null,
+        "project_year": "87",
+        "other_info": "CONTRACT No. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS No. 2",
+        "sheet_number": "38",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "abutment"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 8",
+          "Bent 9",
+          "Bent 10",
+          "Bent 11",
+          "Bent 12",
+          "Bent 13",
+          "Bent 14",
+          "Bent 15",
+          "Bent 16",
+          "Bent 17",
+          "Abut"
+        ]
+      }
+    },
+    "page_number": 5,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1B800116",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SACRAMENTO, CA 95825",
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2013",
+        "other_info": "CONTRACT No. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Bent Layout",
+        "sheet_title": "BENT 6 THRU 8 LAYOUT",
+        "sheet_number": "36",
+        "scale": "1/2\" = 1'-0\"",
+        "revision": null,
+        "date": "5-29-12"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "column",
+          "deck",
+          "cap"
+        ],
+        "detail_types": [
+          "Plan",
+          "Section",
+          "Elevation"
+        ],
+        "grid_references": [
+          "B0-5",
+          "B0-10",
+          "S-10",
+          "S-11"
+        ]
+      }
+    },
+    "page_number": 19,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1F800",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "1523 PACIFIC AVENUE, SANTA CRUZ, CA 95090",
+        "engineer_on_record": "ERIC FREDERICKSON",
+        "engineering_firm": "DRAFT 65X PLANS",
+        "project_year": null,
+        "other_info": "CONTRACT No.: 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Detail Sheet",
+        "sheet_title": "BENT 6 THRU 8 DETAILS",
+        "sheet_number": "36-0128",
+        "scale": "3/8\" = 1'-0\"",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "column",
+          "bent"
+        ],
+        "detail_types": [
+          "COLUMN DETAIL-BENT 6",
+          "COLUMN DETAIL-BENT 7 AND 8",
+          "HEXAGONAL COLUMN"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 20,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1R000",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SACRAMENTO, CA 95825",
+        "engineer_on_record": "ERIC FREDERICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "PROJECT NUMBER & PHASE: 0518000116, CONTRACT NO.: 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "CIDH PILE DETAILS",
+        "sheet_title": "CIDH CONCRETE PILE ELEVATION",
+        "sheet_number": "453",
+        "scale": "3/4\" = 1'-0\"",
+        "revision": "X",
+        "date": "10-87"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "column",
+          "pile",
+          "hoop",
+          "casing"
+        ],
+        "detail_types": [
+          "SECTION M-M",
+          "SECTION N-N"
+        ],
+        "grid_references": [
+          "BENT 5 THRU 9"
+        ]
+      }
+    },
+    "page_number": 21,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1H000116",
+        "client": "STATE OF CALIFORNIA",
+        "location": "SANTA CRUZ, CA",
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2017",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Isolation Casing Details",
+        "sheet_title": "ISOLATION CASING DETAILS",
+        "sheet_number": "38",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "6/17/2017"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "column",
+          "isolation casing"
+        ],
+        "detail_types": [
+          "SECTION L-L",
+          "DETAIL 1"
+        ],
+        "grid_references": [
+          "Bents 2, 6, and 13"
+        ]
+      }
+    },
+    "page_number": 22,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1B8001",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SANTA CRUZ, CA 95090",
+        "engineer_on_record": "ERIC FREDERICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "CONTRACT No. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Typical Section",
+        "sheet_title": "TYPICAL SECTION No. 1",
+        "sheet_number": "38",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "slab",
+          "conduit"
+        ],
+        "detail_types": [
+          "Slab Typical Section",
+          "Part Slab Typical Section"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 23,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1F820",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SANTA CRUZ, CA",
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2023",
+        "other_info": "UNIT 3, PROJECT NUMBER & PHASE: 05-1B000116, CONTRACT No.: 05-0F2733"
+      },
+      "plan_type": {
+        "primary_type": "Retaining Wall Plan",
+        "sheet_title": "RETAINING WALL \"N\" AESTHETIC TREATMENT",
+        "sheet_number": "X-38",
+        "scale": "3/16\"=1'-0\"",
+        "revision": null,
+        "date": "10/25/2023"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "retaining wall"
+        ],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 38,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-1B800116",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": null,
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": "MARK THOMAS",
+        "project_year": null,
+        "other_info": "CONTRACT No. 05-0C7331"
+      },
+      "plan_type": {
+        "primary_type": "Retaining Wall Plan",
+        "sheet_title": "RETAINING WALL \"S\" AESTHETIC TREATMENT",
+        "sheet_number": "41",
+        "scale": "3/16\"=1'-0\"",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Abut 1",
+          "BB"
+        ]
+      }
+    },
+    "page_number": 39,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE-POC",
+        "project_number": "05-1B8001",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SANTA CRUZ, CA 95060",
+        "engineer_on_record": "ERIC FREDRICKSON",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "UNIT 5"
+      },
+      "plan_type": {
+        "primary_type": "Electrolier Layout",
+        "sheet_title": "ELECTROLIER LAYOUT",
+        "sheet_number": "41",
+        "scale": "1\"=20'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "electrolier",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 15",
+          "Bent 13",
+          "Bent 11",
+          "Bent 9",
+          "Bent 8",
+          "Bent 6",
+          "Bent 4",
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 40,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "05-0C7231",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "K. SANKARANARAYANAN",
+        "engineering_firm": "PARIKH CONSULTANTS, INC.",
+        "project_year": null,
+        "other_info": "PREPARED FOR THE STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION"
+      },
+      "plan_type": {
+        "primary_type": "LOG OF TEST BORINGS",
+        "sheet_title": "LOG OF TEST BORINGS 1 OF 2",
+        "sheet_number": null,
+        "scale": "Vert: 1\" = 10', Hor: 1\" = 50'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "column"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "R-20-034",
+          "R-20-035",
+          "R-20-036"
+        ]
+      }
+    },
+    "page_number": 41,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAR VISTA DRIVE POC",
+        "project_number": "03-0H0106",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "K. SARAVANAPAVAN",
+        "engineering_firm": "PARIKH CONSULTANTS, INC.",
+        "project_year": null,
+        "other_info": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 2 OF 2",
+        "sheet_number": null,
+        "scale": "1\" = 50'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "line"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "R-20-037",
+          "R-20-038",
+          "R-20-039"
+        ]
+      }
+    },
+    "page_number": 42,
+    "filename": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+  }
+]

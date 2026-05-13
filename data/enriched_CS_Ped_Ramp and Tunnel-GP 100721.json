@@ -1,0 +1,45 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": null,
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": null,
+        "sheet_title": null,
+        "sheet_number": null,
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "handrail",
+          "ramp",
+          "platform",
+          "stairs",
+          "tunnel",
+          "wall"
+        ],
+        "detail_types": [
+          "elevation",
+          "section"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 1,
+    "filename": "CS_Ped_Ramp and Tunnel-GP 100721.pdf"
+  }
+]

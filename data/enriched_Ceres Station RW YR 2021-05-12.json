@@ -1,0 +1,179 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": null,
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": null,
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": null,
+        "project_year": "2021",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "RETAINING WALL No. 1",
+        "sheet_number": "38/XXVI",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "5/19/2021"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "retaining wall",
+          "soil nail",
+          "gutter",
+          "cable railing"
+        ],
+        "detail_types": [
+          "elevation",
+          "typical section",
+          "plan"
+        ],
+        "grid_references": [
+          "RW1",
+          "ELC"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "Ceres Station RW YR 2021-05-12.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": null,
+        "project_number": null,
+        "client": null,
+        "location": "Stockton, CA 95202",
+        "engineer_on_record": "C. Fredrickson",
+        "engineering_firm": "Alta Vista Solutions",
+        "project_year": "2021",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "Retaining Wall No. 2",
+        "sheet_number": "Sheet 1 of 1",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "5/19/2021"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "retaining wall",
+          "cable railing",
+          "gutter",
+          "sidewalk"
+        ],
+        "detail_types": [
+          "typical section",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "RW2",
+          "ELC"
+        ]
+      }
+    },
+    "page_number": 2,
+    "filename": "Ceres Station RW YR 2021-05-12.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": null,
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": null,
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": "ALTAMONT CORRIDOR EXPRESS",
+        "project_year": "2021",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "RETAINING WALL No. 3",
+        "sheet_number": "R11.60-2",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "1/21"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "retaining wall",
+          "cable railing",
+          "ground anchors"
+        ],
+        "detail_types": [
+          "mirrored developed elevation",
+          "typical section"
+        ],
+        "grid_references": [
+          "R/W3",
+          "NOR"
+        ]
+      }
+    },
+    "page_number": 3,
+    "filename": "Ceres Station RW YR 2021-05-12.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "ALTAMONT CORRIDOR EXPRESS",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "650 EAST CHANNEL STREET STOCKTON, CA 95202",
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": null,
+        "project_year": "2021",
+        "other_info": "MARK THOMAS 701 UNIVERSITY AVENUE, SUITE 200 SACRAMENTO, CA 95825"
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "PEDESTRIAN TRENCH WALL",
+        "sheet_number": "10",
+        "scale": "1\" = 10'",
+        "revision": "R11.50/R11.74",
+        "date": "2/12/21"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "trench wall",
+          "pedestrian tunnel",
+          "metal railing"
+        ],
+        "detail_types": [
+          "developed elevation",
+          "typical section"
+        ],
+        "grid_references": [
+          "1271",
+          "1270"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "Ceres Station RW YR 2021-05-12.pdf"
+  }
+]

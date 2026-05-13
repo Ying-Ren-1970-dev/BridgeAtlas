@@ -1,0 +1,1459 @@
+{
+  "timestamp": "2026-05-12T09:12:37.169370",
+  "total_scenarios": 40,
+  "duration_seconds": 454.0089147090912,
+  "metrics": {
+    "total_tests": 40,
+    "passed": 0,
+    "failed": 30,
+    "partial": 10,
+    "precision_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.6666666666666666,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.25,
+      0.125,
+      0.0,
+      1.0,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.0,
+      0.2,
+      0.16666666666666666,
+      0.25,
+      0.5,
+      0.1111111111111111,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "recall_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.3333333333333333,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.05555555555555555,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      0.5,
+      1.0,
+      1.0,
+      0.0,
+      0.2857142857142857,
+      0.1111111111111111,
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "response_times": [
+      12.50194001197815,
+      7.982970237731934,
+      9.139493942260742,
+      14.769779682159424,
+      12.03450894355774,
+      10.269582509994507,
+      9.307491540908813,
+      12.124517917633057,
+      9.344300508499146,
+      9.842051029205322,
+      9.201925039291382,
+      9.703191041946411,
+      15.479064464569092,
+      10.69857120513916,
+      11.14124321937561,
+      10.394283056259155,
+      10.495068073272705,
+      13.485054969787598,
+      8.499695777893066,
+      11.389131546020508,
+      16.35671639442444,
+      11.845301628112793,
+      12.07835054397583,
+      8.691851139068604,
+      9.680337190628052,
+      11.020321369171143,
+      9.497234106063843,
+      13.541381120681763,
+      8.419244527816772,
+      8.532482147216797,
+      10.250471353530884,
+      8.203293085098267,
+      13.441067218780518,
+      17.64781427383423,
+      15.978180170059204,
+      8.76542043685913,
+      14.705485105514526,
+      10.033339262008667,
+      10.960906267166138,
+      12.488362550735474
+    ],
+    "avg_precision": 0.12340277777777778,
+    "avg_recall": 0.20714285714285716,
+    "avg_response_time": 11.248535615205764,
+    "pass_rate": 0.0
+  },
+  "results": [
+    {
+      "scenario_id": 1,
+      "scenario_type": "direct_element",
+      "query": "R/C Slab",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        23
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        23
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 12.50194001197815,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 2,
+      "scenario_type": "direct_element",
+      "query": "R/C Box Girder",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        28,
+        30
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        28,
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 7.982970237731934,
+      "result_count": 2
+    },
+    {
+      "scenario_id": 3,
+      "scenario_type": "direct_element",
+      "query": "Bent 1 to Bent 17",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        9,
+        16,
+        17,
+        19,
+        20,
+        21,
+        27
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        9,
+        16,
+        17,
+        19,
+        20,
+        21,
+        27
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.139493942260742,
+      "result_count": 7
+    },
+    {
+      "scenario_id": 4,
+      "scenario_type": "direct_element",
+      "query": "Abut 1 and Abut 17",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        6,
+        8,
+        9,
+        10,
+        12
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 14.769779682159424,
+      "result_count": 5
+    },
+    {
+      "scenario_id": 5,
+      "scenario_type": "direct_element",
+      "query": "Retaining Wall",
+      "expected_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        29
+      ],
+      "actual_pages": [
+        13,
+        14,
+        39
+      ],
+      "missing_pages": [
+        1,
+        12,
+        15,
+        29
+      ],
+      "extra_pages": [
+        39
+      ],
+      "precision": 0.6666666666666666,
+      "recall": 0.3333333333333333,
+      "f1_score": 0.4444444444444444,
+      "status": "partial",
+      "response_time": 12.03450894355774,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 6,
+      "scenario_type": "direct_element",
+      "query": "Not specified",
+      "expected_pages": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        17,
+        18,
+        20,
+        36,
+        41
+      ],
+      "actual_pages": [
+        40
+      ],
+      "missing_pages": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        17,
+        18,
+        20,
+        36,
+        41
+      ],
+      "extra_pages": [
+        40
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.269582509994507,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 7,
+      "scenario_type": "direct_element",
+      "query": "Total length along 'W' line",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        14
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        14
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.307491540908813,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 8,
+      "scenario_type": "direct_element",
+      "query": "Bent spacing",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        16,
+        17,
+        19,
+        20,
+        21
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        16,
+        17,
+        19,
+        20,
+        21
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 12.124517917633057,
+      "result_count": 5
+    },
+    {
+      "scenario_id": 9,
+      "scenario_type": "direct_element",
+      "query": "Vertical clearance",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        9,
+        13,
+        30
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        9,
+        13,
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.344300508499146,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 10,
+      "scenario_type": "direct_element",
+      "query": "Paint",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        30
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.842051029205322,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 11,
+      "scenario_type": "direct_element",
+      "query": "Sound wall",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        13,
+        14
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        13,
+        14
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.201925039291382,
+      "result_count": 2
+    },
+    {
+      "scenario_id": 12,
+      "scenario_type": "direct_element",
+      "query": "Retaining wall",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        13,
+        14,
+        39
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        13,
+        14,
+        39
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 9.703191041946411,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 13,
+      "scenario_type": "direct_element",
+      "query": "Entry monument",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        35
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        35
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 15.479064464569092,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 14,
+      "scenario_type": "direct_element",
+      "query": "Settlement platform",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [
+        30
+      ],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.69857120513916,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 15,
+      "scenario_type": "direct_element",
+      "query": "unknown",
+      "expected_pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        40,
+        41,
+        42
+      ],
+      "actual_pages": [
+        40,
+        41
+      ],
+      "missing_pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        42
+      ],
+      "extra_pages": [],
+      "precision": 1.0,
+      "recall": 0.05555555555555555,
+      "f1_score": 0.10526315789473684,
+      "status": "partial",
+      "response_time": 11.14124321937561,
+      "result_count": 2
+    },
+    {
+      "scenario_id": 16,
+      "scenario_type": "direct_element",
+      "query": "CIDH Concrete Piles",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        9,
+        21
+      ],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [
+        9,
+        21
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.394283056259155,
+      "result_count": 2
+    },
+    {
+      "scenario_id": 17,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Bridge Footing",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        3,
+        7,
+        15,
+        35
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        7,
+        15,
+        35
+      ],
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1_score": 0.4,
+      "status": "partial",
+      "response_time": 10.495068073272705,
+      "result_count": 4
+    },
+    {
+      "scenario_id": 18,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Retaining Wall",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        3,
+        6,
+        12,
+        13,
+        14,
+        15,
+        23,
+        35
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        6,
+        12,
+        13,
+        14,
+        15,
+        23,
+        35
+      ],
+      "precision": 0.125,
+      "recall": 1.0,
+      "f1_score": 0.2222222222222222,
+      "status": "partial",
+      "response_time": 13.485054969787598,
+      "result_count": 8
+    },
+    {
+      "scenario_id": 19,
+      "scenario_type": "direct_element",
+      "query": "Pedestrian Railing",
+      "expected_pages": [
+        3,
+        15,
+        23
+      ],
+      "actual_pages": [
+        30,
+        32,
+        34
+      ],
+      "missing_pages": [
+        3,
+        15,
+        23
+      ],
+      "extra_pages": [
+        30,
+        32,
+        34
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 8.499695777893066,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 20,
+      "scenario_type": "direct_element",
+      "query": "Isolation Casing",
+      "expected_pages": [
+        3,
+        22
+      ],
+      "actual_pages": [
+        22
+      ],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1_score": 0.6666666666666666,
+      "status": "partial",
+      "response_time": 11.389131546020508,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 21,
+      "scenario_type": "direct_element",
+      "query": "24\" Cast-In-Drilled-Hole Concrete Piling",
+      "expected_pages": [
+        3,
+        7
+      ],
+      "actual_pages": [
+        3,
+        7,
+        8,
+        9,
+        16,
+        21
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        8,
+        9,
+        16,
+        21
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1_score": 0.5,
+      "status": "partial",
+      "response_time": 16.35671639442444,
+      "result_count": 6
+    },
+    {
+      "scenario_id": 22,
+      "scenario_type": "direct_element",
+      "query": "72\" Cast-In-Drilled-Hole Concrete Piling",
+      "expected_pages": [
+        3,
+        7
+      ],
+      "actual_pages": [
+        3,
+        7,
+        8,
+        9,
+        16,
+        21
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        8,
+        9,
+        16,
+        21
+      ],
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1_score": 0.5,
+      "status": "partial",
+      "response_time": 11.845301628112793,
+      "result_count": 6
+    },
+    {
+      "scenario_id": 23,
+      "scenario_type": "direct_element",
+      "query": "72\" Permanent Steel Casing",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        9,
+        12,
+        21,
+        22,
+        30
+      ],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [
+        9,
+        12,
+        21,
+        22,
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 12.07835054397583,
+      "result_count": 5
+    },
+    {
+      "scenario_id": 24,
+      "scenario_type": "direct_element",
+      "query": "Concrete",
+      "expected_pages": [
+        3,
+        5,
+        10,
+        12,
+        26,
+        29,
+        30
+      ],
+      "actual_pages": [
+        1,
+        3,
+        15,
+        19,
+        21,
+        23,
+        24,
+        28,
+        30,
+        35
+      ],
+      "missing_pages": [
+        5,
+        10,
+        12,
+        26,
+        29
+      ],
+      "extra_pages": [
+        1,
+        15,
+        19,
+        21,
+        23,
+        24,
+        28,
+        35
+      ],
+      "precision": 0.2,
+      "recall": 0.2857142857142857,
+      "f1_score": 0.23529411764705882,
+      "status": "failed",
+      "response_time": 8.691851139068604,
+      "result_count": 10
+    },
+    {
+      "scenario_id": 25,
+      "scenario_type": "direct_element",
+      "query": "Steel",
+      "expected_pages": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        18,
+        22,
+        26,
+        30
+      ],
+      "actual_pages": [
+        11,
+        12,
+        15,
+        18,
+        19,
+        28
+      ],
+      "missing_pages": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        22,
+        26,
+        30
+      ],
+      "extra_pages": [
+        11,
+        12,
+        15,
+        19,
+        28
+      ],
+      "precision": 0.16666666666666666,
+      "recall": 0.1111111111111111,
+      "f1_score": 0.13333333333333333,
+      "status": "failed",
+      "response_time": 9.680337190628052,
+      "result_count": 6
+    },
+    {
+      "scenario_id": 26,
+      "scenario_type": "direct_element",
+      "query": "Load and Resistance Factor Design",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        3,
+        9,
+        14,
+        30
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        9,
+        14,
+        30
+      ],
+      "precision": 0.25,
+      "recall": 1.0,
+      "f1_score": 0.4,
+      "status": "partial",
+      "response_time": 11.020321369171143,
+      "result_count": 4
+    },
+    {
+      "scenario_id": 27,
+      "scenario_type": "direct_element",
+      "query": "Seismic Design Criteria",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        3,
+        9
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        9
+      ],
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1_score": 0.6666666666666666,
+      "status": "partial",
+      "response_time": 9.497234106063843,
+      "result_count": 2
+    },
+    {
+      "scenario_id": 28,
+      "scenario_type": "direct_element",
+      "query": "Concrete strength",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        3,
+        7,
+        12,
+        15,
+        21,
+        23,
+        24,
+        28,
+        35
+      ],
+      "missing_pages": [],
+      "extra_pages": [
+        7,
+        12,
+        15,
+        21,
+        23,
+        24,
+        28,
+        35
+      ],
+      "precision": 0.1111111111111111,
+      "recall": 1.0,
+      "f1_score": 0.19999999999999998,
+      "status": "partial",
+      "response_time": 13.541381120681763,
+      "result_count": 9
+    },
+    {
+      "scenario_id": 29,
+      "scenario_type": "direct_element",
+      "query": "Pile data table",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [
+        4,
+        9,
+        21
+      ],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [
+        4,
+        9,
+        21
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 8.419244527816772,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 30,
+      "scenario_type": "direct_element",
+      "query": "Bents 2 to 7",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        17,
+        19,
+        20,
+        21
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        17,
+        19,
+        20,
+        21
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 8.532482147216797,
+      "result_count": 4
+    },
+    {
+      "scenario_id": 31,
+      "scenario_type": "direct_element",
+      "query": "Abut 1",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        30
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        6,
+        8,
+        9,
+        10,
+        11,
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.250471353530884,
+      "result_count": 6
+    },
+    {
+      "scenario_id": 32,
+      "scenario_type": "direct_element",
+      "query": "Edge of Deck",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        30
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        30
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 8.203293085098267,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 33,
+      "scenario_type": "direct_element",
+      "query": "'M' Line",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        14
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        14
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 13.441067218780518,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 34,
+      "scenario_type": "direct_element",
+      "query": "Contour intervals",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        42
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        42
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 17.64781427383423,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 35,
+      "scenario_type": "direct_element",
+      "query": "'M' Line intervals",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        5,
+        14,
+        36
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        5,
+        14,
+        36
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 15.978180170059204,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 36,
+      "scenario_type": "direct_element",
+      "query": "Match line references",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [
+        3,
+        5,
+        11,
+        14,
+        15,
+        25,
+        27,
+        28,
+        36
+      ],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [
+        3,
+        5,
+        11,
+        14,
+        15,
+        25,
+        27,
+        28,
+        36
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 8.76542043685913,
+      "result_count": 9
+    },
+    {
+      "scenario_id": 37,
+      "scenario_type": "direct_element",
+      "query": "24\" CIDH Type I Shaft",
+      "expected_pages": [
+        5,
+        38
+      ],
+      "actual_pages": [
+        9
+      ],
+      "missing_pages": [
+        5,
+        38
+      ],
+      "extra_pages": [
+        9
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 14.705485105514526,
+      "result_count": 1
+    },
+    {
+      "scenario_id": 38,
+      "scenario_type": "direct_element",
+      "query": "Column Type A",
+      "expected_pages": [
+        5
+      ],
+      "actual_pages": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        13,
+        16,
+        17,
+        20,
+        21,
+        22,
+        27
+      ],
+      "missing_pages": [
+        5
+      ],
+      "extra_pages": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        13,
+        16,
+        17,
+        20,
+        21,
+        22,
+        27
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.033339262008667,
+      "result_count": 12
+    },
+    {
+      "scenario_id": 39,
+      "scenario_type": "direct_element",
+      "query": "Cap Beam Type B",
+      "expected_pages": [
+        5
+      ],
+      "actual_pages": [
+        4,
+        17,
+        19
+      ],
+      "missing_pages": [
+        5
+      ],
+      "extra_pages": [
+        4,
+        17,
+        19
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 10.960906267166138,
+      "result_count": 3
+    },
+    {
+      "scenario_id": 40,
+      "scenario_type": "direct_element",
+      "query": "Shear Key Type C",
+      "expected_pages": [
+        5
+      ],
+      "actual_pages": [
+        11,
+        18
+      ],
+      "missing_pages": [
+        5
+      ],
+      "extra_pages": [
+        11,
+        18
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 12.488362550735474,
+      "result_count": 2
+    }
+  ],
+  "feedback": [
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "direct_element",
+      "affected_count": 40,
+      "issue": "Multiple failures in direct_element scenarios",
+      "recommendation": "Review topology extraction - element names may not match search terms",
+      "examples": [
+        "R/C Slab",
+        "R/C Box Girder",
+        "Bent 1 to Bent 17"
+      ]
+    },
+    {
+      "type": "missing_pages",
+      "severity": "medium",
+      "issue": "Some pages frequently missed in searches",
+      "pages": [
+        [
+          1,
+          15
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          29,
+          3
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          26,
+          3
+        ]
+      ],
+      "recommendation": "Review content extraction or vision analysis for these pages"
+    },
+    {
+      "type": "low_recall",
+      "severity": "high",
+      "affected_count": 32,
+      "issue": "Many searches return incomplete results",
+      "recommendation": "Increase k parameter, adjust relevance threshold, or improve chunking strategy"
+    },
+    {
+      "type": "low_precision",
+      "severity": "medium",
+      "affected_count": 36,
+      "issue": "Many searches return irrelevant results",
+      "recommendation": "Adjust relevance threshold, improve topology extraction, or refine embeddings"
+    }
+  ]
+}
