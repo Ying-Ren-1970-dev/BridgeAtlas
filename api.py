@@ -6,15 +6,12 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, FileResponse
 from pydantic import BaseModel, Field
-from typing import List, Optional, Dict, Tuple
+from typing import List, Optional
 import uvicorn
 from datetime import datetime
 import fitz  # PyMuPDF
 from io import BytesIO
 import os
-import json
-import re
-from collections import Counter
 
 from search_agent import SearchAgent
 from vector_store import VectorStore
@@ -22,7 +19,6 @@ from metadata_manager import MetadataManager
 from storage_adapter import storage
 from engineering_terminology import EngineeringTerminology
 import config
-from analysis_engine import AnalysisEngine
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -48,143 +44,12 @@ app.add_middleware(
 search_agent = None
 vector_store = None
 metadata_manager = None
-analysis_engine = None
-
-# Feedback storage
-FEEDBACK_DIR = os.path.join(os.path.dirname(__file__), "data", "feedback")
-SEARCH_FEEDBACK_FILE = os.path.join(FEEDBACK_DIR, "search_feedback.jsonl")
-
-
-def _ensure_feedback_store():
-    os.makedirs(FEEDBACK_DIR, exist_ok=True)
-    if not os.path.exists(SEARCH_FEEDBACK_FILE):
-        with open(SEARCH_FEEDBACK_FILE, "w", encoding="utf-8"):
-            pass
-
-
-def _append_feedback_record(record: dict):
-    _ensure_feedback_store()
-    with open(SEARCH_FEEDBACK_FILE, "a", encoding="utf-8") as f:
-        f.write(json.dumps(record) + "\n")
-
-
-def _read_feedback_records(limit: Optional[int] = None) -> List[dict]:
-    _ensure_feedback_store()
-    records: List[dict] = []
-    with open(SEARCH_FEEDBACK_FILE, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                records.append(json.loads(line))
-            except Exception:
-                continue
-    if limit is not None and limit > 0:
-        return records[-limit:]
-    return records
-
-
-def _normalize_text(value: Optional[str]) -> str:
-    return re.sub(r"\s+", " ", str(value or "").strip().lower())
-
-
-def _slugify(value: str) -> str:
-    slug = re.sub(r"[^a-z0-9]+", "_", _normalize_text(value))
-    slug = slug.strip("_")
-    return slug or "query"
-
-
-def _latest_feedback_labels(query: str, project_scope: Optional[str] = None) -> Dict[Tuple[str, int], dict]:
-    """Return latest feedback label per (pdf_file_name, page_number) for query/scope."""
-    query_key = _normalize_text(query)
-    scope_key = _normalize_text(project_scope)
-
-    latest: Dict[Tuple[str, int], dict] = {}
-    for item in _read_feedback_records(limit=None):
-        if _normalize_text(item.get("query")) != query_key:
-            continue
-
-        item_scope = _normalize_text(item.get("project_scope"))
-        if scope_key and item_scope and item_scope != scope_key:
-            continue
-
-        file_name = str(item.get("pdf_file_name", "")).strip()
-        page_number = item.get("page_number")
-        label = str(item.get("feedback", "")).strip().lower()
-
-        if not file_name or page_number is None:
-            continue
-
-        try:
-            page_number = int(page_number)
-        except Exception:
-            continue
-
-        latest[(file_name, page_number)] = {
-            "feedback": label,
-            "timestamp": item.get("timestamp"),
-            "note": item.get("note"),
-        }
-
-    return latest
-
-
-def _build_feedback_pages_pdf(
-    query: str,
-    project_scope: Optional[str],
-    accepted_labels: set,
-    empty_detail: str,
-    output_prefix: str,
-):
-    """Build a merged PDF for pages whose latest feedback is in accepted_labels."""
-    latest = _latest_feedback_labels(query=query, project_scope=project_scope)
-    selected_pages = sorted(
-        [
-            (file_name, page_number)
-            for (file_name, page_number), meta in latest.items()
-            if meta.get("feedback") in accepted_labels
-        ],
-        key=lambda x: (x[0].lower(), x[1]),
-    )
-
-    if not selected_pages:
-        raise HTTPException(status_code=404, detail=empty_detail)
-
-    merged = fitz.open()
-    added = 0
-
-    try:
-        for file_name, page_number in selected_pages:
-            try:
-                pdf_path = storage.get_pdf_temp_path(file_name)
-                src = fitz.open(pdf_path)
-                try:
-                    if 1 <= page_number <= len(src):
-                        merged.insert_pdf(src, from_page=page_number - 1, to_page=page_number - 1)
-                        added += 1
-                finally:
-                    src.close()
-            except Exception:
-                continue
-
-        if added == 0:
-            raise HTTPException(status_code=404, detail="No valid pages could be exported")
-
-        output = BytesIO(merged.tobytes())
-        output.seek(0)
-    finally:
-        merged.close()
-
-    filename = f"{output_prefix}_{_slugify(query)}.pdf"
-    headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
-    return StreamingResponse(output, media_type="application/pdf", headers=headers)
 
 
 @app.on_event("startup")
 async def startup_event():
     """Initialize search components on startup."""
-    global search_agent, vector_store, metadata_manager, analysis_engine
+    global search_agent, vector_store, metadata_manager
     
     # Sync vector database from cloud storage in production
     storage.sync_vector_db_from_cloud()
@@ -193,8 +58,7 @@ async def startup_event():
     vector_store = VectorStore()
     vector_store.initialize_vectorstore()
     metadata_manager = MetadataManager()
-    analysis_engine = AnalysisEngine()
-    print("[OK] Librarian API initialized successfully")
+    print("✓ Librarian API initialized successfully")
 
 
 # Request/Response Models
@@ -292,8 +156,6 @@ class SearchResponse(BaseModel):
     results: List[SearchResult] = Field(..., description="Detailed search results ranked by relevance")
     project_summaries: List[ProjectSummary] = Field(..., description="Summary by project")
     search_summary: str = Field(..., description="AI-generated summary of findings")
-    detail_results: List[Dict] = Field(default_factory=list, description="Detail-level search results from graphs")
-    total_details_found: int = Field(default=0, description="Number of matching details found")
     timestamp: str = Field(..., description="Search timestamp (ISO format)")
     
     class Config:
@@ -305,8 +167,6 @@ class SearchResponse(BaseModel):
                 "results": [],
                 "project_summaries": [],
                 "search_summary": "Found steel shear key details in Mar Vista project...",
-                "detail_results": [],
-                "total_details_found": 0,
                 "timestamp": "2026-05-10T22:00:00Z"
             }
         }
@@ -316,65 +176,6 @@ class TerminologyFeedbackRequest(BaseModel):
     """User-confirmed terminology mapping request."""
     acronym: str = Field(..., description="Acronym to learn, e.g., LOTB")
     expansion: str = Field(..., description="Expanded phrase, e.g., log of test boring")
-
-
-class SearchResultFeedbackRequest(BaseModel):
-    """Engineer feedback for a specific search result."""
-    query: str = Field(..., description="Original user query")
-    pdf_file_name: str = Field(..., description="Matched PDF file name")
-    page_number: int = Field(..., ge=1, description="Matched page number")
-    feedback: str = Field(..., description="Feedback label: relevant, irrelevant, or best")
-    note: Optional[str] = Field(default=None, description="Optional reason/comment")
-    project_scope: Optional[str] = Field(default=None, description="Optional project scope used during search")
-
-
-class SearchFeedbackStatsResponse(BaseModel):
-    total_feedback: int
-    by_feedback: dict
-    top_queries: List[dict]
-
-
-class AnalyzeRequest(BaseModel):
-    """Request model for analysis-style multi-evidence answers."""
-    query: str = Field(..., description="Question or task to analyze")
-    k: int = Field(default=40, ge=5, le=100, description="Initial retrieval depth before analysis")
-    relevance_threshold: Optional[float] = Field(
-        default=None,
-        ge=0.0,
-        le=2.0,
-        description="Optional score threshold offset from best result"
-    )
-    project_scope: Optional[str] = Field(default=None, description="Optional project/file scope")
-    use_hybrid_search: bool = Field(default=True, description="Use hybrid retrieval (vector + keyword)")
-
-
-class AnalysisEvidence(BaseModel):
-    pdf_file_name: str
-    project_name: str
-    page_number: int
-    relevance_score: float
-    semantic_match_score: float
-    component_matches: List[str]
-    snippet: str
-    why_matched: str
-
-
-class InferredIntent(BaseModel):
-    query: str
-    intent_types: Dict[str, bool]
-    structural_components: List[str]
-    normalized: str
-
-
-class AnalyzeResponse(BaseModel):
-    query: str
-    answer: str
-    inferred_intent: InferredIntent
-    intent_confidence: float
-    semantic_evidence: List[AnalysisEvidence]
-    terminology_variants: Dict[str, List[str]]
-    search_summary: Optional[str] = None
-    timestamp: str
 
 
 # API Endpoints
@@ -485,108 +286,6 @@ async def terminology_learned():
         "total_terms": len(terms),
         "terms": terms,
     }
-
-
-@app.post("/feedback/search-result", tags=["Feedback"])
-async def submit_search_result_feedback(request: SearchResultFeedbackRequest):
-    """Save engineer feedback for a retrieved page result."""
-    allowed = {"relevant", "irrelevant", "best"}
-    label = request.feedback.strip().lower()
-    if label not in allowed:
-        raise HTTPException(status_code=400, detail=f"feedback must be one of: {sorted(allowed)}")
-
-    record = {
-        "timestamp": datetime.utcnow().isoformat(),
-        "query": request.query.strip(),
-        "project_scope": (request.project_scope or "").strip() or None,
-        "pdf_file_name": request.pdf_file_name.strip(),
-        "page_number": request.page_number,
-        "feedback": label,
-        "note": (request.note or "").strip() or None,
-    }
-    _append_feedback_record(record)
-    return {"status": "ok", "saved": record}
-
-
-@app.get("/feedback/search-result", tags=["Feedback"])
-async def list_search_result_feedback(limit: int = Query(default=200, ge=1, le=5000)):
-    """List recent search-result feedback entries."""
-    items = _read_feedback_records(limit=limit)
-    return {"count": len(items), "items": items}
-
-
-@app.get("/feedback/stats", response_model=SearchFeedbackStatsResponse, tags=["Feedback"])
-async def search_feedback_stats(limit: int = Query(default=2000, ge=1, le=100000)):
-    """Return aggregate feedback stats for evaluation and tuning."""
-    items = _read_feedback_records(limit=limit)
-    feedback_counter = Counter(item.get("feedback", "unknown") for item in items)
-    query_counter = Counter(item.get("query", "") for item in items if item.get("query"))
-
-    top_queries = [
-        {"query": q, "count": c}
-        for q, c in query_counter.most_common(20)
-    ]
-
-    return SearchFeedbackStatsResponse(
-        total_feedback=len(items),
-        by_feedback=dict(feedback_counter),
-        top_queries=top_queries,
-    )
-
-
-@app.get("/feedback/labels", tags=["Feedback"])
-async def latest_feedback_labels(
-    query: str = Query(..., description="Search query to resolve latest labels for"),
-    project_scope: Optional[str] = Query(default=None, description="Optional project scope used during search"),
-):
-    """Get latest feedback label per page for a query/scope."""
-    latest = _latest_feedback_labels(query=query, project_scope=project_scope)
-    items = [
-        {
-            "pdf_file_name": file_name,
-            "page_number": page_number,
-            "feedback": meta.get("feedback"),
-            "timestamp": meta.get("timestamp"),
-            "note": meta.get("note"),
-        }
-        for (file_name, page_number), meta in sorted(latest.items(), key=lambda x: (x[0][0].lower(), x[0][1]))
-    ]
-    return {
-        "count": len(items),
-        "query": query,
-        "project_scope": project_scope,
-        "items": items,
-    }
-
-
-@app.get("/feedback/export/best-pdf", tags=["Feedback"])
-async def export_best_feedback_pdf(
-    query: str = Query(..., description="Search query used to collect feedback"),
-    project_scope: Optional[str] = Query(default=None, description="Optional project scope used during search"),
-):
-    """Download merged PDF containing pages currently labeled as 'best'."""
-    return _build_feedback_pages_pdf(
-        query=query,
-        project_scope=project_scope,
-        accepted_labels={"best"},
-        empty_detail="No pages labeled 'best' for this query/scope",
-        output_prefix="best_pages",
-    )
-
-
-@app.get("/feedback/export/relevant-best-pdf", tags=["Feedback"])
-async def export_relevant_best_feedback_pdf(
-    query: str = Query(..., description="Search query used to collect feedback"),
-    project_scope: Optional[str] = Query(default=None, description="Optional project scope used during search"),
-):
-    """Download merged PDF containing pages labeled as 'relevant' or 'best'."""
-    return _build_feedback_pages_pdf(
-        query=query,
-        project_scope=project_scope,
-        accepted_labels={"best", "relevant"},
-        empty_detail="No pages labeled 'relevant' or 'best' for this query/scope",
-        output_prefix="relevant_best_pages",
-    )
 
 
 @app.post("/search", response_model=SearchResponse, tags=["Search"])
@@ -742,8 +441,6 @@ async def search(request: SearchRequest):
             results=results,
             project_summaries=project_summaries,
             search_summary=search_results.get('summary', 'No summary available'),
-            detail_results=search_results.get('detail_results', []),
-            total_details_found=search_results.get('total_details_found', 0),
             timestamp=datetime.utcnow().isoformat()
         )
         
@@ -751,58 +448,6 @@ async def search(request: SearchRequest):
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
-
-
-@app.post("/analyze", response_model=AnalyzeResponse, tags=["Analysis"])
-async def analyze(request: AnalyzeRequest):
-    """
-    Analyze a structural question with semantic query understanding.
-
-    This endpoint performs semantic analysis to:
-    - Infer what the user is really asking for (intent extraction)
-    - Find structural components and terminology synonyms
-    - Rank results by semantic relevance to the inferred intent
-    - Explain why each result matches the query
-    """
-    if not search_agent or not analysis_engine:
-        raise HTTPException(status_code=503, detail="Analysis components not initialized")
-
-    try:
-        search_response = await search(
-            SearchRequest(
-                query=request.query,
-                k=request.k,
-                relevance_threshold=request.relevance_threshold,
-                project_scope=request.project_scope,
-                generate_summary=True,
-                use_hybrid_search=request.use_hybrid_search,
-            )
-        )
-
-        normalized_results = [item.model_dump() for item in search_response.results]
-        analysis = analysis_engine.build_analysis(
-            query=request.query,
-            normalized_results=normalized_results,
-            search_summary=search_response.search_summary,
-        )
-
-        inferred_intent = analysis["inferred_intent"]
-        semantic_evidence_data = analysis["semantic_evidence"]
-
-        return AnalyzeResponse(
-            query=request.query,
-            answer=analysis["answer"],
-            inferred_intent=InferredIntent(**inferred_intent),
-            intent_confidence=analysis["intent_confidence"],
-            semantic_evidence=[AnalysisEvidence(**ev) for ev in semantic_evidence_data],
-            terminology_variants=analysis["terminology_variants"],
-            search_summary=analysis.get("search_summary"),
-            timestamp=datetime.utcnow().isoformat(),
-        )
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 
 @app.get("/projects", tags=["Projects"])
@@ -897,7 +542,7 @@ async def list_categories():
 async def get_pdf_page_image(
     file_name: str,
     page_number: int,
-    size: str = Query(default="medium", pattern="^(thumbnail|medium|full)$")
+    size: str = Query(default="medium", regex="^(thumbnail|medium|full)$")
 ):
     """
     Render a specific PDF page as a PNG image.
@@ -954,9 +599,9 @@ if __name__ == "__main__":
     print("STRUCTURAL ENGINEERING LIBRARIAN API")
     print("="*80)
     print("\nStarting API server...")
-    print("[DOC] API Documentation: http://localhost:8000/docs")
-    print("[SCHEMA] OpenAPI Schema: http://localhost:8000/openapi.json")
-    print("[SEARCH] Try searching: POST http://localhost:8000/search")
+    print("📖 API Documentation: http://localhost:8000/docs")
+    print("📋 OpenAPI Schema: http://localhost:8000/openapi.json")
+    print("🔍 Try searching: POST http://localhost:8000/search")
     print("\nPress CTRL+C to stop the server")
     print("="*80 + "\n")
     

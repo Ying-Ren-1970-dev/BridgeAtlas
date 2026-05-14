@@ -234,11 +234,8 @@ class PDFProcessor:
         """Return True when file matches configured project patterns for section-aware chunking."""
         if not file_name:
             return False
-        patterns = config.SECTION_AWARE_CHUNKING_PROJECT_PATTERNS
-        if any(pattern in {"all", "*"} for pattern in patterns):
-            return True
         file_name_lower = file_name.lower()
-        return any(pattern in file_name_lower for pattern in patterns)
+        return any(pattern in file_name_lower for pattern in config.SECTION_AWARE_CHUNKING_PROJECT_PATTERNS)
 
     def _split_structural_sections(self, text: str) -> List[str]:
         """Split vision-rich content into engineering sections while preserving semantics."""
@@ -287,7 +284,7 @@ class PDFProcessor:
         chunk_size = config.CHUNK_SIZE
         overlap = config.CHUNK_OVERLAP
 
-        # Keep full-page chunk + section-aware chunks to preserve drawing semantics.
+        # Mar Vista pilot: keep full-page chunk + section-aware chunks to preserve drawing semantics.
         if self._is_section_aware_project(file_name):
             chunk_id = 0
             page_text = text.strip()

@@ -9,7 +9,6 @@ from langchain_chroma import Chroma
 
 import config
 from enriched_metadata_loader import EnrichedMetadataLoader
-from classification_training import SearchClassificationTrainer
 
 
 class VectorStore:
@@ -24,7 +23,6 @@ class VectorStore:
         
         self.vector_db_path = str(config.VECTOR_DB_PATH)
         self.collection_name = "librarian_documents"
-        self.classification_trainer = SearchClassificationTrainer()
         
         self.vectorstore = None
     
@@ -86,16 +84,6 @@ class VectorStore:
             file_name = pdf_data['file_name']
             file_path = pdf_data['file_path']
             pdf_metadata = pdf_data['metadata']
-
-            project_context = " | ".join(
-                [
-                    str(file_name),
-                    str(pdf_metadata.get('project_name', '')),
-                    str(pdf_metadata.get('phase', '')),
-                    str(pdf_metadata.get('engineer_of_record', '')),
-                ]
-            )
-            project_level_labels = self.classification_trainer.classify_project(project_context)
             
             # Load enriched metadata for this PDF
             enriched_metadata = EnrichedMetadataLoader.load_enriched_metadata(file_name)
@@ -132,48 +120,6 @@ class VectorStore:
                     enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
                     if enriched_text:
                         chunk_text = f"{chunk_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
-
-                page_context = " | ".join(
-                    [
-                        str(chunk_metadata.get('plan_sheet_title', '')),
-                        str(chunk_metadata.get('page_type', '')),
-                        str(chunk_metadata.get('plan_sheet_type', '')),
-                        str(chunk_metadata.get('detail_types', '')),
-                        str(chunk_metadata.get('structural_elements', '')),
-                    ]
-                )
-                page_level_labels = self.classification_trainer.classify_page(page_context)
-                detail_classification = self.classification_trainer.classify_detail(chunk_text)
-
-                if not project_level_labels:
-                    project_level_labels = ["Unclassified > project"]
-                if not page_level_labels:
-                    page_level_labels = ["Unclassified > page"]
-                if not detail_classification.labels:
-                    detail_classification.labels = ["Unclassified > detail"]
-
-                if not project_level_labels:
-                    project_level_labels = ["Unclassified > project"]
-                if not page_level_labels:
-                    page_level_labels = ["Unclassified > page"]
-                if not detail_classification.labels:
-                    detail_classification.labels = ["Unclassified > detail"]
-
-                chunk_metadata['index_level'] = 'detail_chunk'
-                chunk_metadata['project_level_labels'] = ', '.join(project_level_labels)
-                chunk_metadata['page_level_labels'] = ', '.join(page_level_labels)
-                chunk_metadata['detail_level_labels'] = ', '.join(detail_classification.labels)
-                chunk_metadata['referenced_sheet_ids'] = ', '.join(detail_classification.referenced_sheet_ids)
-                chunk_metadata['referenced_detail_ids'] = ', '.join(detail_classification.referenced_detail_ids)
-                chunk_metadata['classification_training_source'] = str(self.classification_trainer.training_file)
-
-                if project_level_labels or page_level_labels or detail_classification.labels:
-                    chunk_text = (
-                        f"{chunk_text}\n\n[INDEX CLASSIFICATION]\n"
-                        f"Project-level: {', '.join(project_level_labels)}\n"
-                        f"Page-level: {', '.join(page_level_labels)}\n"
-                        f"Detail-level: {', '.join(detail_classification.labels)}"
-                    )
                 
                 texts.append(chunk_text)
                 metadatas.append(chunk_metadata)
@@ -492,7 +438,10 @@ class VectorStore:
                 zip(results['ids'], results['documents'], results['metadatas'])
             ):
                 page_num = doc_metadata.get('page')
-                already_enriched = "[ENRICHED METADATA]" in doc_text
+                
+                # Check if text already has enrichment (skip if already enriched)
+                if "[ENRICHED METADATA]" in doc_text:
+                    continue
                 
                 # Create updated metadata dict
                 updated_metadata = doc_metadata.copy()
@@ -508,68 +457,16 @@ class VectorStore:
                     
                     # Append searchable text from enriched metadata
                     enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
-                    if enriched_text and not already_enriched:
+                    if enriched_text:
                         updated_text = f"{doc_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
                         enriched_count += 1
-
-                project_context = " | ".join(
-                    [
-                        str(updated_metadata.get('file_name', file_name)),
-                        str(updated_metadata.get('project_name', '')),
-                        str(updated_metadata.get('phase', '')),
-                        str(updated_metadata.get('engineer_of_record', '')),
-                    ]
-                )
-                page_context = " | ".join(
-                    [
-                        str(updated_metadata.get('plan_sheet_title', '')),
-                        str(updated_metadata.get('page_type', '')),
-                        str(updated_metadata.get('plan_sheet_type', '')),
-                        str(updated_metadata.get('detail_types', '')),
-                        str(updated_metadata.get('structural_elements', '')),
-                    ]
-                )
-
-                project_level_labels = self.classification_trainer.classify_project(project_context)
-                page_level_labels = self.classification_trainer.classify_page(page_context)
-                detail_classification = self.classification_trainer.classify_detail(updated_text)
-
-                if not project_level_labels:
-                    project_level_labels = ["Unclassified > project"]
-                if not page_level_labels:
-                    page_level_labels = ["Unclassified > page"]
-                if not detail_classification.labels:
-                    detail_classification.labels = ["Unclassified > detail"]
-
-                if not project_level_labels:
-                    project_level_labels = ["Unclassified > project"]
-                if not page_level_labels:
-                    page_level_labels = ["Unclassified > page"]
-                if not detail_classification.labels:
-                    detail_classification.labels = ["Unclassified > detail"]
-
-                updated_metadata['index_level'] = 'detail_chunk'
-                updated_metadata['project_level_labels'] = ', '.join(project_level_labels)
-                updated_metadata['page_level_labels'] = ', '.join(page_level_labels)
-                updated_metadata['detail_level_labels'] = ', '.join(detail_classification.labels)
-                updated_metadata['referenced_sheet_ids'] = ', '.join(detail_classification.referenced_sheet_ids)
-                updated_metadata['referenced_detail_ids'] = ', '.join(detail_classification.referenced_detail_ids)
-                updated_metadata['classification_training_source'] = str(self.classification_trainer.training_file)
-
-                if "[INDEX CLASSIFICATION]" not in updated_text:
-                    updated_text = (
-                        f"{updated_text}\n\n[INDEX CLASSIFICATION]\n"
-                        f"Project-level: {', '.join(project_level_labels)}\n"
-                        f"Page-level: {', '.join(page_level_labels)}\n"
-                        f"Detail-level: {', '.join(detail_classification.labels)}"
-                    )
                 
                 updated_texts.append(updated_text)
                 updated_metadatas.append(updated_metadata)
                 ids_to_update.append(doc_id)
             
             if not ids_to_update:
-                print(f"  No chunks found to update")
+                print(f"  All chunks already enriched or no matching pages")
                 return 0
             
             # Delete old documents

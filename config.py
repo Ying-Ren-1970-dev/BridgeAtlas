@@ -44,7 +44,7 @@ MAX_PAGES_PER_PDF = int(os.getenv("MAX_PAGES_PER_PDF", 500))
 
 # Chunking Strategy
 SECTION_AWARE_CHUNKING_PROJECT_PATTERNS = [
-    p.strip().lower() for p in os.getenv("SECTION_AWARE_CHUNKING_PROJECT_PATTERNS", "all").split(",") if p.strip()
+    p.strip().lower() for p in os.getenv("SECTION_AWARE_CHUNKING_PROJECT_PATTERNS", "mar vista").split(",") if p.strip()
 ]
 
 # Structural Engineering Categories
