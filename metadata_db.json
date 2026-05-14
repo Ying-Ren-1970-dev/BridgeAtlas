@@ -31,20 +31,6 @@
       "total_pages": 11,
       "indexed_at": "2026-05-12T19:11:52.074064"
     },
-    "Alta Mesa Type Selection Report.pdf": {
-      "file_name": "Alta Mesa Type Selection Report.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Alta Mesa Type Selection Report.pdf",
-      "project_name": "Alta Mesa Type Selection Report",
-      "phase": "Preliminary",
-      "engineer_of_record": "[DRAWING ANALYSIS]",
-      "date": null,
-      "categories": [
-        "Bridges",
-        "Structural Analysis"
-      ],
-      "total_pages": 105,
-      "indexed_at": "2026-05-12T19:14:41.988587"
-    },
     "Austin Rd OH - Plans - Final Submittal_.pdf": {
       "file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
       "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Austin Rd OH - Plans - Final Submittal_.pdf",
@@ -168,5 +154,5 @@
       "indexed_at": "2026-05-14T11:29:33.270000"
     }
   },
-  "last_updated": "2026-05-14T11:29:33.270021"
+  "last_updated": "2026-05-14T13:43:53.944197"
 }

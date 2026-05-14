@@ -379,6 +379,57 @@
             margin-top: 10px;
         }
 
+        .feedback-actions {
+            width: 100%;
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .feedback-btn {
+            border: 1px solid var(--border);
+            background: #203346;
+            color: var(--text-secondary);
+            border-radius: 12px;
+            padding: 4px 8px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .feedback-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .feedback-btn.selected-best {
+            background: #245f44;
+            border-color: #39c07f;
+            color: #dff8ec;
+        }
+
+        .feedback-btn.selected-relevant {
+            background: #2a425a;
+            border-color: var(--accent);
+            color: #d9e9fb;
+        }
+
+        .feedback-btn.selected-irrelevant {
+            background: #5c2d2d;
+            border-color: #e57373;
+            color: #ffe4e4;
+        }
+
+        .feedback-status {
+            margin-top: 6px;
+            min-height: 14px;
+            font-size: 11px;
+            color: #9cc6f2;
+            text-align: center;
+        }
+
         .thumbnail-score {
             position: absolute;
             top: 8px;
@@ -800,7 +851,9 @@
                     <div class="summary-stats">
                         <div class="stat-badge" id="totalResults">0 Results</div>
                         <div class="stat-badge" id="totalPages">0 Pages</div>
-                        <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Search Summary</button>
+                        <button id="downloadBestPdfBtn" onclick="downloadBestPdf()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #2b6cb0; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#255c98'" onmouseout="this.style.background='#2b6cb0'">📄 Download Best Sheets PDF</button>
+                        <button id="downloadRelevantBestPdfBtn" onclick="downloadRelevantBestPdf()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #7a4ab4; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#6a3ea0'" onmouseout="this.style.background='#7a4ab4'">📚 Download Relevant + Best PDF</button>
+                        <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Non-Irrelevant Spreadsheet</button>
                     </div>
                 </div>
 
@@ -878,8 +931,7 @@
             try {
                 const requestBody = {
                     query: query,
-                    k: 20,
-                    project_scope: 'mar vista'
+                    k: 20
                 };
 
                 if (selectedRelevance !== 'auto') {
@@ -914,6 +966,8 @@
             if (data.total_results === 0) {
                 showNoResults(data.query);
                 document.getElementById('downloadBtn').style.display = 'none';
+                document.getElementById('downloadBestPdfBtn').style.display = 'none';
+                document.getElementById('downloadRelevantBestPdfBtn').style.display = 'none';
                 return;
             }
 
@@ -923,6 +977,8 @@
             
             // Show download button
             document.getElementById('downloadBtn').style.display = 'inline-block';
+            document.getElementById('downloadBestPdfBtn').style.display = 'inline-block';
+            document.getElementById('downloadRelevantBestPdfBtn').style.display = 'inline-block';
 
             // Update summary
             document.getElementById('searchQuery').textContent = `"${data.query}"`;
@@ -1025,6 +1081,7 @@
         }
 
         function createThumbnailItem(result, query) {
+            const encodedFileName = encodeURIComponent(result.pdf_file_name);
             return `
                 <div class="thumbnail-item" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
                     <div class="thumbnail-wrapper">
@@ -1033,8 +1090,71 @@
                              onerror="this.style.display='none'">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                    <div class="feedback-actions" onclick="event.stopPropagation()">
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'best')">Best</button>
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'relevant')">Relevant</button>
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'irrelevant')">Irrelevant</button>
+                    </div>
+                    <div class="feedback-status"></div>
                 </div>
             `;
+        }
+
+        async function submitResultFeedback(event, buttonEl, encodedFileName, pageNumber, label) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const query = (currentSearchQuery || '').trim();
+            if (!query) {
+                return;
+            }
+
+            const fileName = decodeURIComponent(encodedFileName);
+            const statusEl = buttonEl.closest('.thumbnail-item').querySelector('.feedback-status');
+            const actionsEl = buttonEl.closest('.feedback-actions');
+            const buttons = actionsEl.querySelectorAll('.feedback-btn');
+
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('selected-best', 'selected-relevant', 'selected-irrelevant');
+            });
+
+            if (statusEl) {
+                statusEl.textContent = 'Saving feedback...';
+            }
+
+            try {
+                const resp = await fetch(`${API_URL}/feedback/search-result`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query,
+                        project_scope: ACTIVE_PROJECT_SCOPE,
+                        pdf_file_name: fileName,
+                        page_number: pageNumber,
+                        feedback: label,
+                    }),
+                });
+
+                if (!resp.ok) {
+                    throw new Error(`API error: ${resp.status}`);
+                }
+
+                buttonEl.classList.add(`selected-${label}`);
+                if (statusEl) {
+                    statusEl.textContent = `Saved: ${label}`;
+                }
+            } catch (err) {
+                if (statusEl) {
+                    statusEl.textContent = `Failed to save (${err.message})`;
+                }
+            } finally {
+                buttons.forEach(btn => {
+                    btn.disabled = false;
+                });
+            }
         }
 
         function createResultCard(result, query) {
@@ -1136,17 +1256,94 @@
         }
 
         // Download spreadsheet function
-        function downloadSpreadsheet() {
+        async function getLatestFeedbackMap(query) {
+            const url = `${API_URL}/feedback/labels?query=${encodeURIComponent(query)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+            const response = await fetch(url, { method: 'GET' });
+            if (!response.ok) {
+                throw new Error(`Feedback API error: ${response.status}`);
+            }
+            const data = await response.json();
+            const map = new Map();
+            (data.items || []).forEach(item => {
+                const key = `${item.pdf_file_name}::${item.page_number}`;
+                map.set(key, item.feedback || '');
+            });
+            return map;
+        }
+
+        async function downloadBestPdf() {
+            if (!currentSearchQuery) {
+                alert('Run a search first');
+                return;
+            }
+
+            const btn = document.getElementById('downloadBestPdfBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Preparing PDF...';
+            btn.disabled = true;
+
+            try {
+                const url = `${API_URL}/feedback/export/best-pdf?query=${encodeURIComponent(currentSearchQuery)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+                const response = await fetch(url, { method: 'GET' });
+                if (!response.ok) {
+                    const detail = await response.text();
+                    throw new Error(detail || `API error: ${response.status}`);
+                }
+
+                const blob = await response.blob();
+                const link = document.createElement('a');
+                const objectUrl = URL.createObjectURL(blob);
+                const timestamp = new Date().toISOString().slice(0, 10);
+                const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                link.href = objectUrl;
+                link.download = `best_sheets_${querySlug}_${timestamp}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(objectUrl);
+
+                btn.innerHTML = '✓ Downloaded PDF';
+            } catch (error) {
+                console.error('Best PDF download error:', error);
+                alert('No Best pages available yet for this query/scope. Mark some pages as Best first.');
+                btn.innerHTML = 'No Best Pages Yet';
+            } finally {
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 1800);
+            }
+        }
+
+        async function downloadSpreadsheet() {
             if (!currentSearchResults || currentSearchResults.length === 0) {
                 alert('No search results to download');
                 return;
             }
 
+            let feedbackMap = new Map();
+            try {
+                feedbackMap = await getLatestFeedbackMap(currentSearchQuery);
+            } catch (error) {
+                console.warn('Failed to fetch feedback labels, continuing without exclusions:', error);
+            }
+
+            const filteredResults = currentSearchResults.filter(result => {
+                const key = `${result.pdf_file_name}::${result.page_number}`;
+                const label = (feedbackMap.get(key) || '').toLowerCase();
+                return label !== 'irrelevant';
+            });
+
+            if (filteredResults.length === 0) {
+                alert('All current results are marked Irrelevant. Nothing to export.');
+                return;
+            }
+
             // Create CSV content with 3 columns (sheet_title empty for now)
-            let csvContent = 'Project Name,Page Number,Sheet Title\n';
+            let csvContent = 'Project Name,Page Number,Sheet Title,Feedback Label\n';
             
             // Sort results by project name and page number
-            const sortedResults = [...currentSearchResults].sort((a, b) => {
+            const sortedResults = [...filteredResults].sort((a, b) => {
                 if (a.project_name !== b.project_name) {
                     return a.project_name.localeCompare(b.project_name);
                 }
@@ -1158,7 +1355,9 @@
                 // Escape quotes in project name
                 const projectName = result.project_name.replace(/"/g, '""');
                 const sheetTitle = ''; // Will be populated when API is updated
-                csvContent += `"${projectName}",${result.page_number},"${sheetTitle}"\n`;
+                const key = `${result.pdf_file_name}::${result.page_number}`;
+                const label = feedbackMap.get(key) || 'unlabeled';
+                csvContent += `"${projectName}",${result.page_number},"${sheetTitle}","${label}"\n`;
             });
 
             // Create blob and download
@@ -1169,7 +1368,7 @@
             // Create filename with query and timestamp
             const timestamp = new Date().toISOString().slice(0, 10);
             const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-            const filename = `search_results_${querySlug}_${timestamp}.csv`;
+            const filename = `search_results_non_irrelevant_${querySlug}_${timestamp}.csv`;
             
             link.setAttribute('href', url);
             link.setAttribute('download', filename);
@@ -1188,6 +1387,50 @@
                 downloadBtn.innerHTML = originalText;
                 downloadBtn.style.background = '#4caf50';
             }, 2000);
+        }
+
+        async function downloadRelevantBestPdf() {
+            if (!currentSearchQuery) {
+                alert('Run a search first');
+                return;
+            }
+
+            const btn = document.getElementById('downloadRelevantBestPdfBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Preparing PDF...';
+            btn.disabled = true;
+
+            try {
+                const url = `${API_URL}/feedback/export/relevant-best-pdf?query=${encodeURIComponent(currentSearchQuery)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+                const response = await fetch(url, { method: 'GET' });
+                if (!response.ok) {
+                    const detail = await response.text();
+                    throw new Error(detail || `API error: ${response.status}`);
+                }
+
+                const blob = await response.blob();
+                const link = document.createElement('a');
+                const objectUrl = URL.createObjectURL(blob);
+                const timestamp = new Date().toISOString().slice(0, 10);
+                const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                link.href = objectUrl;
+                link.download = `relevant_best_sheets_${querySlug}_${timestamp}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(objectUrl);
+
+                btn.innerHTML = '✓ Downloaded PDF';
+            } catch (error) {
+                console.error('Relevant+Best PDF download error:', error);
+                alert('No Relevant or Best pages available yet for this query/scope. Label some pages first.');
+                btn.innerHTML = 'No Labeled Pages Yet';
+            } finally {
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 1800);
+            }
         }
 
         // Modal functions

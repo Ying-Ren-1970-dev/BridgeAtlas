@@ -4,6 +4,9 @@ from collections import defaultdict
 from collections import Counter
 import math
 import re
+import json
+import os
+import logging
 from openai import OpenAI
 from langchain_core.documents import Document
 
@@ -11,6 +14,8 @@ import config
 from vector_store import VectorStore
 from metadata_manager import MetadataManager
 from engineering_terminology import expand_query
+
+logger = logging.getLogger(__name__)
 
 
 class SearchAgent:
@@ -138,6 +143,11 @@ class SearchAgent:
                 for doc, score in search_results
                 if self._doc_contains_query_token(doc, strict_token)
             ]
+
+        # Apply engineer-in-the-loop feedback boosts/penalties for this exact query/scope.
+        feedback_adjustments = self._load_feedback_adjustments(query, project_scope)
+        if feedback_adjustments:
+            search_results = self._apply_feedback_adjustments(search_results, feedback_adjustments)
         
         # Organize results by project
         projects_data = self._organize_results_by_project(search_results)
@@ -264,6 +274,168 @@ class SearchAgent:
             ]
         ).lower()
         return bool(re.search(pattern, metadata_blob))
+
+    def _feedback_store_path(self) -> str:
+        return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback.jsonl")
+
+    def _normalize_scope(self, value: Optional[str]) -> str:
+        return re.sub(r"\s+", " ", str(value or "").strip().lower())
+
+    def _get_query_tokens(self, query: str) -> Set[str]:
+        """Extract significant tokens from normalized query (length >= 3)."""
+        normalized = self._normalize_query_text(query)
+        # Remove common stop words and extract tokens >= 3 chars
+        stop_words = {"and", "the", "for", "with", "all", "are", "one", "two", "pin"}
+        tokens = set()
+        for token in normalized.split():
+            if len(token) >= 3 and token not in stop_words:
+                tokens.add(token)
+        return tokens
+
+    def _find_similar_queries_in_feedback(self, query: str, project_scope: Optional[str]) -> Dict[str, float]:
+        """
+        Find queries in feedback store that are similar to the given query.
+        Returns dict of {normalized_query: similarity_score (0.0-1.0)}.
+        Similarity is based on token overlap (at least 2 significant tokens).
+        """
+        path = self._feedback_store_path()
+        if not os.path.exists(path):
+            return {}
+
+        query_tokens = self._get_query_tokens(query)
+        if not query_tokens:
+            return {}
+
+        similar_queries: Dict[str, float] = {}
+
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except Exception:
+                        continue
+
+                    # Feedback is GLOBAL - applies across all projects
+                    # Feedback from one project (e.g., Mar Vista) helps searches in any project (e.g., 25th Ave)
+                    # This maximizes the value of collected feedback
+
+                    record_query = str(record.get("query", ""))
+                    normalized_record_query = self._normalize_query_text(record_query)
+                    
+                    # Skip if it's the exact same query (already handled by exact match)
+                    if normalized_record_query == self._normalize_query_text(query):
+                        continue
+
+                    record_tokens = self._get_query_tokens(record_query)
+                    if not record_tokens:
+                        continue
+
+                    # Calculate token overlap: at least 2 tokens in common
+                    overlap = len(query_tokens & record_tokens)
+                    if overlap >= 2:
+                        # Similarity: Jaccard index (intersection / union)
+                        similarity = overlap / len(query_tokens | record_tokens)
+                        similar_queries[normalized_record_query] = max(
+                            similar_queries.get(normalized_record_query, 0.0),
+                            similarity,
+                        )
+        except Exception:
+            return {}
+
+        return similar_queries
+
+    def _load_feedback_adjustments(self, query: str, project_scope: Optional[str]) -> Dict[tuple, float]:
+        """
+        Load page-level score adjustments from recorded engineer feedback.
+        Includes both exact query matches and generalized feedback from similar queries.
+        Generalized feedback is weighted at 0.5x to avoid over-correction.
+        Feedback is GLOBAL - applies across all projects regardless of project_scope.
+        """
+        path = self._feedback_store_path()
+        if not os.path.exists(path):
+            return {}
+
+        query_key = self._normalize_query_text(query)
+        adjustments: Dict[tuple, float] = defaultdict(float)
+
+        label_delta = {
+            "best": -0.35,
+            "relevant": -0.20,
+            "irrelevant": 0.35,
+        }
+
+        # Collect feedback records by normalized query and weight
+        feedback_sources = {query_key: 1.0}  # Exact match has full weight
+        similar_queries = self._find_similar_queries_in_feedback(query, project_scope)
+        for sim_query, similarity_score in similar_queries.items():
+            feedback_sources[sim_query] = 0.5 * similarity_score  # Generalized feedback weighted by similarity
+        
+        if similar_queries:
+            logger.info(
+                f"Feedback generalization for '{query}': "
+                f"found {len(similar_queries)} similar queries with token overlap"
+            )
+
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except Exception:
+                        continue
+
+                    record_query = self._normalize_query_text(str(record.get("query", "")))
+                    if record_query not in feedback_sources:
+                        continue
+
+                    # Feedback is GLOBAL - skip scope filtering to allow cross-project learning
+
+                    file_name = str(record.get("pdf_file_name", "")).strip()
+                    page_number = record.get("page_number")
+                    label = str(record.get("feedback", "")).strip().lower()
+                    if not file_name or page_number is None or label not in label_delta:
+                        continue
+
+                    try:
+                        page_number = int(page_number)
+                    except Exception:
+                        continue
+
+                    key = (file_name, page_number)
+                    weight = feedback_sources[record_query]
+                    adjustments[key] += weight * label_delta[label]
+        except Exception:
+            return {}
+
+        # Clip extreme effects from repeated labels.
+        for key in list(adjustments.keys()):
+            adjustments[key] = max(-1.0, min(1.0, adjustments[key]))
+
+        return dict(adjustments)
+
+    def _apply_feedback_adjustments(self, search_results: List[tuple], adjustments: Dict[tuple, float]) -> List[tuple]:
+        """Apply page-level distance adjustments (lower is better)."""
+        rescored = []
+        for doc, score in search_results:
+            file_name = str(doc.metadata.get("file_name", "")).strip()
+            page_number = doc.metadata.get("page")
+            try:
+                page_number = int(page_number)
+            except Exception:
+                page_number = None
+
+            delta = adjustments.get((file_name, page_number), 0.0)
+            rescored.append((doc, max(0.0, score + delta)))
+
+        rescored.sort(key=lambda x: x[1])
+        return rescored
 
     def _keyword_search_bm25(self, query: str, candidates: List[Dict], top_k: int) -> List[tuple]:
         """Rank candidates with a local BM25-style scorer (no external API calls)."""
