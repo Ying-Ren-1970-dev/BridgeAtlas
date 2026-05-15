@@ -70,6 +70,8 @@ class SearchAgent:
                 "box girder",
                 "pipe pin",
                 "shear key",
+                "truss bridge",
+                "steel truss",
                 "abutment footing",
                 "general plan",
                 "rebar detail",
@@ -142,6 +144,55 @@ class SearchAgent:
                 (doc, score)
                 for doc, score in search_results
                 if self._doc_contains_query_token(doc, strict_token)
+            ]
+
+        # Precision guardrails: apply intent-aware lexical checks with synonym variants
+        # so behavior applies across related queries, not just one exact phrase.
+        query_token_set = set(query_tokens)
+        intent_rules = [
+            {
+                "name": "truss_bridge",
+                "trigger_groups": [["truss"], ["bridge", "bridges"]],
+                "required_groups": [["truss"], ["bridge", "bridges"]],
+            },
+            {
+                "name": "shear_key",
+                "trigger_groups": [["shear key", "steel shear key", "pipe pin"]],
+                "required_groups": [["shear key", "steel shear key", "pipe pin"]],
+            },
+            {
+                "name": "box_girder",
+                "trigger_groups": [["box girder", "r/c box girder", "concrete box girder"]],
+                "required_groups": [["box girder", "r/c box girder", "concrete box girder"]],
+            },
+            {
+                "name": "cidh_foundation",
+                "trigger_groups": [
+                    ["cidh", "cast drilled hole", "drilled shaft"],
+                    ["pile", "piles", "shaft", "shafts"],
+                ],
+                "required_groups": [
+                    ["cidh", "cast drilled hole", "drilled shaft"],
+                    ["pile", "piles", "shaft", "shafts"],
+                ],
+            },
+        ]
+
+        for rule in intent_rules:
+            is_triggered = all(
+                any(self._query_matches_variant(query_token_set, variant) for variant in group)
+                for group in rule["trigger_groups"]
+            )
+            if not is_triggered:
+                continue
+
+            search_results = [
+                (doc, score)
+                for doc, score in search_results
+                if all(
+                    any(self._doc_matches_variant(doc, variant) for variant in group)
+                    for group in rule["required_groups"]
+                )
             ]
 
         # Apply engineer-in-the-loop feedback boosts/penalties for this exact query/scope.
@@ -275,6 +326,20 @@ class SearchAgent:
         ).lower()
         return bool(re.search(pattern, metadata_blob))
 
+    def _query_matches_variant(self, query_tokens: Set[str], variant: str) -> bool:
+        """Return True if all tokens from variant text are present in query token set."""
+        variant_tokens = self._tokenize_for_keyword_search(variant)
+        if not variant_tokens:
+            return False
+        return all(token in query_tokens for token in variant_tokens)
+
+    def _doc_matches_variant(self, doc: Document, variant: str) -> bool:
+        """Return True if all tokens from variant text are present in doc text/metadata."""
+        variant_tokens = self._tokenize_for_keyword_search(variant)
+        if not variant_tokens:
+            return False
+        return all(self._doc_contains_query_token(doc, token) for token in variant_tokens)
+
     def _feedback_store_path(self) -> str:
         return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback.jsonl")
 
@@ -320,13 +385,10 @@ class SearchAgent:
                         continue
 
                     # Feedback is GLOBAL - applies across all projects
-                    # Feedback from one project (e.g., Mar Vista) helps searches in any project (e.g., 25th Ave)
-                    # This maximizes the value of collected feedback
-
                     record_query = str(record.get("query", ""))
                     normalized_record_query = self._normalize_query_text(record_query)
-                    
-                    # Skip if it's the exact same query (already handled by exact match)
+
+                    # Skip exact match query (already handled with full weight)
                     if normalized_record_query == self._normalize_query_text(query):
                         continue
 
@@ -334,10 +396,8 @@ class SearchAgent:
                     if not record_tokens:
                         continue
 
-                    # Calculate token overlap: at least 2 tokens in common
                     overlap = len(query_tokens & record_tokens)
                     if overlap >= 2:
-                        # Similarity: Jaccard index (intersection / union)
                         similarity = overlap / len(query_tokens | record_tokens)
                         similar_queries[normalized_record_query] = max(
                             similar_queries.get(normalized_record_query, 0.0),
@@ -351,9 +411,8 @@ class SearchAgent:
     def _load_feedback_adjustments(self, query: str, project_scope: Optional[str]) -> Dict[tuple, float]:
         """
         Load page-level score adjustments from recorded engineer feedback.
-        Includes both exact query matches and generalized feedback from similar queries.
-        Generalized feedback is weighted at 0.5x to avoid over-correction.
-        Feedback is GLOBAL - applies across all projects regardless of project_scope.
+        Includes exact query matches and generalized feedback from similar queries.
+        Feedback is GLOBAL across projects; project_scope is kept for compatibility.
         """
         path = self._feedback_store_path()
         if not os.path.exists(path):
@@ -368,12 +427,11 @@ class SearchAgent:
             "irrelevant": 0.35,
         }
 
-        # Collect feedback records by normalized query and weight
-        feedback_sources = {query_key: 1.0}  # Exact match has full weight
+        feedback_sources = {query_key: 1.0}
         similar_queries = self._find_similar_queries_in_feedback(query, project_scope)
         for sim_query, similarity_score in similar_queries.items():
-            feedback_sources[sim_query] = 0.5 * similarity_score  # Generalized feedback weighted by similarity
-        
+            feedback_sources[sim_query] = 0.5 * similarity_score
+
         if similar_queries:
             logger.info(
                 f"Feedback generalization for '{query}': "
@@ -395,8 +453,6 @@ class SearchAgent:
                     if record_query not in feedback_sources:
                         continue
 
-                    # Feedback is GLOBAL - skip scope filtering to allow cross-project learning
-
                     file_name = str(record.get("pdf_file_name", "")).strip()
                     page_number = record.get("page_number")
                     label = str(record.get("feedback", "")).strip().lower()
@@ -414,7 +470,6 @@ class SearchAgent:
         except Exception:
             return {}
 
-        # Clip extreme effects from repeated labels.
         for key in list(adjustments.keys()):
             adjustments[key] = max(-1.0, min(1.0, adjustments[key]))
 

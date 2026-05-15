@@ -22,6 +22,7 @@ from metadata_manager import MetadataManager
 from storage_adapter import storage
 from engineering_terminology import EngineeringTerminology
 import config
+from analysis_engine import AnalysisEngine
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -47,6 +48,7 @@ app.add_middleware(
 search_agent = None
 vector_store = None
 metadata_manager = None
+analysis_engine = None
 
 # Feedback storage
 FEEDBACK_DIR = os.path.join(os.path.dirname(__file__), "data", "feedback")
@@ -182,7 +184,7 @@ def _build_feedback_pages_pdf(
 @app.on_event("startup")
 async def startup_event():
     """Initialize search components on startup."""
-    global search_agent, vector_store, metadata_manager
+    global search_agent, vector_store, metadata_manager, analysis_engine
     
     # Sync vector database from cloud storage in production
     storage.sync_vector_db_from_cloud()
@@ -191,6 +193,7 @@ async def startup_event():
     vector_store = VectorStore()
     vector_store.initialize_vectorstore()
     metadata_manager = MetadataManager()
+    analysis_engine = AnalysisEngine()
     print("[OK] Librarian API initialized successfully")
 
 
@@ -325,6 +328,49 @@ class SearchFeedbackStatsResponse(BaseModel):
     total_feedback: int
     by_feedback: dict
     top_queries: List[dict]
+
+
+class AnalyzeRequest(BaseModel):
+    """Request model for analysis-style multi-evidence answers."""
+    query: str = Field(..., description="Question or task to analyze")
+    k: int = Field(default=40, ge=5, le=100, description="Initial retrieval depth before analysis")
+    relevance_threshold: Optional[float] = Field(
+        default=None,
+        ge=0.0,
+        le=2.0,
+        description="Optional score threshold offset from best result"
+    )
+    project_scope: Optional[str] = Field(default=None, description="Optional project/file scope")
+    use_hybrid_search: bool = Field(default=True, description="Use hybrid retrieval (vector + keyword)")
+
+
+class AnalysisEvidence(BaseModel):
+    pdf_file_name: str
+    project_name: str
+    page_number: int
+    relevance_score: float
+    semantic_match_score: float
+    component_matches: List[str]
+    snippet: str
+    why_matched: str
+
+
+class InferredIntent(BaseModel):
+    query: str
+    intent_types: Dict[str, bool]
+    structural_components: List[str]
+    normalized: str
+
+
+class AnalyzeResponse(BaseModel):
+    query: str
+    answer: str
+    inferred_intent: InferredIntent
+    intent_confidence: float
+    semantic_evidence: List[AnalysisEvidence]
+    terminology_variants: Dict[str, List[str]]
+    search_summary: Optional[str] = None
+    timestamp: str
 
 
 # API Endpoints
@@ -699,6 +745,58 @@ async def search(request: SearchRequest):
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Search failed: {str(e)}")
+
+
+@app.post("/analyze", response_model=AnalyzeResponse, tags=["Analysis"])
+async def analyze(request: AnalyzeRequest):
+    """
+    Analyze a structural question with semantic query understanding.
+
+    This endpoint performs semantic analysis to:
+    - Infer what the user is really asking for (intent extraction)
+    - Find structural components and terminology synonyms
+    - Rank results by semantic relevance to the inferred intent
+    - Explain why each result matches the query
+    """
+    if not search_agent or not analysis_engine:
+        raise HTTPException(status_code=503, detail="Analysis components not initialized")
+
+    try:
+        search_response = await search(
+            SearchRequest(
+                query=request.query,
+                k=request.k,
+                relevance_threshold=request.relevance_threshold,
+                project_scope=request.project_scope,
+                generate_summary=True,
+                use_hybrid_search=request.use_hybrid_search,
+            )
+        )
+
+        normalized_results = [item.model_dump() for item in search_response.results]
+        analysis = analysis_engine.build_analysis(
+            query=request.query,
+            normalized_results=normalized_results,
+            search_summary=search_response.search_summary,
+        )
+
+        inferred_intent = analysis["inferred_intent"]
+        semantic_evidence_data = analysis["semantic_evidence"]
+
+        return AnalyzeResponse(
+            query=request.query,
+            answer=analysis["answer"],
+            inferred_intent=InferredIntent(**inferred_intent),
+            intent_confidence=analysis["intent_confidence"],
+            semantic_evidence=[AnalysisEvidence(**ev) for ev in semantic_evidence_data],
+            terminology_variants=analysis["terminology_variants"],
+            search_summary=analysis.get("search_summary"),
+            timestamp=datetime.utcnow().isoformat(),
+        )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 
 @app.get("/projects", tags=["Projects"])

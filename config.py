@@ -17,7 +17,7 @@ GENERATE_SEARCH_SUMMARY = os.getenv("GENERATE_SEARCH_SUMMARY", "false").lower() 
 ENABLE_HYBRID_SEARCH = os.getenv("ENABLE_HYBRID_SEARCH", "true").lower() == "true"
 HYBRID_KEYWORD_CANDIDATE_LIMIT = int(os.getenv("HYBRID_KEYWORD_CANDIDATE_LIMIT", 4000))
 HYBRID_RRF_K = int(os.getenv("HYBRID_RRF_K", 60))
-HYBRID_DEFAULT_RELEVANCE_THRESHOLD = float(os.getenv("HYBRID_DEFAULT_RELEVANCE_THRESHOLD", 2.0))
+HYBRID_DEFAULT_RELEVANCE_THRESHOLD = float(os.getenv("HYBRID_DEFAULT_RELEVANCE_THRESHOLD", 1.0))
 VECTOR_DEFAULT_RELEVANCE_THRESHOLD = float(os.getenv("VECTOR_DEFAULT_RELEVANCE_THRESHOLD", 0.5))
 
 # Cloud Storage Configuration (for GCP deployment)
@@ -44,7 +44,7 @@ MAX_PAGES_PER_PDF = int(os.getenv("MAX_PAGES_PER_PDF", 500))
 
 # Chunking Strategy
 SECTION_AWARE_CHUNKING_PROJECT_PATTERNS = [
-    p.strip().lower() for p in os.getenv("SECTION_AWARE_CHUNKING_PROJECT_PATTERNS", "mar vista").split(",") if p.strip()
+    p.strip().lower() for p in os.getenv("SECTION_AWARE_CHUNKING_PROJECT_PATTERNS", "all").split(",") if p.strip()
 ]
 
 # Structural Engineering Categories

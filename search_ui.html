@@ -113,29 +113,52 @@
             box-shadow: 0 0 0 2px rgba(97, 165, 255, 0.5);
         }
 
-        #searchBtn {
-            padding: 16px 32px;
-            font-size: 17px;
+        #searchBtn,
+        #analyzeBtn {
+            padding: 14px 24px;
+            font-size: 14px;
             font-weight: 700;
-            background: linear-gradient(90deg, var(--accent-strong) 0%, var(--accent) 100%);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
             color: #ffffff;
-            border: none;
-            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 12px;
             cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 2px 10px rgba(20, 52, 86, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
             font-family: 'Roboto Mono', 'Consolas', monospace;
+            backdrop-filter: blur(2px);
+        }
+
+        #searchBtn {
+            background: linear-gradient(135deg, #2e7be8 0%, #61a5ff 100%);
+            box-shadow: 0 6px 16px rgba(18, 62, 112, 0.35);
+        }
+
+        #analyzeBtn {
+            background: linear-gradient(135deg, #1f7a55 0%, #3ebf84 100%);
+            box-shadow: 0 6px 16px rgba(14, 66, 47, 0.32);
+        }
+
+        #searchBtn:hover:not(:disabled),
+        #analyzeBtn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
         }
 
         #searchBtn:hover:not(:disabled) {
-            transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 24px rgba(17, 43, 72, 0.55);
-            background: linear-gradient(90deg, var(--accent) 0%, var(--accent-strong) 100%);
+            box-shadow: 0 10px 26px rgba(18, 62, 112, 0.48);
         }
 
-        #searchBtn:disabled {
-            opacity: 0.6;
+        #analyzeBtn:hover:not(:disabled) {
+            box-shadow: 0 10px 26px rgba(14, 66, 47, 0.42);
+        }
+
+        #searchBtn:disabled,
+        #analyzeBtn:disabled {
+            opacity: 0.58;
             cursor: not-allowed;
+            transform: none;
+            filter: none;
         }
 
         .quick-searches {
@@ -244,6 +267,84 @@
             display: none;
         }
 
+        .analysis-container {
+            display: none;
+            background: #232f3e;
+            border-radius: 15px;
+            padding: 22px;
+            box-shadow: 0 5px 20px #0a1017;
+            margin-bottom: 20px;
+            border: 1.5px solid #2e3c4f;
+            color: #e0e6ed;
+        }
+
+        .analysis-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .analysis-title {
+            font-size: 1.35em;
+            color: #89b6e6;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
+        }
+
+        .confidence-badge {
+            background: #1f7a55;
+            color: #e9fff4;
+            padding: 7px 12px;
+            border-radius: 14px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .analysis-card {
+            background: #1f3142;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px;
+            margin-top: 12px;
+        }
+
+        .analysis-card h4 {
+            color: #9cc6f2;
+            margin-bottom: 8px;
+        }
+
+        .analysis-list {
+            margin: 0;
+            padding-left: 18px;
+            color: #c4d5e6;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .analysis-list li {
+            margin-bottom: 6px;
+        }
+
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            color: #dce8f3;
+        }
+
+        .analysis-table th,
+        .analysis-table td {
+            border-bottom: 1px solid #35506a;
+            padding: 7px 8px;
+            text-align: left;
+        }
+
+        .analysis-table th {
+            color: #98c4ef;
+        }
+
         .results-summary {
             background: #232f3e;
             border-radius: 15px;
@@ -258,6 +359,21 @@
             font-size: 1.5em;
             color: #4e6a89;
             font-family: 'Roboto Mono', 'Consolas', monospace;
+        }
+
+        .summary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .summary-stats {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .stat-badge {
@@ -326,6 +442,28 @@
         .results-grid {
             display: grid;
             gap: 20px;
+        }
+
+        .project-section-header {
+            background: linear-gradient(135deg, #263a4f 0%, #1f3142 100%);
+            color: var(--text-primary);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        }
+
+        .project-section-title {
+            margin: 0;
+            font-size: 1.3em;
+            color: #cfe3f7;
+        }
+
+        .project-section-subtitle {
+            margin: 5px 0 0 0;
+            color: #a8bfd6;
+            font-size: 0.9em;
         }
 
         .thumbnail-grid {
@@ -749,6 +887,10 @@
                 align-items: start;
             }
 
+            .summary-stats {
+                width: 100%;
+            }
+
             .page-number {
                 font-size: 1.5em;
             }
@@ -784,11 +926,14 @@
                 <textarea 
                     id="searchInput" 
                     rows="5"
-                    placeholder="Search for structural elements, details, or keywords..."
+                    placeholder="Search for Caltrans isolated shear key for project dated 2020 and later..."
                     autocomplete="off"
                 ></textarea>
                 <button id="searchBtn" onclick="performSearch()">
-                    GO
+                    RUN QUERY
+                </button>
+                <button id="analyzeBtn" onclick="performAnalysis()">
+                    ANALYZE
                 </button>
             </div>
             <div class="quick-searches">
@@ -828,7 +973,7 @@
                     </div>
                 </div>
                 <div class="relevance-help">
-                    "Adaptive" uses backend defaults (hybrid=2.0, vector-only=0.5). Pick a fixed mode only if you need manual control.
+                    "Adaptive" uses backend defaults (hybrid=1.0, vector-only=0.5). Pick a fixed mode only if you need manual control.
                 </div>
             </div>
         </div>
@@ -842,6 +987,30 @@
         <!-- Error Message -->
         <div id="errorMessage" class="error-message" style="display: none;"></div>
 
+        <!-- Analysis Container -->
+        <div id="analysisContainer" class="analysis-container">
+            <div class="analysis-header">
+                <div class="analysis-title" id="analysisTitle">Analysis</div>
+                <div class="confidence-badge" id="analysisConfidence">Intent Confidence: --</div>
+            </div>
+            <div class="analysis-card">
+                <h4>Query Interpretation</h4>
+                <div id="analysisAnswer" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Inferred Intent</h4>
+                <div id="analysisIntent" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Related Terminology</h4>
+                <div id="analysisTerminology" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Semantic Evidence (Top 10)</h4>
+                <div id="analysisEvidence"></div>
+            </div>
+        </div>
+
         <!-- Results Container -->
         <div id="resultsContainer" class="results-container">
             <!-- Results Summary -->
@@ -849,8 +1018,7 @@
                 <div class="summary-header">
                     <div class="summary-title" id="searchQuery"></div>
                     <div class="summary-stats">
-                        <div class="stat-badge" id="totalResults">0 Results</div>
-                        <div class="stat-badge" id="totalPages">0 Pages</div>
+                        <div class="stat-badge" id="summaryCounts">0 Projects • 0 Pages</div>
                         <button id="downloadBestPdfBtn" onclick="downloadBestPdf()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #2b6cb0; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#255c98'" onmouseout="this.style.background='#2b6cb0'">📄 Download Best Sheets PDF</button>
                         <button id="downloadRelevantBestPdfBtn" onclick="downloadRelevantBestPdf()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #7a4ab4; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#6a3ea0'" onmouseout="this.style.background='#7a4ab4'">📚 Download Relevant + Best PDF</button>
                         <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Non-Irrelevant Spreadsheet</button>
@@ -893,12 +1061,14 @@
         const API_URL = IS_LOCAL_HOST
             ? 'http://localhost:8000'
             : 'https://librarian-716133050580.us-central1.run.app';
+        // Optional scope used by feedback/export endpoints. Empty means global scope.
+        const ACTIVE_PROJECT_SCOPE = '';
         
         // Store current search results for download
         let currentSearchResults = null;
         let currentSearchQuery = '';
 
-        // Enter triggers search; Shift+Enter allows newline in the chat-style input.
+        // Enter always runs RUN QUERY (performSearch); Shift+Enter inserts a newline.
         document.getElementById('searchInput').addEventListener('keydown', function(e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
@@ -909,6 +1079,15 @@
         function quickSearch(query) {
             document.getElementById('searchInput').value = query;
             performSearch();
+        }
+
+        function escapeHtml(value) {
+            return String(value || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
         }
 
         async function performSearch() {
@@ -925,8 +1104,10 @@
             // Show loading, hide results and errors
             document.getElementById('loading').style.display = 'block';
             document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('analysisContainer').style.display = 'none';
             document.getElementById('errorMessage').style.display = 'none';
             document.getElementById('searchBtn').disabled = true;
+            document.getElementById('analyzeBtn').disabled = true;
 
             try {
                 const requestBody = {
@@ -959,7 +1140,122 @@
             } finally {
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('searchBtn').disabled = false;
+                document.getElementById('analyzeBtn').disabled = false;
             }
+        }
+
+        async function performAnalysis() {
+            const query = document.getElementById('searchInput').value.trim();
+
+            if (!query) {
+                alert('Please enter a query to analyze');
+                return;
+            }
+
+            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('analysisContainer').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('searchBtn').disabled = true;
+            document.getElementById('analyzeBtn').disabled = true;
+
+            try {
+                const requestBody = {
+                    query: query,
+                    k: 40,
+                    use_hybrid_search: true
+                };
+
+                if (selectedRelevance !== 'auto') {
+                    requestBody.relevance_threshold = parseFloat(selectedRelevance);
+                }
+
+                const response = await fetch(`${API_URL}/analyze`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                displayAnalysis(data);
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError(`Failed to perform analysis: ${error.message}. If deployed API is older, redeploy backend with /analyze.`);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('searchBtn').disabled = false;
+                document.getElementById('analyzeBtn').disabled = false;
+            }
+        }
+
+        function displayAnalysis(data) {
+            document.getElementById('analysisTitle').textContent = `Analysis: "${data.query}"`;
+            document.getElementById('analysisConfidence').textContent = `Intent Confidence: ${(Number(data.intent_confidence || 0) * 100).toFixed(1)}%`;
+            document.getElementById('analysisAnswer').textContent = data.answer || 'No interpretation generated';
+
+            // Display inferred intent
+            const intent = data.inferred_intent || {};
+            const intentTypes = intent.intent_types || {};
+            const components = intent.structural_components || [];
+            
+            let intentHtml = '<div style="margin: 10px 0;">';
+            if (Object.keys(intentTypes).length > 0) {
+                intentHtml += '<p><strong>What you\'re asking for:</strong> ' + Object.keys(intentTypes).join(', ') + '</p>';
+            }
+            if (components.length > 0) {
+                intentHtml += '<p><strong>Related to:</strong> ' + components.join(', ') + '</p>';
+            }
+            if (Object.keys(intentTypes).length === 0 && components.length === 0) {
+                intentHtml += '<p style="color: #9fb8d0;">Inferred intent will appear here</p>';
+            }
+            intentHtml += '</div>';
+            document.getElementById('analysisIntent').innerHTML = intentHtml;
+
+            // Display terminology variants
+            const variants = data.terminology_variants || {};
+            let termHtml = '<div style="margin: 10px 0;">';
+            if (Object.keys(variants).length > 0) {
+                termHtml += Object.entries(variants).map(([term, synonyms]) => 
+                    `<p><strong>${escapeHtml(term)}:</strong> ${synonyms.map(s => escapeHtml(s)).join(', ')}</p>`
+                ).join('');
+            } else {
+                termHtml += '<p style="color: #9fb8d0;">No terminology variants found</p>';
+            }
+            termHtml += '</div>';
+            document.getElementById('analysisTerminology').innerHTML = termHtml;
+
+            // Display semantic evidence
+            const evidence = (data.semantic_evidence || []).slice(0, 10);
+            if (evidence.length) {
+                const evidenceHtml = evidence.map((ev, idx) => `
+                    <div style="border-left: 4px solid #61a5ff; padding: 12px; margin: 12px 0; background: #1f3142; border-radius: 4px;">
+                        <p style="margin: 0 0 8px 0; color: #61a5ff; font-weight: 600;">${idx + 1}. ${escapeHtml(ev.pdf_file_name)} • Page ${Number(ev.page_number)}</p>
+                        <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #b7c7d7;">Project: ${escapeHtml(ev.project_name)}</p>
+                        ${ev.component_matches.length > 0 ? `<p style="margin: 0 0 8px 0; font-size: 0.95em; color: #a0d995;">Structural: ${ev.component_matches.join(', ')}</p>` : ''}
+                        <p style="margin: 0 0 8px 0; font-size: 0.95em;">
+                            <span style="color: #9fb8d0;">Semantic Match:</span> ${(Number(ev.semantic_match_score) * 100).toFixed(0)}% | 
+                            <span style="color: #9fb8d0;">Relevance:</span> ${Number(ev.relevance_score).toFixed(2)}
+                        </p>
+                        <p style="margin: 0 0 8px 0; font-size: 0.9em; color: #dbe8f4; font-style: italic;">${escapeHtml(ev.why_matched)}</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #a8bcc8; line-height: 1.5;">${escapeHtml(ev.snippet.substring(0, 300))}${ev.snippet.length > 300 ? '...' : ''}</p>
+                    </div>
+                `).join('');
+                document.getElementById('analysisEvidence').innerHTML = evidenceHtml;
+            } else {
+                document.getElementById('analysisEvidence').innerHTML = '<div style="color:#9fb8d0">No semantic evidence found.</div>';
+            }
+
+            document.getElementById('analysisContainer').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('analysisContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 80);
         }
 
         function displayResults(data) {
@@ -982,11 +1278,11 @@
 
             // Update summary
             document.getElementById('searchQuery').textContent = `"${data.query}"`;
-            document.getElementById('totalResults').textContent = `${data.total_results} Results`;
             
-            // Get unique pages
+            // Get unique pages and projects
             const uniquePages = [...new Set(data.results.map(r => r.page_number))];
-            document.getElementById('totalPages').textContent = `${uniquePages.length} Pages`;
+            const uniqueProjects = [...new Set(data.results.map(r => r.pdf_file_name || r.project_name || 'Unknown Project'))];
+            document.getElementById('summaryCounts').textContent = `${uniqueProjects.length} Projects • ${uniquePages.length} Pages`;
 
             // Group results by project
             const projectGroups = {};
@@ -1058,9 +1354,9 @@
             Object.values(projectGroups).forEach(project => {
                 resultsHTML += `
                     <div class="project-section" style="margin-bottom: 40px;">
-                        <div class="project-section-header" style="background: linear-gradient(90deg, var(--accent-strong) 0%, var(--accent) 100%); color: white; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
-                            <h2 style="margin: 0; font-size: 1.3em;">📄 ${project.name}</h2>
-                            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">${project.results.length} results from this project</p>
+                        <div class="project-section-header">
+                            <h2 class="project-section-title">📄 ${project.name}</h2>
+                            <p class="project-section-subtitle">${project.results.length} results from this project</p>
                         </div>
                         <div class="thumbnail-grid">
                             ${project.results.map(result => createThumbnailItem(result, data.query)).join('')}
@@ -1131,7 +1427,7 @@
                     },
                     body: JSON.stringify({
                         query,
-                        project_scope: ACTIVE_PROJECT_SCOPE,
+                        project_scope: ACTIVE_PROJECT_SCOPE || null,
                         pdf_file_name: fileName,
                         page_number: pageNumber,
                         feedback: label,
@@ -1257,7 +1553,8 @@
 
         // Download spreadsheet function
         async function getLatestFeedbackMap(query) {
-            const url = `${API_URL}/feedback/labels?query=${encodeURIComponent(query)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+            const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+            const url = `${API_URL}/feedback/labels?query=${encodeURIComponent(query)}${scopeParam}`;
             const response = await fetch(url, { method: 'GET' });
             if (!response.ok) {
                 throw new Error(`Feedback API error: ${response.status}`);
@@ -1283,7 +1580,8 @@
             btn.disabled = true;
 
             try {
-                const url = `${API_URL}/feedback/export/best-pdf?query=${encodeURIComponent(currentSearchQuery)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+                const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+                const url = `${API_URL}/feedback/export/best-pdf?query=${encodeURIComponent(currentSearchQuery)}${scopeParam}`;
                 const response = await fetch(url, { method: 'GET' });
                 if (!response.ok) {
                     const detail = await response.text();
@@ -1401,7 +1699,8 @@
             btn.disabled = true;
 
             try {
-                const url = `${API_URL}/feedback/export/relevant-best-pdf?query=${encodeURIComponent(currentSearchQuery)}&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}`;
+                const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+                const url = `${API_URL}/feedback/export/relevant-best-pdf?query=${encodeURIComponent(currentSearchQuery)}${scopeParam}`;
                 const response = await fetch(url, { method: 'GET' });
                 if (!response.ok) {
                     const detail = await response.text();
