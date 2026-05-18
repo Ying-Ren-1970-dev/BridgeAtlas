@@ -16,9 +16,9 @@
       "plan_type": {
         "primary_type": "General Plan",
         "sheet_title": "GENERAL PLAN",
-        "sheet_number": "1",
+        "sheet_number": "8",
         "scale": "1\" = 10'",
-        "revision": null,
+        "revision": "4",
         "date": "12-15-22"
       },
       "plan_contents": {
@@ -32,14 +32,13 @@
           "ground anchors"
         ],
         "detail_types": [
-          "mirrored elevation",
-          "typical section"
+          "Typical Section - SHGA Wall",
+          "Typical Section - Type 7B (MOD) Wall"
         ],
         "grid_references": [
-          "RW LOL 9+91.08",
-          "RW LOL 11+55.08",
-          "A 214+00",
-          "A 215+00"
+          "RW LOL",
+          "A' 214+00",
+          "A' 215+00"
         ]
       }
     },
@@ -53,15 +52,15 @@
       "project_info": {
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
         "project_number": "08-0K4202",
-        "client": "CITY OF TEMECULA",
-        "location": "41000 MAIN STREET, TEMECULA, CA 92590",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "2121 ALTON PARKWAY, SUITE 210 IRVINE, CA 92606",
         "engineer_on_record": "YING REN",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2019",
         "other_info": null
       },
       "plan_type": {
-        "primary_type": "Index to Plans",
+        "primary_type": "General Plan",
         "sheet_title": "INDEX TO PLANS",
         "sheet_number": "2",
         "scale": "NO SCALE",
@@ -72,17 +71,17 @@
         "has_tables": true,
         "has_diagrams": true,
         "structural_elements": [
-          "retaining wall",
-          "ground anchor",
-          "structure excavation",
-          "structure backfill"
+          "wall",
+          "ground anchor"
         ],
         "detail_types": [
-          "general notes",
-          "benchmarks",
-          "quantities"
+          "SHGA WALL",
+          "RW TYPE 7B (MOD) WALL"
         ],
-        "grid_references": null
+        "grid_references": [
+          "P477",
+          "BILL"
+        ]
       }
     },
     "page_number": 2,
@@ -117,14 +116,14 @@
           "wall",
           "abutment",
           "gutter",
-          "SHGA wall",
-          "footing"
+          "ground anchor"
         ],
         "detail_types": [
           "elevation",
           "plan"
         ],
         "grid_references": [
+          "RW LOL 9+91.08",
           "10+00",
           "10+50"
         ]
@@ -141,18 +140,18 @@
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
         "project_number": "08-0Q2004",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "IRVINE, CA 92606",
+        "location": "2121 ALTON PARKWAY, SUITE 210 IRVINE, CA 92606 CITY OF TEMECULA 41000 MAIN STREET TEMECULA, CA 92590",
         "engineer_on_record": "YING REN",
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2013",
+        "project_year": null,
         "other_info": null
       },
       "plan_type": {
         "primary_type": "Structure Plan",
         "sheet_title": "STRUCTURE PLAN No. 2",
-        "sheet_number": "4 of 11",
+        "sheet_number": "4",
         "scale": "1/4\" = 1'-0\"",
-        "revision": null,
+        "revision": "0",
         "date": "12-13-12"
       },
       "plan_contents": {
@@ -161,6 +160,8 @@
         "structural_elements": [
           "wall",
           "gutter",
+          "expansion joint",
+          "weep hole",
           "footing"
         ],
         "detail_types": [
@@ -178,13 +179,13 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
         "project_number": "08-0K4202",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "TEMECULA, CA 92590",
+        "location": "RIV 15 3.4/5.0",
         "engineer_on_record": "YING REN",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2019",
@@ -196,7 +197,7 @@
         "sheet_number": "51",
         "scale": "3/4\" = 1'-0\"",
         "revision": null,
-        "date": "12-31-19"
+        "date": "12-13-19"
       },
       "plan_contents": {
         "has_tables": true,
@@ -210,7 +211,9 @@
         "detail_types": [
           "Typical Section-Type 7B (Modified)"
         ],
-        "grid_references": null
+        "grid_references": [
+          "B9-6"
+        ]
       }
     },
     "page_number": 5,
@@ -224,11 +227,11 @@
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
         "project_number": "08-1K420",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "RIV 15 3.4/5.0",
+        "location": "RIVERSIDE COUNTY",
         "engineer_on_record": "Y. REN",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2019",
-        "other_info": "CONTRACT NO.: 08-1K4202"
+        "other_info": "PROJECT NUMBER & PHASE: 0820020074"
       },
       "plan_type": {
         "primary_type": "Retaining Wall Details",
@@ -236,7 +239,7 @@
         "sheet_number": "6",
         "scale": "3/4\" = 1'-0\"",
         "revision": null,
-        "date": "12-13-18"
+        "date": "1/30/2019"
       },
       "plan_contents": {
         "has_tables": false,
@@ -277,9 +280,9 @@
       "plan_type": {
         "primary_type": "Special Details",
         "sheet_title": "SUB HORIZONTAL GROUND ANCHOR DETAILS",
-        "sheet_number": "x512-040",
+        "sheet_number": "x812-040",
         "scale": null,
-        "revision": null,
+        "revision": "0",
         "date": "July 2014"
       },
       "plan_contents": {
@@ -289,8 +292,8 @@
           "ground anchor",
           "tendon",
           "steel tube",
-          "bearing",
-          "sheathing"
+          "sheathing",
+          "bearing plate"
         ],
         "detail_types": [
           "Ground Anchor Tendon Detail (Strands)",
@@ -312,18 +315,18 @@
         "project_number": "08-1K4202",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "IRVINE, CA 92606",
-        "engineer_on_record": "YING REN",
+        "engineer_on_record": "Y. REN",
         "engineering_firm": "MARK THOMAS",
         "project_year": null,
-        "other_info": "100% SUBMITTAL"
+        "other_info": "PROJECT NUMBER & PHASE: 08E020074"
       },
       "plan_type": {
         "primary_type": "Wall Drainage Details",
         "sheet_title": "WALL DRAINAGE DETAILS",
         "sheet_number": "8",
         "scale": "1/4\" = 1'-0\"",
-        "revision": "R1",
-        "date": "12-13-19"
+        "revision": "RIV 15",
+        "date": null
       },
       "plan_contents": {
         "has_tables": false,
@@ -331,13 +334,16 @@
         "structural_elements": [
           "wall",
           "drain",
-          "pipe"
+          "pipe",
+          "coupler",
+          "geocomposite drain"
         ],
         "detail_types": [
-          "WALL DRAIN DETAIL AT WEEPHOLE OPTION A",
-          "WALL DRAIN DETAIL AT WEEPHOLE OPTION B",
-          "PART RETAINING WALL ELEVATION",
-          "SECTION B-B"
+          "Wall Drain Detail at Weep Hole Option A",
+          "Wall Drain Detail at Weep Hole Option B",
+          "Part Retaining Wall Elevation",
+          "Section B-B",
+          "View A-A"
         ],
         "grid_references": []
       }
@@ -351,31 +357,30 @@
     "title_block": {
       "project_info": {
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
-        "project_number": null,
+        "project_number": "08-1K4902",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "CITY OF TEMECULA",
+        "location": "TEMECULA, CA",
         "engineer_on_record": "YING REN",
         "engineering_firm": "MARK THOMAS",
-        "project_year": null,
-        "other_info": "BRIDGE NO.: 56C0210"
+        "project_year": "2023",
+        "other_info": "PROJECT NUMBER & PHASE: 0820002074"
       },
       "plan_type": {
         "primary_type": "Architectural Treatment Detail",
         "sheet_title": "ARCHITECTURAL TREATMENT DETAIL",
-        "sheet_number": "9",
+        "sheet_number": "93",
         "scale": "1/8\" = 1'-0\"",
         "revision": null,
-        "date": null
+        "date": "4/22/2022"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "wall",
-          "barrier"
+          "wall"
         ],
         "detail_types": [
-          "elevation"
+          "Elevation"
         ],
         "grid_references": []
       }
@@ -385,20 +390,20 @@
   },
   {
     "page_type": "plan",
-    "confidence": 1.0,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "SANTIAGO ROAD OC RETAINING WALL",
         "project_number": "08-000204",
-        "client": null,
-        "location": "CITY OF TEMECULA",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "CITY OF TEMECULA, TEMECULA CA 92590",
         "engineer_on_record": "A. THURAIRAJAH, GE",
         "engineering_firm": "EARTH MECHANICS, INC.",
         "project_year": "2020",
-        "other_info": "UNIT 1"
+        "other_info": null
       },
       "plan_type": {
-        "primary_type": "Log of Test Borings",
+        "primary_type": "LOG OF TEST BORINGS",
         "sheet_title": "LOG OF TEST BORINGS 1 OF 2",
         "sheet_number": "56-XXXX",
         "scale": "1\"=20'",
@@ -409,11 +414,16 @@
         "has_tables": true,
         "has_diagrams": true,
         "structural_elements": [
-          "borings",
-          "elevation"
+          "borehole"
         ],
-        "detail_types": [],
-        "grid_references": []
+        "detail_types": [
+          "borehole location table"
+        ],
+        "grid_references": [
+          "A-20-001",
+          "A-20-002",
+          "A-20-003"
+        ]
       }
     },
     "page_number": 10,
@@ -436,9 +446,9 @@
       "plan_type": {
         "primary_type": "Log of Test Borings",
         "sheet_title": "LOG OF TEST BORINGS 2 OF 2",
-        "sheet_number": "X",
-        "scale": "1\" = 10'",
-        "revision": null,
+        "sheet_number": "56-654",
+        "scale": "1\"=10'",
+        "revision": "X",
         "date": null
       },
       "plan_contents": {

@@ -1,7 +1,7 @@
 [
   {
     "page_type": "plan",
-    "confidence": 0.9,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "ELK GROVE STATION PROJECT",
@@ -9,20 +9,20 @@
         "client": "UNION PACIFIC RAILROAD",
         "location": "ELK GROVE, CALIFORNIA",
         "engineer_on_record": null,
-        "engineering_firm": "MARK THOMAS",
+        "engineering_firm": "JMA Civil, Inc.",
         "project_year": "2022",
         "other_info": "SACRAMENTO SUBDIVISION MILE POST 126.87 TO 128.51"
       },
       "plan_type": {
         "primary_type": "Index to Plans",
-        "sheet_title": "UNION PACIFIC RAILROAD STRUCTURES SUBMITTAL",
-        "sheet_number": null,
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "S-5",
         "scale": "NOT TO SCALE",
         "revision": null,
         "date": "January 10, 2022"
       },
       "plan_contents": {
-        "has_tables": true,
+        "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [],
         "detail_types": [],
@@ -37,18 +37,18 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "Elk Grove Station Project",
+        "project_name": "RAISED PLATFORM - GP NO. 1",
         "project_number": null,
-        "client": "Union Pacific Railroad",
-        "location": "Elk Grove, CA",
+        "client": "UNION PACIFIC RAILROAD",
+        "location": "Elk Grove Station Project",
         "engineer_on_record": null,
-        "engineering_firm": "Mark Thomas",
+        "engineering_firm": "MARK THOMAS",
         "project_year": null,
-        "other_info": "Latitude: 38° 25' 34\" N, Longitude: 121° 22' 24\" W"
+        "other_info": "Latitude 38° 25' 34\" N, Longitude 121° 22' 24\" W"
       },
       "plan_type": {
-        "primary_type": "Raised Platform",
-        "sheet_title": "Elevated Walkway Along Platform Typical Section",
+        "primary_type": "Elevated Walkway Along Platform",
+        "sheet_title": "ELEVATED WALKWAY ALONG PLATFORM TYPICAL SECTION",
         "sheet_number": "S-1",
         "scale": "1\" = 10'",
         "revision": null,
@@ -75,9 +75,7 @@
         ],
         "grid_references": [
           "10+00",
-          "10+50",
           "11+00",
-          "11+50",
           "12+00",
           "1852+00",
           "1853+00"
@@ -99,7 +97,7 @@
         "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
         "project_year": "2022",
-        "other_info": "Latitude 38° 24' 34\" N, Longitude 121° 22' 24\" W"
+        "other_info": "Latitude 38°24'34\"N, Longitude 121°22'24\"W"
       },
       "plan_type": {
         "primary_type": "Raised Platform",
@@ -107,30 +105,26 @@
         "sheet_number": "S-2",
         "scale": "1\" = 10'",
         "revision": null,
-        "date": "07/07/22"
+        "date": "3/17/22"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "W30 Girder",
-          "HSS Column",
-          "Platform",
-          "Stairs"
+          "girder",
+          "column",
+          "platform",
+          "stairs"
         ],
         "detail_types": [
-          "Profile Grade",
-          "Elevation",
-          "Plan"
+          "profile grade",
+          "elevation",
+          "plan"
         ],
         "grid_references": [
-          "12+71.68",
-          "12+88.68",
-          "12+93.68",
-          "13+08.68",
-          "13+15.68",
-          "13+30.68",
-          "13+37.95"
+          "13+00",
+          "1854+00",
+          "1855+00"
         ]
       }
     },
@@ -149,7 +143,7 @@
         "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
         "project_year": null,
-        "other_info": "Latitude: 38° 25' 34\" N, Longitude: 121° 22' 24\" W"
+        "other_info": "Latitude 38° 25' 34\" N, Longitude 121° 22' 24\" W"
       },
       "plan_type": {
         "primary_type": "General Plan",
@@ -176,7 +170,11 @@
           "elevation",
           "plan"
         ],
-        "grid_references": []
+        "grid_references": [
+          "2+00",
+          "2+50",
+          "3+00"
+        ]
       }
     },
     "page_number": 4,
@@ -187,22 +185,22 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "Elk Grove Station Project",
+        "project_name": "PARKING LOT PLATFORM - GP",
         "project_number": null,
-        "client": "Union Pacific Railroad",
-        "location": "Elk Grove, CA",
+        "client": "UNION PACIFIC RAILROAD",
+        "location": "Elk Grove, CA - Elk Grove Station Project",
         "engineer_on_record": null,
-        "engineering_firm": "Mark Thomas",
+        "engineering_firm": "MARK THOMAS",
         "project_year": "2022",
-        "other_info": "Latitude 38° 25' 34\" N, Longitude 121° 22' 27\" W"
+        "other_info": "Latitude 38° 25' 37\" N, Longitude 121° 22' 27\" W"
       },
       "plan_type": {
-        "primary_type": "Parking Lot Platform",
-        "sheet_title": "Parking Lot Platform - GP",
+        "primary_type": "30% DESIGN",
+        "sheet_title": "PARKING LOT PLATFORM - GP",
         "sheet_number": "S-4",
         "scale": "1\" = 10'",
         "revision": null,
-        "date": "3/16/22"
+        "date": "07/06/22"
       },
       "plan_contents": {
         "has_tables": false,
@@ -213,8 +211,17 @@
           "walkway",
           "HSS column"
         ],
-        "detail_types": [],
-        "grid_references": []
+        "detail_types": [
+          "profile grade",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "1+00",
+          "1+50",
+          "2+00",
+          "2+50"
+        ]
       }
     },
     "page_number": 5,
@@ -222,17 +229,17 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "Elk Grove CA - Elk Grove Station Project",
         "project_number": null,
         "client": "Union Pacific Railroad",
-        "location": "Latitude 38° 25' 34\" N, Longitude 121° 22' 24\" W",
+        "location": "Elk Grove CA",
         "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
         "project_year": "2022",
-        "other_info": "For Use in Agreement with ACE"
+        "other_info": "Latitude 38° 25' 34\" N, Longitude 121° 20' 24\" W"
       },
       "plan_type": {
         "primary_type": "Index to Plans",
@@ -246,9 +253,7 @@
         "has_tables": true,
         "has_diagrams": true,
         "structural_elements": [],
-        "detail_types": [
-          "Minimum Temporary Construction Clearance Diagram"
-        ],
+        "detail_types": [],
         "grid_references": []
       }
     },

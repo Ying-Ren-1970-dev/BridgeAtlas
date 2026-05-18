@@ -7,6 +7,67 @@ import config
 
 class EnrichedMetadataLoader:
     """Loads and manages enriched metadata from JSON files."""
+
+    @staticmethod
+    def _to_list(value) -> List[str]:
+        """Normalize possibly-string metadata fields into a list of non-empty strings."""
+        if not value:
+            return []
+        if isinstance(value, list):
+            return [str(v).strip() for v in value if str(v).strip()]
+        if isinstance(value, str):
+            # Support comma-separated values occasionally emitted by upstream extraction.
+            return [v.strip() for v in value.split(',') if v.strip()]
+        return [str(value).strip()]
+
+    @staticmethod
+    def classify_sheet_type(sheet_title: str, detail_types: List[str]) -> str:
+        """Classify sheet intent for coarse routing in retrieval and filtering."""
+        text = f"{sheet_title} {' '.join(detail_types)}".lower()
+
+        if "general plan" in text:
+            return "structure_plan"
+        if any(tok in text for tok in ["general note", "general notes", "notes"]):
+            return "general_note"
+        if any(tok in text for tok in ["bar", "rebar", "reinforcement", "reinf"]):
+            return "rebar"
+        if "fence" in text:
+            return "fence"
+        if any(tok in text for tok in ["detail", "details", "section", "elevation"]):
+            return "details"
+        if any(tok in text for tok in ["plan", "layout", "overall"]):
+            return "structure_plan"
+        return "other"
+
+    @staticmethod
+    def derive_detail_intents(structural_elements: List[str], detail_types: List[str], sheet_title: str) -> List[str]:
+        """Generate intent-like labels to help map user queries to relevant detail sheets."""
+        intents = set()
+        title_lower = (sheet_title or "").lower()
+
+        normalized_elements = [e.lower() for e in structural_elements]
+        normalized_details = [d.lower() for d in detail_types]
+
+        # Sheet-level intent tags
+        sheet_type = EnrichedMetadataLoader.classify_sheet_type(sheet_title, detail_types)
+        intents.add(f"sheet_type:{sheet_type}")
+
+        if any("general" in d and "note" in d for d in normalized_details) or "general note" in title_lower:
+            intents.add("general project information")
+
+        # Detail-level intents based on element + drawing type.
+        for element in normalized_elements:
+            clean_element = element.strip()
+            if not clean_element:
+                continue
+            intents.add(f"detail of {clean_element}")
+            if any(k in " ".join(normalized_details) for k in ["rebar", "reinforcement", "bar"]):
+                intents.add(f"reinforcement detail of {clean_element}")
+
+        if any("layout" in d or "plan" in d for d in normalized_details):
+            intents.add("layout/detail plan information")
+
+        return sorted(intents)
     
     @staticmethod
     def load_enriched_metadata(file_name: str) -> Optional[Dict]:
@@ -83,11 +144,14 @@ class EnrichedMetadataLoader:
         
         # Plan type
         plan_type = title_block.get('plan_type', {})
+        sheet_title = ""
+        detail_types = []
         if plan_type:
             if plan_type.get('primary_type'):
                 searchable_parts.append(f"Plan Type: {plan_type['primary_type']}")
             if plan_type.get('sheet_title'):
-                searchable_parts.append(f"Sheet Title: {plan_type['sheet_title']}")
+                sheet_title = str(plan_type['sheet_title'])
+                searchable_parts.append(f"Sheet Title: {sheet_title}")
             if plan_type.get('sheet_number'):
                 searchable_parts.append(f"Sheet Number: {plan_type['sheet_number']}")
             if plan_type.get('scale'):
@@ -101,7 +165,8 @@ class EnrichedMetadataLoader:
                 searchable_parts.append(f"Structural Elements: {elements}")
             
             if contents.get('detail_types'):
-                details = ', '.join(contents['detail_types'])
+                detail_types = EnrichedMetadataLoader._to_list(contents['detail_types'])
+                details = ', '.join(detail_types)
                 searchable_parts.append(f"Detail Types: {details}")
             
             if contents.get('grid_references'):
@@ -113,6 +178,14 @@ class EnrichedMetadataLoader:
             
             if contents.get('has_diagrams'):
                 searchable_parts.append("Contains Diagrams")
+
+            structural_elements = EnrichedMetadataLoader._to_list(contents.get('structural_elements'))
+            intents = EnrichedMetadataLoader.derive_detail_intents(structural_elements, detail_types, sheet_title)
+            if intents:
+                searchable_parts.append(f"Detail Intents: {', '.join(intents)}")
+
+            sheet_type = EnrichedMetadataLoader.classify_sheet_type(sheet_title, detail_types)
+            searchable_parts.append(f"Sheet Type: {sheet_type}")
         
         return ' | '.join(searchable_parts)
     
@@ -144,20 +217,33 @@ class EnrichedMetadataLoader:
         
         # Flatten plan type
         plan_type = title_block.get('plan_type', {})
+        sheet_title = ""
         for key, value in plan_type.items():
             if value:
                 fields[f'plan_{key}'] = str(value)
+                if key == 'sheet_title':
+                    sheet_title = str(value)
         
         # Flatten plan contents
         contents = title_block.get('plan_contents', {})
+        detail_types = []
+        structural_elements = []
         if contents:
             if contents.get('structural_elements'):
-                fields['structural_elements'] = ', '.join(contents['structural_elements'])
+                structural_elements = EnrichedMetadataLoader._to_list(contents['structural_elements'])
+                fields['structural_elements'] = ', '.join(structural_elements)
             if contents.get('detail_types'):
-                fields['detail_types'] = ', '.join(contents['detail_types'])
+                detail_types = EnrichedMetadataLoader._to_list(contents['detail_types'])
+                fields['detail_types'] = ', '.join(detail_types)
             if contents.get('grid_references'):
                 fields['grid_references'] = ', '.join(contents['grid_references'])
             fields['has_tables'] = str(contents.get('has_tables', False))
             fields['has_diagrams'] = str(contents.get('has_diagrams', False))
+
+        detail_intents = EnrichedMetadataLoader.derive_detail_intents(structural_elements, detail_types, sheet_title)
+        if detail_intents:
+            fields['detail_intents'] = ', '.join(detail_intents)
+
+        fields['plan_sheet_type'] = EnrichedMetadataLoader.classify_sheet_type(sheet_title, detail_types)
         
         return fields

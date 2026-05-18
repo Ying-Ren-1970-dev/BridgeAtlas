@@ -8,7 +8,7 @@
         "project_number": null,
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": null,
-        "engineer_on_record": "Y. REN",
+        "engineer_on_record": "YING REN",
         "engineering_firm": null,
         "project_year": "2021",
         "other_info": null
@@ -16,10 +16,10 @@
       "plan_type": {
         "primary_type": "General Plan",
         "sheet_title": "RETAINING WALL No. 1",
-        "sheet_number": "38/XXVI",
+        "sheet_number": "38/XXXVI",
         "scale": "1\" = 20'",
         "revision": null,
-        "date": "5/19/2021"
+        "date": "7/19/2021"
       },
       "plan_contents": {
         "has_tables": false,
@@ -27,8 +27,8 @@
         "structural_elements": [
           "retaining wall",
           "soil nail",
-          "gutter",
-          "cable railing"
+          "cable railing",
+          "gutter"
         ],
         "detail_types": [
           "elevation",
@@ -36,8 +36,9 @@
           "plan"
         ],
         "grid_references": [
-          "RW1",
-          "ELC"
+          "R/W",
+          "NB ROUTE 99",
+          "EL CAMINO ROAD"
         ]
       }
     },
@@ -52,15 +53,15 @@
         "project_name": null,
         "project_number": null,
         "client": null,
-        "location": "Stockton, CA 95202",
-        "engineer_on_record": "C. Fredrickson",
-        "engineering_firm": "Alta Vista Solutions",
+        "location": "Sacramento, CA 95825",
+        "engineer_on_record": "Y. REN",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "project_year": "2021",
         "other_info": null
       },
       "plan_type": {
         "primary_type": "General Plan",
-        "sheet_title": "Retaining Wall No. 2",
+        "sheet_title": "RETAINING WALL No. 2",
         "sheet_number": "Sheet 1 of 1",
         "scale": "1\" = 20'",
         "revision": null,
@@ -73,7 +74,8 @@
           "retaining wall",
           "cable railing",
           "gutter",
-          "sidewalk"
+          "sidewalk",
+          "soil nail"
         ],
         "detail_types": [
           "typical section",
@@ -82,7 +84,8 @@
         ],
         "grid_references": [
           "RW2",
-          "ELC"
+          "ELC",
+          "NB ROUTE 99"
         ]
       }
     },
@@ -97,11 +100,11 @@
         "project_name": null,
         "project_number": null,
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": null,
+        "location": "SACRAMENTO, CA 95822",
         "engineer_on_record": "Y. REN",
-        "engineering_firm": "ALTAMONT CORRIDOR EXPRESS",
+        "engineering_firm": "MARK THOMAS",
         "project_year": "2021",
-        "other_info": null
+        "other_info": "C. FREDRICKSON, PROJECT ENGINEER"
       },
       "plan_type": {
         "primary_type": "General Plan",
@@ -109,7 +112,7 @@
         "sheet_number": "R11.60-2",
         "scale": "1\" = 20'",
         "revision": null,
-        "date": "1/21"
+        "date": "5/19/2021"
       },
       "plan_contents": {
         "has_tables": false,
@@ -118,7 +121,8 @@
           "abutment",
           "retaining wall",
           "cable railing",
-          "ground anchors"
+          "ground anchors",
+          "sidewalk"
         ],
         "detail_types": [
           "mirrored developed elevation",
@@ -126,7 +130,8 @@
         ],
         "grid_references": [
           "R/W3",
-          "NOR"
+          "NOR",
+          "Route 99"
         ]
       }
     },
@@ -138,22 +143,22 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "ALTAMONT CORRIDOR EXPRESS",
+        "project_name": "PEDESTRIAN TRENCH WALL",
         "project_number": null,
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "650 EAST CHANNEL STREET STOCKTON, CA 95202",
+        "location": null,
         "engineer_on_record": "Y. REN",
         "engineering_firm": null,
         "project_year": "2021",
-        "other_info": "MARK THOMAS 701 UNIVERSITY AVENUE, SUITE 200 SACRAMENTO, CA 95825"
+        "other_info": null
       },
       "plan_type": {
         "primary_type": "General Plan",
-        "sheet_title": "PEDESTRIAN TRENCH WALL",
+        "sheet_title": "GENERAL PLAN",
         "sheet_number": "10",
         "scale": "1\" = 10'",
         "revision": "R11.50/R11.74",
-        "date": "2/12/21"
+        "date": "5/19/2021"
       },
       "plan_contents": {
         "has_tables": false,
@@ -167,10 +172,7 @@
           "developed elevation",
           "typical section"
         ],
-        "grid_references": [
-          "1271",
-          "1270"
-        ]
+        "grid_references": null
       }
     },
     "page_number": 4,

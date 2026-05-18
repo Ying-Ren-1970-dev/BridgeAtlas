@@ -1,0 +1,152 @@
+# Deployment script for Librarian to Google Cloud Run (PowerShell)
+# Run this from PowerShell: .\deploy.ps1
+
+$ErrorActionPreference = "Stop"
+
+Write-Host "╔════════════════════════════════════════╗" -ForegroundColor Green
+Write-Host "║  Librarian GCP Deployment Script      ║" -ForegroundColor Green
+Write-Host "╚════════════════════════════════════════╝" -ForegroundColor Green
+Write-Host ""
+
+# Check if gcloud is installed
+try {
+    $null = Get-Command gcloud -ErrorAction Stop
+} catch {
+    Write-Host "Error: gcloud CLI not found. Please install it first." -ForegroundColor Red
+    Write-Host "Visit: https://cloud.google.com/sdk/docs/install"
+    exit 1
+}
+
+# Get configuration from user
+$PROJECT_ID = Read-Host "Enter your GCP Project ID"
+if ([string]::IsNullOrWhiteSpace($PROJECT_ID)) {
+    Write-Host "Error: Project ID is required" -ForegroundColor Red
+    exit 1
+}
+
+$SERVICE_NAME = Read-Host "Enter service name (default: librarian)"
+if ([string]::IsNullOrWhiteSpace($SERVICE_NAME)) {
+    $SERVICE_NAME = "librarian"
+}
+
+$REGION = Read-Host "Enter region (default: us-central1)"
+if ([string]::IsNullOrWhiteSpace($REGION)) {
+    $REGION = "us-central1"
+}
+
+Write-Host ""
+Write-Host "Configuration:" -ForegroundColor Green
+Write-Host "  Project ID: $PROJECT_ID"
+Write-Host "  Service: $SERVICE_NAME"
+Write-Host "  Region: $REGION"
+Write-Host ""
+
+# Set the project
+Write-Host "Setting GCP project..." -ForegroundColor Yellow
+gcloud config set project $PROJECT_ID
+
+# Enable required APIs
+Write-Host "Enabling required APIs..." -ForegroundColor Yellow
+gcloud services enable run.googleapis.com cloudbuild.googleapis.com storage.googleapis.com firestore.googleapis.com secretmanager.googleapis.com
+
+# Create storage buckets
+Write-Host "Creating Cloud Storage buckets..." -ForegroundColor Yellow
+$BUCKET_PDFS = "$PROJECT_ID-librarian-pdfs"
+$BUCKET_VECTOR = "$PROJECT_ID-librarian-vectors"
+$BUCKET_FRONTEND = "$PROJECT_ID-librarian-frontend"
+
+gsutil mb -p $PROJECT_ID -l $REGION "gs://$BUCKET_PDFS/" 2>$null
+if ($LASTEXITCODE -ne 0) { Write-Host "  Bucket $BUCKET_PDFS already exists" }
+gsutil mb -p $PROJECT_ID -l $REGION "gs://$BUCKET_VECTOR/" 2>$null
+if ($LASTEXITCODE -ne 0) { Write-Host "  Bucket $BUCKET_VECTOR already exists" }
+gsutil mb -p $PROJECT_ID -l $REGION "gs://$BUCKET_FRONTEND/" 2>$null
+if ($LASTEXITCODE -ne 0) { Write-Host "  Bucket $BUCKET_FRONTEND already exists" }
+
+# Upload PDFs
+Write-Host "Uploading PDFs to Cloud Storage..." -ForegroundColor Yellow
+if (Test-Path "Projects" -PathType Container) {
+    $pdfFiles = Get-ChildItem "Projects\*.pdf" -ErrorAction SilentlyContinue
+    if ($pdfFiles) {
+        gsutil -m rsync -r Projects/ "gs://$BUCKET_PDFS/"
+        Write-Host "  ✓ PDFs uploaded" -ForegroundColor Green
+    } else {
+        Write-Host "  No PDFs found in Projects folder" -ForegroundColor Yellow
+    }
+}
+
+# Upload vector database
+Write-Host "Uploading vector database..." -ForegroundColor Yellow
+if (Test-Path "vector_db" -PathType Container) {
+    gsutil -m rsync -r vector_db/ "gs://$BUCKET_VECTOR/"
+    Write-Host "  ✓ Vector database uploaded" -ForegroundColor Green
+} else {
+    Write-Host "  No vector database found" -ForegroundColor Yellow
+}
+
+# Upload frontend
+Write-Host "Uploading frontend..." -ForegroundColor Yellow
+if (Test-Path "search_ui.html") {
+    gsutil cp search_ui.html "gs://$BUCKET_FRONTEND/index.html"
+    gsutil iam ch allUsers:objectViewer "gs://$BUCKET_FRONTEND"
+    gsutil web set -m index.html "gs://$BUCKET_FRONTEND"
+    Write-Host "  ✓ Frontend uploaded" -ForegroundColor Green
+    Write-Host "  Frontend URL: https://storage.googleapis.com/$BUCKET_FRONTEND/index.html"
+}
+
+# Create or update OpenAI API key secret
+Write-Host "Setting up OpenAI API key secret..." -ForegroundColor Yellow
+if (Test-Path "config.py") {
+    try {
+        $OPENAI_KEY = python -c "import config; print(config.OPENAI_API_KEY)" 2>$null
+        if (![string]::IsNullOrWhiteSpace($OPENAI_KEY)) {
+            $OPENAI_KEY | gcloud secrets create openai-api-key --data-file=- --replication-policy="automatic" 2>$null
+            if ($LASTEXITCODE -ne 0) {
+                $OPENAI_KEY | gcloud secrets versions add openai-api-key --data-file=-
+            }
+            Write-Host "  ✓ OpenAI API key secret created" -ForegroundColor Green
+        }
+    } catch {
+        Write-Host "  Warning: Could not read OpenAI API key from config.py" -ForegroundColor Yellow
+        Write-Host "  Please create it manually or set it after deployment" -ForegroundColor Yellow
+    }
+}
+
+# Build and deploy to Cloud Run
+Write-Host "Building and deploying to Cloud Run..." -ForegroundColor Yellow
+gcloud run deploy $SERVICE_NAME `
+    --source . `
+    --platform managed `
+    --region $REGION `
+    --allow-unauthenticated `
+    --memory 1Gi `
+    --cpu 1 `
+    --min-instances 0 `
+    --max-instances 10 `
+    --timeout 300 `
+    --set-env-vars "ENVIRONMENT=production,GCS_BUCKET_PDFS=$BUCKET_PDFS,GCS_BUCKET_VECTORS=$BUCKET_VECTOR" `
+    --set-secrets "OPENAI_API_KEY=openai-api-key:latest"
+
+# Get the service URL
+$SERVICE_URL = gcloud run services describe $SERVICE_NAME --platform managed --region $REGION --format 'value(status.url)'
+
+Write-Host ""
+Write-Host "╔════════════════════════════════════════╗" -ForegroundColor Green
+Write-Host "║       Deployment Successful! 🎉        ║" -ForegroundColor Green
+Write-Host "╚════════════════════════════════════════╝" -ForegroundColor Green
+Write-Host ""
+Write-Host "Service URL: " -ForegroundColor Green -NoNewline
+Write-Host $SERVICE_URL
+Write-Host "Frontend URL: " -ForegroundColor Green -NoNewline
+Write-Host "https://storage.googleapis.com/$BUCKET_FRONTEND/index.html"
+Write-Host ""
+Write-Host "Next steps:" -ForegroundColor Yellow
+Write-Host "1. Update the API URL in search_ui.html to: $SERVICE_URL"
+Write-Host "2. Re-upload the frontend: gsutil cp search_ui.html gs://$BUCKET_FRONTEND/index.html"
+Write-Host "3. Test the deployment: curl $SERVICE_URL/health"
+Write-Host ""
+Write-Host "To view logs:" -ForegroundColor Yellow
+Write-Host "  gcloud run services logs read $SERVICE_NAME --region=$REGION"
+Write-Host ""
+Write-Host "To update deployment:" -ForegroundColor Yellow
+Write-Host "  .\deploy.ps1"
+Write-Host ""

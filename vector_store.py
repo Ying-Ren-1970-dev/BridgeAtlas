@@ -5,10 +5,11 @@ from pathlib import Path
 import chromadb
 from chromadb.config import Settings
 from langchain_openai import OpenAIEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 import config
 from enriched_metadata_loader import EnrichedMetadataLoader
+from classification_training import SearchClassificationTrainer
 
 
 class VectorStore:
@@ -23,23 +24,45 @@ class VectorStore:
         
         self.vector_db_path = str(config.VECTOR_DB_PATH)
         self.collection_name = "librarian_documents"
-        
-        # Initialize ChromaDB client
-        self.client = chromadb.PersistentClient(path=self.vector_db_path)
+        self.classification_trainer = SearchClassificationTrainer()
         
         self.vectorstore = None
     
     def initialize_vectorstore(self):
         """Initialize or load existing vectorstore."""
         try:
+            import os
+            import chromadb
+            from chromadb.config import Settings as ChromaSettings
+            
+            # Ensure we're in embedded mode, not client-server
+            os.environ.pop('CHROMA_HOST', None)
+            os.environ.pop('CHROMA_PORT', None) 
+            os.environ.pop('CHROMA_SERVER_HOST', None)
+            
+            # Create a PersistentClient with explicit local/embedded settings
+            chroma_client = chromadb.PersistentClient(
+                path=self.vector_db_path,
+                settings=ChromaSettings(
+                    anonymized_telemetry=False,
+                    allow_reset=True,
+                    is_persistent=True,
+                    chroma_server_host=None,  # Disable server mode
+                    chroma_server_http_port=None,  # Disable HTTP
+                )
+            )
+            
+            # Use langchain-chroma with explicit client
             self.vectorstore = Chroma(
+                client=chroma_client,
                 collection_name=self.collection_name,
                 embedding_function=self.embeddings,
-                persist_directory=self.vector_db_path,
             )
             print(f"Vector store initialized at {self.vector_db_path}")
         except Exception as e:
             print(f"Error initializing vector store: {str(e)}")
+            import traceback
+            traceback.print_exc()
             raise
     
     def add_documents(self, processed_data: List[Dict]) -> int:
@@ -63,6 +86,16 @@ class VectorStore:
             file_name = pdf_data['file_name']
             file_path = pdf_data['file_path']
             pdf_metadata = pdf_data['metadata']
+
+            project_context = " | ".join(
+                [
+                    str(file_name),
+                    str(pdf_metadata.get('project_name', '')),
+                    str(pdf_metadata.get('phase', '')),
+                    str(pdf_metadata.get('engineer_of_record', '')),
+                ]
+            )
+            project_level_labels = self.classification_trainer.classify_project(project_context)
             
             # Load enriched metadata for this PDF
             enriched_metadata = EnrichedMetadataLoader.load_enriched_metadata(file_name)
@@ -99,6 +132,48 @@ class VectorStore:
                     enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
                     if enriched_text:
                         chunk_text = f"{chunk_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
+
+                page_context = " | ".join(
+                    [
+                        str(chunk_metadata.get('plan_sheet_title', '')),
+                        str(chunk_metadata.get('page_type', '')),
+                        str(chunk_metadata.get('plan_sheet_type', '')),
+                        str(chunk_metadata.get('detail_types', '')),
+                        str(chunk_metadata.get('structural_elements', '')),
+                    ]
+                )
+                page_level_labels = self.classification_trainer.classify_page(page_context)
+                detail_classification = self.classification_trainer.classify_detail(chunk_text)
+
+                if not project_level_labels:
+                    project_level_labels = ["Unclassified > project"]
+                if not page_level_labels:
+                    page_level_labels = ["Unclassified > page"]
+                if not detail_classification.labels:
+                    detail_classification.labels = ["Unclassified > detail"]
+
+                if not project_level_labels:
+                    project_level_labels = ["Unclassified > project"]
+                if not page_level_labels:
+                    page_level_labels = ["Unclassified > page"]
+                if not detail_classification.labels:
+                    detail_classification.labels = ["Unclassified > detail"]
+
+                chunk_metadata['index_level'] = 'detail_chunk'
+                chunk_metadata['project_level_labels'] = ', '.join(project_level_labels)
+                chunk_metadata['page_level_labels'] = ', '.join(page_level_labels)
+                chunk_metadata['detail_level_labels'] = ', '.join(detail_classification.labels)
+                chunk_metadata['referenced_sheet_ids'] = ', '.join(detail_classification.referenced_sheet_ids)
+                chunk_metadata['referenced_detail_ids'] = ', '.join(detail_classification.referenced_detail_ids)
+                chunk_metadata['classification_training_source'] = str(self.classification_trainer.training_file)
+
+                if project_level_labels or page_level_labels or detail_classification.labels:
+                    chunk_text = (
+                        f"{chunk_text}\n\n[INDEX CLASSIFICATION]\n"
+                        f"Project-level: {', '.join(project_level_labels)}\n"
+                        f"Page-level: {', '.join(page_level_labels)}\n"
+                        f"Detail-level: {', '.join(detail_classification.labels)}"
+                    )
                 
                 texts.append(chunk_text)
                 metadatas.append(chunk_metadata)
@@ -147,13 +222,35 @@ class VectorStore:
             self.initialize_vectorstore()
         
         try:
+            # Check collection count first
+            try:
+                collection = self.vectorstore._client.get_collection(self.collection_name)
+                count = collection.count()
+                print(f"Collection has {count} documents")
+            except Exception as ce:
+                print(f"Error checking collection: {str(ce)}")
+            
             # Perform similarity search
             if filter_dict:
-                results = self.vectorstore.similarity_search(
-                    query=query,
-                    k=k,
-                    filter=filter_dict
-                )
+                try:
+                    results = self.vectorstore.similarity_search(
+                        query=query,
+                        k=k,
+                        filter=filter_dict
+                    )
+                except Exception as filtered_err:
+                    # Chroma can intermittently fail filtered queries with "Error finding id".
+                    # Fallback to unfiltered retrieval and apply metadata filter in-memory.
+                    print(f"Filtered similarity_search failed, falling back to in-memory filter: {filtered_err}")
+                    fallback_k = max(k * 10, 200)
+                    raw_results = self.vectorstore.similarity_search(
+                        query=query,
+                        k=fallback_k
+                    )
+                    results = [
+                        doc for doc in raw_results
+                        if self._metadata_matches_filter(doc.metadata or {}, filter_dict)
+                    ][:k]
             else:
                 results = self.vectorstore.similarity_search(
                     query=query,
@@ -171,7 +268,12 @@ class VectorStore:
             return formatted_results
             
         except Exception as e:
-            print(f"Error during similarity search: {str(e)}")
+            import traceback
+            import sys
+            error_msg = f"=== SIMILARITY SEARCH ERROR ===\nException type: {type(e).__name__}\nException message: {str(e)}\n"
+            print(error_msg, file=sys.stderr)
+            print(f"Full traceback:\n{traceback.format_exc()}", file=sys.stderr)
+            print(error_msg)  # Also to stdout
             return []
     
     def similarity_search_with_scores(
@@ -196,11 +298,25 @@ class VectorStore:
         
         try:
             if filter_dict:
-                results = self.vectorstore.similarity_search_with_score(
-                    query=query,
-                    k=k,
-                    filter=filter_dict
-                )
+                try:
+                    results = self.vectorstore.similarity_search_with_score(
+                        query=query,
+                        k=k,
+                        filter=filter_dict
+                    )
+                except Exception as filtered_err:
+                    # Chroma can intermittently fail filtered queries with "Error finding id".
+                    # Fallback to unfiltered retrieval and apply metadata filter in-memory.
+                    print(f"Filtered similarity_search_with_scores failed, falling back to in-memory filter: {filtered_err}")
+                    fallback_k = max(k * 10, 200)
+                    raw_results = self.vectorstore.similarity_search_with_score(
+                        query=query,
+                        k=fallback_k
+                    )
+                    results = [
+                        (doc, score) for (doc, score) in raw_results
+                        if self._metadata_matches_filter(doc.metadata or {}, filter_dict)
+                    ][:k]
             else:
                 results = self.vectorstore.similarity_search_with_score(
                     query=query,
@@ -210,7 +326,86 @@ class VectorStore:
             return results
             
         except Exception as e:
-            print(f"Error during similarity search: {str(e)}")
+            import traceback
+            import sys
+            error_msg = f"\n=== SIMILARITY SEARCH WITH SCORES ERROR ===\nException type: {type(e).__name__}\nException message: {str(e)}\n"
+            print(error_msg, file=sys.stderr)
+            print(f"Full traceback:\n{traceback.format_exc()}", file=sys.stderr)
+            print(error_msg)  # Also to stdout
+            print(f"ChromaDB exception details: {repr(e)}")
+            return []
+
+    def _metadata_matches_filter(self, metadata: Dict, filter_dict: Dict) -> bool:
+        """Apply a small subset of Chroma where filtering semantics in Python."""
+        for key, expected in (filter_dict or {}).items():
+            actual = metadata.get(key)
+
+            if isinstance(expected, dict):
+                if "$in" in expected:
+                    allowed = expected.get("$in") or []
+                    if actual not in allowed:
+                        return False
+                elif "$eq" in expected:
+                    if actual != expected.get("$eq"):
+                        return False
+                else:
+                    # Unsupported operator for fallback path.
+                    return False
+            else:
+                if actual != expected:
+                    return False
+
+        return True
+
+    def get_keyword_search_candidates(
+        self,
+        filter_dict: Optional[Dict] = None,
+        limit: int = 4000,
+    ) -> List[Dict]:
+        """
+        Retrieve raw chunk documents for local keyword ranking.
+
+        Args:
+            filter_dict: Optional metadata filter to pre-limit candidates
+            limit: Maximum number of chunks to fetch
+
+        Returns:
+            List of dictionaries with id, content, and metadata
+        """
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        try:
+            collection = self.vectorstore._collection
+            get_kwargs = {
+                "include": ["documents", "metadatas"],
+                "limit": limit,
+            }
+
+            if filter_dict:
+                get_kwargs["where"] = filter_dict
+
+            results = collection.get(**get_kwargs)
+
+            ids = results.get("ids", [])
+            docs = results.get("documents", [])
+            metas = results.get("metadatas", [])
+
+            candidates = []
+            for doc_id, doc_text, doc_meta in zip(ids, docs, metas):
+                if not doc_text:
+                    continue
+                candidates.append(
+                    {
+                        "id": doc_id,
+                        "content": doc_text,
+                        "metadata": doc_meta or {},
+                    }
+                )
+
+            return candidates
+        except Exception as e:
+            print(f"Error getting keyword candidates: {str(e)}")
             return []
     
     def get_collection_info(self) -> Dict:
@@ -219,7 +414,7 @@ class VectorStore:
             self.initialize_vectorstore()
         
         try:
-            collection = self.client.get_collection(self.collection_name)
+            collection = self.vectorstore._client.get_collection(self.collection_name)
             count = collection.count()
             
             return {
@@ -244,7 +439,8 @@ class VectorStore:
     def clear_collection(self):
         """Clear all documents from the collection."""
         try:
-            self.client.delete_collection(self.collection_name)
+            if self.vectorstore:
+                self.vectorstore._client.delete_collection(self.collection_name)
             print(f"Collection '{self.collection_name}' cleared")
             self.vectorstore = None
         except Exception as e:
@@ -296,10 +492,7 @@ class VectorStore:
                 zip(results['ids'], results['documents'], results['metadatas'])
             ):
                 page_num = doc_metadata.get('page')
-                
-                # Check if text already has enrichment (skip if already enriched)
-                if "[ENRICHED METADATA]" in doc_text:
-                    continue
+                already_enriched = "[ENRICHED METADATA]" in doc_text
                 
                 # Create updated metadata dict
                 updated_metadata = doc_metadata.copy()
@@ -315,16 +508,68 @@ class VectorStore:
                     
                     # Append searchable text from enriched metadata
                     enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
-                    if enriched_text:
+                    if enriched_text and not already_enriched:
                         updated_text = f"{doc_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
                         enriched_count += 1
+
+                project_context = " | ".join(
+                    [
+                        str(updated_metadata.get('file_name', file_name)),
+                        str(updated_metadata.get('project_name', '')),
+                        str(updated_metadata.get('phase', '')),
+                        str(updated_metadata.get('engineer_of_record', '')),
+                    ]
+                )
+                page_context = " | ".join(
+                    [
+                        str(updated_metadata.get('plan_sheet_title', '')),
+                        str(updated_metadata.get('page_type', '')),
+                        str(updated_metadata.get('plan_sheet_type', '')),
+                        str(updated_metadata.get('detail_types', '')),
+                        str(updated_metadata.get('structural_elements', '')),
+                    ]
+                )
+
+                project_level_labels = self.classification_trainer.classify_project(project_context)
+                page_level_labels = self.classification_trainer.classify_page(page_context)
+                detail_classification = self.classification_trainer.classify_detail(updated_text)
+
+                if not project_level_labels:
+                    project_level_labels = ["Unclassified > project"]
+                if not page_level_labels:
+                    page_level_labels = ["Unclassified > page"]
+                if not detail_classification.labels:
+                    detail_classification.labels = ["Unclassified > detail"]
+
+                if not project_level_labels:
+                    project_level_labels = ["Unclassified > project"]
+                if not page_level_labels:
+                    page_level_labels = ["Unclassified > page"]
+                if not detail_classification.labels:
+                    detail_classification.labels = ["Unclassified > detail"]
+
+                updated_metadata['index_level'] = 'detail_chunk'
+                updated_metadata['project_level_labels'] = ', '.join(project_level_labels)
+                updated_metadata['page_level_labels'] = ', '.join(page_level_labels)
+                updated_metadata['detail_level_labels'] = ', '.join(detail_classification.labels)
+                updated_metadata['referenced_sheet_ids'] = ', '.join(detail_classification.referenced_sheet_ids)
+                updated_metadata['referenced_detail_ids'] = ', '.join(detail_classification.referenced_detail_ids)
+                updated_metadata['classification_training_source'] = str(self.classification_trainer.training_file)
+
+                if "[INDEX CLASSIFICATION]" not in updated_text:
+                    updated_text = (
+                        f"{updated_text}\n\n[INDEX CLASSIFICATION]\n"
+                        f"Project-level: {', '.join(project_level_labels)}\n"
+                        f"Page-level: {', '.join(page_level_labels)}\n"
+                        f"Detail-level: {', '.join(detail_classification.labels)}"
+                    )
                 
                 updated_texts.append(updated_text)
                 updated_metadatas.append(updated_metadata)
                 ids_to_update.append(doc_id)
             
             if not ids_to_update:
-                print(f"  All chunks already enriched or no matching pages")
+                print(f"  No chunks found to update")
                 return 0
             
             # Delete old documents

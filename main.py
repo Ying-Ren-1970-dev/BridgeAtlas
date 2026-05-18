@@ -10,6 +10,8 @@ from categorizer import StructuralCategorizer
 from metadata_manager import MetadataManager
 from search_agent import SearchAgent
 from page_classifier import PageClassifier
+from enriched_metadata_graph_builder import GraphIntegrationManager
+from classification_training import SearchClassificationTrainer
 
 
 class LibrarianApp:
@@ -22,6 +24,7 @@ class LibrarianApp:
         self.categorizer = StructuralCategorizer()
         self.metadata_manager = MetadataManager()
         self.search_agent = SearchAgent()
+        self.graph_manager = GraphIntegrationManager()
     
     def build_knowledge_base(
         self,
@@ -450,6 +453,131 @@ class LibrarianApp:
         print(f"✓ Successfully enriched {success_count} files")
         print(f"✓ Total chunks updated: {total_updated}")
         print(f"✓ Cost: $0 (no API calls)")
+    
+    def build_detail_graphs(self):
+        """
+        Build detail graphs from enriched metadata.
+        Creates connectivity graphs for each project to enable detailed search and navigation.
+        
+        Uses the Algorithmic Graph Approach:
+        - Deterministic parsing of PDF structure (no ML)
+        - Graph storage of detail relationships
+        - Grounds AI queries with structural connectivity
+        """
+        print("=" * 60)
+        print("BUILDING DETAIL GRAPHS")
+        print("=" * 60)
+        print("(Creating connectivity graphs from enriched metadata)")
+        
+        # Find all enriched JSON files
+        enriched_files = list(config.DATA_FOLDER.glob('enriched_*.json'))
+        
+        if not enriched_files:
+            print("\n❌ No enriched metadata files found!")
+            print("   Run enrichment first: python main.py enrich <file>")
+            return
+        
+        print(f"\nFound {len(enriched_files)} enriched metadata files")
+        
+        from enriched_metadata_loader import EnrichedMetadataLoader
+        loader = EnrichedMetadataLoader()
+        
+        graphs_built = 0
+        
+        for enriched_file in enriched_files:
+            # Extract original filename from enriched filename
+            # Format: enriched_<filename>.json -> <filename>.pdf
+            project_name = enriched_file.stem.replace('enriched_', '')
+            pdf_file_name = f"{project_name}.pdf"
+            
+            print(f"\nBuilding graph for: {project_name}")
+            
+            try:
+                # Load enriched metadata
+                enriched_metadata = loader.load_enriched_metadata(pdf_file_name)
+                
+                if not enriched_metadata:
+                    print(f"  ❌ Failed to load enriched metadata")
+                    continue
+                
+                # Build and store graph
+                graph = self.graph_manager.build_and_store_graph(
+                    enriched_metadata=enriched_metadata,
+                    pdf_file_name=pdf_file_name,
+                    project_name=project_name
+                )
+                
+                print(f"  ✓ Graph built: {len(graph.nodes)} details, "
+                      f"{sum(len(e) for e in graph.edges.values())} relationships")
+                graphs_built += 1
+                
+            except Exception as e:
+                print(f"  ❌ Error: {str(e)}")
+                import traceback
+                traceback.print_exc()
+                continue
+        
+        print("\n" + "=" * 60)
+        print("DETAIL GRAPHS COMPLETE")
+        print("=" * 60)
+        print(f"✓ Built {graphs_built}/{len(enriched_files)} graphs")
+        print(f"✓ Graphs stored in: {self.graph_manager.data_dir}")
+
+    def index_detail_nodes(self):
+        """
+        Index detail nodes from graphs into the vector store for cross-project search.
+        
+        Creates separate embeddings for each structural detail (section view, elevation, etc.)
+        enabling fine-grained search and discovery across all projects.
+        """
+        print("=" * 60)
+        print("INDEXING DETAIL NODES")
+        print("=" * 60)
+        print("(Creating embeddings for individual structural details)")
+        
+        from detail_indexer import DetailIndexer
+        
+        indexer = DetailIndexer()
+        
+        if not indexer.initialize():
+            print("\n❌ Failed to initialize detail indexer")
+            return
+        
+        print("\nClearing previous detail index...")
+        indexer.clear_collection()
+        
+        print("Indexing details from all graphs...")
+        total_indexed = indexer.index_all_graphs()
+        
+        print("\n" + "=" * 60)
+        print("DETAIL INDEXING COMPLETE")
+        print("=" * 60)
+        print(f"✓ Indexed {total_indexed} detail nodes")
+        print(f"✓ Details stored in: {indexer.vector_db_path}")
+        print("\nDetail-level search is now available!")
+
+    def train_search_classifications(self):
+        """
+        Build training artifact for project/page/detail classification taxonomy.
+
+        Loads examples from Training Materials/search classifications.md and writes
+        parsed taxonomy + lexical mappings to data/search_classification_training.json.
+        """
+        print("=" * 60)
+        print("TRAINING SEARCH CLASSIFICATIONS")
+        print("=" * 60)
+
+        trainer = SearchClassificationTrainer()
+        artifact = trainer.build_training_artifact()
+        stats = artifact.get('stats', {})
+
+        print("\n✓ Classification training artifact generated")
+        print(f"  Training file: {artifact.get('training_file')}")
+        print(f"  Project paths: {stats.get('project_paths', 0)}")
+        print(f"  Page paths: {stats.get('page_paths', 0)}")
+        print(f"  Project labels: {stats.get('project_labels', 0)}")
+        print(f"  Page labels: {stats.get('page_labels', 0)}")
+        print(f"  Output: {trainer.cache_file}")
 
 
 def main():
@@ -464,6 +592,9 @@ def main():
         print("  python main.py update <file>     - Update a specific file (re-process with Vision)")
         print("  python main.py enrich <file>     - Enrich single file with page classification & title blocks")
         print("  python main.py enrich-kb         - Add enrichment to ALL existing documents (NO API calls)")
+        print("  python main.py build-graphs      - Build detail connectivity graphs from enriched metadata (NO API calls)")
+        print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
+        print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py search <query>    - Search knowledge base")
         print("  python main.py list              - List all projects")
         print("  python main.py stats             - Show statistics")
@@ -508,6 +639,15 @@ def main():
     
     elif command == 'enrich-kb':
         app.enrich_knowledge_base()
+    
+    elif command == 'build-graphs':
+        app.build_detail_graphs()
+    
+    elif command == 'index-details':
+        app.index_detail_nodes()
+
+    elif command == 'train-classifications':
+        app.train_search_classifications()
     
     elif command == 'search':
         if len(sys.argv) < 3:

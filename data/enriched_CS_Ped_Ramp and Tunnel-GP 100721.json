@@ -25,11 +25,10 @@
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "handrail",
           "ramp",
+          "tunnel",
           "platform",
           "stairs",
-          "tunnel",
           "wall"
         ],
         "detail_types": [

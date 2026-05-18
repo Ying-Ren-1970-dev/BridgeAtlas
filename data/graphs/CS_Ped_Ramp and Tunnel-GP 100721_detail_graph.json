@@ -1,0 +1,86 @@
+{
+  "project_name": "CS_Ped_Ramp and Tunnel-GP 100721",
+  "nodes": {
+    "Page1_Detail0": {
+      "detail_id": "Page1_Detail0",
+      "page_number": 1,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "ramp",
+        "tunnel",
+        "platform"
+      ],
+      "file_name": "CS_Ped_Ramp and Tunnel-GP 100721.pdf",
+      "project_name": "CS_Ped_Ramp and Tunnel-GP 100721"
+    },
+    "Page1_Detail1": {
+      "detail_id": "Page1_Detail1",
+      "page_number": 1,
+      "title": "section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "section",
+        "ramp",
+        "tunnel",
+        "platform"
+      ],
+      "file_name": "CS_Ped_Ramp and Tunnel-GP 100721.pdf",
+      "project_name": "CS_Ped_Ramp and Tunnel-GP 100721"
+    }
+  },
+  "edges": {
+    "Page1_Detail0": [
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ramp"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: tunnel"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: platform"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: stairs"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      }
+    ]
+  },
+  "node_count": 2,
+  "edge_count": 5
+}

@@ -11,11 +11,25 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg-primary: #172331;
+            --bg-secondary: #203346;
+            --panel-bg: #23384d;
+            --panel-soft: #2a425a;
+            --border: #3b5875;
+            --text-primary: #e5edf5;
+            --text-secondary: #b7c7d7;
+            --accent: #61a5ff;
+            --accent-strong: #3f8df4;
+            --success: #39c07f;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', 'Roboto Mono', 'Consolas', 'Menlo', monospace, sans-serif;
+            background: linear-gradient(160deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
             min-height: 100vh;
             padding: 20px;
+            box-shadow: inset 0 0 120px rgba(8, 13, 21, 0.55);
         }
 
         .container {
@@ -25,70 +39,126 @@
 
         .header {
             text-align: center;
-            color: white;
+            color: var(--text-primary);
             margin-bottom: 40px;
             padding: 20px 0;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--border);
         }
 
         .header h1 {
-            font-size: 2.5em;
+            font-size: 2.7em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 8px #0a1017, 0 1px 0 #3a4a5c;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
+            letter-spacing: 2px;
         }
 
         .header p {
             font-size: 1.1em;
-            opacity: 0.9;
+            opacity: 0.8;
+            color: var(--text-secondary);
         }
 
         .search-box {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            background: var(--panel-bg);
+            border-radius: 18px;
+            padding: 18px 24px 24px 24px;
+            box-shadow: 0 10px 28px rgba(7, 11, 18, 0.35);
             margin-bottom: 30px;
+            border: 1.5px solid var(--border);
+        }
+
+        .chat-prompt {
+            display: block;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
         }
 
         .search-input-container {
             display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
+            align-items: flex-end;
+            gap: 10px;
+            margin-bottom: 10px;
+            background: var(--panel-soft);
+            border-radius: 12px;
+            border: 1.5px solid var(--border);
+            padding: 10px 16px;
+            box-shadow: inset 0 1px 2px rgba(6, 11, 18, 0.45);
         }
 
         #searchInput {
             flex: 1;
-            padding: 15px 20px;
-            font-size: 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 17px;
+            border: none;
+            border-radius: 12px;
             outline: none;
-            transition: border-color 0.3s;
+            background: #1f3142;
+            color: var(--text-primary);
+            font-family: 'Roboto Mono', 'Consolas', monospace;
+            box-shadow: inset 0 1px 4px rgba(6, 11, 18, 0.45);
+            margin-right: 8px;
+            resize: none;
+            line-height: 1.35;
+            min-height: calc(1.35em * 5 + 24px);
+            max-height: calc(1.35em * 5 + 24px);
+            overflow-y: auto;
         }
 
         #searchInput:focus {
-            border-color: #667eea;
+            background: #23384b;
+            color: #fff;
+            box-shadow: 0 0 0 2px rgba(97, 165, 255, 0.5);
+        }
+
+        #searchBtn,
+        #analyzeBtn {
+            padding: 14px 24px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
+            backdrop-filter: blur(2px);
         }
 
         #searchBtn {
-            padding: 15px 40px;
-            font-size: 16px;
-            font-weight: 600;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: linear-gradient(135deg, #2e7be8 0%, #61a5ff 100%);
+            box-shadow: 0 6px 16px rgba(18, 62, 112, 0.35);
+        }
+
+        #analyzeBtn {
+            background: linear-gradient(135deg, #1f7a55 0%, #3ebf84 100%);
+            box-shadow: 0 6px 16px rgba(14, 66, 47, 0.32);
+        }
+
+        #searchBtn:hover:not(:disabled),
+        #analyzeBtn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
         }
 
         #searchBtn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 26px rgba(18, 62, 112, 0.48);
         }
 
-        #searchBtn:disabled {
-            opacity: 0.6;
+        #analyzeBtn:hover:not(:disabled) {
+            box-shadow: 0 10px 26px rgba(14, 66, 47, 0.42);
+        }
+
+        #searchBtn:disabled,
+        #analyzeBtn:disabled {
+            opacity: 0.58;
             cursor: not-allowed;
+            transform: none;
+            filter: none;
         }
 
         .quick-searches {
@@ -100,28 +170,29 @@
         .quick-search-btn {
             padding: 8px 16px;
             font-size: 14px;
-            background: #f5f5f5;
-            border: 1px solid #e0e0e0;
+            background: #2a425a;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .quick-search-btn:hover {
-            background: #667eea;
+            background: var(--accent-strong);
             color: white;
-            border-color: #667eea;
+            border-color: var(--accent);
         }
 
         .relevance-filter {
             margin-top: 15px;
             padding-top: 15px;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid var(--border);
         }
 
         .relevance-label {
             font-size: 14px;
-            color: #666;
+            color: var(--text-secondary);
             margin-bottom: 10px;
             display: block;
         }
@@ -144,8 +215,9 @@
         .relevance-option label {
             padding: 8px 16px;
             font-size: 14px;
-            background: #f5f5f5;
-            border: 2px solid #e0e0e0;
+            background: #2a425a;
+            border: 2px solid var(--border);
+            color: var(--text-secondary);
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.2s;
@@ -153,18 +225,18 @@
         }
 
         .relevance-option input[type="radio"]:checked + label {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
             color: white;
-            border-color: #667eea;
+            border-color: var(--accent);
         }
 
         .relevance-option label:hover {
-            border-color: #667eea;
+            border-color: var(--accent);
         }
 
         .relevance-help {
             font-size: 12px;
-            color: #999;
+            color: #8fa3b8;
             margin-top: 8px;
             font-style: italic;
         }
@@ -195,51 +267,136 @@
             display: none;
         }
 
+        .analysis-container {
+            display: none;
+            background: #232f3e;
+            border-radius: 15px;
+            padding: 22px;
+            box-shadow: 0 5px 20px #0a1017;
+            margin-bottom: 20px;
+            border: 1.5px solid #2e3c4f;
+            color: #e0e6ed;
+        }
+
+        .analysis-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .analysis-title {
+            font-size: 1.35em;
+            color: #89b6e6;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
+        }
+
+        .confidence-badge {
+            background: #1f7a55;
+            color: #e9fff4;
+            padding: 7px 12px;
+            border-radius: 14px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .analysis-card {
+            background: #1f3142;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px;
+            margin-top: 12px;
+        }
+
+        .analysis-card h4 {
+            color: #9cc6f2;
+            margin-bottom: 8px;
+        }
+
+        .analysis-list {
+            margin: 0;
+            padding-left: 18px;
+            color: #c4d5e6;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .analysis-list li {
+            margin-bottom: 6px;
+        }
+
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            color: #dce8f3;
+        }
+
+        .analysis-table th,
+        .analysis-table td {
+            border-bottom: 1px solid #35506a;
+            padding: 7px 8px;
+            text-align: left;
+        }
+
+        .analysis-table th {
+            color: #98c4ef;
+        }
+
         .results-summary {
-            background: white;
+            background: #232f3e;
             border-radius: 15px;
             padding: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px #0a1017;
             margin-bottom: 20px;
+            border: 1.5px solid #2e3c4f;
+            color: #e0e6ed;
+        }
+
+        .summary-title {
+            font-size: 1.5em;
+            color: #4e6a89;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
         }
 
         .summary-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 12px;
             flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .summary-title {
-            font-size: 1.5em;
-            color: #333;
         }
 
         .summary-stats {
             display: flex;
-            gap: 20px;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .stat-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: #2e3c4f;
+            color: #e0e6ed;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 14px;
             font-weight: 600;
+            font-family: 'Roboto Mono', 'Consolas', monospace;
         }
 
         .project-info {
-            background: #f9f9f9;
+            background: var(--panel-bg);
             padding: 15px;
             border-radius: 10px;
             margin-bottom: 15px;
+            border: 1.5px solid var(--border);
+            color: var(--text-secondary);
         }
 
         .project-info h3 {
-            color: #667eea;
+            color: var(--accent);
             margin-bottom: 10px;
         }
 
@@ -248,7 +405,7 @@
             flex-wrap: wrap;
             gap: 20px;
             font-size: 14px;
-            color: #666;
+            color: var(--text-secondary);
         }
 
         .info-item {
@@ -258,7 +415,12 @@
 
         .info-label {
             font-weight: 600;
-            color: #333;
+            color: var(--text-primary);
+        }
+
+        .project-name-label {
+            color: var(--accent);
+            font-weight: 700;
         }
 
         .pages-list {
@@ -282,12 +444,36 @@
             gap: 20px;
         }
 
+        .project-section-header {
+            background: linear-gradient(135deg, #263a4f 0%, #1f3142 100%);
+            color: var(--text-primary);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+        }
+
+        .project-section-title {
+            margin: 0;
+            font-size: 1.3em;
+            color: #cfe3f7;
+        }
+
+        .project-section-subtitle {
+            margin: 5px 0 0 0;
+            color: #a8bfd6;
+            font-size: 0.9em;
+        }
+
         .thumbnail-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            padding: 20px 0;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 18px;
+            padding: 18px 0;
             width: 100%;
+            background: #2a425a;
+            border-radius: 10px;
         }
 
         .thumbnail-item {
@@ -305,16 +491,16 @@
         .thumbnail-wrapper {
             width: 100%;
             height: auto;
-            background: white;
+            background: #1f3142;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(5, 12, 20, 0.45);
             transition: box-shadow 0.2s;
             position: relative;
         }
 
         .thumbnail-item:hover .thumbnail-wrapper {
-            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 16px rgba(63, 141, 244, 0.35);
         }
 
         .thumbnail-wrapper img {
@@ -327,8 +513,59 @@
             text-align: center;
             font-size: 14px;
             font-weight: 600;
-            color: #667eea;
+            color: var(--accent);
             margin-top: 10px;
+        }
+
+        .feedback-actions {
+            width: 100%;
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .feedback-btn {
+            border: 1px solid var(--border);
+            background: #203346;
+            color: var(--text-secondary);
+            border-radius: 12px;
+            padding: 4px 8px;
+            font-size: 11px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+
+        .feedback-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+
+        .feedback-btn.selected-best {
+            background: #245f44;
+            border-color: #39c07f;
+            color: #dff8ec;
+        }
+
+        .feedback-btn.selected-relevant {
+            background: #2a425a;
+            border-color: var(--accent);
+            color: #d9e9fb;
+        }
+
+        .feedback-btn.selected-irrelevant {
+            background: #5c2d2d;
+            border-color: #e57373;
+            color: #ffe4e4;
+        }
+
+        .feedback-status {
+            margin-top: 6px;
+            min-height: 14px;
+            font-size: 11px;
+            color: #9cc6f2;
+            text-align: center;
         }
 
         .thumbnail-score {
@@ -359,16 +596,17 @@
         }
 
         .result-card {
-            background: white;
+            background: var(--panel-bg);
             border-radius: 15px;
             padding: 25px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 20px rgba(5, 11, 18, 0.4);
             transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border);
         }
 
         .result-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 30px rgba(5, 11, 18, 0.55);
         }
 
         .result-header {
@@ -382,7 +620,7 @@
         .page-number {
             font-size: 2em;
             font-weight: 700;
-            color: #667eea;
+            color: var(--accent);
             min-width: 80px;
         }
 
@@ -391,12 +629,12 @@
         }
 
         .score-badge {
-            background: #f0f0f0;
+            background: #2a425a;
             padding: 6px 12px;
             border-radius: 20px;
             font-size: 13px;
             font-weight: 600;
-            color: #666;
+            color: var(--text-secondary);
         }
 
         .score-excellent {
@@ -435,12 +673,12 @@
         }
 
         .content-preview {
-            background: #f9f9f9;
+            background: #1f3142;
             padding: 15px;
             border-radius: 10px;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid var(--accent);
             font-size: 14px;
-            color: #555;
+            color: var(--text-secondary);
             line-height: 1.6;
         }
 
@@ -449,7 +687,7 @@
             align-items: center;
             gap: 5px;
             font-size: 13px;
-            color: #667eea;
+            color: var(--accent);
             margin-top: 10px;
         }
 
@@ -502,14 +740,14 @@
             cursor: pointer;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(5, 11, 18, 0.35);
             transition: transform 0.2s, box-shadow 0.2s;
-            background: #f0f0f0;
+            background: #1f3142;
         }
 
         .page-thumbnail:hover {
             transform: scale(1.05);
-            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 16px rgba(63, 141, 244, 0.35);
         }
 
         .page-thumbnail img {
@@ -524,9 +762,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #f0f0f0;
+            background: #1f3142;
             border-radius: 8px;
-            color: #999;
+            color: #8fa3b8;
             font-size: 12px;
         }
 
@@ -605,7 +843,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f5f5f5;
+            background: #1f3142;
         }
 
         .modal-body img {
@@ -649,6 +887,10 @@
                 align-items: start;
             }
 
+            .summary-stats {
+                width: 100%;
+            }
+
             .page-number {
                 font-size: 1.5em;
             }
@@ -679,19 +921,23 @@
 
         <!-- Search Box -->
         <div class="search-box">
+            <div class="chat-prompt">Help me find the plans and details</div>
             <div class="search-input-container">
-                <input 
-                    type="text" 
+                <textarea 
                     id="searchInput" 
-                    placeholder="Search for structural elements, details, or keywords..."
+                    rows="5"
+                    placeholder="Search for Caltrans isolated shear key for project dated 2020 and later..."
                     autocomplete="off"
-                >
+                ></textarea>
                 <button id="searchBtn" onclick="performSearch()">
-                    🔍 Search
+                    RUN QUERY
+                </button>
+                <button id="analyzeBtn" onclick="performAnalysis()">
+                    ANALYZE
                 </button>
             </div>
             <div class="quick-searches">
-                <span style="color: #666; font-size: 14px; margin-right: 10px;">Quick searches:</span>
+                <span style="color: var(--text-secondary); font-size: 14px; margin-right: 10px;">Quick searches:</span>
                 <button class="quick-search-btn" onclick="quickSearch('I Girder')">I Girder</button>
                 <button class="quick-search-btn" onclick="quickSearch('Shear Key details')">Shear Key details</button>
                 <button class="quick-search-btn" onclick="quickSearch('Drilled shaft')">Drilled shaft</button>
@@ -706,11 +952,15 @@
                 <label class="relevance-label">🎯 Search Precision:</label>
                 <div class="relevance-options">
                     <div class="relevance-option">
+                        <input type="radio" id="rel-adaptive" name="relevance" value="auto" checked>
+                        <label for="rel-adaptive">Adaptive (Recommended)</label>
+                    </div>
+                    <div class="relevance-option">
                         <input type="radio" id="rel-exact" name="relevance" value="0.0">
                         <label for="rel-exact">Exact Match Only</label>
                     </div>
                     <div class="relevance-option">
-                        <input type="radio" id="rel-high" name="relevance" value="0.15" checked>
+                        <input type="radio" id="rel-high" name="relevance" value="0.15">
                         <label for="rel-high">High Relevance</label>
                     </div>
                     <div class="relevance-option">
@@ -723,7 +973,7 @@
                     </div>
                 </div>
                 <div class="relevance-help">
-                    "Exact Match Only" shows only the page with actual content (e.g., the camber diagram itself), not general references
+                    "Adaptive" uses backend defaults (hybrid=1.0, vector-only=0.5). Pick a fixed mode only if you need manual control.
                 </div>
             </div>
         </div>
@@ -737,6 +987,30 @@
         <!-- Error Message -->
         <div id="errorMessage" class="error-message" style="display: none;"></div>
 
+        <!-- Analysis Container -->
+        <div id="analysisContainer" class="analysis-container">
+            <div class="analysis-header">
+                <div class="analysis-title" id="analysisTitle">Analysis</div>
+                <div class="confidence-badge" id="analysisConfidence">Intent Confidence: --</div>
+            </div>
+            <div class="analysis-card">
+                <h4>Query Interpretation</h4>
+                <div id="analysisAnswer" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Inferred Intent</h4>
+                <div id="analysisIntent" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Related Terminology</h4>
+                <div id="analysisTerminology" style="line-height: 1.6; color: #dbe8f4;"></div>
+            </div>
+            <div class="analysis-card">
+                <h4>Semantic Evidence (Top 10)</h4>
+                <div id="analysisEvidence"></div>
+            </div>
+        </div>
+
         <!-- Results Container -->
         <div id="resultsContainer" class="results-container">
             <!-- Results Summary -->
@@ -744,9 +1018,10 @@
                 <div class="summary-header">
                     <div class="summary-title" id="searchQuery"></div>
                     <div class="summary-stats">
-                        <div class="stat-badge" id="totalResults">0 Results</div>
-                        <div class="stat-badge" id="totalPages">0 Pages</div>
-                        <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Search Summary</button>
+                        <div class="stat-badge" id="summaryCounts">0 Projects • 0 Pages</div>
+                        <button id="downloadBestPdfBtn" onclick="downloadBestPdf()" style="display: none; margin-left: 15px; padding: 10px 20px; background: #2b6cb0; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#255c98'" onmouseout="this.style.background='#2b6cb0'">📄 Download Best Sheets PDF</button>
+                        <button id="downloadRelevantBestPdfBtn" onclick="downloadRelevantBestPdf()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #7a4ab4; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#6a3ea0'" onmouseout="this.style.background='#7a4ab4'">📚 Download Relevant + Best PDF</button>
+                        <button id="downloadBtn" onclick="downloadSpreadsheet()" style="display: none; margin-left: 10px; padding: 10px 20px; background: #4caf50; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.2s;" onmouseover="this.style.background='#45a049'" onmouseout="this.style.background='#4caf50'">📥 Download Non-Irrelevant Spreadsheet</button>
                     </div>
                 </div>
 
@@ -782,15 +1057,21 @@
     </div>
 
     <script>
-        const API_URL = 'http://localhost:8000';
+        const IS_LOCAL_HOST = ['localhost', '127.0.0.1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+        const API_URL = IS_LOCAL_HOST
+            ? 'http://localhost:8001'
+            : 'https://librarian-716133050580.us-central1.run.app';
+        // Optional scope used by feedback/export endpoints. Empty means global scope.
+        const ACTIVE_PROJECT_SCOPE = '';
         
         // Store current search results for download
         let currentSearchResults = null;
         let currentSearchQuery = '';
 
-        // Allow Enter key to trigger search
-        document.getElementById('searchInput').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
+        // Enter always runs RUN QUERY (performSearch); Shift+Enter inserts a newline.
+        document.getElementById('searchInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
                 performSearch();
             }
         });
@@ -798,6 +1079,15 @@
         function quickSearch(query) {
             document.getElementById('searchInput').value = query;
             performSearch();
+        }
+
+        function escapeHtml(value) {
+            return String(value || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
         }
 
         async function performSearch() {
@@ -808,26 +1098,37 @@
                 return;
             }
 
-            // Get selected relevance threshold
-            const relevanceThreshold = parseFloat(document.querySelector('input[name="relevance"]:checked').value);
+            // Keep threshold optional so backend adaptive defaults can apply.
+            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
 
             // Show loading, hide results and errors
             document.getElementById('loading').style.display = 'block';
             document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('analysisContainer').style.display = 'none';
             document.getElementById('errorMessage').style.display = 'none';
             document.getElementById('searchBtn').disabled = true;
+            document.getElementById('analyzeBtn').disabled = true;
 
             try {
+                const requestBody = {
+                    query: query,
+                    k: 20
+                };
+
+                if (ACTIVE_PROJECT_SCOPE) {
+                    requestBody.project_scope = ACTIVE_PROJECT_SCOPE;
+                }
+
+                if (selectedRelevance !== 'auto') {
+                    requestBody.relevance_threshold = parseFloat(selectedRelevance);
+                }
+
                 const response = await fetch(`${API_URL}/search`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({
-                        query: query,
-                        k: 20,
-                        relevance_threshold: relevanceThreshold
-                    })
+                    body: JSON.stringify(requestBody)
                 });
 
                 if (!response.ok) {
@@ -843,13 +1144,134 @@
             } finally {
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('searchBtn').disabled = false;
+                document.getElementById('analyzeBtn').disabled = false;
             }
+        }
+
+        async function performAnalysis() {
+            const query = document.getElementById('searchInput').value.trim();
+
+            if (!query) {
+                alert('Please enter a query to analyze');
+                return;
+            }
+
+            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('analysisContainer').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('searchBtn').disabled = true;
+            document.getElementById('analyzeBtn').disabled = true;
+
+            try {
+                const requestBody = {
+                    query: query,
+                    k: 40,
+                    use_hybrid_search: true
+                };
+
+                if (ACTIVE_PROJECT_SCOPE) {
+                    requestBody.project_scope = ACTIVE_PROJECT_SCOPE;
+                }
+
+                if (selectedRelevance !== 'auto') {
+                    requestBody.relevance_threshold = parseFloat(selectedRelevance);
+                }
+
+                const response = await fetch(`${API_URL}/analyze`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                displayAnalysis(data);
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError(`Failed to perform analysis: ${error.message}. If deployed API is older, redeploy backend with /analyze.`);
+            } finally {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('searchBtn').disabled = false;
+                document.getElementById('analyzeBtn').disabled = false;
+            }
+        }
+
+        function displayAnalysis(data) {
+            document.getElementById('analysisTitle').textContent = `Analysis: "${data.query}"`;
+            document.getElementById('analysisConfidence').textContent = `Intent Confidence: ${(Number(data.intent_confidence || 0) * 100).toFixed(1)}%`;
+            document.getElementById('analysisAnswer').textContent = data.answer || 'No interpretation generated';
+
+            // Display inferred intent
+            const intent = data.inferred_intent || {};
+            const intentTypes = intent.intent_types || {};
+            const components = intent.structural_components || [];
+            
+            let intentHtml = '<div style="margin: 10px 0;">';
+            if (Object.keys(intentTypes).length > 0) {
+                intentHtml += '<p><strong>What you\'re asking for:</strong> ' + Object.keys(intentTypes).join(', ') + '</p>';
+            }
+            if (components.length > 0) {
+                intentHtml += '<p><strong>Related to:</strong> ' + components.join(', ') + '</p>';
+            }
+            if (Object.keys(intentTypes).length === 0 && components.length === 0) {
+                intentHtml += '<p style="color: #9fb8d0;">Inferred intent will appear here</p>';
+            }
+            intentHtml += '</div>';
+            document.getElementById('analysisIntent').innerHTML = intentHtml;
+
+            // Display terminology variants
+            const variants = data.terminology_variants || {};
+            let termHtml = '<div style="margin: 10px 0;">';
+            if (Object.keys(variants).length > 0) {
+                termHtml += Object.entries(variants).map(([term, synonyms]) => 
+                    `<p><strong>${escapeHtml(term)}:</strong> ${synonyms.map(s => escapeHtml(s)).join(', ')}</p>`
+                ).join('');
+            } else {
+                termHtml += '<p style="color: #9fb8d0;">No terminology variants found</p>';
+            }
+            termHtml += '</div>';
+            document.getElementById('analysisTerminology').innerHTML = termHtml;
+
+            // Display semantic evidence
+            const evidence = (data.semantic_evidence || []).slice(0, 10);
+            if (evidence.length) {
+                const evidenceHtml = evidence.map((ev, idx) => `
+                    <div style="border-left: 4px solid #61a5ff; padding: 12px; margin: 12px 0; background: #1f3142; border-radius: 4px;">
+                        <p style="margin: 0 0 8px 0; color: #61a5ff; font-weight: 600;">${idx + 1}. ${escapeHtml(ev.pdf_file_name)} • Page ${Number(ev.page_number)}</p>
+                        <p style="margin: 0 0 8px 0; font-size: 0.95em; color: #b7c7d7;">Project: ${escapeHtml(ev.project_name)}</p>
+                        ${ev.component_matches.length > 0 ? `<p style="margin: 0 0 8px 0; font-size: 0.95em; color: #a0d995;">Structural: ${ev.component_matches.join(', ')}</p>` : ''}
+                        <p style="margin: 0 0 8px 0; font-size: 0.95em;">
+                            <span style="color: #9fb8d0;">Semantic Match:</span> ${(Number(ev.semantic_match_score) * 100).toFixed(0)}% | 
+                            <span style="color: #9fb8d0;">Relevance:</span> ${Number(ev.relevance_score).toFixed(2)}
+                        </p>
+                        <p style="margin: 0 0 8px 0; font-size: 0.9em; color: #dbe8f4; font-style: italic;">${escapeHtml(ev.why_matched)}</p>
+                        <p style="margin: 0; font-size: 0.9em; color: #a8bcc8; line-height: 1.5;">${escapeHtml(ev.snippet.substring(0, 300))}${ev.snippet.length > 300 ? '...' : ''}</p>
+                    </div>
+                `).join('');
+                document.getElementById('analysisEvidence').innerHTML = evidenceHtml;
+            } else {
+                document.getElementById('analysisEvidence').innerHTML = '<div style="color:#9fb8d0">No semantic evidence found.</div>';
+            }
+
+            document.getElementById('analysisContainer').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('analysisContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 80);
         }
 
         function displayResults(data) {
             if (data.total_results === 0) {
                 showNoResults(data.query);
                 document.getElementById('downloadBtn').style.display = 'none';
+                document.getElementById('downloadBestPdfBtn').style.display = 'none';
+                document.getElementById('downloadRelevantBestPdfBtn').style.display = 'none';
                 return;
             }
 
@@ -859,14 +1281,16 @@
             
             // Show download button
             document.getElementById('downloadBtn').style.display = 'inline-block';
+            document.getElementById('downloadBestPdfBtn').style.display = 'inline-block';
+            document.getElementById('downloadRelevantBestPdfBtn').style.display = 'inline-block';
 
             // Update summary
             document.getElementById('searchQuery').textContent = `"${data.query}"`;
-            document.getElementById('totalResults').textContent = `${data.total_results} Results`;
             
-            // Get unique pages
+            // Get unique pages and projects
             const uniquePages = [...new Set(data.results.map(r => r.page_number))];
-            document.getElementById('totalPages').textContent = `${uniquePages.length} Pages`;
+            const uniqueProjects = [...new Set(data.results.map(r => r.pdf_file_name || r.project_name || 'Unknown Project'))];
+            document.getElementById('summaryCounts').textContent = `${uniqueProjects.length} Projects • ${uniquePages.length} Pages`;
 
             // Group results by project
             const projectGroups = {};
@@ -891,7 +1315,7 @@
                 if (data.project_summaries && data.project_summaries.length > 0) {
                     const project = data.project_summaries[0];
                     projectInfo.innerHTML = `
-                        <h3>📄 ${project.project_name}</h3>
+                        <h3>📄 <span class="project-name-label">${project.project_name}</span></h3>
                         <div class="info-row">
                             <div class="info-item">
                                 <span class="info-label">File:</span>
@@ -923,7 +1347,7 @@
                     <div class="info-row">
                         ${data.project_summaries.map(proj => `
                             <div class="info-item">
-                                <span class="info-label">${proj.project_name}:</span>
+                                <span class="info-label project-name-label">${proj.project_name}:</span>
                                 <span>${proj.relevant_pages.length} pages</span>
                             </div>
                         `).join('')}
@@ -938,9 +1362,9 @@
             Object.values(projectGroups).forEach(project => {
                 resultsHTML += `
                     <div class="project-section" style="margin-bottom: 40px;">
-                        <div class="project-section-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px;">
-                            <h2 style="margin: 0; font-size: 1.3em;">📄 ${project.name}</h2>
-                            <p style="margin: 5px 0 0 0; opacity: 0.9; font-size: 0.9em;">${project.results.length} results from this project</p>
+                        <div class="project-section-header">
+                            <h2 class="project-section-title">📄 ${project.name}</h2>
+                            <p class="project-section-subtitle">${project.results.length} results from this project</p>
                         </div>
                         <div class="thumbnail-grid">
                             ${project.results.map(result => createThumbnailItem(result, data.query)).join('')}
@@ -961,6 +1385,7 @@
         }
 
         function createThumbnailItem(result, query) {
+            const encodedFileName = encodeURIComponent(result.pdf_file_name);
             return `
                 <div class="thumbnail-item" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
                     <div class="thumbnail-wrapper">
@@ -969,8 +1394,71 @@
                              onerror="this.style.display='none'">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                    <div class="feedback-actions" onclick="event.stopPropagation()">
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'best')">Best</button>
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'relevant')">Relevant</button>
+                        <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'irrelevant')">Irrelevant</button>
+                    </div>
+                    <div class="feedback-status"></div>
                 </div>
             `;
+        }
+
+        async function submitResultFeedback(event, buttonEl, encodedFileName, pageNumber, label) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            const query = (currentSearchQuery || '').trim();
+            if (!query) {
+                return;
+            }
+
+            const fileName = decodeURIComponent(encodedFileName);
+            const statusEl = buttonEl.closest('.thumbnail-item').querySelector('.feedback-status');
+            const actionsEl = buttonEl.closest('.feedback-actions');
+            const buttons = actionsEl.querySelectorAll('.feedback-btn');
+
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('selected-best', 'selected-relevant', 'selected-irrelevant');
+            });
+
+            if (statusEl) {
+                statusEl.textContent = 'Saving feedback...';
+            }
+
+            try {
+                const resp = await fetch(`${API_URL}/feedback/search-result`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        query,
+                        project_scope: ACTIVE_PROJECT_SCOPE || null,
+                        pdf_file_name: fileName,
+                        page_number: pageNumber,
+                        feedback: label,
+                    }),
+                });
+
+                if (!resp.ok) {
+                    throw new Error(`API error: ${resp.status}`);
+                }
+
+                buttonEl.classList.add(`selected-${label}`);
+                if (statusEl) {
+                    statusEl.textContent = `Saved: ${label}`;
+                }
+            } catch (err) {
+                if (statusEl) {
+                    statusEl.textContent = `Failed to save (${err.message})`;
+                }
+            } finally {
+                buttons.forEach(btn => {
+                    btn.disabled = false;
+                });
+            }
         }
 
         function createResultCard(result, query) {
@@ -1072,17 +1560,96 @@
         }
 
         // Download spreadsheet function
-        function downloadSpreadsheet() {
+        async function getLatestFeedbackMap(query) {
+            const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+            const url = `${API_URL}/feedback/labels?query=${encodeURIComponent(query)}${scopeParam}`;
+            const response = await fetch(url, { method: 'GET' });
+            if (!response.ok) {
+                throw new Error(`Feedback API error: ${response.status}`);
+            }
+            const data = await response.json();
+            const map = new Map();
+            (data.items || []).forEach(item => {
+                const key = `${item.pdf_file_name}::${item.page_number}`;
+                map.set(key, item.feedback || '');
+            });
+            return map;
+        }
+
+        async function downloadBestPdf() {
+            if (!currentSearchQuery) {
+                alert('Run a search first');
+                return;
+            }
+
+            const btn = document.getElementById('downloadBestPdfBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Preparing PDF...';
+            btn.disabled = true;
+
+            try {
+                const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+                const url = `${API_URL}/feedback/export/best-pdf?query=${encodeURIComponent(currentSearchQuery)}${scopeParam}`;
+                const response = await fetch(url, { method: 'GET' });
+                if (!response.ok) {
+                    const detail = await response.text();
+                    throw new Error(detail || `API error: ${response.status}`);
+                }
+
+                const blob = await response.blob();
+                const link = document.createElement('a');
+                const objectUrl = URL.createObjectURL(blob);
+                const timestamp = new Date().toISOString().slice(0, 10);
+                const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                link.href = objectUrl;
+                link.download = `best_sheets_${querySlug}_${timestamp}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(objectUrl);
+
+                btn.innerHTML = '✓ Downloaded PDF';
+            } catch (error) {
+                console.error('Best PDF download error:', error);
+                alert('No Best pages available yet for this query/scope. Mark some pages as Best first.');
+                btn.innerHTML = 'No Best Pages Yet';
+            } finally {
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 1800);
+            }
+        }
+
+        async function downloadSpreadsheet() {
             if (!currentSearchResults || currentSearchResults.length === 0) {
                 alert('No search results to download');
                 return;
             }
 
+            let feedbackMap = new Map();
+            try {
+                feedbackMap = await getLatestFeedbackMap(currentSearchQuery);
+            } catch (error) {
+                console.warn('Failed to fetch feedback labels, continuing without exclusions:', error);
+            }
+
+            const filteredResults = currentSearchResults.filter(result => {
+                const key = `${result.pdf_file_name}::${result.page_number}`;
+                const label = (feedbackMap.get(key) || '').toLowerCase();
+                return label !== 'irrelevant';
+            });
+
+            if (filteredResults.length === 0) {
+                alert('All current results are marked Irrelevant. Nothing to export.');
+                return;
+            }
+
             // Create CSV content with 3 columns (sheet_title empty for now)
-            let csvContent = 'Project Name,Page Number,Sheet Title\n';
+            let csvContent = 'Project Name,Page Number,Sheet Title,Feedback Label\n';
             
             // Sort results by project name and page number
-            const sortedResults = [...currentSearchResults].sort((a, b) => {
+            const sortedResults = [...filteredResults].sort((a, b) => {
                 if (a.project_name !== b.project_name) {
                     return a.project_name.localeCompare(b.project_name);
                 }
@@ -1094,7 +1661,9 @@
                 // Escape quotes in project name
                 const projectName = result.project_name.replace(/"/g, '""');
                 const sheetTitle = ''; // Will be populated when API is updated
-                csvContent += `"${projectName}",${result.page_number},"${sheetTitle}"\n`;
+                const key = `${result.pdf_file_name}::${result.page_number}`;
+                const label = feedbackMap.get(key) || 'unlabeled';
+                csvContent += `"${projectName}",${result.page_number},"${sheetTitle}","${label}"\n`;
             });
 
             // Create blob and download
@@ -1105,7 +1674,7 @@
             // Create filename with query and timestamp
             const timestamp = new Date().toISOString().slice(0, 10);
             const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
-            const filename = `search_results_${querySlug}_${timestamp}.csv`;
+            const filename = `search_results_non_irrelevant_${querySlug}_${timestamp}.csv`;
             
             link.setAttribute('href', url);
             link.setAttribute('download', filename);
@@ -1124,6 +1693,51 @@
                 downloadBtn.innerHTML = originalText;
                 downloadBtn.style.background = '#4caf50';
             }, 2000);
+        }
+
+        async function downloadRelevantBestPdf() {
+            if (!currentSearchQuery) {
+                alert('Run a search first');
+                return;
+            }
+
+            const btn = document.getElementById('downloadRelevantBestPdfBtn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Preparing PDF...';
+            btn.disabled = true;
+
+            try {
+                const scopeParam = ACTIVE_PROJECT_SCOPE ? `&project_scope=${encodeURIComponent(ACTIVE_PROJECT_SCOPE)}` : '';
+                const url = `${API_URL}/feedback/export/relevant-best-pdf?query=${encodeURIComponent(currentSearchQuery)}${scopeParam}`;
+                const response = await fetch(url, { method: 'GET' });
+                if (!response.ok) {
+                    const detail = await response.text();
+                    throw new Error(detail || `API error: ${response.status}`);
+                }
+
+                const blob = await response.blob();
+                const link = document.createElement('a');
+                const objectUrl = URL.createObjectURL(blob);
+                const timestamp = new Date().toISOString().slice(0, 10);
+                const querySlug = currentSearchQuery.replace(/[^a-z0-9]/gi, '_').toLowerCase();
+                link.href = objectUrl;
+                link.download = `relevant_best_sheets_${querySlug}_${timestamp}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                URL.revokeObjectURL(objectUrl);
+
+                btn.innerHTML = '✓ Downloaded PDF';
+            } catch (error) {
+                console.error('Relevant+Best PDF download error:', error);
+                alert('No Relevant or Best pages available yet for this query/scope. Label some pages first.');
+                btn.innerHTML = 'No Labeled Pages Yet';
+            } finally {
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }, 1800);
+            }
         }
 
         // Modal functions

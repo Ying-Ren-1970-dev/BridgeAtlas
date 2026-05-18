@@ -5,16 +5,16 @@
     "title_block": {
       "project_info": {
         "project_name": "TUNNEL AND PLATFORM GP NO. 1",
-        "project_number": null,
+        "project_number": "30X DESIGN",
         "client": "UNION PACIFIC RAILROAD",
-        "location": "Fresno Sub in MP 114 to 117, ACE Track Improvement and Central Station Project",
+        "location": "Fresno Sub in 114 to 117 ACE Track Improvement Project",
         "engineer_on_record": null,
         "engineering_firm": "MARK THOMAS",
         "project_year": "2021",
-        "other_info": "Latitude: 37° 29' N, Longitude: 120° 29' W"
+        "other_info": "Latitude: 39° 27' N, Longitude: 120° 29' W"
       },
       "plan_type": {
-        "primary_type": "30% DESIGN",
+        "primary_type": "Plan",
         "sheet_title": "TUNNEL AND PLATFORM GP NO. 1",
         "sheet_number": "S-1",
         "scale": "1\" = 20'",
@@ -28,12 +28,10 @@
           "platform",
           "ramp",
           "stairs",
-          "tunnel"
+          "tunnel",
+          "wall"
         ],
-        "detail_types": [
-          "elevation",
-          "plan"
-        ],
+        "detail_types": [],
         "grid_references": [
           "1268",
           "1269",
@@ -52,28 +50,29 @@
         "project_name": "TUNNEL AND PLATFORM GP NO. 1",
         "project_number": null,
         "client": "UNION PACIFIC RAILROAD",
-        "location": "ACE, San Joaquin County, CA - Fresno Sub MP 114 to 117",
+        "location": "ACE Ceres to Merced Extension Project, Ceres Station (County, CA - Fresno Sub MP 114 to 117)",
         "engineer_on_record": null,
         "engineering_firm": "MARK THOMAS",
         "project_year": "2021",
-        "other_info": "Latitude: 37° 29' N Longitude: 120° 29' 24\" W"
+        "other_info": "Latitude: 37° 29' N Longitude: 120° 29' W"
       },
       "plan_type": {
-        "primary_type": "Pedestrian Ramp and Tunnel Entrance",
-        "sheet_title": "Ped_Ramp_and_Tunnel_GP",
+        "primary_type": "Pedestrian Ramp and Tunnel",
+        "sheet_title": "TUNNEL AND PLATFORM GP NO. 1",
         "sheet_number": "S-2",
         "scale": "1\" = 5'",
-        "revision": null,
+        "revision": "XX",
         "date": "11/4/21"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "tunnel",
           "platform",
+          "tunnel",
           "ramp",
-          "handrail"
+          "handrail",
+          "shoring"
         ],
         "detail_types": [
           "section"
@@ -86,25 +85,25 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "Ped_Ramp and Tunnel_GP",
         "project_number": null,
         "client": "UNION PACIFIC RAILROAD",
-        "location": "Fresno Sub MP 114 to 117, Fresno, Madera County, CA",
+        "location": "Fresno Sub MP 114 to 117, ACE Track Improvements, Ceres Station Project",
         "engineer_on_record": null,
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2021",
-        "other_info": "Latitude 36° 57' 29\" N Longitude 120° 27' 24\" W"
+        "project_year": null,
+        "other_info": "Latitude 35° 39' 27\" N Longitude 120° 29' 24\" W"
       },
       "plan_type": {
-        "primary_type": "Index to Plans",
+        "primary_type": "Index To Plans",
         "sheet_title": "INDEX TO PLANS",
         "sheet_number": "S-3",
         "scale": "NO SCALE",
         "revision": null,
-        "date": "11/21"
+        "date": "11/21/21"
       },
       "plan_contents": {
         "has_tables": true,

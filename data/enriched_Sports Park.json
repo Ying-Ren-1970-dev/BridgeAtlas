@@ -1,25 +1,25 @@
 [
   {
     "page_type": "plan",
-    "confidence": 1.0,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
-        "project_number": "0321000007",
+        "project_number": "03-1J4901",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "SACRAMENTO, CA 95835",
         "engineer_on_record": "E. FREDRICKSON",
-        "engineering_firm": "MARK THOMAS",
+        "engineering_firm": null,
         "project_year": "2021",
-        "other_info": null
+        "other_info": "PROJECT NUMBER & PHASE: 0321000007"
       },
       "plan_type": {
         "primary_type": "General Plan",
         "sheet_title": "GENERAL PLAN",
-        "sheet_number": "2",
+        "sheet_number": "1",
         "scale": "1\" = 30'",
         "revision": null,
-        "date": "03/14/22"
+        "date": "04-09-2021"
       },
       "plan_contents": {
         "has_tables": false,
@@ -31,9 +31,9 @@
           "footing"
         ],
         "detail_types": [
-          "typical section",
-          "elevation",
-          "profile grade"
+          "Typical Section",
+          "Elevation",
+          "Plan"
         ],
         "grid_references": [
           "Abut 1",
@@ -48,25 +48,25 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.9,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
         "project_number": "0321000027",
         "client": null,
-        "location": "SACRAMENTO, CA 95825",
+        "location": "707 UNIVERSITY AVE, SUITE 200 SACRAMENTO, CA 95825",
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "project_year": null,
+        "project_year": "2022",
         "other_info": "65% SUBMITTAL"
       },
       "plan_type": {
-        "primary_type": "INDEX TO PLANS",
+        "primary_type": "Index to Plans",
         "sheet_title": "INDEX TO PLANS",
         "sheet_number": "2",
         "scale": "NO SCALE",
         "revision": null,
-        "date": "02/14/12"
+        "date": "10/11/22"
       },
       "plan_contents": {
         "has_tables": true,
@@ -102,12 +102,12 @@
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
         "project_number": "032000047",
-        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SACRAMENTO, CA",
+        "client": "STATE OF CALIFORNIA",
+        "location": "SACRAMENTO, CA 95835",
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2023",
-        "other_info": "CONTRACT NO. 03-1J6901"
+        "other_info": "CONTRACT NO. 03-1J5901"
       },
       "plan_type": {
         "primary_type": "Deck Contours",
@@ -129,8 +129,7 @@
           "Abut 1",
           "Bent 2",
           "Bent 3",
-          "Abut 4",
-          "POC"
+          "Abut 4"
         ]
       }
     },
@@ -148,16 +147,16 @@
         "location": null,
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
-        "project_year": null,
+        "project_year": "2020",
         "other_info": null
       },
       "plan_type": {
         "primary_type": "Foundation Plan",
         "sheet_title": "FOUNDATION PLAN",
-        "sheet_number": "4 of 20",
+        "sheet_number": "4",
         "scale": "1\" = 20'",
         "revision": null,
-        "date": "9/10/19"
+        "date": "6/10/19"
       },
       "plan_contents": {
         "has_tables": true,
@@ -169,9 +168,9 @@
         ],
         "detail_types": [],
         "grid_references": [
+          "Abut 1",
           "Bent 2",
           "Bent 3",
-          "Abut 1",
           "Abut 4"
         ]
       }
@@ -185,13 +184,13 @@
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
-        "project_number": "03-1J4901",
+        "project_number": "03-0J1801",
         "client": null,
         "location": null,
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "project_year": null,
-        "other_info": "PROJECT NUMBER & PHASE: 0321000067"
+        "project_year": "2022",
+        "other_info": "PROJECT NUMBER & PHASE: 032100007"
       },
       "plan_type": {
         "primary_type": "Abutment Layout",
@@ -199,7 +198,7 @@
         "sheet_number": "5",
         "scale": "3/8\" = 1'-0\"",
         "revision": null,
-        "date": "12/01/22"
+        "date": "12/22/2022"
       },
       "plan_contents": {
         "has_tables": false,
@@ -210,13 +209,16 @@
           "bearing pad"
         ],
         "detail_types": [
-          "PLAN",
-          "PILE LAYOUT",
-          "ELEVATION",
-          "DETAIL Y",
-          "SECTION A-A"
+          "Plan",
+          "Pile Layout",
+          "Elevation",
+          "Detail Y",
+          "Section A-A"
         ],
-        "grid_references": []
+        "grid_references": [
+          "Brg Abut 1",
+          "POC"
+        ]
       }
     },
     "page_number": 5,
@@ -224,7 +226,7 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
@@ -248,6 +250,7 @@
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
+          "bent",
           "column",
           "footing",
           "pile"
@@ -272,9 +275,9 @@
         "project_number": "0321000047",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "SACRAMENTO, CA 95825",
-        "engineer_on_record": "F. FREDRICKSON",
+        "engineer_on_record": "C. FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2022",
+        "project_year": "2023",
         "other_info": "CONTRACT NO. 03-1J4901"
       },
       "plan_type": {
@@ -283,26 +286,27 @@
         "sheet_number": "9",
         "scale": "3/4\" = 1'-0\"",
         "revision": null,
-        "date": "03/17/22"
+        "date": "03/14/23"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
           "bent",
-          "column"
+          "column",
+          "hoops",
+          "coupler",
+          "stirrups"
         ],
         "detail_types": [
           "Section G-G",
           "Section H-H",
           "Section E-E",
           "Section F-F",
-          "Section I-I"
+          "Section I-I",
+          "View O-O"
         ],
-        "grid_references": [
-          "Bent 3",
-          "Bent 2"
-        ]
+        "grid_references": null
       }
     },
     "page_number": 9,
@@ -314,19 +318,19 @@
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
-        "project_number": null,
+        "project_number": "03-1J6901",
         "client": "STATE OF CALIFORNIA",
-        "location": null,
+        "location": "SACRAMENTO, CA 95819",
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
         "project_year": "2023",
-        "other_info": "PROJECT NAME & PHASE: 0321000007 CONTRACT NO. 03-1J6901"
+        "other_info": "PROJECT & PHASE: 032100007"
       },
       "plan_type": {
         "primary_type": "Typical Section",
         "sheet_title": "TYPICAL SECTION",
         "sheet_number": "10",
-        "scale": null,
+        "scale": "1/2\" = 1'-0\"",
         "revision": null,
         "date": "03/14/23"
       },
@@ -334,15 +338,18 @@
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
+          "pedestrian railing",
           "pedestrian light",
-          "anchor plate",
-          "pedestal",
-          "conduit"
+          "anchor bolt",
+          "electrical conduit",
+          "fillet",
+          "chamfer"
         ],
         "detail_types": [
           "Pedestrian Light Connection Detail",
           "Anchor Plate Detail",
-          "Typical Section Details"
+          "Typical Section Detail",
+          "Section at Pedestrian Light"
         ],
         "grid_references": []
       }
@@ -352,25 +359,25 @@
   },
   {
     "page_type": "plan",
-    "confidence": 1.0,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
-        "project_number": "03-1J040",
+        "project_number": "03-2J0007",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "CITY OF WOODLAND, CA 95695",
-        "engineer_on_record": "E. FREDRICKSON",
-        "engineering_firm": "MARK THOMAS",
-        "project_year": "2022",
-        "other_info": null
+        "engineer_on_record": "F. FREDRICKSON",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "65% SUBMITTAL"
       },
       "plan_type": {
         "primary_type": "GIRDER LAYOUT",
         "sheet_title": "GIRDER LAYOUT",
-        "sheet_number": "X-1",
+        "sheet_number": "12-13",
         "scale": "1\" = 10'",
         "revision": null,
-        "date": "03/14/22"
+        "date": "03/14/12"
       },
       "plan_contents": {
         "has_tables": false,
@@ -386,9 +393,9 @@
         ],
         "grid_references": [
           "Abutment 1",
+          "Abutment 4",
           "Bent 2",
-          "Bent 3",
-          "Abutment 4"
+          "Bent 3"
         ]
       }
     },
@@ -402,10 +409,10 @@
       "project_info": {
         "project_name": "SPORTS PARK DR. POC",
         "project_number": "0321000047",
-        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SACRAMENTO, CA 95825",
+        "client": null,
+        "location": null,
         "engineer_on_record": "E. FREDRICKSON",
-        "engineering_firm": null,
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "project_year": "2022",
         "other_info": "CONTRACT NO. 03-1J4901"
       },
@@ -413,9 +420,9 @@
         "primary_type": "Girder Reinforcement",
         "sheet_title": "GIRDER REINFORCEMENT",
         "sheet_number": "12",
-        "scale": "NO SCALE",
+        "scale": null,
         "revision": null,
-        "date": "12/20/22"
+        "date": "12/20"
       },
       "plan_contents": {
         "has_tables": true,
@@ -445,17 +452,17 @@
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "WOODLAND, CA",
         "engineer_on_record": "E. FREDRICKSON",
-        "engineering_firm": "MARK THOMAS",
-        "project_year": "2023",
-        "other_info": null
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "65% SUBMITTAL"
       },
       "plan_type": {
-        "primary_type": "Pilaster Details",
+        "primary_type": "PILASTER DETAILS",
         "sheet_title": "PILASTER DETAILS",
-        "sheet_number": null,
-        "scale": null,
+        "sheet_number": "X-1",
+        "scale": "1\"=1'-0\"",
         "revision": null,
-        "date": "10/11/23"
+        "date": "03/17/21"
       },
       "plan_contents": {
         "has_tables": false,
@@ -467,7 +474,7 @@
           "elevation",
           "section"
         ],
-        "grid_references": null
+        "grid_references": []
       }
     },
     "page_number": 16,
@@ -481,19 +488,19 @@
         "project_name": "SPORTS PARK DR. POC",
         "project_number": "0321000047",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SACRAMENTO, CA 95825",
+        "location": "SACRAMENTO, CA 95833",
         "engineer_on_record": "E. FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2023",
+        "project_year": "2022",
         "other_info": null
       },
       "plan_type": {
         "primary_type": "Drainage Details",
         "sheet_title": "DRAINAGE DETAILS",
         "sheet_number": "27",
-        "scale": null,
+        "scale": "1 1/2\" = 1'-0\"",
         "revision": null,
-        "date": "03/14/23"
+        "date": "03/17/22"
       },
       "plan_contents": {
         "has_tables": false,
@@ -501,6 +508,7 @@
         "structural_elements": [
           "wingwall",
           "abutment",
+          "footing",
           "pipe",
           "drain"
         ],
@@ -520,25 +528,25 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "STRIP JOINT SEAT ASSEMBLY",
+        "project_name": "STRIP JOINT SEAL ASSEMBLY",
         "project_number": "032100007",
         "client": null,
         "location": null,
         "engineer_on_record": null,
         "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "project_year": "2020",
-        "other_info": "CONTRACT NO.: 03-1G041"
+        "other_info": "CONTRACT NO. 03-1A0401"
       },
       "plan_type": {
         "primary_type": "Bridge Standard Drawing",
         "sheet_title": "MAXIMUM MOVEMENT RATING = 4\"",
         "sheet_number": "xs8-010",
-        "scale": "NO SCALE",
+        "scale": null,
         "revision": null,
         "date": "July 2020"
       },
       "plan_contents": {
-        "has_tables": true,
+        "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
           "steel edge member",
@@ -546,51 +554,14 @@
           "anchor studs"
         ],
         "detail_types": [
-          "Plan",
-          "Section A-A",
-          "Barrier Detail",
-          "Sidewalk Detail",
-          "Schematic Field Weld Detail",
-          "Schematic Shop Weld Detail",
-          "Section B-B"
+          "barrier detail",
+          "sidewalk detail",
+          "weld detail"
         ],
         "grid_references": null
       }
     },
     "page_number": 18,
-    "filename": "Sports Park.pdf"
-  },
-  {
-    "page_type": "plan",
-    "confidence": 0.95,
-    "title_block": {
-      "project_info": {
-        "project_name": "SPORTS PARK DR. POC",
-        "project_number": null,
-        "client": null,
-        "location": null,
-        "engineer_on_record": null,
-        "engineering_firm": "GEOCON West, Inc.",
-        "project_year": null,
-        "other_info": null
-      },
-      "plan_type": {
-        "primary_type": "Log of Test Borings",
-        "sheet_title": "LOG OF TEST BORINGS 1 of 2",
-        "sheet_number": "19",
-        "scale": "HORIZ. SCALE: NO SCALE VERT. SCALE: 1\" = 10'",
-        "revision": null,
-        "date": "09-19-23"
-      },
-      "plan_contents": {
-        "has_tables": true,
-        "has_diagrams": true,
-        "structural_elements": [],
-        "detail_types": [],
-        "grid_references": []
-      }
-    },
-    "page_number": 19,
     "filename": "Sports Park.pdf"
   },
   {
@@ -609,8 +580,41 @@
       },
       "plan_type": {
         "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 1 of 2",
+        "sheet_number": "39",
+        "scale": "HORIZ. SCALE: NO SCALE VERT. SCALE: 1\" = 10'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 19,
+    "filename": "Sports Park.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "SPORTS PARK DR. POC",
+        "project_number": "04-XXXX",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "Jason Hickey",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
         "sheet_title": "LOG OF TEST BORINGS 2 of 2",
-        "sheet_number": "R8.7",
+        "sheet_number": "R6.7",
         "scale": "1\" = 30'",
         "revision": null,
         "date": null

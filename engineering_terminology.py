@@ -3,11 +3,18 @@ Engineering terminology and synonym mapping for structural engineering.
 Based on training test results and common industry terminology.
 """
 
-from typing import List, Set, Dict
+from typing import List, Dict
+import json
+import os
+import re
 
 
 class EngineeringTerminology:
     """Manages engineering terminology, synonyms, and query expansion."""
+
+    LEARNED_TERMS_FILE = "learned_terminology.json"
+    _learned_terms: Dict[str, List[str]] = {}
+    _auto_discovery_done = False
     
     # Foundation Systems
     FOUNDATION_TERMS = {
@@ -121,7 +128,7 @@ class EngineeringTerminology:
         ],
     }
     
-    # Combine all terminology dictionaries
+    # Built-in terminology dictionaries
     ALL_TERMS = {
         **FOUNDATION_TERMS,
         **STRUCTURAL_ELEMENTS,
@@ -131,6 +138,137 @@ class EngineeringTerminology:
         **RAILING_TERMS,
         **CONSTRUCTION_TERMS,
     }
+
+    @classmethod
+    def _learned_terms_path(cls) -> str:
+        return os.path.join(os.path.dirname(__file__), cls.LEARNED_TERMS_FILE)
+
+    @classmethod
+    def _load_learned_terms(cls):
+        path = cls._learned_terms_path()
+        if not os.path.exists(path):
+            cls._learned_terms = {}
+            return
+
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, dict):
+                cls._learned_terms = {
+                    str(k): [str(v) for v in values if str(v).strip()]
+                    for k, values in data.items()
+                    if isinstance(values, list)
+                }
+            else:
+                cls._learned_terms = {}
+        except Exception:
+            cls._learned_terms = {}
+
+    @classmethod
+    def _save_learned_terms(cls):
+        path = cls._learned_terms_path()
+        try:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(cls._learned_terms, f, indent=2)
+        except Exception:
+            # Learning persistence should never break search flow.
+            pass
+
+    @classmethod
+    def _extract_strings(cls, payload) -> List[str]:
+        strings: List[str] = []
+        if isinstance(payload, str):
+            strings.append(payload)
+        elif isinstance(payload, dict):
+            for value in payload.values():
+                strings.extend(cls._extract_strings(value))
+        elif isinstance(payload, list):
+            for item in payload:
+                strings.extend(cls._extract_strings(item))
+        return strings
+
+    @classmethod
+    def _normalize_phrase(cls, text: str) -> str:
+        return re.sub(r"\s+", " ", text.strip()).lower()
+
+    @classmethod
+    def _learn_mapping(cls, primary_term: str, synonym: str):
+        primary = primary_term.strip()
+        syn = synonym.strip()
+        if not primary or not syn:
+            return
+        if primary.lower() == syn.lower():
+            return
+
+        existing = cls._learned_terms.setdefault(primary, [])
+        if syn.lower() not in {x.lower() for x in existing}:
+            existing.append(syn)
+
+    @classmethod
+    def _auto_discover_from_data(cls):
+        if cls._auto_discovery_done:
+            return
+
+        data_dir = os.path.join(os.path.dirname(__file__), "data")
+        if not os.path.isdir(data_dir):
+            cls._auto_discovery_done = True
+            return
+
+        files = [
+            os.path.join(data_dir, f)
+            for f in os.listdir(data_dir)
+            if f.lower().startswith("enriched_") and f.lower().endswith(".json")
+        ]
+
+        # Limit startup cost while still sampling across corpus.
+        for file_path in files[:120]:
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                strings = cls._extract_strings(data)
+            except Exception:
+                continue
+
+            for s in strings:
+                text = s.strip()
+                if not text or len(text) > 250:
+                    continue
+
+                # Pattern: Long Phrase (ACRONYM)
+                for m in re.finditer(r"\b([A-Za-z][A-Za-z0-9/&\-\s]{4,80})\s*\(([A-Z]{2,8})\)\b", text):
+                    phrase = cls._normalize_phrase(m.group(1))
+                    acronym = m.group(2).upper()
+                    cls._learn_mapping(acronym, phrase)
+
+                # Pattern: ACRONYM (Long Phrase)
+                for m in re.finditer(r"\b([A-Z]{2,8})\s*\(([A-Za-z][A-Za-z0-9/&\-\s]{4,80})\)", text):
+                    acronym = m.group(1).upper()
+                    phrase = cls._normalize_phrase(m.group(2))
+                    cls._learn_mapping(acronym, phrase)
+
+        cls._auto_discovery_done = True
+        cls._save_learned_terms()
+
+    @classmethod
+    def _ensure_ready(cls):
+        if not cls._learned_terms:
+            cls._load_learned_terms()
+        if not cls._auto_discovery_done:
+            cls._auto_discover_from_data()
+
+    @classmethod
+    def _combined_terms(cls) -> Dict[str, List[str]]:
+        cls._ensure_ready()
+        merged: Dict[str, List[str]] = {k: list(v) for k, v in cls.ALL_TERMS.items()}
+        for primary, synonyms in cls._learned_terms.items():
+            if primary not in merged:
+                merged[primary] = []
+            existing = {s.lower() for s in merged[primary]}
+            for s in synonyms:
+                if s.lower() not in existing:
+                    merged[primary].append(s)
+                    existing.add(s.lower())
+        return merged
     
     @classmethod
     def expand_query(cls, query: str, max_expansions: int = 3) -> List[str]:
@@ -147,8 +285,10 @@ class EngineeringTerminology:
         query_lower = query.lower().strip()
         expanded_terms = [query]  # Always include original
         
+        all_terms = cls._combined_terms()
+
         # Check if query matches any primary term or synonym
-        for primary_term, synonyms in cls.ALL_TERMS.items():
+        for primary_term, synonyms in all_terms.items():
             primary_lower = primary_term.lower()
             
             # If query matches primary term, add synonyms
@@ -189,13 +329,15 @@ class EngineeringTerminology:
         """
         term_lower = term.lower().strip()
         
+        all_terms = cls._combined_terms()
+
         # Check if it's already a primary term
-        for primary_term in cls.ALL_TERMS.keys():
+        for primary_term in all_terms.keys():
             if primary_term.lower() == term_lower:
                 return primary_term
         
         # Check if it's a synonym
-        for primary_term, synonyms in cls.ALL_TERMS.items():
+        for primary_term, synonyms in all_terms.items():
             for synonym in synonyms:
                 if synonym.lower() == term_lower:
                     return primary_term
@@ -216,8 +358,9 @@ class EngineeringTerminology:
         """
         primary = cls.get_primary_term(term)
         
-        if primary in cls.ALL_TERMS:
-            return [primary] + cls.ALL_TERMS[primary]
+        all_terms = cls._combined_terms()
+        if primary in all_terms:
+            return [primary] + all_terms[primary]
         
         return [term]
     
@@ -229,7 +372,20 @@ class EngineeringTerminology:
         Args:
             custom_terms: Dictionary of {primary_term: [synonyms]}
         """
-        cls.ALL_TERMS.update(custom_terms)
+        cls._ensure_ready()
+        for primary, synonyms in custom_terms.items():
+            for synonym in synonyms:
+                cls._learn_mapping(primary, synonym)
+        cls._save_learned_terms()
+
+    @classmethod
+    def add_feedback_mapping(cls, acronym: str, expansion: str):
+        """Persist a user-confirmed acronym expansion for future searches."""
+        cls._ensure_ready()
+        cleaned_acronym = acronym.strip().upper()
+        cleaned_expansion = cls._normalize_phrase(expansion)
+        cls._learn_mapping(cleaned_acronym, cleaned_expansion)
+        cls._save_learned_terms()
     
     @classmethod
     def get_term_categories(cls) -> Dict[str, List[str]]:

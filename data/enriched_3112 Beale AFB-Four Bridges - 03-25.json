@@ -18,25 +18,23 @@
         "sheet_title": "BRIDGE 3112 GENERAL PLAN",
         "sheet_number": "S08",
         "scale": "1\" = 10'",
-        "revision": "0",
-        "date": "03/26/2021"
+        "revision": null,
+        "date": "MARCH 29, 2021"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "abutment",
-          "pier",
-          "column",
-          "CIP/RC box girder",
-          "CIDH pile",
-          "concrete barrier"
+          "CIP/RC Box Girder",
+          "CIDH Pile",
+          "Column",
+          "Concrete Barrier"
         ],
         "detail_types": [
-          "profile grade",
-          "elevation",
-          "typical section",
-          "plan"
+          "Profile Grade",
+          "Elevation",
+          "Typical Section",
+          "Plan"
         ],
         "grid_references": [
           "Abut 1",
@@ -54,7 +52,7 @@
     "title_block": {
       "project_info": {
         "project_name": "REPAIR FOUR BRIDGES SYSTEM",
-        "project_number": "1021232",
+        "project_number": "1012332",
         "client": null,
         "location": "Beale Air Force Base",
         "engineer_on_record": null,
@@ -68,7 +66,7 @@
         "sheet_number": "S09",
         "scale": null,
         "revision": "48",
-        "date": "March 26, 2021"
+        "date": "03/26/2021"
       },
       "plan_contents": {
         "has_tables": true,
@@ -80,13 +78,9 @@
         ],
         "detail_types": [
           "general plan",
-          "deck contours",
           "foundation plan",
           "abutment layout",
-          "pier layout",
-          "typical section",
-          "girder layout",
-          "girder reinforcement"
+          "pier layout"
         ],
         "grid_references": null
       }
@@ -99,21 +93,21 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "REPAIR FOUR BRIDGES SYSTEM",
+        "project_name": null,
         "project_number": "1012332",
         "client": "BEALE Air Force Base",
-        "location": "null",
-        "engineer_on_record": "null",
+        "location": "Yuba County, California",
+        "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
         "project_year": "2021",
-        "other_info": "null"
+        "other_info": null
       },
       "plan_type": {
-        "primary_type": "Plan",
+        "primary_type": "Deck Contours",
         "sheet_title": "BRIDGE 3112 DECK CONTOURS",
         "sheet_number": "49 of 78",
         "scale": "1\" = 10'",
-        "revision": "null",
+        "revision": null,
         "date": "MARCH 29, 2021"
       },
       "plan_contents": {
@@ -123,14 +117,8 @@
           "abutment",
           "pier"
         ],
-        "detail_types": [
-          "null"
-        ],
-        "grid_references": [
-          "Abut 1",
-          "Pier 2",
-          "Abut 3"
-        ]
+        "detail_types": [],
+        "grid_references": []
       }
     },
     "page_number": 3,
@@ -155,15 +143,16 @@
         "sheet_title": "BRIDGE 3112 FOUNDATION PLAN",
         "sheet_number": "S11",
         "scale": "1\" = 10'",
-        "revision": "78",
-        "date": "MARCH 26, 2021"
+        "revision": "50",
+        "date": "MARCH 29, 2021"
       },
       "plan_contents": {
         "has_tables": true,
         "has_diagrams": true,
         "structural_elements": [
           "abutment",
-          "pile"
+          "pier",
+          "CIDH pile"
         ],
         "detail_types": [],
         "grid_references": []
@@ -200,7 +189,8 @@
         "structural_elements": [
           "abutment",
           "pile",
-          "shear key"
+          "shear key",
+          "bearing pad"
         ],
         "detail_types": [
           "Typical Abutment Section",
@@ -209,7 +199,7 @@
           "Footing Plan"
         ],
         "grid_references": [
-          "B6-21",
+          "BB-21",
           "B0-3"
         ]
       }
@@ -222,9 +212,9 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "REPAIR FOUR BRIDGES SYSTEM",
+        "project_name": "BEALE Air Force Base",
         "project_number": "1012332",
-        "client": "BEALE Air Force Base",
+        "client": null,
         "location": null,
         "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
@@ -236,8 +226,8 @@
         "sheet_title": "BRIDGE 3112 ABUTMENT DETAILS",
         "sheet_number": "S13",
         "scale": null,
-        "revision": "6",
-        "date": "03/02/2021"
+        "revision": "6%",
+        "date": "03/24/2021"
       },
       "plan_contents": {
         "has_tables": false,
@@ -272,11 +262,11 @@
         "project_name": "REPAIR FOUR BRIDGES SYSTEM",
         "project_number": "1021232",
         "client": "BEALE Air Force Base",
-        "location": null,
-        "engineer_on_record": null,
+        "location": "null",
+        "engineer_on_record": "null",
         "engineering_firm": "Mark Thomas",
-        "project_year": "2021",
-        "other_info": null
+        "project_year": "2001",
+        "other_info": "null"
       },
       "plan_type": {
         "primary_type": "Pier Layout",
@@ -284,7 +274,7 @@
         "sheet_number": "S14",
         "scale": "1/4\" = 1'-0\"",
         "revision": "53",
-        "date": "03/26/2021"
+        "date": "MARCH 26, 2001"
       },
       "plan_contents": {
         "has_tables": false,
@@ -292,12 +282,13 @@
         "structural_elements": [
           "pier",
           "column",
-          "CIDH pile",
-          "girder"
+          "CIDH pile"
         ],
         "detail_types": [
-          "pile cap detail",
-          "key detail"
+          "Plan",
+          "Elevation",
+          "Pile Cap Detail",
+          "Key Detail"
         ],
         "grid_references": [
           "B7-1"
@@ -313,20 +304,20 @@
     "title_block": {
       "project_info": {
         "project_name": "REPAIR FOUR BRIDGES SYSTEM",
-        "project_number": "1021232",
+        "project_number": "1012332",
         "client": "BEALE Air Force Base",
-        "location": "Not Available",
-        "engineer_on_record": "Not Available",
+        "location": "null",
+        "engineer_on_record": "null",
         "engineering_firm": "Mark Thomas",
         "project_year": "2021",
-        "other_info": "Not Available"
+        "other_info": "null"
       },
       "plan_type": {
         "primary_type": "Pier Details",
         "sheet_title": "BRIDGE 3112 PIER DETAILS",
         "sheet_number": "S15",
         "scale": "1/2\" = 1'-0\"",
-        "revision": "Not Available",
+        "revision": "null",
         "date": "March 26, 2021"
       },
       "plan_contents": {
@@ -362,11 +353,11 @@
         "project_name": "BEALE Air Force Base",
         "project_number": "1012332",
         "client": null,
-        "location": null,
+        "location": "Beale Air Force Base",
         "engineer_on_record": null,
         "engineering_firm": "Mark Thomas",
         "project_year": "2021",
-        "other_info": "Repair Four Bridges System"
+        "other_info": null
       },
       "plan_type": {
         "primary_type": "Typical Section",
@@ -381,8 +372,9 @@
         "has_diagrams": true,
         "structural_elements": [
           "girder",
-          "deck drain",
-          "concrete barrier"
+          "deck",
+          "conduits",
+          "barrier"
         ],
         "detail_types": [
           "Typical Section",
@@ -410,11 +402,11 @@
         "other_info": null
       },
       "plan_type": {
-        "primary_type": "GIRDER LAYOUT",
+        "primary_type": "Girder Layout",
         "sheet_title": "BRIDGE 3112 GIRDER LAYOUT",
         "sheet_number": "S17",
         "scale": "1\" = 10'",
-        "revision": "78",
+        "revision": null,
         "date": "MARCH 29, 2021"
       },
       "plan_contents": {
@@ -428,6 +420,7 @@
         "detail_types": [
           "Corner Detail",
           "Camber Diagram",
+          "Girder Layout",
           "Longitudinal Section"
         ],
         "grid_references": [
@@ -445,28 +438,30 @@
     "confidence": 1.0,
     "title_block": {
       "project_info": {
-        "project_name": "BEALE Air Force Base",
+        "project_name": "REPAIR FOUR BRIDGES SYSTEM",
         "project_number": "1012332",
-        "client": null,
-        "location": null,
-        "engineer_on_record": null,
+        "client": "BEALE Air Force Base",
+        "location": "null",
+        "engineer_on_record": "null",
         "engineering_firm": "Mark Thomas",
         "project_year": "2021",
-        "other_info": null
+        "other_info": "null"
       },
       "plan_type": {
         "primary_type": "Girder Reinforcement",
         "sheet_title": "BRIDGE 3112 GIRDER REINFORCEMENT",
         "sheet_number": "S18",
         "scale": "1/4\" = 1'-0\"",
-        "revision": null,
+        "revision": "null",
         "date": "MARCH 29, 2021"
       },
       "plan_contents": {
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "girder"
+          "girder",
+          "pier",
+          "abutment"
         ],
         "detail_types": [
           "reinforcement"

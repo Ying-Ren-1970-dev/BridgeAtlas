@@ -7,9 +7,9 @@
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
-        "location": "SACRAMENTO, CA",
+        "location": "4130 FOLSOM BOULEVARD, SUITE 203, SACRAMENTO, CA 95819",
         "engineer_on_record": "JASON HICKEY",
-        "engineering_firm": "QUINCY ENGINEERING, INC.",
+        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
         "other_info": null
       },
@@ -17,7 +17,7 @@
         "primary_type": "General Plan",
         "sheet_title": "GENERAL PLAN",
         "sheet_number": "2",
-        "scale": null,
+        "scale": "1\" = 20'",
         "revision": null,
         "date": "11/6/20"
       },
@@ -27,13 +27,14 @@
         "structural_elements": [
           "abutment",
           "pier",
-          "girder",
-          "bridge rail"
+          "bridge rail",
+          "girder"
         ],
         "detail_types": [
-          "Typical Section",
+          "Profile Grade",
           "Elevation",
-          "Plan"
+          "Plan",
+          "Typical Section"
         ],
         "grid_references": [
           "Abut 1",
@@ -48,13 +49,13 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
-        "location": "SACRAMENTO, CA 95826",
+        "location": "SACRAMENTO, CA",
         "engineer_on_record": null,
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
@@ -63,7 +64,7 @@
       "plan_type": {
         "primary_type": "Index to Plan",
         "sheet_title": "INDEX TO PLAN",
-        "sheet_number": "2",
+        "sheet_number": "1",
         "scale": null,
         "revision": null,
         "date": "11/6/20"
@@ -76,8 +77,10 @@
           "pier"
         ],
         "detail_types": [
-          "CONCRETE STRENGTH AND TYPE LIMITS",
-          "ARS CURVE"
+          "general plan",
+          "foundation plan",
+          "abutment layout",
+          "pier layout"
         ],
         "grid_references": null
       }
@@ -87,14 +90,14 @@
   },
   {
     "page_type": "plan",
-    "confidence": 1.0,
+    "confidence": 0.95,
     "title_block": {
       "project_info": {
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": null,
         "client": "SACRAMENTO COUNTY",
         "location": "SACRAMENTO, CA",
-        "engineer_on_record": "JASON HICKEY",
+        "engineer_on_record": "T. PHAM",
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
         "other_info": null
@@ -117,8 +120,8 @@
         "detail_types": [],
         "grid_references": [
           "Brg Abut 1",
-          "PIER 2",
-          "PIER 3",
+          "Pier 2",
+          "Pier 3",
           "Brg Abut 4"
         ]
       }
@@ -135,7 +138,7 @@
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
         "location": "SACRAMENTO, CA 95826",
-        "engineer_on_record": "Y. REN",
+        "engineer_on_record": "JASON HICKEY",
         "engineering_firm": "QUINCY ENGINEERING, INC.",
         "project_year": "2020",
         "other_info": null
@@ -143,9 +146,9 @@
       "plan_type": {
         "primary_type": "Foundation Plan",
         "sheet_title": "FOUNDATION PLAN",
-        "sheet_number": "2 of 23",
+        "sheet_number": "2",
         "scale": "1\" = 20'",
-        "revision": "5% SUBMITTAL",
+        "revision": "3",
         "date": "11/6/20"
       },
       "plan_contents": {
@@ -156,8 +159,8 @@
           "pier",
           "pile"
         ],
-        "detail_types": [],
-        "grid_references": []
+        "detail_types": null,
+        "grid_references": null
       }
     },
     "page_number": 4,
@@ -198,12 +201,14 @@
         "detail_types": [
           "PLAN",
           "ELEVATION",
-          "SECTION A-A",
-          "FOOTING PLAN"
+          "FOOTING PLAN",
+          "SECTION A-A"
         ],
         "grid_references": [
+          "B9-4",
           "B9-5",
-          "B9-4"
+          "B9-6",
+          "B9-21"
         ]
       }
     },
@@ -219,8 +224,8 @@
         "project_number": null,
         "client": "SACRAMENTO COUNTY",
         "location": null,
-        "engineer_on_record": "T. PHAM",
-        "engineering_firm": "MEYERS & COMPANY, INC.",
+        "engineer_on_record": null,
+        "engineering_firm": "QUINCY ENGINEERING, INC.",
         "project_year": "2020",
         "other_info": null
       },
@@ -237,16 +242,15 @@
         "has_diagrams": true,
         "structural_elements": [
           "abutment",
-          "bearing pad",
           "shear key",
+          "bearing pad",
           "wingwall",
-          "geocomposite drain"
+          "backwall",
+          "approach slab"
         ],
         "detail_types": [
-          "Elevation",
-          "Plan",
-          "Section E-E",
-          "Section F-F",
+          "Shear Key Elevation",
+          "Abutment Bearing Pad Details",
           "Detail Y",
           "Detail Z"
         ],
@@ -264,7 +268,7 @@
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
-        "location": "SACRAMENTO, CA",
+        "location": "3721 BUSINESS DRIVE, SUITE 203 SACRAMENTO, CA 95820",
         "engineer_on_record": "JASON HICKEY",
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
@@ -286,13 +290,15 @@
           "column",
           "bearing pad",
           "reinforcement",
-          "cap",
-          "pile"
+          "main cap",
+          "stirrup",
+          "pipe"
         ],
         "detail_types": [
           "Plan",
           "Elevation",
-          "Section"
+          "Section E-E",
+          "Pier Bearing Pad Details"
         ],
         "grid_references": null
       }
@@ -308,7 +314,7 @@
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
-        "location": "SACRAMENTO, CA",
+        "location": "7300 FOLSOM BOULEVARD, SUITE 203, SACRAMENTO, CA 95826",
         "engineer_on_record": "JASON HICKEY",
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
@@ -319,7 +325,7 @@
         "sheet_title": "PIER DETAILS",
         "sheet_number": "10",
         "scale": "1/2\" = 1'-0\"",
-        "revision": "1",
+        "revision": "0",
         "date": "11/6/20"
       },
       "plan_contents": {
@@ -329,8 +335,7 @@
           "footing",
           "pier",
           "column",
-          "girder",
-          "diaphragm"
+          "girder"
         ],
         "detail_types": [
           "Footing Elevation",
@@ -339,7 +344,9 @@
           "Section G-G",
           "Section H-H"
         ],
-        "grid_references": null
+        "grid_references": [
+          "BO-13"
+        ]
       }
     },
     "page_number": 10,
@@ -354,7 +361,7 @@
         "project_number": "24C0066",
         "client": "SACRAMENTO COUNTY",
         "location": null,
-        "engineer_on_record": "JASON HICKEY",
+        "engineer_on_record": "T. PHAM",
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
         "project_year": "2020",
         "other_info": null
@@ -378,10 +385,14 @@
         ],
         "detail_types": [
           "Typical Section",
-          "Temporary Railing (Type K) Attachment Details",
+          "Part Typical Section",
+          "Temporary Railing Attachment Details",
           "Haunch Detail"
         ],
-        "grid_references": null
+        "grid_references": [
+          "B0-5",
+          "B0-15"
+        ]
       }
     },
     "page_number": 11,
@@ -405,7 +416,7 @@
         "primary_type": "Girder Layout",
         "sheet_title": "GIRDER LAYOUT",
         "sheet_number": "03",
-        "scale": "3/16\" = 1'-0\"",
+        "scale": "3/32\" = 1'-0\"",
         "revision": null,
         "date": "11/6/20"
       },
@@ -420,8 +431,7 @@
         ],
         "detail_types": [
           "additional deck reinforcement",
-          "transverse deck reinforcement",
-          "intermediate diaphragm"
+          "transverse deck reinforcement"
         ],
         "grid_references": [
           "Pier 2",
@@ -442,16 +452,16 @@
         "project_name": "LAGUNA CREEK BRIDGE (REPLACE)",
         "project_number": null,
         "client": "SACRAMENTO COUNTY",
-        "location": null,
+        "location": "CALIFORNIA",
         "engineer_on_record": "JASON HICKEY",
-        "engineering_firm": "MARK THOMAS & COMPANY, INC.",
+        "engineering_firm": "QUINCY ENGINEERING, INC.",
         "project_year": "2020",
         "other_info": null
       },
       "plan_type": {
-        "primary_type": "BRIDGE RAIL DETAILS",
+        "primary_type": "Bridge Rail Details",
         "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.1",
-        "sheet_number": "23",
+        "sheet_number": "03",
         "scale": "NO SCALE",
         "revision": null,
         "date": "11/6/20"
@@ -462,9 +472,9 @@
         "structural_elements": [
           "tubular bicycle railing",
           "anchor bars",
-          "posts",
           "bridge deck",
-          "curb"
+          "curb",
+          "posts"
         ],
         "detail_types": [
           "Typical Section",
@@ -473,7 +483,7 @@
           "Type 1 Anchor Bar Detail",
           "Rail Section at Post"
         ],
-        "grid_references": null
+        "grid_references": []
       }
     },
     "page_number": 17,
@@ -494,9 +504,9 @@
         "other_info": null
       },
       "plan_type": {
-        "primary_type": "Bridge Rail Details",
+        "primary_type": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS",
         "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.2",
-        "sheet_number": "24C0606",
+        "sheet_number": "2C40606",
         "scale": "NO SCALE",
         "revision": "1",
         "date": "11/6/20"
@@ -513,9 +523,9 @@
         "detail_types": [
           "Departure End Block Detail",
           "Approach Transition Block Detail",
-          "Type 2 Anchor Bar Detail",
           "Section B-B",
           "Section C-C",
+          "Type 2 Anchor Bar Detail",
           "Elevation"
         ],
         "grid_references": []
@@ -539,10 +549,10 @@
         "other_info": null
       },
       "plan_type": {
-        "primary_type": "BICYCLE RAILING CONNECTION DETAILS",
+        "primary_type": "Bridge Rail Details",
         "sheet_title": "ST-75 BRIDGE RAIL DETAILS No.3",
         "sheet_number": "03",
-        "scale": "NO SCALE",
+        "scale": null,
         "revision": "C",
         "date": "11/6/20"
       },
@@ -551,18 +561,20 @@
         "has_diagrams": true,
         "structural_elements": [
           "post",
-          "rail end cap",
-          "elevation",
-          "section"
+          "rail",
+          "cap",
+          "tube",
+          "bolt"
         ],
         "detail_types": [
-          "POST DETAIL",
-          "SECTION D-D",
-          "SECTION E-E",
-          "SECTION F-F",
-          "SECTION E-E ALTERNATIVE"
+          "Post Detail",
+          "Section D-D",
+          "Rail End Cap",
+          "Section E-E",
+          "Section F-F",
+          "Elevation"
         ],
-        "grid_references": null
+        "grid_references": []
       }
     },
     "page_number": 19,
@@ -579,14 +591,14 @@
         "location": null,
         "engineer_on_record": "JASON HICKEY",
         "engineering_firm": "MARK THOMAS & COMPANY, INC.",
-        "project_year": "2020",
+        "project_year": "20",
         "other_info": null
       },
       "plan_type": {
         "primary_type": "Bridge Rail Details",
         "sheet_title": "CALIFORNIA ST-75 BRIDGE RAIL DETAILS No.4",
         "sheet_number": null,
-        "scale": null,
+        "scale": "NO SCALE",
         "revision": null,
         "date": "11/6/20"
       },
@@ -627,7 +639,7 @@
         "primary_type": "Rock Slope Protection",
         "sheet_title": "ROCK SLOPE PROTECTION",
         "sheet_number": "24C0606",
-        "scale": "1\"=20'",
+        "scale": "1\" = 20'",
         "revision": null,
         "date": "11/6/20"
       },
@@ -641,12 +653,7 @@
         "detail_types": [
           "sections"
         ],
-        "grid_references": [
-          "Abut 1",
-          "Abut 4",
-          "Pier 2",
-          "Pier 3"
-        ]
+        "grid_references": null
       }
     },
     "page_number": 21,

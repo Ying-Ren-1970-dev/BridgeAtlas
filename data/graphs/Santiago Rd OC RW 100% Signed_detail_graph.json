@@ -1,0 +1,2498 @@
+{
+  "project_name": "Santiago Rd OC RW 100% Signed",
+  "nodes": {
+    "Page1_Detail0": {
+      "detail_id": "Page1_Detail0",
+      "page_number": 1,
+      "title": "Typical Section - SHGA Wall",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - SHGA Wall",
+        "abutment",
+        "retaining wall",
+        "cable railing"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page1_Detail1": {
+      "detail_id": "Page1_Detail1",
+      "page_number": 1,
+      "title": "Typical Section - Type 7B (MOD) Wall",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - Type 7B (MOD) Wall",
+        "abutment",
+        "retaining wall",
+        "cable railing"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page2_Detail0": {
+      "detail_id": "Page2_Detail0",
+      "page_number": 2,
+      "title": "SHGA WALL",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SHGA WALL",
+        "wall",
+        "ground anchor"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page2_Detail1": {
+      "detail_id": "Page2_Detail1",
+      "page_number": 2,
+      "title": "RW TYPE 7B (MOD) WALL",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "RW TYPE 7B (MOD) WALL",
+        "wall",
+        "ground anchor"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page3_Detail0": {
+      "detail_id": "Page3_Detail0",
+      "page_number": 3,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "wall",
+        "abutment",
+        "gutter"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page3_Detail1": {
+      "detail_id": "Page3_Detail1",
+      "page_number": 3,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "wall",
+        "abutment",
+        "gutter"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page4_Detail0": {
+      "detail_id": "Page4_Detail0",
+      "page_number": 4,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "wall",
+        "gutter",
+        "expansion joint"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page4_Detail1": {
+      "detail_id": "Page4_Detail1",
+      "page_number": 4,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "wall",
+        "gutter",
+        "expansion joint"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page5_Detail0": {
+      "detail_id": "Page5_Detail0",
+      "page_number": 5,
+      "title": "Typical Section-Type 7B (Modified)",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section-Type 7B (Modified)",
+        "wall",
+        "footing",
+        "cable railing"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page6_Detail0": {
+      "detail_id": "Page6_Detail0",
+      "page_number": 6,
+      "title": "Typical Section - SHGA Wall",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - SHGA Wall",
+        "wall",
+        "cable railing",
+        "bearing plate"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page6_Detail1": {
+      "detail_id": "Page6_Detail1",
+      "page_number": 6,
+      "title": "Anchorage Detail 1",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Anchorage Detail 1",
+        "wall",
+        "cable railing",
+        "bearing plate"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page6_Detail2": {
+      "detail_id": "Page6_Detail2",
+      "page_number": 6,
+      "title": "Anchorage Detail 2",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Anchorage Detail 2",
+        "wall",
+        "cable railing",
+        "bearing plate"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page6_Detail3": {
+      "detail_id": "Page6_Detail3",
+      "page_number": 6,
+      "title": "Fractured Rib Texture Detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Fractured Rib Texture Detail",
+        "wall",
+        "cable railing",
+        "bearing plate"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page7_Detail0": {
+      "detail_id": "Page7_Detail0",
+      "page_number": 7,
+      "title": "Ground Anchor Tendon Detail (Strands)",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Ground Anchor Tendon Detail (Strands)",
+        "ground anchor",
+        "tendon",
+        "steel tube"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page7_Detail1": {
+      "detail_id": "Page7_Detail1",
+      "page_number": 7,
+      "title": "Ground Anchor Tendon Detail Bars",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Ground Anchor Tendon Detail Bars",
+        "ground anchor",
+        "tendon",
+        "steel tube"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page7_Detail2": {
+      "detail_id": "Page7_Detail2",
+      "page_number": 7,
+      "title": "Anchorage Enclosure Details",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Anchorage Enclosure Details",
+        "ground anchor",
+        "tendon",
+        "steel tube"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page8_Detail0": {
+      "detail_id": "Page8_Detail0",
+      "page_number": 8,
+      "title": "Wall Drain Detail at Weep Hole Option A",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Wall Drain Detail at Weep Hole Option A",
+        "wall",
+        "drain",
+        "pipe"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page8_Detail1": {
+      "detail_id": "Page8_Detail1",
+      "page_number": 8,
+      "title": "Wall Drain Detail at Weep Hole Option B",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Wall Drain Detail at Weep Hole Option B",
+        "wall",
+        "drain",
+        "pipe"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page8_Detail2": {
+      "detail_id": "Page8_Detail2",
+      "page_number": 8,
+      "title": "Part Retaining Wall Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Part Retaining Wall Elevation",
+        "wall",
+        "drain",
+        "pipe"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page8_Detail3": {
+      "detail_id": "Page8_Detail3",
+      "page_number": 8,
+      "title": "Section B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section B-B",
+        "wall",
+        "drain",
+        "pipe"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page8_Detail4": {
+      "detail_id": "Page8_Detail4",
+      "page_number": 8,
+      "title": "View A-A",
+      "element_type": "view",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "View A-A",
+        "wall",
+        "drain",
+        "pipe"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page9_Detail0": {
+      "detail_id": "Page9_Detail0",
+      "page_number": 9,
+      "title": "Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Elevation",
+        "wall"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    },
+    "Page10_Detail0": {
+      "detail_id": "Page10_Detail0",
+      "page_number": 10,
+      "title": "borehole location table",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "borehole location table",
+        "borehole"
+      ],
+      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
+      "project_name": "Santiago Rd OC RW 100% Signed"
+    }
+  },
+  "edges": {
+    "Page3_Detail1": [
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      }
+    ],
+    "Page3_Detail0": [
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page8_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page7_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      }
+    ],
+    "Page1_Detail0": [
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: retaining wall"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete barrier"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchors"
+      }
+    ],
+    "Page5_Detail0": [
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      }
+    ],
+    "Page6_Detail3": [
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      },
+      {
+        "source_id": "Page6_Detail3",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      }
+    ],
+    "Page6_Detail2": [
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      },
+      {
+        "source_id": "Page6_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      }
+    ],
+    "Page6_Detail1": [
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail1",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      }
+    ],
+    "Page1_Detail1": [
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: cable railing"
+      }
+    ],
+    "Page2_Detail1": [
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page8_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page7_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail1",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      }
+    ],
+    "Page8_Detail0": [
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      }
+    ],
+    "Page8_Detail2": [
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail2",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      }
+    ],
+    "Page2_Detail0": [
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page8_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page2_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      }
+    ],
+    "Page8_Detail4": [
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page9_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      },
+      {
+        "source_id": "Page8_Detail4",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      }
+    ],
+    "Page9_Detail0": [
+      {
+        "source_id": "Page9_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page9_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page9_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page9_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page9_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      }
+    ],
+    "Page6_Detail0": [
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page8_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete"
+      },
+      {
+        "source_id": "Page6_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: shotcrete"
+      }
+    ],
+    "Page8_Detail1": [
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page4_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: geocomposite drain"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: drain"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pipe"
+      },
+      {
+        "source_id": "Page8_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: coupler"
+      }
+    ],
+    "Page4_Detail1": [
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: expansion joint"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: weep hole"
+      },
+      {
+        "source_id": "Page4_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      }
+    ],
+    "Page4_Detail0": [
+      {
+        "source_id": "Page4_Detail0",
+        "target_id": "Page8_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page4_Detail0",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: gutter"
+      }
+    ],
+    "Page7_Detail2": [
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: tendon"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: tendon"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel tube"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel tube"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: sheathing"
+      },
+      {
+        "source_id": "Page7_Detail2",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: sheathing"
+      }
+    ],
+    "Page7_Detail0": [
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: ground anchor"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page6_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page6_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page6_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page6_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing plate"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: tendon"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel tube"
+      },
+      {
+        "source_id": "Page7_Detail0",
+        "target_id": "Page7_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: sheathing"
+      }
+    ]
+  },
+  "node_count": 23,
+  "edge_count": 285
+}

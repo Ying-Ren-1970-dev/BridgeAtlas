@@ -5,21 +5,21 @@
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
-        "project_number": "05-1C720",
+        "project_number": "05-1C8731",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": null,
+        "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
-        "engineering_firm": null,
-        "project_year": "12-21-12",
-        "other_info": "UNIT: PROJECT NUMBER & PHASE: 05-18000116"
+        "engineering_firm": "MARK THOMAS",
+        "project_year": "2023",
+        "other_info": null
       },
       "plan_type": {
         "primary_type": "General Plan",
-        "sheet_title": "GENERAL PLAN No. 1",
+        "sheet_title": "GENERAL PLAN NO. 1",
         "sheet_number": null,
         "scale": "1\" = 30'",
         "revision": null,
-        "date": "12-21-12"
+        "date": "07/21/23"
       },
       "plan_contents": {
         "has_tables": true,
@@ -67,9 +67,9 @@
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
         "project_number": "05-1G731",
-        "client": "STATE OF CALIFORNIA",
-        "location": "SANTA CRUZ, CA 95060",
-        "engineer_on_record": null,
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "SACRAMENTO, CA 95833",
+        "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2023",
         "other_info": "CONTRACT NO. 05-0C7331"
@@ -89,8 +89,8 @@
           "CIP REINFORCED CONCRETE BOX GIRDER",
           "TAPERED HEXAGONAL COLUMN",
           "CIDH PILE",
-          "PEDESTRIAN RAILING",
-          "REINFORCED CONCRETE RETAINING WALL"
+          "CIP REINFORCED CONCRETE SLAB",
+          "Reinf Conc Ret WALL"
         ],
         "detail_types": [
           "SECTION A-A",
@@ -108,14 +108,14 @@
     "confidence": 0.95,
     "title_block": {
       "project_info": {
-        "project_name": "MAR VISTA DRIVE - POC",
+        "project_name": "MAR VISTA DRIVE POC",
         "project_number": "36-0128",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SANTA CRUZ, CA 95060",
+        "location": "101 UNIVERSITY AVE, SUITE 200 SACRAMENTO, CA 95825",
         "engineer_on_record": "ERIC FREDERICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2018",
-        "other_info": "REGISTERED STRUCTURAL ENGINEER"
+        "other_info": "PROJECT NUMBER & PHASE: 0518000116 (CONTRACT NO: 05-0C7331)"
       },
       "plan_type": {
         "primary_type": "Index to Plans",
@@ -123,7 +123,7 @@
         "sheet_number": "3",
         "scale": "NO SCALE",
         "revision": null,
-        "date": "10/5/18"
+        "date": "5/18/2018"
       },
       "plan_contents": {
         "has_tables": true,
@@ -136,15 +136,28 @@
           "CIDH pile"
         ],
         "detail_types": [
-          "General Plan",
-          "Foundation Plan",
-          "Deck Contours",
-          "Abutment Details",
-          "Retaining Wall Layout"
+          "general notes",
+          "load and resistance factor design"
         ],
         "grid_references": [
-          "Bent 5, 7 thru 9",
-          "Bents 2, 6 and 13"
+          "Abut 1",
+          "Bent 1",
+          "Bent 2",
+          "Bent 3",
+          "Bent 4",
+          "Bent 5",
+          "Bent 6",
+          "Bent 7",
+          "Bent 8",
+          "Bent 9",
+          "Bent 10",
+          "Bent 11",
+          "Bent 12",
+          "Bent 13",
+          "Bent 14",
+          "Bent 15",
+          "Bent 16",
+          "Bent 17"
         ]
       }
     },
@@ -153,22 +166,22 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
-        "project_number": "05-1B000116",
+        "project_number": "05-1B0001",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SACRAMENTO, CA",
+        "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDERICKSON",
-        "engineering_firm": "MARK THOMAS",
+        "engineering_firm": null,
         "project_year": null,
         "other_info": "CONTRACT No. 05-0C7331"
       },
       "plan_type": {
         "primary_type": "Deck Contours",
         "sheet_title": "DECK CONTOURS No. 1",
-        "sheet_number": "41",
+        "sheet_number": "38",
         "scale": "1\" = 10'",
         "revision": null,
         "date": null
@@ -180,12 +193,16 @@
           "bent",
           "abutment"
         ],
-        "detail_types": [
-          "superelevation diagram"
-        ],
+        "detail_types": [],
         "grid_references": [
-          "bent numbers",
-          "station numbers"
+          "BENT 1",
+          "BENT 2",
+          "BENT 3",
+          "BENT 4",
+          "BENT 5",
+          "BENT 6",
+          "BENT 7",
+          "Abut 1"
         ]
       }
     },
@@ -203,7 +220,7 @@
         "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": null,
-        "project_year": "87",
+        "project_year": null,
         "other_info": "CONTRACT No. 05-0C7331"
       },
       "plan_type": {
@@ -219,7 +236,8 @@
         "has_diagrams": true,
         "structural_elements": [
           "bent",
-          "abutment"
+          "abutment",
+          "deck"
         ],
         "detail_types": [],
         "grid_references": [
@@ -232,8 +250,7 @@
           "Bent 14",
           "Bent 15",
           "Bent 16",
-          "Bent 17",
-          "Abut"
+          "Bent 17"
         ]
       }
     },
@@ -248,19 +265,19 @@
         "project_name": "MAR VISTA DRIVE POC",
         "project_number": "05-1B800116",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SACRAMENTO, CA 95825",
+        "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": "2013",
-        "other_info": "CONTRACT No. 05-0C7331"
+        "other_info": null
       },
       "plan_type": {
         "primary_type": "Bent Layout",
         "sheet_title": "BENT 6 THRU 8 LAYOUT",
-        "sheet_number": "36",
+        "sheet_number": "36-0128",
         "scale": "1/2\" = 1'-0\"",
         "revision": null,
-        "date": "5-29-12"
+        "date": "10-8-07"
       },
       "plan_contents": {
         "has_tables": false,
@@ -268,8 +285,7 @@
         "structural_elements": [
           "bent",
           "column",
-          "deck",
-          "cap"
+          "deck"
         ],
         "detail_types": [
           "Plan",
@@ -304,8 +320,8 @@
       "plan_type": {
         "primary_type": "Detail Sheet",
         "sheet_title": "BENT 6 THRU 8 DETAILS",
-        "sheet_number": "36-0128",
-        "scale": "3/8\" = 1'-0\"",
+        "sheet_number": "453",
+        "scale": null,
         "revision": null,
         "date": null
       },
@@ -319,7 +335,10 @@
         "detail_types": [
           "COLUMN DETAIL-BENT 6",
           "COLUMN DETAIL-BENT 7 AND 8",
-          "HEXAGONAL COLUMN"
+          "HEXAGONAL COLUMN",
+          "SECTION I-I",
+          "SECTION J-J",
+          "SECTION K-K"
         ],
         "grid_references": []
       }
@@ -339,15 +358,15 @@
         "engineer_on_record": "ERIC FREDERICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": null,
-        "other_info": "PROJECT NUMBER & PHASE: 0518000116, CONTRACT NO.: 05-0C7331"
+        "other_info": "PROJECT NUMBER & PHASE: 0518000116 CONTRACT NO: 05-0C7331"
       },
       "plan_type": {
         "primary_type": "CIDH PILE DETAILS",
-        "sheet_title": "CIDH CONCRETE PILE ELEVATION",
+        "sheet_title": "CIDH PILE DETAILS",
         "sheet_number": "453",
         "scale": "3/4\" = 1'-0\"",
-        "revision": "X",
-        "date": "10-87"
+        "revision": null,
+        "date": null
       },
       "plan_contents": {
         "has_tables": false,
@@ -356,14 +375,17 @@
           "column",
           "pile",
           "hoop",
+          "shaft",
           "casing"
         ],
         "detail_types": [
           "SECTION M-M",
-          "SECTION N-N"
+          "SECTION N-N",
+          "PILE ELEVATION"
         ],
         "grid_references": [
-          "BENT 5 THRU 9"
+          "BENT 5",
+          "BENT 9"
         ]
       }
     },
@@ -376,13 +398,13 @@
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
-        "project_number": "05-1H000116",
+        "project_number": "05-1B800116",
         "client": "STATE OF CALIFORNIA",
-        "location": "SANTA CRUZ, CA",
+        "location": "SANTA CRUZ, CA 95060",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2017",
-        "other_info": null
+        "project_year": null,
+        "other_info": "DEPARTMENT OF TRANSPORTATION"
       },
       "plan_type": {
         "primary_type": "Isolation Casing Details",
@@ -390,7 +412,7 @@
         "sheet_number": "38",
         "scale": "NO SCALE",
         "revision": null,
-        "date": "6/17/2017"
+        "date": "10-87"
       },
       "plan_contents": {
         "has_tables": false,
@@ -400,8 +422,8 @@
           "isolation casing"
         ],
         "detail_types": [
-          "SECTION L-L",
-          "DETAIL 1"
+          "Section L-L",
+          "Detail 1"
         ],
         "grid_references": [
           "Bents 2, 6, and 13"
@@ -419,11 +441,11 @@
         "project_name": "MAR VISTA DRIVE POC",
         "project_number": "05-1B8001",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SANTA CRUZ, CA 95090",
+        "location": "SANTA CRUZ, CA 95060",
         "engineer_on_record": "ERIC FREDERICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": null,
-        "other_info": "CONTRACT No. 05-0C7331"
+        "other_info": "PROJECT NUMBER & PHASE: 05-1B8001 116, CONTRACT No.: 05-0C7331"
       },
       "plan_type": {
         "primary_type": "Typical Section",
@@ -438,7 +460,8 @@
         "has_diagrams": true,
         "structural_elements": [
           "slab",
-          "conduit"
+          "conduit",
+          "reinforcement"
         ],
         "detail_types": [
           "Slab Typical Section",
@@ -456,21 +479,21 @@
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
-        "project_number": "05-1F820",
+        "project_number": "05-1C8733",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
         "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
-        "project_year": "2023",
-        "other_info": "UNIT 3, PROJECT NUMBER & PHASE: 05-1B000116, CONTRACT No.: 05-0F2733"
+        "project_year": null,
+        "other_info": null
       },
       "plan_type": {
         "primary_type": "Retaining Wall Plan",
         "sheet_title": "RETAINING WALL \"N\" AESTHETIC TREATMENT",
-        "sheet_number": "X-38",
+        "sheet_number": "38",
         "scale": "3/16\"=1'-0\"",
         "revision": null,
-        "date": "10/25/2023"
+        "date": null
       },
       "plan_contents": {
         "has_tables": false,
@@ -487,13 +510,13 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
         "project_number": "05-1B800116",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": null,
+        "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": "MARK THOMAS",
         "project_year": null,
@@ -501,7 +524,7 @@
       },
       "plan_type": {
         "primary_type": "Retaining Wall Plan",
-        "sheet_title": "RETAINING WALL \"S\" AESTHETIC TREATMENT",
+        "sheet_title": "RETAINING WALL 'S' AESTHETIC TREATMENT",
         "sheet_number": "41",
         "scale": "3/16\"=1'-0\"",
         "revision": null,
@@ -511,6 +534,7 @@
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
+          "retaining wall",
           "abutment"
         ],
         "detail_types": [],
@@ -531,16 +555,16 @@
         "project_name": "MAR VISTA DRIVE-POC",
         "project_number": "05-1B8001",
         "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
-        "location": "SANTA CRUZ, CA 95060",
+        "location": "SANTA CRUZ, CA",
         "engineer_on_record": "ERIC FREDRICKSON",
         "engineering_firm": null,
         "project_year": null,
-        "other_info": "UNIT 5"
+        "other_info": "UNIT 5, CONTRACT No. 05-0C7331"
       },
       "plan_type": {
         "primary_type": "Electrolier Layout",
         "sheet_title": "ELECTROLIER LAYOUT",
-        "sheet_number": "41",
+        "sheet_number": "X-1",
         "scale": "1\"=20'",
         "revision": null,
         "date": null
@@ -549,8 +573,8 @@
         "has_tables": false,
         "has_diagrams": true,
         "structural_elements": [
-          "electrolier",
-          "bent"
+          "bent",
+          "electrolier"
         ],
         "detail_types": [],
         "grid_references": [
@@ -580,13 +604,13 @@
         "engineer_on_record": "K. SANKARANARAYANAN",
         "engineering_firm": "PARIKH CONSULTANTS, INC.",
         "project_year": null,
-        "other_info": "PREPARED FOR THE STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION"
+        "other_info": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION"
       },
       "plan_type": {
-        "primary_type": "LOG OF TEST BORINGS",
+        "primary_type": "Log of Test Borings",
         "sheet_title": "LOG OF TEST BORINGS 1 OF 2",
         "sheet_number": null,
-        "scale": "Vert: 1\" = 10', Hor: 1\" = 50'",
+        "scale": "Vert.: 1\" = 10', Hor.: 1\" = 50'",
         "revision": null,
         "date": null
       },
@@ -595,7 +619,7 @@
         "has_diagrams": true,
         "structural_elements": [
           "bent",
-          "column"
+          "elevation"
         ],
         "detail_types": [],
         "grid_references": [
@@ -610,17 +634,17 @@
   },
   {
     "page_type": "plan",
-    "confidence": 0.95,
+    "confidence": 1.0,
     "title_block": {
       "project_info": {
         "project_name": "MAR VISTA DRIVE POC",
-        "project_number": "03-0H0106",
+        "project_number": "05-0C7231",
         "client": null,
-        "location": null,
-        "engineer_on_record": "K. SARAVANAPAVAN",
+        "location": "SANTA CRUZ, CA 95060",
+        "engineer_on_record": "K. SARANAVANAN",
         "engineering_firm": "PARIKH CONSULTANTS, INC.",
         "project_year": null,
-        "other_info": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION"
+        "other_info": "DEPARTMENT OF TRANSPORTATION"
       },
       "plan_type": {
         "primary_type": "Log of Test Borings",
@@ -633,16 +657,9 @@
       "plan_contents": {
         "has_tables": true,
         "has_diagrams": true,
-        "structural_elements": [
-          "bent",
-          "line"
-        ],
+        "structural_elements": [],
         "detail_types": [],
-        "grid_references": [
-          "R-20-037",
-          "R-20-038",
-          "R-20-039"
-        ]
+        "grid_references": []
       }
     },
     "page_number": 42,

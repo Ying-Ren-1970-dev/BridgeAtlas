@@ -230,13 +230,55 @@ class PDFProcessor:
         
         return None
     
-    def chunk_text(self, text: str, page_num: int) -> List[Dict[str, any]]:
+    def _is_section_aware_project(self, file_name: Optional[str]) -> bool:
+        """Return True when file matches configured project patterns for section-aware chunking."""
+        if not file_name:
+            return False
+        patterns = config.SECTION_AWARE_CHUNKING_PROJECT_PATTERNS
+        if any(pattern in {"all", "*"} for pattern in patterns):
+            return True
+        file_name_lower = file_name.lower()
+        return any(pattern in file_name_lower for pattern in patterns)
+
+    def _split_structural_sections(self, text: str) -> List[str]:
+        """Split vision-rich content into engineering sections while preserving semantics."""
+        if not text:
+            return []
+
+        normalized = text.replace("\r\n", "\n")
+
+        # Prefer numbered markdown sections emitted by vision prompt.
+        section_markers = [
+            r"\n(?=\d+\.\s+\*\*[^*]+\*\*:)" ,
+            r"\n(?=\d+\.\s+[A-Za-z][^:\n]{2,80}:)",
+            r"\n(?=\*\*[A-Za-z][^*]{2,80}\*\*:)"
+        ]
+
+        sections = [normalized]
+        for marker in section_markers:
+            next_sections = []
+            for section in sections:
+                parts = re.split(marker, section)
+                if parts:
+                    next_sections.extend(parts)
+            sections = next_sections
+
+        cleaned = []
+        for section in sections:
+            section_text = section.strip()
+            if len(section_text) >= 80:
+                cleaned.append(section_text)
+
+        return cleaned
+
+    def chunk_text(self, text: str, page_num: int, file_name: Optional[str] = None) -> List[Dict[str, any]]:
         """
         Split text into chunks for embedding.
         
         Args:
             text: Text to chunk
             page_num: Page number this text came from
+            file_name: Optional source file name for project-specific chunking strategy
             
         Returns:
             List of dictionaries containing chunks and metadata
@@ -244,6 +286,29 @@ class PDFProcessor:
         chunks = []
         chunk_size = config.CHUNK_SIZE
         overlap = config.CHUNK_OVERLAP
+
+        # Keep full-page chunk + section-aware chunks to preserve drawing semantics.
+        if self._is_section_aware_project(file_name):
+            chunk_id = 0
+            page_text = text.strip()
+            if page_text:
+                chunks.append({
+                    'text': page_text,
+                    'page': page_num,
+                    'chunk_id': chunk_id,
+                })
+                chunk_id += 1
+
+            for section in self._split_structural_sections(page_text):
+                chunks.append({
+                    'text': section,
+                    'page': page_num,
+                    'chunk_id': chunk_id,
+                })
+                chunk_id += 1
+
+            if chunks:
+                return chunks
         
         # Simple character-based chunking
         start = 0
@@ -291,7 +356,7 @@ class PDFProcessor:
         # Create chunks
         all_chunks = []
         for page_num, page_text in pages_text.items():
-            chunks = self.chunk_text(page_text, page_num)
+            chunks = self.chunk_text(page_text, page_num, pdf_path.name)
             all_chunks.extend(chunks)
         
         return {
