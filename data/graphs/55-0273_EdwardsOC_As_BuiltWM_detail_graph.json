@@ -1,0 +1,1169 @@
+{
+  "project_name": "55-0273_EdwardsOC_As_BuiltWM",
+  "nodes": {
+    "Page2_Detail0": {
+      "detail_id": "Page2_Detail0",
+      "page_number": 2,
+      "title": "Typical Section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section",
+        "CIP/PS Conc Box Girder",
+        "7'-0\" Sq Column",
+        "Driven Pile"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page3_Detail0": {
+      "detail_id": "Page3_Detail0",
+      "page_number": 3,
+      "title": "general notes",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "general notes",
+        "abutment",
+        "approach slab"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page3_Detail1": {
+      "detail_id": "Page3_Detail1",
+      "page_number": 3,
+      "title": "plan symbols",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan symbols",
+        "abutment",
+        "approach slab"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page5_Detail0": {
+      "detail_id": "Page5_Detail0",
+      "page_number": 5,
+      "title": "Existing Foundation Plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Existing Foundation Plan",
+        "abutment",
+        "bent",
+        "girder"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page5_Detail1": {
+      "detail_id": "Page5_Detail1",
+      "page_number": 5,
+      "title": "Existing Deck Plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Existing Deck Plan",
+        "abutment",
+        "bent",
+        "girder"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page30_Detail0": {
+      "detail_id": "Page30_Detail0",
+      "page_number": 30,
+      "title": "longitudinal section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "longitudinal section",
+        "girder",
+        "bent"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail0": {
+      "detail_id": "Page31_Detail0",
+      "page_number": 31,
+      "title": "Detail 1",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 1",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail1": {
+      "detail_id": "Page31_Detail1",
+      "page_number": 31,
+      "title": "Detail 2",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 2",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail2": {
+      "detail_id": "Page31_Detail2",
+      "page_number": 31,
+      "title": "Detail 3",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 3",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail3": {
+      "detail_id": "Page31_Detail3",
+      "page_number": 31,
+      "title": "Detail 4",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 4",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail4": {
+      "detail_id": "Page31_Detail4",
+      "page_number": 31,
+      "title": "Section A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section A-A",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page31_Detail5": {
+      "detail_id": "Page31_Detail5",
+      "page_number": 31,
+      "title": "Section B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section B-B",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page32_Detail0": {
+      "detail_id": "Page32_Detail0",
+      "page_number": 32,
+      "title": "Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Elevation",
+        "duct",
+        "stirrups",
+        "prestress ducts"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    },
+    "Page32_Detail1": {
+      "detail_id": "Page32_Detail1",
+      "page_number": 32,
+      "title": "Section B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section B-B",
+        "duct",
+        "stirrups",
+        "prestress ducts"
+      ],
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM"
+    }
+  },
+  "edges": {
+    "Page3_Detail1": [
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: approach slab"
+      }
+    ],
+    "Page5_Detail0": [
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page3_Detail0": [
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      }
+    ],
+    "Page30_Detail0": [
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page30_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      }
+    ],
+    "Page31_Detail1": [
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page30_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page5_Detail1": [
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page30_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page31_Detail0": [
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page31_Detail2": [
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail2",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page31_Detail5": [
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page31_Detail5",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page31_Detail4": [
+      {
+        "source_id": "Page31_Detail4",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail4",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail4",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail4",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page31_Detail4",
+        "target_id": "Page31_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page32_Detail0": [
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: duct"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: stirrups"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: prestress ducts"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bottom slab reinforcement"
+      }
+    ]
+  },
+  "node_count": 14,
+  "edge_count": 123
+}

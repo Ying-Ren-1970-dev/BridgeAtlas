@@ -1,0 +1,4155 @@
+{
+  "project_name": "Fresno 180 Ramp",
+  "nodes": {
+    "Page1_Detail0": {
+      "detail_id": "Page1_Detail0",
+      "page_number": 1,
+      "title": "SECTION A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION A-A",
+        "abutment",
+        "bent"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page1_Detail1": {
+      "detail_id": "Page1_Detail1",
+      "page_number": 1,
+      "title": "SECTION B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION B-B",
+        "abutment",
+        "bent"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page1_Detail2": {
+      "detail_id": "Page1_Detail2",
+      "page_number": 1,
+      "title": "ELEVATION",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "ELEVATION",
+        "abutment",
+        "bent"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page3_Detail0": {
+      "detail_id": "Page3_Detail0",
+      "page_number": 3,
+      "title": "CAMBER DIAGRAM",
+      "element_type": "diagram",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "CAMBER DIAGRAM",
+        "deck"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page3_Detail1": {
+      "detail_id": "Page3_Detail1",
+      "page_number": 3,
+      "title": "SUPER ELEVATION DIAGRAM",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SUPER ELEVATION DIAGRAM",
+        "deck"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page4_Detail0": {
+      "detail_id": "Page4_Detail0",
+      "page_number": 4,
+      "title": "over excavation",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "over excavation",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page5_Detail0": {
+      "detail_id": "Page5_Detail0",
+      "page_number": 5,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "abutment",
+        "wingwall"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page5_Detail1": {
+      "detail_id": "Page5_Detail1",
+      "page_number": 5,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "abutment",
+        "wingwall"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page11_Detail0": {
+      "detail_id": "Page11_Detail0",
+      "page_number": 11,
+      "title": "Hood Detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Hood Detail",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page11_Detail1": {
+      "detail_id": "Page11_Detail1",
+      "page_number": 11,
+      "title": "Splice Detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Splice Detail",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page11_Detail2": {
+      "detail_id": "Page11_Detail2",
+      "page_number": 11,
+      "title": "Flare Detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Flare Detail",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page11_Detail3": {
+      "detail_id": "Page11_Detail3",
+      "page_number": 11,
+      "title": "Footing Plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Footing Plan",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page11_Detail4": {
+      "detail_id": "Page11_Detail4",
+      "page_number": 11,
+      "title": "Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Elevation",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page12_Detail0": {
+      "detail_id": "Page12_Detail0",
+      "page_number": 12,
+      "title": "Section A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section A-A",
+        "bent",
+        "column"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page12_Detail1": {
+      "detail_id": "Page12_Detail1",
+      "page_number": 12,
+      "title": "Section B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section B-B",
+        "bent",
+        "column"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page12_Detail2": {
+      "detail_id": "Page12_Detail2",
+      "page_number": 12,
+      "title": "Plan - Bent 2&4",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Plan - Bent 2&4",
+        "bent",
+        "column"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page12_Detail3": {
+      "detail_id": "Page12_Detail3",
+      "page_number": 12,
+      "title": "Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Elevation",
+        "bent",
+        "column"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail0": {
+      "detail_id": "Page13_Detail0",
+      "page_number": 13,
+      "title": "COLUMN PIN DETAIL",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "COLUMN PIN DETAIL",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail1": {
+      "detail_id": "Page13_Detail1",
+      "page_number": 13,
+      "title": "SECTION A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION A-A",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail2": {
+      "detail_id": "Page13_Detail2",
+      "page_number": 13,
+      "title": "SECTION B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION B-B",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail3": {
+      "detail_id": "Page13_Detail3",
+      "page_number": 13,
+      "title": "SECTION C-C",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION C-C",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail4": {
+      "detail_id": "Page13_Detail4",
+      "page_number": 13,
+      "title": "SECTION D-D",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "SECTION D-D",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail5": {
+      "detail_id": "Page13_Detail5",
+      "page_number": 13,
+      "title": "BENT 3 ELEVATION",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "BENT 3 ELEVATION",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page13_Detail6": {
+      "detail_id": "Page13_Detail6",
+      "page_number": 13,
+      "title": "FOOTING PLAN",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "FOOTING PLAN",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page14_Detail0": {
+      "detail_id": "Page14_Detail0",
+      "page_number": 14,
+      "title": "Section A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section A-A",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page14_Detail1": {
+      "detail_id": "Page14_Detail1",
+      "page_number": 14,
+      "title": "Section B-B",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section B-B",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page14_Detail2": {
+      "detail_id": "Page14_Detail2",
+      "page_number": 14,
+      "title": "Plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Plan",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page14_Detail3": {
+      "detail_id": "Page14_Detail3",
+      "page_number": 14,
+      "title": "Elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Elevation",
+        "bent",
+        "column",
+        "footing"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page15_Detail0": {
+      "detail_id": "Page15_Detail0",
+      "page_number": 15,
+      "title": "Typical Section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section",
+        "abutment",
+        "bent"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    },
+    "Page15_Detail1": {
+      "detail_id": "Page15_Detail1",
+      "page_number": 15,
+      "title": "Detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail",
+        "abutment",
+        "bent"
+      ],
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp"
+    }
+  },
+  "edges": {
+    "Page15_Detail0": [
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page1_Detail0": [
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page5_Detail1": [
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page5_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      }
+    ],
+    "Page5_Detail0": [
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wingwall"
+      }
+    ],
+    "Page15_Detail1": [
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page15_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page1_Detail2": [
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page11_Detail2": [
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page12_Detail0": [
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page12_Detail3": [
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page14_Detail2": [
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page11_Detail4": [
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail4",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page14_Detail3": [
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page12_Detail1": [
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page14_Detail1": [
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page11_Detail3": [
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page12_Detail2": [
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page12_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page14_Detail0": [
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page15_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page14_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page1_Detail1": [
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page11_Detail1": [
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page11_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page3_Detail1": [
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page13_Detail6": [
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail6",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page13_Detail0": [
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page13_Detail3": [
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page14_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page13_Detail5",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail3",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page13_Detail5": [
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page12_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail5",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page13_Detail1": [
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page13_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail1",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page13_Detail4": [
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page4_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page14_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail4",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ],
+    "Page4_Detail0": [
+      {
+        "source_id": "Page4_Detail0",
+        "target_id": "Page13_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page4_Detail0",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page4_Detail0",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      }
+    ],
+    "Page13_Detail2": [
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page13_Detail6",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page12_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page12_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page14_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page14_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page13_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page13_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page13_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page12_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page13_Detail2",
+        "target_id": "Page11_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      }
+    ]
+  },
+  "node_count": 30,
+  "edge_count": 502
+}

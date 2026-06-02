@@ -1,0 +1,585 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0J1204",
+        "client": null,
+        "location": "HUNTINGTON BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2022",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN NO. 1",
+        "sheet_number": "4225",
+        "scale": "1\" = 30'",
+        "revision": null,
+        "date": "06/17/21"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "pile",
+          "pedestal",
+          "barrier",
+          "slope"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Abut 1",
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0R0404",
+        "client": null,
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "18",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 2",
+        "sheet_number": null,
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": "10-18-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "CIP/PS Conc Box Girder",
+          "7'-0\" Square Column",
+          "HP Steel Pile"
+        ],
+        "detail_types": [
+          "Typical Section"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 2,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0K1004",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806 ORANGE, CA 92665",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "1",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "10-18-18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [
+          "General Notes",
+          "Standard Plans"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 3,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "Orange County",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS",
+        "sheet_number": "4",
+        "scale": "1\" = 30'",
+        "revision": null,
+        "date": "10-16-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Abut 1",
+          "Bent 2",
+          "Abut 3"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0R1004",
+        "client": "STATE OF CALIFORNIA",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": "MOFFATT & NICHOL",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Soffit Contours",
+        "sheet_title": "SOFFIT CONTOURS",
+        "sheet_number": "55-1119",
+        "scale": "1\" = 30'",
+        "revision": "1",
+        "date": "10-16-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [
+          "Superstructure Soffit Parabolic Detail"
+        ],
+        "grid_references": [
+          "Brg Abut 1",
+          "Brg Abut 3",
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 5,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-ORA-405",
+        "client": null,
+        "location": "Orange County, California",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Layout",
+        "sheet_title": "GIRDER LAYOUT No. 2",
+        "sheet_number": "34",
+        "scale": null,
+        "revision": null,
+        "date": "10-16-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent",
+          "deck",
+          "soffit"
+        ],
+        "detail_types": [
+          "Detail 1"
+        ],
+        "grid_references": [
+          "B0-5",
+          "B0-6",
+          "B0-7",
+          "B0-8",
+          "B0-9",
+          "B0-10",
+          "B0-11"
+        ]
+      }
+    },
+    "page_number": 35,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12-0H0404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "GIRDER DETAILS",
+        "sheet_title": "CLOSURE POUR REINF DETAIL AT END DIAPHRAGM",
+        "sheet_number": "S-11",
+        "scale": "3/8\" = 1'-0\"",
+        "revision": null,
+        "date": "10-18-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "diaphragm",
+          "deck slab",
+          "blockout"
+        ],
+        "detail_types": [
+          "obtuse corner detail",
+          "acute corner detail",
+          "end diaphragm detail"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 36,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "1220000001",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": "Moffatt & Nichol",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Additional Deck Reinforcement",
+        "sheet_title": "PLAN",
+        "sheet_number": "55-1119",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "10-16-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent",
+          "deck"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2",
+          "Brg Abut 1",
+          "Brg Abut 3"
+        ]
+      }
+    },
+    "page_number": 37,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": "12000001801",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Moubayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Additional Soffit Reinforcement",
+        "sheet_title": "ADDITIONAL SOFFIT REINFORCEMENT",
+        "sheet_number": "55-1119",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "10-16-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent",
+          "closure pour"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Brg Abut 1",
+          "Brg Abut 3",
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 38,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OC (REPLACE)",
+        "project_number": null,
+        "client": null,
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "ALISON KRAMER",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2016",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Special Details",
+        "sheet_title": "CONCRETE BARRIER TYPE 732SW (Mod) 1 OF 2",
+        "sheet_number": "x816-110-1",
+        "scale": "¾\" = 1'-0\"",
+        "revision": null,
+        "date": "07-16-19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "barrier",
+          "deck",
+          "electrolier",
+          "joint",
+          "railing"
+        ],
+        "detail_types": [
+          "section",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 39,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OVERCROSSING (REPLACE)",
+        "project_number": "1220000001",
+        "client": null,
+        "location": "Orange County, California",
+        "engineer_on_record": "Alaedin Moubayed",
+        "engineering_firm": "Department of Transportation",
+        "project_year": "2017",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 1 OF 5",
+        "sheet_number": "1",
+        "scale": "1\" = 50'",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 71,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OVERCROSSING (REPLACE)",
+        "project_number": "12-0N0404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY, CALIFORNIA",
+        "engineer_on_record": "ALEADIN MOUAYED",
+        "engineering_firm": "FUGRO",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 2 OF 5",
+        "sheet_number": "68",
+        "scale": "HORIZONTAL SCALE 1\"=20'",
+        "revision": null,
+        "date": "10/18/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 72,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OVERCROSSING (REPLACE)",
+        "project_number": "1220000001",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "ALEADIN NOUBAYED",
+        "engineering_firm": "FUGRO",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 3 OF 5",
+        "sheet_number": "3",
+        "scale": "Vertical Scale 1\"=10' Horizontal Scale 1\"=20'",
+        "revision": null,
+        "date": "05/17/17, 06/22/17"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 73,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OVERCROSSING (REPLACE)",
+        "project_number": "12-0N0404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "FUGRO 17781 COWAN IRVINE, CA 92614",
+        "engineer_on_record": "ALEJANDR MOUBAYED",
+        "engineering_firm": "FUGRO",
+        "project_year": "2017",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 4 OF 5",
+        "sheet_number": "4 OF 5",
+        "scale": "Vertical Scale 1\"=10', Horizontal Scale 1\"=20'",
+        "revision": null,
+        "date": "06/09/17"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 74,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "GOLDENWEST STREET OVERCROSSING",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "DIVISION OF ENGINEERING SERVICES - GEOTECHNICAL SERVICES",
+        "project_year": "1963",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 5 OF 5",
+        "sheet_number": null,
+        "scale": null,
+        "revision": null,
+        "date": "10/18/1963"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 75,
+    "filename": "55-1119_GoldenwestOc_As_BuiltWM.pdf"
+  }
+]

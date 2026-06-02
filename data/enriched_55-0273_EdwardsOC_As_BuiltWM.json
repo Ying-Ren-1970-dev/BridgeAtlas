@@ -1,0 +1,572 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0N040",
+        "client": "STATE OF CALIFORNIA",
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALEJANDRO MOUAYED",
+        "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 1",
+        "sheet_number": "64",
+        "scale": "1\" = 30'",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "pipe pile",
+          "barrier",
+          "pedestal"
+        ],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 1,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0H400",
+        "client": null,
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALEDDIN MUBAYED",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 2",
+        "sheet_number": "2",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "CIP/PS Conc Box Girder",
+          "7'-0\" Sq Column",
+          "Driven Pile"
+        ],
+        "detail_types": [
+          "Typical Section"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 2,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "07-297104",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALEDIN MUBARAK",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "DISTRICT 7, COUNTY LA, ROUTE 405, POST MILE 22.0/22.9"
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "S-1",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "approach slab"
+        ],
+        "detail_types": [
+          "general notes",
+          "plan symbols"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 3,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0R1004",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "ALEDDIN MUBAYED",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "PROJECT NUMBER & PHASE: 122000001801"
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS",
+        "sheet_number": "64",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2",
+          "Bent 3"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "ALEDIN MUBAREK",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "BRIDGE NO. 55-0173"
+      },
+      "plan_type": {
+        "primary_type": "Bridge Removal Plan",
+        "sheet_title": "EXISTING FOUNDATION PLAN",
+        "sheet_number": "5 of 64",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "girder",
+          "deck"
+        ],
+        "detail_types": [
+          "Existing Foundation Plan",
+          "Existing Deck Plan"
+        ],
+        "grid_references": [
+          "Bent 2",
+          "Bent 3",
+          "Bent 4",
+          "Brg Abut 1",
+          "Brg Abut 5"
+        ]
+      }
+    },
+    "page_number": 5,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0H040",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALDEN MOUAYED",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Layout",
+        "sheet_title": "GIRDER LAYOUT NO. 2",
+        "sheet_number": "B8-5",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent"
+        ],
+        "detail_types": [
+          "longitudinal section"
+        ],
+        "grid_references": [
+          "B7-1",
+          "B8-5"
+        ]
+      }
+    },
+    "page_number": 30,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0J4204",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE, CA 90017",
+        "engineer_on_record": "ALEDIN MUBAREK",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "DIST: 12, COUNTY: ORA, ROUTE: 405, SHEET 4225 OF 4225"
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "GIRDER DETAILS No. 1",
+        "sheet_number": "4225",
+        "scale": null,
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "deck",
+          "soffit",
+          "diaphragm",
+          "bearing pad"
+        ],
+        "detail_types": [
+          "Detail 1",
+          "Detail 2",
+          "Detail 3",
+          "Detail 4",
+          "Section A-A",
+          "Section B-B"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 31,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-ORA-405",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALADDIN MUBAYED",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "PROJECT NUMBER & PHASE: 1220000001"
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "PRESTRESSING DUCT TIES DETAIL",
+        "sheet_number": "88-5",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "duct",
+          "stirrups",
+          "prestress ducts",
+          "bottom slab reinforcement"
+        ],
+        "detail_types": [
+          "Elevation",
+          "Section B-B"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 32,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-ORA-405-8.7/9.7",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "ALDEN MOUAYED",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "PROJECT NUMBER & PHASE: 122000001801"
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "GIRDER DETAILS No. 3",
+        "sheet_number": "53 64",
+        "scale": "1/8\" = 1'-0\"",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 33,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-ORA-004",
+        "client": "STATE OF CALIFORNIA",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": null,
+        "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "GIRDER DETAILS No. 4",
+        "sheet_number": "34",
+        "scale": "1/8\" = 1'-0\"",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 34,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0R1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90017 ORANGE, CA 92868",
+        "engineer_on_record": null,
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "PROJECT NUMBER & PHASE: 122000001 DATE: 12-02-04"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 4 OF 8",
+        "sheet_number": null,
+        "scale": "1\"=10'",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 60,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "1220000001",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY TRANSPORTATION AUTHORITY, ORANGE, CA 92868",
+        "engineer_on_record": "ALDON MOLVAR",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 5 OF 8",
+        "sheet_number": "61",
+        "scale": "1\"=10'",
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 61,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "4225",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": null,
+        "engineer_on_record": "ALEIDIN MOJAVEID",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "PROJECT NUMBER & PHASE: 1220000001 12-0R0404"
+      },
+      "plan_type": {
+        "primary_type": "LOG OF TEST BORINGS",
+        "sheet_title": "LOG OF TEST BORINGS 6 OF 8",
+        "sheet_number": "62 64",
+        "scale": null,
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 62,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "12-0R4004",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90017",
+        "engineer_on_record": "ALEJANDRO MOLINAYED",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": "LOG OF TEST BORINGS 7 OF 8"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 7 OF 8",
+        "sheet_number": "63",
+        "scale": null,
+        "revision": null,
+        "date": "12/02/19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": false,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 63,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "EDWARDS STREET OC (REPLACE)",
+        "project_number": "08-27740",
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "DIVISION OF ENGINEERING SERVICES - GEOTECHNICAL SERVICES",
+        "project_year": "1994",
+        "other_info": "LOG OF TEST BORINGS 8 OF 8"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "EDWARDS ST. O.C.",
+        "sheet_number": "08-27740",
+        "scale": null,
+        "revision": null,
+        "date": "April 21, 1994"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 64,
+    "filename": "55-0273_EdwardsOC_As_BuiltWM.pdf"
+  }
+]
