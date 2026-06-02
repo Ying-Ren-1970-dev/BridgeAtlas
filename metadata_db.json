@@ -1,26 +1,9 @@
 {
   "projects": {
-    "30%_Elk Grove Station Structure Plan Set.pdf": {
-      "file_name": "30%_Elk Grove Station Structure Plan Set.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\30%_Elk Grove Station Structure Plan Set.pdf",
-      "project_name": "30%_Elk Grove Station Structure Plan Set",
-      "phase": null,
-      "engineer_of_record": null,
-      "date": null,
-      "categories": [
-        "Stations",
-        "Pedestrian Structures",
-        "Overhead Structures",
-        "Structural Analysis",
-        "General Structural"
-      ],
-      "total_pages": 6,
-      "indexed_at": "2026-05-14T13:51:50.239434"
-    },
-    "3112 Beale AFB-Four Bridges - 03-25.pdf": {
-      "file_name": "3112 Beale AFB-Four Bridges - 03-25.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\3112 Beale AFB-Four Bridges - 03-25.pdf",
-      "project_name": "3112 Beale AFB-Four Bridges - 03-25",
+    "55-0273_EdwardsOC_As_BuiltWM.pdf": {
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM",
       "phase": null,
       "engineer_of_record": null,
       "date": null,
@@ -28,13 +11,13 @@
         "Bridges",
         "Structural Analysis"
       ],
-      "total_pages": 11,
-      "indexed_at": "2026-05-14T13:53:34.202267"
+      "total_pages": 64,
+      "indexed_at": "2026-06-01T14:24:08.521372"
     },
-    "Austin Rd OH - Plans - Final Submittal_.pdf": {
-      "file_name": "Austin Rd OH - Plans - Final Submittal_.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Austin Rd OH - Plans - Final Submittal_.pdf",
-      "project_name": "Austin Rd OH - Plans - Final Submittal_",
+    "55-1119_GoldenwestOc_As_BuiltWM.pdf": {
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "project_name": "55-1119_GoldenwestOc_As_BuiltWM",
       "phase": null,
       "engineer_of_record": null,
       "date": null,
@@ -43,43 +26,41 @@
         "Foundations",
         "Structural Analysis"
       ],
-      "total_pages": 29,
-      "indexed_at": "2026-05-14T14:00:42.908950"
+      "total_pages": 75,
+      "indexed_at": "2026-06-01T15:02:18.299347"
     },
-    "Ceres Station RW YR 2021-05-12.pdf": {
-      "file_name": "Ceres Station RW YR 2021-05-12.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Ceres Station RW YR 2021-05-12.pdf",
-      "project_name": "Ceres Station RW YR 2021-05-12",
+    "55-1121_MagnoliaOc_As_BuiltWM.pdf": {
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
       "phase": null,
       "engineer_of_record": null,
-      "date": "2021-05-12",
+      "date": "03/14/12",
       "categories": [
-        "Retaining Walls",
-        "Foundations",
-        "Structural Analysis",
+        "Bridges",
         "General Structural"
       ],
-      "total_pages": 4,
-      "indexed_at": "2026-05-14T14:01:46.813435"
+      "total_pages": 67,
+      "indexed_at": "2026-06-01T15:40:19.306056"
     },
-    "CS_Ped_Ramp and Tunnel-GP 100721.pdf": {
-      "file_name": "CS_Ped_Ramp and Tunnel-GP 100721.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\CS_Ped_Ramp and Tunnel-GP 100721.pdf",
-      "project_name": "CS_Ped_Ramp and Tunnel-GP 100721",
+    "55-1127_WestminsterOC_As_Built.pdf": {
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built",
       "phase": null,
       "engineer_of_record": null,
-      "date": null,
+      "date": "12/16/2022",
       "categories": [
-        "Tunnels",
-        "Pedestrian Structures"
+        "Bridges",
+        "Structural Analysis"
       ],
-      "total_pages": 1,
-      "indexed_at": "2026-05-14T14:02:16.164093"
+      "total_pages": 69,
+      "indexed_at": "2026-06-01T16:10:23.060387"
     },
-    "Laguna Creek Plan.pdf": {
-      "file_name": "Laguna Creek Plan.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Laguna Creek Plan.pdf",
-      "project_name": "Laguna Creek Plan",
+    "Fresno 180 Ramp.pdf": {
+      "file_name": "Fresno 180 Ramp.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp",
       "phase": null,
       "engineer_of_record": null,
       "date": null,
@@ -89,71 +70,9 @@
         "Structural Analysis",
         "General Structural"
       ],
-      "total_pages": 21,
-      "indexed_at": "2026-05-14T14:07:34.438032"
-    },
-    "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf": {
-      "file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
-      "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
-      "phase": null,
-      "engineer_of_record": null,
-      "date": null,
-      "categories": [
-        "Bridges",
-        "Retaining Walls",
-        "Foundations",
-        "General Structural"
-      ],
-      "total_pages": 42,
-      "indexed_at": "2026-05-14T14:19:00.096784"
-    },
-    "Santiago Rd OC RW 100% Signed.pdf": {
-      "file_name": "Santiago Rd OC RW 100% Signed.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Santiago Rd OC RW 100% Signed.pdf",
-      "project_name": "Santiago Rd OC RW 100% Signed",
-      "phase": null,
-      "engineer_of_record": null,
-      "date": null,
-      "categories": [
-        "Retaining Walls",
-        "General Structural"
-      ],
-      "total_pages": 11,
-      "indexed_at": "2026-05-14T14:21:57.915127"
-    },
-    "Sports Park.pdf": {
-      "file_name": "Sports Park.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Sports Park.pdf",
-      "project_name": "Sports Park",
-      "phase": null,
-      "engineer_of_record": null,
-      "date": null,
-      "categories": [
-        "Bridges",
-        "Pedestrian Structures",
-        "Foundations",
-        "Structural Analysis",
-        "General Structural"
-      ],
-      "total_pages": 20,
-      "indexed_at": "2026-05-14T14:26:57.820988"
-    },
-    "Tunnel and Platform 2021-12-14 YR.pdf": {
-      "file_name": "Tunnel and Platform 2021-12-14 YR.pdf",
-      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Projects\\Tunnel and Platform 2021-12-14 YR.pdf",
-      "project_name": "Tunnel and Platform 2021-12-14 YR",
-      "phase": null,
-      "engineer_of_record": null,
-      "date": "2021-12-14",
-      "categories": [
-        "Tunnels",
-        "Stations",
-        "Pedestrian Structures"
-      ],
-      "total_pages": 3,
-      "indexed_at": "2026-05-14T14:27:52.439964"
+      "total_pages": 27,
+      "indexed_at": "2026-06-01T16:12:46.208720"
     }
   },
-  "last_updated": "2026-05-14T14:27:52.439985"
+  "last_updated": "2026-06-01T16:12:46.208741"
 }

@@ -1146,5 +1146,8 @@
   ],
   "YIELD STRENGTH": [
     "stress level where steel deforms permanently."
+  ],
+  "OC": [
+    "replace"
   ]
 }
