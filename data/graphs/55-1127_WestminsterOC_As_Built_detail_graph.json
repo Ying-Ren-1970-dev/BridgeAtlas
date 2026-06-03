@@ -1,0 +1,1470 @@
+{
+  "project_name": "55-1127_WestminsterOC_As_Built",
+  "nodes": {
+    "Page1_Detail0": {
+      "detail_id": "Page1_Detail0",
+      "page_number": 1,
+      "title": "profile grade",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "profile grade",
+        "abutment",
+        "bent",
+        "column"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page1_Detail1": {
+      "detail_id": "Page1_Detail1",
+      "page_number": 1,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "abutment",
+        "bent",
+        "column"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page1_Detail2": {
+      "detail_id": "Page1_Detail2",
+      "page_number": 1,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "abutment",
+        "bent",
+        "column"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page2_Detail0": {
+      "detail_id": "Page2_Detail0",
+      "page_number": 2,
+      "title": "Typical Section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section",
+        "CIP/PS Conc Box Girder",
+        "Driven Steel Pipe Pile",
+        "Column"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page32_Detail0": {
+      "detail_id": "Page32_Detail0",
+      "page_number": 32,
+      "title": "typical section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "typical section",
+        "barrier",
+        "girders",
+        "closure pour"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page32_Detail1": {
+      "detail_id": "Page32_Detail1",
+      "page_number": 32,
+      "title": "partial typical section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "partial typical section",
+        "barrier",
+        "girders",
+        "closure pour"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page33_Detail0": {
+      "detail_id": "Page33_Detail0",
+      "page_number": 33,
+      "title": "typical section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "typical section",
+        "girder",
+        "closure pour",
+        "chain link railing"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page33_Detail1": {
+      "detail_id": "Page33_Detail1",
+      "page_number": 33,
+      "title": "partial typical section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "partial typical section",
+        "girder",
+        "closure pour",
+        "chain link railing"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page34_Detail0": {
+      "detail_id": "Page34_Detail0",
+      "page_number": 34,
+      "title": "Detail 1",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 1",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page34_Detail1": {
+      "detail_id": "Page34_Detail1",
+      "page_number": 34,
+      "title": "Detail 2",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 2",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page34_Detail2": {
+      "detail_id": "Page34_Detail2",
+      "page_number": 34,
+      "title": "Detail 3",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail 3",
+        "girder",
+        "deck",
+        "soffit"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page35_Detail0": {
+      "detail_id": "Page35_Detail0",
+      "page_number": 35,
+      "title": "Detail-1",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail-1",
+        "girder",
+        "diaphragm",
+        "bearing pad"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page35_Detail1": {
+      "detail_id": "Page35_Detail1",
+      "page_number": 35,
+      "title": "Detail-2",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail-2",
+        "girder",
+        "diaphragm",
+        "bearing pad"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page35_Detail2": {
+      "detail_id": "Page35_Detail2",
+      "page_number": 35,
+      "title": "Detail-3",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail-3",
+        "girder",
+        "diaphragm",
+        "bearing pad"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page35_Detail3": {
+      "detail_id": "Page35_Detail3",
+      "page_number": 35,
+      "title": "Detail-4",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Detail-4",
+        "girder",
+        "diaphragm",
+        "bearing pad"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page35_Detail4": {
+      "detail_id": "Page35_Detail4",
+      "page_number": 35,
+      "title": "Section A-A",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Section A-A",
+        "girder",
+        "diaphragm",
+        "bearing pad"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    },
+    "Page36_Detail0": {
+      "detail_id": "Page36_Detail0",
+      "page_number": 36,
+      "title": "longitudinal reinforcement",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "longitudinal reinforcement",
+        "girder",
+        "deck"
+      ],
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built"
+    }
+  },
+  "edges": {
+    "Page34_Detail1": [
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page34_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      }
+    ],
+    "Page1_Detail0": [
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      }
+    ],
+    "Page34_Detail0": [
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page34_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      }
+    ],
+    "Page1_Detail2": [
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      }
+    ],
+    "Page1_Detail1": [
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page2_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: column"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: footing"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      }
+    ],
+    "Page32_Detail1": [
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page32_Detail0": [
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girders"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: reinforcement"
+      }
+    ],
+    "Page33_Detail1": [
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: chain link railing"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: electrolier pedestal"
+      },
+      {
+        "source_id": "Page33_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: concrete barrier"
+      }
+    ],
+    "Page36_Detail0": [
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page36_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      }
+    ],
+    "Page35_Detail0": [
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page36_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page35_Detail1": [
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page34_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail4",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page35_Detail4": [
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      },
+      {
+        "source_id": "Page35_Detail4",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ],
+    "Page35_Detail2": [
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page33_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      }
+    ],
+    "Page33_Detail0": [
+      {
+        "source_id": "Page33_Detail0",
+        "target_id": "Page35_Detail3",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page33_Detail0",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page33_Detail0",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page33_Detail0",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      }
+    ],
+    "Page35_Detail3": [
+      {
+        "source_id": "Page35_Detail3",
+        "target_id": "Page33_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail3",
+        "target_id": "Page34_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail3",
+        "target_id": "Page34_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page35_Detail3",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page35_Detail3",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bearing pad"
+      }
+    ]
+  },
+  "node_count": 17,
+  "edge_count": 156
+}

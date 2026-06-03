@@ -1,0 +1,27 @@
+﻿TEXT_PAYLOAD
+INFO:     169.254.169.126:12094 - "POST /search HTTP/1.1" 200 OK
+Error during similarity search: Connection error.
+Expanded query: 'foundation CIDH pile drilled shaft cast-in-drilled-hole pile driven pile driven foundation footing spread footing isolated footing'
+Searching for: 'foundation'
+
+INFO:     169.254.169.126:15800 - "POST /search HTTP/1.1" 200 OK
+Error during similarity search: Connection error.
+Expanded query: 'girder beam main beam bridge girder'
+Searching for: 'girder'
+
+
+Default STARTUP TCP probe succeeded after 1 attempt for container "librarian-1" on port 8080.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+INFO:     Application startup complete.
+? Librarian API initialized successfully
+Vector store initialized at vector_db
+Vector store initialized at vector_db
+? Vector database synced from cloud
+? Metadata database synced
+Syncing vector database from Cloud Storage...
+? Cloud Storage initialized: umehe-267901-librarian-pdfs
+INFO:     Waiting for application startup.
+INFO:     Started server process [1]
+  size: str = Query(default="medium", regex="^(thumbnail|medium|full)$")
+/app/api.py:453: FastAPIDeprecationWarning: `regex` has been deprecated, please use `pattern` instead
+Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.

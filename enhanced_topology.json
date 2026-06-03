@@ -1,0 +1,7928 @@
+{
+  "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+  "total_pages": 42,
+  "pages_analyzed": 42,
+  "topology": {
+    "structural_elements": {
+      "R/C Slab": [
+        {
+          "page": 1,
+          "details": {
+            "type": "R/C Slab",
+            "name": "R/C Slab",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "R/C Box Girder": [
+        {
+          "page": 1,
+          "details": {
+            "type": "R/C Box Girder",
+            "name": "R/C Box Girder",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 1 to Bent 17": [
+        {
+          "page": 1,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 1 to Bent 17",
+            "quantity": "17",
+            "location": "Along the bridge"
+          }
+        }
+      ],
+      "Abut 1 and Abut 17": [
+        {
+          "page": 1,
+          "details": {
+            "type": "Abutments",
+            "name": "Abut 1 and Abut 17",
+            "quantity": "2",
+            "location": "Ends of the bridge"
+          }
+        }
+      ],
+      "Retaining Wall": [
+        {
+          "page": 1,
+          "details": {
+            "type": "Retaining Wall",
+            "name": "Retaining Wall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "type": "Wall",
+            "name": "Retaining Wall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "type": "Retaining Wall",
+            "name": "Retaining Wall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "type": "Retaining Wall",
+            "name": "Retaining Wall",
+            "quantity": "1",
+            "location": "Along MV line"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "type": "Wall",
+            "name": "Retaining Wall",
+            "quantity": "Varies",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "type": "Retaining Wall",
+            "name": "Retaining Wall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "CIDH Concrete Piles": [
+        {
+          "page": 3,
+          "details": {
+            "type": "Pile",
+            "name": "CIDH Concrete Piles",
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Structural Concrete, Bridge Footing": [
+        {
+          "page": 3,
+          "details": {
+            "type": "Concrete",
+            "name": "Structural Concrete, Bridge Footing",
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Structural Concrete, Retaining Wall": [
+        {
+          "page": 3,
+          "details": {
+            "type": "Concrete",
+            "name": "Structural Concrete, Retaining Wall",
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Pedestrian Railing": [
+        {
+          "page": 3,
+          "details": {
+            "type": "Railing",
+            "name": "Pedestrian Railing",
+            "quantity": null,
+            "location": null
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "type": "Railing",
+            "name": "Pedestrian Railing",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Isolation Casing": [
+        {
+          "page": 3,
+          "details": {
+            "type": "Casing",
+            "name": "Isolation Casing",
+            "quantity": null,
+            "location": null
+          }
+        },
+        {
+          "page": 22,
+          "details": {
+            "type": "Casing",
+            "name": "Isolation Casing",
+            "quantity": "Not specified",
+            "location": "Bents 2, 6, 13"
+          }
+        }
+      ],
+      "Bents 2 to 7": [
+        {
+          "page": 4,
+          "details": {
+            "type": "Bents",
+            "name": "Bents 2 to 7",
+            "quantity": "6",
+            "location": "Along the 'M' Line"
+          }
+        }
+      ],
+      "Abut 1": [
+        {
+          "page": 4,
+          "details": {
+            "type": "Abutment",
+            "name": "Abut 1",
+            "quantity": "1",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Edge of Deck": [
+        {
+          "page": 4,
+          "details": {
+            "type": "Edge of Deck",
+            "name": "Edge of Deck",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "'M' Line": [
+        {
+          "page": 4,
+          "details": {
+            "type": "Reference Line",
+            "name": "'M' Line",
+            "quantity": "1",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "24\" CIDH Type I Shaft": [
+        {
+          "page": 5,
+          "details": {
+            "type": "CIDH piles",
+            "name": "24\" CIDH Type I Shaft",
+            "quantity": "10",
+            "location": "Bent 8 to Bent 17"
+          }
+        }
+      ],
+      "Column Type A": [
+        {
+          "page": 5,
+          "details": {
+            "type": "columns",
+            "name": "Column Type A",
+            "quantity": "10",
+            "location": "Bent 8 to Bent 17"
+          }
+        }
+      ],
+      "Cap Beam Type B": [
+        {
+          "page": 5,
+          "details": {
+            "type": "cap beams",
+            "name": "Cap Beam Type B",
+            "quantity": "10",
+            "location": "Bent 8 to Bent 17"
+          }
+        }
+      ],
+      "Shear Key Type C": [
+        {
+          "page": 5,
+          "details": {
+            "type": "shear keys",
+            "name": "Shear Key Type C",
+            "quantity": "20",
+            "location": "Bent 8 to Bent 17"
+          }
+        }
+      ],
+      "Abutment Backwall": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Abutment",
+            "name": "Abutment Backwall",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Abutment Stem": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Abutment",
+            "name": "Abutment Stem",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Abutment Return Wall": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Abutment",
+            "name": "Abutment Return Wall",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Abutment CIDH Piles": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Abutment",
+            "name": "Abutment CIDH Piles",
+            "location": "Abutment 1 and Abutment 17"
+          }
+        }
+      ],
+      "Structural Backfill": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Fill Material",
+            "name": "Structural Backfill",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Roadway Structural Section": [
+        {
+          "page": 6,
+          "details": {
+            "type": "Roadway",
+            "name": "Roadway Structural Section",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "CIDH Piles": [
+        {
+          "page": 7,
+          "details": {
+            "type": "Pile",
+            "name": "CIDH Piles",
+            "location": "Bents 5 to 17, Abutment 17"
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "type": "Pile",
+            "name": "CIDH Piles",
+            "quantity": "Varies",
+            "location": "Abut 1, Bent 2 to Bent 17"
+          }
+        },
+        {
+          "page": 16,
+          "details": {
+            "type": "Pile",
+            "name": "CIDH Piles",
+            "location": "Bent 2"
+          }
+        }
+      ],
+      "Footings": [
+        {
+          "page": 7,
+          "details": {
+            "type": "Foundation",
+            "name": "Footings",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "type": "Footings",
+            "name": "Footings",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bents": [
+        {
+          "page": 7,
+          "details": {
+            "type": "Support",
+            "name": "Bents",
+            "location": "Along the route"
+          }
+        }
+      ],
+      "Abutments": [
+        {
+          "page": 7,
+          "details": {
+            "type": "Support",
+            "name": "Abutments",
+            "location": "Along the route"
+          }
+        }
+      ],
+      "Retaining Walls": [
+        {
+          "page": 8,
+          "details": {
+            "type": "Wall",
+            "name": "Retaining Walls",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "24\" CIDH (Type I Shaft)": [
+        {
+          "page": 9,
+          "details": {
+            "type": "Pile",
+            "name": "24\" CIDH (Type I Shaft)",
+            "quantity": "9",
+            "location": "Abut 1, Bent 2, Bent 3, Bent 4, Bent 14, Bent 15, Bent 16, Abut 17"
+          }
+        }
+      ],
+      "72\" CIDH (Type II Shaft)": [
+        {
+          "page": 9,
+          "details": {
+            "type": "Pile",
+            "name": "72\" CIDH (Type II Shaft)",
+            "quantity": "5",
+            "location": "Bent 5, Bent 6, Bent 7, Bent 8, Bent 9"
+          }
+        }
+      ],
+      "30\" CIDH (Type II Shaft)": [
+        {
+          "page": 9,
+          "details": {
+            "type": "Pile",
+            "name": "30\" CIDH (Type II Shaft)",
+            "quantity": "4",
+            "location": "Bent 10, Bent 11, Bent 12, Bent 13"
+          }
+        }
+      ],
+      "24\" CIDH Pile": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Pile",
+            "name": "24\" CIDH Pile",
+            "quantity": "Not specified",
+            "location": "Abutment 1 and Abutment 17"
+          }
+        }
+      ],
+      "Pipe Pin (Steel Shear Key)": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Key",
+            "name": "Pipe Pin (Steel Shear Key)",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bearing Pad": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Pad",
+            "name": "Bearing Pad",
+            "quantity": "Not specified",
+            "location": "Abutment 1 and Abutment 17"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "type": "Bearing",
+            "name": "Bearing Pad",
+            "quantity": "Not specified",
+            "location": "Bent 5 and Bent 9"
+          }
+        }
+      ],
+      "Abutment": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Structure",
+            "name": "Abutment",
+            "quantity": "Not specified",
+            "location": "Abutment 1 and Abutment 17"
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "type": "Abutment",
+            "name": "Abutment",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Backwall": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Wall",
+            "name": "Backwall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Return Wall": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Wall",
+            "name": "Return Wall",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Elastomeric Bearing Pad": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Pad",
+            "name": "Elastomeric Bearing Pad",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Geocomposite Drain": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Drain",
+            "name": "Geocomposite Drain",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "type": "Drain",
+            "name": "Geocomposite Drain",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "type": "Drain",
+            "name": "Geocomposite Drain",
+            "quantity": "1",
+            "location": "6\" below aggregate base"
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "type": "Geocomposite Drain",
+            "name": "Geocomposite Drain",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Steel Shear Key": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Pipe Pin",
+            "name": "Steel Shear Key",
+            "quantity": "Not specified",
+            "location": "End of the slab, Bents 5, 9, and 13"
+          }
+        }
+      ],
+      "End Diaphragm": [
+        {
+          "page": 11,
+          "details": {
+            "type": "End Diaphragm",
+            "name": "End Diaphragm",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "type": "End Diaphragm",
+            "name": "End Diaphragm",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Studs": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Studs",
+            "name": "Studs",
+            "quantity": "4",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Reinf": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Reinforcement Bars",
+            "name": "Reinf",
+            "quantity": "8",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Cover Plate": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Cover Plate",
+            "name": "Cover Plate",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Anchor Rod": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Anchor Rod",
+            "name": "Anchor Rod",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Concrete Shear Key": [
+        {
+          "page": 12,
+          "details": {
+            "type": "Shear Key",
+            "name": "Concrete Shear Key",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Expansion Joints": [
+        {
+          "page": 13,
+          "details": {
+            "type": "Expansion Joints",
+            "name": "Expansion Joints",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Weakened Plane Joints": [
+        {
+          "page": 13,
+          "details": {
+            "type": "Weakened Plane Joints",
+            "name": "Weakened Plane Joints",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Type A and Type B": [
+        {
+          "page": 13,
+          "details": {
+            "type": "Pedestrian Railings",
+            "name": "Type A and Type B",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Footing": [
+        {
+          "page": 14,
+          "details": {
+            "type": "Footing",
+            "name": "Footing",
+            "quantity": "1",
+            "location": "Bottom of Retaining Wall"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "type": "Foundation",
+            "name": "Footing",
+            "quantity": "1",
+            "location": "Below Retaining Wall"
+          }
+        }
+      ],
+      "Expansion Joint": [
+        {
+          "page": 14,
+          "details": {
+            "type": "Expansion Joint",
+            "name": "Expansion Joint",
+            "quantity": "Multiple",
+            "location": "Along Retaining Wall"
+          }
+        }
+      ],
+      "Weep Hole": [
+        {
+          "page": 14,
+          "details": {
+            "type": "Weep Hole",
+            "name": "Weep Hole",
+            "quantity": "Multiple",
+            "location": "Retaining Wall"
+          }
+        }
+      ],
+      "Reinforcement Bars": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Reinforcement",
+            "name": "Reinforcement Bars",
+            "quantity": "Varies",
+            "location": "Within Retaining Wall and Footing"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "type": "Reinforcement",
+            "name": "Reinforcement Bars",
+            "quantity": "Not specified",
+            "location": "Bent 5 and Bent 9"
+          }
+        }
+      ],
+      "PVC Pipe Outlet": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Pipe",
+            "name": "PVC Pipe Outlet",
+            "quantity": "1",
+            "location": "Connected to drainage system"
+          }
+        }
+      ],
+      "Form Liner": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Liner",
+            "name": "Form Liner",
+            "quantity": "1",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Columns": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Column",
+            "name": "Columns",
+            "location": "Bent 2"
+          }
+        }
+      ],
+      "Bent Cap": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Cap",
+            "name": "Bent Cap",
+            "location": "Bent 2"
+          }
+        }
+      ],
+      "Steel Shear Key (Pipe Pin)": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Shear Key",
+            "name": "Steel Shear Key (Pipe Pin)",
+            "location": "Bent 2"
+          }
+        }
+      ],
+      "Spiral Reinforcement": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Reinforcement",
+            "name": "Spiral Reinforcement",
+            "location": "Bent 2"
+          }
+        }
+      ],
+      "Column": [
+        {
+          "page": 17,
+          "details": {
+            "type": "Column",
+            "name": "Column",
+            "quantity": "Not specified",
+            "location": "Bent 5 and Bent 9"
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "type": "Column",
+            "name": "Column",
+            "quantity": "Not specified",
+            "location": "Bents 6, Bent 7, Bent 8"
+          }
+        },
+        {
+          "page": 22,
+          "details": {
+            "type": "Column",
+            "name": "Column",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Cap Beam": [
+        {
+          "page": 17,
+          "details": {
+            "type": "Beam",
+            "name": "Cap Beam",
+            "quantity": "Not specified",
+            "location": "Bent 5 and Bent 9"
+          }
+        }
+      ],
+      "Expanded Polystyrene": [
+        {
+          "page": 17,
+          "details": {
+            "type": "Insulation",
+            "name": "Expanded Polystyrene",
+            "quantity": "Not specified",
+            "location": "Bent 5 and Bent 9"
+          }
+        }
+      ],
+      "Shear Key": [
+        {
+          "page": 18,
+          "details": {
+            "type": "Shear Key",
+            "name": "Shear Key",
+            "quantity": "Not specified",
+            "location": "Bents 5 and 9"
+          }
+        }
+      ],
+      "Elastomeric Bearing Pads": [
+        {
+          "page": 18,
+          "details": {
+            "type": "Bearing Pads",
+            "name": "Elastomeric Bearing Pads",
+            "quantity": "2",
+            "location": "Bent 5 and Bent 9"
+          }
+        }
+      ],
+      "Steel Reinforcement Bearing Pads": [
+        {
+          "page": 18,
+          "details": {
+            "type": "Bearing Pads",
+            "name": "Steel Reinforcement Bearing Pads",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Steel Shear Key Pipe Pin": [
+        {
+          "page": 18,
+          "details": {
+            "type": "Pipe Pin",
+            "name": "Steel Shear Key Pipe Pin",
+            "quantity": "Not specified",
+            "location": "Bents 5 and 9"
+          }
+        }
+      ],
+      "N/A": [
+        {
+          "page": 19,
+          "details": {
+            "type": "Beam",
+            "name": "N/A",
+            "quantity": "N/A",
+            "location": "N/A"
+          }
+        },
+        {
+          "page": 19,
+          "details": {
+            "type": "Column",
+            "name": "N/A",
+            "quantity": "N/A",
+            "location": "N/A"
+          }
+        },
+        {
+          "page": 19,
+          "details": {
+            "type": "Concrete shear key",
+            "name": "N/A",
+            "quantity": "N/A",
+            "location": "N/A"
+          }
+        }
+      ],
+      "#5, #7": [
+        {
+          "page": 19,
+          "details": {
+            "type": "Reinforcement bar",
+            "name": "#5, #7",
+            "quantity": "16 in 2-bar bundles",
+            "location": "N/A"
+          }
+        }
+      ],
+      "Hoop": [
+        {
+          "page": 20,
+          "details": {
+            "type": "Hoop",
+            "name": "Hoop",
+            "quantity": "#5 or #7",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Expansion Joint Filler": [
+        {
+          "page": 20,
+          "details": {
+            "type": "Expansion Joint Filler",
+            "name": "Expansion Joint Filler",
+            "quantity": "4\" thick and 2\" thick",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Service Level Coupler": [
+        {
+          "page": 20,
+          "details": {
+            "type": "Service Level Coupler",
+            "name": "Service Level Coupler",
+            "quantity": "Not specified",
+            "location": "Column connections"
+          }
+        }
+      ],
+      "Drilled Shaft (CIDH)": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Pile",
+            "name": "Drilled Shaft (CIDH)",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Column Main Reinforcement": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Reinforcement",
+            "name": "Column Main Reinforcement",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Pile Hoop Reinforcement": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Reinforcement",
+            "name": "Pile Hoop Reinforcement",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Permanent Steel Casing": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Casing",
+            "name": "Permanent Steel Casing",
+            "quantity": "Not specified",
+            "location": "Bents 5 through 9"
+          }
+        }
+      ],
+      "Steel Top Plate": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Plate",
+            "name": "Steel Top Plate",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Pourable Seal": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Seal",
+            "name": "Pourable Seal",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Backer Rod": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Rod",
+            "name": "Backer Rod",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "CIP Reinforced Concrete Slab": [
+        {
+          "page": 23,
+          "details": {
+            "type": "Concrete Slab",
+            "name": "CIP Reinforced Concrete Slab",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Lighting Conduit": [
+        {
+          "page": 23,
+          "details": {
+            "type": "Conduit",
+            "name": "Lighting Conduit",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 5": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 5",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 26,
+          "details": {
+            "type": "Bent",
+            "name": "Bent 5",
+            "quantity": "1",
+            "location": "Grid Line A"
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 5",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 6": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 6",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 6",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 7": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 7",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 7",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 8": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 8",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 8",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Bent 9": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 9",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "type": "Bents",
+            "name": "Bent 9",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Deck Edge": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Edge",
+            "name": "Deck Edge",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "C Line": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Lines",
+            "name": "C Line",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "MW Line": [
+        {
+          "page": 25,
+          "details": {
+            "type": "Lines",
+            "name": "MW Line",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Girder 1": [
+        {
+          "page": 26,
+          "details": {
+            "type": "Girder",
+            "name": "Girder 1",
+            "quantity": "1",
+            "location": "Bent 5"
+          }
+        }
+      ],
+      "Stirrup 1": [
+        {
+          "page": 26,
+          "details": {
+            "type": "Stirrup",
+            "name": "Stirrup 1",
+            "quantity": "1",
+            "location": "Girder 1"
+          }
+        }
+      ],
+      "Girder": [
+        {
+          "page": 28,
+          "details": {
+            "type": "Girder",
+            "name": "Girder",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "#11": [
+        {
+          "page": 28,
+          "details": {
+            "type": "Reinforcement bar",
+            "name": "#11",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "#8": [
+        {
+          "page": 28,
+          "details": {
+            "type": "Reinforcement bar",
+            "name": "#8",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Concrete Drainage Pad": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Concrete Drainage Pad",
+            "name": "Concrete Drainage Pad",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Slotted Plastic Pipe": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Plastic Pipes",
+            "name": "Slotted Plastic Pipe",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Unslotted PVC Pipe": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Plastic Pipes",
+            "name": "Unslotted PVC Pipe",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Filter Fabric": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Filter Fabric",
+            "name": "Filter Fabric",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Top of Barrier": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Barrier",
+            "name": "Top of Barrier",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Top of Curb": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Curb",
+            "name": "Top of Curb",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Top of Sidewalk": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Sidewalk",
+            "name": "Top of Sidewalk",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Top of Deck": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Deck",
+            "name": "Top of Deck",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Open Joint": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Joint",
+            "name": "Open Joint",
+            "location": "To match deck joint width"
+          }
+        }
+      ],
+      "Chain Link Fence": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Fence",
+            "name": "Chain Link Fence",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Steel Plate": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Plate",
+            "name": "Steel Plate",
+            "quantity": "1",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Railing posts and horizontal members": [
+        {
+          "page": 31,
+          "details": {
+            "type": "Hollow Structural Section (HSS)",
+            "name": "Railing posts and horizontal members",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Tamper Proof Screws": [
+        {
+          "page": 31,
+          "details": {
+            "type": "Screws",
+            "name": "Tamper Proof Screws",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Welded Wire Mesh": [
+        {
+          "page": 31,
+          "details": {
+            "type": "Mesh",
+            "name": "Welded Wire Mesh",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 32,
+          "details": {
+            "type": "Welded Wire Mesh",
+            "name": null,
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "End Post": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Post",
+            "name": "End Post",
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Intermediate Post": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Post",
+            "name": "Intermediate Post",
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Bumpout Post": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Post",
+            "name": "Bumpout Post",
+            "quantity": null,
+            "location": null
+          }
+        },
+        {
+          "page": 34,
+          "details": {
+            "type": "Bumpout Post",
+            "name": "Bumpout Post",
+            "quantity": "Not specified",
+            "location": "1'-0\" from edge of curb"
+          }
+        }
+      ],
+      "Railing Anchorage": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Railing Anchorage",
+            "name": null,
+            "quantity": null,
+            "location": null
+          }
+        }
+      ],
+      "Electrolier": [
+        {
+          "page": 34,
+          "details": {
+            "type": "Electrolier",
+            "name": "Electrolier",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        },
+        {
+          "page": 40,
+          "details": {
+            "type": "Electrolier Layout",
+            "name": "Electrolier",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Anchor Plate": [
+        {
+          "page": 34,
+          "details": {
+            "type": "Anchor Plate",
+            "name": "Anchor Plate",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Conduit": [
+        {
+          "page": 34,
+          "details": {
+            "type": "Conduit",
+            "name": "Conduit",
+            "quantity": "Not specified",
+            "location": "Extend 11\" into overhang"
+          }
+        }
+      ],
+      "Entry Monument": [
+        {
+          "page": 35,
+          "details": {
+            "type": "Monument",
+            "name": "Entry Monument",
+            "quantity": "1",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "#4 bars": [
+        {
+          "page": 35,
+          "details": {
+            "type": "Reinforcement bars",
+            "name": "#4 bars",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "#6 bars": [
+        {
+          "page": 35,
+          "details": {
+            "type": "Reinforcement bars",
+            "name": "#6 bars",
+            "quantity": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "Not specified": [
+        {
+          "page": 36,
+          "details": {
+            "type": "Railings",
+            "name": "Not specified",
+            "location": "Not specified"
+          }
+        }
+      ],
+      "retaining wall": [
+        {
+          "page": 38,
+          "details": {
+            "type": "wall",
+            "name": "retaining wall",
+            "quantity": "not specified",
+            "location": "not specified"
+          }
+        }
+      ],
+      "column": [
+        {
+          "page": 38,
+          "details": {
+            "type": "column",
+            "name": "column",
+            "quantity": "not specified",
+            "location": "not specified"
+          }
+        }
+      ],
+      "beam": [
+        {
+          "page": 38,
+          "details": {
+            "type": "beam",
+            "name": "beam",
+            "quantity": "not specified",
+            "location": "not specified"
+          }
+        }
+      ],
+      "shear key": [
+        {
+          "page": 38,
+          "details": {
+            "type": "shear key",
+            "name": "shear key",
+            "quantity": "not specified",
+            "location": "not specified"
+          }
+        }
+      ]
+    },
+    "foundation_systems": {
+      "Not specified": [
+        {
+          "page": 1,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 4,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        },
+        {
+          "page": 41,
+          "details": {
+            "type": "Not specified",
+            "size": "Not specified",
+            "depth": [
+              {
+                "hole_id": "R-20-034",
+                "depth": "Terminated at Elev. 79.07'"
+              },
+              {
+                "hole_id": "R-20-035",
+                "depth": "Terminated at Elev. 82.07'"
+              },
+              {
+                "hole_id": "R-20-036",
+                "depth": "Terminated at Elev. 62.27'"
+              }
+            ],
+            "reinforcement": "Not applicable"
+          }
+        }
+      ],
+      "24\" Cast-In-Drilled-Hole Concrete Piling": [
+        {
+          "page": 3,
+          "details": {
+            "type": "24\" Cast-In-Drilled-Hole Concrete Piling",
+            "size": null,
+            "depth": null,
+            "reinforcement": null
+          }
+        },
+        {
+          "page": 7,
+          "details": {
+            "type": "24\" Cast-In-Drilled-Hole Concrete Piling",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "72\" Cast-In-Drilled-Hole Concrete Piling": [
+        {
+          "page": 3,
+          "details": {
+            "type": "72\" Cast-In-Drilled-Hole Concrete Piling",
+            "size": null,
+            "depth": null,
+            "reinforcement": null
+          }
+        },
+        {
+          "page": 7,
+          "details": {
+            "type": "72\" Cast-In-Drilled-Hole Concrete Piling",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "72\" Permanent Steel Casing": [
+        {
+          "page": 3,
+          "details": {
+            "type": "72\" Permanent Steel Casing",
+            "size": null,
+            "depth": null,
+            "reinforcement": null
+          }
+        }
+      ],
+      "24\" CIDH Type I Shaft": [
+        {
+          "page": 5,
+          "details": {
+            "type": "24\" CIDH Type I Shaft",
+            "size": "24\" diameter",
+            "depth": "-30'",
+            "reinforcement": "#8 bars at 12\" spacing"
+          }
+        },
+        {
+          "page": 38,
+          "details": {
+            "type": "24\" CIDH Type I Shaft",
+            "size": "24\" diameter",
+            "depth": "Tip elevation at -30'",
+            "reinforcement": "not specified"
+          }
+        }
+      ],
+      "CIDH Piles": [
+        {
+          "page": 6,
+          "details": {
+            "type": "CIDH Piles",
+            "size": "Not specified",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "24\" CIDH": [
+        {
+          "page": 8,
+          "details": {
+            "type": "24\" CIDH",
+            "size": "24 inches",
+            "depth": "Varies (e.g., 134.0 ft at Abut 1)",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "30\" CIDH": [
+        {
+          "page": 8,
+          "details": {
+            "type": "30\" CIDH",
+            "size": "30 inches",
+            "depth": "Not specified",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "72\" CIDH": [
+        {
+          "page": 8,
+          "details": {
+            "type": "72\" CIDH",
+            "size": "72 inches",
+            "depth": "Varies (e.g., 147.5 ft at Bent 6)",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "Pile Foundation": [
+        {
+          "page": 9,
+          "details": {
+            "type": "Pile Foundation",
+            "size": "24\", 30\", 72\"",
+            "depth": "Varies",
+            "reinforcement": "Type I and Type II Shaft"
+          }
+        }
+      ],
+      "24\" CIDH Pile": [
+        {
+          "page": 10,
+          "details": {
+            "type": "24\" CIDH Pile",
+            "size": "24\" diameter",
+            "depth": "Not specified",
+            "reinforcement": "#5 @ 12\" spiral, #4 @ 12\" longitudinal bars"
+          }
+        }
+      ],
+      "Footings": [
+        {
+          "page": 13,
+          "details": {
+            "type": "Footings",
+            "size": "Not specified",
+            "depth": "156.50, 158.00, 160.00",
+            "reinforcement": "Not specified"
+          }
+        }
+      ],
+      "Footing": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Footing",
+            "size": "16'-0\"",
+            "depth": "Not specified",
+            "reinforcement": "Reinforcement Bars"
+          }
+        }
+      ],
+      "Drilled Hole Filled with Concrete (CIDH)": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Drilled Hole Filled with Concrete (CIDH)",
+            "reinforcement": "#11 Continuous, Total 9 (Top); #10 Continuous, Total 9 (Bottom); #6 Spiral"
+          }
+        }
+      ],
+      "Pile/Foundation": [
+        {
+          "page": 19,
+          "details": {
+            "type": "Pile/Foundation",
+            "size": "N/A",
+            "depth": "N/A",
+            "reinforcement": "N/A"
+          }
+        }
+      ],
+      "Drilled Shaft (CIDH)": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Drilled Shaft (CIDH)",
+            "size": "27\" CIDH Concrete Piling",
+            "depth": "Not specified",
+            "reinforcement": "#11 bars for Column Main Reinforcement, #8 bars for Pile Hoop Reinforcement, #5 or #7 for Column Hoops"
+          }
+        }
+      ],
+      "Isolation Casing": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Isolation Casing",
+            "size": "7'-0\" at Bent 6, 4'-0\" at Bents 2 and 13",
+            "depth": "Pile cutoff at tip of isolation casing",
+            "reinforcement": "Corrugated casing, 16 gauge thickness"
+          }
+        }
+      ],
+      "CIDH Pile": [
+        {
+          "page": 26,
+          "details": {
+            "type": "CIDH Pile",
+            "size": "24 inches",
+            "depth": "50 feet",
+            "reinforcement": "Rebar #5 at 12 inches on center"
+          }
+        }
+      ],
+      "Driven Pile": [
+        {
+          "page": 26,
+          "details": {
+            "type": "Driven Pile",
+            "size": "18 inches",
+            "depth": "40 feet",
+            "reinforcement": "Rebar #4 at 16 inches on center"
+          }
+        }
+      ],
+      "Borehole": [
+        {
+          "page": 42,
+          "details": {
+            "type": "Borehole",
+            "size": "Not specified",
+            "depth": [
+              {
+                "R-20-037": "Terminated at Elev. 82.07"
+              },
+              {
+                "R-20-038": "Terminated at Elev. 81.67"
+              },
+              {
+                "R-20-039": "Terminated at Elev. 77.00"
+              }
+            ],
+            "reinforcement": "Not applicable"
+          }
+        }
+      ]
+    },
+    "connection_types": {
+      "Not specified": [
+        {
+          "page": 1,
+          "details": {
+            "type": "Not specified",
+            "components": [],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 4,
+          "details": {
+            "type": "Not specified",
+            "components": [
+              "Not specified"
+            ],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 6,
+          "details": {
+            "type": "Not specified",
+            "components": [],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 7,
+          "details": {
+            "type": "Not specified",
+            "components": [],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "type": "Not specified",
+            "components": [],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "type": "Not specified",
+            "components": [
+              "Not specified"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "page": 3,
+          "details": {
+            "type": null,
+            "components": null,
+            "specifications": null
+          }
+        }
+      ],
+      "Column-to-pile connection": [
+        {
+          "page": 5,
+          "details": {
+            "type": "Column-to-pile connection",
+            "components": [
+              "Column Type A",
+              "24\" CIDH Type I Shaft"
+            ],
+            "specifications": "5' embedment"
+          }
+        }
+      ],
+      "Pipe Pin connection": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Pipe Pin connection",
+            "components": [
+              "Pipe Pin",
+              "Abutment"
+            ],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "type": "Pipe Pin connection",
+            "components": [
+              "Not specified"
+            ],
+            "specifications": "Details referenced on another sheet"
+          }
+        }
+      ],
+      "Bearing pad connection": [
+        {
+          "page": 10,
+          "details": {
+            "type": "Bearing pad connection",
+            "components": [
+              "Bearing Pad",
+              "Abutment seat"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Pipe Pin Detail": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Pipe Pin Detail",
+            "components": [
+              "Grout filled pipe",
+              "Rubber Water Sealing Gasket"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Stud Detail": [
+        {
+          "page": 11,
+          "details": {
+            "type": "Stud Detail",
+            "components": [
+              "Cover Plate",
+              "Anchor Rod"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Reinforcement": [
+        {
+          "page": 12,
+          "details": {
+            "type": "Reinforcement",
+            "components": [
+              "#5 (Outside Face)",
+              "#4 (Inside Face)",
+              "#6 (Inside Face)"
+            ],
+            "specifications": "Not specified"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "type": "Reinforcement",
+            "components": [
+              "Column",
+              "Cap Beam"
+            ],
+            "specifications": "#4 @ 12\" over column, Bottom and Top Reinforcement in Cap Beam: #6, #10"
+          }
+        },
+        {
+          "page": 19,
+          "details": {
+            "type": "Reinforcement",
+            "components": [
+              "Horizontal end cap bars"
+            ],
+            "specifications": "Total 4, with specific placement instructions"
+          }
+        }
+      ],
+      "Drain": [
+        {
+          "page": 12,
+          "details": {
+            "type": "Drain",
+            "components": [
+              "Geocomposite Drain"
+            ],
+            "specifications": "Location not specified"
+          }
+        }
+      ],
+      "Reinforcement Connection": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Reinforcement Connection",
+            "components": [
+              "Reinforcement Bars"
+            ],
+            "specifications": "Details with hooks and spacing"
+          }
+        }
+      ],
+      "Drainage Connection": [
+        {
+          "page": 15,
+          "details": {
+            "type": "Drainage Connection",
+            "components": [
+              "PVC Pipe Outlet"
+            ],
+            "specifications": "Connection to drainage system"
+          }
+        }
+      ],
+      "Spiral Anchor Hook": [
+        {
+          "page": 16,
+          "details": {
+            "type": "Spiral Anchor Hook",
+            "components": [
+              "90° Hook Detail",
+              "135° Hook Detail"
+            ],
+            "specifications": "Hooks for spiral termination detail to line up to not interfere with construction operation"
+          }
+        }
+      ],
+      "Abutment reinforcement": [
+        {
+          "page": 18,
+          "details": {
+            "type": "Abutment reinforcement",
+            "components": [
+              "Not specified"
+            ],
+            "specifications": "Extends into footing"
+          }
+        }
+      ],
+      "Service Level Coupler": [
+        {
+          "page": 20,
+          "details": {
+            "type": "Service Level Coupler",
+            "components": [
+              "Column"
+            ],
+            "specifications": "Typical at column connections"
+          }
+        }
+      ],
+      "Column reinforcement": [
+        {
+          "page": 20,
+          "details": {
+            "type": "Column reinforcement",
+            "components": [
+              "#5 to #10 bars",
+              "#8 to #18 bars"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Pavement": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Pavement",
+            "components": [
+              "27\" CIDH Concrete Piling"
+            ],
+            "specifications": "Limits of pavement for 27\" CIDH Concrete Piling"
+          }
+        }
+      ],
+      "Inspection Pipes": [
+        {
+          "page": 21,
+          "details": {
+            "type": "Inspection Pipes",
+            "components": [
+              "2\" I.D. Inspection Pipes"
+            ],
+            "specifications": "6 spaced equally"
+          }
+        }
+      ],
+      "Splice": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Splice",
+            "components": [
+              "Steel top plate",
+              "Bar"
+            ],
+            "specifications": "Splice at two locations"
+          }
+        }
+      ],
+      "Notch": [
+        {
+          "page": 22,
+          "details": {
+            "type": "Notch",
+            "components": [
+              "Top flange"
+            ],
+            "specifications": "3\" x 3\" x ¼\" notch to allow curvature around column as necessary"
+          }
+        }
+      ],
+      "Column-to-Pile Connection": [
+        {
+          "page": 26,
+          "details": {
+            "type": "Column-to-Pile Connection",
+            "components": [
+              "Column",
+              "Pile"
+            ],
+            "specifications": "Welded connection with full penetration weld"
+          }
+        }
+      ],
+      "Tee Connection": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Tee Connection",
+            "components": [
+              "Pipes"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Filter Fabric Wrap Around": [
+        {
+          "page": 29,
+          "details": {
+            "type": "Filter Fabric Wrap Around",
+            "components": [
+              "Backface of abutment/wingwall"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Screw": [
+        {
+          "page": 30,
+          "details": {
+            "type": "Screw",
+            "components": [
+              "Flat Head Cap Screws",
+              "Insert Assemblies"
+            ],
+            "specifications": "3\" (cid:129)\" X 2\" with insert assemblies @ (cid:127) 12 Max, Staggered"
+          }
+        }
+      ],
+      "Splice and curb connections": [
+        {
+          "page": 31,
+          "details": {
+            "type": "Splice and curb connections",
+            "components": [
+              "Railing"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Railing Anchorage": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Railing Anchorage",
+            "components": [
+              "Curb Reinforcement"
+            ],
+            "specifications": null
+          }
+        }
+      ],
+      "Post Pocket": [
+        {
+          "page": 32,
+          "details": {
+            "type": "Post Pocket",
+            "components": [
+              "Anchorage"
+            ],
+            "specifications": null
+          }
+        }
+      ],
+      "Anchor Plate Detail": [
+        {
+          "page": 34,
+          "details": {
+            "type": "Anchor Plate Detail",
+            "components": [
+              "1\" x 11\" Anchor Bolt",
+              "Tot 4"
+            ],
+            "specifications": "Not specified"
+          }
+        }
+      ],
+      "Conduit": [
+        {
+          "page": 34,
+          "details": {
+            "type": "Conduit",
+            "components": [
+              "Not specified"
+            ],
+            "specifications": "Extends into overhang"
+          }
+        }
+      ],
+      "embedment": [
+        {
+          "page": 38,
+          "details": {
+            "type": "embedment",
+            "components": [
+              "column",
+              "beam"
+            ],
+            "specifications": "embedment depth of 3'"
+          }
+        }
+      ]
+    },
+    "materials": {
+      "Not specified": [
+        {
+          "page": 1,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 4,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 6,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 7,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "material": "Not specified",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "Concrete": [
+        {
+          "page": 3,
+          "details": {
+            "material": "Concrete",
+            "grade": "f’c = 3.6 ksi (standard), f’c = 6 ksi (28 days for bridge and polymer fiber concrete)",
+            "application": null
+          }
+        },
+        {
+          "page": 5,
+          "details": {
+            "material": "Concrete",
+            "grade": "Class 4000 psi",
+            "application": "CIDH piles, columns, cap beams"
+          }
+        },
+        {
+          "page": 10,
+          "details": {
+            "material": "Concrete",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "material": "Concrete",
+            "grade": "Not specified",
+            "application": "Retaining Wall, Abutment, Shear Key"
+          }
+        },
+        {
+          "page": 26,
+          "details": {
+            "material": "Concrete",
+            "grade": "4000 psi",
+            "application": "Girders and Bents"
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "material": "Concrete",
+            "grade": "Not specified",
+            "application": "Drainage pad"
+          }
+        },
+        {
+          "page": 30,
+          "details": {
+            "material": "Concrete",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "Steel": [
+        {
+          "page": 3,
+          "details": {
+            "material": "Steel",
+            "grade": "Not specified",
+            "application": null
+          }
+        },
+        {
+          "page": 5,
+          "details": {
+            "material": "Steel",
+            "grade": "Grade 60",
+            "application": "Reinforcement bars, casing"
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "material": "Steel",
+            "grade": "Not specified",
+            "application": "Casing for CIDH Piles"
+          }
+        },
+        {
+          "page": 9,
+          "details": {
+            "material": "Steel",
+            "grade": "Specified",
+            "application": "Pile Casing"
+          }
+        },
+        {
+          "page": 10,
+          "details": {
+            "material": "Steel",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "material": "Steel",
+            "grade": "Not specified",
+            "application": "Reinforcement for bearing pads, coated with silicone grease"
+          }
+        },
+        {
+          "page": 22,
+          "details": {
+            "material": "Steel",
+            "grade": "½\" thickness",
+            "application": "Top plate"
+          }
+        },
+        {
+          "page": 26,
+          "details": {
+            "material": "Steel",
+            "grade": "Grade 60",
+            "application": "Reinforcement"
+          }
+        },
+        {
+          "page": 30,
+          "details": {
+            "material": "Steel",
+            "grade": "Not specified",
+            "application": "Deck, Plate"
+          }
+        }
+      ],
+      "Casing Material": [
+        {
+          "page": 10,
+          "details": {
+            "material": "Casing Material",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "Pipe": [
+        {
+          "page": 11,
+          "details": {
+            "material": "Pipe",
+            "grade": "Standard Galvanized",
+            "application": "Pipe Pin"
+          }
+        }
+      ],
+      "Grout": [
+        {
+          "page": 11,
+          "details": {
+            "material": "Grout",
+            "grade": "Not specified",
+            "application": "Pipe Pin"
+          }
+        }
+      ],
+      "Rubber": [
+        {
+          "page": 11,
+          "details": {
+            "material": "Rubber",
+            "grade": "Not specified",
+            "application": "Water Sealing Gasket"
+          }
+        }
+      ],
+      "Reinforcement Bars": [
+        {
+          "page": 12,
+          "details": {
+            "material": "Reinforcement Bars",
+            "grade": "#4, #5, #6",
+            "application": "Retaining Wall"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "material": "Reinforcement Bars",
+            "grade": "#4, #5, #7, #8, #9, #10",
+            "application": "Used in Retaining Wall and Footing"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "material": "Reinforcement Bars",
+            "grade": "#4, #5, #6, #10",
+            "application": "Column and Cap Beam Reinforcement"
+          }
+        }
+      ],
+      "PVC Pipe": [
+        {
+          "page": 15,
+          "details": {
+            "material": "PVC Pipe",
+            "grade": "4\" Ø",
+            "application": "Used for Outlet Connection to Drainage System"
+          }
+        }
+      ],
+      "Galvanized sheet metal": [
+        {
+          "page": 18,
+          "details": {
+            "material": "Galvanized sheet metal",
+            "grade": "14 Ga thick",
+            "application": "Spans 6 and 8"
+          }
+        }
+      ],
+      "Expanded polystyrene": [
+        {
+          "page": 18,
+          "details": {
+            "material": "Expanded polystyrene",
+            "grade": "Not specified",
+            "application": "Bearing pads"
+          }
+        }
+      ],
+      "Reinforcement bars": [
+        {
+          "page": 19,
+          "details": {
+            "material": "Reinforcement bars",
+            "grade": "#5, #7",
+            "application": "Used in beams, columns, and concrete shear keys"
+          }
+        },
+        {
+          "page": 28,
+          "details": {
+            "material": "Reinforcement bars",
+            "grade": "#11",
+            "application": "Girder reinforcement"
+          }
+        },
+        {
+          "page": 28,
+          "details": {
+            "material": "Reinforcement bars",
+            "grade": "#8",
+            "application": "Girder reinforcement"
+          }
+        },
+        {
+          "page": 28,
+          "details": {
+            "material": "Reinforcement bars",
+            "grade": "#9",
+            "application": "Girder reinforcement"
+          }
+        }
+      ],
+      "Steel Casing": [
+        {
+          "page": 21,
+          "details": {
+            "material": "Steel Casing",
+            "grade": "3/8\" Minimum Permanent Steel",
+            "application": "Used in Bents 5 through 9"
+          }
+        }
+      ],
+      "Corrugated Steel": [
+        {
+          "page": 22,
+          "details": {
+            "material": "Corrugated Steel",
+            "grade": "16 gauge",
+            "application": "Isolation casing"
+          }
+        }
+      ],
+      "PVC": [
+        {
+          "page": 29,
+          "details": {
+            "material": "PVC",
+            "grade": "Not specified",
+            "application": "Pipes"
+          }
+        }
+      ],
+      "Geocomposite": [
+        {
+          "page": 29,
+          "details": {
+            "material": "Geocomposite",
+            "grade": "Not specified",
+            "application": "Drain"
+          }
+        }
+      ],
+      "Filter Fabric": [
+        {
+          "page": 29,
+          "details": {
+            "material": "Filter Fabric",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "Galvanized Plates": [
+        {
+          "page": 30,
+          "details": {
+            "material": "Galvanized Plates",
+            "grade": "Not specified",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "HSS members": [
+        {
+          "page": 31,
+          "details": {
+            "material": "HSS members",
+            "grade": "A500 Grade B, Fy = 46 ksi",
+            "application": "Used for railing posts and horizontal members"
+          }
+        }
+      ],
+      "Screws": [
+        {
+          "page": 31,
+          "details": {
+            "material": "Screws",
+            "grade": "Stainless steel",
+            "application": "Used for security"
+          }
+        }
+      ],
+      "Mesh": [
+        {
+          "page": 31,
+          "details": {
+            "material": "Mesh",
+            "grade": "11 gauge, vinyl-coated black",
+            "application": "Not specified"
+          }
+        }
+      ],
+      "Finish": [
+        {
+          "page": 31,
+          "details": {
+            "material": "Finish",
+            "grade": "Powder-coated black finish per FED-STD-595 No. 17038",
+            "application": "Applied to the railing"
+          }
+        }
+      ],
+      "Stainless Steel Security Screws": [
+        {
+          "page": 32,
+          "details": {
+            "material": "Stainless Steel Security Screws",
+            "grade": null,
+            "application": "Post Pocket"
+          }
+        }
+      ],
+      "Mortar": [
+        {
+          "page": 32,
+          "details": {
+            "material": "Mortar",
+            "grade": null,
+            "application": "Post Pocket"
+          }
+        }
+      ],
+      "Steel Plate": [
+        {
+          "page": 34,
+          "details": {
+            "material": "Steel Plate",
+            "grade": "Not specified",
+            "application": "Anchor Plate"
+          }
+        }
+      ],
+      "Anchor Bolts": [
+        {
+          "page": 34,
+          "details": {
+            "material": "Anchor Bolts",
+            "grade": "#6 Tot 4",
+            "application": "1\" x 11\""
+          }
+        }
+      ],
+      "concrete": [
+        {
+          "page": 38,
+          "details": {
+            "material": "concrete",
+            "grade": "4000 psi",
+            "application": "not specified"
+          }
+        }
+      ],
+      "steel": [
+        {
+          "page": 38,
+          "details": {
+            "material": "steel",
+            "grade": "Grade 60",
+            "application": "not specified"
+          }
+        }
+      ],
+      "Soil": [
+        {
+          "page": 41,
+          "details": {
+            "material": "Soil",
+            "types": [
+              "sandy loam",
+              "clayey sand",
+              "silty sand"
+            ],
+            "application": "Soil boring logs"
+          }
+        },
+        {
+          "page": 42,
+          "details": {
+            "material": "Soil",
+            "grade": [
+              "CLAYEY SAND (SC)",
+              "SILTY SAND (SM)",
+              "SAND",
+              "GRAVEL",
+              "CLAY"
+            ],
+            "application": "Soil conditions and borehole data"
+          }
+        }
+      ]
+    },
+    "dimensions": {
+      "Total length along 'W' line": [
+        {
+          "page": 1,
+          "details": {
+            "element": "Total length along 'W' line",
+            "dimension": "785'-6\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Bent spacing": [
+        {
+          "page": 1,
+          "details": {
+            "element": "Bent spacing",
+            "dimension": "Varies (e.g., 35'-0\", 82'-9\", 100'-0\")",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Vertical clearance": [
+        {
+          "page": 1,
+          "details": {
+            "element": "Vertical clearance",
+            "dimension": "19'-4\" Min",
+            "unit": "feet"
+          }
+        }
+      ],
+      "unknown": [
+        {
+          "page": 3,
+          "details": {
+            "element": null,
+            "dimension": null,
+            "unit": null
+          }
+        }
+      ],
+      "Contour intervals": [
+        {
+          "page": 4,
+          "details": {
+            "element": "Contour intervals",
+            "dimension": "0.01",
+            "unit": "feet"
+          }
+        }
+      ],
+      "'M' Line intervals": [
+        {
+          "page": 4,
+          "details": {
+            "element": "'M' Line intervals",
+            "dimension": "10",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Column spacing": [
+        {
+          "page": 5,
+          "details": {
+            "element": "Column spacing",
+            "dimension": "20'",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Cap beam width": [
+        {
+          "page": 5,
+          "details": {
+            "element": "Cap beam width",
+            "dimension": "5'",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Top of Wall": [
+        {
+          "page": 6,
+          "details": {
+            "element": "Top of Wall",
+            "dimension": "Top of Curb",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "FG (Finished Grade)": [
+        {
+          "page": 6,
+          "details": {
+            "element": "FG (Finished Grade)",
+            "dimension": "Top of Deck",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Settlement allowance": [
+        {
+          "page": 6,
+          "details": {
+            "element": "Settlement allowance",
+            "dimension": "1'-0\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Bent spacing and alignment": [
+        {
+          "page": 7,
+          "details": {
+            "element": "Bent spacing and alignment",
+            "dimension": "Not specified",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Station numbers": [
+        {
+          "page": 7,
+          "details": {
+            "element": "Station numbers",
+            "dimension": "37+28.85, 33+64.85",
+            "unit": "Not specified"
+          }
+        },
+        {
+          "page": 40,
+          "details": {
+            "element": "Station numbers",
+            "dimension": "Not specified",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Footing elevations": [
+        {
+          "page": 7,
+          "details": {
+            "element": "Footing elevations",
+            "dimension": "39+74.85, 39+89.85",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "24\" CIDH": [
+        {
+          "page": 8,
+          "details": {
+            "element": "24\" CIDH",
+            "dimension": "134.0 ft",
+            "unit": "ft"
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "element": "24\" CIDH",
+            "dimension": "160.25 ft",
+            "unit": "ft"
+          }
+        }
+      ],
+      "72\" CIDH": [
+        {
+          "page": 8,
+          "details": {
+            "element": "72\" CIDH",
+            "dimension": "147.5 ft",
+            "unit": "ft"
+          }
+        }
+      ],
+      "Pile": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile",
+            "dimension": "24\", 30\", 72\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Pile Cut-off Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile Cut-off Elevation",
+            "dimension": "150.0 - 165.0",
+            "unit": "ft"
+          }
+        }
+      ],
+      "Pile Nominal Resistance": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile Nominal Resistance",
+            "dimension": "260 - 1460",
+            "unit": "kips"
+          }
+        }
+      ],
+      "Pile Design Tip Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile Design Tip Elevation",
+            "dimension": "Varies",
+            "unit": "ft"
+          }
+        }
+      ],
+      "Pile Specified Steel Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile Specified Steel Elevation",
+            "dimension": "Varies",
+            "unit": "ft"
+          }
+        }
+      ],
+      "Pile Tip Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "element": "Pile Tip Elevation",
+            "dimension": "Varies",
+            "unit": "ft"
+          }
+        }
+      ],
+      "Bearing Pad": [
+        {
+          "page": 10,
+          "details": {
+            "element": "Bearing Pad",
+            "dimension": "10\"x10\"x1\" at Abutment 1, 11\"x11\"x2\" at Abutment 17",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Pipe Pin": [
+        {
+          "page": 10,
+          "details": {
+            "element": "Pipe Pin",
+            "dimension": "2'-0\" typical",
+            "unit": "Feet"
+          }
+        },
+        {
+          "page": 11,
+          "details": {
+            "element": "Pipe Pin",
+            "dimension": "2\"",
+            "unit": "Standard"
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "element": "Pipe Pin",
+            "dimension": "3'-6\" at Bent 5, 4'-6\" at Bent 9",
+            "unit": "Feet and inches"
+          }
+        }
+      ],
+      "Pile Layout": [
+        {
+          "page": 10,
+          "details": {
+            "element": "Pile Layout",
+            "dimension": "6'-0\" spacing between piles",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Studs": [
+        {
+          "page": 11,
+          "details": {
+            "element": "Studs",
+            "dimension": "¾\" x 2\"",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Anchor Rod": [
+        {
+          "page": 11,
+          "details": {
+            "element": "Anchor Rod",
+            "dimension": "¾\" x 2'-0\"",
+            "unit": "Threaded"
+          }
+        }
+      ],
+      "Cover Plate": [
+        {
+          "page": 11,
+          "details": {
+            "element": "Cover Plate",
+            "dimension": "½\" x 6\" Ø",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Reinforcement Bars": [
+        {
+          "page": 11,
+          "details": {
+            "element": "Reinforcement Bars",
+            "dimension": "#4 @ 12\", #5 @ 12\", #6 @ 6\", #8",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Retaining Wall": [
+        {
+          "page": 12,
+          "details": {
+            "element": "Retaining Wall",
+            "dimension": "Varies with reinforcement details",
+            "unit": "Not specified"
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "element": "Retaining Wall",
+            "dimension": "188'-10½\"",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "element": "Retaining Wall",
+            "dimension": "4', 6', 8', 10', 12'",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Top of Curb": [
+        {
+          "page": 12,
+          "details": {
+            "element": "Top of Curb",
+            "dimension": "Not specified",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Expansion Joint": [
+        {
+          "page": 12,
+          "details": {
+            "element": "Expansion Joint",
+            "dimension": "3-4",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Reinforcement Spacing": [
+        {
+          "page": 12,
+          "details": {
+            "element": "Reinforcement Spacing",
+            "dimension": "#4 @ 12\", #5 @ 12\", #5 @ 18\", #6 @ 6\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Expansion Joint Spacing": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Expansion Joint Spacing",
+            "dimension": "62'-0\"",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "element": "Expansion Joint Spacing",
+            "dimension": "92'-10½\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Weakened Plane Spacing": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Weakened Plane Spacing",
+            "dimension": "14'-0\", 24'-0\", 19'-10½\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Wall Heights": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Wall Heights",
+            "dimension": "H=4', H=6', H=8', H=10', H=12'",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "element": "Wall Heights",
+            "dimension": "10', 8', 6'",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Bottom of Footing Elevations": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Bottom of Footing Elevations",
+            "dimension": "156.50, 158.00, 160.00",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Datum Elevation": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Datum Elevation",
+            "dimension": "120.00",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "element": "Datum Elevation",
+            "dimension": "120.00",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Top of Wall Elevations": [
+        {
+          "page": 13,
+          "details": {
+            "element": "Top of Wall Elevations",
+            "dimension": "159.55, 160.76, 173.16",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Bottom of Footing Elevation": [
+        {
+          "page": 14,
+          "details": {
+            "element": "Bottom of Footing Elevation",
+            "dimension": "152.50",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Footing": [
+        {
+          "page": 15,
+          "details": {
+            "element": "Footing",
+            "dimension": "16'-0\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Recess": [
+        {
+          "page": 15,
+          "details": {
+            "element": "Recess",
+            "dimension": "1\" and 2\"",
+            "unit": "Inches"
+          }
+        },
+        {
+          "page": 35,
+          "details": {
+            "element": "Recess",
+            "dimension": "1\"",
+            "unit": "Depth"
+          }
+        }
+      ],
+      "Geocomposite Drain": [
+        {
+          "page": 15,
+          "details": {
+            "element": "Geocomposite Drain",
+            "dimension": "6\" below aggregate base",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Stirrup": [
+        {
+          "page": 16,
+          "details": {
+            "element": "Stirrup",
+            "dimension": "1'-4\", 5'-4\" between columns",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Spiral termination": [
+        {
+          "page": 16,
+          "details": {
+            "element": "Spiral termination",
+            "dimension": "2\" pitch",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Column": [
+        {
+          "page": 17,
+          "details": {
+            "element": "Column",
+            "dimension": "3'-0\"",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "element": "Column",
+            "dimension": "2'-9\" x 2'-9\"",
+            "unit": "Feet and inches"
+          }
+        }
+      ],
+      "Cap Beam": [
+        {
+          "page": 17,
+          "details": {
+            "element": "Cap Beam",
+            "dimension": "6'-0\"",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "element": "Cap Beam",
+            "dimension": "2'-6\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Expanded Polystyrene": [
+        {
+          "page": 17,
+          "details": {
+            "element": "Expanded Polystyrene",
+            "dimension": "Same as Bearing Pad",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Shear Key": [
+        {
+          "page": 18,
+          "details": {
+            "element": "Shear Key",
+            "dimension": "3/4\" = 1'-0\"",
+            "unit": "Inches to feet"
+          }
+        }
+      ],
+      "Elastomeric Bearing Pads": [
+        {
+          "page": 18,
+          "details": {
+            "element": "Elastomeric Bearing Pads",
+            "dimension": "10\"x10\"x1\" at Bent 5, 11\"x11\"x2\" at Bent 9",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Steel Reinforcement Bearing Pads": [
+        {
+          "page": 18,
+          "details": {
+            "element": "Steel Reinforcement Bearing Pads",
+            "dimension": "16\"x16\"x2\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Beam spacing": [
+        {
+          "page": 19,
+          "details": {
+            "element": "Beam spacing",
+            "dimension": "2'-9\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Fillet": [
+        {
+          "page": 19,
+          "details": {
+            "element": "Fillet",
+            "dimension": "4\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Hook around vertical stirrup": [
+        {
+          "page": 19,
+          "details": {
+            "element": "Hook around vertical stirrup",
+            "dimension": "4'-0\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Edge of deck to centerline spacing": [
+        {
+          "page": 19,
+          "details": {
+            "element": "Edge of deck to centerline spacing",
+            "dimension": "3'-3\", 1'-9\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Expansion Joint Filler": [
+        {
+          "page": 20,
+          "details": {
+            "element": "Expansion Joint Filler",
+            "dimension": "4\" thick and 2\" thick",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Hoop": [
+        {
+          "page": 20,
+          "details": {
+            "element": "Hoop",
+            "dimension": "#5 or #7",
+            "unit": "Number"
+          }
+        }
+      ],
+      "Tie spacing": [
+        {
+          "page": 20,
+          "details": {
+            "element": "Tie spacing",
+            "dimension": "#4 Tie @ 12\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Cut-off Elevation": [
+        {
+          "page": 21,
+          "details": {
+            "element": "Cut-off Elevation",
+            "dimension": "Refer to Note 2",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Spacing for mandatory construction joint": [
+        {
+          "page": 21,
+          "details": {
+            "element": "Spacing for mandatory construction joint",
+            "dimension": "5'-0\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Clear cover for reinforcement": [
+        {
+          "page": 21,
+          "details": {
+            "element": "Clear cover for reinforcement",
+            "dimension": "3\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Clear void between column and isolation casing": [
+        {
+          "page": 22,
+          "details": {
+            "element": "Clear void between column and isolation casing",
+            "dimension": "6\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Steel top plate thickness": [
+        {
+          "page": 22,
+          "details": {
+            "element": "Steel top plate thickness",
+            "dimension": "½\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Anchorage device spacing": [
+        {
+          "page": 22,
+          "details": {
+            "element": "Anchorage device spacing",
+            "dimension": "2'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Bar size": [
+        {
+          "page": 22,
+          "details": {
+            "element": "Bar size",
+            "dimension": "¾\" x 3\" curved",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Slab": [
+        {
+          "page": 23,
+          "details": {
+            "element": "Slab",
+            "dimension": "14'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Spacing": [
+        {
+          "page": 23,
+          "details": {
+            "element": "Spacing",
+            "dimension": "6'-0\" Min, 7'-0\" Max",
+            "unit": "feet"
+          }
+        },
+        {
+          "page": 31,
+          "details": {
+            "element": "Spacing",
+            "dimension": "7'-6\" maximum, 5'-0\" minimum",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Chamfer": [
+        {
+          "page": 23,
+          "details": {
+            "element": "Chamfer",
+            "dimension": "1\"",
+            "unit": "inch"
+          }
+        }
+      ],
+      "Lighting Conduit": [
+        {
+          "page": 23,
+          "details": {
+            "element": "Lighting Conduit",
+            "dimension": "1 ½\" Ø",
+            "unit": "inch"
+          }
+        }
+      ],
+      "Distance between Bent 5 and Bent 6": [
+        {
+          "page": 25,
+          "details": {
+            "element": "Distance between Bent 5 and Bent 6",
+            "dimension": "34",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Distance between Bent 7 and Bent 8": [
+        {
+          "page": 25,
+          "details": {
+            "element": "Distance between Bent 7 and Bent 8",
+            "dimension": "37",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Distance between Bent 8 and Bent 9": [
+        {
+          "page": 25,
+          "details": {
+            "element": "Distance between Bent 8 and Bent 9",
+            "dimension": "36",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Distance from C Line to MW Line": [
+        {
+          "page": 25,
+          "details": {
+            "element": "Distance from C Line to MW Line",
+            "dimension": "123",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Girder": [
+        {
+          "page": 26,
+          "details": {
+            "element": "Girder",
+            "dimension": "30 feet",
+            "unit": "Length"
+          }
+        }
+      ],
+      "Bent Spacing": [
+        {
+          "page": 26,
+          "details": {
+            "element": "Bent Spacing",
+            "dimension": "20 feet",
+            "unit": "Length"
+          }
+        }
+      ],
+      "Stirrup Spacing": [
+        {
+          "page": 26,
+          "details": {
+            "element": "Stirrup Spacing",
+            "dimension": "18 inches",
+            "unit": "Length"
+          }
+        }
+      ],
+      "Spacing between girders": [
+        {
+          "page": 28,
+          "details": {
+            "element": "Spacing between girders",
+            "dimension": "16'-0\", 10'-0\", 18'-0\", 12'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Reinforcement bar lengths (#11)": [
+        {
+          "page": 28,
+          "details": {
+            "element": "Reinforcement bar lengths (#11)",
+            "dimension": "26'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Reinforcement bar lengths (#8)": [
+        {
+          "page": 28,
+          "details": {
+            "element": "Reinforcement bar lengths (#8)",
+            "dimension": "26'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Reinforcement bar lengths (#9)": [
+        {
+          "page": 28,
+          "details": {
+            "element": "Reinforcement bar lengths (#9)",
+            "dimension": "30'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Slotted Plastic Pipe": [
+        {
+          "page": 29,
+          "details": {
+            "element": "Slotted Plastic Pipe",
+            "dimension": "3",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Unslotted PVC Pipe": [
+        {
+          "page": 29,
+          "details": {
+            "element": "Unslotted PVC Pipe",
+            "dimension": "4",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Concrete Drainage Pad Width": [
+        {
+          "page": 29,
+          "details": {
+            "element": "Concrete Drainage Pad Width",
+            "dimension": "1'-4\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Concrete Drainage Pad Thickness": [
+        {
+          "page": 29,
+          "details": {
+            "element": "Concrete Drainage Pad Thickness",
+            "dimension": "1'-0\"",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Concrete": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Concrete",
+            "dimension": "2",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Steel Plate": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Steel Plate",
+            "dimension": "1\" …\" X 18\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Deck Joint Width": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Deck Joint Width",
+            "dimension": "Not specified",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Gap": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Gap",
+            "dimension": "1 (cid:129) \"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Hole for Countersunk": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Hole for Countersunk",
+            "dimension": "1(cid:129)\"Á",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Anchor Bolts": [
+        {
+          "page": 30,
+          "details": {
+            "element": "Anchor Bolts",
+            "dimension": "16\" Min",
+            "unit": "Inches on Approaching Traffic End"
+          }
+        }
+      ],
+      "Railing height": [
+        {
+          "page": 31,
+          "details": {
+            "element": "Railing height",
+            "dimension": "3'-6\"",
+            "unit": "Feet"
+          }
+        }
+      ],
+      "Overhang": [
+        {
+          "page": 31,
+          "details": {
+            "element": "Overhang",
+            "dimension": "9\"",
+            "unit": "Inches"
+          }
+        }
+      ],
+      "Post": [
+        {
+          "page": 32,
+          "details": {
+            "element": "Post",
+            "dimension": "1½\" x 1½\"",
+            "unit": "inches"
+          }
+        },
+        {
+          "page": 32,
+          "details": {
+            "element": "Post",
+            "dimension": "3\" x 1½\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Welded Wire Mesh": [
+        {
+          "page": 32,
+          "details": {
+            "element": "Welded Wire Mesh",
+            "dimension": "1\" mesh",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Post Pocket": [
+        {
+          "page": 32,
+          "details": {
+            "element": "Post Pocket",
+            "dimension": "5\" x 5\" x 9\"",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Electrolier Bolt Circle": [
+        {
+          "page": 34,
+          "details": {
+            "element": "Electrolier Bolt Circle",
+            "dimension": "11.81",
+            "unit": "inches"
+          }
+        }
+      ],
+      "Anchor Plate": [
+        {
+          "page": 34,
+          "details": {
+            "element": "Anchor Plate",
+            "dimension": "11",
+            "unit": "square inches"
+          }
+        }
+      ],
+      "Post Spacing": [
+        {
+          "page": 34,
+          "details": {
+            "element": "Post Spacing",
+            "dimension": "2'-0\"",
+            "unit": "typical"
+          }
+        }
+      ],
+      "Bumpout Post": [
+        {
+          "page": 34,
+          "details": {
+            "element": "Bumpout Post",
+            "dimension": "1'-0\"",
+            "unit": "from edge of curb"
+          }
+        }
+      ],
+      "Conduit": [
+        {
+          "page": 34,
+          "details": {
+            "element": "Conduit",
+            "dimension": "11",
+            "unit": "inches into overhang"
+          }
+        }
+      ],
+      "Monument": [
+        {
+          "page": 35,
+          "details": {
+            "element": "Monument",
+            "dimension": "6'-0\"",
+            "unit": "Height"
+          }
+        }
+      ],
+      "Base": [
+        {
+          "page": 35,
+          "details": {
+            "element": "Base",
+            "dimension": "4'-6\"",
+            "unit": "Width"
+          }
+        },
+        {
+          "page": 35,
+          "details": {
+            "element": "Base",
+            "dimension": "2'-3\"",
+            "unit": "Depth"
+          }
+        }
+      ],
+      "wall": [
+        {
+          "page": 38,
+          "details": {
+            "element": "wall",
+            "dimension": "12'",
+            "unit": "feet"
+          }
+        }
+      ],
+      "column spacing": [
+        {
+          "page": 38,
+          "details": {
+            "element": "column spacing",
+            "dimension": "15'",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Bent locations": [
+        {
+          "page": 40,
+          "details": {
+            "element": "Bent locations",
+            "dimension": "Not specified",
+            "unit": "Not specified"
+          }
+        }
+      ],
+      "Boring logs": [
+        {
+          "page": 41,
+          "details": {
+            "element": "Boring logs",
+            "dimension": "0 to 160 feet",
+            "unit": "feet"
+          }
+        }
+      ],
+      "Borehole": [
+        {
+          "page": 42,
+          "details": {
+            "element": "Borehole",
+            "dimension": [
+              {
+                "R-20-037": "Elev. 82.07"
+              },
+              {
+                "R-20-038": "Elev. 81.67"
+              },
+              {
+                "R-20-039": "Elev. 77.00"
+              }
+            ],
+            "unit": "Elevation"
+          }
+        }
+      ],
+      "Borehole locations": [
+        {
+          "page": 42,
+          "details": {
+            "element": "Borehole locations",
+            "dimension": [
+              {
+                "R-20-037": "\"C\" Line 123+25 88' Lt."
+              },
+              {
+                "R-20-038": "\"C\" Line 125+37 89' Lt."
+              },
+              {
+                "R-20-039": "\"C\" Line 127+24 86' Lt."
+              }
+            ],
+            "unit": "Station and Offset"
+          }
+        }
+      ]
+    },
+    "specifications": {
+      "Paint": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Paint",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Sound wall": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Sound wall",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Retaining wall": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Retaining wall",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Entry monument": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Entry monument",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Vertical clearance": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Vertical clearance",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Settlement platform": [
+        {
+          "page": 1,
+          "details": {
+            "item": "Settlement platform",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Load and Resistance Factor Design": [
+        {
+          "page": 3,
+          "details": {
+            "item": "Load and Resistance Factor Design",
+            "specification": "Based on AASHTO LRFD Bridge Design Specifications",
+            "standard": null
+          }
+        }
+      ],
+      "Seismic Design Criteria": [
+        {
+          "page": 3,
+          "details": {
+            "item": "Seismic Design Criteria",
+            "specification": "SDC, Version 2.0, April 2019",
+            "standard": null
+          }
+        }
+      ],
+      "Concrete strength": [
+        {
+          "page": 3,
+          "details": {
+            "item": "Concrete strength",
+            "specification": "f’c = 3.6 ksi unless otherwise noted",
+            "standard": null
+          }
+        }
+      ],
+      "Pile data table": [
+        {
+          "page": 3,
+          "details": {
+            "item": "Pile data table",
+            "specification": "Referenced on the \"Foundation Plan\" sheet",
+            "standard": null
+          }
+        }
+      ],
+      "Contour intervals": [
+        {
+          "page": 4,
+          "details": {
+            "item": "Contour intervals",
+            "specification": "Do not include camber or falsework settlement",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Match line references": [
+        {
+          "page": 4,
+          "details": {
+            "item": "Match line references",
+            "specification": "For continuation on another sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Load criteria": [
+        {
+          "page": 5,
+          "details": {
+            "item": "Load criteria",
+            "specification": "Designed for 500 kips compression",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Construction steps for abutments and retaining walls": [
+        {
+          "page": 6,
+          "details": {
+            "item": "Construction steps for abutments and retaining walls",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Notes on settlement and backfill requirements": [
+        {
+          "page": 6,
+          "details": {
+            "item": "Notes on settlement and backfill requirements",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Not specified": [
+        {
+          "page": 7,
+          "details": {
+            "item": "Not specified",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "item": "Not specified",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "item": "Not specified",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Design Tip Elevations": [
+        {
+          "page": 8,
+          "details": {
+            "item": "Design Tip Elevations",
+            "specification": "Varies (e.g., 134.0 ft for 24\" CIDH at Abut 1)",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Specified Tip Elevations": [
+        {
+          "page": 8,
+          "details": {
+            "item": "Specified Tip Elevations",
+            "specification": "Varies (e.g., 134.0 ft for 24\" CIDH at Abut 1)",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Steel Casing Specified Tip Elevations": [
+        {
+          "page": 8,
+          "details": {
+            "item": "Steel Casing Specified Tip Elevations",
+            "specification": "Varies (e.g., 147.5 ft for 72\" CIDH at Bent 6)",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Cut-off Elevations": [
+        {
+          "page": 8,
+          "details": {
+            "item": "Cut-off Elevations",
+            "specification": "Varies (e.g., 160.25 ft for 24\" CIDH at Abut 1)",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Pile Type": [
+        {
+          "page": 9,
+          "details": {
+            "item": "Pile Type",
+            "specification": "24\" CIDH, 30\" CIDH, 72\" CIDH",
+            "standard": "Type I and Type II Shaft"
+          }
+        }
+      ],
+      "Pile Nominal Resistance": [
+        {
+          "page": 9,
+          "details": {
+            "item": "Pile Nominal Resistance",
+            "specification": "260 - 1460 kips",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Pile Design Tip Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "item": "Pile Design Tip Elevation",
+            "specification": "Varies",
+            "standard": "Controlled by Compression, Tension, Settlement, Lateral Load"
+          }
+        }
+      ],
+      "Pile Specified Steel Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "item": "Pile Specified Steel Elevation",
+            "specification": "Varies",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Pile Tip Elevation": [
+        {
+          "page": 9,
+          "details": {
+            "item": "Pile Tip Elevation",
+            "specification": "Varies",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Joint Seal and Armor": [
+        {
+          "page": 10,
+          "details": {
+            "item": "Joint Seal and Armor",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Pipe Pin details": [
+        {
+          "page": 10,
+          "details": {
+            "item": "Pipe Pin details",
+            "specification": "Referenced to \"Abutment Details\" sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Expanded Polystyrene": [
+        {
+          "page": 11,
+          "details": {
+            "item": "Expanded Polystyrene",
+            "specification": "Same thickness as Bearing Pad",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Pipe Pin": [
+        {
+          "page": 11,
+          "details": {
+            "item": "Pipe Pin",
+            "specification": "Required at the end of the slab, Bents 5, 9, and 13",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Rubber Water Sealing Gasket": [
+        {
+          "page": 11,
+          "details": {
+            "item": "Rubber Water Sealing Gasket",
+            "specification": "Not specified",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Retaining Wall": [
+        {
+          "page": 12,
+          "details": {
+            "item": "Retaining Wall",
+            "specification": "Typ",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Construction Joint": [
+        {
+          "page": 12,
+          "details": {
+            "item": "Construction Joint",
+            "specification": "Typ",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "item": "Construction Joint",
+            "specification": "Mandatory",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Drainage Pad": [
+        {
+          "page": 12,
+          "details": {
+            "item": "Drainage Pad",
+            "specification": "See 'Abutment Drainage Details' Sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Pedestrian Railing": [
+        {
+          "page": 15,
+          "details": {
+            "item": "Pedestrian Railing",
+            "specification": "Not shown for clarity",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "item": "Pedestrian Railing",
+            "specification": "See 'PEDESTRIAN RAILING DETAILS' sheets",
+            "standard": "Typical"
+          }
+        }
+      ],
+      "Patterned Concrete Pavement": [
+        {
+          "page": 15,
+          "details": {
+            "item": "Patterned Concrete Pavement",
+            "specification": "See roadway plans",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Splicing Restrictions for 'a' Bars": [
+        {
+          "page": 15,
+          "details": {
+            "item": "Splicing Restrictions for 'a' Bars",
+            "specification": "Noted",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Spiral terminations": [
+        {
+          "page": 16,
+          "details": {
+            "item": "Spiral terminations",
+            "specification": "to have an extra turn with 2\" pitch",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Longitudinal pile reinforcement": [
+        {
+          "page": 16,
+          "details": {
+            "item": "Longitudinal pile reinforcement",
+            "specification": "No splices allowed",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Main cap reinforcement": [
+        {
+          "page": 16,
+          "details": {
+            "item": "Main cap reinforcement",
+            "specification": "No splices allowed",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Joint Seal": [
+        {
+          "page": 17,
+          "details": {
+            "item": "Joint Seal",
+            "specification": "MR=1/2\"",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Bent": [
+        {
+          "page": 17,
+          "details": {
+            "item": "Bent",
+            "specification": "Bent 9 shown, Bent 5 similar",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Reinforcement": [
+        {
+          "page": 17,
+          "details": {
+            "item": "Reinforcement",
+            "specification": "Not shown for clarity",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "item": "Reinforcement",
+            "specification": "#4 Cont Top 4",
+            "standard": "Typical"
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "item": "Reinforcement",
+            "specification": "#4 @ 12",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "item": "Reinforcement",
+            "specification": "#5 Cont @ 6",
+            "standard": "Not specified"
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "item": "Reinforcement",
+            "specification": "#10 PER BDA 4-10",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Clearance": [
+        {
+          "page": 17,
+          "details": {
+            "item": "Clearance",
+            "specification": "To main cap reinforcement",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Hook": [
+        {
+          "page": 17,
+          "details": {
+            "item": "Hook",
+            "specification": "Around vertical stirrups",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Construction joint": [
+        {
+          "page": 18,
+          "details": {
+            "item": "Construction joint",
+            "specification": "Mandatory",
+            "standard": "See Note 2"
+          }
+        }
+      ],
+      "Abutment reinforcement": [
+        {
+          "page": 18,
+          "details": {
+            "item": "Abutment reinforcement",
+            "specification": "Extends 1'-9\" into footing",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Galvanized sheet metal": [
+        {
+          "page": 18,
+          "details": {
+            "item": "Galvanized sheet metal",
+            "specification": "For spans 6 and 8 only",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Pipe pin details": [
+        {
+          "page": 18,
+          "details": {
+            "item": "Pipe pin details",
+            "specification": "Referenced on another sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Ultimate butt splice": [
+        {
+          "page": 19,
+          "details": {
+            "item": "Ultimate butt splice",
+            "specification": "Only",
+            "standard": "Note 1"
+          }
+        }
+      ],
+      "Stirrups": [
+        {
+          "page": 19,
+          "details": {
+            "item": "Stirrups",
+            "specification": "Place normal to bent and along bent",
+            "standard": "Note 2"
+          }
+        }
+      ],
+      "Column and CIDH pile hoops": [
+        {
+          "page": 21,
+          "details": {
+            "item": "Column and CIDH pile hoops",
+            "specification": "Must utilize ultimate butt splices",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Tip elevation and cut-off elevation": [
+        {
+          "page": 21,
+          "details": {
+            "item": "Tip elevation and cut-off elevation",
+            "specification": "Refer to 'Foundation Plan No. 2' sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Column reinforcement": [
+        {
+          "page": 21,
+          "details": {
+            "item": "Column reinforcement",
+            "specification": "See 'Bent 8 Thru 8 Details' sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Isolation casing installation": [
+        {
+          "page": 22,
+          "details": {
+            "item": "Isolation casing installation",
+            "specification": "To be installed at Bents 2, 6, and 13",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Cement slurry placement": [
+        {
+          "page": 22,
+          "details": {
+            "item": "Cement slurry placement",
+            "specification": "Place to fill any void region outside the casing",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Additional Reinforcement": [
+        {
+          "page": 23,
+          "details": {
+            "item": "Additional Reinforcement",
+            "specification": "See 'GIRDER REINFORCEMENT No. 1' sheet",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Drip Groove": [
+        {
+          "page": 23,
+          "details": {
+            "item": "Drip Groove",
+            "specification": "¾\"",
+            "standard": "Typical"
+          }
+        }
+      ],
+      "Camber Diagram": [
+        {
+          "page": 26,
+          "details": {
+            "item": "Camber Diagram",
+            "specification": "Provided",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Settlement Allowance": [
+        {
+          "page": 26,
+          "details": {
+            "item": "Settlement Allowance",
+            "specification": "1 inch",
+            "standard": "N/A"
+          }
+        }
+      ],
+      "Splices": [
+        {
+          "page": 28,
+          "details": {
+            "item": "Splices",
+            "specification": "No splices allowed within 25'-0\" either side of the span",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Bundled reinforcement bars": [
+        {
+          "page": 28,
+          "details": {
+            "item": "Bundled reinforcement bars",
+            "specification": "Indicated by symbols",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Utility openings and expansion joints": [
+        {
+          "page": 30,
+          "details": {
+            "item": "Utility openings and expansion joints",
+            "specification": "Not shown for clarity",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Recess concrete": [
+        {
+          "page": 30,
+          "details": {
+            "item": "Recess concrete",
+            "specification": "(cid:129)\" for plates",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Plates": [
+        {
+          "page": 30,
+          "details": {
+            "item": "Plates",
+            "specification": "To be galvanized",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Architectural treatment": [
+        {
+          "page": 30,
+          "details": {
+            "item": "Architectural treatment",
+            "specification": "Not shown",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Insert assembly or expansion anchorage": [
+        {
+          "page": 30,
+          "details": {
+            "item": "Insert assembly or expansion anchorage",
+            "specification": "For †\" x 1ƒ\" bolts. Use installation bolts extended (cid:129)\" minimum past nut and coat with bond breaker. After concrete has cured, remove installation bolts, install HS bolts",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Material and installation": [
+        {
+          "page": 31,
+          "details": {
+            "item": "Material and installation",
+            "specification": "Powder coating and alignment conformity",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Tamper-proof self-tapping stainless steel security screws with lock washers": [
+        {
+          "page": 32,
+          "details": {
+            "item": "Tamper-proof self-tapping stainless steel security screws with lock washers",
+            "specification": null,
+            "standard": null
+          }
+        }
+      ],
+      "Post pocket to be filled with mortar": [
+        {
+          "page": 32,
+          "details": {
+            "item": "Post pocket to be filled with mortar",
+            "specification": null,
+            "standard": null
+          }
+        }
+      ],
+      "Rebar details: #4 bars": [
+        {
+          "page": 32,
+          "details": {
+            "item": "Rebar details: #4 bars",
+            "specification": null,
+            "standard": null
+          }
+        }
+      ],
+      "Grout fill": [
+        {
+          "page": 34,
+          "details": {
+            "item": "Grout fill",
+            "specification": "Variable thickness",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Anchor Bolt": [
+        {
+          "page": 34,
+          "details": {
+            "item": "Anchor Bolt",
+            "specification": "1\" x 11\", Tot 4",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "load criteria": [
+        {
+          "page": 38,
+          "details": {
+            "item": "load criteria",
+            "specification": "for lateral forces",
+            "standard": "not specified"
+          }
+        }
+      ],
+      "Station numbers": [
+        {
+          "page": 40,
+          "details": {
+            "item": "Station numbers",
+            "specification": "Included in drawing",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Bent references": [
+        {
+          "page": 40,
+          "details": {
+            "item": "Bent references",
+            "specification": "Included in drawing",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Soil": [
+        {
+          "page": 41,
+          "details": {
+            "item": "Soil",
+            "specification": "Classifications based on density, moisture, and composition",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Groundwater level": [
+        {
+          "page": 41,
+          "details": {
+            "item": "Groundwater level",
+            "specification": "Measured due to rotary wash drilling method",
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Soil descriptions and conditions": [
+        {
+          "page": 42,
+          "details": {
+            "item": "Soil descriptions and conditions",
+            "specification": [
+              "CLAYEY SAND (SC)",
+              "SILTY SAND (SM)"
+            ],
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Moisture conditions": [
+        {
+          "page": 42,
+          "details": {
+            "item": "Moisture conditions",
+            "specification": [
+              "moist",
+              "wet"
+            ],
+            "standard": "Not specified"
+          }
+        }
+      ],
+      "Density and composition": [
+        {
+          "page": 42,
+          "details": {
+            "item": "Density and composition",
+            "specification": [
+              "very dense",
+              "medium dense"
+            ],
+            "standard": "Not specified"
+          }
+        }
+      ]
+    },
+    "details": {
+      "unknown": [
+        {
+          "page": 1,
+          "details": {
+            "detail_name": "General Plan",
+            "description": "Overview of the bridge layout, including bents, abutments, and key dimensions",
+            "references": [
+              "Bents",
+              "Abutments",
+              "Key Dimensions"
+            ]
+          }
+        },
+        {
+          "page": 3,
+          "details": {
+            "detail_name": "Bent Numbers",
+            "description": "1 through 17",
+            "references": null
+          }
+        },
+        {
+          "page": 3,
+          "details": {
+            "detail_name": "Abutment Numbers",
+            "description": "Abutment 1 and 2",
+            "references": null
+          }
+        },
+        {
+          "page": 3,
+          "details": {
+            "detail_name": "Station Numbers",
+            "description": "Not explicitly listed, but implied through bent layout",
+            "references": null
+          }
+        },
+        {
+          "page": 4,
+          "details": {
+            "detail_name": "Grid/Reference System",
+            "description": "Bents are numbered 2 through 7. Abutment is labeled as Abut 1. Grid lines labeled as 'C' Line and 'M' Line.",
+            "references": [
+              "Bents",
+              "Abutment",
+              "'C' Line",
+              "'M' Line"
+            ]
+          }
+        },
+        {
+          "page": 5,
+          "details": {
+            "detail_name": "Foundation Plan",
+            "description": "Shows the layout of the foundation system",
+            "references": [
+              "24\" CIDH Type I Shaft",
+              "Column Type A",
+              "Cap Beam Type B",
+              "Shear Key Type C"
+            ]
+          }
+        },
+        {
+          "page": 6,
+          "details": {
+            "detail_name": "Abutment 1 and Abutment 17",
+            "description": "Grid/Reference System",
+            "references": [
+              "Sections D-D, E-E, F-F, G-G"
+            ]
+          }
+        },
+        {
+          "page": 7,
+          "details": {
+            "detail_name": "Foundation Plan",
+            "description": "Layout of the foundation plan with specific references to bents and abutments along the route, indicating the use of CIDH piles of different sizes",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "detail_name": "Design Tip Elevations",
+            "description": "Controlled by compression, tension, settlement, lateral load",
+            "references": [
+              "24\" CIDH",
+              "30\" CIDH",
+              "72\" CIDH"
+            ]
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "detail_name": "Nominal Resistance Values",
+            "description": "Provided in compression and tension",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "detail_name": "Retaining Wall Data",
+            "description": "Provides information on service limit state and strength criteria",
+            "references": [
+              "Retaining Walls"
+            ]
+          }
+        },
+        {
+          "page": 8,
+          "details": {
+            "detail_name": "Benchmark Information",
+            "description": "Provided for elevation and location reference",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 9,
+          "details": {
+            "detail_name": "Design tip elevations for Abutments",
+            "description": "Controlled by Compression, Settlement and Lateral Load",
+            "references": [
+              "Abut 1, Abut 17"
+            ]
+          }
+        },
+        {
+          "page": 9,
+          "details": {
+            "detail_name": "Design tip elevations for Bents",
+            "description": "Controlled by Compression, Tension, Settlement, Lateral Load",
+            "references": [
+              "Bent 2, Bent 3, Bent 4, Bent 5, Bent 6, Bent 7, Bent 8, Bent 9, Bent 10, Bent 11, Bent 12, Bent 13, Bent 14, Bent 15, Bent 16"
+            ]
+          }
+        },
+        {
+          "page": 9,
+          "details": {
+            "detail_name": "Isolation Casing",
+            "description": "Used for structural design and casing tip elevations",
+            "references": [
+              "Provided by the designer"
+            ]
+          }
+        },
+        {
+          "page": 9,
+          "details": {
+            "detail_name": "Type II shaft with 12.5 feet embedment depth",
+            "description": "Recommended below construction joint for bent 5 through 9 piles",
+            "references": [
+              "Bent 5, Bent 6, Bent 7, Bent 8, Bent 9"
+            ]
+          }
+        },
+        {
+          "page": 10,
+          "details": {
+            "detail_name": "\"a\" dimension",
+            "description": "Referenced to Detail A",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 11,
+          "details": {
+            "detail_name": "Abutment Details",
+            "description": "Details of the abutment, specifically the pipe pin and stud details, with reinforcement specifications and material notes",
+            "references": [
+              "Pipe Pin",
+              "Stud Detail"
+            ]
+          }
+        },
+        {
+          "page": 12,
+          "details": {
+            "detail_name": "Abutment Detail",
+            "description": "This drawing provides detailed reinforcement and drainage information for an abutment retaining wall, including reinforcement bar sizes and spacing, as well as drainage specifications.",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 13,
+          "details": {
+            "detail_name": "Retaining Wall Layout",
+            "description": "Layout and elevation details of a retaining wall, including expansion and weakened plane joints, with specific attention to the dimensions and elevations of various components.",
+            "references": [
+              "Footings",
+              "Retaining Wall",
+              "Expansion Joints",
+              "Weakened Plane Joints",
+              "Pedestrian Railings"
+            ]
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "detail_name": "Weakened Plane",
+            "description": "Typical weakened plane in the retaining wall",
+            "references": [
+              "Retaining Wall Details Sheet"
+            ]
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "detail_name": "4\" Weep Hole",
+            "description": "Typical 4\" weep hole in the retaining wall",
+            "references": [
+              "Retaining Wall Details Sheet"
+            ]
+          }
+        },
+        {
+          "page": 14,
+          "details": {
+            "detail_name": "Retaining Wall Details Sheet",
+            "description": "Additional details about the retaining wall",
+            "references": []
+          }
+        },
+        {
+          "page": 15,
+          "details": {
+            "detail_name": "Retaining Wall Section",
+            "description": "Construction and reinforcement details",
+            "references": [
+              "Reinforcement Bars",
+              "Drainage Details"
+            ]
+          }
+        },
+        {
+          "page": 16,
+          "details": {
+            "detail_name": "Bent Layout and Details",
+            "description": "This drawing provides detailed reinforcement and layout information for Bent 2, including spiral reinforcement details and specific notes on construction practices.",
+            "references": [
+              "Bent 2"
+            ]
+          }
+        },
+        {
+          "page": 17,
+          "details": {
+            "detail_name": "Bent Layout",
+            "description": "Detailed layout of Bent 5 and 9, including reinforcement details and key dimensions of the structural elements",
+            "references": [
+              "Bent 5",
+              "Bent 9",
+              "Span 9",
+              "Span 10"
+            ]
+          }
+        },
+        {
+          "page": 18,
+          "details": {
+            "detail_name": "Bent Layout and Detail",
+            "description": "Information about the shear key, bearing pad, and pipe pin arrangements for Bents 5 and 9",
+            "references": [
+              "Material specifications",
+              "Critical dimensions"
+            ]
+          }
+        },
+        {
+          "page": 19,
+          "details": {
+            "detail_name": "Bent Layout",
+            "description": "Detailed reinforcement layout and spacing",
+            "references": [
+              "B-05",
+              "B-10",
+              "S-10",
+              "S-11"
+            ]
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "detail_name": "Notes",
+            "description": "Additional information on other sheets",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 20,
+          "details": {
+            "detail_name": "Isolation casing details",
+            "description": "Referenced in the drawing",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 21,
+          "details": {
+            "detail_name": "CIDH Pile Details",
+            "description": "Provides detailed specifications for the construction of CIDH piles, including reinforcement details, casing requirements, and specific notes for construction and inspection",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 22,
+          "details": {
+            "detail_name": "Isolation Casing Detail",
+            "description": "Details of the isolation casing used in the structure",
+            "references": [
+              "Bents 2, 6, 13"
+            ]
+          }
+        },
+        {
+          "page": 23,
+          "details": {
+            "detail_name": "Typical Section",
+            "description": "This drawing provides typical section details for a reinforced concrete slab, including reinforcement and spacing details.",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 25,
+          "details": {
+            "detail_name": "Bridge Width Varies",
+            "description": "Annotation on drawing",
+            "references": []
+          }
+        },
+        {
+          "page": 25,
+          "details": {
+            "detail_name": "NOTE: Electroliers not shown.",
+            "description": "Annotation on drawing",
+            "references": []
+          }
+        },
+        {
+          "page": 26,
+          "details": {
+            "detail_name": "Cap Beam Detail",
+            "description": "Shows the connection between the girder and the bent",
+            "references": [
+              "Girder",
+              "Bent"
+            ]
+          }
+        },
+        {
+          "page": 28,
+          "details": {
+            "detail_name": "Bent numbers",
+            "description": "Bent 6 through 8",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 28,
+          "details": {
+            "detail_name": "Span numbers",
+            "description": "Span 6 and 7",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "detail_name": "Retaining Wall",
+            "description": "See 'Retaining Wall S Layout' and 'Retaining Wall N Layout' sheets",
+            "references": [
+              "Retaining Wall S Layout",
+              "Retaining Wall N Layout"
+            ]
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "detail_name": "4\" PVC Pipe Outlet (Unslotted)",
+            "description": "See 'Abutment Layout' sheet for locations",
+            "references": [
+              "Abutment Layout"
+            ]
+          }
+        },
+        {
+          "page": 29,
+          "details": {
+            "detail_name": "Drainage Details",
+            "description": "See 'Drainage Details'",
+            "references": [
+              "Drainage Details"
+            ]
+          }
+        },
+        {
+          "page": 30,
+          "details": {
+            "detail_name": "Detail A",
+            "description": "Not specified",
+            "references": [
+              "Top of Barrier",
+              "Top of Curb"
+            ]
+          }
+        },
+        {
+          "page": 30,
+          "details": {
+            "detail_name": "Detail B",
+            "description": "Not specified",
+            "references": [
+              "Chain Link Fence",
+              "Curb"
+            ]
+          }
+        },
+        {
+          "page": 30,
+          "details": {
+            "detail_name": "Detail C",
+            "description": "Not specified",
+            "references": []
+          }
+        },
+        {
+          "page": 31,
+          "details": {
+            "detail_name": "Railing splice details",
+            "description": "Details of how the railing is spliced",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 31,
+          "details": {
+            "detail_name": "Connections to the curb",
+            "description": "Details of how the railing connects to the curb",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 32,
+          "details": {
+            "detail_name": "Pedestrian Railing Details",
+            "description": "Detailed specifications for pedestrian railing installation, including post sections and anchorage details",
+            "references": null
+          }
+        },
+        {
+          "page": 34,
+          "details": {
+            "detail_name": "Bumpout Post Details",
+            "description": "See 'TYPICAL POST SECTIONS' on 'PEDESTRIAN RAILING DETAILS NO. 2' sheet.",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 34,
+          "details": {
+            "detail_name": "Anchor Plate Detail",
+            "description": "1\" x 11\" Anchor Bolt, Tot 4",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 34,
+          "details": {
+            "detail_name": "Conduit Detail",
+            "description": "Extend 11\" into overhang",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 35,
+          "details": {
+            "detail_name": "Concrete accent texture",
+            "description": "Not specified",
+            "references": []
+          }
+        },
+        {
+          "page": 35,
+          "details": {
+            "detail_name": "Recess details",
+            "description": "Not specified",
+            "references": []
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "detail_name": "Whale cutouts placement",
+            "description": "Notes regarding whale cutouts placement and mounting details",
+            "references": []
+          }
+        },
+        {
+          "page": 36,
+          "details": {
+            "detail_name": "Whale cutouts dimensions",
+            "description": "Dimensions related to the center of whale cutouts",
+            "references": []
+          }
+        },
+        {
+          "page": 38,
+          "details": {
+            "detail_name": "grid/reference system",
+            "description": "Bent 5, Station 10+87",
+            "references": [
+              "not specified"
+            ]
+          }
+        },
+        {
+          "page": 40,
+          "details": {
+            "detail_name": "Bent numbers",
+            "description": "Included in drawing",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 40,
+          "details": {
+            "detail_name": "Station references",
+            "description": "Included in drawing",
+            "references": [
+              "Not specified"
+            ]
+          }
+        },
+        {
+          "page": 41,
+          "details": {
+            "detail_name": "Pile/Foundation Information",
+            "description": "Locations/Grid References for Hole IDs R-20-034, R-20-035, R-20-036",
+            "references": [
+              "C Line"
+            ]
+          }
+        },
+        {
+          "page": 42,
+          "details": {
+            "detail_name": "Borehole locations",
+            "description": "Locations of the boreholes",
+            "references": [
+              "R-20-037",
+              "R-20-038",
+              "R-20-039"
+            ]
+          }
+        },
+        {
+          "page": 42,
+          "details": {
+            "detail_name": "Grid/Reference System",
+            "description": "Station numbers and offsets for boreholes, Grid lines",
+            "references": [
+              "\"C\" Line"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "page_index": {
+    "R/C Slab": [
+      1
+    ],
+    "R/C Box Girder": [
+      1
+    ],
+    "Bent 1 to Bent 17": [
+      1
+    ],
+    "Abut 1 and Abut 17": [
+      1
+    ],
+    "Retaining Wall": [
+      1,
+      12,
+      13,
+      14,
+      15,
+      29
+    ],
+    "Not specified": [
+      1,
+      4,
+      6,
+      7,
+      8,
+      12,
+      13,
+      17,
+      18,
+      20,
+      36,
+      41
+    ],
+    "Total length along 'W' line": [
+      1
+    ],
+    "Bent spacing": [
+      1
+    ],
+    "Vertical clearance": [
+      1
+    ],
+    "Paint": [
+      1
+    ],
+    "Sound wall": [
+      1
+    ],
+    "Retaining wall": [
+      1
+    ],
+    "Entry monument": [
+      1
+    ],
+    "Settlement platform": [
+      1
+    ],
+    "unknown": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      34,
+      35,
+      36,
+      38,
+      40,
+      41,
+      42
+    ],
+    "CIDH Concrete Piles": [
+      3
+    ],
+    "Structural Concrete, Bridge Footing": [
+      3
+    ],
+    "Structural Concrete, Retaining Wall": [
+      3
+    ],
+    "Pedestrian Railing": [
+      3,
+      15,
+      23
+    ],
+    "Isolation Casing": [
+      3,
+      22
+    ],
+    "24\" Cast-In-Drilled-Hole Concrete Piling": [
+      3,
+      7
+    ],
+    "72\" Cast-In-Drilled-Hole Concrete Piling": [
+      3,
+      7
+    ],
+    "72\" Permanent Steel Casing": [
+      3
+    ],
+    "Concrete": [
+      3,
+      5,
+      10,
+      12,
+      26,
+      29,
+      30
+    ],
+    "Steel": [
+      3,
+      5,
+      8,
+      9,
+      10,
+      18,
+      22,
+      26,
+      30
+    ],
+    "Load and Resistance Factor Design": [
+      3
+    ],
+    "Seismic Design Criteria": [
+      3
+    ],
+    "Concrete strength": [
+      3
+    ],
+    "Pile data table": [
+      3
+    ],
+    "Bents 2 to 7": [
+      4
+    ],
+    "Abut 1": [
+      4
+    ],
+    "Edge of Deck": [
+      4
+    ],
+    "'M' Line": [
+      4
+    ],
+    "Contour intervals": [
+      4
+    ],
+    "'M' Line intervals": [
+      4
+    ],
+    "Match line references": [
+      4
+    ],
+    "24\" CIDH Type I Shaft": [
+      5,
+      38
+    ],
+    "Column Type A": [
+      5
+    ],
+    "Cap Beam Type B": [
+      5
+    ],
+    "Shear Key Type C": [
+      5
+    ],
+    "Column-to-pile connection": [
+      5
+    ],
+    "Column spacing": [
+      5
+    ],
+    "Cap beam width": [
+      5
+    ],
+    "Load criteria": [
+      5
+    ],
+    "Abutment Backwall": [
+      6
+    ],
+    "Abutment Stem": [
+      6
+    ],
+    "Abutment Return Wall": [
+      6
+    ],
+    "Abutment CIDH Piles": [
+      6
+    ],
+    "Structural Backfill": [
+      6
+    ],
+    "Roadway Structural Section": [
+      6
+    ],
+    "CIDH Piles": [
+      6,
+      7,
+      8,
+      16
+    ],
+    "Top of Wall": [
+      6
+    ],
+    "FG (Finished Grade)": [
+      6
+    ],
+    "Settlement allowance": [
+      6
+    ],
+    "Construction steps for abutments and retaining walls": [
+      6
+    ],
+    "Notes on settlement and backfill requirements": [
+      6
+    ],
+    "Footings": [
+      7,
+      13
+    ],
+    "Bents": [
+      7
+    ],
+    "Abutments": [
+      7
+    ],
+    "Bent spacing and alignment": [
+      7
+    ],
+    "Station numbers": [
+      7,
+      40
+    ],
+    "Footing elevations": [
+      7
+    ],
+    "Retaining Walls": [
+      8
+    ],
+    "24\" CIDH": [
+      8
+    ],
+    "30\" CIDH": [
+      8
+    ],
+    "72\" CIDH": [
+      8
+    ],
+    "Design Tip Elevations": [
+      8
+    ],
+    "Specified Tip Elevations": [
+      8
+    ],
+    "Steel Casing Specified Tip Elevations": [
+      8
+    ],
+    "Cut-off Elevations": [
+      8
+    ],
+    "24\" CIDH (Type I Shaft)": [
+      9
+    ],
+    "72\" CIDH (Type II Shaft)": [
+      9
+    ],
+    "30\" CIDH (Type II Shaft)": [
+      9
+    ],
+    "Pile Foundation": [
+      9
+    ],
+    "Pile": [
+      9
+    ],
+    "Pile Cut-off Elevation": [
+      9
+    ],
+    "Pile Nominal Resistance": [
+      9
+    ],
+    "Pile Design Tip Elevation": [
+      9
+    ],
+    "Pile Specified Steel Elevation": [
+      9
+    ],
+    "Pile Tip Elevation": [
+      9
+    ],
+    "Pile Type": [
+      9
+    ],
+    "24\" CIDH Pile": [
+      10
+    ],
+    "Pipe Pin (Steel Shear Key)": [
+      10
+    ],
+    "Bearing Pad": [
+      10,
+      17
+    ],
+    "Abutment": [
+      10,
+      12
+    ],
+    "Backwall": [
+      10
+    ],
+    "Return Wall": [
+      10
+    ],
+    "Elastomeric Bearing Pad": [
+      10
+    ],
+    "Geocomposite Drain": [
+      10,
+      12,
+      15,
+      29
+    ],
+    "Pipe Pin connection": [
+      10,
+      18
+    ],
+    "Bearing pad connection": [
+      10
+    ],
+    "Casing Material": [
+      10
+    ],
+    "Pipe Pin": [
+      10,
+      11,
+      18
+    ],
+    "Pile Layout": [
+      10
+    ],
+    "Joint Seal and Armor": [
+      10
+    ],
+    "Pipe Pin details": [
+      10
+    ],
+    "Steel Shear Key": [
+      11
+    ],
+    "End Diaphragm": [
+      11,
+      18
+    ],
+    "Studs": [
+      11
+    ],
+    "Reinf": [
+      11
+    ],
+    "Cover Plate": [
+      11
+    ],
+    "Anchor Rod": [
+      11
+    ],
+    "Pipe Pin Detail": [
+      11
+    ],
+    "Stud Detail": [
+      11
+    ],
+    "Pipe": [
+      11
+    ],
+    "Grout": [
+      11
+    ],
+    "Rubber": [
+      11
+    ],
+    "Reinforcement Bars": [
+      11,
+      12,
+      15,
+      17
+    ],
+    "Expanded Polystyrene": [
+      11,
+      17
+    ],
+    "Rubber Water Sealing Gasket": [
+      11
+    ],
+    "Concrete Shear Key": [
+      12
+    ],
+    "Reinforcement": [
+      12,
+      17,
+      19,
+      23
+    ],
+    "Drain": [
+      12
+    ],
+    "Top of Curb": [
+      12,
+      30
+    ],
+    "Expansion Joint": [
+      12,
+      14
+    ],
+    "Reinforcement Spacing": [
+      12
+    ],
+    "Construction Joint": [
+      12,
+      15
+    ],
+    "Drainage Pad": [
+      12
+    ],
+    "Expansion Joints": [
+      13
+    ],
+    "Weakened Plane Joints": [
+      13
+    ],
+    "Type A and Type B": [
+      13
+    ],
+    "Expansion Joint Spacing": [
+      13,
+      14
+    ],
+    "Weakened Plane Spacing": [
+      13
+    ],
+    "Wall Heights": [
+      13,
+      14
+    ],
+    "Bottom of Footing Elevations": [
+      13
+    ],
+    "Datum Elevation": [
+      13,
+      14
+    ],
+    "Top of Wall Elevations": [
+      13
+    ],
+    "Footing": [
+      14,
+      15
+    ],
+    "Weep Hole": [
+      14
+    ],
+    "Bottom of Footing Elevation": [
+      14
+    ],
+    "PVC Pipe Outlet": [
+      15
+    ],
+    "Form Liner": [
+      15
+    ],
+    "Reinforcement Connection": [
+      15
+    ],
+    "Drainage Connection": [
+      15
+    ],
+    "PVC Pipe": [
+      15
+    ],
+    "Recess": [
+      15,
+      35
+    ],
+    "Patterned Concrete Pavement": [
+      15
+    ],
+    "Splicing Restrictions for 'a' Bars": [
+      15
+    ],
+    "Columns": [
+      16
+    ],
+    "Bent Cap": [
+      16
+    ],
+    "Steel Shear Key (Pipe Pin)": [
+      16
+    ],
+    "Spiral Reinforcement": [
+      16
+    ],
+    "Drilled Hole Filled with Concrete (CIDH)": [
+      16
+    ],
+    "Spiral Anchor Hook": [
+      16
+    ],
+    "Stirrup": [
+      16
+    ],
+    "Spiral termination": [
+      16
+    ],
+    "Spiral terminations": [
+      16
+    ],
+    "Longitudinal pile reinforcement": [
+      16
+    ],
+    "Main cap reinforcement": [
+      16
+    ],
+    "Column": [
+      17,
+      20,
+      22
+    ],
+    "Cap Beam": [
+      17
+    ],
+    "Joint Seal": [
+      17
+    ],
+    "Bent": [
+      17
+    ],
+    "Clearance": [
+      17
+    ],
+    "Hook": [
+      17
+    ],
+    "Shear Key": [
+      18
+    ],
+    "Elastomeric Bearing Pads": [
+      18
+    ],
+    "Steel Reinforcement Bearing Pads": [
+      18
+    ],
+    "Steel Shear Key Pipe Pin": [
+      18
+    ],
+    "Abutment reinforcement": [
+      18
+    ],
+    "Galvanized sheet metal": [
+      18
+    ],
+    "Expanded polystyrene": [
+      18
+    ],
+    "Construction joint": [
+      18
+    ],
+    "Pipe pin details": [
+      18
+    ],
+    "N/A": [
+      19
+    ],
+    "#5, #7": [
+      19
+    ],
+    "Pile/Foundation": [
+      19
+    ],
+    "Reinforcement bars": [
+      19,
+      28
+    ],
+    "Beam spacing": [
+      19
+    ],
+    "Fillet": [
+      19
+    ],
+    "Hook around vertical stirrup": [
+      19
+    ],
+    "Edge of deck to centerline spacing": [
+      19
+    ],
+    "Ultimate butt splice": [
+      19
+    ],
+    "Stirrups": [
+      19
+    ],
+    "Hoop": [
+      20
+    ],
+    "Expansion Joint Filler": [
+      20
+    ],
+    "Service Level Coupler": [
+      20
+    ],
+    "Column reinforcement": [
+      20,
+      21
+    ],
+    "Tie spacing": [
+      20
+    ],
+    "Drilled Shaft (CIDH)": [
+      21
+    ],
+    "Column Main Reinforcement": [
+      21
+    ],
+    "Pile Hoop Reinforcement": [
+      21
+    ],
+    "Permanent Steel Casing": [
+      21
+    ],
+    "Pavement": [
+      21
+    ],
+    "Inspection Pipes": [
+      21
+    ],
+    "Steel Casing": [
+      21
+    ],
+    "Cut-off Elevation": [
+      21
+    ],
+    "Spacing for mandatory construction joint": [
+      21
+    ],
+    "Clear cover for reinforcement": [
+      21
+    ],
+    "Column and CIDH pile hoops": [
+      21
+    ],
+    "Tip elevation and cut-off elevation": [
+      21
+    ],
+    "Steel Top Plate": [
+      22
+    ],
+    "Pourable Seal": [
+      22
+    ],
+    "Backer Rod": [
+      22
+    ],
+    "Splice": [
+      22
+    ],
+    "Notch": [
+      22
+    ],
+    "Corrugated Steel": [
+      22
+    ],
+    "Clear void between column and isolation casing": [
+      22
+    ],
+    "Steel top plate thickness": [
+      22
+    ],
+    "Anchorage device spacing": [
+      22
+    ],
+    "Bar size": [
+      22
+    ],
+    "Isolation casing installation": [
+      22
+    ],
+    "Cement slurry placement": [
+      22
+    ],
+    "CIP Reinforced Concrete Slab": [
+      23
+    ],
+    "Lighting Conduit": [
+      23
+    ],
+    "Slab": [
+      23
+    ],
+    "Spacing": [
+      23,
+      31
+    ],
+    "Chamfer": [
+      23
+    ],
+    "Additional Reinforcement": [
+      23
+    ],
+    "Drip Groove": [
+      23
+    ],
+    "Bent 5": [
+      25,
+      26,
+      36
+    ],
+    "Bent 6": [
+      25,
+      36
+    ],
+    "Bent 7": [
+      25,
+      36
+    ],
+    "Bent 8": [
+      25,
+      36
+    ],
+    "Bent 9": [
+      25,
+      36
+    ],
+    "Deck Edge": [
+      25
+    ],
+    "C Line": [
+      25
+    ],
+    "MW Line": [
+      25
+    ],
+    "Distance between Bent 5 and Bent 6": [
+      25
+    ],
+    "Distance between Bent 7 and Bent 8": [
+      25
+    ],
+    "Distance between Bent 8 and Bent 9": [
+      25
+    ],
+    "Distance from C Line to MW Line": [
+      25
+    ],
+    "Girder 1": [
+      26
+    ],
+    "Stirrup 1": [
+      26
+    ],
+    "CIDH Pile": [
+      26
+    ],
+    "Driven Pile": [
+      26
+    ],
+    "Column-to-Pile Connection": [
+      26
+    ],
+    "Girder": [
+      26,
+      28
+    ],
+    "Bent Spacing": [
+      26
+    ],
+    "Stirrup Spacing": [
+      26
+    ],
+    "Camber Diagram": [
+      26
+    ],
+    "Settlement Allowance": [
+      26
+    ],
+    "#11": [
+      28
+    ],
+    "#8": [
+      28
+    ],
+    "Spacing between girders": [
+      28
+    ],
+    "Reinforcement bar lengths (#11)": [
+      28
+    ],
+    "Reinforcement bar lengths (#8)": [
+      28
+    ],
+    "Reinforcement bar lengths (#9)": [
+      28
+    ],
+    "Splices": [
+      28
+    ],
+    "Bundled reinforcement bars": [
+      28
+    ],
+    "Concrete Drainage Pad": [
+      29
+    ],
+    "Slotted Plastic Pipe": [
+      29
+    ],
+    "Unslotted PVC Pipe": [
+      29
+    ],
+    "Filter Fabric": [
+      29
+    ],
+    "Tee Connection": [
+      29
+    ],
+    "Filter Fabric Wrap Around": [
+      29
+    ],
+    "PVC": [
+      29
+    ],
+    "Geocomposite": [
+      29
+    ],
+    "Concrete Drainage Pad Width": [
+      29
+    ],
+    "Concrete Drainage Pad Thickness": [
+      29
+    ],
+    "Top of Barrier": [
+      30
+    ],
+    "Top of Sidewalk": [
+      30
+    ],
+    "Top of Deck": [
+      30
+    ],
+    "Open Joint": [
+      30
+    ],
+    "Chain Link Fence": [
+      30
+    ],
+    "Steel Plate": [
+      30,
+      34
+    ],
+    "Screw": [
+      30
+    ],
+    "Galvanized Plates": [
+      30
+    ],
+    "Deck Joint Width": [
+      30
+    ],
+    "Gap": [
+      30
+    ],
+    "Hole for Countersunk": [
+      30
+    ],
+    "Anchor Bolts": [
+      30,
+      34
+    ],
+    "Utility openings and expansion joints": [
+      30
+    ],
+    "Recess concrete": [
+      30
+    ],
+    "Plates": [
+      30
+    ],
+    "Architectural treatment": [
+      30
+    ],
+    "Insert assembly or expansion anchorage": [
+      30
+    ],
+    "Railing posts and horizontal members": [
+      31
+    ],
+    "Tamper Proof Screws": [
+      31
+    ],
+    "Welded Wire Mesh": [
+      31,
+      32
+    ],
+    "Splice and curb connections": [
+      31
+    ],
+    "HSS members": [
+      31
+    ],
+    "Screws": [
+      31
+    ],
+    "Mesh": [
+      31
+    ],
+    "Finish": [
+      31
+    ],
+    "Railing height": [
+      31
+    ],
+    "Overhang": [
+      31
+    ],
+    "Material and installation": [
+      31
+    ],
+    "End Post": [
+      32
+    ],
+    "Intermediate Post": [
+      32
+    ],
+    "Bumpout Post": [
+      32,
+      34
+    ],
+    "Railing Anchorage": [
+      32
+    ],
+    "Post Pocket": [
+      32
+    ],
+    "Stainless Steel Security Screws": [
+      32
+    ],
+    "Mortar": [
+      32
+    ],
+    "Post": [
+      32
+    ],
+    "Tamper-proof self-tapping stainless steel security screws with lock washers": [
+      32
+    ],
+    "Post pocket to be filled with mortar": [
+      32
+    ],
+    "Rebar details: #4 bars": [
+      32
+    ],
+    "Electrolier": [
+      34,
+      40
+    ],
+    "Anchor Plate": [
+      34
+    ],
+    "Conduit": [
+      34
+    ],
+    "Anchor Plate Detail": [
+      34
+    ],
+    "Electrolier Bolt Circle": [
+      34
+    ],
+    "Post Spacing": [
+      34
+    ],
+    "Grout fill": [
+      34
+    ],
+    "Anchor Bolt": [
+      34
+    ],
+    "Entry Monument": [
+      35
+    ],
+    "#4 bars": [
+      35
+    ],
+    "#6 bars": [
+      35
+    ],
+    "Monument": [
+      35
+    ],
+    "Base": [
+      35
+    ],
+    "retaining wall": [
+      38
+    ],
+    "column": [
+      38
+    ],
+    "beam": [
+      38
+    ],
+    "shear key": [
+      38
+    ],
+    "embedment": [
+      38
+    ],
+    "concrete": [
+      38
+    ],
+    "steel": [
+      38
+    ],
+    "wall": [
+      38
+    ],
+    "column spacing": [
+      38
+    ],
+    "load criteria": [
+      38
+    ],
+    "Bent locations": [
+      40
+    ],
+    "Bent references": [
+      40
+    ],
+    "Soil": [
+      41,
+      42
+    ],
+    "Boring logs": [
+      41
+    ],
+    "Groundwater level": [
+      41
+    ],
+    "Borehole": [
+      42
+    ],
+    "Borehole locations": [
+      42
+    ],
+    "Soil descriptions and conditions": [
+      42
+    ],
+    "Moisture conditions": [
+      42
+    ],
+    "Density and composition": [
+      42
+    ]
+  },
+  "relationships": [
+    {
+      "element1": "R/C Box Girder",
+      "element2": "Bent 1 to Bent 17",
+      "relationship": "supported_by",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "element1": "R/C Box Girder",
+      "element2": "Bent spacing",
+      "relationship": "supported_by",
+      "pages": [
+        1
+      ]
+    },
+    {
+      "element1": "Column Type A",
+      "element2": "24\" CIDH Type I Shaft",
+      "relationship": "rests_on",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "element1": "Column-to-pile connection",
+      "element2": "24\" CIDH Type I Shaft",
+      "relationship": "rests_on",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "element1": "Column spacing",
+      "element2": "24\" CIDH Type I Shaft",
+      "relationship": "rests_on",
+      "pages": [
+        5
+      ]
+    },
+    {
+      "element1": "24\" CIDH (Type I Shaft)",
+      "element2": "Pile Foundation",
+      "relationship": "supports",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "element1": "72\" CIDH (Type II Shaft)",
+      "element2": "Pile Foundation",
+      "relationship": "supports",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "element1": "30\" CIDH (Type II Shaft)",
+      "element2": "Pile Foundation",
+      "relationship": "supports",
+      "pages": [
+        9
+      ]
+    },
+    {
+      "element1": "Pipe Pin (Steel Shear Key)",
+      "element2": "Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin (Steel Shear Key)",
+      "element2": "Abutment",
+      "relationship": "lateral_restraint",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin (Steel Shear Key)",
+      "element2": "Elastomeric Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin (Steel Shear Key)",
+      "element2": "Bearing pad connection",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin connection",
+      "element2": "Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin connection",
+      "element2": "Elastomeric Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin connection",
+      "element2": "Bearing pad connection",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin connection",
+      "element2": "Elastomeric Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe Pin connection",
+      "element2": "Steel Reinforcement Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe Pin",
+      "element2": "Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin",
+      "element2": "Elastomeric Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin",
+      "element2": "Bearing pad connection",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin",
+      "element2": "Elastomeric Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe Pin",
+      "element2": "Steel Reinforcement Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe Pin details",
+      "element2": "Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin details",
+      "element2": "Elastomeric Bearing Pad",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Pipe Pin details",
+      "element2": "Bearing pad connection",
+      "relationship": "transfers_load",
+      "pages": [
+        10
+      ]
+    },
+    {
+      "element1": "Reinforcement Bars",
+      "element2": "Concrete",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement Bars",
+      "element2": "Concrete Shear Key",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement Bars",
+      "element2": "Patterned Concrete Pavement",
+      "relationship": "strengthens",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "element1": "Concrete Shear Key",
+      "element2": "Abutment",
+      "relationship": "lateral_restraint",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement",
+      "element2": "Concrete",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement",
+      "element2": "Concrete Shear Key",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement",
+      "element2": "CIP Reinforced Concrete Slab",
+      "relationship": "strengthens",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "element1": "Reinforcement Spacing",
+      "element2": "Concrete",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement Spacing",
+      "element2": "Concrete Shear Key",
+      "relationship": "strengthens",
+      "pages": [
+        12
+      ]
+    },
+    {
+      "element1": "Reinforcement Connection",
+      "element2": "Patterned Concrete Pavement",
+      "relationship": "strengthens",
+      "pages": [
+        15
+      ]
+    },
+    {
+      "element1": "Columns",
+      "element2": "CIDH Piles",
+      "relationship": "rests_on",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Columns",
+      "element2": "Drilled Hole Filled with Concrete (CIDH)",
+      "relationship": "rests_on",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Bent Cap",
+      "element2": "Columns",
+      "relationship": "spans_between",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Spiral Reinforcement",
+      "element2": "Drilled Hole Filled with Concrete (CIDH)",
+      "relationship": "strengthens",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Longitudinal pile reinforcement",
+      "element2": "Drilled Hole Filled with Concrete (CIDH)",
+      "relationship": "strengthens",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Main cap reinforcement",
+      "element2": "Drilled Hole Filled with Concrete (CIDH)",
+      "relationship": "strengthens",
+      "pages": [
+        16
+      ]
+    },
+    {
+      "element1": "Shear Key",
+      "element2": "Abutment reinforcement",
+      "relationship": "lateral_restraint",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Steel Shear Key Pipe Pin",
+      "element2": "Elastomeric Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Steel Shear Key Pipe Pin",
+      "element2": "Steel Reinforcement Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Steel Shear Key Pipe Pin",
+      "element2": "Abutment reinforcement",
+      "relationship": "lateral_restraint",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe pin details",
+      "element2": "Elastomeric Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Pipe pin details",
+      "element2": "Steel Reinforcement Bearing Pads",
+      "relationship": "transfers_load",
+      "pages": [
+        18
+      ]
+    },
+    {
+      "element1": "Column reinforcement",
+      "element2": "Drilled Shaft (CIDH)",
+      "relationship": "rests_on",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "element1": "Column reinforcement",
+      "element2": "Column and CIDH pile hoops",
+      "relationship": "rests_on",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "element1": "Column Main Reinforcement",
+      "element2": "Drilled Shaft (CIDH)",
+      "relationship": "rests_on",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "element1": "Column Main Reinforcement",
+      "element2": "Column and CIDH pile hoops",
+      "relationship": "rests_on",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "element1": "Column and CIDH pile hoops",
+      "element2": "Drilled Shaft (CIDH)",
+      "relationship": "rests_on",
+      "pages": [
+        21
+      ]
+    },
+    {
+      "element1": "Additional Reinforcement",
+      "element2": "CIP Reinforced Concrete Slab",
+      "relationship": "strengthens",
+      "pages": [
+        23
+      ]
+    },
+    {
+      "element1": "Girder 1",
+      "element2": "Bent 5",
+      "relationship": "supported_by",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "element1": "Girder 1",
+      "element2": "Bent Spacing",
+      "relationship": "supported_by",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "element1": "Column-to-Pile Connection",
+      "element2": "CIDH Pile",
+      "relationship": "rests_on",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "element1": "Girder",
+      "element2": "Bent 5",
+      "relationship": "supported_by",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "element1": "Girder",
+      "element2": "Bent Spacing",
+      "relationship": "supported_by",
+      "pages": [
+        26
+      ]
+    },
+    {
+      "element1": "column",
+      "element2": "24\" CIDH Type I Shaft",
+      "relationship": "rests_on",
+      "pages": [
+        38
+      ]
+    },
+    {
+      "element1": "column spacing",
+      "element2": "24\" CIDH Type I Shaft",
+      "relationship": "rests_on",
+      "pages": [
+        38
+      ]
+    }
+  ],
+  "summary": {
+    "total_elements": 545,
+    "categories": {
+      "structural_elements": {
+        "unique_items": 123,
+        "total_occurrences": 154
+      },
+      "foundation_systems": {
+        "unique_items": 20,
+        "total_occurrences": 29
+      },
+      "connection_types": {
+        "unique_items": 29,
+        "total_occurrences": 37
+      },
+      "materials": {
+        "unique_items": 29,
+        "total_occurrences": 54
+      },
+      "dimensions": {
+        "unique_items": 108,
+        "total_occurrences": 123
+      },
+      "specifications": {
+        "unique_items": 80,
+        "total_occurrences": 88
+      },
+      "details": {
+        "unique_items": 1,
+        "total_occurrences": 60
+      }
+    },
+    "most_common_elements": [
+      {
+        "element": "unknown",
+        "page_count": 36,
+        "pages": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34,
+          35,
+          36,
+          38,
+          40,
+          41,
+          42
+        ]
+      },
+      {
+        "element": "Not specified",
+        "page_count": 12,
+        "pages": [
+          1,
+          4,
+          6,
+          7,
+          8,
+          12,
+          13,
+          17,
+          18,
+          20,
+          36,
+          41
+        ]
+      },
+      {
+        "element": "Steel",
+        "page_count": 9,
+        "pages": [
+          3,
+          5,
+          8,
+          9,
+          10,
+          18,
+          22,
+          26,
+          30
+        ]
+      },
+      {
+        "element": "Concrete",
+        "page_count": 7,
+        "pages": [
+          3,
+          5,
+          10,
+          12,
+          26,
+          29,
+          30
+        ]
+      },
+      {
+        "element": "Retaining Wall",
+        "page_count": 6,
+        "pages": [
+          1,
+          12,
+          13,
+          14,
+          15,
+          29
+        ]
+      },
+      {
+        "element": "CIDH Piles",
+        "page_count": 4,
+        "pages": [
+          6,
+          7,
+          8,
+          16
+        ]
+      },
+      {
+        "element": "Geocomposite Drain",
+        "page_count": 4,
+        "pages": [
+          10,
+          12,
+          15,
+          29
+        ]
+      },
+      {
+        "element": "Reinforcement Bars",
+        "page_count": 4,
+        "pages": [
+          11,
+          12,
+          15,
+          17
+        ]
+      },
+      {
+        "element": "Reinforcement",
+        "page_count": 4,
+        "pages": [
+          12,
+          17,
+          19,
+          23
+        ]
+      },
+      {
+        "element": "Pedestrian Railing",
+        "page_count": 3,
+        "pages": [
+          3,
+          15,
+          23
+        ]
+      },
+      {
+        "element": "Pipe Pin",
+        "page_count": 3,
+        "pages": [
+          10,
+          11,
+          18
+        ]
+      },
+      {
+        "element": "Column",
+        "page_count": 3,
+        "pages": [
+          17,
+          20,
+          22
+        ]
+      },
+      {
+        "element": "Bent 5",
+        "page_count": 3,
+        "pages": [
+          25,
+          26,
+          36
+        ]
+      },
+      {
+        "element": "Isolation Casing",
+        "page_count": 2,
+        "pages": [
+          3,
+          22
+        ]
+      },
+      {
+        "element": "24\" Cast-In-Drilled-Hole Concrete Piling",
+        "page_count": 2,
+        "pages": [
+          3,
+          7
+        ]
+      },
+      {
+        "element": "72\" Cast-In-Drilled-Hole Concrete Piling",
+        "page_count": 2,
+        "pages": [
+          3,
+          7
+        ]
+      },
+      {
+        "element": "24\" CIDH Type I Shaft",
+        "page_count": 2,
+        "pages": [
+          5,
+          38
+        ]
+      },
+      {
+        "element": "Footings",
+        "page_count": 2,
+        "pages": [
+          7,
+          13
+        ]
+      },
+      {
+        "element": "Station numbers",
+        "page_count": 2,
+        "pages": [
+          7,
+          40
+        ]
+      },
+      {
+        "element": "Bearing Pad",
+        "page_count": 2,
+        "pages": [
+          10,
+          17
+        ]
+      }
+    ],
+    "unique_elements": 322,
+    "total_relationships": 60,
+    "coverage_by_page": {
+      "1": {
+        "element_count": 15,
+        "elements": [
+          "R/C Slab",
+          "R/C Box Girder",
+          "Bent 1 to Bent 17",
+          "Abut 1 and Abut 17",
+          "Retaining Wall",
+          "Not specified",
+          "Total length along 'W' line",
+          "Bent spacing",
+          "Vertical clearance",
+          "Paint"
+        ]
+      },
+      "3": {
+        "element_count": 15,
+        "elements": [
+          "unknown",
+          "CIDH Concrete Piles",
+          "Structural Concrete, Bridge Footing",
+          "Structural Concrete, Retaining Wall",
+          "Pedestrian Railing",
+          "Isolation Casing",
+          "24\" Cast-In-Drilled-Hole Concrete Piling",
+          "72\" Cast-In-Drilled-Hole Concrete Piling",
+          "72\" Permanent Steel Casing",
+          "Concrete"
+        ]
+      },
+      "4": {
+        "element_count": 9,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Bents 2 to 7",
+          "Abut 1",
+          "Edge of Deck",
+          "'M' Line",
+          "Contour intervals",
+          "'M' Line intervals",
+          "Match line references"
+        ]
+      },
+      "5": {
+        "element_count": 11,
+        "elements": [
+          "unknown",
+          "Concrete",
+          "Steel",
+          "24\" CIDH Type I Shaft",
+          "Column Type A",
+          "Cap Beam Type B",
+          "Shear Key Type C",
+          "Column-to-pile connection",
+          "Column spacing",
+          "Cap beam width"
+        ]
+      },
+      "6": {
+        "element_count": 14,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Abutment Backwall",
+          "Abutment Stem",
+          "Abutment Return Wall",
+          "Abutment CIDH Piles",
+          "Structural Backfill",
+          "Roadway Structural Section",
+          "CIDH Piles",
+          "Top of Wall"
+        ]
+      },
+      "7": {
+        "element_count": 11,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "24\" Cast-In-Drilled-Hole Concrete Piling",
+          "72\" Cast-In-Drilled-Hole Concrete Piling",
+          "CIDH Piles",
+          "Footings",
+          "Bents",
+          "Abutments",
+          "Bent spacing and alignment",
+          "Station numbers"
+        ]
+      },
+      "8": {
+        "element_count": 12,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Steel",
+          "CIDH Piles",
+          "Retaining Walls",
+          "24\" CIDH",
+          "30\" CIDH",
+          "72\" CIDH",
+          "Design Tip Elevations",
+          "Specified Tip Elevations"
+        ]
+      },
+      "9": {
+        "element_count": 13,
+        "elements": [
+          "unknown",
+          "Steel",
+          "24\" CIDH (Type I Shaft)",
+          "72\" CIDH (Type II Shaft)",
+          "30\" CIDH (Type II Shaft)",
+          "Pile Foundation",
+          "Pile",
+          "Pile Cut-off Elevation",
+          "Pile Nominal Resistance",
+          "Pile Design Tip Elevation"
+        ]
+      },
+      "10": {
+        "element_count": 18,
+        "elements": [
+          "unknown",
+          "Concrete",
+          "Steel",
+          "24\" CIDH Pile",
+          "Pipe Pin (Steel Shear Key)",
+          "Bearing Pad",
+          "Abutment",
+          "Backwall",
+          "Return Wall",
+          "Elastomeric Bearing Pad"
+        ]
+      },
+      "11": {
+        "element_count": 16,
+        "elements": [
+          "unknown",
+          "Pipe Pin",
+          "Steel Shear Key",
+          "End Diaphragm",
+          "Studs",
+          "Reinf",
+          "Cover Plate",
+          "Anchor Rod",
+          "Pipe Pin Detail",
+          "Stud Detail"
+        ]
+      },
+      "12": {
+        "element_count": 15,
+        "elements": [
+          "Retaining Wall",
+          "Not specified",
+          "unknown",
+          "Concrete",
+          "Abutment",
+          "Geocomposite Drain",
+          "Reinforcement Bars",
+          "Concrete Shear Key",
+          "Reinforcement",
+          "Drain"
+        ]
+      },
+      "13": {
+        "element_count": 13,
+        "elements": [
+          "Retaining Wall",
+          "Not specified",
+          "unknown",
+          "Footings",
+          "Expansion Joints",
+          "Weakened Plane Joints",
+          "Type A and Type B",
+          "Expansion Joint Spacing",
+          "Weakened Plane Spacing",
+          "Wall Heights"
+        ]
+      },
+      "14": {
+        "element_count": 9,
+        "elements": [
+          "Retaining Wall",
+          "unknown",
+          "Expansion Joint",
+          "Expansion Joint Spacing",
+          "Wall Heights",
+          "Datum Elevation",
+          "Footing",
+          "Weep Hole",
+          "Bottom of Footing Elevation"
+        ]
+      },
+      "15": {
+        "element_count": 15,
+        "elements": [
+          "Retaining Wall",
+          "unknown",
+          "Pedestrian Railing",
+          "Geocomposite Drain",
+          "Reinforcement Bars",
+          "Construction Joint",
+          "Footing",
+          "PVC Pipe Outlet",
+          "Form Liner",
+          "Reinforcement Connection"
+        ]
+      },
+      "16": {
+        "element_count": 13,
+        "elements": [
+          "unknown",
+          "CIDH Piles",
+          "Columns",
+          "Bent Cap",
+          "Steel Shear Key (Pipe Pin)",
+          "Spiral Reinforcement",
+          "Drilled Hole Filled with Concrete (CIDH)",
+          "Spiral Anchor Hook",
+          "Stirrup",
+          "Spiral termination"
+        ]
+      },
+      "17": {
+        "element_count": 12,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Bearing Pad",
+          "Reinforcement Bars",
+          "Expanded Polystyrene",
+          "Reinforcement",
+          "Column",
+          "Cap Beam",
+          "Joint Seal",
+          "Bent"
+        ]
+      },
+      "18": {
+        "element_count": 15,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Steel",
+          "Pipe Pin connection",
+          "Pipe Pin",
+          "End Diaphragm",
+          "Shear Key",
+          "Elastomeric Bearing Pads",
+          "Steel Reinforcement Bearing Pads",
+          "Steel Shear Key Pipe Pin"
+        ]
+      },
+      "19": {
+        "element_count": 12,
+        "elements": [
+          "unknown",
+          "Reinforcement",
+          "N/A",
+          "#5, #7",
+          "Pile/Foundation",
+          "Reinforcement bars",
+          "Beam spacing",
+          "Fillet",
+          "Hook around vertical stirrup",
+          "Edge of deck to centerline spacing"
+        ]
+      },
+      "20": {
+        "element_count": 8,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Column",
+          "Hoop",
+          "Expansion Joint Filler",
+          "Service Level Coupler",
+          "Column reinforcement",
+          "Tie spacing"
+        ]
+      },
+      "21": {
+        "element_count": 14,
+        "elements": [
+          "unknown",
+          "Column reinforcement",
+          "Drilled Shaft (CIDH)",
+          "Column Main Reinforcement",
+          "Pile Hoop Reinforcement",
+          "Permanent Steel Casing",
+          "Pavement",
+          "Inspection Pipes",
+          "Steel Casing",
+          "Cut-off Elevation"
+        ]
+      },
+      "22": {
+        "element_count": 16,
+        "elements": [
+          "unknown",
+          "Isolation Casing",
+          "Steel",
+          "Column",
+          "Steel Top Plate",
+          "Pourable Seal",
+          "Backer Rod",
+          "Splice",
+          "Notch",
+          "Corrugated Steel"
+        ]
+      },
+      "23": {
+        "element_count": 10,
+        "elements": [
+          "unknown",
+          "Pedestrian Railing",
+          "Reinforcement",
+          "CIP Reinforced Concrete Slab",
+          "Lighting Conduit",
+          "Slab",
+          "Spacing",
+          "Chamfer",
+          "Additional Reinforcement",
+          "Drip Groove"
+        ]
+      },
+      "25": {
+        "element_count": 13,
+        "elements": [
+          "unknown",
+          "Bent 5",
+          "Bent 6",
+          "Bent 7",
+          "Bent 8",
+          "Bent 9",
+          "Deck Edge",
+          "C Line",
+          "MW Line",
+          "Distance between Bent 5 and Bent 6"
+        ]
+      },
+      "26": {
+        "element_count": 14,
+        "elements": [
+          "unknown",
+          "Concrete",
+          "Steel",
+          "Bent 5",
+          "Girder 1",
+          "Stirrup 1",
+          "CIDH Pile",
+          "Driven Pile",
+          "Column-to-Pile Connection",
+          "Girder"
+        ]
+      },
+      "28": {
+        "element_count": 11,
+        "elements": [
+          "unknown",
+          "Reinforcement bars",
+          "Girder",
+          "#11",
+          "#8",
+          "Spacing between girders",
+          "Reinforcement bar lengths (#11)",
+          "Reinforcement bar lengths (#8)",
+          "Reinforcement bar lengths (#9)",
+          "Splices"
+        ]
+      },
+      "29": {
+        "element_count": 14,
+        "elements": [
+          "Retaining Wall",
+          "unknown",
+          "Concrete",
+          "Geocomposite Drain",
+          "Concrete Drainage Pad",
+          "Slotted Plastic Pipe",
+          "Unslotted PVC Pipe",
+          "Filter Fabric",
+          "Tee Connection",
+          "Filter Fabric Wrap Around"
+        ]
+      },
+      "30": {
+        "element_count": 21,
+        "elements": [
+          "unknown",
+          "Concrete",
+          "Steel",
+          "Top of Curb",
+          "Top of Barrier",
+          "Top of Sidewalk",
+          "Top of Deck",
+          "Open Joint",
+          "Chain Link Fence",
+          "Steel Plate"
+        ]
+      },
+      "31": {
+        "element_count": 13,
+        "elements": [
+          "unknown",
+          "Spacing",
+          "Railing posts and horizontal members",
+          "Tamper Proof Screws",
+          "Welded Wire Mesh",
+          "Splice and curb connections",
+          "HSS members",
+          "Screws",
+          "Mesh",
+          "Finish"
+        ]
+      },
+      "32": {
+        "element_count": 13,
+        "elements": [
+          "unknown",
+          "Welded Wire Mesh",
+          "End Post",
+          "Intermediate Post",
+          "Bumpout Post",
+          "Railing Anchorage",
+          "Post Pocket",
+          "Stainless Steel Security Screws",
+          "Mortar",
+          "Post"
+        ]
+      },
+      "34": {
+        "element_count": 12,
+        "elements": [
+          "unknown",
+          "Steel Plate",
+          "Anchor Bolts",
+          "Bumpout Post",
+          "Electrolier",
+          "Anchor Plate",
+          "Conduit",
+          "Anchor Plate Detail",
+          "Electrolier Bolt Circle",
+          "Post Spacing"
+        ]
+      },
+      "35": {
+        "element_count": 7,
+        "elements": [
+          "unknown",
+          "Recess",
+          "Entry Monument",
+          "#4 bars",
+          "#6 bars",
+          "Monument",
+          "Base"
+        ]
+      },
+      "36": {
+        "element_count": 7,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Bent 5",
+          "Bent 6",
+          "Bent 7",
+          "Bent 8",
+          "Bent 9"
+        ]
+      },
+      "38": {
+        "element_count": 12,
+        "elements": [
+          "unknown",
+          "24\" CIDH Type I Shaft",
+          "retaining wall",
+          "column",
+          "beam",
+          "shear key",
+          "embedment",
+          "concrete",
+          "steel",
+          "wall"
+        ]
+      },
+      "40": {
+        "element_count": 5,
+        "elements": [
+          "unknown",
+          "Station numbers",
+          "Electrolier",
+          "Bent locations",
+          "Bent references"
+        ]
+      },
+      "41": {
+        "element_count": 5,
+        "elements": [
+          "Not specified",
+          "unknown",
+          "Soil",
+          "Boring logs",
+          "Groundwater level"
+        ]
+      },
+      "42": {
+        "element_count": 7,
+        "elements": [
+          "unknown",
+          "Soil",
+          "Borehole",
+          "Borehole locations",
+          "Soil descriptions and conditions",
+          "Moisture conditions",
+          "Density and composition"
+        ]
+      }
+    }
+  }
+}

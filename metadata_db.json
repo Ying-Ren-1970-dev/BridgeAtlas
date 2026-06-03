@@ -1,0 +1,78 @@
+{
+  "projects": {
+    "55-0273_EdwardsOC_As_BuiltWM.pdf": {
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM",
+      "phase": null,
+      "engineer_of_record": null,
+      "date": null,
+      "categories": [
+        "Bridges",
+        "Structural Analysis"
+      ],
+      "total_pages": 64,
+      "indexed_at": "2026-06-01T14:24:08.521372"
+    },
+    "55-1119_GoldenwestOc_As_BuiltWM.pdf": {
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "project_name": "55-1119_GoldenwestOc_As_BuiltWM",
+      "phase": null,
+      "engineer_of_record": null,
+      "date": null,
+      "categories": [
+        "Bridges",
+        "Foundations",
+        "Structural Analysis"
+      ],
+      "total_pages": 75,
+      "indexed_at": "2026-06-01T15:02:18.299347"
+    },
+    "55-1121_MagnoliaOc_As_BuiltWM.pdf": {
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
+      "phase": null,
+      "engineer_of_record": null,
+      "date": "03/14/12",
+      "categories": [
+        "Bridges",
+        "General Structural"
+      ],
+      "total_pages": 67,
+      "indexed_at": "2026-06-01T15:40:19.306056"
+    },
+    "55-1127_WestminsterOC_As_Built.pdf": {
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built",
+      "phase": null,
+      "engineer_of_record": null,
+      "date": "12/16/2022",
+      "categories": [
+        "Bridges",
+        "Structural Analysis"
+      ],
+      "total_pages": 69,
+      "indexed_at": "2026-06-01T16:10:23.060387"
+    },
+    "Fresno 180 Ramp.pdf": {
+      "file_name": "Fresno 180 Ramp.pdf",
+      "file_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Public Projects\\Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp",
+      "phase": null,
+      "engineer_of_record": null,
+      "date": null,
+      "categories": [
+        "Bridges",
+        "Foundations",
+        "Structural Analysis",
+        "General Structural"
+      ],
+      "total_pages": 27,
+      "indexed_at": "2026-06-01T16:12:46.208720"
+    }
+  },
+  "last_updated": "2026-06-01T16:12:46.208741"
+}

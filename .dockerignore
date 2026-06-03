@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
+
+# Local data
+vector_db/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+*.md
+!README.md
+
+# Temporary files
+*.tmp
+cleanup_metadata.py
+check_*.py
+debug_*.py
+investigate_*.py
+remove_orphaned_vectors.py
+test_*.py
+topology_analyzer.py
+training_dashboard.html
+auto_training.py
+batch_enrich.ps1
+enrich_all_projects.ps1
+update_remaining_pdfs.ps1

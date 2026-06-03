@@ -1,0 +1,2440 @@
+{
+  "training_file": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\Training Materials\\search classifications.md",
+  "taxonomy_paths": {
+    "project": [
+      [
+        "General Plan",
+        "Project information"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "Name of project"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "date of drawing"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "location"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "owner's information"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "designer's information"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "Engineer on record (EOR)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "Unit"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Advanced Planning study (5%)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Preliminary Study (15%)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Type selection, PED (30%)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Detail Engineering Design (65%)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "95%"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Final Engineering Design (100%)"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "Post 100%"
+      ],
+      [
+        "General Plan",
+        "Project information",
+        "% of plans",
+        "As-built"
+      ],
+      [
+        "General Plan",
+        "structure type"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "CIP Concrete Box Girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "CIP PS/PT Box Girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "CIP concrete slab"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "precast Concrete Box"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "Precast U tub"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "Precast I girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "Precast slab panel"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "Precast beam"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "Cable stayed"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "suspension"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Concrete",
+        "arch"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Truss"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Tied arch"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Plate girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "W girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Steel I girder"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Isotropic box"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "Cable stayed"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Steel",
+        "suspension"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Composite"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "&#x20;Superstructure",
+        "Timber"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "CIP concrete"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "Precast Concrete"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "Steel"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "arch"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "masonry"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "pylon"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Substructure",
+        "pier wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "Large diameter drilled shaft (5' or larger CIDH)"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "CIDH pile - drilled shaft"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "pile extension"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "pile group with pile cap"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "link beam"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "CISS (Cast in steel shell)"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "Steel pipe"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "steel I"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "spread footing"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "caisson"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "bridge",
+        "Foundation",
+        "isolation casing"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Tunnel"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Tunnel",
+        "Cut and cover"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Tunnel",
+        "bored"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Tunnel",
+        "corrugated metal"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 1"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 2"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 4"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 5"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 6"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Caltrans Cast in place concrete",
+        "Type 7"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "U shaped Wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Shoulder pile wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "secant wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Soil nail wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Tie back wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "Corrugated metal wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "stone wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "masonry wall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Retaining wall",
+        "cast in place (CIP) concrete"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Culvert"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Culvert",
+        "Pipe"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Culvert",
+        "concrete cox"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Culvert",
+        "corrugated metal"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "soundwall"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "monument"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "Sign pole"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "building"
+      ],
+      [
+        "General Plan",
+        "structure type",
+        "station"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Abutment numbers"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Bent numbers"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Pier numbers"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Span length"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Span connections (i.e. connect bent 2 to bent 3)"
+      ],
+      [
+        "General Plan",
+        "Structure information for cross referencing",
+        "Elevation and control line inforamtion"
+      ],
+      [
+        "General Note sheet",
+        "Design code"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "AASHTO"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "AASHTO",
+        "LRFD BDS"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "AASHTO",
+        "Guide spec for pedestrian"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "AASHTO",
+        "Steel"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "AASHTO",
+        "Seismic"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "CSA Canadian code"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "Caltrans"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "Caltrans",
+        "amendment to AASHTO"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "Caltrans",
+        "Seismic Design Criteria (SDC)"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "International building code"
+      ],
+      [
+        "General Note sheet",
+        "Design code",
+        "Euro code"
+      ],
+      [
+        "General Note sheet",
+        "Seismic"
+      ],
+      [
+        "General Note sheet",
+        "Seismic",
+        "PGA"
+      ],
+      [
+        "General Note sheet",
+        "Seismic",
+        "zone"
+      ],
+      [
+        "General Note sheet",
+        "Live load"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Pedestrian"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Pedestrian",
+        "H10"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Pedestrian",
+        "90psf"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Vehicular"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Vehicular",
+        "HL-93"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Vehicular",
+        "Permit"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Vehicular",
+        "H20"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Vehicular",
+        "H40"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Rail"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Rail",
+        "Coper 80"
+      ],
+      [
+        "General Note sheet",
+        "Live load",
+        "Rail",
+        "Light rail"
+      ],
+      [
+        "General Note sheet",
+        "Index to plans: can be cross referenced to individual sheet name on title block"
+      ]
+    ],
+    "page": [
+      [
+        "title block",
+        "sheet name: can be used for cross reference details and call out and notes. For example, notes on a detail that reference to a sheet, should link the detail to referenced sheet."
+      ],
+      [
+        "title block",
+        "detail/section: each detail and section is cut from another drawing (elevation, plan, or another section or detail). The origin of the cut would call out the sheet and detail/section number referencing it. Need to link and anlyze these information."
+      ],
+      [
+        "title block",
+        "notes on sheet: notes would supplement information of the details and sections on this sheet. It tells additional information of the detail and section, include but not limited to referring to other sheet and other details. Need to link and analyze these information."
+      ]
+    ]
+  },
+  "lexicon": {
+    "project": {
+      "General Plan > Project information": [
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > Name of project": [
+        "general",
+        "general plan",
+        "information",
+        "name",
+        "name of project",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > date of drawing": [
+        "date",
+        "date of drawing",
+        "drawing",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > location": [
+        "general",
+        "general plan",
+        "information",
+        "location",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > owner's information": [
+        "general",
+        "general plan",
+        "information",
+        "owner",
+        "owner's information",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > designer's information": [
+        "designer",
+        "designer's information",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > Engineer on record (EOR)": [
+        "engineer",
+        "engineer on record (eor)",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "project",
+        "project information",
+        "record"
+      ],
+      "General Plan > Project information > Unit": [
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "project",
+        "project information",
+        "unit"
+      ],
+      "General Plan > Project information > % of plans": [
+        "% of plans",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > % of plans > Advanced Planning study (5%)": [
+        "% of plans",
+        "advanced",
+        "advanced planning study (5%)",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "planning",
+        "plans",
+        "project",
+        "project information",
+        "study"
+      ],
+      "General Plan > Project information > % of plans > Preliminary Study (15%)": [
+        "% of plans",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "preliminary",
+        "preliminary study (15%)",
+        "project",
+        "project information",
+        "study"
+      ],
+      "General Plan > Project information > % of plans > Type selection, PED (30%)": [
+        "% of plans",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information",
+        "selection",
+        "type",
+        "type selection, ped (30%)"
+      ],
+      "General Plan > Project information > % of plans > Detail Engineering Design (65%)": [
+        "% of plans",
+        "design",
+        "detail",
+        "detail engineering design (65%)",
+        "engineering",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > % of plans > 95%": [
+        "% of plans",
+        "95%",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > % of plans > Final Engineering Design (100%)": [
+        "% of plans",
+        "design",
+        "engineering",
+        "final",
+        "final engineering design (100%)",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > % of plans > Post 100%": [
+        "% of plans",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "post",
+        "post 100%",
+        "project",
+        "project information"
+      ],
+      "General Plan > Project information > % of plans > As-built": [
+        "% of plans",
+        "as-built",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "plans",
+        "project",
+        "project information"
+      ],
+      "General Plan > structure type": [
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > CIP Concrete Box Girder": [
+        "bridge",
+        "cip concrete box girder",
+        "concrete",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > CIP PS/PT Box Girder": [
+        "bridge",
+        "cip ps/pt box girder",
+        "concrete",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "ps/pt",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > CIP concrete slab": [
+        "bridge",
+        "cip concrete slab",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "slab",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > precast Concrete Box": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "precast",
+        "precast concrete box",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > Precast U tub": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "precast",
+        "precast u tub",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > Precast I girder": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "precast",
+        "precast i girder",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > Precast slab panel": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "panel",
+        "plan",
+        "precast",
+        "precast slab panel",
+        "slab",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > Precast beam": [
+        "beam",
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "precast",
+        "precast beam",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > Cable stayed": [
+        "bridge",
+        "cable",
+        "cable stayed",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "stayed",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > suspension": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "suspension",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Concrete > arch": [
+        "arch",
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Truss": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "truss",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Tied arch": [
+        "arch",
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "tied",
+        "tied arch",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Plate girder": [
+        "bridge",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "plate",
+        "plate girder",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > W girder": [
+        "bridge",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type",
+        "w girder"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Steel I girder": [
+        "bridge",
+        "general",
+        "general plan",
+        "girder",
+        "plan",
+        "steel",
+        "steel i girder",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Isotropic box": [
+        "bridge",
+        "general",
+        "general plan",
+        "isotropic",
+        "isotropic box",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > Cable stayed": [
+        "bridge",
+        "cable",
+        "cable stayed",
+        "general",
+        "general plan",
+        "plan",
+        "stayed",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Steel > suspension": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "superstructure",
+        "suspension",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Composite": [
+        "bridge",
+        "composite",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > &#x20;Superstructure > Timber": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "superstructure",
+        "timber",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > CIP concrete": [
+        "bridge",
+        "cip concrete",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > Precast Concrete": [
+        "bridge",
+        "concrete",
+        "general",
+        "general plan",
+        "plan",
+        "precast",
+        "precast concrete",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > Steel": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > arch": [
+        "arch",
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > masonry": [
+        "bridge",
+        "general",
+        "general plan",
+        "masonry",
+        "plan",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > pylon": [
+        "bridge",
+        "general",
+        "general plan",
+        "plan",
+        "pylon",
+        "structure",
+        "structure type",
+        "substructure",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Substructure > pier wall": [
+        "bridge",
+        "general",
+        "general plan",
+        "pier",
+        "pier wall",
+        "plan",
+        "structure",
+        "structure type",
+        "substructure",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > bridge > Foundation": [
+        "bridge",
+        "foundation",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > Large diameter drilled shaft (5' or larger CIDH)": [
+        "bridge",
+        "cidh",
+        "diameter",
+        "drilled",
+        "foundation",
+        "general",
+        "general plan",
+        "large",
+        "large diameter drilled shaft (5' or larger cidh)",
+        "larger",
+        "plan",
+        "shaft",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > CIDH pile - drilled shaft": [
+        "bridge",
+        "cidh",
+        "cidh pile - drilled shaft",
+        "drilled",
+        "foundation",
+        "general",
+        "general plan",
+        "pile",
+        "plan",
+        "shaft",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > pile extension": [
+        "bridge",
+        "extension",
+        "foundation",
+        "general",
+        "general plan",
+        "pile",
+        "pile extension",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > pile group with pile cap": [
+        "bridge",
+        "foundation",
+        "general",
+        "general plan",
+        "group",
+        "pile",
+        "pile group with pile cap",
+        "plan",
+        "structure",
+        "structure type",
+        "type",
+        "with"
+      ],
+      "General Plan > structure type > bridge > Foundation > link beam": [
+        "beam",
+        "bridge",
+        "foundation",
+        "general",
+        "general plan",
+        "link",
+        "link beam",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > CISS (Cast in steel shell)": [
+        "bridge",
+        "cast",
+        "ciss",
+        "ciss (cast in steel shell)",
+        "foundation",
+        "general",
+        "general plan",
+        "plan",
+        "shell",
+        "steel",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > Steel pipe": [
+        "bridge",
+        "foundation",
+        "general",
+        "general plan",
+        "pipe",
+        "plan",
+        "steel",
+        "steel pipe",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > steel I": [
+        "bridge",
+        "foundation",
+        "general",
+        "general plan",
+        "plan",
+        "steel",
+        "steel i",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > spread footing": [
+        "bridge",
+        "footing",
+        "foundation",
+        "general",
+        "general plan",
+        "plan",
+        "spread",
+        "spread footing",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > caisson": [
+        "bridge",
+        "caisson",
+        "foundation",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > bridge > Foundation > isolation casing": [
+        "bridge",
+        "casing",
+        "foundation",
+        "general",
+        "general plan",
+        "isolation",
+        "isolation casing",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > Tunnel": [
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "tunnel",
+        "type"
+      ],
+      "General Plan > structure type > Tunnel > Cut and cover": [
+        "cover",
+        "cut and cover",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "tunnel",
+        "type"
+      ],
+      "General Plan > structure type > Tunnel > bored": [
+        "bored",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "tunnel",
+        "type"
+      ],
+      "General Plan > structure type > Tunnel > corrugated metal": [
+        "corrugated",
+        "corrugated metal",
+        "general",
+        "general plan",
+        "metal",
+        "plan",
+        "structure",
+        "structure type",
+        "tunnel",
+        "type"
+      ],
+      "General Plan > structure type > Retaining wall": [
+        "general",
+        "general plan",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 1": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 1",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 2": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 2",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 4": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 4",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 5": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 5",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 6": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 6",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Caltrans Cast in place concrete > Type 7": [
+        "caltrans",
+        "caltrans cast in place concrete",
+        "cast",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "type 7",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > U shaped Wall": [
+        "general",
+        "general plan",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "shaped",
+        "structure",
+        "structure type",
+        "type",
+        "u shaped wall",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Shoulder pile wall": [
+        "general",
+        "general plan",
+        "pile",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "shoulder",
+        "shoulder pile wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > secant wall": [
+        "general",
+        "general plan",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "secant",
+        "secant wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Soil nail wall": [
+        "general",
+        "general plan",
+        "nail",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "soil",
+        "soil nail wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Tie back wall": [
+        "back",
+        "general",
+        "general plan",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "tie back wall",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > Corrugated metal wall": [
+        "corrugated",
+        "corrugated metal wall",
+        "general",
+        "general plan",
+        "metal",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > stone wall": [
+        "general",
+        "general plan",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "stone",
+        "stone wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > masonry wall": [
+        "general",
+        "general plan",
+        "masonry",
+        "masonry wall",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Retaining wall > cast in place (CIP) concrete": [
+        "cast",
+        "cast in place (cip) concrete",
+        "concrete",
+        "general",
+        "general plan",
+        "place",
+        "plan",
+        "retaining",
+        "retaining wall",
+        "structure",
+        "structure type",
+        "type",
+        "wall"
+      ],
+      "General Plan > structure type > Culvert": [
+        "culvert",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > Culvert > Pipe": [
+        "culvert",
+        "general",
+        "general plan",
+        "pipe",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > Culvert > concrete cox": [
+        "concrete",
+        "concrete cox",
+        "culvert",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > Culvert > corrugated metal": [
+        "corrugated",
+        "corrugated metal",
+        "culvert",
+        "general",
+        "general plan",
+        "metal",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > soundwall": [
+        "general",
+        "general plan",
+        "plan",
+        "soundwall",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > monument": [
+        "general",
+        "general plan",
+        "monument",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > Sign pole": [
+        "general",
+        "general plan",
+        "plan",
+        "pole",
+        "sign",
+        "sign pole",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > building": [
+        "building",
+        "general",
+        "general plan",
+        "plan",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > structure type > station": [
+        "general",
+        "general plan",
+        "plan",
+        "station",
+        "structure",
+        "structure type",
+        "type"
+      ],
+      "General Plan > Structure information for cross referencing": [
+        "cross",
+        "general",
+        "general plan",
+        "information",
+        "plan",
+        "referencing",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Abutment numbers": [
+        "abutment",
+        "abutment numbers",
+        "cross",
+        "general",
+        "general plan",
+        "information",
+        "numbers",
+        "plan",
+        "referencing",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Bent numbers": [
+        "bent",
+        "bent numbers",
+        "cross",
+        "general",
+        "general plan",
+        "information",
+        "numbers",
+        "plan",
+        "referencing",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Pier numbers": [
+        "cross",
+        "general",
+        "general plan",
+        "information",
+        "numbers",
+        "pier",
+        "pier numbers",
+        "plan",
+        "referencing",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Span length": [
+        "cross",
+        "general",
+        "general plan",
+        "information",
+        "length",
+        "plan",
+        "referencing",
+        "span",
+        "span length",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Span connections (i.e. connect bent 2 to bent 3)": [
+        "bent",
+        "connect",
+        "connections",
+        "cross",
+        "general",
+        "general plan",
+        "i.e.",
+        "information",
+        "plan",
+        "referencing",
+        "span",
+        "span connections (i.e. connect bent 2 to bent 3)",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Plan > Structure information for cross referencing > Elevation and control line inforamtion": [
+        "control",
+        "cross",
+        "elevation",
+        "elevation and control line inforamtion",
+        "general",
+        "general plan",
+        "inforamtion",
+        "information",
+        "line",
+        "plan",
+        "referencing",
+        "structure",
+        "structure information for cross referencing"
+      ],
+      "General Note sheet > Design code": [
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > AASHTO": [
+        "aashto",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > AASHTO > LRFD BDS": [
+        "aashto",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "lrfd",
+        "lrfd bds",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > AASHTO > Guide spec for pedestrian": [
+        "aashto",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "guide",
+        "guide spec for pedestrian",
+        "note",
+        "pedestrian",
+        "sheet",
+        "spec"
+      ],
+      "General Note sheet > Design code > AASHTO > Steel": [
+        "aashto",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet",
+        "steel"
+      ],
+      "General Note sheet > Design code > AASHTO > Seismic": [
+        "aashto",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "seismic",
+        "sheet"
+      ],
+      "General Note sheet > Design code > CSA Canadian code": [
+        "canadian",
+        "code",
+        "csa canadian code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > Caltrans": [
+        "caltrans",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > Caltrans > amendment to AASHTO": [
+        "aashto",
+        "amendment",
+        "amendment to aashto",
+        "caltrans",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > Caltrans > Seismic Design Criteria (SDC)": [
+        "caltrans",
+        "code",
+        "criteria",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "note",
+        "seismic",
+        "seismic design criteria (sdc)",
+        "sheet"
+      ],
+      "General Note sheet > Design code > International building code": [
+        "building",
+        "code",
+        "design",
+        "design code",
+        "general",
+        "general note sheet",
+        "international",
+        "international building code",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Design code > Euro code": [
+        "code",
+        "design",
+        "design code",
+        "euro",
+        "euro code",
+        "general",
+        "general note sheet",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Seismic": [
+        "general",
+        "general note sheet",
+        "note",
+        "seismic",
+        "sheet"
+      ],
+      "General Note sheet > Seismic > PGA": [
+        "general",
+        "general note sheet",
+        "note",
+        "pga",
+        "seismic",
+        "sheet"
+      ],
+      "General Note sheet > Seismic > zone": [
+        "general",
+        "general note sheet",
+        "note",
+        "seismic",
+        "sheet",
+        "zone"
+      ],
+      "General Note sheet > Live load": [
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Pedestrian": [
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "pedestrian",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Pedestrian > H10": [
+        "general",
+        "general note sheet",
+        "h10",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "pedestrian",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Pedestrian > 90psf": [
+        "90psf",
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "pedestrian",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Vehicular": [
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "sheet",
+        "vehicular"
+      ],
+      "General Note sheet > Live load > Vehicular > HL-93": [
+        "general",
+        "general note sheet",
+        "hl-93",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "sheet",
+        "vehicular"
+      ],
+      "General Note sheet > Live load > Vehicular > Permit": [
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "permit",
+        "sheet",
+        "vehicular"
+      ],
+      "General Note sheet > Live load > Vehicular > H20": [
+        "general",
+        "general note sheet",
+        "h20",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "sheet",
+        "vehicular"
+      ],
+      "General Note sheet > Live load > Vehicular > H40": [
+        "general",
+        "general note sheet",
+        "h40",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "sheet",
+        "vehicular"
+      ],
+      "General Note sheet > Live load > Rail": [
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "rail",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Rail > Coper 80": [
+        "coper",
+        "coper 80",
+        "general",
+        "general note sheet",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "rail",
+        "sheet"
+      ],
+      "General Note sheet > Live load > Rail > Light rail": [
+        "general",
+        "general note sheet",
+        "light",
+        "light rail",
+        "live",
+        "live load",
+        "load",
+        "note",
+        "rail",
+        "sheet"
+      ],
+      "General Note sheet > Index to plans: can be cross referenced to individual sheet name on title block": [
+        "block",
+        "cross",
+        "general",
+        "general note sheet",
+        "index",
+        "index to plans: can be cross referenced to individual sheet name on title block",
+        "individual",
+        "name",
+        "note",
+        "plans",
+        "referenced",
+        "sheet",
+        "title"
+      ]
+    },
+    "page": {
+      "title block > sheet name: can be used for cross reference details and call out and notes. For example, notes on a detail that reference to a sheet, should link the detail to referenced sheet.": [
+        "block",
+        "call",
+        "cross",
+        "detail",
+        "details",
+        "example",
+        "link",
+        "name",
+        "notes",
+        "notes.",
+        "reference",
+        "referenced",
+        "sheet",
+        "sheet name: can be used for cross reference details and call out and notes. for example, notes on a detail that reference to a sheet, should link the detail to referenced sheet.",
+        "sheet.",
+        "should",
+        "that",
+        "title",
+        "title block",
+        "used"
+      ],
+      "title block > detail/section: each detail and section is cut from another drawing (elevation, plan, or another section or detail). The origin of the cut would call out the sheet and detail/section number referencing it. Need to link and anlyze these information.": [
+        "anlyze",
+        "another",
+        "block",
+        "call",
+        "detail",
+        "detail/section",
+        "detail/section: each detail and section is cut from another drawing (elevation, plan, or another section or detail). the origin of the cut would call out the sheet and detail/section number referencing it. need to link and anlyze these information.",
+        "drawing",
+        "each",
+        "elevation",
+        "from",
+        "information.",
+        "link",
+        "need",
+        "number",
+        "origin",
+        "plan",
+        "referencing",
+        "section",
+        "sheet",
+        "these",
+        "title",
+        "title block",
+        "would"
+      ],
+      "title block > notes on sheet: notes would supplement information of the details and sections on this sheet. It tells additional information of the detail and section, include but not limited to referring to other sheet and other details. Need to link and analyze these information.": [
+        "additional",
+        "analyze",
+        "block",
+        "detail",
+        "details",
+        "details.",
+        "include",
+        "information",
+        "information.",
+        "limited",
+        "link",
+        "need",
+        "notes",
+        "notes on sheet: notes would supplement information of the details and sections on this sheet. it tells additional information of the detail and section, include but not limited to referring to other sheet and other details. need to link and analyze these information.",
+        "other",
+        "referring",
+        "section",
+        "sections",
+        "sheet",
+        "sheet.",
+        "supplement",
+        "tells",
+        "these",
+        "this",
+        "title",
+        "title block",
+        "would"
+      ]
+    }
+  },
+  "stats": {
+    "project_paths": 128,
+    "page_paths": 3,
+    "project_labels": 128,
+    "page_labels": 3
+  }
+}

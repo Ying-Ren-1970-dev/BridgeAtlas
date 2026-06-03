@@ -1,0 +1,576 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "167/168 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "1980",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN",
+        "sheet_number": "2",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [
+          "SECTION A-A",
+          "SECTION B-B",
+          "ELEVATION"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 1,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/180 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2006",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "1",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 2,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/180 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": "R. L. SHAFFER",
+        "engineering_firm": "CALTRANS",
+        "project_year": null,
+        "other_info": "DECK CONTOURS"
+      },
+      "plan_type": {
+        "primary_type": "Plan",
+        "sheet_title": "PLAN",
+        "sheet_number": "SHEET 1 OF 1",
+        "scale": null,
+        "revision": "AS BUILT",
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "deck"
+        ],
+        "detail_types": [
+          "CAMBER DIAGRAM",
+          "SUPER ELEVATION DIAGRAM"
+        ],
+        "grid_references": [
+          "BENT 1",
+          "BENT 2",
+          "BENT 3",
+          "BENT 4"
+        ]
+      }
+    },
+    "page_number": 3,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/180 CONNECTOR OVERCROSSING",
+        "project_number": "06-FRE-168-R25.3/R25.9",
+        "client": "STATE OF CALIFORNIA",
+        "location": "FRESNO COUNTY",
+        "engineer_on_record": "JAMES E. ROBERTS",
+        "engineering_firm": "CALTRANS",
+        "project_year": "1998",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Foundation Plan",
+        "sheet_title": "OVER EXCAVATION DIAGRAM",
+        "sheet_number": "S-1",
+        "scale": "1:200",
+        "revision": null,
+        "date": "12-15-98"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "footing"
+        ],
+        "detail_types": [
+          "over excavation"
+        ],
+        "grid_references": [
+          "STA 25+00",
+          "STA 26+00"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/160 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2000",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Abutment Plan",
+        "sheet_title": "ABUTMENT 1 LAYOUT",
+        "sheet_number": null,
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "wingwall"
+        ],
+        "detail_types": [
+          "elevation",
+          "plan"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 5,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/180 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2001",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Detail Sheet",
+        "sheet_title": "BENT 2 AND 4 DETAILS",
+        "sheet_number": "4",
+        "scale": null,
+        "revision": null,
+        "date": "2001"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "column",
+          "footing"
+        ],
+        "detail_types": [
+          "Hood Detail",
+          "Splice Detail",
+          "Flare Detail",
+          "Footing Plan",
+          "Elevation"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 11,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/168 CONNECTOR OVERCROSSING",
+        "project_number": "06-484704",
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2000",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Bent & Details",
+        "sheet_title": "BENT 2 & DETAILS NO. 2",
+        "sheet_number": "S-2",
+        "scale": "1:20",
+        "revision": "AS BUILT",
+        "date": "11-14-00"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "column"
+        ],
+        "detail_types": [
+          "Section A-A",
+          "Section B-B",
+          "Plan - Bent 2&4",
+          "Elevation"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 12,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "168/160 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": "J. L. HARRIS",
+        "engineering_firm": "CALTRANS",
+        "project_year": "2001",
+        "other_info": "AS BUILT"
+      },
+      "plan_type": {
+        "primary_type": "Bent Detail",
+        "sheet_title": "BENT 3 DETAILS NO. 1",
+        "sheet_number": null,
+        "scale": "1:20",
+        "revision": null,
+        "date": "06-26-2001"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "column",
+          "footing"
+        ],
+        "detail_types": [
+          "COLUMN PIN DETAIL",
+          "SECTION A-A",
+          "SECTION B-B",
+          "SECTION C-C",
+          "SECTION D-D",
+          "BENT 3 ELEVATION",
+          "FOOTING PLAN"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 13,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "STATE OF CALIFORNIA",
+        "project_number": "04-ALA-580-17.0/17.6",
+        "client": null,
+        "location": "ALAMEDA COUNTY",
+        "engineer_on_record": "R. M. BROWN",
+        "engineering_firm": "CALTRANS",
+        "project_year": "1998",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Bent Details",
+        "sheet_title": "BENT DETAILS NO. 2",
+        "sheet_number": "S-2",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "6-16-98"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "bent",
+          "column",
+          "footing"
+        ],
+        "detail_types": [
+          "Section A-A",
+          "Section B-B",
+          "Plan",
+          "Elevation"
+        ],
+        "grid_references": [
+          "Bent 16"
+        ]
+      }
+    },
+    "page_number": 14,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "CONNECTOR OVERCROSSING",
+        "project_number": "04-ALA-880-31.6/32.6",
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2017",
+        "other_info": "AS BUILT"
+      },
+      "plan_type": {
+        "primary_type": "Typical Sections",
+        "sheet_title": "TYPICAL SECTIONS",
+        "sheet_number": "168/169",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [
+          "Typical Section",
+          "Detail"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 15,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "LOG OF TEST BORINGS",
+        "project_number": "04-ALA-880-31.8/34.6",
+        "client": "STATE OF CALIFORNIA",
+        "location": "ALAMEDA COUNTY",
+        "engineer_on_record": null,
+        "engineering_firm": "GEOCON CONSULTANTS, INC.",
+        "project_year": "2000",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 3 OF 7",
+        "sheet_number": "B-3",
+        "scale": null,
+        "revision": "A",
+        "date": "12-15-2000"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 23,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "160/168 CONNECTOR - VICEROY CROSSING",
+        "project_number": "08-0K710",
+        "client": "STATE OF CALIFORNIA",
+        "location": "RIVERSIDE COUNTY",
+        "engineer_on_record": null,
+        "engineering_firm": "CALTRANS",
+        "project_year": "2003",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "LOG OF TEST BORINGS",
+        "sheet_title": "LOG OF TEST BORINGS 1 OF 7",
+        "sheet_number": "6",
+        "scale": null,
+        "revision": null,
+        "date": "07-15-2003"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 24,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "166/480 CONNECTOR OVERCROSSING",
+        "project_number": "04-012024",
+        "client": null,
+        "location": "STATE OF CALIFORNIA",
+        "engineer_on_record": "J. L. BULL",
+        "engineering_firm": "RMA GROUP",
+        "project_year": "2014",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 6 OF 6",
+        "sheet_number": "6",
+        "scale": null,
+        "revision": null,
+        "date": "10-14-2014"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 25,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "108/210 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": "JAMES E. ROBERTS",
+        "engineering_firm": "STATE OF CALIFORNIA",
+        "project_year": "1970",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 6 OF 6",
+        "sheet_number": "6",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 26,
+    "filename": "Fresno 180 Ramp.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "167/4 CONNECTOR OVERCROSSING",
+        "project_number": null,
+        "client": null,
+        "location": "CALIFORNIA",
+        "engineer_on_record": null,
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Boring",
+        "sheet_title": "LOG OF TEST BORING 7 OF 7",
+        "sheet_number": "B5M-1846",
+        "scale": null,
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": false,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 27,
+    "filename": "Fresno 180 Ramp.pdf"
+  }
+]

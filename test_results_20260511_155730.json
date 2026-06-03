@@ -1,0 +1,3999 @@
+{
+  "timestamp": "2026-05-11T15:57:30.404070",
+  "total_scenarios": 172,
+  "duration_seconds": 649.4374449253082,
+  "metrics": {
+    "total_tests": 172,
+    "passed": 0,
+    "failed": 172,
+    "partial": 0,
+    "precision_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "recall_scores": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "response_times": [
+      5.451911449432373,
+      3.9351625442504883,
+      3.704533338546753,
+      4.049238204956055,
+      5.831289052963257,
+      3.7608134746551514,
+      3.7370424270629883,
+      3.951547145843506,
+      3.9773170948028564,
+      3.7391936779022217,
+      3.7703065872192383,
+      3.9322056770324707,
+      3.583815097808838,
+      3.573662042617798,
+      3.6686277389526367,
+      3.683631658554077,
+      3.4540321826934814,
+      3.584434986114502,
+      3.5525357723236084,
+      3.525989532470703,
+      3.7863175868988037,
+      3.6866025924682617,
+      3.552008628845215,
+      3.679353952407837,
+      3.909825563430786,
+      3.7439663410186768,
+      3.724531650543213,
+      3.461552858352661,
+      3.651960849761963,
+      3.4393532276153564,
+      3.5578973293304443,
+      3.6942646503448486,
+      3.57519268989563,
+      3.6994826793670654,
+      3.75046706199646,
+      3.5223002433776855,
+      3.625767469406128,
+      3.611464023590088,
+      3.444634199142456,
+      3.4874982833862305,
+      3.6827785968780518,
+      3.6550803184509277,
+      3.6295392513275146,
+      3.501352310180664,
+      3.7025585174560547,
+      3.925841808319092,
+      3.7046878337860107,
+      3.455458402633667,
+      3.619197130203247,
+      3.5164103507995605,
+      3.688411235809326,
+      3.5567574501037598,
+      4.281125068664551,
+      3.6881914138793945,
+      3.553607702255249,
+      3.649876117706299,
+      3.6108860969543457,
+      3.7217259407043457,
+      3.634368896484375,
+      3.6237375736236572,
+      3.9273550510406494,
+      3.865140199661255,
+      3.438633441925049,
+      3.608374834060669,
+      3.438539505004883,
+      3.5133888721466064,
+      3.617992877960205,
+      3.5893781185150146,
+      3.574756622314453,
+      3.473177194595337,
+      3.538154363632202,
+      3.5048813819885254,
+      3.6529557704925537,
+      3.586737632751465,
+      3.6408028602600098,
+      3.839016914367676,
+      3.600172758102417,
+      3.534536838531494,
+      3.5130600929260254,
+      3.5711097717285156,
+      3.655012607574463,
+      3.76358962059021,
+      3.563002824783325,
+      3.736825466156006,
+      3.6609396934509277,
+      3.5983009338378906,
+      3.932971239089966,
+      3.7020437717437744,
+      3.6456799507141113,
+      3.845209836959839,
+      3.6773996353149414,
+      3.641489028930664,
+      3.5659406185150146,
+      3.5400402545928955,
+      3.531399965286255,
+      3.679767370223999,
+      3.5522029399871826,
+      3.417093276977539,
+      3.594395399093628,
+      3.4465231895446777,
+      3.5167624950408936,
+      3.547020435333252,
+      3.6343095302581787,
+      3.6279780864715576,
+      3.5896103382110596,
+      3.6507482528686523,
+      3.4286649227142334,
+      4.819503545761108,
+      3.7151663303375244,
+      3.6576638221740723,
+      3.4498744010925293,
+      3.5986998081207275,
+      3.5502424240112305,
+      3.5120980739593506,
+      3.517070770263672,
+      3.7442705631256104,
+      3.6173150539398193,
+      3.4903650283813477,
+      3.7631494998931885,
+      3.9555296897888184,
+      3.4373300075531006,
+      3.743594169616699,
+      3.4218032360076904,
+      3.5964300632476807,
+      3.601966142654419,
+      3.60252046585083,
+      3.8573644161224365,
+      3.54746150970459,
+      3.630311965942383,
+      3.626797676086426,
+      3.5067055225372314,
+      3.699338436126709,
+      3.6109039783477783,
+      3.7793121337890625,
+      3.612797260284424,
+      3.8532073497772217,
+      4.115842342376709,
+      3.7360849380493164,
+      3.680354595184326,
+      3.5308408737182617,
+      3.6289587020874023,
+      3.8014323711395264,
+      3.550776243209839,
+      3.6783769130706787,
+      3.6668710708618164,
+      3.670548677444458,
+      3.7596349716186523,
+      3.610546112060547,
+      3.433948040008545,
+      3.6760306358337402,
+      3.704434633255005,
+      3.6560981273651123,
+      3.432856321334839,
+      3.515521764755249,
+      3.4665963649749756,
+      3.888263463973999,
+      3.616441488265991,
+      3.6695613861083984,
+      3.4297564029693604,
+      3.625528335571289,
+      3.6350181102752686,
+      3.704216718673706,
+      3.5455613136291504,
+      3.7270848751068115,
+      3.6518213748931885,
+      3.705029249191284,
+      3.653885841369629,
+      3.6056158542633057,
+      3.653355360031128,
+      3.891713857650757,
+      3.497020721435547,
+      3.421964406967163
+    ],
+    "avg_precision": 0.0,
+    "avg_recall": 0.0,
+    "avg_response_time": 3.674434861471487,
+    "pass_rate": 0.0
+  },
+  "results": [
+    {
+      "scenario_id": 1,
+      "scenario_type": "direct_element",
+      "query": "R/C Slab",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 5.451911449432373,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 2,
+      "scenario_type": "direct_element",
+      "query": "R/C Box Girder",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.9351625442504883,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 3,
+      "scenario_type": "direct_element",
+      "query": "Bents",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.704533338546753,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 4,
+      "scenario_type": "direct_element",
+      "query": "Abutments",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 4.049238204956055,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 5,
+      "scenario_type": "direct_element",
+      "query": "Retaining Wall",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 5.831289052963257,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 6,
+      "scenario_type": "direct_element",
+      "query": "Shear Keys",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7608134746551514,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 7,
+      "scenario_type": "direct_element",
+      "query": "Not specified",
+      "expected_pages": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7370424270629883,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 8,
+      "scenario_type": "direct_element",
+      "query": "Span lengths between bents",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.951547145843506,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 9,
+      "scenario_type": "direct_element",
+      "query": "Vertical clearance",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.9773170948028564,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 10,
+      "scenario_type": "direct_element",
+      "query": "unknown",
+      "expected_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7391936779022217,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 11,
+      "scenario_type": "direct_element",
+      "query": "CIDH Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7703065872192383,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 12,
+      "scenario_type": "direct_element",
+      "query": "Tapered Hexagonal Column",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.9322056770324707,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 13,
+      "scenario_type": "direct_element",
+      "query": "CIP Reinforced Concrete Box Girder and Slab",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.583815097808838,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 14,
+      "scenario_type": "direct_element",
+      "query": "Reinforced Concrete Retaining Wall",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.573662042617798,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 15,
+      "scenario_type": "direct_element",
+      "query": "Pedestrian Railing Type A and B",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6686277389526367,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 16,
+      "scenario_type": "direct_element",
+      "query": "Pile",
+      "expected_pages": [
+        2,
+        3,
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2,
+        3,
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.683631658554077,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 17,
+      "scenario_type": "direct_element",
+      "query": "Column-to-Pile Connection",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4540321826934814,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 18,
+      "scenario_type": "direct_element",
+      "query": "Concrete",
+      "expected_pages": [
+        2,
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2,
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.584434986114502,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 19,
+      "scenario_type": "direct_element",
+      "query": "Pedestrian Railing",
+      "expected_pages": [
+        2,
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2,
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5525357723236084,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 20,
+      "scenario_type": "direct_element",
+      "query": "Column and Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.525989532470703,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 21,
+      "scenario_type": "direct_element",
+      "query": "Slab and Girder",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7863175868988037,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 22,
+      "scenario_type": "direct_element",
+      "query": "Grade Percentages and Lengths",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6866025924682617,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 23,
+      "scenario_type": "direct_element",
+      "query": "M Line and Lighting",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.552008628845215,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 24,
+      "scenario_type": "direct_element",
+      "query": "CIDH Concrete Piles",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.679353952407837,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 25,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Bridge Footing",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.909825563430786,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 26,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Bridge",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7439663410186768,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 27,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Retaining Wall",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.724531650543213,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 28,
+      "scenario_type": "direct_element",
+      "query": "Isolation Casing",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.461552858352661,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 29,
+      "scenario_type": "direct_element",
+      "query": "Joint Armor for Pedestrian Walkways",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.651960849761963,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 30,
+      "scenario_type": "direct_element",
+      "query": "Redwood Forest Cutouts",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4393532276153564,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 31,
+      "scenario_type": "direct_element",
+      "query": "Casing",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5578973293304443,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 32,
+      "scenario_type": "direct_element",
+      "query": "Structural Concrete, Bridge (Polymer Fiber)",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6942646503448486,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 33,
+      "scenario_type": "direct_element",
+      "query": "Design",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.57519268989563,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 34,
+      "scenario_type": "direct_element",
+      "query": "Concrete strength",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6994826793670654,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 35,
+      "scenario_type": "direct_element",
+      "query": "Seismic Loading",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.75046706199646,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 36,
+      "scenario_type": "direct_element",
+      "query": "Design ARS Curve",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5223002433776855,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 37,
+      "scenario_type": "direct_element",
+      "query": "CIDH piles",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.625767469406128,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 38,
+      "scenario_type": "direct_element",
+      "query": "Driven piles",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.611464023590088,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 39,
+      "scenario_type": "direct_element",
+      "query": "Footings",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.444634199142456,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 40,
+      "scenario_type": "direct_element",
+      "query": "Columns",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4874982833862305,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 41,
+      "scenario_type": "direct_element",
+      "query": "Beams",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6827785968780518,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 42,
+      "scenario_type": "direct_element",
+      "query": "Walls",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6550803184509277,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 43,
+      "scenario_type": "direct_element",
+      "query": "Slabs",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6295392513275146,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 44,
+      "scenario_type": "direct_element",
+      "query": "Caps",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.501352310180664,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 45,
+      "scenario_type": "direct_element",
+      "query": "Shear keys",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7025585174560547,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 46,
+      "scenario_type": "direct_element",
+      "query": "Bearing pads",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.925841808319092,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 47,
+      "scenario_type": "direct_element",
+      "query": "N/A",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7046878337860107,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 48,
+      "scenario_type": "direct_element",
+      "query": "Abutment CIDH Piles",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.455458402633667,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 49,
+      "scenario_type": "direct_element",
+      "query": "Abutment Backwall",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.619197130203247,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 50,
+      "scenario_type": "direct_element",
+      "query": "Abutment Stem",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5164103507995605,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 51,
+      "scenario_type": "direct_element",
+      "query": "Abutment Return Wall",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.688411235809326,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 52,
+      "scenario_type": "direct_element",
+      "query": "Deck",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5567574501037598,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 53,
+      "scenario_type": "direct_element",
+      "query": "Structural Backfill",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 4.281125068664551,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 54,
+      "scenario_type": "direct_element",
+      "query": "CIDH Piles",
+      "expected_pages": [
+        6,
+        8,
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6,
+        8,
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6881914138793945,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 55,
+      "scenario_type": "direct_element",
+      "query": "Top of Wall",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.553607702255249,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 56,
+      "scenario_type": "direct_element",
+      "query": "Original Ground",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.649876117706299,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 57,
+      "scenario_type": "direct_element",
+      "query": "Settlement allowance",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6108860969543457,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 58,
+      "scenario_type": "direct_element",
+      "query": "Construction sequence",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7217259407043457,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 59,
+      "scenario_type": "direct_element",
+      "query": "Settlement duration",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.634368896484375,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 60,
+      "scenario_type": "direct_element",
+      "query": "72 inch CIDH Concrete Piling",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6237375736236572,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 61,
+      "scenario_type": "direct_element",
+      "query": "24 inch CIDH Concrete Piling",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.9273550510406494,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 62,
+      "scenario_type": "direct_element",
+      "query": "Bent",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.865140199661255,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 63,
+      "scenario_type": "direct_element",
+      "query": "Abutment",
+      "expected_pages": [
+        7,
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7,
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.438633441925049,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 64,
+      "scenario_type": "direct_element",
+      "query": "CIDH Concrete Piling",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.608374834060669,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 65,
+      "scenario_type": "direct_element",
+      "query": "Bent spacing and alignment",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.438539505004883,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 66,
+      "scenario_type": "direct_element",
+      "query": "Station numbers",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5133888721466064,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 67,
+      "scenario_type": "direct_element",
+      "query": "Retaining Walls",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.617992877960205,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 68,
+      "scenario_type": "direct_element",
+      "query": "24\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5893781185150146,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 69,
+      "scenario_type": "direct_element",
+      "query": "30\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.574756622314453,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 70,
+      "scenario_type": "direct_element",
+      "query": "72\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.473177194595337,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 71,
+      "scenario_type": "direct_element",
+      "query": "Steel",
+      "expected_pages": [
+        8,
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8,
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.538154363632202,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 72,
+      "scenario_type": "direct_element",
+      "query": "Cut-off Elevations",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5048813819885254,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 73,
+      "scenario_type": "direct_element",
+      "query": "Design tip elevations for abutments",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6529557704925537,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 74,
+      "scenario_type": "direct_element",
+      "query": "Design tip elevations for bents",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.586737632751465,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 75,
+      "scenario_type": "direct_element",
+      "query": "24\" CIDH (Type I Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6408028602600098,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 76,
+      "scenario_type": "direct_element",
+      "query": "72\" CIDH (Type II Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.839016914367676,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 77,
+      "scenario_type": "direct_element",
+      "query": "30\" CIDH (Type II Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.600172758102417,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 78,
+      "scenario_type": "direct_element",
+      "query": "Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.534536838531494,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 79,
+      "scenario_type": "direct_element",
+      "query": "Pile Cut-off Elevation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5130600929260254,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 80,
+      "scenario_type": "direct_element",
+      "query": "Pile Design Tip Elevation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5711097717285156,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 81,
+      "scenario_type": "direct_element",
+      "query": "Pile Nominal Resistance",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.655012607574463,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 82,
+      "scenario_type": "direct_element",
+      "query": "Pile Tension",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.76358962059021,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 83,
+      "scenario_type": "direct_element",
+      "query": "Pile Specified Steel Elevation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.563002824783325,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 84,
+      "scenario_type": "direct_element",
+      "query": "Bearing Pads",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.736825466156006,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 85,
+      "scenario_type": "direct_element",
+      "query": "Pipe Pin (Steel Shear Key)",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6609396934509277,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 86,
+      "scenario_type": "direct_element",
+      "query": "Backwall",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5983009338378906,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 87,
+      "scenario_type": "direct_element",
+      "query": "Return Wall",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.932971239089966,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 88,
+      "scenario_type": "direct_element",
+      "query": "Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7020437717437744,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 89,
+      "scenario_type": "direct_element",
+      "query": "24\" CIDH Pile",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6456799507141113,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 90,
+      "scenario_type": "direct_element",
+      "query": "Pipe Pin connection",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.845209836959839,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 91,
+      "scenario_type": "direct_element",
+      "query": "Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6773996353149414,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 92,
+      "scenario_type": "direct_element",
+      "query": "Expanded Polystyrene",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.641489028930664,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 93,
+      "scenario_type": "direct_element",
+      "query": "Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5659406185150146,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 94,
+      "scenario_type": "direct_element",
+      "query": "Pipe Pin",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5400402545928955,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 95,
+      "scenario_type": "direct_element",
+      "query": "Pile Spacing",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.531399965286255,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 96,
+      "scenario_type": "direct_element",
+      "query": "Joint Seal",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.679767370223999,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 97,
+      "scenario_type": "compound",
+      "query": "R/C Box Girder Bents",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5522029399871826,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 98,
+      "scenario_type": "compound",
+      "query": "R/C Box Girder Span lengths between bents",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.417093276977539,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 99,
+      "scenario_type": "compound",
+      "query": "Shear Keys Abutments",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.594395399093628,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 100,
+      "scenario_type": "compound",
+      "query": "Tapered Hexagonal Column CIDH Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4465231895446777,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 101,
+      "scenario_type": "compound",
+      "query": "Column-to-Pile Connection CIDH Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5167624950408936,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 102,
+      "scenario_type": "compound",
+      "query": "Column and Pile CIDH Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.547020435333252,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 103,
+      "scenario_type": "compound",
+      "query": "Columns CIDH piles",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6343095302581787,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 104,
+      "scenario_type": "compound",
+      "query": "24\" CIDH (Type I Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6279780864715576,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 105,
+      "scenario_type": "compound",
+      "query": "72\" CIDH (Type II Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5896103382110596,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 106,
+      "scenario_type": "compound",
+      "query": "30\" CIDH (Type II Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6507482528686523,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 107,
+      "scenario_type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Abutment",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4286649227142334,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 108,
+      "scenario_type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Bearing Pads",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 4.819503545761108,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 109,
+      "scenario_type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7151663303375244,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 110,
+      "scenario_type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6576638221740723,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 111,
+      "scenario_type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4498744010925293,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 112,
+      "scenario_type": "compound",
+      "query": "Pipe Pin connection Bearing Pads",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5986998081207275,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 113,
+      "scenario_type": "compound",
+      "query": "Pipe Pin connection Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5502424240112305,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 114,
+      "scenario_type": "compound",
+      "query": "Pipe Pin connection Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5120980739593506,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 115,
+      "scenario_type": "compound",
+      "query": "Pipe Pin connection Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.517070770263672,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 116,
+      "scenario_type": "compound",
+      "query": "Pipe Pin Bearing Pads",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7442705631256104,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 117,
+      "scenario_type": "specification",
+      "query": "Not specified",
+      "expected_pages": [
+        1,
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6173150539398193,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 118,
+      "scenario_type": "specification",
+      "query": "Grade Percentages and Lengths",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4903650283813477,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 119,
+      "scenario_type": "specification",
+      "query": "M Line and Lighting",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7631494998931885,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 120,
+      "scenario_type": "specification",
+      "query": "Design",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.9555296897888184,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 121,
+      "scenario_type": "specification",
+      "query": "Concrete strength",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4373300075531006,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 122,
+      "scenario_type": "specification",
+      "query": "Seismic Loading",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.743594169616699,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 123,
+      "scenario_type": "specification",
+      "query": "Design ARS Curve",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4218032360076904,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 124,
+      "scenario_type": "specification",
+      "query": "N/A",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5964300632476807,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 125,
+      "scenario_type": "specification",
+      "query": "Construction sequence",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.601966142654419,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 126,
+      "scenario_type": "specification",
+      "query": "Settlement duration",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.60252046585083,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 127,
+      "scenario_type": "detail",
+      "query": "unknown",
+      "expected_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.8573644161224365,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 128,
+      "scenario_type": "dimensional",
+      "query": "Span lengths between bents dimensions",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.54746150970459,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 129,
+      "scenario_type": "dimensional",
+      "query": "Vertical clearance dimensions",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.630311965942383,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 130,
+      "scenario_type": "dimensional",
+      "query": "Pedestrian Railing dimensions",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.626797676086426,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 131,
+      "scenario_type": "dimensional",
+      "query": "Column and Pile dimensions",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5067055225372314,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 132,
+      "scenario_type": "dimensional",
+      "query": "Slab and Girder dimensions",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.699338436126709,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 133,
+      "scenario_type": "dimensional",
+      "query": "Not specified dimensions",
+      "expected_pages": [
+        3
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        3
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6109039783477783,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 134,
+      "scenario_type": "dimensional",
+      "query": "N/A dimensions",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7793121337890625,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 135,
+      "scenario_type": "dimensional",
+      "query": "Top of Wall dimensions",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.612797260284424,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 136,
+      "scenario_type": "dimensional",
+      "query": "Original Ground dimensions",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.8532073497772217,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 137,
+      "scenario_type": "dimensional",
+      "query": "Settlement allowance dimensions",
+      "expected_pages": [
+        6
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        6
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 4.115842342376709,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 138,
+      "scenario_type": "dimensional",
+      "query": "Bent spacing and alignment dimensions",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7360849380493164,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 139,
+      "scenario_type": "dimensional",
+      "query": "Station numbers dimensions",
+      "expected_pages": [
+        7
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        7
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.680354595184326,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 140,
+      "scenario_type": "dimensional",
+      "query": "Cut-off Elevations dimensions",
+      "expected_pages": [
+        8
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        8
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5308408737182617,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 141,
+      "scenario_type": "dimensional",
+      "query": "Pile dimensions",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6289587020874023,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 142,
+      "scenario_type": "dimensional",
+      "query": "Pile Cut-off Elevation dimensions",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.8014323711395264,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 143,
+      "scenario_type": "relationship",
+      "query": "R/C Box Girder support system",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.550776243209839,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 144,
+      "scenario_type": "relationship",
+      "query": "R/C Box Girder support system",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6783769130706787,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 145,
+      "scenario_type": "relationship",
+      "query": "Shear Keys Abutments restraint",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6668710708618164,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 146,
+      "scenario_type": "relationship",
+      "query": "CIDH Pile foundation for Tapered Hexagonal Column",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.670548677444458,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 147,
+      "scenario_type": "relationship",
+      "query": "CIDH Pile foundation for Column-to-Pile Connection",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7596349716186523,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 148,
+      "scenario_type": "relationship",
+      "query": "CIDH Pile foundation for Column and Pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.610546112060547,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 149,
+      "scenario_type": "relationship",
+      "query": "CIDH piles foundation for Columns",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.433948040008545,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 150,
+      "scenario_type": "relationship",
+      "query": "24\" CIDH (Type I Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6760306358337402,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 151,
+      "scenario_type": "relationship",
+      "query": "72\" CIDH (Type II Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.704434633255005,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 152,
+      "scenario_type": "relationship",
+      "query": "30\" CIDH (Type II Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        9
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6560981273651123,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 153,
+      "scenario_type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) Abutment restraint",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.432856321334839,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 154,
+      "scenario_type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.515521764755249,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 155,
+      "scenario_type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4665963649749756,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 156,
+      "scenario_type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.888263463973999,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 157,
+      "scenario_type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.616441488265991,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 158,
+      "scenario_type": "variation",
+      "query": "drilled shaft",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6695613861083984,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 159,
+      "scenario_type": "variation",
+      "query": "cast-in-drilled-hole pile",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.4297564029693604,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 160,
+      "scenario_type": "variation",
+      "query": "CIDH foundation",
+      "expected_pages": [
+        2
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        2
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.625528335571289,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 161,
+      "scenario_type": "variation",
+      "query": "steel shear key",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6350181102752686,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 162,
+      "scenario_type": "variation",
+      "query": "pin connection",
+      "expected_pages": [
+        10
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        10
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.704216718673706,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 163,
+      "scenario_type": "variation",
+      "query": "pier",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.5455613136291504,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 164,
+      "scenario_type": "variation",
+      "query": "support bent",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.7270848751068115,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 165,
+      "scenario_type": "variation",
+      "query": "column bent",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6518213748931885,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 166,
+      "scenario_type": "variation",
+      "query": "end support",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.705029249191284,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 167,
+      "scenario_type": "variation",
+      "query": "abutment structure",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.653885841369629,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 168,
+      "scenario_type": "variation",
+      "query": "beam",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.6056158542633057,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 169,
+      "scenario_type": "variation",
+      "query": "bridge girder",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.653355360031128,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 170,
+      "scenario_type": "variation",
+      "query": "main beam",
+      "expected_pages": [
+        1
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        1
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.891713857650757,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 171,
+      "scenario_type": "variation",
+      "query": "elastomeric bearing",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.497020721435547,
+      "result_count": 0
+    },
+    {
+      "scenario_id": 172,
+      "scenario_type": "variation",
+      "query": "bearing support",
+      "expected_pages": [
+        4
+      ],
+      "actual_pages": [],
+      "missing_pages": [
+        4
+      ],
+      "extra_pages": [],
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "status": "failed",
+      "response_time": 3.421964406967163,
+      "result_count": 0
+    }
+  ],
+  "feedback": [
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "direct_element",
+      "affected_count": 96,
+      "issue": "Multiple failures in direct_element scenarios",
+      "recommendation": "Review topology extraction - element names may not match search terms",
+      "examples": [
+        "R/C Slab",
+        "R/C Box Girder",
+        "Bents"
+      ]
+    },
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "compound",
+      "affected_count": 20,
+      "issue": "Multiple failures in compound scenarios",
+      "recommendation": "Improve relationship detection or adjust search to handle multiple elements better",
+      "examples": [
+        "R/C Box Girder Bents",
+        "R/C Box Girder Span lengths between bents",
+        "Shear Keys Abutments"
+      ]
+    },
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "specification",
+      "affected_count": 10,
+      "issue": "Multiple failures in specification scenarios",
+      "recommendation": "Enhance specification extraction in topology analyzer",
+      "examples": [
+        "Not specified",
+        "Grade Percentages and Lengths",
+        "M Line and Lighting"
+      ]
+    },
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "dimensional",
+      "affected_count": 15,
+      "issue": "Multiple failures in dimensional scenarios",
+      "recommendation": "Improve dimensional data extraction and indexing",
+      "examples": [
+        "Span lengths between bents dimensions",
+        "Vertical clearance dimensions",
+        "Pedestrian Railing dimensions"
+      ]
+    },
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "relationship",
+      "affected_count": 15,
+      "issue": "Multiple failures in relationship scenarios",
+      "recommendation": "Add more relationship patterns or improve natural language understanding",
+      "examples": [
+        "R/C Box Girder support system",
+        "R/C Box Girder support system",
+        "Shear Keys Abutments restraint"
+      ]
+    },
+    {
+      "type": "pattern",
+      "severity": "high",
+      "scenario_type": "variation",
+      "affected_count": 15,
+      "issue": "Multiple failures in variation scenarios",
+      "recommendation": "Expand synonym dictionary or improve semantic understanding",
+      "examples": [
+        "drilled shaft",
+        "cast-in-drilled-hole pile",
+        "CIDH foundation"
+      ]
+    },
+    {
+      "type": "missing_pages",
+      "severity": "medium",
+      "issue": "Some pages frequently missed in searches",
+      "pages": [
+        [
+          1,
+          28
+        ],
+        [
+          3,
+          24
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          2,
+          29
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          10,
+          34
+        ],
+        [
+          9,
+          19
+        ]
+      ],
+      "recommendation": "Review content extraction or vision analysis for these pages"
+    },
+    {
+      "type": "low_recall",
+      "severity": "high",
+      "affected_count": 172,
+      "issue": "Many searches return incomplete results",
+      "recommendation": "Increase k parameter, adjust relevance threshold, or improve chunking strategy"
+    },
+    {
+      "type": "low_precision",
+      "severity": "medium",
+      "affected_count": 172,
+      "issue": "Many searches return irrelevant results",
+      "recommendation": "Adjust relevance threshold, improve topology extraction, or refine embeddings"
+    }
+  ]
+}

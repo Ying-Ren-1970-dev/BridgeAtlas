@@ -1,0 +1,585 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-0J1204",
+        "client": "STATE OF CALIFORNIA",
+        "location": "ORANGE CO., CA 92655",
+        "engineer_on_record": "Aladdin Moubayed",
+        "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN NO. 1",
+        "sheet_number": "66",
+        "scale": "1\" = 40'",
+        "revision": null,
+        "date": "09-12-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "steel pipe pile",
+          "pedestal"
+        ],
+        "detail_types": [
+          "profile grade",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "BVC 111+60.00",
+          "EB 112+97.03",
+          "EB 114+80"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-0H4204",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "Orange County",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN NO. 2",
+        "sheet_number": "NDC00017",
+        "scale": "1\" = 10'",
+        "revision": "R1",
+        "date": "3-21-19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "CIP/PS CONC. BOX GIRDER",
+          "7'-0\" SQUARE COLUMN",
+          "STEEL HP PILE"
+        ],
+        "detail_types": [
+          "TYPICAL SECTION"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 2,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-0N040",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY, CALIFORNIA",
+        "engineer_on_record": "Aladdin Moukhayed",
+        "engineering_firm": null,
+        "project_year": "2019",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Index to Plans",
+        "sheet_title": "INDEX TO PLANS",
+        "sheet_number": "2 OF 29",
+        "scale": "NO SCALE",
+        "revision": "R1",
+        "date": "3-21-19"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "pavement",
+          "approach slab"
+        ],
+        "detail_types": [
+          "general notes",
+          "standard plans",
+          "plan symbols"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 3,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-0H1004",
+        "client": null,
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouzaybed",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Deck Contours",
+        "sheet_title": "DECK CONTOURS",
+        "sheet_number": "4",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "08-22-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Brg Abut 1",
+          "Brg Abut 3",
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "120000001",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "Orange County",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "Contract No. 12-0R0404"
+      },
+      "plan_type": {
+        "primary_type": "Stage Construction",
+        "sheet_title": "TYPICAL SECTION - STAGE 1 AT EXISTING STRUCTURE (SPANS 1 THRU 3)",
+        "sheet_number": "03",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": "3-21-19"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "box girder",
+          "profile grade",
+          "traffic lanes"
+        ],
+        "detail_types": [
+          "Typical Section - Stage 1",
+          "Typical Section - Stage 2",
+          "Typical Section - Final"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 5,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-ORA-405 6.6/6.9",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Layout",
+        "sheet_title": "GIRDER LAYOUT No. 2",
+        "sheet_number": "51 66",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "09-12-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "soffit",
+          "deck",
+          "closure pour"
+        ],
+        "detail_types": [
+          "plan",
+          "longitudinal section"
+        ],
+        "grid_references": [
+          "B0-5",
+          "B7-1",
+          "B7-10",
+          "B8-5"
+        ]
+      }
+    },
+    "page_number": 31,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-0H040",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LONG BEACH, CA 90806 ORANGE, CA 92867",
+        "engineer_on_record": "Aladdin Mouayed",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "GIRDER DETAILS",
+        "sheet_title": "GIRDER DETAILS",
+        "sheet_number": "16 OF 29",
+        "scale": "3/8\" = 1'-0\"",
+        "revision": "R1",
+        "date": "09-12-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "deck",
+          "diaphragm"
+        ],
+        "detail_types": [
+          "obtuse corner detail",
+          "acute corner detail",
+          "end diaphragm detail"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 32,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "12-ORA-405 33 66",
+        "client": "STATE OF CALIFORNIA",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "Aladdin Moulayyed",
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": "DEPARTMENT OF TRANSPORTATION"
+      },
+      "plan_type": {
+        "primary_type": "Plan",
+        "sheet_title": "ADDITIONAL DECK REINFORCEMENT",
+        "sheet_number": "55-1J21",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": null
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 33,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": "1200000001",
+        "client": "STATE OF CALIFORNIA",
+        "location": "LONG BEACH, CA 90806",
+        "engineer_on_record": "Aladdin Mouzayed",
+        "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
+        "project_year": null,
+        "other_info": "CONTRACT NO. 12-0R1004"
+      },
+      "plan_type": {
+        "primary_type": "Plan",
+        "sheet_title": "ADDITIONAL SOFFIT REINFORCEMENT",
+        "sheet_number": "55-1121",
+        "scale": "NO SCALE",
+        "revision": null,
+        "date": "08-22-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "bent",
+          "soffit"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 34,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OC (REPLACE)",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2016",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Special Details",
+        "sheet_title": "CONCRETE BARRIER TYPE 732SW (Mod) 1 OF 2",
+        "sheet_number": "x816 110-1",
+        "scale": null,
+        "revision": null,
+        "date": "JULY 2016"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "barrier",
+          "deck",
+          "wall",
+          "wingwall",
+          "joint",
+          "railing"
+        ],
+        "detail_types": [
+          "section",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 35,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OVERCROSSING (REPLACE)",
+        "project_number": "12000001801",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": null,
+        "engineering_firm": null,
+        "project_year": null,
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 1 OF 5",
+        "sheet_number": "62",
+        "scale": "1\" = 50'",
+        "revision": null,
+        "date": "09-24-18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 63,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OVERCROSSING (REPLACE)",
+        "project_number": "12-0J1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "FRED C. JAHOORIAN",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 2 OF 5",
+        "sheet_number": "2",
+        "scale": "Vertical Scale 1\"=10' Horizontal Scale 1\"=20'",
+        "revision": null,
+        "date": "09-24-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [
+          "Profile View"
+        ],
+        "grid_references": []
+      }
+    },
+    "page_number": 64,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OVERCROSSING (REPLACE)",
+        "project_number": "12-0J1204",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "T. PANAH",
+        "engineering_firm": "FUGRO",
+        "project_year": "2017",
+        "other_info": "PROJECT NUMBER & PHASE: 12200000101"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 3 OF 5",
+        "sheet_number": "3",
+        "scale": "Vertical Scale 1\"=10' Horizontal Scale 1\"=20'",
+        "revision": null,
+        "date": "05-18-17"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 65,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OVERCROSSING (REPLACE)",
+        "project_number": "12-0J1200",
+        "client": null,
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": null,
+        "engineering_firm": "DEPARTMENT OF TRANSPORTATION",
+        "project_year": null,
+        "other_info": "CONTRACT NO.: 12-0J1204"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS - SHEET 4 OF 5",
+        "sheet_number": "65 66",
+        "scale": "Vertical Scale 1\"=10' Horizontal Scale 1\"=20'",
+        "revision": null,
+        "date": "09-24-18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 66,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "MAGNOLIA STREET OVERCROSSING",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "DIVISION OF ENGINEERING SERVICES - GEOTECHNICAL SERVICES",
+        "project_year": "1968",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS",
+        "sheet_number": "Sheet 4 of 5",
+        "scale": "1\"=5'",
+        "revision": null,
+        "date": "October 1968"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 67,
+    "filename": "55-1121_MagnoliaOc_As_BuiltWM.pdf"
+  }
+]

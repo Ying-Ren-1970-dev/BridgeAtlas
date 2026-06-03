@@ -1,0 +1,1181 @@
+{
+  "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
+  "nodes": {
+    "Page1_Detail0": {
+      "detail_id": "Page1_Detail0",
+      "page_number": 1,
+      "title": "profile grade",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "profile grade",
+        "abutment",
+        "bent",
+        "steel pipe pile"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page1_Detail1": {
+      "detail_id": "Page1_Detail1",
+      "page_number": 1,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "abutment",
+        "bent",
+        "steel pipe pile"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page1_Detail2": {
+      "detail_id": "Page1_Detail2",
+      "page_number": 1,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "abutment",
+        "bent",
+        "steel pipe pile"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page2_Detail0": {
+      "detail_id": "Page2_Detail0",
+      "page_number": 2,
+      "title": "TYPICAL SECTION",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "TYPICAL SECTION",
+        "CIP/PS CONC. BOX GIRDER",
+        "7'-0\" SQUARE COLUMN",
+        "STEEL HP PILE"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page3_Detail0": {
+      "detail_id": "Page3_Detail0",
+      "page_number": 3,
+      "title": "general notes",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "general notes",
+        "abutment",
+        "bent",
+        "pavement"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page3_Detail1": {
+      "detail_id": "Page3_Detail1",
+      "page_number": 3,
+      "title": "standard plans",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "standard plans",
+        "abutment",
+        "bent",
+        "pavement"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page3_Detail2": {
+      "detail_id": "Page3_Detail2",
+      "page_number": 3,
+      "title": "plan symbols",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan symbols",
+        "abutment",
+        "bent",
+        "pavement"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page5_Detail0": {
+      "detail_id": "Page5_Detail0",
+      "page_number": 5,
+      "title": "Typical Section - Stage 1",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - Stage 1",
+        "box girder",
+        "profile grade",
+        "traffic lanes"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page5_Detail1": {
+      "detail_id": "Page5_Detail1",
+      "page_number": 5,
+      "title": "Typical Section - Stage 2",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - Stage 2",
+        "box girder",
+        "profile grade",
+        "traffic lanes"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page5_Detail2": {
+      "detail_id": "Page5_Detail2",
+      "page_number": 5,
+      "title": "Typical Section - Final",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Typical Section - Final",
+        "box girder",
+        "profile grade",
+        "traffic lanes"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page31_Detail0": {
+      "detail_id": "Page31_Detail0",
+      "page_number": 31,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "girder",
+        "soffit",
+        "deck"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page31_Detail1": {
+      "detail_id": "Page31_Detail1",
+      "page_number": 31,
+      "title": "longitudinal section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "longitudinal section",
+        "girder",
+        "soffit",
+        "deck"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page32_Detail0": {
+      "detail_id": "Page32_Detail0",
+      "page_number": 32,
+      "title": "obtuse corner detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "obtuse corner detail",
+        "girder",
+        "deck",
+        "diaphragm"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page32_Detail1": {
+      "detail_id": "Page32_Detail1",
+      "page_number": 32,
+      "title": "acute corner detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "acute corner detail",
+        "girder",
+        "deck",
+        "diaphragm"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page32_Detail2": {
+      "detail_id": "Page32_Detail2",
+      "page_number": 32,
+      "title": "end diaphragm detail",
+      "element_type": "detail",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "end diaphragm detail",
+        "girder",
+        "deck",
+        "diaphragm"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page35_Detail0": {
+      "detail_id": "Page35_Detail0",
+      "page_number": 35,
+      "title": "section",
+      "element_type": "section",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "section",
+        "barrier",
+        "deck",
+        "wall"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page35_Detail1": {
+      "detail_id": "Page35_Detail1",
+      "page_number": 35,
+      "title": "elevation",
+      "element_type": "elevation",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "elevation",
+        "barrier",
+        "deck",
+        "wall"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page35_Detail2": {
+      "detail_id": "Page35_Detail2",
+      "page_number": 35,
+      "title": "plan",
+      "element_type": "plan",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "plan",
+        "barrier",
+        "deck",
+        "wall"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    },
+    "Page64_Detail0": {
+      "detail_id": "Page64_Detail0",
+      "page_number": 64,
+      "title": "Profile View",
+      "element_type": "view",
+      "bbox": {
+        "x0": 0,
+        "y0": 0,
+        "x1": 100,
+        "y1": 100
+      },
+      "text_content": [
+        "Profile View"
+      ],
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM"
+    }
+  },
+  "edges": {
+    "Page1_Detail0": [
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page3_Detail0": [
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail0",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      }
+    ],
+    "Page3_Detail2": [
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page3_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pavement"
+      },
+      {
+        "source_id": "Page3_Detail2",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: approach slab"
+      }
+    ],
+    "Page3_Detail1": [
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pavement"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pavement"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: approach slab"
+      },
+      {
+        "source_id": "Page3_Detail1",
+        "target_id": "Page3_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: approach slab"
+      }
+    ],
+    "Page1_Detail2": [
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: abutment"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: bent"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel pipe pile"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel pipe pile"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      },
+      {
+        "source_id": "Page1_Detail2",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      }
+    ],
+    "Page1_Detail1": [
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: steel pipe pile"
+      },
+      {
+        "source_id": "Page1_Detail1",
+        "target_id": "Page1_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: pedestal"
+      }
+    ],
+    "Page5_Detail0": [
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: box girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: box girder"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: profile grade"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: profile grade"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: traffic lanes"
+      },
+      {
+        "source_id": "Page5_Detail0",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: traffic lanes"
+      }
+    ],
+    "Page5_Detail2": [
+      {
+        "source_id": "Page5_Detail2",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: box girder"
+      },
+      {
+        "source_id": "Page5_Detail2",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: profile grade"
+      },
+      {
+        "source_id": "Page5_Detail2",
+        "target_id": "Page5_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: traffic lanes"
+      }
+    ],
+    "Page32_Detail1": [
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page32_Detail2": [
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail2",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      }
+    ],
+    "Page31_Detail1": [
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page32_Detail0": [
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: girder"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      },
+      {
+        "source_id": "Page32_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: diaphragm"
+      }
+    ],
+    "Page31_Detail0": [
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: soffit"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page31_Detail0",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: closure pour"
+      }
+    ],
+    "Page35_Detail0": [
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page32_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page32_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page31_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wingwall"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wingwall"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: joint"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: joint"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: railing"
+      },
+      {
+        "source_id": "Page35_Detail0",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: railing"
+      }
+    ],
+    "Page35_Detail1": [
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page32_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page31_Detail0",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      },
+      {
+        "source_id": "Page35_Detail1",
+        "target_id": "Page35_Detail2",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: deck"
+      }
+    ],
+    "Page35_Detail2": [
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: barrier"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wall"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: wingwall"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: joint"
+      },
+      {
+        "source_id": "Page35_Detail2",
+        "target_id": "Page35_Detail1",
+        "relationship_type": "shared_element",
+        "strength": 0.7,
+        "reason": "Both reference: railing"
+      }
+    ]
+  },
+  "node_count": 19,
+  "edge_count": 109
+}

@@ -1,0 +1,573 @@
+[
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0P1404",
+        "client": null,
+        "location": "Orange, CA",
+        "engineer_on_record": "ALEJANDR MOJAVEZ",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN NO. 1",
+        "sheet_number": null,
+        "scale": "1\" = 30'",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent",
+          "column",
+          "footing",
+          "pedestal",
+          "barrier"
+        ],
+        "detail_types": [
+          "profile grade",
+          "elevation",
+          "plan"
+        ],
+        "grid_references": [
+          "Bent 2",
+          "Abut 3",
+          "Sta 91+00"
+        ]
+      }
+    },
+    "page_number": 1,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0J1204",
+        "client": null,
+        "location": "DISTRICT 12, COUNTY ORANGE, ROUTE 405",
+        "engineer_on_record": "ALADIN MUBAYED",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2022",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "General Plan",
+        "sheet_title": "GENERAL PLAN No. 2",
+        "sheet_number": "2",
+        "scale": "1\" = 10'",
+        "revision": null,
+        "date": "12/16/2022"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "CIP/PS Conc Box Girder",
+          "Driven Steel Pipe Pile",
+          "Column"
+        ],
+        "detail_types": [
+          "Typical Section"
+        ],
+        "grid_references": [
+          "BB to 91+94.17",
+          "93+13.74 to EB"
+        ]
+      }
+    },
+    "page_number": 2,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "unknown",
+    "confidence": 0.0,
+    "page_number": 3,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf",
+    "title_block": null,
+    "error": "the JSON object must be str, bytes or bytearray, not NoneType"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": null,
+        "location": null,
+        "engineer_on_record": "ALEDIN MUGRABY",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2018",
+        "other_info": "PROJECT NUMBER & PHASE: 1220000001801"
+      },
+      "plan_type": {
+        "primary_type": "Plan",
+        "sheet_title": "DECK CONTOURS",
+        "sheet_number": "469",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "approach slab"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2",
+          "Bent 3",
+          "Abut 1",
+          "Abut 3"
+        ]
+      }
+    },
+    "page_number": 4,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "ORANGE COUNTY",
+        "engineer_on_record": "ALEDIN MUBAREV",
+        "engineering_firm": null,
+        "project_year": "2002",
+        "other_info": "PROJECT NUMBER & PHASE: 1220000001"
+      },
+      "plan_type": {
+        "primary_type": "Soffit Contours",
+        "sheet_title": "SOFFIT CONTOURS",
+        "sheet_number": "S 69",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "abutment",
+          "bent"
+        ],
+        "detail_types": [],
+        "grid_references": [
+          "Bent 2",
+          "Bent 3",
+          "Abut 1",
+          "Abut 3"
+        ]
+      }
+    },
+    "page_number": 5,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-107204",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "DISTRICT 12, ORANGE COUNTY",
+        "engineer_on_record": "ALEJANDR MOJAVERD",
+        "engineering_firm": null,
+        "project_year": "2002",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Typical Section",
+        "sheet_title": "TYPICAL SECTION - STAGE 1",
+        "sheet_number": "32 GG",
+        "scale": null,
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "barrier",
+          "girders",
+          "closure pour",
+          "deck",
+          "reinforcement"
+        ],
+        "detail_types": [
+          "typical section",
+          "partial typical section"
+        ],
+        "grid_references": [
+          "B0-5",
+          "B7-1",
+          "B8-5"
+        ]
+      }
+    },
+    "page_number": 32,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "DIST 12, ORA, R4.6/5.0",
+        "engineer_on_record": "ALEDIN MUBAREZ",
+        "engineering_firm": null,
+        "project_year": "2002",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Typical Section",
+        "sheet_title": "TYPICAL SECTION - STAGE 2",
+        "sheet_number": "S-2",
+        "scale": "1/4\" = 1'-0\"",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "closure pour",
+          "chain link railing",
+          "electrolier pedestal",
+          "concrete barrier"
+        ],
+        "detail_types": [
+          "typical section",
+          "partial typical section"
+        ],
+        "grid_references": null
+      }
+    },
+    "page_number": 33,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0K1404",
+        "client": null,
+        "location": "DIST 12, ORA, Rte 405",
+        "engineer_on_record": "ALEMDIN MUBAYED",
+        "engineering_firm": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "project_year": "2002",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Layout",
+        "sheet_title": "GIRDER LAYOUT",
+        "sheet_number": "S-161",
+        "scale": "1\" = 20'",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "deck",
+          "soffit",
+          "bent",
+          "abutment"
+        ],
+        "detail_types": [
+          "Detail 1",
+          "Detail 2",
+          "Detail 3"
+        ],
+        "grid_references": [
+          "Bent 1",
+          "Bent 2",
+          "Brg Abut 1",
+          "Brg Abut 3"
+        ]
+      }
+    },
+    "page_number": 34,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "07-2295",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90066",
+        "engineer_on_record": "ALADDIN MUBAYED",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "GIRDER DETAILS No. 1",
+        "sheet_number": "59",
+        "scale": "No Scale",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "diaphragm",
+          "bearing pad"
+        ],
+        "detail_types": [
+          "Detail-1",
+          "Detail-2",
+          "Detail-3",
+          "Detail-4",
+          "Section A-A"
+        ],
+        "grid_references": [
+          "Abutment 1",
+          "Abutment 8"
+        ]
+      }
+    },
+    "page_number": 35,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0H1004",
+        "client": "STATE OF CALIFORNIA",
+        "location": null,
+        "engineer_on_record": "ALEDIN MUBAYED",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": "PROJECT NUMBER & PHASE: 122000001801"
+      },
+      "plan_type": {
+        "primary_type": "Girder Details",
+        "sheet_title": "GIRDER DETAILS No. 2",
+        "sheet_number": "36",
+        "scale": "1/8\" = 1'-0\"",
+        "revision": null,
+        "date": "12/16/2002"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [
+          "girder",
+          "deck"
+        ],
+        "detail_types": [
+          "longitudinal reinforcement"
+        ],
+        "grid_references": [
+          "Bent 2"
+        ]
+      }
+    },
+    "page_number": 36,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.9,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0N1404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CALIFORNIA",
+        "engineer_on_record": "ALEJANDRO NUBARYAN",
+        "engineering_firm": null,
+        "project_year": "2017",
+        "other_info": "LOG OF TEST BORINGS 3 OF 7"
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 3 OF 7",
+        "sheet_number": "2 of 6",
+        "scale": "AS SHOWN",
+        "revision": "1",
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 65,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0H0404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90066",
+        "engineer_on_record": "MICHAEL GIVENS",
+        "engineering_firm": null,
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Profile",
+        "sheet_title": "LOG OF TEST BORINGS 4 OF 7",
+        "sheet_number": "66",
+        "scale": "1\"=10'",
+        "revision": "1",
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": false,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 66,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0N1004",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90066",
+        "engineer_on_record": "MICHAEL GIVENS",
+        "engineering_firm": "ARUP",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 5 OF 7",
+        "sheet_number": "67",
+        "scale": "AS SHOWN",
+        "revision": null,
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 67,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 0.95,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OC (REPLACE)",
+        "project_number": "12-0R0404",
+        "client": "STATE OF CALIFORNIA DEPARTMENT OF TRANSPORTATION",
+        "location": "LOS ANGELES, CA 90066",
+        "engineer_on_record": "MICHAEL GIVENS",
+        "engineering_firm": "ORANGE COUNTY TRANSPORTATION AUTHORITY",
+        "project_year": "2018",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 6 OF 7",
+        "sheet_number": "68",
+        "scale": null,
+        "revision": "2",
+        "date": "11/28/18"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": []
+      }
+    },
+    "page_number": 68,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  },
+  {
+    "page_type": "plan",
+    "confidence": 1.0,
+    "title_block": {
+      "project_info": {
+        "project_name": "WESTMINSTER BLVD OVERCROSSING (REPLACE)",
+        "project_number": null,
+        "client": null,
+        "location": null,
+        "engineer_on_record": null,
+        "engineering_firm": "DIVISION OF ENGINEERING SERVICES - GEOTECHNICAL SERVICES",
+        "project_year": "2012",
+        "other_info": null
+      },
+      "plan_type": {
+        "primary_type": "Log of Test Borings",
+        "sheet_title": "LOG OF TEST BORINGS 7 OF 7",
+        "sheet_number": null,
+        "scale": null,
+        "revision": null,
+        "date": "11/09/12"
+      },
+      "plan_contents": {
+        "has_tables": true,
+        "has_diagrams": true,
+        "structural_elements": [],
+        "detail_types": [],
+        "grid_references": [
+          "B-1",
+          "B-2",
+          "B-3",
+          "B-4"
+        ]
+      }
+    },
+    "page_number": 69,
+    "filename": "55-1127_WestminsterOC_As_Built.pdf"
+  }
+]

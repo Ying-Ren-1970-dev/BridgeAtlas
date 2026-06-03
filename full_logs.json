@@ -1,0 +1,584 @@
+﻿[
+  {
+    "insertId": "6a04c5920005c7455fad6e3b",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:40:18.492492337Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     169.254.169.126:37042 - \"POST /search HTTP/1.1\" 200 OK",
+    "timestamp": "2026-05-13T18:40:18.378693Z"
+  },
+  {
+    "insertId": "6a04c5920005c39b6f60289b",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:40:18.492492337Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Error during similarity search: Connection error.",
+    "timestamp": "2026-05-13T18:40:18.377755Z"
+  },
+  {
+    "insertId": "6a04c59000025e89ef01e83f",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:40:16.162414501Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Expanded query: 'girder beam main beam bridge girder'",
+    "timestamp": "2026-05-13T18:40:16.155273Z"
+  },
+  {
+    "insertId": "6a04c59000025e29b9d9d44a",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:40:16.162414501Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Searching for: 'girder'",
+    "timestamp": "2026-05-13T18:40:16.155177Z"
+  },
+  {
+    "httpRequest": {
+      "latency": "2.234646714s",
+      "protocol": "HTTP/1.1",
+      "remoteIp": "2601:644:8202:2af0:7de0:c59c:969b:7d68",
+      "requestMethod": "POST",
+      "requestSize": "417",
+      "requestUrl": "https://librarian-716133050580.us-central1.run.app/search",
+      "responseSize": "295",
+      "serverIp": "2600:1900:4240:200::",
+      "status": 200,
+      "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.8457"
+    },
+    "insertId": "6a04c5920005cbc58e80672f",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Frequests",
+    "receiveTimestamp": "2026-05-13T18:40:18.387082553Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "spanId": "312adaa8c43723f8",
+    "timestamp": "2026-05-13T18:40:16.135901Z",
+    "trace": "projects/umehe-267901/traces/85f2ad9aa35bd2051fd4f1555684804d",
+    "traceSampled": true
+  },
+  {
+    "insertId": "-wpf6qzdljy2",
+    "logName": "projects/umehe-267901/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/umehe-267901/revisions/librarian-00013-lgt",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "10",
+            "run.googleapis.com/build-source-location": "{\"librarian-1\":\"gs://run-sources-umehe-267901-us-central1/services/librarian/1778696996.750687-eaf2e36894214f4cb9b2eb2a747fc1ed.zip#1778696996962088\"}",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "550.0.0",
+            "run.googleapis.com/operation-id": "122f043f-f4dd-4012-9af5-0d13afbe160b",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "serving.knative.dev/creator": "changzhengli8048@gmail.com"
+          },
+          "creationTimestamp": "2026-05-13T18:33:26.110140Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "mmutqubpbd",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "librarian",
+            "serving.knative.dev/configurationGeneration": "13",
+            "serving.knative.dev/route": "librarian",
+            "serving.knative.dev/service": "librarian",
+            "serving.knative.dev/serviceUid": "338e2ef1-5c05-4f21-ad35-0ee7c95a0688"
+          },
+          "name": "librarian-00013-lgt",
+          "namespace": "716133050580",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "librarian",
+              "uid": "40192d80-906a-406e-a45b-6ac4d6fd5d52"
+            }
+          ],
+          "resourceVersion": "AAZRtzsM3Nw",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/716133050580/revisions/librarian-00013-lgt",
+          "uid": "98e81cd6-d37b-434b-b0f0-808251f7bc53"
+        },
+        "spec": {
+          "containerConcurrency": 80,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "ENVIRONMENT",
+                  "value": "production"
+                },
+                {
+                  "name": "USE_FIRESTORE",
+                  "value": "false"
+                },
+                {
+                  "name": "GCS_BUCKET_PDFS",
+                  "value": "umehe-267901-librarian-pdfs"
+                },
+                {
+                  "name": "GCS_BUCKET_VECTORS",
+                  "value": "umehe-267901-librarian-vectors"
+                },
+                {
+                  "name": "OPENAI_API_KEY",
+                  "valueFrom": {
+                    "secretKeyRef": {
+                      "key": "latest",
+                      "name": "openai-api-key"
+                    }
+                  }
+                }
+              ],
+              "image": "us-central1-docker.pkg.dev/umehe-267901/cloud-run-source-deploy/librarian@sha256:ef4e599772dd331988395aee624eab81115f2015e9aa7cebafd83ff85c0deb07",
+              "name": "librarian-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "1",
+                  "memory": "2Gi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "716133050580-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-05-13T18:34:31.827676Z",
+              "message": "Deploying revision succeeded in 1m5.72s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-05-13T18:34:31.760431Z",
+              "message": "Containers became healthy in 17.03s.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2026-05-13T18:34:10.604757Z",
+              "message": "Container image import completed in 43.71s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2026-05-13T18:34:14.376463Z",
+              "message": "Provisioning imported containers completed in 3.77s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "us-central1-docker.pkg.dev/umehe-267901/cloud-run-source-deploy/librarian@sha256:ef4e599772dd331988395aee624eab81115f2015e9aa7cebafd83ff85c0deb07",
+              "name": "librarian-1"
+            }
+          ],
+          "imageDigest": "us-central1-docker.pkg.dev/umehe-267901/cloud-run-source-deploy/librarian@sha256:ef4e599772dd331988395aee624eab81115f2015e9aa7cebafd83ff85c0deb07",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=umehe-267901&resource=cloud_run_revision/service_name/librarian/revision_name/librarian-00013-lgt&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22librarian%22%0Aresource.labels.revision_name%3D%22librarian-00013-lgt%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision librarian-00013-lgt with message: Deploying revision succeeded in 1m5.72s."
+      }
+    },
+    "receiveTimestamp": "2026-05-13T18:34:31.960761822Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-05-13T18:34:31.841875Z"
+  },
+  {
+    "insertId": "6a04c437000b5f1e9a342603",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-05-13T18:34:31.750994076Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"librarian-1\" on port 8080.",
+    "timestamp": "2026-05-13T18:34:31.745246Z"
+  },
+  {
+    "insertId": "6a04c437000b5d0489846e07",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:31.966465116Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)",
+    "timestamp": "2026-05-13T18:34:31.744708Z"
+  },
+  {
+    "insertId": "6a04c437000b544bd04d2813",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:31.966465116Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Application startup complete.",
+    "timestamp": "2026-05-13T18:34:31.742475Z"
+  },
+  {
+    "insertId": "6a04c437000b531e3091f55d",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:31.812377725Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "? Librarian API initialized successfully",
+    "timestamp": "2026-05-13T18:34:31.742174Z"
+  },
+  {
+    "insertId": "6a04c437000b521e43ca6dba",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:31.812377725Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Vector store initialized at vector_db",
+    "timestamp": "2026-05-13T18:34:31.741918Z"
+  },
+  {
+    "insertId": "6a04c437000a71d092337de0",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:31.812377725Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Vector store initialized at vector_db",
+    "timestamp": "2026-05-13T18:34:31.684496Z"
+  },
+  {
+    "insertId": "6a04c4340009c74d25af6aba",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:28.814918122Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "? Vector database synced from cloud",
+    "timestamp": "2026-05-13T18:34:28.640845Z"
+  },
+  {
+    "insertId": "6a04c4340009c711acf904d3",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:28.814918122Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "? Metadata database synced",
+    "timestamp": "2026-05-13T18:34:28.640785Z"
+  },
+  {
+    "insertId": "6a04c4330002366c29e3a1d1",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:27.488413417Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "Syncing vector database from Cloud Storage...",
+    "timestamp": "2026-05-13T18:34:27.145004Z"
+  },
+  {
+    "insertId": "6a04c4330002355a94de919c",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-05-13T18:34:27.151235084Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "? Cloud Storage initialized: umehe-267901-librarian-pdfs",
+    "timestamp": "2026-05-13T18:34:27.144730Z"
+  },
+  {
+    "insertId": "6a04c4320004a0944c882d4f",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:26.640858668Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Waiting for application startup.",
+    "timestamp": "2026-05-13T18:34:26.303252Z"
+  },
+  {
+    "insertId": "6a04c43200049f88d055065d",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:26.640858668Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Started server process [1]",
+    "timestamp": "2026-05-13T18:34:26.302984Z"
+  },
+  {
+    "insertId": "6a04c432000490e240050263",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:26.305905358Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "  size: str = Query(default=\"medium\", regex=\"^(thumbnail|medium|full)$\")",
+    "timestamp": "2026-05-13T18:34:26.299234Z"
+  },
+  {
+    "insertId": "6a04c432000490b5f44f3959",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-05-13T18:34:26.305905358Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "/app/api.py:453: FastAPIDeprecationWarning: `regex` has been deprecated, please use `pattern` instead",
+    "timestamp": "2026-05-13T18:34:26.299189Z"
+  },
+  {
+    "insertId": "6a04c426000777d72431c4b4",
+    "labels": {
+      "instanceId": "0007b734d9a6841367b4c6df5440aadfc95eb9e77cb3529430c5da5a26609ca1e9b8e319cb1c8b5c377e3c318ed6e986226c4c594c7d09bb4d3ffada11131cdee8e614b07a9651a04c3fef75d85031",
+      "scaling_reason": "DEPLOYMENT_ROLLOUT"
+    },
+    "logName": "projects/umehe-267901/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-05-13T18:34:14.495375873Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "librarian",
+        "location": "us-central1",
+        "project_id": "umehe-267901",
+        "revision_name": "librarian-00013-lgt",
+        "service_name": "librarian"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Starting new instance. Reason: DEPLOYMENT_ROLLOUT - Instance started due to traffic shifting between revisions due to deployment, traffic split adjustment, or deployment health check.",
+    "timestamp": "2026-05-13T18:34:14.489431Z"
+  }
+]

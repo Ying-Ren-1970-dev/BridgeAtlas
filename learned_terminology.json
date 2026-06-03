@@ -1,0 +1,1153 @@
+{
+  "OH": [
+    "replace",
+    "overhead"
+  ],
+  "BRIDGE": [
+    "replace"
+  ],
+  "LOTB": [
+    "log of test boring"
+  ],
+  "AASHTO": [
+    "american association of state highway and transportation officials"
+  ],
+  "ABAN": [
+    "abandon"
+  ],
+  "ABUT": [
+    "abutment"
+  ],
+  "AC": [
+    "asphalt concrete"
+  ],
+  "ADJ": [
+    "adjust"
+  ],
+  "ALT": [
+    "alternate"
+  ],
+  "APPR": [
+    "approach"
+  ],
+  "ARS": [
+    "acceleration response spectrum"
+  ],
+  "ASB": [
+    "aggregate subbase"
+  ],
+  "ATD": [
+    "at this date"
+  ],
+  "AVE": [
+    "avenue"
+  ],
+  "AWG": [
+    "american wire gauge"
+  ],
+  "B.B.": [
+    "beginning of bridge"
+  ],
+  "B.C.": [
+    "beginning of curve"
+  ],
+  "BC": [
+    "back of curb"
+  ],
+  "BCC": [
+    "beginning of compound curve"
+  ],
+  "BCR": [
+    "beginning of curb return"
+  ],
+  "BDS": [
+    "bridge design specifications"
+  ],
+  "BETW": [
+    "between"
+  ],
+  "BF": [
+    "backface"
+  ],
+  "BM": [
+    "bench mark"
+  ],
+  "BOC": [
+    "bottom of curb"
+  ],
+  "BOS": [
+    "bottom of soffit"
+  ],
+  "BOT": [
+    "bottom"
+  ],
+  "BP": [
+    "base plate"
+  ],
+  "BR": [
+    "bridge"
+  ],
+  "BRG": [
+    "bearing"
+  ],
+  "BS": [
+    "both sides"
+  ],
+  "BVC": [
+    "beginning of vertical curve"
+  ],
+  "C.C.": [
+    "center to center"
+  ],
+  "C.I.P.": [
+    "cast-in-place"
+  ],
+  "CAD": [
+    "computer-aided design"
+  ],
+  "CB": [
+    "catch basin"
+  ],
+  "CC": [
+    "concrete"
+  ],
+  "CD": [
+    "core drill"
+  ],
+  "CE": [
+    "clearance"
+  ],
+  "CESS": [
+    "cast-in-steel-shell"
+  ],
+  "CF": [
+    "cubic foot"
+  ],
+  "CH": [
+    "channel"
+  ],
+  "CHAM": [
+    "chamfer"
+  ],
+  "CIDH": [
+    "cast-in-drilled-hole"
+  ],
+  "CL": [
+    "centerline"
+  ],
+  "CLR": [
+    "clearance"
+  ],
+  "CMU": [
+    "concrete masonry unit"
+  ],
+  "CO": [
+    "county"
+  ],
+  "COL": [
+    "column"
+  ],
+  "CONC": [
+    "concrete"
+  ],
+  "CONST": [
+    "construct"
+  ],
+  "CONT": [
+    "continuous"
+  ],
+  "COORD": [
+    "coordinates"
+  ],
+  "CORP": [
+    "corporation"
+  ],
+  "CR": [
+    "curb return"
+  ],
+  "CS": [
+    "construction staging"
+  ],
+  "CSM": [
+    "construction stage monitoring"
+  ],
+  "CY": [
+    "cubic yard"
+  ],
+  "D": [
+    "depth"
+  ],
+  "DBL": [
+    "double"
+  ],
+  "DEF": [
+    "deflection"
+  ],
+  "DEG": [
+    "degree"
+  ],
+  "DET": [
+    "detail"
+  ],
+  "DIA": [
+    "diameter"
+  ],
+  "DIAG": [
+    "diagonal"
+  ],
+  "DIAPH": [
+    "diaphragm"
+  ],
+  "DIM": [
+    "dimension"
+  ],
+  "DIST": [
+    "distance"
+  ],
+  "DNLK": [
+    "downlink"
+  ],
+  "DN": [
+    "down"
+  ],
+  "DO": [
+    "ditto"
+  ],
+  "DP": [
+    "deep"
+  ],
+  "DR": [
+    "drain"
+  ],
+  "DWG": [
+    "drawing"
+  ],
+  "E.B.": [
+    "end of bridge"
+  ],
+  "E.C.": [
+    "end of curve"
+  ],
+  "EA": [
+    "each"
+  ],
+  "EC": [
+    "end of curve"
+  ],
+  "ED": [
+    "edge"
+  ],
+  "EF": [
+    "each face"
+  ],
+  "EGL": [
+    "energy grade line"
+  ],
+  "EL": [
+    "elevation"
+  ],
+  "ELEV": [
+    "elevation"
+  ],
+  "ELLIP": [
+    "elliptical"
+  ],
+  "EMB": [
+    "embankment"
+  ],
+  "ENGR": [
+    "engineer"
+  ],
+  "EOB": [
+    "end of bridge"
+  ],
+  "EOP": [
+    "edge of pavement"
+  ],
+  "EQ": [
+    "equal"
+  ],
+  "EQUIP": [
+    "equipment"
+  ],
+  "ES": [
+    "edge of shoulder"
+  ],
+  "EST": [
+    "estimate"
+  ],
+  "EVC": [
+    "end of vertical curve"
+  ],
+  "EXC": [
+    "excavation"
+  ],
+  "EXST": [
+    "existing"
+  ],
+  "EXP": [
+    "expansion"
+  ],
+  "EXT": [
+    "extension"
+  ],
+  "F.B.": [
+    "field book"
+  ],
+  "F.G.": [
+    "finished grade"
+  ],
+  "FAB": [
+    "fabricate"
+  ],
+  "FF": [
+    "front face"
+  ],
+  "FIG": [
+    "figure"
+  ],
+  "FIL": [
+    "fillet"
+  ],
+  "FL": [
+    "flow line"
+  ],
+  "FLG": [
+    "flange"
+  ],
+  "FS": [
+    "far side"
+  ],
+  "FTG": [
+    "footing"
+  ],
+  "G": [
+    "girder"
+  ],
+  "GALV": [
+    "galvanized"
+  ],
+  "GDR": [
+    "girder"
+  ],
+  "GL": [
+    "ground line"
+  ],
+  "GP": [
+    "general plan"
+  ],
+  "GR": [
+    "grade"
+  ],
+  "GS": [
+    "galvanized steel"
+  ],
+  "GTR": [
+    "gutter"
+  ],
+  "H": [
+    "height"
+  ],
+  "HBA": [
+    "headed bar anchor"
+  ],
+  "HD": [
+    "head"
+  ],
+  "HES": [
+    "high early strength"
+  ],
+  "HEX": [
+    "hexagonal"
+  ],
+  "HMA": [
+    "hot mix asphalt"
+  ],
+  "HORIZ": [
+    "horizontal"
+  ],
+  "HP": [
+    "h-pile"
+  ],
+  "HPC": [
+    "high performance concrete"
+  ],
+  "HS": [
+    "high strength"
+  ],
+  "HW": [
+    "high water"
+  ],
+  "ID": [
+    "inside diameter"
+  ],
+  "IN": [
+    "inch"
+  ],
+  "INC": [
+    "including"
+  ],
+  "INCR": [
+    "increase"
+  ],
+  "INFO": [
+    "information"
+  ],
+  "INST": [
+    "install"
+  ],
+  "INT": [
+    "intermediate"
+  ],
+  "INV": [
+    "invert"
+  ],
+  "IP": [
+    "iron pipe"
+  ],
+  "JCT": [
+    "junction"
+  ],
+  "JT": [
+    "joint"
+  ],
+  "L": [
+    "length"
+  ],
+  "LAB": [
+    "laboratory"
+  ],
+  "LAT": [
+    "lateral"
+  ],
+  "LB": [
+    "pound"
+  ],
+  "LC": [
+    "long chord"
+  ],
+  "LF": [
+    "linear foot"
+  ],
+  "LOC": [
+    "location"
+  ],
+  "LONGIT": [
+    "longitudinal"
+  ],
+  "LP": [
+    "low point"
+  ],
+  "LS": [
+    "lump sum"
+  ],
+  "LT": [
+    "left"
+  ],
+  "MAX": [
+    "maximum"
+  ],
+  "MC": [
+    "middle of curve"
+  ],
+  "MECH": [
+    "mechanical"
+  ],
+  "MED": [
+    "median"
+  ],
+  "MEMB": [
+    "member"
+  ],
+  "MFR": [
+    "manufacturer"
+  ],
+  "MH": [
+    "manhole"
+  ],
+  "MIN": [
+    "minimum"
+  ],
+  "MISC": [
+    "miscellaneous"
+  ],
+  "MOD": [
+    "modified"
+  ],
+  "MON": [
+    "monument"
+  ],
+  "MSE": [
+    "mechanically stabilized earth"
+  ],
+  "MTD": [
+    "memo to designers"
+  ],
+  "MTL": [
+    "material"
+  ],
+  "N": [
+    "north"
+  ],
+  "N.I.C.": [
+    "not in contract"
+  ],
+  "NA": [
+    "not applicable"
+  ],
+  "NBI": [
+    "national bridge inventory"
+  ],
+  "NC": [
+    "no change"
+  ],
+  "NF": [
+    "near face"
+  ],
+  "NO.": [
+    "number"
+  ],
+  "NOM": [
+    "nominal"
+  ],
+  "NP": [
+    "non-plastic"
+  ],
+  "NTS": [
+    "not to scale"
+  ],
+  "O.C.": [
+    "on center"
+  ],
+  "OD": [
+    "outside diameter"
+  ],
+  "OFF": [
+    "offset"
+  ],
+  "OP": [
+    "overpass"
+  ],
+  "OPG": [
+    "opening"
+  ],
+  "OPP": [
+    "opposite"
+  ],
+  "ORIG": [
+    "original"
+  ],
+  "P.C.": [
+    "point of curvature"
+  ],
+  "P.S.": [
+    "prestressed"
+  ],
+  "P.T.": [
+    "point of tangency"
+  ],
+  "PCC": [
+    "portland cement concrete"
+  ],
+  "PC": [
+    "precast"
+  ],
+  "PED": [
+    "pedestrian"
+  ],
+  "PERP": [
+    "perpendicular"
+  ],
+  "PI": [
+    "point of intersection"
+  ],
+  "PL": [
+    "plate"
+  ],
+  "POB": [
+    "point of beginning"
+  ],
+  "POE": [
+    "point of ending"
+  ],
+  "PP": [
+    "pipe pile"
+  ],
+  "PR": [
+    "pair"
+  ],
+  "PROJ": [
+    "project"
+  ],
+  "PROP": [
+    "proposed"
+  ],
+  "PS": [
+    "point of switch"
+  ],
+  "PT": [
+    "post-tensioned"
+  ],
+  "PVMT": [
+    "pavement"
+  ],
+  "PVC": [
+    "polyvinyl chloride"
+  ],
+  "PVI": [
+    "point of vertical intersection"
+  ],
+  "PVT": [
+    "point of vertical tangency"
+  ],
+  "PW": [
+    "public works"
+  ],
+  "QTY": [
+    "quantity"
+  ],
+  "R": [
+    "radius"
+  ],
+  "R.C.": [
+    "reinforced concrete"
+  ],
+  "R.O.W.": [
+    "right of way"
+  ],
+  "RAD": [
+    "radial"
+  ],
+  "RE": [
+    "resident engineer"
+  ],
+  "REBAR": [
+    "reinforcing bar",
+    "steel reinforcement."
+  ],
+  "REF": [
+    "reference"
+  ],
+  "REINF": [
+    "reinforced"
+  ],
+  "REM": [
+    "remove"
+  ],
+  "REQ": [
+    "required"
+  ],
+  "RET": [
+    "retaining"
+  ],
+  "REV": [
+    "revised"
+  ],
+  "RM": [
+    "reference mark"
+  ],
+  "RT": [
+    "right"
+  ],
+  "S": [
+    "south"
+  ],
+  "SCHED": [
+    "schedule"
+  ],
+  "SCR": [
+    "screed"
+  ],
+  "SEC": [
+    "section"
+  ],
+  "SH": [
+    "sheet"
+  ],
+  "SHT": [
+    "sheet"
+  ],
+  "SHLD": [
+    "shoulder"
+  ],
+  "SIM": [
+    "similar"
+  ],
+  "SOF": [
+    "soffit"
+  ],
+  "SP": [
+    "special provisions"
+  ],
+  "SPC": [
+    "space"
+  ],
+  "SPEC": [
+    "specification"
+  ],
+  "SQ": [
+    "square"
+  ],
+  "SS": [
+    "stainless steel"
+  ],
+  "STA": [
+    "station"
+  ],
+  "STD": [
+    "standard"
+  ],
+  "STIF": [
+    "stiffener"
+  ],
+  "STR": [
+    "structural"
+  ],
+  "STRUCT": [
+    "structure"
+  ],
+  "SUP": [
+    "superstructure"
+  ],
+  "SYM": [
+    "symmetrical"
+  ],
+  "T": [
+    "tangent"
+  ],
+  "T.O.C.": [
+    "top of column"
+  ],
+  "T.O.D.": [
+    "top of deck"
+  ],
+  "T&B": [
+    "top and bottom"
+  ],
+  "TAN": [
+    "tangent"
+  ],
+  "TB": [
+    "top of bank"
+  ],
+  "TC": [
+    "top of curb"
+  ],
+  "TE": [
+    "tangent end"
+  ],
+  "TEMP": [
+    "temporary"
+  ],
+  "TH": [
+    "thick"
+  ],
+  "TK": [
+    "thick"
+  ],
+  "TOT": [
+    "total"
+  ],
+  "TP": [
+    "turning point"
+  ],
+  "TRANS": [
+    "transition"
+  ],
+  "TYP": [
+    "typical"
+  ],
+  "U.N.O.": [
+    "unless noted otherwise"
+  ],
+  "UC": [
+    "underpass"
+  ],
+  "UNC": [
+    "uncoated"
+  ],
+  "UR": [
+    "utility"
+  ],
+  "V": [
+    "vertical"
+  ],
+  "VAR": [
+    "varies"
+  ],
+  "VC": [
+    "vertical curve"
+  ],
+  "VERT": [
+    "vertical"
+  ],
+  "VOL": [
+    "volume"
+  ],
+  "W": [
+    "west"
+  ],
+  "W.P.": [
+    "working point"
+  ],
+  "W.W.": [
+    "wingwall"
+  ],
+  "WF": [
+    "wide flange"
+  ],
+  "WID": [
+    "width"
+  ],
+  "WM": [
+    "water meter"
+  ],
+  "WS": [
+    "water surface"
+  ],
+  "WT": [
+    "weight"
+  ],
+  "WW": [
+    "wingwall"
+  ],
+  "X-SEC": [
+    "cross section"
+  ],
+  "YD": [
+    "yard"
+  ],
+  "YR": [
+    "year"
+  ],
+  "Z": [
+    "zone"
+  ],
+  "AGGREGATE": [
+    "coarse or fine rock used in concrete."
+  ],
+  "AS-BUILT": [
+    "plans reflecting what was actually built."
+  ],
+  "AUXILIARY LANE": [
+    "extra lane between interchanges."
+  ],
+  "BACKFILL": [
+    "soil placed behind a wall or footing."
+  ],
+  "BALUSTRADE": [
+    "decorative bridge railing."
+  ],
+  "BARR": [
+    "barrier"
+  ],
+  "BATTER": [
+    "slope of a pile or wall face."
+  ],
+  "BEARING": [
+    "structural device transferring load to substructure."
+  ],
+  "BEDROCK": [
+    "solid rock supporting foundations."
+  ],
+  "BENT CAP": [
+    "beam at the top of columns supporting girders."
+  ],
+  "BOX GIRDER": [
+    "hollow, rectangular bridge section."
+  ],
+  "CAMBER": [
+    "built-in upward curve to offset deflection."
+  ],
+  "CAPILLARY BREAK": [
+    "layer of gravel to stop water rising."
+  ],
+  "CAST-IN-PLACE": [
+    "concrete poured in its final location."
+  ],
+  "CATCHMENT": [
+    "area where water collects."
+  ],
+  "CAISSON": [
+    "watertight structure for underwater work."
+  ],
+  "CHORD": [
+    "main member of a truss."
+  ],
+  "CLEAR SPAN": [
+    "distance between inner faces of supports."
+  ],
+  "COFFERDAM": [
+    "temporary dam to allow dry construction."
+  ],
+  "COLUMN": [
+    "vertical member resisting compression."
+  ],
+  "COMPOSITE": [
+    "steel and concrete working together."
+  ],
+  "CORBEL": [
+    "structural projection supporting a load."
+  ],
+  "COUNTERFORT": [
+    "internal buttress on a retaining wall."
+  ],
+  "CULVERT": [
+    "enclosed channel for water under a road."
+  ],
+  "DEAD LOAD": [
+    "weight of the structure itself."
+  ],
+  "DECK": [
+    "the roadway surface of the bridge."
+  ],
+  "DOWELS": [
+    "short steel bars connecting two concrete pours."
+  ],
+  "DRAINAGE": [
+    "system for removing water from the bridge."
+  ],
+  "DRIP GROOVE": [
+    "small notch to prevent water reaching the soffit."
+  ],
+  "DUCT": [
+    "tube for post-tensioning tendons."
+  ],
+  "EDGE BEAM": [
+    "stiffening beam at the edge of the deck."
+  ],
+  "EFFLORESCENCE": [
+    "white salt deposits on concrete surface."
+  ],
+  "ELASTOMERIC BEARING": [
+    "rubber pad for bridge movement."
+  ],
+  "EMBEDMENT": [
+    "depth of an object set in concrete."
+  ],
+  "EPOXY COATING": [
+    "green coating to protect rebar from rust."
+  ],
+  "FALSEWORK": [
+    "temporary support for cip concrete."
+  ],
+  "FLANGE": [
+    "top or bottom plate of a girder."
+  ],
+  "FORMS": [
+    "molds used to hold wet concrete."
+  ],
+  "FRICTION PILE": [
+    "pile relying on skin friction with soil."
+  ],
+  "GALLERY": [
+    "internal access passage in a bridge."
+  ],
+  "GALVANIZING": [
+    "zinc coating for steel protection."
+  ],
+  "GIRDER": [
+    "primary longitudinal support beam."
+  ],
+  "GROUT": [
+    "fluid cement mix used to fill voids."
+  ],
+  "GUSSET PLATE": [
+    "steel plate connecting truss members."
+  ],
+  "HAUNCH": [
+    "deepened section of a girder at a support."
+  ],
+  "HINGE": [
+    "structural joint allowing rotation."
+  ],
+  "HYDRATION": [
+    "chemical reaction in curing concrete."
+  ],
+  "IMPACT": [
+    "dynamic load from moving vehicles."
+  ],
+  "JOINT": [
+    "gap allowing for expansion/contraction."
+  ],
+  "LACING": [
+    "small bars connecting truss members."
+  ],
+  "LAITANCE": [
+    "weak layer on the surface of concrete."
+  ],
+  "LIVE LOAD": [
+    "weight of moving traffic."
+  ],
+  "MAIN SPAN": [
+    "longest span of the bridge."
+  ],
+  "MONOLITHIC": [
+    "cast as a single continuous piece."
+  ],
+  "MORTAR": [
+    "cement and sand mix."
+  ],
+  "MUD SILL": [
+    "base for falsework resting on ground."
+  ],
+  "NEGATIVE MOMENT": [
+    "bending that puts the top in tension."
+  ],
+  "NOTCH": [
+    "recess in an abutment for girders."
+  ],
+  "OVERHANG": [
+    "portion of deck extending beyond girders."
+  ],
+  "PARAPET": [
+    "short wall at the edge of the deck."
+  ],
+  "PAVING NOTCH": [
+    "shelf supporting the approach slab."
+  ],
+  "PIER": [
+    "intermediate bridge support."
+  ],
+  "PILE": [
+    "deep foundation driven or drilled."
+  ],
+  "PLASTICITY": [
+    "ability of soil/concrete to deform."
+  ],
+  "POST-TENSIONING": [
+    "tensioning tendons after concrete cures."
+  ],
+  "PRECAST": [
+    "fabricated off-site and installed."
+  ],
+  "PRESTRESSING": [
+    "pre-compressing concrete for strength."
+  ],
+  "PROFILE": [
+    "side view of the roadway alignment."
+  ],
+  "PYLON": [
+    "tower for a cable-stayed bridge."
+  ],
+  "RETAINING WALL": [
+    "wall resisting lateral soil pressure."
+  ],
+  "RIPRAP": [
+    "large rocks preventing erosion."
+  ],
+  "ROCK SOCKET": [
+    "bottom of a pile drilled into rock."
+  ],
+  "SCUPPER": [
+    "opening for deck drainage."
+  ],
+  "SEAL COURSE": [
+    "concrete poured underwater to seal a cofferdam."
+  ],
+  "SECONDARY STRESS": [
+    "internal stress from temperature/shrinkage."
+  ],
+  "SEGMENTAL": [
+    "bridge built in short sections."
+  ],
+  "SHALLOW FOUNDATION": [
+    "spread footing on soil/rock."
+  ],
+  "SHEAR KEY": [
+    "notch to prevent lateral movement."
+  ],
+  "SHOE": [
+    "lower part of a bridge bearing."
+  ],
+  "SHORT SPAN": [
+    "bridges under 20 feet."
+  ],
+  "SHORING": [
+    "temporary structural support."
+  ],
+  "SKEW": [
+    "angle between bridge and crossing road."
+  ],
+  "SLAB": [
+    "flat, thin concrete structural member."
+  ],
+  "SOFFIT": [
+    "the underside of any structural member."
+  ],
+  "SPAN": [
+    "distance between supports."
+  ],
+  "SPALL": [
+    "fragment of concrete broken off surface."
+  ],
+  "SPLICE": [
+    "connection between two structural members."
+  ],
+  "STAGING": [
+    "phase construction sequence."
+  ],
+  "STIFFENER": [
+    "steel plate preventing web buckling."
+  ],
+  "STIRRUPS": [
+    "rebar loops resisting shear."
+  ],
+  "SUBSTRUCTURE": [
+    "parts of bridge below the bearings."
+  ],
+  "SUPERSTRUCTURE": [
+    "parts of bridge above the bearings."
+  ],
+  "SUPERELEVATION": [
+    "banking of a roadway in a curve."
+  ],
+  "TENDON": [
+    "high-strength steel cable for pt."
+  ],
+  "TOE": [
+    "front edge of a footing or wall."
+  ],
+  "TORSION": [
+    "twisting force on a member."
+  ],
+  "TRANSVERSE": [
+    "direction perpendicular to traffic."
+  ],
+  "UNDERPASS": [
+    "roadway running beneath a bridge."
+  ],
+  "UNIT WEIGHT": [
+    "density of a material."
+  ],
+  "VENTS": [
+    "openings in box girders for air/utility."
+  ],
+  "VIADUCT": [
+    "long bridge with many small spans."
+  ],
+  "WATERSTOP": [
+    "rubber/pvc strip in a joint to stop water."
+  ],
+  "WEARING SURFACE": [
+    "top layer of deck for traffic wear."
+  ],
+  "WEB": [
+    "vertical section of an i-beam or box."
+  ],
+  "WEEP HOLE": [
+    "drainage hole in a retaining wall."
+  ],
+  "WHEEL GUARD": [
+    "curb at the edge of the roadway."
+  ],
+  "WINGWALL": [
+    "retaining wall attached to abutment."
+  ],
+  "YIELD STRENGTH": [
+    "stress level where steel deforms permanently."
+  ],
+  "OC": [
+    "replace"
+  ]
+}

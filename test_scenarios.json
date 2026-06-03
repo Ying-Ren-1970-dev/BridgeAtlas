@@ -1,0 +1,4700 @@
+{
+  "project_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete",
+  "total_scenarios": 401,
+  "coverage": 1.0,
+  "scenarios": [
+    {
+      "id": 1,
+      "type": "direct_element",
+      "query": "R/C Slab",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "R/C Slab",
+      "min_results": 1,
+      "description": "Search for R/C Slab"
+    },
+    {
+      "id": 2,
+      "type": "direct_element",
+      "query": "R/C Box Girder",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "R/C Box Girder",
+      "min_results": 1,
+      "description": "Search for R/C Box Girder"
+    },
+    {
+      "id": 3,
+      "type": "direct_element",
+      "query": "Bent 1 to Bent 17",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Bent 1 to Bent 17",
+      "min_results": 1,
+      "description": "Search for Bent 1 to Bent 17"
+    },
+    {
+      "id": 4,
+      "type": "direct_element",
+      "query": "Abut 1 and Abut 17",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Abut 1 and Abut 17",
+      "min_results": 1,
+      "description": "Search for Abut 1 and Abut 17"
+    },
+    {
+      "id": 5,
+      "type": "direct_element",
+      "query": "Retaining Wall",
+      "expected_pages": [
+        1,
+        12,
+        13,
+        14,
+        15,
+        29
+      ],
+      "expected_element": "Retaining Wall",
+      "min_results": 1,
+      "description": "Search for Retaining Wall"
+    },
+    {
+      "id": 6,
+      "type": "direct_element",
+      "query": "Not specified",
+      "expected_pages": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        17,
+        18,
+        20,
+        36,
+        41
+      ],
+      "expected_element": "Not specified",
+      "min_results": 1,
+      "description": "Search for Not specified"
+    },
+    {
+      "id": 7,
+      "type": "direct_element",
+      "query": "Total length along 'W' line",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Total length along 'W' line",
+      "min_results": 1,
+      "description": "Search for Total length along 'W' line"
+    },
+    {
+      "id": 8,
+      "type": "direct_element",
+      "query": "Bent spacing",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Bent spacing",
+      "min_results": 1,
+      "description": "Search for Bent spacing"
+    },
+    {
+      "id": 9,
+      "type": "direct_element",
+      "query": "Vertical clearance",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Vertical clearance",
+      "min_results": 1,
+      "description": "Search for Vertical clearance"
+    },
+    {
+      "id": 10,
+      "type": "direct_element",
+      "query": "Paint",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Paint",
+      "min_results": 1,
+      "description": "Search for Paint"
+    },
+    {
+      "id": 11,
+      "type": "direct_element",
+      "query": "Sound wall",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Sound wall",
+      "min_results": 1,
+      "description": "Search for Sound wall"
+    },
+    {
+      "id": 12,
+      "type": "direct_element",
+      "query": "Retaining wall",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Retaining wall",
+      "min_results": 1,
+      "description": "Search for Retaining wall"
+    },
+    {
+      "id": 13,
+      "type": "direct_element",
+      "query": "Entry monument",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Entry monument",
+      "min_results": 1,
+      "description": "Search for Entry monument"
+    },
+    {
+      "id": 14,
+      "type": "direct_element",
+      "query": "Settlement platform",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Settlement platform",
+      "min_results": 1,
+      "description": "Search for Settlement platform"
+    },
+    {
+      "id": 15,
+      "type": "direct_element",
+      "query": "unknown",
+      "expected_pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        40,
+        41,
+        42
+      ],
+      "expected_element": "unknown",
+      "min_results": 1,
+      "description": "Search for unknown"
+    },
+    {
+      "id": 16,
+      "type": "direct_element",
+      "query": "CIDH Concrete Piles",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "CIDH Concrete Piles",
+      "min_results": 1,
+      "description": "Search for CIDH Concrete Piles"
+    },
+    {
+      "id": 17,
+      "type": "direct_element",
+      "query": "Structural Concrete, Bridge Footing",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Structural Concrete, Bridge Footing",
+      "min_results": 1,
+      "description": "Search for Structural Concrete, Bridge Footing"
+    },
+    {
+      "id": 18,
+      "type": "direct_element",
+      "query": "Structural Concrete, Retaining Wall",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Structural Concrete, Retaining Wall",
+      "min_results": 1,
+      "description": "Search for Structural Concrete, Retaining Wall"
+    },
+    {
+      "id": 19,
+      "type": "direct_element",
+      "query": "Pedestrian Railing",
+      "expected_pages": [
+        3,
+        15,
+        23
+      ],
+      "expected_element": "Pedestrian Railing",
+      "min_results": 1,
+      "description": "Search for Pedestrian Railing"
+    },
+    {
+      "id": 20,
+      "type": "direct_element",
+      "query": "Isolation Casing",
+      "expected_pages": [
+        3,
+        22
+      ],
+      "expected_element": "Isolation Casing",
+      "min_results": 1,
+      "description": "Search for Isolation Casing"
+    },
+    {
+      "id": 21,
+      "type": "direct_element",
+      "query": "24\" Cast-In-Drilled-Hole Concrete Piling",
+      "expected_pages": [
+        3,
+        7
+      ],
+      "expected_element": "24\" Cast-In-Drilled-Hole Concrete Piling",
+      "min_results": 1,
+      "description": "Search for 24\" Cast-In-Drilled-Hole Concrete Piling"
+    },
+    {
+      "id": 22,
+      "type": "direct_element",
+      "query": "72\" Cast-In-Drilled-Hole Concrete Piling",
+      "expected_pages": [
+        3,
+        7
+      ],
+      "expected_element": "72\" Cast-In-Drilled-Hole Concrete Piling",
+      "min_results": 1,
+      "description": "Search for 72\" Cast-In-Drilled-Hole Concrete Piling"
+    },
+    {
+      "id": 23,
+      "type": "direct_element",
+      "query": "72\" Permanent Steel Casing",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "72\" Permanent Steel Casing",
+      "min_results": 1,
+      "description": "Search for 72\" Permanent Steel Casing"
+    },
+    {
+      "id": 24,
+      "type": "direct_element",
+      "query": "Concrete",
+      "expected_pages": [
+        3,
+        5,
+        10,
+        12,
+        26,
+        29,
+        30
+      ],
+      "expected_element": "Concrete",
+      "min_results": 1,
+      "description": "Search for Concrete"
+    },
+    {
+      "id": 25,
+      "type": "direct_element",
+      "query": "Steel",
+      "expected_pages": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        18,
+        22,
+        26,
+        30
+      ],
+      "expected_element": "Steel",
+      "min_results": 1,
+      "description": "Search for Steel"
+    },
+    {
+      "id": 26,
+      "type": "direct_element",
+      "query": "Load and Resistance Factor Design",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Load and Resistance Factor Design",
+      "min_results": 1,
+      "description": "Search for Load and Resistance Factor Design"
+    },
+    {
+      "id": 27,
+      "type": "direct_element",
+      "query": "Seismic Design Criteria",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Seismic Design Criteria",
+      "min_results": 1,
+      "description": "Search for Seismic Design Criteria"
+    },
+    {
+      "id": 28,
+      "type": "direct_element",
+      "query": "Concrete strength",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Concrete strength",
+      "min_results": 1,
+      "description": "Search for Concrete strength"
+    },
+    {
+      "id": 29,
+      "type": "direct_element",
+      "query": "Pile data table",
+      "expected_pages": [
+        3
+      ],
+      "expected_element": "Pile data table",
+      "min_results": 1,
+      "description": "Search for Pile data table"
+    },
+    {
+      "id": 30,
+      "type": "direct_element",
+      "query": "Bents 2 to 7",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "Bents 2 to 7",
+      "min_results": 1,
+      "description": "Search for Bents 2 to 7"
+    },
+    {
+      "id": 31,
+      "type": "direct_element",
+      "query": "Abut 1",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "Abut 1",
+      "min_results": 1,
+      "description": "Search for Abut 1"
+    },
+    {
+      "id": 32,
+      "type": "direct_element",
+      "query": "Edge of Deck",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "Edge of Deck",
+      "min_results": 1,
+      "description": "Search for Edge of Deck"
+    },
+    {
+      "id": 33,
+      "type": "direct_element",
+      "query": "'M' Line",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "'M' Line",
+      "min_results": 1,
+      "description": "Search for 'M' Line"
+    },
+    {
+      "id": 34,
+      "type": "direct_element",
+      "query": "Contour intervals",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "Contour intervals",
+      "min_results": 1,
+      "description": "Search for Contour intervals"
+    },
+    {
+      "id": 35,
+      "type": "direct_element",
+      "query": "'M' Line intervals",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "'M' Line intervals",
+      "min_results": 1,
+      "description": "Search for 'M' Line intervals"
+    },
+    {
+      "id": 36,
+      "type": "direct_element",
+      "query": "Match line references",
+      "expected_pages": [
+        4
+      ],
+      "expected_element": "Match line references",
+      "min_results": 1,
+      "description": "Search for Match line references"
+    },
+    {
+      "id": 37,
+      "type": "direct_element",
+      "query": "24\" CIDH Type I Shaft",
+      "expected_pages": [
+        5,
+        38
+      ],
+      "expected_element": "24\" CIDH Type I Shaft",
+      "min_results": 1,
+      "description": "Search for 24\" CIDH Type I Shaft"
+    },
+    {
+      "id": 38,
+      "type": "direct_element",
+      "query": "Column Type A",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Column Type A",
+      "min_results": 1,
+      "description": "Search for Column Type A"
+    },
+    {
+      "id": 39,
+      "type": "direct_element",
+      "query": "Cap Beam Type B",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Cap Beam Type B",
+      "min_results": 1,
+      "description": "Search for Cap Beam Type B"
+    },
+    {
+      "id": 40,
+      "type": "direct_element",
+      "query": "Shear Key Type C",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Shear Key Type C",
+      "min_results": 1,
+      "description": "Search for Shear Key Type C"
+    },
+    {
+      "id": 41,
+      "type": "direct_element",
+      "query": "Column-to-pile connection",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Column-to-pile connection",
+      "min_results": 1,
+      "description": "Search for Column-to-pile connection"
+    },
+    {
+      "id": 42,
+      "type": "direct_element",
+      "query": "Column spacing",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Column spacing",
+      "min_results": 1,
+      "description": "Search for Column spacing"
+    },
+    {
+      "id": 43,
+      "type": "direct_element",
+      "query": "Cap beam width",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Cap beam width",
+      "min_results": 1,
+      "description": "Search for Cap beam width"
+    },
+    {
+      "id": 44,
+      "type": "direct_element",
+      "query": "Load criteria",
+      "expected_pages": [
+        5
+      ],
+      "expected_element": "Load criteria",
+      "min_results": 1,
+      "description": "Search for Load criteria"
+    },
+    {
+      "id": 45,
+      "type": "direct_element",
+      "query": "Abutment Backwall",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment Backwall",
+      "min_results": 1,
+      "description": "Search for Abutment Backwall"
+    },
+    {
+      "id": 46,
+      "type": "direct_element",
+      "query": "Abutment Stem",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment Stem",
+      "min_results": 1,
+      "description": "Search for Abutment Stem"
+    },
+    {
+      "id": 47,
+      "type": "direct_element",
+      "query": "Abutment Return Wall",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment Return Wall",
+      "min_results": 1,
+      "description": "Search for Abutment Return Wall"
+    },
+    {
+      "id": 48,
+      "type": "direct_element",
+      "query": "Abutment CIDH Piles",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment CIDH Piles",
+      "min_results": 1,
+      "description": "Search for Abutment CIDH Piles"
+    },
+    {
+      "id": 49,
+      "type": "direct_element",
+      "query": "Structural Backfill",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Structural Backfill",
+      "min_results": 1,
+      "description": "Search for Structural Backfill"
+    },
+    {
+      "id": 50,
+      "type": "direct_element",
+      "query": "Roadway Structural Section",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Roadway Structural Section",
+      "min_results": 1,
+      "description": "Search for Roadway Structural Section"
+    },
+    {
+      "id": 51,
+      "type": "direct_element",
+      "query": "CIDH Piles",
+      "expected_pages": [
+        6,
+        7,
+        8,
+        16
+      ],
+      "expected_element": "CIDH Piles",
+      "min_results": 1,
+      "description": "Search for CIDH Piles"
+    },
+    {
+      "id": 52,
+      "type": "direct_element",
+      "query": "Top of Wall",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Top of Wall",
+      "min_results": 1,
+      "description": "Search for Top of Wall"
+    },
+    {
+      "id": 53,
+      "type": "direct_element",
+      "query": "FG (Finished Grade)",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "FG (Finished Grade)",
+      "min_results": 1,
+      "description": "Search for FG (Finished Grade)"
+    },
+    {
+      "id": 54,
+      "type": "direct_element",
+      "query": "Settlement allowance",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Settlement allowance",
+      "min_results": 1,
+      "description": "Search for Settlement allowance"
+    },
+    {
+      "id": 55,
+      "type": "direct_element",
+      "query": "Construction steps for abutments and retaining walls",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Construction steps for abutments and retaining walls",
+      "min_results": 1,
+      "description": "Search for Construction steps for abutments and retaining walls"
+    },
+    {
+      "id": 56,
+      "type": "direct_element",
+      "query": "Notes on settlement and backfill requirements",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Notes on settlement and backfill requirements",
+      "min_results": 1,
+      "description": "Search for Notes on settlement and backfill requirements"
+    },
+    {
+      "id": 57,
+      "type": "direct_element",
+      "query": "Footings",
+      "expected_pages": [
+        7,
+        13
+      ],
+      "expected_element": "Footings",
+      "min_results": 1,
+      "description": "Search for Footings"
+    },
+    {
+      "id": 58,
+      "type": "direct_element",
+      "query": "Bents",
+      "expected_pages": [
+        7
+      ],
+      "expected_element": "Bents",
+      "min_results": 1,
+      "description": "Search for Bents"
+    },
+    {
+      "id": 59,
+      "type": "direct_element",
+      "query": "Abutments",
+      "expected_pages": [
+        7
+      ],
+      "expected_element": "Abutments",
+      "min_results": 1,
+      "description": "Search for Abutments"
+    },
+    {
+      "id": 60,
+      "type": "direct_element",
+      "query": "Bent spacing and alignment",
+      "expected_pages": [
+        7
+      ],
+      "expected_element": "Bent spacing and alignment",
+      "min_results": 1,
+      "description": "Search for Bent spacing and alignment"
+    },
+    {
+      "id": 61,
+      "type": "direct_element",
+      "query": "Station numbers",
+      "expected_pages": [
+        7,
+        40
+      ],
+      "expected_element": "Station numbers",
+      "min_results": 1,
+      "description": "Search for Station numbers"
+    },
+    {
+      "id": 62,
+      "type": "direct_element",
+      "query": "Footing elevations",
+      "expected_pages": [
+        7
+      ],
+      "expected_element": "Footing elevations",
+      "min_results": 1,
+      "description": "Search for Footing elevations"
+    },
+    {
+      "id": 63,
+      "type": "direct_element",
+      "query": "Retaining Walls",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "Retaining Walls",
+      "min_results": 1,
+      "description": "Search for Retaining Walls"
+    },
+    {
+      "id": 64,
+      "type": "direct_element",
+      "query": "24\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "24\" CIDH",
+      "min_results": 1,
+      "description": "Search for 24\" CIDH"
+    },
+    {
+      "id": 65,
+      "type": "direct_element",
+      "query": "30\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "30\" CIDH",
+      "min_results": 1,
+      "description": "Search for 30\" CIDH"
+    },
+    {
+      "id": 66,
+      "type": "direct_element",
+      "query": "72\" CIDH",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "72\" CIDH",
+      "min_results": 1,
+      "description": "Search for 72\" CIDH"
+    },
+    {
+      "id": 67,
+      "type": "direct_element",
+      "query": "Design Tip Elevations",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "Design Tip Elevations",
+      "min_results": 1,
+      "description": "Search for Design Tip Elevations"
+    },
+    {
+      "id": 68,
+      "type": "direct_element",
+      "query": "Specified Tip Elevations",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "Specified Tip Elevations",
+      "min_results": 1,
+      "description": "Search for Specified Tip Elevations"
+    },
+    {
+      "id": 69,
+      "type": "direct_element",
+      "query": "Steel Casing Specified Tip Elevations",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "Steel Casing Specified Tip Elevations",
+      "min_results": 1,
+      "description": "Search for Steel Casing Specified Tip Elevations"
+    },
+    {
+      "id": 70,
+      "type": "direct_element",
+      "query": "Cut-off Elevations",
+      "expected_pages": [
+        8
+      ],
+      "expected_element": "Cut-off Elevations",
+      "min_results": 1,
+      "description": "Search for Cut-off Elevations"
+    },
+    {
+      "id": 71,
+      "type": "direct_element",
+      "query": "24\" CIDH (Type I Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "24\" CIDH (Type I Shaft)",
+      "min_results": 1,
+      "description": "Search for 24\" CIDH (Type I Shaft)"
+    },
+    {
+      "id": 72,
+      "type": "direct_element",
+      "query": "72\" CIDH (Type II Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "72\" CIDH (Type II Shaft)",
+      "min_results": 1,
+      "description": "Search for 72\" CIDH (Type II Shaft)"
+    },
+    {
+      "id": 73,
+      "type": "direct_element",
+      "query": "30\" CIDH (Type II Shaft)",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "30\" CIDH (Type II Shaft)",
+      "min_results": 1,
+      "description": "Search for 30\" CIDH (Type II Shaft)"
+    },
+    {
+      "id": 74,
+      "type": "direct_element",
+      "query": "Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Foundation",
+      "min_results": 1,
+      "description": "Search for Pile Foundation"
+    },
+    {
+      "id": 75,
+      "type": "direct_element",
+      "query": "Pile",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile",
+      "min_results": 1,
+      "description": "Search for Pile"
+    },
+    {
+      "id": 76,
+      "type": "direct_element",
+      "query": "Pile Cut-off Elevation",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Cut-off Elevation",
+      "min_results": 1,
+      "description": "Search for Pile Cut-off Elevation"
+    },
+    {
+      "id": 77,
+      "type": "direct_element",
+      "query": "Pile Nominal Resistance",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Nominal Resistance",
+      "min_results": 1,
+      "description": "Search for Pile Nominal Resistance"
+    },
+    {
+      "id": 78,
+      "type": "direct_element",
+      "query": "Pile Design Tip Elevation",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Design Tip Elevation",
+      "min_results": 1,
+      "description": "Search for Pile Design Tip Elevation"
+    },
+    {
+      "id": 79,
+      "type": "direct_element",
+      "query": "Pile Specified Steel Elevation",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Specified Steel Elevation",
+      "min_results": 1,
+      "description": "Search for Pile Specified Steel Elevation"
+    },
+    {
+      "id": 80,
+      "type": "direct_element",
+      "query": "Pile Tip Elevation",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Tip Elevation",
+      "min_results": 1,
+      "description": "Search for Pile Tip Elevation"
+    },
+    {
+      "id": 81,
+      "type": "direct_element",
+      "query": "Pile Type",
+      "expected_pages": [
+        9
+      ],
+      "expected_element": "Pile Type",
+      "min_results": 1,
+      "description": "Search for Pile Type"
+    },
+    {
+      "id": 82,
+      "type": "direct_element",
+      "query": "24\" CIDH Pile",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "24\" CIDH Pile",
+      "min_results": 1,
+      "description": "Search for 24\" CIDH Pile"
+    },
+    {
+      "id": 83,
+      "type": "direct_element",
+      "query": "Pipe Pin (Steel Shear Key)",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Pipe Pin (Steel Shear Key)",
+      "min_results": 1,
+      "description": "Search for Pipe Pin (Steel Shear Key)"
+    },
+    {
+      "id": 84,
+      "type": "direct_element",
+      "query": "Bearing Pad",
+      "expected_pages": [
+        10,
+        17
+      ],
+      "expected_element": "Bearing Pad",
+      "min_results": 1,
+      "description": "Search for Bearing Pad"
+    },
+    {
+      "id": 85,
+      "type": "direct_element",
+      "query": "Abutment",
+      "expected_pages": [
+        10,
+        12
+      ],
+      "expected_element": "Abutment",
+      "min_results": 1,
+      "description": "Search for Abutment"
+    },
+    {
+      "id": 86,
+      "type": "direct_element",
+      "query": "Backwall",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Backwall",
+      "min_results": 1,
+      "description": "Search for Backwall"
+    },
+    {
+      "id": 87,
+      "type": "direct_element",
+      "query": "Return Wall",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Return Wall",
+      "min_results": 1,
+      "description": "Search for Return Wall"
+    },
+    {
+      "id": 88,
+      "type": "direct_element",
+      "query": "Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Elastomeric Bearing Pad",
+      "min_results": 1,
+      "description": "Search for Elastomeric Bearing Pad"
+    },
+    {
+      "id": 89,
+      "type": "direct_element",
+      "query": "Geocomposite Drain",
+      "expected_pages": [
+        10,
+        12,
+        15,
+        29
+      ],
+      "expected_element": "Geocomposite Drain",
+      "min_results": 1,
+      "description": "Search for Geocomposite Drain"
+    },
+    {
+      "id": 90,
+      "type": "direct_element",
+      "query": "Pipe Pin connection",
+      "expected_pages": [
+        10,
+        18
+      ],
+      "expected_element": "Pipe Pin connection",
+      "min_results": 1,
+      "description": "Search for Pipe Pin connection"
+    },
+    {
+      "id": 91,
+      "type": "direct_element",
+      "query": "Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Bearing pad connection",
+      "min_results": 1,
+      "description": "Search for Bearing pad connection"
+    },
+    {
+      "id": 92,
+      "type": "direct_element",
+      "query": "Casing Material",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Casing Material",
+      "min_results": 1,
+      "description": "Search for Casing Material"
+    },
+    {
+      "id": 93,
+      "type": "direct_element",
+      "query": "Pipe Pin",
+      "expected_pages": [
+        10,
+        11,
+        18
+      ],
+      "expected_element": "Pipe Pin",
+      "min_results": 1,
+      "description": "Search for Pipe Pin"
+    },
+    {
+      "id": 94,
+      "type": "direct_element",
+      "query": "Pile Layout",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Pile Layout",
+      "min_results": 1,
+      "description": "Search for Pile Layout"
+    },
+    {
+      "id": 95,
+      "type": "direct_element",
+      "query": "Joint Seal and Armor",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Joint Seal and Armor",
+      "min_results": 1,
+      "description": "Search for Joint Seal and Armor"
+    },
+    {
+      "id": 96,
+      "type": "direct_element",
+      "query": "Pipe Pin details",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Pipe Pin details",
+      "min_results": 1,
+      "description": "Search for Pipe Pin details"
+    },
+    {
+      "id": 97,
+      "type": "direct_element",
+      "query": "Steel Shear Key",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Steel Shear Key",
+      "min_results": 1,
+      "description": "Search for Steel Shear Key"
+    },
+    {
+      "id": 98,
+      "type": "direct_element",
+      "query": "End Diaphragm",
+      "expected_pages": [
+        11,
+        18
+      ],
+      "expected_element": "End Diaphragm",
+      "min_results": 1,
+      "description": "Search for End Diaphragm"
+    },
+    {
+      "id": 99,
+      "type": "direct_element",
+      "query": "Studs",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Studs",
+      "min_results": 1,
+      "description": "Search for Studs"
+    },
+    {
+      "id": 100,
+      "type": "direct_element",
+      "query": "Reinf",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Reinf",
+      "min_results": 1,
+      "description": "Search for Reinf"
+    },
+    {
+      "id": 101,
+      "type": "direct_element",
+      "query": "Cover Plate",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Cover Plate",
+      "min_results": 1,
+      "description": "Search for Cover Plate"
+    },
+    {
+      "id": 102,
+      "type": "direct_element",
+      "query": "Anchor Rod",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Anchor Rod",
+      "min_results": 1,
+      "description": "Search for Anchor Rod"
+    },
+    {
+      "id": 103,
+      "type": "direct_element",
+      "query": "Pipe Pin Detail",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Pipe Pin Detail",
+      "min_results": 1,
+      "description": "Search for Pipe Pin Detail"
+    },
+    {
+      "id": 104,
+      "type": "direct_element",
+      "query": "Stud Detail",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Stud Detail",
+      "min_results": 1,
+      "description": "Search for Stud Detail"
+    },
+    {
+      "id": 105,
+      "type": "direct_element",
+      "query": "Pipe",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Pipe",
+      "min_results": 1,
+      "description": "Search for Pipe"
+    },
+    {
+      "id": 106,
+      "type": "direct_element",
+      "query": "Grout",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Grout",
+      "min_results": 1,
+      "description": "Search for Grout"
+    },
+    {
+      "id": 107,
+      "type": "direct_element",
+      "query": "Rubber",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Rubber",
+      "min_results": 1,
+      "description": "Search for Rubber"
+    },
+    {
+      "id": 108,
+      "type": "direct_element",
+      "query": "Reinforcement Bars",
+      "expected_pages": [
+        11,
+        12,
+        15,
+        17
+      ],
+      "expected_element": "Reinforcement Bars",
+      "min_results": 1,
+      "description": "Search for Reinforcement Bars"
+    },
+    {
+      "id": 109,
+      "type": "direct_element",
+      "query": "Expanded Polystyrene",
+      "expected_pages": [
+        11,
+        17
+      ],
+      "expected_element": "Expanded Polystyrene",
+      "min_results": 1,
+      "description": "Search for Expanded Polystyrene"
+    },
+    {
+      "id": 110,
+      "type": "direct_element",
+      "query": "Rubber Water Sealing Gasket",
+      "expected_pages": [
+        11
+      ],
+      "expected_element": "Rubber Water Sealing Gasket",
+      "min_results": 1,
+      "description": "Search for Rubber Water Sealing Gasket"
+    },
+    {
+      "id": 111,
+      "type": "direct_element",
+      "query": "Concrete Shear Key",
+      "expected_pages": [
+        12
+      ],
+      "expected_element": "Concrete Shear Key",
+      "min_results": 1,
+      "description": "Search for Concrete Shear Key"
+    },
+    {
+      "id": 112,
+      "type": "direct_element",
+      "query": "Reinforcement",
+      "expected_pages": [
+        12,
+        17,
+        19,
+        23
+      ],
+      "expected_element": "Reinforcement",
+      "min_results": 1,
+      "description": "Search for Reinforcement"
+    },
+    {
+      "id": 113,
+      "type": "direct_element",
+      "query": "Drain",
+      "expected_pages": [
+        12
+      ],
+      "expected_element": "Drain",
+      "min_results": 1,
+      "description": "Search for Drain"
+    },
+    {
+      "id": 114,
+      "type": "direct_element",
+      "query": "Top of Curb",
+      "expected_pages": [
+        12,
+        30
+      ],
+      "expected_element": "Top of Curb",
+      "min_results": 1,
+      "description": "Search for Top of Curb"
+    },
+    {
+      "id": 115,
+      "type": "direct_element",
+      "query": "Expansion Joint",
+      "expected_pages": [
+        12,
+        14
+      ],
+      "expected_element": "Expansion Joint",
+      "min_results": 1,
+      "description": "Search for Expansion Joint"
+    },
+    {
+      "id": 116,
+      "type": "direct_element",
+      "query": "Reinforcement Spacing",
+      "expected_pages": [
+        12
+      ],
+      "expected_element": "Reinforcement Spacing",
+      "min_results": 1,
+      "description": "Search for Reinforcement Spacing"
+    },
+    {
+      "id": 117,
+      "type": "direct_element",
+      "query": "Construction Joint",
+      "expected_pages": [
+        12,
+        15
+      ],
+      "expected_element": "Construction Joint",
+      "min_results": 1,
+      "description": "Search for Construction Joint"
+    },
+    {
+      "id": 118,
+      "type": "direct_element",
+      "query": "Drainage Pad",
+      "expected_pages": [
+        12
+      ],
+      "expected_element": "Drainage Pad",
+      "min_results": 1,
+      "description": "Search for Drainage Pad"
+    },
+    {
+      "id": 119,
+      "type": "direct_element",
+      "query": "Expansion Joints",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Expansion Joints",
+      "min_results": 1,
+      "description": "Search for Expansion Joints"
+    },
+    {
+      "id": 120,
+      "type": "direct_element",
+      "query": "Weakened Plane Joints",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Weakened Plane Joints",
+      "min_results": 1,
+      "description": "Search for Weakened Plane Joints"
+    },
+    {
+      "id": 121,
+      "type": "direct_element",
+      "query": "Type A and Type B",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Type A and Type B",
+      "min_results": 1,
+      "description": "Search for Type A and Type B"
+    },
+    {
+      "id": 122,
+      "type": "direct_element",
+      "query": "Expansion Joint Spacing",
+      "expected_pages": [
+        13,
+        14
+      ],
+      "expected_element": "Expansion Joint Spacing",
+      "min_results": 1,
+      "description": "Search for Expansion Joint Spacing"
+    },
+    {
+      "id": 123,
+      "type": "direct_element",
+      "query": "Weakened Plane Spacing",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Weakened Plane Spacing",
+      "min_results": 1,
+      "description": "Search for Weakened Plane Spacing"
+    },
+    {
+      "id": 124,
+      "type": "direct_element",
+      "query": "Wall Heights",
+      "expected_pages": [
+        13,
+        14
+      ],
+      "expected_element": "Wall Heights",
+      "min_results": 1,
+      "description": "Search for Wall Heights"
+    },
+    {
+      "id": 125,
+      "type": "direct_element",
+      "query": "Bottom of Footing Elevations",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Bottom of Footing Elevations",
+      "min_results": 1,
+      "description": "Search for Bottom of Footing Elevations"
+    },
+    {
+      "id": 126,
+      "type": "direct_element",
+      "query": "Datum Elevation",
+      "expected_pages": [
+        13,
+        14
+      ],
+      "expected_element": "Datum Elevation",
+      "min_results": 1,
+      "description": "Search for Datum Elevation"
+    },
+    {
+      "id": 127,
+      "type": "direct_element",
+      "query": "Top of Wall Elevations",
+      "expected_pages": [
+        13
+      ],
+      "expected_element": "Top of Wall Elevations",
+      "min_results": 1,
+      "description": "Search for Top of Wall Elevations"
+    },
+    {
+      "id": 128,
+      "type": "direct_element",
+      "query": "Footing",
+      "expected_pages": [
+        14,
+        15
+      ],
+      "expected_element": "Footing",
+      "min_results": 1,
+      "description": "Search for Footing"
+    },
+    {
+      "id": 129,
+      "type": "direct_element",
+      "query": "Weep Hole",
+      "expected_pages": [
+        14
+      ],
+      "expected_element": "Weep Hole",
+      "min_results": 1,
+      "description": "Search for Weep Hole"
+    },
+    {
+      "id": 130,
+      "type": "direct_element",
+      "query": "Bottom of Footing Elevation",
+      "expected_pages": [
+        14
+      ],
+      "expected_element": "Bottom of Footing Elevation",
+      "min_results": 1,
+      "description": "Search for Bottom of Footing Elevation"
+    },
+    {
+      "id": 131,
+      "type": "direct_element",
+      "query": "PVC Pipe Outlet",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "PVC Pipe Outlet",
+      "min_results": 1,
+      "description": "Search for PVC Pipe Outlet"
+    },
+    {
+      "id": 132,
+      "type": "direct_element",
+      "query": "Form Liner",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "Form Liner",
+      "min_results": 1,
+      "description": "Search for Form Liner"
+    },
+    {
+      "id": 133,
+      "type": "direct_element",
+      "query": "Reinforcement Connection",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "Reinforcement Connection",
+      "min_results": 1,
+      "description": "Search for Reinforcement Connection"
+    },
+    {
+      "id": 134,
+      "type": "direct_element",
+      "query": "Drainage Connection",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "Drainage Connection",
+      "min_results": 1,
+      "description": "Search for Drainage Connection"
+    },
+    {
+      "id": 135,
+      "type": "direct_element",
+      "query": "PVC Pipe",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "PVC Pipe",
+      "min_results": 1,
+      "description": "Search for PVC Pipe"
+    },
+    {
+      "id": 136,
+      "type": "direct_element",
+      "query": "Recess",
+      "expected_pages": [
+        15,
+        35
+      ],
+      "expected_element": "Recess",
+      "min_results": 1,
+      "description": "Search for Recess"
+    },
+    {
+      "id": 137,
+      "type": "direct_element",
+      "query": "Patterned Concrete Pavement",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "Patterned Concrete Pavement",
+      "min_results": 1,
+      "description": "Search for Patterned Concrete Pavement"
+    },
+    {
+      "id": 138,
+      "type": "direct_element",
+      "query": "Splicing Restrictions for 'a' Bars",
+      "expected_pages": [
+        15
+      ],
+      "expected_element": "Splicing Restrictions for 'a' Bars",
+      "min_results": 1,
+      "description": "Search for Splicing Restrictions for 'a' Bars"
+    },
+    {
+      "id": 139,
+      "type": "direct_element",
+      "query": "Columns",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Columns",
+      "min_results": 1,
+      "description": "Search for Columns"
+    },
+    {
+      "id": 140,
+      "type": "direct_element",
+      "query": "Bent Cap",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Bent Cap",
+      "min_results": 1,
+      "description": "Search for Bent Cap"
+    },
+    {
+      "id": 141,
+      "type": "direct_element",
+      "query": "Steel Shear Key (Pipe Pin)",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Steel Shear Key (Pipe Pin)",
+      "min_results": 1,
+      "description": "Search for Steel Shear Key (Pipe Pin)"
+    },
+    {
+      "id": 142,
+      "type": "direct_element",
+      "query": "Spiral Reinforcement",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Spiral Reinforcement",
+      "min_results": 1,
+      "description": "Search for Spiral Reinforcement"
+    },
+    {
+      "id": 143,
+      "type": "direct_element",
+      "query": "Drilled Hole Filled with Concrete (CIDH)",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Drilled Hole Filled with Concrete (CIDH)",
+      "min_results": 1,
+      "description": "Search for Drilled Hole Filled with Concrete (CIDH)"
+    },
+    {
+      "id": 144,
+      "type": "direct_element",
+      "query": "Spiral Anchor Hook",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Spiral Anchor Hook",
+      "min_results": 1,
+      "description": "Search for Spiral Anchor Hook"
+    },
+    {
+      "id": 145,
+      "type": "direct_element",
+      "query": "Stirrup",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Stirrup",
+      "min_results": 1,
+      "description": "Search for Stirrup"
+    },
+    {
+      "id": 146,
+      "type": "direct_element",
+      "query": "Spiral termination",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Spiral termination",
+      "min_results": 1,
+      "description": "Search for Spiral termination"
+    },
+    {
+      "id": 147,
+      "type": "direct_element",
+      "query": "Spiral terminations",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Spiral terminations",
+      "min_results": 1,
+      "description": "Search for Spiral terminations"
+    },
+    {
+      "id": 148,
+      "type": "direct_element",
+      "query": "Longitudinal pile reinforcement",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Longitudinal pile reinforcement",
+      "min_results": 1,
+      "description": "Search for Longitudinal pile reinforcement"
+    },
+    {
+      "id": 149,
+      "type": "direct_element",
+      "query": "Main cap reinforcement",
+      "expected_pages": [
+        16
+      ],
+      "expected_element": "Main cap reinforcement",
+      "min_results": 1,
+      "description": "Search for Main cap reinforcement"
+    },
+    {
+      "id": 150,
+      "type": "direct_element",
+      "query": "Column",
+      "expected_pages": [
+        17,
+        20,
+        22
+      ],
+      "expected_element": "Column",
+      "min_results": 1,
+      "description": "Search for Column"
+    },
+    {
+      "id": 151,
+      "type": "direct_element",
+      "query": "Cap Beam",
+      "expected_pages": [
+        17
+      ],
+      "expected_element": "Cap Beam",
+      "min_results": 1,
+      "description": "Search for Cap Beam"
+    },
+    {
+      "id": 152,
+      "type": "direct_element",
+      "query": "Joint Seal",
+      "expected_pages": [
+        17
+      ],
+      "expected_element": "Joint Seal",
+      "min_results": 1,
+      "description": "Search for Joint Seal"
+    },
+    {
+      "id": 153,
+      "type": "direct_element",
+      "query": "Bent",
+      "expected_pages": [
+        17
+      ],
+      "expected_element": "Bent",
+      "min_results": 1,
+      "description": "Search for Bent"
+    },
+    {
+      "id": 154,
+      "type": "direct_element",
+      "query": "Clearance",
+      "expected_pages": [
+        17
+      ],
+      "expected_element": "Clearance",
+      "min_results": 1,
+      "description": "Search for Clearance"
+    },
+    {
+      "id": 155,
+      "type": "direct_element",
+      "query": "Hook",
+      "expected_pages": [
+        17
+      ],
+      "expected_element": "Hook",
+      "min_results": 1,
+      "description": "Search for Hook"
+    },
+    {
+      "id": 156,
+      "type": "direct_element",
+      "query": "Shear Key",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Shear Key",
+      "min_results": 1,
+      "description": "Search for Shear Key"
+    },
+    {
+      "id": 157,
+      "type": "direct_element",
+      "query": "Elastomeric Bearing Pads",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Elastomeric Bearing Pads",
+      "min_results": 1,
+      "description": "Search for Elastomeric Bearing Pads"
+    },
+    {
+      "id": 158,
+      "type": "direct_element",
+      "query": "Steel Reinforcement Bearing Pads",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Steel Reinforcement Bearing Pads",
+      "min_results": 1,
+      "description": "Search for Steel Reinforcement Bearing Pads"
+    },
+    {
+      "id": 159,
+      "type": "direct_element",
+      "query": "Steel Shear Key Pipe Pin",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Steel Shear Key Pipe Pin",
+      "min_results": 1,
+      "description": "Search for Steel Shear Key Pipe Pin"
+    },
+    {
+      "id": 160,
+      "type": "direct_element",
+      "query": "Abutment reinforcement",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Abutment reinforcement",
+      "min_results": 1,
+      "description": "Search for Abutment reinforcement"
+    },
+    {
+      "id": 161,
+      "type": "direct_element",
+      "query": "Galvanized sheet metal",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Galvanized sheet metal",
+      "min_results": 1,
+      "description": "Search for Galvanized sheet metal"
+    },
+    {
+      "id": 162,
+      "type": "direct_element",
+      "query": "Expanded polystyrene",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Expanded polystyrene",
+      "min_results": 1,
+      "description": "Search for Expanded polystyrene"
+    },
+    {
+      "id": 163,
+      "type": "direct_element",
+      "query": "Construction joint",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Construction joint",
+      "min_results": 1,
+      "description": "Search for Construction joint"
+    },
+    {
+      "id": 164,
+      "type": "direct_element",
+      "query": "Pipe pin details",
+      "expected_pages": [
+        18
+      ],
+      "expected_element": "Pipe pin details",
+      "min_results": 1,
+      "description": "Search for Pipe pin details"
+    },
+    {
+      "id": 165,
+      "type": "direct_element",
+      "query": "N/A",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "N/A",
+      "min_results": 1,
+      "description": "Search for N/A"
+    },
+    {
+      "id": 166,
+      "type": "direct_element",
+      "query": "#5, #7",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "#5, #7",
+      "min_results": 1,
+      "description": "Search for #5, #7"
+    },
+    {
+      "id": 167,
+      "type": "direct_element",
+      "query": "Pile/Foundation",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Pile/Foundation",
+      "min_results": 1,
+      "description": "Search for Pile/Foundation"
+    },
+    {
+      "id": 168,
+      "type": "direct_element",
+      "query": "Reinforcement bars",
+      "expected_pages": [
+        19,
+        28
+      ],
+      "expected_element": "Reinforcement bars",
+      "min_results": 1,
+      "description": "Search for Reinforcement bars"
+    },
+    {
+      "id": 169,
+      "type": "direct_element",
+      "query": "Beam spacing",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Beam spacing",
+      "min_results": 1,
+      "description": "Search for Beam spacing"
+    },
+    {
+      "id": 170,
+      "type": "direct_element",
+      "query": "Fillet",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Fillet",
+      "min_results": 1,
+      "description": "Search for Fillet"
+    },
+    {
+      "id": 171,
+      "type": "direct_element",
+      "query": "Hook around vertical stirrup",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Hook around vertical stirrup",
+      "min_results": 1,
+      "description": "Search for Hook around vertical stirrup"
+    },
+    {
+      "id": 172,
+      "type": "direct_element",
+      "query": "Edge of deck to centerline spacing",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Edge of deck to centerline spacing",
+      "min_results": 1,
+      "description": "Search for Edge of deck to centerline spacing"
+    },
+    {
+      "id": 173,
+      "type": "direct_element",
+      "query": "Ultimate butt splice",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Ultimate butt splice",
+      "min_results": 1,
+      "description": "Search for Ultimate butt splice"
+    },
+    {
+      "id": 174,
+      "type": "direct_element",
+      "query": "Stirrups",
+      "expected_pages": [
+        19
+      ],
+      "expected_element": "Stirrups",
+      "min_results": 1,
+      "description": "Search for Stirrups"
+    },
+    {
+      "id": 175,
+      "type": "direct_element",
+      "query": "Hoop",
+      "expected_pages": [
+        20
+      ],
+      "expected_element": "Hoop",
+      "min_results": 1,
+      "description": "Search for Hoop"
+    },
+    {
+      "id": 176,
+      "type": "direct_element",
+      "query": "Expansion Joint Filler",
+      "expected_pages": [
+        20
+      ],
+      "expected_element": "Expansion Joint Filler",
+      "min_results": 1,
+      "description": "Search for Expansion Joint Filler"
+    },
+    {
+      "id": 177,
+      "type": "direct_element",
+      "query": "Service Level Coupler",
+      "expected_pages": [
+        20
+      ],
+      "expected_element": "Service Level Coupler",
+      "min_results": 1,
+      "description": "Search for Service Level Coupler"
+    },
+    {
+      "id": 178,
+      "type": "direct_element",
+      "query": "Column reinforcement",
+      "expected_pages": [
+        20,
+        21
+      ],
+      "expected_element": "Column reinforcement",
+      "min_results": 1,
+      "description": "Search for Column reinforcement"
+    },
+    {
+      "id": 179,
+      "type": "direct_element",
+      "query": "Tie spacing",
+      "expected_pages": [
+        20
+      ],
+      "expected_element": "Tie spacing",
+      "min_results": 1,
+      "description": "Search for Tie spacing"
+    },
+    {
+      "id": 180,
+      "type": "direct_element",
+      "query": "Drilled Shaft (CIDH)",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Drilled Shaft (CIDH)",
+      "min_results": 1,
+      "description": "Search for Drilled Shaft (CIDH)"
+    },
+    {
+      "id": 181,
+      "type": "direct_element",
+      "query": "Column Main Reinforcement",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Column Main Reinforcement",
+      "min_results": 1,
+      "description": "Search for Column Main Reinforcement"
+    },
+    {
+      "id": 182,
+      "type": "direct_element",
+      "query": "Pile Hoop Reinforcement",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Pile Hoop Reinforcement",
+      "min_results": 1,
+      "description": "Search for Pile Hoop Reinforcement"
+    },
+    {
+      "id": 183,
+      "type": "direct_element",
+      "query": "Permanent Steel Casing",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Permanent Steel Casing",
+      "min_results": 1,
+      "description": "Search for Permanent Steel Casing"
+    },
+    {
+      "id": 184,
+      "type": "direct_element",
+      "query": "Pavement",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Pavement",
+      "min_results": 1,
+      "description": "Search for Pavement"
+    },
+    {
+      "id": 185,
+      "type": "direct_element",
+      "query": "Inspection Pipes",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Inspection Pipes",
+      "min_results": 1,
+      "description": "Search for Inspection Pipes"
+    },
+    {
+      "id": 186,
+      "type": "direct_element",
+      "query": "Steel Casing",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Steel Casing",
+      "min_results": 1,
+      "description": "Search for Steel Casing"
+    },
+    {
+      "id": 187,
+      "type": "direct_element",
+      "query": "Cut-off Elevation",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Cut-off Elevation",
+      "min_results": 1,
+      "description": "Search for Cut-off Elevation"
+    },
+    {
+      "id": 188,
+      "type": "direct_element",
+      "query": "Spacing for mandatory construction joint",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Spacing for mandatory construction joint",
+      "min_results": 1,
+      "description": "Search for Spacing for mandatory construction joint"
+    },
+    {
+      "id": 189,
+      "type": "direct_element",
+      "query": "Clear cover for reinforcement",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Clear cover for reinforcement",
+      "min_results": 1,
+      "description": "Search for Clear cover for reinforcement"
+    },
+    {
+      "id": 190,
+      "type": "direct_element",
+      "query": "Column and CIDH pile hoops",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Column and CIDH pile hoops",
+      "min_results": 1,
+      "description": "Search for Column and CIDH pile hoops"
+    },
+    {
+      "id": 191,
+      "type": "direct_element",
+      "query": "Tip elevation and cut-off elevation",
+      "expected_pages": [
+        21
+      ],
+      "expected_element": "Tip elevation and cut-off elevation",
+      "min_results": 1,
+      "description": "Search for Tip elevation and cut-off elevation"
+    },
+    {
+      "id": 192,
+      "type": "direct_element",
+      "query": "Steel Top Plate",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Steel Top Plate",
+      "min_results": 1,
+      "description": "Search for Steel Top Plate"
+    },
+    {
+      "id": 193,
+      "type": "direct_element",
+      "query": "Pourable Seal",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Pourable Seal",
+      "min_results": 1,
+      "description": "Search for Pourable Seal"
+    },
+    {
+      "id": 194,
+      "type": "direct_element",
+      "query": "Backer Rod",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Backer Rod",
+      "min_results": 1,
+      "description": "Search for Backer Rod"
+    },
+    {
+      "id": 195,
+      "type": "direct_element",
+      "query": "Splice",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Splice",
+      "min_results": 1,
+      "description": "Search for Splice"
+    },
+    {
+      "id": 196,
+      "type": "direct_element",
+      "query": "Notch",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Notch",
+      "min_results": 1,
+      "description": "Search for Notch"
+    },
+    {
+      "id": 197,
+      "type": "direct_element",
+      "query": "Corrugated Steel",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Corrugated Steel",
+      "min_results": 1,
+      "description": "Search for Corrugated Steel"
+    },
+    {
+      "id": 198,
+      "type": "direct_element",
+      "query": "Clear void between column and isolation casing",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Clear void between column and isolation casing",
+      "min_results": 1,
+      "description": "Search for Clear void between column and isolation casing"
+    },
+    {
+      "id": 199,
+      "type": "direct_element",
+      "query": "Steel top plate thickness",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Steel top plate thickness",
+      "min_results": 1,
+      "description": "Search for Steel top plate thickness"
+    },
+    {
+      "id": 200,
+      "type": "direct_element",
+      "query": "Anchorage device spacing",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Anchorage device spacing",
+      "min_results": 1,
+      "description": "Search for Anchorage device spacing"
+    },
+    {
+      "id": 201,
+      "type": "direct_element",
+      "query": "Bar size",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Bar size",
+      "min_results": 1,
+      "description": "Search for Bar size"
+    },
+    {
+      "id": 202,
+      "type": "direct_element",
+      "query": "Isolation casing installation",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Isolation casing installation",
+      "min_results": 1,
+      "description": "Search for Isolation casing installation"
+    },
+    {
+      "id": 203,
+      "type": "direct_element",
+      "query": "Cement slurry placement",
+      "expected_pages": [
+        22
+      ],
+      "expected_element": "Cement slurry placement",
+      "min_results": 1,
+      "description": "Search for Cement slurry placement"
+    },
+    {
+      "id": 204,
+      "type": "direct_element",
+      "query": "CIP Reinforced Concrete Slab",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "CIP Reinforced Concrete Slab",
+      "min_results": 1,
+      "description": "Search for CIP Reinforced Concrete Slab"
+    },
+    {
+      "id": 205,
+      "type": "direct_element",
+      "query": "Lighting Conduit",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "Lighting Conduit",
+      "min_results": 1,
+      "description": "Search for Lighting Conduit"
+    },
+    {
+      "id": 206,
+      "type": "direct_element",
+      "query": "Slab",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "Slab",
+      "min_results": 1,
+      "description": "Search for Slab"
+    },
+    {
+      "id": 207,
+      "type": "direct_element",
+      "query": "Spacing",
+      "expected_pages": [
+        23,
+        31
+      ],
+      "expected_element": "Spacing",
+      "min_results": 1,
+      "description": "Search for Spacing"
+    },
+    {
+      "id": 208,
+      "type": "direct_element",
+      "query": "Chamfer",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "Chamfer",
+      "min_results": 1,
+      "description": "Search for Chamfer"
+    },
+    {
+      "id": 209,
+      "type": "direct_element",
+      "query": "Additional Reinforcement",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "Additional Reinforcement",
+      "min_results": 1,
+      "description": "Search for Additional Reinforcement"
+    },
+    {
+      "id": 210,
+      "type": "direct_element",
+      "query": "Drip Groove",
+      "expected_pages": [
+        23
+      ],
+      "expected_element": "Drip Groove",
+      "min_results": 1,
+      "description": "Search for Drip Groove"
+    },
+    {
+      "id": 211,
+      "type": "direct_element",
+      "query": "Bent 5",
+      "expected_pages": [
+        25,
+        26,
+        36
+      ],
+      "expected_element": "Bent 5",
+      "min_results": 1,
+      "description": "Search for Bent 5"
+    },
+    {
+      "id": 212,
+      "type": "direct_element",
+      "query": "Bent 6",
+      "expected_pages": [
+        25,
+        36
+      ],
+      "expected_element": "Bent 6",
+      "min_results": 1,
+      "description": "Search for Bent 6"
+    },
+    {
+      "id": 213,
+      "type": "direct_element",
+      "query": "Bent 7",
+      "expected_pages": [
+        25,
+        36
+      ],
+      "expected_element": "Bent 7",
+      "min_results": 1,
+      "description": "Search for Bent 7"
+    },
+    {
+      "id": 214,
+      "type": "direct_element",
+      "query": "Bent 8",
+      "expected_pages": [
+        25,
+        36
+      ],
+      "expected_element": "Bent 8",
+      "min_results": 1,
+      "description": "Search for Bent 8"
+    },
+    {
+      "id": 215,
+      "type": "direct_element",
+      "query": "Bent 9",
+      "expected_pages": [
+        25,
+        36
+      ],
+      "expected_element": "Bent 9",
+      "min_results": 1,
+      "description": "Search for Bent 9"
+    },
+    {
+      "id": 216,
+      "type": "direct_element",
+      "query": "Deck Edge",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "Deck Edge",
+      "min_results": 1,
+      "description": "Search for Deck Edge"
+    },
+    {
+      "id": 217,
+      "type": "direct_element",
+      "query": "C Line",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "C Line",
+      "min_results": 1,
+      "description": "Search for C Line"
+    },
+    {
+      "id": 218,
+      "type": "direct_element",
+      "query": "MW Line",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "MW Line",
+      "min_results": 1,
+      "description": "Search for MW Line"
+    },
+    {
+      "id": 219,
+      "type": "direct_element",
+      "query": "Distance between Bent 5 and Bent 6",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "Distance between Bent 5 and Bent 6",
+      "min_results": 1,
+      "description": "Search for Distance between Bent 5 and Bent 6"
+    },
+    {
+      "id": 220,
+      "type": "direct_element",
+      "query": "Distance between Bent 7 and Bent 8",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "Distance between Bent 7 and Bent 8",
+      "min_results": 1,
+      "description": "Search for Distance between Bent 7 and Bent 8"
+    },
+    {
+      "id": 221,
+      "type": "direct_element",
+      "query": "Distance between Bent 8 and Bent 9",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "Distance between Bent 8 and Bent 9",
+      "min_results": 1,
+      "description": "Search for Distance between Bent 8 and Bent 9"
+    },
+    {
+      "id": 222,
+      "type": "direct_element",
+      "query": "Distance from C Line to MW Line",
+      "expected_pages": [
+        25
+      ],
+      "expected_element": "Distance from C Line to MW Line",
+      "min_results": 1,
+      "description": "Search for Distance from C Line to MW Line"
+    },
+    {
+      "id": 223,
+      "type": "direct_element",
+      "query": "Girder 1",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Girder 1",
+      "min_results": 1,
+      "description": "Search for Girder 1"
+    },
+    {
+      "id": 224,
+      "type": "direct_element",
+      "query": "Stirrup 1",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Stirrup 1",
+      "min_results": 1,
+      "description": "Search for Stirrup 1"
+    },
+    {
+      "id": 225,
+      "type": "direct_element",
+      "query": "CIDH Pile",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "CIDH Pile",
+      "min_results": 1,
+      "description": "Search for CIDH Pile"
+    },
+    {
+      "id": 226,
+      "type": "direct_element",
+      "query": "Driven Pile",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Driven Pile",
+      "min_results": 1,
+      "description": "Search for Driven Pile"
+    },
+    {
+      "id": 227,
+      "type": "direct_element",
+      "query": "Column-to-Pile Connection",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Column-to-Pile Connection",
+      "min_results": 1,
+      "description": "Search for Column-to-Pile Connection"
+    },
+    {
+      "id": 228,
+      "type": "direct_element",
+      "query": "Girder",
+      "expected_pages": [
+        26,
+        28
+      ],
+      "expected_element": "Girder",
+      "min_results": 1,
+      "description": "Search for Girder"
+    },
+    {
+      "id": 229,
+      "type": "direct_element",
+      "query": "Bent Spacing",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Bent Spacing",
+      "min_results": 1,
+      "description": "Search for Bent Spacing"
+    },
+    {
+      "id": 230,
+      "type": "direct_element",
+      "query": "Stirrup Spacing",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Stirrup Spacing",
+      "min_results": 1,
+      "description": "Search for Stirrup Spacing"
+    },
+    {
+      "id": 231,
+      "type": "direct_element",
+      "query": "Camber Diagram",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Camber Diagram",
+      "min_results": 1,
+      "description": "Search for Camber Diagram"
+    },
+    {
+      "id": 232,
+      "type": "direct_element",
+      "query": "Settlement Allowance",
+      "expected_pages": [
+        26
+      ],
+      "expected_element": "Settlement Allowance",
+      "min_results": 1,
+      "description": "Search for Settlement Allowance"
+    },
+    {
+      "id": 233,
+      "type": "direct_element",
+      "query": "#11",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "#11",
+      "min_results": 1,
+      "description": "Search for #11"
+    },
+    {
+      "id": 234,
+      "type": "direct_element",
+      "query": "#8",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "#8",
+      "min_results": 1,
+      "description": "Search for #8"
+    },
+    {
+      "id": 235,
+      "type": "direct_element",
+      "query": "Spacing between girders",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Spacing between girders",
+      "min_results": 1,
+      "description": "Search for Spacing between girders"
+    },
+    {
+      "id": 236,
+      "type": "direct_element",
+      "query": "Reinforcement bar lengths (#11)",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Reinforcement bar lengths (#11)",
+      "min_results": 1,
+      "description": "Search for Reinforcement bar lengths (#11)"
+    },
+    {
+      "id": 237,
+      "type": "direct_element",
+      "query": "Reinforcement bar lengths (#8)",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Reinforcement bar lengths (#8)",
+      "min_results": 1,
+      "description": "Search for Reinforcement bar lengths (#8)"
+    },
+    {
+      "id": 238,
+      "type": "direct_element",
+      "query": "Reinforcement bar lengths (#9)",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Reinforcement bar lengths (#9)",
+      "min_results": 1,
+      "description": "Search for Reinforcement bar lengths (#9)"
+    },
+    {
+      "id": 239,
+      "type": "direct_element",
+      "query": "Splices",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Splices",
+      "min_results": 1,
+      "description": "Search for Splices"
+    },
+    {
+      "id": 240,
+      "type": "direct_element",
+      "query": "Bundled reinforcement bars",
+      "expected_pages": [
+        28
+      ],
+      "expected_element": "Bundled reinforcement bars",
+      "min_results": 1,
+      "description": "Search for Bundled reinforcement bars"
+    },
+    {
+      "id": 241,
+      "type": "direct_element",
+      "query": "Concrete Drainage Pad",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Concrete Drainage Pad",
+      "min_results": 1,
+      "description": "Search for Concrete Drainage Pad"
+    },
+    {
+      "id": 242,
+      "type": "direct_element",
+      "query": "Slotted Plastic Pipe",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Slotted Plastic Pipe",
+      "min_results": 1,
+      "description": "Search for Slotted Plastic Pipe"
+    },
+    {
+      "id": 243,
+      "type": "direct_element",
+      "query": "Unslotted PVC Pipe",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Unslotted PVC Pipe",
+      "min_results": 1,
+      "description": "Search for Unslotted PVC Pipe"
+    },
+    {
+      "id": 244,
+      "type": "direct_element",
+      "query": "Filter Fabric",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Filter Fabric",
+      "min_results": 1,
+      "description": "Search for Filter Fabric"
+    },
+    {
+      "id": 245,
+      "type": "direct_element",
+      "query": "Tee Connection",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Tee Connection",
+      "min_results": 1,
+      "description": "Search for Tee Connection"
+    },
+    {
+      "id": 246,
+      "type": "direct_element",
+      "query": "Filter Fabric Wrap Around",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Filter Fabric Wrap Around",
+      "min_results": 1,
+      "description": "Search for Filter Fabric Wrap Around"
+    },
+    {
+      "id": 247,
+      "type": "direct_element",
+      "query": "PVC",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "PVC",
+      "min_results": 1,
+      "description": "Search for PVC"
+    },
+    {
+      "id": 248,
+      "type": "direct_element",
+      "query": "Geocomposite",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Geocomposite",
+      "min_results": 1,
+      "description": "Search for Geocomposite"
+    },
+    {
+      "id": 249,
+      "type": "direct_element",
+      "query": "Concrete Drainage Pad Width",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Concrete Drainage Pad Width",
+      "min_results": 1,
+      "description": "Search for Concrete Drainage Pad Width"
+    },
+    {
+      "id": 250,
+      "type": "direct_element",
+      "query": "Concrete Drainage Pad Thickness",
+      "expected_pages": [
+        29
+      ],
+      "expected_element": "Concrete Drainage Pad Thickness",
+      "min_results": 1,
+      "description": "Search for Concrete Drainage Pad Thickness"
+    },
+    {
+      "id": 251,
+      "type": "direct_element",
+      "query": "Top of Barrier",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Top of Barrier",
+      "min_results": 1,
+      "description": "Search for Top of Barrier"
+    },
+    {
+      "id": 252,
+      "type": "direct_element",
+      "query": "Top of Sidewalk",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Top of Sidewalk",
+      "min_results": 1,
+      "description": "Search for Top of Sidewalk"
+    },
+    {
+      "id": 253,
+      "type": "direct_element",
+      "query": "Top of Deck",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Top of Deck",
+      "min_results": 1,
+      "description": "Search for Top of Deck"
+    },
+    {
+      "id": 254,
+      "type": "direct_element",
+      "query": "Open Joint",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Open Joint",
+      "min_results": 1,
+      "description": "Search for Open Joint"
+    },
+    {
+      "id": 255,
+      "type": "direct_element",
+      "query": "Chain Link Fence",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Chain Link Fence",
+      "min_results": 1,
+      "description": "Search for Chain Link Fence"
+    },
+    {
+      "id": 256,
+      "type": "direct_element",
+      "query": "Steel Plate",
+      "expected_pages": [
+        30,
+        34
+      ],
+      "expected_element": "Steel Plate",
+      "min_results": 1,
+      "description": "Search for Steel Plate"
+    },
+    {
+      "id": 257,
+      "type": "direct_element",
+      "query": "Screw",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Screw",
+      "min_results": 1,
+      "description": "Search for Screw"
+    },
+    {
+      "id": 258,
+      "type": "direct_element",
+      "query": "Galvanized Plates",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Galvanized Plates",
+      "min_results": 1,
+      "description": "Search for Galvanized Plates"
+    },
+    {
+      "id": 259,
+      "type": "direct_element",
+      "query": "Deck Joint Width",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Deck Joint Width",
+      "min_results": 1,
+      "description": "Search for Deck Joint Width"
+    },
+    {
+      "id": 260,
+      "type": "direct_element",
+      "query": "Gap",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Gap",
+      "min_results": 1,
+      "description": "Search for Gap"
+    },
+    {
+      "id": 261,
+      "type": "direct_element",
+      "query": "Hole for Countersunk",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Hole for Countersunk",
+      "min_results": 1,
+      "description": "Search for Hole for Countersunk"
+    },
+    {
+      "id": 262,
+      "type": "direct_element",
+      "query": "Anchor Bolts",
+      "expected_pages": [
+        30,
+        34
+      ],
+      "expected_element": "Anchor Bolts",
+      "min_results": 1,
+      "description": "Search for Anchor Bolts"
+    },
+    {
+      "id": 263,
+      "type": "direct_element",
+      "query": "Utility openings and expansion joints",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Utility openings and expansion joints",
+      "min_results": 1,
+      "description": "Search for Utility openings and expansion joints"
+    },
+    {
+      "id": 264,
+      "type": "direct_element",
+      "query": "Recess concrete",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Recess concrete",
+      "min_results": 1,
+      "description": "Search for Recess concrete"
+    },
+    {
+      "id": 265,
+      "type": "direct_element",
+      "query": "Plates",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Plates",
+      "min_results": 1,
+      "description": "Search for Plates"
+    },
+    {
+      "id": 266,
+      "type": "direct_element",
+      "query": "Architectural treatment",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Architectural treatment",
+      "min_results": 1,
+      "description": "Search for Architectural treatment"
+    },
+    {
+      "id": 267,
+      "type": "direct_element",
+      "query": "Insert assembly or expansion anchorage",
+      "expected_pages": [
+        30
+      ],
+      "expected_element": "Insert assembly or expansion anchorage",
+      "min_results": 1,
+      "description": "Search for Insert assembly or expansion anchorage"
+    },
+    {
+      "id": 268,
+      "type": "direct_element",
+      "query": "Railing posts and horizontal members",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Railing posts and horizontal members",
+      "min_results": 1,
+      "description": "Search for Railing posts and horizontal members"
+    },
+    {
+      "id": 269,
+      "type": "direct_element",
+      "query": "Tamper Proof Screws",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Tamper Proof Screws",
+      "min_results": 1,
+      "description": "Search for Tamper Proof Screws"
+    },
+    {
+      "id": 270,
+      "type": "direct_element",
+      "query": "Welded Wire Mesh",
+      "expected_pages": [
+        31,
+        32
+      ],
+      "expected_element": "Welded Wire Mesh",
+      "min_results": 1,
+      "description": "Search for Welded Wire Mesh"
+    },
+    {
+      "id": 271,
+      "type": "direct_element",
+      "query": "Splice and curb connections",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Splice and curb connections",
+      "min_results": 1,
+      "description": "Search for Splice and curb connections"
+    },
+    {
+      "id": 272,
+      "type": "direct_element",
+      "query": "HSS members",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "HSS members",
+      "min_results": 1,
+      "description": "Search for HSS members"
+    },
+    {
+      "id": 273,
+      "type": "direct_element",
+      "query": "Screws",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Screws",
+      "min_results": 1,
+      "description": "Search for Screws"
+    },
+    {
+      "id": 274,
+      "type": "direct_element",
+      "query": "Mesh",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Mesh",
+      "min_results": 1,
+      "description": "Search for Mesh"
+    },
+    {
+      "id": 275,
+      "type": "direct_element",
+      "query": "Finish",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Finish",
+      "min_results": 1,
+      "description": "Search for Finish"
+    },
+    {
+      "id": 276,
+      "type": "direct_element",
+      "query": "Railing height",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Railing height",
+      "min_results": 1,
+      "description": "Search for Railing height"
+    },
+    {
+      "id": 277,
+      "type": "direct_element",
+      "query": "Overhang",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Overhang",
+      "min_results": 1,
+      "description": "Search for Overhang"
+    },
+    {
+      "id": 278,
+      "type": "direct_element",
+      "query": "Material and installation",
+      "expected_pages": [
+        31
+      ],
+      "expected_element": "Material and installation",
+      "min_results": 1,
+      "description": "Search for Material and installation"
+    },
+    {
+      "id": 279,
+      "type": "direct_element",
+      "query": "End Post",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "End Post",
+      "min_results": 1,
+      "description": "Search for End Post"
+    },
+    {
+      "id": 280,
+      "type": "direct_element",
+      "query": "Intermediate Post",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Intermediate Post",
+      "min_results": 1,
+      "description": "Search for Intermediate Post"
+    },
+    {
+      "id": 281,
+      "type": "direct_element",
+      "query": "Bumpout Post",
+      "expected_pages": [
+        32,
+        34
+      ],
+      "expected_element": "Bumpout Post",
+      "min_results": 1,
+      "description": "Search for Bumpout Post"
+    },
+    {
+      "id": 282,
+      "type": "direct_element",
+      "query": "Railing Anchorage",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Railing Anchorage",
+      "min_results": 1,
+      "description": "Search for Railing Anchorage"
+    },
+    {
+      "id": 283,
+      "type": "direct_element",
+      "query": "Post Pocket",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Post Pocket",
+      "min_results": 1,
+      "description": "Search for Post Pocket"
+    },
+    {
+      "id": 284,
+      "type": "direct_element",
+      "query": "Stainless Steel Security Screws",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Stainless Steel Security Screws",
+      "min_results": 1,
+      "description": "Search for Stainless Steel Security Screws"
+    },
+    {
+      "id": 285,
+      "type": "direct_element",
+      "query": "Mortar",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Mortar",
+      "min_results": 1,
+      "description": "Search for Mortar"
+    },
+    {
+      "id": 286,
+      "type": "direct_element",
+      "query": "Post",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Post",
+      "min_results": 1,
+      "description": "Search for Post"
+    },
+    {
+      "id": 287,
+      "type": "direct_element",
+      "query": "Tamper-proof self-tapping stainless steel security screws with lock washers",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Tamper-proof self-tapping stainless steel security screws with lock washers",
+      "min_results": 1,
+      "description": "Search for Tamper-proof self-tapping stainless steel security screws with lock washers"
+    },
+    {
+      "id": 288,
+      "type": "direct_element",
+      "query": "Post pocket to be filled with mortar",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Post pocket to be filled with mortar",
+      "min_results": 1,
+      "description": "Search for Post pocket to be filled with mortar"
+    },
+    {
+      "id": 289,
+      "type": "direct_element",
+      "query": "Rebar details: #4 bars",
+      "expected_pages": [
+        32
+      ],
+      "expected_element": "Rebar details: #4 bars",
+      "min_results": 1,
+      "description": "Search for Rebar details: #4 bars"
+    },
+    {
+      "id": 290,
+      "type": "direct_element",
+      "query": "Electrolier",
+      "expected_pages": [
+        34,
+        40
+      ],
+      "expected_element": "Electrolier",
+      "min_results": 1,
+      "description": "Search for Electrolier"
+    },
+    {
+      "id": 291,
+      "type": "direct_element",
+      "query": "Anchor Plate",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Anchor Plate",
+      "min_results": 1,
+      "description": "Search for Anchor Plate"
+    },
+    {
+      "id": 292,
+      "type": "direct_element",
+      "query": "Conduit",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Conduit",
+      "min_results": 1,
+      "description": "Search for Conduit"
+    },
+    {
+      "id": 293,
+      "type": "direct_element",
+      "query": "Anchor Plate Detail",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Anchor Plate Detail",
+      "min_results": 1,
+      "description": "Search for Anchor Plate Detail"
+    },
+    {
+      "id": 294,
+      "type": "direct_element",
+      "query": "Electrolier Bolt Circle",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Electrolier Bolt Circle",
+      "min_results": 1,
+      "description": "Search for Electrolier Bolt Circle"
+    },
+    {
+      "id": 295,
+      "type": "direct_element",
+      "query": "Post Spacing",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Post Spacing",
+      "min_results": 1,
+      "description": "Search for Post Spacing"
+    },
+    {
+      "id": 296,
+      "type": "direct_element",
+      "query": "Grout fill",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Grout fill",
+      "min_results": 1,
+      "description": "Search for Grout fill"
+    },
+    {
+      "id": 297,
+      "type": "direct_element",
+      "query": "Anchor Bolt",
+      "expected_pages": [
+        34
+      ],
+      "expected_element": "Anchor Bolt",
+      "min_results": 1,
+      "description": "Search for Anchor Bolt"
+    },
+    {
+      "id": 298,
+      "type": "direct_element",
+      "query": "Entry Monument",
+      "expected_pages": [
+        35
+      ],
+      "expected_element": "Entry Monument",
+      "min_results": 1,
+      "description": "Search for Entry Monument"
+    },
+    {
+      "id": 299,
+      "type": "direct_element",
+      "query": "#4 bars",
+      "expected_pages": [
+        35
+      ],
+      "expected_element": "#4 bars",
+      "min_results": 1,
+      "description": "Search for #4 bars"
+    },
+    {
+      "id": 300,
+      "type": "direct_element",
+      "query": "#6 bars",
+      "expected_pages": [
+        35
+      ],
+      "expected_element": "#6 bars",
+      "min_results": 1,
+      "description": "Search for #6 bars"
+    },
+    {
+      "id": 301,
+      "type": "direct_element",
+      "query": "Monument",
+      "expected_pages": [
+        35
+      ],
+      "expected_element": "Monument",
+      "min_results": 1,
+      "description": "Search for Monument"
+    },
+    {
+      "id": 302,
+      "type": "direct_element",
+      "query": "Base",
+      "expected_pages": [
+        35
+      ],
+      "expected_element": "Base",
+      "min_results": 1,
+      "description": "Search for Base"
+    },
+    {
+      "id": 303,
+      "type": "direct_element",
+      "query": "retaining wall",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "retaining wall",
+      "min_results": 1,
+      "description": "Search for retaining wall"
+    },
+    {
+      "id": 304,
+      "type": "direct_element",
+      "query": "column",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "column",
+      "min_results": 1,
+      "description": "Search for column"
+    },
+    {
+      "id": 305,
+      "type": "direct_element",
+      "query": "beam",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "beam",
+      "min_results": 1,
+      "description": "Search for beam"
+    },
+    {
+      "id": 306,
+      "type": "direct_element",
+      "query": "shear key",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "shear key",
+      "min_results": 1,
+      "description": "Search for shear key"
+    },
+    {
+      "id": 307,
+      "type": "direct_element",
+      "query": "embedment",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "embedment",
+      "min_results": 1,
+      "description": "Search for embedment"
+    },
+    {
+      "id": 308,
+      "type": "direct_element",
+      "query": "concrete",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "concrete",
+      "min_results": 1,
+      "description": "Search for concrete"
+    },
+    {
+      "id": 309,
+      "type": "direct_element",
+      "query": "steel",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "steel",
+      "min_results": 1,
+      "description": "Search for steel"
+    },
+    {
+      "id": 310,
+      "type": "direct_element",
+      "query": "wall",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "wall",
+      "min_results": 1,
+      "description": "Search for wall"
+    },
+    {
+      "id": 311,
+      "type": "direct_element",
+      "query": "column spacing",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "column spacing",
+      "min_results": 1,
+      "description": "Search for column spacing"
+    },
+    {
+      "id": 312,
+      "type": "direct_element",
+      "query": "load criteria",
+      "expected_pages": [
+        38
+      ],
+      "expected_element": "load criteria",
+      "min_results": 1,
+      "description": "Search for load criteria"
+    },
+    {
+      "id": 313,
+      "type": "direct_element",
+      "query": "Bent locations",
+      "expected_pages": [
+        40
+      ],
+      "expected_element": "Bent locations",
+      "min_results": 1,
+      "description": "Search for Bent locations"
+    },
+    {
+      "id": 314,
+      "type": "direct_element",
+      "query": "Bent references",
+      "expected_pages": [
+        40
+      ],
+      "expected_element": "Bent references",
+      "min_results": 1,
+      "description": "Search for Bent references"
+    },
+    {
+      "id": 315,
+      "type": "direct_element",
+      "query": "Soil",
+      "expected_pages": [
+        41,
+        42
+      ],
+      "expected_element": "Soil",
+      "min_results": 1,
+      "description": "Search for Soil"
+    },
+    {
+      "id": 316,
+      "type": "direct_element",
+      "query": "Boring logs",
+      "expected_pages": [
+        41
+      ],
+      "expected_element": "Boring logs",
+      "min_results": 1,
+      "description": "Search for Boring logs"
+    },
+    {
+      "id": 317,
+      "type": "direct_element",
+      "query": "Groundwater level",
+      "expected_pages": [
+        41
+      ],
+      "expected_element": "Groundwater level",
+      "min_results": 1,
+      "description": "Search for Groundwater level"
+    },
+    {
+      "id": 318,
+      "type": "direct_element",
+      "query": "Borehole",
+      "expected_pages": [
+        42
+      ],
+      "expected_element": "Borehole",
+      "min_results": 1,
+      "description": "Search for Borehole"
+    },
+    {
+      "id": 319,
+      "type": "direct_element",
+      "query": "Borehole locations",
+      "expected_pages": [
+        42
+      ],
+      "expected_element": "Borehole locations",
+      "min_results": 1,
+      "description": "Search for Borehole locations"
+    },
+    {
+      "id": 320,
+      "type": "direct_element",
+      "query": "Soil descriptions and conditions",
+      "expected_pages": [
+        42
+      ],
+      "expected_element": "Soil descriptions and conditions",
+      "min_results": 1,
+      "description": "Search for Soil descriptions and conditions"
+    },
+    {
+      "id": 321,
+      "type": "direct_element",
+      "query": "Moisture conditions",
+      "expected_pages": [
+        42
+      ],
+      "expected_element": "Moisture conditions",
+      "min_results": 1,
+      "description": "Search for Moisture conditions"
+    },
+    {
+      "id": 322,
+      "type": "direct_element",
+      "query": "Density and composition",
+      "expected_pages": [
+        42
+      ],
+      "expected_element": "Density and composition",
+      "min_results": 1,
+      "description": "Search for Density and composition"
+    },
+    {
+      "id": 323,
+      "type": "compound",
+      "query": "R/C Box Girder Bent 1 to Bent 17",
+      "expected_pages": [
+        1
+      ],
+      "expected_elements": [
+        "R/C Box Girder",
+        "Bent 1 to Bent 17"
+      ],
+      "relationship": "supported_by",
+      "min_results": 1,
+      "description": "Search for related elements: R/C Box Girder and Bent 1 to Bent 17"
+    },
+    {
+      "id": 324,
+      "type": "compound",
+      "query": "R/C Box Girder Bent spacing",
+      "expected_pages": [
+        1
+      ],
+      "expected_elements": [
+        "R/C Box Girder",
+        "Bent spacing"
+      ],
+      "relationship": "supported_by",
+      "min_results": 1,
+      "description": "Search for related elements: R/C Box Girder and Bent spacing"
+    },
+    {
+      "id": 325,
+      "type": "compound",
+      "query": "Column Type A 24\" CIDH Type I Shaft",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column Type A",
+        "24\" CIDH Type I Shaft"
+      ],
+      "relationship": "rests_on",
+      "min_results": 1,
+      "description": "Search for related elements: Column Type A and 24\" CIDH Type I Shaft"
+    },
+    {
+      "id": 326,
+      "type": "compound",
+      "query": "Column-to-pile connection 24\" CIDH Type I Shaft",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column-to-pile connection",
+        "24\" CIDH Type I Shaft"
+      ],
+      "relationship": "rests_on",
+      "min_results": 1,
+      "description": "Search for related elements: Column-to-pile connection and 24\" CIDH Type I Shaft"
+    },
+    {
+      "id": 327,
+      "type": "compound",
+      "query": "Column spacing 24\" CIDH Type I Shaft",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column spacing",
+        "24\" CIDH Type I Shaft"
+      ],
+      "relationship": "rests_on",
+      "min_results": 1,
+      "description": "Search for related elements: Column spacing and 24\" CIDH Type I Shaft"
+    },
+    {
+      "id": 328,
+      "type": "compound",
+      "query": "24\" CIDH (Type I Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "24\" CIDH (Type I Shaft)",
+        "Pile Foundation"
+      ],
+      "relationship": "supports",
+      "min_results": 1,
+      "description": "Search for related elements: 24\" CIDH (Type I Shaft) and Pile Foundation"
+    },
+    {
+      "id": 329,
+      "type": "compound",
+      "query": "72\" CIDH (Type II Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "72\" CIDH (Type II Shaft)",
+        "Pile Foundation"
+      ],
+      "relationship": "supports",
+      "min_results": 1,
+      "description": "Search for related elements: 72\" CIDH (Type II Shaft) and Pile Foundation"
+    },
+    {
+      "id": 330,
+      "type": "compound",
+      "query": "30\" CIDH (Type II Shaft) Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "30\" CIDH (Type II Shaft)",
+        "Pile Foundation"
+      ],
+      "relationship": "supports",
+      "min_results": 1,
+      "description": "Search for related elements: 30\" CIDH (Type II Shaft) and Pile Foundation"
+    },
+    {
+      "id": 331,
+      "type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin (Steel Shear Key) and Bearing Pad"
+    },
+    {
+      "id": 332,
+      "type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Abutment",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Abutment"
+      ],
+      "relationship": "lateral_restraint",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin (Steel Shear Key) and Abutment"
+    },
+    {
+      "id": 333,
+      "type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Elastomeric Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin (Steel Shear Key) and Elastomeric Bearing Pad"
+    },
+    {
+      "id": 334,
+      "type": "compound",
+      "query": "Pipe Pin (Steel Shear Key) Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Bearing pad connection"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin (Steel Shear Key) and Bearing pad connection"
+    },
+    {
+      "id": 335,
+      "type": "compound",
+      "query": "Pipe Pin connection Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin connection and Bearing Pad"
+    },
+    {
+      "id": 336,
+      "type": "compound",
+      "query": "Pipe Pin connection Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Elastomeric Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin connection and Elastomeric Bearing Pad"
+    },
+    {
+      "id": 337,
+      "type": "compound",
+      "query": "Pipe Pin connection Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Bearing pad connection"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin connection and Bearing pad connection"
+    },
+    {
+      "id": 338,
+      "type": "compound",
+      "query": "Pipe Pin connection Elastomeric Bearing Pads",
+      "expected_pages": [
+        18
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Elastomeric Bearing Pads"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin connection and Elastomeric Bearing Pads"
+    },
+    {
+      "id": 339,
+      "type": "compound",
+      "query": "Pipe Pin connection Steel Reinforcement Bearing Pads",
+      "expected_pages": [
+        18
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Steel Reinforcement Bearing Pads"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin connection and Steel Reinforcement Bearing Pads"
+    },
+    {
+      "id": 340,
+      "type": "compound",
+      "query": "Pipe Pin Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin",
+        "Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin and Bearing Pad"
+    },
+    {
+      "id": 341,
+      "type": "compound",
+      "query": "Pipe Pin Elastomeric Bearing Pad",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin",
+        "Elastomeric Bearing Pad"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin and Elastomeric Bearing Pad"
+    },
+    {
+      "id": 342,
+      "type": "compound",
+      "query": "Pipe Pin Bearing pad connection",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin",
+        "Bearing pad connection"
+      ],
+      "relationship": "transfers_load",
+      "min_results": 1,
+      "description": "Search for related elements: Pipe Pin and Bearing pad connection"
+    },
+    {
+      "id": 343,
+      "type": "specification",
+      "query": "Paint",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Paint"
+    },
+    {
+      "id": 344,
+      "type": "specification",
+      "query": "Sound wall",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Sound wall"
+    },
+    {
+      "id": 345,
+      "type": "specification",
+      "query": "Retaining wall",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Retaining wall"
+    },
+    {
+      "id": 346,
+      "type": "specification",
+      "query": "Entry monument",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Entry monument"
+    },
+    {
+      "id": 347,
+      "type": "specification",
+      "query": "Vertical clearance",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Vertical clearance"
+    },
+    {
+      "id": 348,
+      "type": "specification",
+      "query": "Settlement platform",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Settlement platform"
+    },
+    {
+      "id": 349,
+      "type": "specification",
+      "query": "Load and Resistance Factor Design",
+      "expected_pages": [
+        3
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Load and Resistance Factor Design"
+    },
+    {
+      "id": 350,
+      "type": "specification",
+      "query": "Seismic Design Criteria",
+      "expected_pages": [
+        3
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Seismic Design Criteria"
+    },
+    {
+      "id": 351,
+      "type": "specification",
+      "query": "Concrete strength",
+      "expected_pages": [
+        3
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Concrete strength"
+    },
+    {
+      "id": 352,
+      "type": "specification",
+      "query": "Pile data table",
+      "expected_pages": [
+        3
+      ],
+      "min_results": 1,
+      "description": "Search for specification: Pile data table"
+    },
+    {
+      "id": 353,
+      "type": "detail",
+      "query": "unknown",
+      "expected_pages": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        25,
+        26,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        38,
+        40,
+        41,
+        42
+      ],
+      "min_results": 1,
+      "description": "Search for detail: unknown"
+    },
+    {
+      "id": 354,
+      "type": "dimensional",
+      "query": "Total length along 'W' line dimensions",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Total length along 'W' line"
+    },
+    {
+      "id": 355,
+      "type": "dimensional",
+      "query": "Bent spacing dimensions",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Bent spacing"
+    },
+    {
+      "id": 356,
+      "type": "dimensional",
+      "query": "Vertical clearance dimensions",
+      "expected_pages": [
+        1
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Vertical clearance"
+    },
+    {
+      "id": 357,
+      "type": "dimensional",
+      "query": "None dimensions",
+      "expected_pages": [
+        3
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of None"
+    },
+    {
+      "id": 358,
+      "type": "dimensional",
+      "query": "Contour intervals dimensions",
+      "expected_pages": [
+        4
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Contour intervals"
+    },
+    {
+      "id": 359,
+      "type": "dimensional",
+      "query": "'M' Line intervals dimensions",
+      "expected_pages": [
+        4
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of 'M' Line intervals"
+    },
+    {
+      "id": 360,
+      "type": "dimensional",
+      "query": "Column spacing dimensions",
+      "expected_pages": [
+        5
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Column spacing"
+    },
+    {
+      "id": 361,
+      "type": "dimensional",
+      "query": "Cap beam width dimensions",
+      "expected_pages": [
+        5
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Cap beam width"
+    },
+    {
+      "id": 362,
+      "type": "dimensional",
+      "query": "Top of Wall dimensions",
+      "expected_pages": [
+        6
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Top of Wall"
+    },
+    {
+      "id": 363,
+      "type": "dimensional",
+      "query": "FG (Finished Grade) dimensions",
+      "expected_pages": [
+        6
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of FG (Finished Grade)"
+    },
+    {
+      "id": 364,
+      "type": "dimensional",
+      "query": "Settlement allowance dimensions",
+      "expected_pages": [
+        6
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Settlement allowance"
+    },
+    {
+      "id": 365,
+      "type": "dimensional",
+      "query": "Bent spacing and alignment dimensions",
+      "expected_pages": [
+        7
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Bent spacing and alignment"
+    },
+    {
+      "id": 366,
+      "type": "dimensional",
+      "query": "Station numbers dimensions",
+      "expected_pages": [
+        40,
+        7
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Station numbers"
+    },
+    {
+      "id": 367,
+      "type": "dimensional",
+      "query": "Footing elevations dimensions",
+      "expected_pages": [
+        7
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of Footing elevations"
+    },
+    {
+      "id": 368,
+      "type": "dimensional",
+      "query": "24\" CIDH dimensions",
+      "expected_pages": [
+        8
+      ],
+      "min_results": 1,
+      "description": "Search for dimensions of 24\" CIDH"
+    },
+    {
+      "id": 369,
+      "type": "relationship",
+      "query": "R/C Box Girder support system",
+      "expected_pages": [
+        1
+      ],
+      "expected_elements": [
+        "R/C Box Girder",
+        "Bent 1 to Bent 17"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: supported_by"
+    },
+    {
+      "id": 370,
+      "type": "relationship",
+      "query": "R/C Box Girder support system",
+      "expected_pages": [
+        1
+      ],
+      "expected_elements": [
+        "R/C Box Girder",
+        "Bent spacing"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: supported_by"
+    },
+    {
+      "id": 371,
+      "type": "relationship",
+      "query": "24\" CIDH Type I Shaft foundation for Column Type A",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column Type A",
+        "24\" CIDH Type I Shaft"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: rests_on"
+    },
+    {
+      "id": 372,
+      "type": "relationship",
+      "query": "24\" CIDH Type I Shaft foundation for Column-to-pile connection",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column-to-pile connection",
+        "24\" CIDH Type I Shaft"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: rests_on"
+    },
+    {
+      "id": 373,
+      "type": "relationship",
+      "query": "24\" CIDH Type I Shaft foundation for Column spacing",
+      "expected_pages": [
+        5
+      ],
+      "expected_elements": [
+        "Column spacing",
+        "24\" CIDH Type I Shaft"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: rests_on"
+    },
+    {
+      "id": 374,
+      "type": "relationship",
+      "query": "24\" CIDH (Type I Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "24\" CIDH (Type I Shaft)",
+        "Pile Foundation"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: supports"
+    },
+    {
+      "id": 375,
+      "type": "relationship",
+      "query": "72\" CIDH (Type II Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "72\" CIDH (Type II Shaft)",
+        "Pile Foundation"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: supports"
+    },
+    {
+      "id": 376,
+      "type": "relationship",
+      "query": "30\" CIDH (Type II Shaft) supporting Pile Foundation",
+      "expected_pages": [
+        9
+      ],
+      "expected_elements": [
+        "30\" CIDH (Type II Shaft)",
+        "Pile Foundation"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: supports"
+    },
+    {
+      "id": 377,
+      "type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Bearing Pad"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 378,
+      "type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) Abutment restraint",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Abutment"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: lateral_restraint"
+    },
+    {
+      "id": 379,
+      "type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Elastomeric Bearing Pad"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 380,
+      "type": "relationship",
+      "query": "Pipe Pin (Steel Shear Key) load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin (Steel Shear Key)",
+        "Bearing pad connection"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 381,
+      "type": "relationship",
+      "query": "Pipe Pin connection load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Bearing Pad"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 382,
+      "type": "relationship",
+      "query": "Pipe Pin connection load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Elastomeric Bearing Pad"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 383,
+      "type": "relationship",
+      "query": "Pipe Pin connection load transfer",
+      "expected_pages": [
+        10
+      ],
+      "expected_elements": [
+        "Pipe Pin connection",
+        "Bearing pad connection"
+      ],
+      "min_results": 1,
+      "description": "Search for relationship: transfers_load"
+    },
+    {
+      "id": 384,
+      "type": "variation",
+      "query": "drilled shaft",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment CIDH Piles",
+      "variation_of": "CIDH pile",
+      "min_results": 1,
+      "description": "Search using variation: drilled shaft (for CIDH pile)"
+    },
+    {
+      "id": 385,
+      "type": "variation",
+      "query": "cast-in-drilled-hole pile",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment CIDH Piles",
+      "variation_of": "CIDH pile",
+      "min_results": 1,
+      "description": "Search using variation: cast-in-drilled-hole pile (for CIDH pile)"
+    },
+    {
+      "id": 386,
+      "type": "variation",
+      "query": "CIDH foundation",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment CIDH Piles",
+      "variation_of": "CIDH pile",
+      "min_results": 1,
+      "description": "Search using variation: CIDH foundation (for CIDH pile)"
+    },
+    {
+      "id": 387,
+      "type": "variation",
+      "query": "steel shear key",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Pipe Pin (Steel Shear Key)",
+      "variation_of": "Pipe Pin",
+      "min_results": 1,
+      "description": "Search using variation: steel shear key (for Pipe Pin)"
+    },
+    {
+      "id": 388,
+      "type": "variation",
+      "query": "pin connection",
+      "expected_pages": [
+        10
+      ],
+      "expected_element": "Pipe Pin (Steel Shear Key)",
+      "variation_of": "Pipe Pin",
+      "min_results": 1,
+      "description": "Search using variation: pin connection (for Pipe Pin)"
+    },
+    {
+      "id": 389,
+      "type": "variation",
+      "query": "pier",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Bent 1 to Bent 17",
+      "variation_of": "Bent",
+      "min_results": 1,
+      "description": "Search using variation: pier (for Bent)"
+    },
+    {
+      "id": 390,
+      "type": "variation",
+      "query": "support bent",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Bent 1 to Bent 17",
+      "variation_of": "Bent",
+      "min_results": 1,
+      "description": "Search using variation: support bent (for Bent)"
+    },
+    {
+      "id": 391,
+      "type": "variation",
+      "query": "column bent",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "Bent 1 to Bent 17",
+      "variation_of": "Bent",
+      "min_results": 1,
+      "description": "Search using variation: column bent (for Bent)"
+    },
+    {
+      "id": 392,
+      "type": "variation",
+      "query": "end support",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment Backwall",
+      "variation_of": "Abutment",
+      "min_results": 1,
+      "description": "Search using variation: end support (for Abutment)"
+    },
+    {
+      "id": 393,
+      "type": "variation",
+      "query": "abutment structure",
+      "expected_pages": [
+        6
+      ],
+      "expected_element": "Abutment Backwall",
+      "variation_of": "Abutment",
+      "min_results": 1,
+      "description": "Search using variation: abutment structure (for Abutment)"
+    },
+    {
+      "id": 394,
+      "type": "variation",
+      "query": "beam",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "R/C Box Girder",
+      "variation_of": "Girder",
+      "min_results": 1,
+      "description": "Search using variation: beam (for Girder)"
+    },
+    {
+      "id": 395,
+      "type": "variation",
+      "query": "bridge girder",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "R/C Box Girder",
+      "variation_of": "Girder",
+      "min_results": 1,
+      "description": "Search using variation: bridge girder (for Girder)"
+    },
+    {
+      "id": 396,
+      "type": "variation",
+      "query": "main beam",
+      "expected_pages": [
+        1
+      ],
+      "expected_element": "R/C Box Girder",
+      "variation_of": "Girder",
+      "min_results": 1,
+      "description": "Search using variation: main beam (for Girder)"
+    },
+    {
+      "id": 397,
+      "type": "variation",
+      "query": "elastomeric bearing",
+      "expected_pages": [
+        10,
+        17
+      ],
+      "expected_element": "Bearing Pad",
+      "variation_of": "Bearing Pad",
+      "min_results": 1,
+      "description": "Search using variation: elastomeric bearing (for Bearing Pad)"
+    },
+    {
+      "id": 398,
+      "type": "variation",
+      "query": "bearing support",
+      "expected_pages": [
+        10,
+        17
+      ],
+      "expected_element": "Bearing Pad",
+      "variation_of": "Bearing Pad",
+      "min_results": 1,
+      "description": "Search using variation: bearing support (for Bearing Pad)"
+    },
+    {
+      "id": 399,
+      "type": "variation",
+      "query": "rebar",
+      "expected_pages": [
+        11,
+        12,
+        15,
+        17
+      ],
+      "expected_element": "Reinforcement Bars",
+      "variation_of": "Reinforcement",
+      "min_results": 1,
+      "description": "Search using variation: rebar (for Reinforcement)"
+    },
+    {
+      "id": 400,
+      "type": "variation",
+      "query": "reinforcing steel",
+      "expected_pages": [
+        11,
+        12,
+        15,
+        17
+      ],
+      "expected_element": "Reinforcement Bars",
+      "variation_of": "Reinforcement",
+      "min_results": 1,
+      "description": "Search using variation: reinforcing steel (for Reinforcement)"
+    },
+    {
+      "id": 401,
+      "type": "variation",
+      "query": "reinforcing bars",
+      "expected_pages": [
+        11,
+        12,
+        15,
+        17
+      ],
+      "expected_element": "Reinforcement Bars",
+      "variation_of": "Reinforcement",
+      "min_results": 1,
+      "description": "Search using variation: reinforcing bars (for Reinforcement)"
+    }
+  ]
+}
