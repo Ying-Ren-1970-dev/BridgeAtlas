@@ -23,3 +23,6 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+# Project folders
+Public Projects/
