@@ -369,6 +369,11 @@ class PDFProcessor:
             'pages_with_text': len(pages_text),
         }
     
+    def _is_excluded_pdf(self, pdf_path: Path) -> bool:
+        """Return True if the PDF path is excluded by configured folder patterns."""
+        normalized_path = str(pdf_path).replace('\\', '/').lower()
+        return any(pattern in normalized_path for pattern in config.PROJECTS_FOLDER_EXCLUDE)
+
     def process_all_pdfs(self, projects_folder: Path) -> List[Dict]:
         """
         Process all PDFs in the projects folder.
@@ -379,8 +384,15 @@ class PDFProcessor:
         Returns:
             List of processed PDF data
         """
-        pdf_files = list(projects_folder.rglob('*.pdf'))
+        pdf_files = [
+            pdf_path
+            for pdf_path in projects_folder.rglob('*.pdf')
+            if not self._is_excluded_pdf(pdf_path)
+        ]
+        excluded_count = len(list(projects_folder.rglob('*.pdf'))) - len(pdf_files)
         print(f"\nFound {len(pdf_files)} PDF files")
+        if excluded_count:
+            print(f"Excluded {excluded_count} PDF files from ignored folders: {', '.join(config.PROJECTS_FOLDER_EXCLUDE)}")
         
         processed_data = []
         

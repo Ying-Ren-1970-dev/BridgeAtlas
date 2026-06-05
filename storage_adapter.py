@@ -1,5 +1,6 @@
 """Cloud Storage adapter for handling PDF files in GCS or local filesystem."""
 import os
+import shutil
 from pathlib import Path
 from typing import BinaryIO, List, Optional
 import tempfile
@@ -45,7 +46,21 @@ class StorageAdapter:
             pdf_folder = config.PROJECTS_FOLDER
             if not pdf_folder.exists():
                 return []
-            return [f.name for f in pdf_folder.glob('*.pdf')]
+            pdf_paths = list(pdf_folder.rglob('*.pdf'))
+            return [f.name for f in pdf_paths]
+
+    def _resolve_local_pdf_path(self, filename: str) -> Optional[Path]:
+        """Resolve a local PDF filename to a full path, including nested folders."""
+        candidate = config.PROJECTS_FOLDER / filename
+        if candidate.exists():
+            return candidate
+
+        matches = list(config.PROJECTS_FOLDER.rglob(filename))
+        if not matches:
+            return None
+        if len(matches) > 1:
+            print(f"Warning: multiple local PDFs found for '{filename}', using first match: {matches[0]}")
+        return matches[0]
     
     def get_pdf_path(self, filename: str) -> str:
         """
@@ -76,7 +91,9 @@ class StorageAdapter:
             blob = self.bucket_pdfs.blob(filename)
             return blob.download_as_bytes()
         else:
-            file_path = config.PROJECTS_FOLDER / filename
+            file_path = self._resolve_local_pdf_path(filename)
+            if not file_path:
+                raise FileNotFoundError(filename)
             with open(file_path, 'rb') as f:
                 return f.read()
     
@@ -94,8 +111,7 @@ class StorageAdapter:
             blob = self.bucket_pdfs.blob(filename)
             return blob.exists()
         else:
-            file_path = config.PROJECTS_FOLDER / filename
-            return file_path.exists()
+            return self._resolve_local_pdf_path(filename) is not None
     
     def get_pdf_temp_path(self, filename: str) -> str:
         """
@@ -120,7 +136,10 @@ class StorageAdapter:
             
             return temp_path
         else:
-            return str(config.PROJECTS_FOLDER / filename)
+            file_path = self._resolve_local_pdf_path(filename)
+            if not file_path:
+                raise FileNotFoundError(filename)
+            return str(file_path)
     
     def upload_pdf(self, filename: str, content: bytes):
         """
@@ -143,26 +162,107 @@ class StorageAdapter:
     
     def sync_vector_db_to_cloud(self):
         """
-        Sync local vector database to cloud storage.
-        Used after building/updating the vector database locally.
+        Sync local vector database and metadata to cloud storage.
+        Used after building or updating the vector database locally.
         """
         if not self.use_gcs:
+            print("Cloud sync is disabled because USE_CLOUD_STORAGE is false.")
+            print("Set USE_CLOUD_STORAGE=true and configure GCS_BUCKET_PDFS, GCS_BUCKET_VECTORS, and GCP_PROJECT_ID to enable cloud sync.")
             return
-        
+
+        self.sync_pdfs_to_cloud()
+
         vector_db_path = config.VECTOR_DB_PATH
         if not vector_db_path.exists():
             print("No vector database found to sync")
             return
-        
+
         print("Syncing vector database to Cloud Storage...")
+        desired_blobs = set()
+
         for file_path in vector_db_path.rglob('*'):
             if file_path.is_file():
                 relative_path = file_path.relative_to(vector_db_path)
-                blob = self.bucket_vectors.blob(str(relative_path))
+                blob_name = str(relative_path).replace('\\', '/')
+                desired_blobs.add(blob_name)
+                blob = self.bucket_vectors.blob(blob_name)
                 blob.upload_from_filename(str(file_path))
-        
-        print("✓ Vector database synced to cloud")
-    
+
+        if config.METADATA_DB_PATH.exists():
+            metadata_blob_name = "metadata_db.json"
+            desired_blobs.add(metadata_blob_name)
+            metadata_blob = self.bucket_vectors.blob(metadata_blob_name)
+            metadata_blob.upload_from_filename(str(config.METADATA_DB_PATH))
+            print(f"Uploaded metadata database: {metadata_blob_name}")
+
+        # Delete stale objects from the bucket that no longer exist locally.
+        existing_blobs = {blob.name for blob in self.bucket_vectors.list_blobs()}
+        stale_blobs = existing_blobs - desired_blobs
+        for blob_name in stale_blobs:
+            self.bucket_vectors.blob(blob_name).delete()
+            print(f"Deleted stale cloud object: {blob_name}")
+
+        print("✓ Vector database and metadata synced to cloud")
+
+    def sync_pdfs_to_cloud(self):
+        """
+        Sync local PDF files to the cloud PDF bucket.
+        This ensures the deployed API can render thumbnails from GCS.
+        """
+        if not self.use_gcs:
+            print("Cloud sync is disabled because USE_CLOUD_STORAGE is false.")
+            print("Set USE_CLOUD_STORAGE=true and configure GCS_BUCKET_PDFS, GCS_BUCKET_VECTORS, and GCP_PROJECT_ID to enable cloud sync.")
+            return
+
+        # Prefer PDF paths referenced in metadata so cloud sync mirrors the actual indexed docs.
+        pdf_paths = []
+        if config.METADATA_DB_PATH.exists():
+            try:
+                import json
+                with open(config.METADATA_DB_PATH, 'r', encoding='utf-8') as f:
+                    metadata = json.load(f)
+                for project in metadata.get('projects', {}).values():
+                    project_path = project.get('file_path')
+                    if not project_path:
+                        continue
+                    path_obj = Path(project_path)
+                    if not path_obj.is_absolute():
+                        path_obj = config.BASE_DIR / path_obj
+                    pdf_paths.append(path_obj)
+            except Exception as e:
+                print(f"Warning: Failed to load metadata for PDF sync: {e}")
+
+        if not pdf_paths:
+            pdf_folder = config.PROJECTS_FOLDER
+            if not pdf_folder.exists():
+                print("No local Projects folder found to sync PDFs")
+                return
+            pdf_paths = list(pdf_folder.rglob('*.pdf'))
+
+        print("Syncing local PDFs to Cloud Storage...")
+        desired_blobs = set()
+        uploaded_files = set()
+        for file_path in pdf_paths:
+            if not file_path.is_file():
+                continue
+            blob_name = file_path.name
+            if blob_name in uploaded_files:
+                print(f"Warning: duplicate PDF name skipped: {blob_name} (from {file_path})")
+                continue
+            uploaded_files.add(blob_name)
+            desired_blobs.add(blob_name)
+            blob = self.bucket_pdfs.blob(blob_name)
+            blob.upload_from_filename(str(file_path), content_type='application/pdf')
+            print(f"Uploaded PDF: {blob_name}")
+
+        existing_blobs = {blob.name for blob in self.bucket_pdfs.list_blobs()}
+        stale_blobs = existing_blobs - desired_blobs
+        for blob_name in stale_blobs:
+            self.bucket_pdfs.blob(blob_name).delete()
+            print(f"Deleted stale PDF object: {blob_name}")
+
+        print("✓ PDFs synced to cloud")
+
     def sync_vector_db_from_cloud(self):
         """
         Sync vector database from cloud storage to local filesystem.
@@ -172,6 +272,8 @@ class StorageAdapter:
             return
         
         vector_db_path = config.VECTOR_DB_PATH
+        if vector_db_path.exists():
+            shutil.rmtree(vector_db_path)
         vector_db_path.mkdir(parents=True, exist_ok=True)
         
         print("Syncing vector database from Cloud Storage...")

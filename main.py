@@ -12,6 +12,7 @@ from search_agent import SearchAgent
 from page_classifier import PageClassifier
 from enriched_metadata_graph_builder import GraphIntegrationManager
 from classification_training import SearchClassificationTrainer
+from storage_adapter import storage
 
 
 class LibrarianApp:
@@ -26,6 +27,10 @@ class LibrarianApp:
         self.search_agent = SearchAgent()
         self.graph_manager = GraphIntegrationManager()
     
+    def _is_excluded_project_path(self, pdf_path):
+        normalized_path = str(pdf_path).replace('\\', '/').lower()
+        return any(pattern in normalized_path for pattern in config.PROJECTS_FOLDER_EXCLUDE)
+
     def build_knowledge_base(
         self,
         projects_folder: Optional[Path] = None,
@@ -55,9 +60,14 @@ class LibrarianApp:
         # Initialize vector store
         self.vector_store.initialize_vectorstore()
         
-        # Get all PDF files
-        pdf_files = list(projects_folder.rglob('*.pdf'))
+        # Get all PDF files, excluding configured ignore directories
+        all_pdfs = list(projects_folder.rglob('*.pdf'))
+        pdf_files = [pdf_path for pdf_path in all_pdfs if not self._is_excluded_project_path(pdf_path)]
+        excluded_count = len(all_pdfs) - len(pdf_files)
+
         print(f"\nFound {len(pdf_files)} PDF files")
+        if excluded_count:
+            print(f"Excluded {excluded_count} PDF files from ignored folders: {', '.join(config.PROJECTS_FOLDER_EXCLUDE)}")
         
         if not pdf_files:
             print("No PDF files found. Exiting.")
@@ -180,7 +190,49 @@ class LibrarianApp:
         except Exception as e:
             print(f"\nError updating {file_path.name}: {str(e)}")
             raise
-    
+
+    def clean_excluded_projects(self) -> None:
+        """Remove indexed projects that live in excluded folders."""
+        excluded_patterns = config.PROJECTS_FOLDER_EXCLUDE
+        if not excluded_patterns:
+            print("No excluded project filters configured.")
+            return
+
+        print("\nCleaning excluded project entries from the vector store and metadata...")
+        self.vector_store.initialize_vectorstore()
+
+        projects = self.metadata_manager.get_all_projects()
+        excluded_files = [
+            file_name
+            for file_name, project in projects.items()
+            if any(pattern in str(project.get('file_path', '')).replace('\\', '/').lower() for pattern in excluded_patterns)
+        ]
+
+        if not excluded_files:
+            print("No excluded projects found in metadata.")
+            return
+
+        deleted_vectors = self.vector_store.delete_by_file_names(excluded_files)
+        deleted_metadata = self.metadata_manager.delete_projects_by_path_filters(excluded_patterns)
+        self.metadata_manager.save()
+
+        print(f"\n✓ Removed {deleted_metadata} excluded project metadata entries")
+        print(f"✓ Removed {deleted_vectors} excluded project vector entries")
+
+    def sync_cloud(self):
+        """Sync the current local vector store and metadata to cloud storage."""
+        if not storage.use_gcs:
+            print("\nCloud sync is currently disabled.")
+            print("Please set the following environment variables before running this command:")
+            print("  USE_CLOUD_STORAGE=true")
+            print("  GCS_BUCKET_PDFS=<your-pdf-bucket>")
+            print("  GCS_BUCKET_VECTORS=<your-vector-bucket>")
+            print("  GCP_PROJECT_ID=<your-gcp-project-id>")
+            return
+
+        print("\nSyncing local knowledge base to cloud storage...")
+        storage.sync_vector_db_to_cloud()
+
     def search(
         self,
         query: str,
@@ -596,6 +648,8 @@ def main():
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py search <query>    - Search knowledge base")
+        print("  python main.py sync-cloud        - Push local vector store and metadata to cloud storage")
+        print("  python main.py clean-excluded    - Remove excluded projects from index and metadata")
         print("  python main.py list              - List all projects")
         print("  python main.py stats             - Show statistics")
         print("  python main.py details <file>    - Show project details")
@@ -669,6 +723,12 @@ def main():
             return
         file_name = ' '.join(sys.argv[2:])
         app.get_project_details(file_name)
+
+    elif command == 'clean-excluded':
+        app.clean_excluded_projects()
+
+    elif command == 'sync-cloud':
+        app.sync_cloud()
     
     else:
         print(f"Unknown command: {command}")

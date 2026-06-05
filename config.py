@@ -32,7 +32,12 @@ FIRESTORE_COLLECTION = os.getenv("FIRESTORE_COLLECTION", "projects_metadata")
 
 # Project Paths (local development)
 BASE_DIR = Path(__file__).parent
-PROJECTS_FOLDER = Path(os.getenv("PROJECTS_FOLDER", BASE_DIR / "Projects"))
+PROJECTS_FOLDER = Path(os.getenv("PROJECTS_FOLDER", BASE_DIR))
+PROJECTS_FOLDER_EXCLUDE = [
+    pattern.strip().lower()
+    for pattern in os.getenv("PROJECTS_FOLDER_EXCLUDE", "Public Projects").split(",")
+    if pattern.strip()
+]
 VECTOR_DB_PATH = Path(os.getenv("VECTOR_DB_PATH", BASE_DIR / "vector_db"))
 METADATA_DB_PATH = Path(os.getenv("METADATA_DB_PATH", BASE_DIR / "metadata_db.json"))
 DATA_FOLDER = Path(os.getenv("DATA_FOLDER", BASE_DIR / "data"))
