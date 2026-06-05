@@ -97,6 +97,9 @@
             outline: none;
             background: #1f3142;
             color: var(--text-primary);
+            direction: ltr;
+            text-align: left;
+            unicode-bidi: plaintext;
             font-family: 'Roboto Mono', 'Consolas', monospace;
             box-shadow: inset 0 1px 4px rgba(6, 11, 18, 0.45);
             margin-right: 8px;
@@ -926,8 +929,10 @@
                 <textarea 
                     id="searchInput" 
                     rows="5"
+                    dir="ltr"
                     placeholder="Search for Caltrans isolated shear key for project dated 2020 and later..."
                     autocomplete="off"
+                    spellcheck="true"
                 ></textarea>
                 <button id="searchBtn" onclick="performSearch()">
                     RUN QUERY
@@ -938,9 +943,10 @@
             </div>
             <div class="quick-searches">
                 <span style="color: var(--text-secondary); font-size: 14px; margin-right: 10px;">Quick searches:</span>
-                <button class="quick-search-btn" onclick="quickSearch('I Girder')">I Girder</button>
+                <button class="quick-search-btn" onclick="quickSearch('CIP Box Girder Typical Section Reinforcement Details')">CIP Box Girder Typical Section Reinforcement Details</button>
                 <button class="quick-search-btn" onclick="quickSearch('Shear Key details')">Shear Key details</button>
-                <button class="quick-search-btn" onclick="quickSearch('Drilled shaft')">Drilled shaft</button>
+                <button class="quick-search-btn" onclick="quickSearch('CIDH Pile Reinforcement Details')">CIDH Pile Reinforcement Details</button>
+                <button class="quick-search-btn" onclick="quickSearch('ARS Curve')">ARS Curve</button>
                 <button class="quick-search-btn" onclick="quickSearch('Chain link fence details')">Chain link fence details</button>
                 <button class="quick-search-btn" onclick="quickSearch('LOTB')">LOTB</button>
                 <button class="quick-search-btn" onclick="quickSearch('Railroad')">Railroad</button>

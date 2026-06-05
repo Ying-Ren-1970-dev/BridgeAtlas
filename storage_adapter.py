@@ -49,18 +49,58 @@ class StorageAdapter:
             pdf_paths = list(pdf_folder.rglob('*.pdf'))
             return [f.name for f in pdf_paths]
 
+    def _resolve_from_metadata(self, filename: str) -> Optional[Path]:
+        """Resolve a PDF path from indexed metadata when folder search fails."""
+        if not config.METADATA_DB_PATH.exists():
+            return None
+
+        try:
+            import json
+            with open(config.METADATA_DB_PATH, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+
+            project = metadata.get('projects', {}).get(filename)
+            if not project:
+                for entry in metadata.get('projects', {}).values():
+                    if entry.get('file_name') == filename:
+                        project = entry
+                        break
+
+            if not project:
+                return None
+
+            file_path = Path(project.get('file_path', ''))
+            if not file_path:
+                return None
+            if not file_path.is_absolute():
+                file_path = config.BASE_DIR / file_path
+            if file_path.exists():
+                return file_path
+        except Exception as e:
+            print(f"Warning: Failed to resolve '{filename}' from metadata: {e}")
+
+        return None
+
     def _resolve_local_pdf_path(self, filename: str) -> Optional[Path]:
         """Resolve a local PDF filename to a full path, including nested folders."""
-        candidate = config.PROJECTS_FOLDER / filename
-        if candidate.exists():
-            return candidate
+        search_roots = []
+        if config.PROJECTS_FOLDER.exists():
+            search_roots.append(config.PROJECTS_FOLDER)
+        if config.BASE_DIR not in search_roots:
+            search_roots.append(config.BASE_DIR)
 
-        matches = list(config.PROJECTS_FOLDER.rglob(filename))
-        if not matches:
-            return None
-        if len(matches) > 1:
-            print(f"Warning: multiple local PDFs found for '{filename}', using first match: {matches[0]}")
-        return matches[0]
+        for root in search_roots:
+            candidate = root / filename
+            if candidate.exists():
+                return candidate
+
+            matches = list(root.rglob(filename))
+            if matches:
+                if len(matches) > 1:
+                    print(f"Warning: multiple local PDFs found for '{filename}', using first match: {matches[0]}")
+                return matches[0]
+
+        return self._resolve_from_metadata(filename)
     
     def get_pdf_path(self, filename: str) -> str:
         """
