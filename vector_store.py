@@ -381,6 +381,20 @@ class VectorStore:
                 print(f"Deleted documents for: {file_name}")
         except Exception as e:
             print(f"Error deleting documents for {file_name}: {str(e)}")
+
+    def delete_by_file_names(self, file_names: List[str]) -> int:
+        """Delete documents for multiple files by their file_name metadata."""
+        deleted = 0
+        if not self.vectorstore or not file_names:
+            return deleted
+
+        for file_name in file_names:
+            try:
+                self.delete_by_filename(file_name)
+                deleted += 1
+            except Exception:
+                continue
+        return deleted
     
     def clear_collection(self):
         """Clear all documents from the collection."""

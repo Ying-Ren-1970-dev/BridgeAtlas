@@ -80,7 +80,23 @@ class MetadataManager:
         if file_name in self.metadata['projects']:
             del self.metadata['projects'][file_name]
             print(f"Deleted metadata for: {file_name}")
-    
+
+    def delete_projects_by_path_filters(self, path_filters: List[str]) -> int:
+        """Delete metadata entries whose file_path matches any excluded filter."""
+        removed = 0
+        to_remove = []
+        for file_name, project in self.metadata['projects'].items():
+            file_path = str(project.get('file_path', '')).replace('\\', '/').lower()
+            if any(filter_text in file_path for filter_text in path_filters):
+                to_remove.append(file_name)
+
+        for file_name in to_remove:
+            del self.metadata['projects'][file_name]
+            removed += 1
+            print(f"Deleted metadata for excluded project: {file_name}")
+
+        return removed
+
     def search_projects_by_category(self, category: str) -> List[Dict]:
         """Search projects by category."""
         results = []
