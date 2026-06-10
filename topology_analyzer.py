@@ -347,52 +347,215 @@ Return ONLY valid JSON, no additional text."""
         print(f"\n{'='*80}\n")
 
 
+def _resolve_pdf_path(filename: str) -> Path:
+    """Resolve a PDF path from projects folder, metadata, or repo search."""
+    candidates = [
+        Path(config.PROJECTS_FOLDER) / filename,
+        config.BASE_DIR / "Public Projects" / filename,
+    ]
+
+    if config.METADATA_DB_PATH.exists():
+        try:
+            with open(config.METADATA_DB_PATH, 'r', encoding='utf-8') as f:
+                metadata = json.load(f)
+            project = metadata.get('projects', {}).get(filename)
+            if project and project.get('file_path'):
+                candidates.insert(0, Path(project['file_path']))
+        except Exception:
+            pass
+
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    matches = list(config.BASE_DIR.rglob(filename))
+    if matches:
+        return matches[0]
+
+    return candidates[0]
+
+
+def _is_deep_vision_complete(output_path: Path, total_pages: int = 0) -> bool:
+    """Return True when a project already has a finished deep-vision topology file."""
+    if not output_path.exists() or output_path.stat().st_size < 100_000:
+        return False
+
+    try:
+        with open(output_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception:
+        return False
+
+    if data.get('source') != 'deep_vision':
+        return False
+
+    pages_analyzed = data.get('pages_analyzed', 0)
+    if total_pages and pages_analyzed < max(1, int(total_pages * 0.9)):
+        return False
+
+    return pages_analyzed > 0
+
+
+def _manifest_entry_from_topology(output_path: Path, file_name: str, project_name: str) -> Dict:
+    with open(output_path, 'r', encoding='utf-8') as f:
+        topology = json.load(f)
+    summary = topology.get('summary', {})
+    return {
+        "project_name": project_name,
+        "pdf_file_name": file_name,
+        "topology_file": output_path.name,
+        "unique_elements": summary.get('unique_elements', 0),
+        "total_relationships": summary.get('total_relationships', 0),
+        "pages_analyzed": topology.get('pages_analyzed', 0),
+        "source": topology.get('source', 'deep_vision'),
+    }
+
+
+def batch_analyze_indexed_projects(output_dir: Path = None, resume: bool = True) -> List[Path]:
+    """
+    Run deep vision topology analysis for all indexed projects.
+
+    Saves one enhanced topology JSON per project immediately after each run.
+    When resume=True, skips projects that already have a completed deep-vision file.
+    """
+    output_dir = output_dir or config.DATA_FOLDER
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not config.METADATA_DB_PATH.exists():
+        raise FileNotFoundError(f"Metadata database not found: {config.METADATA_DB_PATH}")
+
+    with open(config.METADATA_DB_PATH, 'r', encoding='utf-8') as f:
+        metadata = json.load(f)
+
+    projects = list(metadata.get('projects', {}).values())
+    if not projects:
+        raise ValueError("No indexed projects found in metadata_db.json")
+
+    analyzer = DeepTopologyAnalyzer()
+    saved_files: List[Path] = []
+    manifest = {"projects": [], "source": "deep_vision"}
+    pending_count = 0
+
+    print("\n" + "=" * 80)
+    print("DEEP VISION TOPOLOGY - BATCH RUN")
+    print("=" * 80)
+    print(f"Projects in metadata: {len(projects)}")
+    print(f"Output directory: {output_dir}")
+    print(f"Resume mode: {resume}")
+    print("(Saving after each project completes)")
+
+    for index, project in enumerate(projects, start=1):
+        file_name = project.get('file_name')
+        if not file_name:
+            continue
+
+        pdf_path = _resolve_pdf_path(file_name)
+        if not pdf_path.exists():
+            print(f"\n[{index}/{len(projects)}] Skipping missing file: {file_name}")
+            continue
+
+        output_path = output_dir / f"enhanced_topology_{pdf_path.stem}.json"
+        total_pages = int(project.get('total_pages') or 0)
+
+        if resume and _is_deep_vision_complete(output_path, total_pages):
+            print(f"\n[{index}/{len(projects)}] Skipping completed: {file_name}")
+            saved_files.append(output_path)
+            manifest['projects'].append(
+                _manifest_entry_from_topology(output_path, file_name, pdf_path.stem)
+            )
+            continue
+
+        pending_count += 1
+        print(f"\n[{index}/{len(projects)}] Starting: {file_name}")
+
+        try:
+            topology = analyzer.analyze_project_comprehensive(pdf_path, str(output_path))
+            topology['source'] = 'deep_vision'
+            topology['pdf_file_name'] = file_name
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(topology, f, indent=2, ensure_ascii=False)
+
+            summary = topology.get('summary', {})
+            print(f"Saved: {output_path}")
+            saved_files.append(output_path)
+            manifest['projects'].append({
+                "project_name": pdf_path.stem,
+                "pdf_file_name": file_name,
+                "topology_file": output_path.name,
+                "unique_elements": summary.get('unique_elements', 0),
+                "total_relationships": summary.get('total_relationships', 0),
+                "pages_analyzed": topology.get('pages_analyzed', 0),
+                "source": "deep_vision",
+            })
+        except Exception as exc:
+            print(f"Failed: {file_name} -> {exc}")
+
+    if manifest['projects']:
+        manifest_path = output_dir / 'enhanced_topology_manifest.json'
+        with open(manifest_path, 'w', encoding='utf-8') as f:
+            json.dump(manifest, f, indent=2, ensure_ascii=False)
+        print(f"\nManifest saved: {manifest_path}")
+
+    print("\n" + "=" * 80)
+    print(f"BATCH COMPLETE: {len(saved_files)}/{len(projects)} projects available")
+    print(f"Newly processed this run: {pending_count}")
+    print("=" * 80)
+
+    return saved_files
+
+
 def main():
     """Main function to run deep topology analysis."""
     import sys
-    
+
+    if len(sys.argv) >= 2 and sys.argv[1] == '--all':
+        resume = '--no-resume' not in sys.argv
+        batch_analyze_indexed_projects(resume=resume)
+        return
+
     if len(sys.argv) < 2:
-        print("Usage: python topology_analyzer.py <pdf_filename>")
+        print("Usage:")
+        print("  python topology_analyzer.py <pdf_filename>")
+        print("  python topology_analyzer.py --all")
         print("\nExample:")
         print('  python topology_analyzer.py "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"')
         return
-    
+
     filename = sys.argv[1]
-    pdf_path = Path(config.PROJECTS_FOLDER) / filename
-    
+    pdf_path = _resolve_pdf_path(filename)
+
     if not pdf_path.exists():
-        print(f"❌ Error: File not found: {pdf_path}")
+        print(f"Error: File not found: {pdf_path}")
         return
-    
+
     analyzer = DeepTopologyAnalyzer()
-    
+
     print("\n" + "="*80)
     print("DEEP TOPOLOGY ANALYZER")
     print("="*80)
     print(f"\nThis will perform comprehensive analysis of: {filename}")
-    print("\n⚠️  HUMAN-IN-THE-LOOP CHECKPOINT #1")
+    print("\nHUMAN-IN-THE-LOOP CHECKPOINT #1")
     print("This process will:")
     print("  1. Analyze all pages with GPT-4 for detailed topology extraction")
     print("  2. Extract relationships between structural elements")
     print("  3. Generate comprehensive topology database")
     print(f"  4. Cost estimate: ~$2-5 for {filename}")
     print("\nContinue? (yes/no): ", end="")
-    
+
     response = input().strip().lower()
     if response != 'yes':
-        print("❌ Analysis cancelled by user")
+        print("Analysis cancelled by user")
         return
-    
-    # Run analysis
-    output_path = "enhanced_topology.json"
-    enhanced_topology = analyzer.analyze_project_comprehensive(pdf_path, output_path)
-    
+
+    output_path = str(config.DATA_FOLDER / f"enhanced_topology_{pdf_path.stem}.json")
+    analyzer.analyze_project_comprehensive(pdf_path, output_path)
+
     print("\n" + "="*80)
-    print("✓ DEEP TOPOLOGY ANALYSIS COMPLETE")
+    print("DEEP TOPOLOGY ANALYSIS COMPLETE")
     print("="*80)
-    print(f"\n📁 Results saved to: {output_path}")
-    print("\n🔍 Review the topology file to verify accuracy before proceeding to scenario generation.")
-    print("\n💡 Next step: python scenario_generator.py")
+    print(f"\nResults saved to: {output_path}")
+    print("\nReview the topology file to verify accuracy before proceeding to scenario generation.")
+    print("\nNext step: python scenario_generator.py")
 
 
 if __name__ == "__main__":

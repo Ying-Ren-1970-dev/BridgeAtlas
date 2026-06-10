@@ -1,4 +1,5 @@
 """Cloud Storage adapter for handling PDF files in GCS or local filesystem."""
+import hashlib
 import os
 import shutil
 from pathlib import Path
@@ -199,6 +200,47 @@ class StorageAdapter:
                 f.write(content)
     
     # Vector database storage methods
+
+    @staticmethod
+    def _upload_file_safely(blob, file_path: Path) -> Optional[str]:
+        """
+        Upload a file to GCS.
+
+        SQLite databases are copied to a temp file first so uploads stay
+        consistent even when the local API has the DB open.
+
+        Returns:
+            SHA256 of uploaded bytes for sqlite snapshots, otherwise None.
+        """
+        if file_path.suffix.lower() == ".sqlite3":
+            import sqlite3
+
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".sqlite3") as tmp:
+                temp_path = Path(tmp.name)
+            try:
+                source_conn = sqlite3.connect(f"file:{file_path}?mode=ro", uri=True)
+                dest_conn = sqlite3.connect(str(temp_path))
+                try:
+                    source_conn.backup(dest_conn)
+                finally:
+                    dest_conn.close()
+                    source_conn.close()
+                uploaded_hash = StorageAdapter._sha256(temp_path)
+                blob.upload_from_filename(str(temp_path))
+                return uploaded_hash
+            finally:
+                temp_path.unlink(missing_ok=True)
+
+        blob.upload_from_filename(str(file_path))
+        return None
+
+    @staticmethod
+    def _sha256(file_path: Path) -> str:
+        digest = hashlib.sha256()
+        with open(file_path, "rb") as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                digest.update(chunk)
+        return digest.hexdigest()
     
     def sync_vector_db_to_cloud(self):
         """
@@ -219,6 +261,7 @@ class StorageAdapter:
 
         print("Syncing vector database to Cloud Storage...")
         desired_blobs = set()
+        uploaded_chroma_hash = None
 
         for file_path in vector_db_path.rglob('*'):
             if file_path.is_file():
@@ -226,7 +269,13 @@ class StorageAdapter:
                 blob_name = str(relative_path).replace('\\', '/')
                 desired_blobs.add(blob_name)
                 blob = self.bucket_vectors.blob(blob_name)
-                blob.upload_from_filename(str(file_path))
+                uploaded_hash = self._upload_file_safely(blob, file_path)
+                if file_path.name == "chroma.sqlite3" and uploaded_hash:
+                    uploaded_chroma_hash = uploaded_hash
+                    print(
+                        f"Uploaded chroma.sqlite3 snapshot "
+                        f"({file_path.stat().st_size} bytes, sha256={uploaded_hash[:12]}...)"
+                    )
 
         if config.METADATA_DB_PATH.exists():
             metadata_blob_name = "metadata_db.json"
@@ -241,6 +290,24 @@ class StorageAdapter:
         for blob_name in stale_blobs:
             self.bucket_vectors.blob(blob_name).delete()
             print(f"Deleted stale cloud object: {blob_name}")
+
+        if uploaded_chroma_hash:
+            remote_blob = self.bucket_vectors.blob("chroma.sqlite3")
+            remote_blob.reload()
+            with tempfile.NamedTemporaryFile(delete=False, suffix=".sqlite3") as tmp:
+                remote_path = Path(tmp.name)
+            try:
+                remote_blob.download_to_filename(str(remote_path))
+                remote_hash = self._sha256(remote_path)
+            finally:
+                remote_path.unlink(missing_ok=True)
+
+            if uploaded_chroma_hash != remote_hash:
+                raise RuntimeError(
+                    "Cloud vector sync verification failed: chroma.sqlite3 hash mismatch "
+                    f"(uploaded={uploaded_chroma_hash[:12]}..., cloud={remote_hash[:12]}...)"
+                )
+            print(f"Verified chroma.sqlite3 checksum in cloud ({uploaded_chroma_hash[:12]}...)")
 
         print("✓ Vector database and metadata synced to cloud")
 
@@ -331,7 +398,14 @@ class StorageAdapter:
             local_path.parent.mkdir(parents=True, exist_ok=True)
             blob.download_to_filename(str(local_path))
         
-        print("✓ Vector database synced from cloud")
+        chroma_path = vector_db_path / "chroma.sqlite3"
+        if chroma_path.exists():
+            print(
+                f"✓ Vector database synced from cloud "
+                f"(chroma.sqlite3 sha256={self._sha256(chroma_path)[:12]}...)"
+            )
+        else:
+            print("✓ Vector database synced from cloud")
 
 
 # Global instance

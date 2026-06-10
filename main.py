@@ -608,6 +608,66 @@ class LibrarianApp:
         print(f"✓ Details stored in: {indexer.vector_db_path}")
         print("\nDetail-level search is now available!")
 
+    def build_enhanced_topology(self):
+        """
+        Build enhanced topology JSON files for all enriched metadata projects.
+
+        Uses existing enriched_*.json files in data/ (no API calls).
+        Outputs data/enhanced_topology_<project>.json plus a manifest.
+        """
+        from enhanced_topology_builder import EnhancedTopologyBuilder
+
+        builder = EnhancedTopologyBuilder()
+        builder.build_all()
+
+    def merge_deep_vision_topology(self):
+        """
+        Merge deep-vision enhanced topology into the vector knowledge base.
+
+        Loads data/enhanced_topology_*.json files and appends per-page topology
+        to existing chunks. Preserves PDF text and enriched metadata.
+        Re-embeds only chunks that receive new topology text.
+        """
+        print("=" * 60)
+        print("MERGING DEEP VISION TOPOLOGY INTO KNOWLEDGE BASE")
+        print("=" * 60)
+        print("(Preserving existing PDF text and enriched metadata)")
+
+        self.vector_store.initialize_vectorstore()
+
+        from enhanced_topology_loader import EnhancedTopologyLoader
+
+        topology_files = EnhancedTopologyLoader.list_deep_vision_topology_files()
+        if not topology_files:
+            print("\nNo deep vision topology files found in data/")
+            print("Run deep vision first: python topology_analyzer.py --all")
+            return
+
+        print(f"\nFound {len(topology_files)} deep vision topology files")
+        print("(JSON source files are read-only and never modified)")
+
+        total_updated = 0
+        success_count = 0
+
+        for topology_file in topology_files:
+            file_name = topology_file.stem.replace("enhanced_topology_", "") + ".pdf"
+            print(f"\nProcessing: {file_name}")
+            try:
+                updated = self.vector_store.merge_deep_vision_topology(file_name)
+                total_updated += updated
+                if updated > 0:
+                    success_count += 1
+            except Exception as e:
+                print(f"  Error: {str(e)}")
+                continue
+
+        print("\n" + "=" * 60)
+        print("DEEP VISION MERGE COMPLETE")
+        print("=" * 60)
+        print(f"Processed {len(topology_files)} files")
+        print(f"Successfully merged {success_count} files")
+        print(f"Total chunks updated: {total_updated}")
+
     def train_search_classifications(self):
         """
         Build training artifact for project/page/detail classification taxonomy.
@@ -645,6 +705,8 @@ def main():
         print("  python main.py enrich <file>     - Enrich single file with page classification & title blocks")
         print("  python main.py enrich-kb         - Add enrichment to ALL existing documents (NO API calls)")
         print("  python main.py build-graphs      - Build detail connectivity graphs from enriched metadata (NO API calls)")
+        print("  python main.py build-enhanced-topology - Build enhanced topology for all enriched projects (NO API calls)")
+        print("  python main.py merge-deep-vision  - Merge deep vision topology into vector knowledge base")
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py search <query>    - Search knowledge base")
@@ -696,6 +758,12 @@ def main():
     
     elif command == 'build-graphs':
         app.build_detail_graphs()
+
+    elif command == 'build-enhanced-topology':
+        app.build_enhanced_topology()
+
+    elif command == 'merge-deep-vision':
+        app.merge_deep_vision_topology()
     
     elif command == 'index-details':
         app.index_detail_nodes()

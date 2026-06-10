@@ -190,11 +190,15 @@ async def startup_event():
     storage.sync_vector_db_from_cloud()
     
     search_agent = SearchAgent()
-    vector_store = VectorStore()
-    vector_store.initialize_vectorstore()
+    vector_store = search_agent.vector_store
     metadata_manager = MetadataManager()
     analysis_engine = AnalysisEngine()
-    print("[OK] Librarian API initialized successfully")
+    kb_stats = _knowledge_base_stats()
+    print(
+        "[OK] Librarian API initialized successfully "
+        f"(chunks={kb_stats.get('chunk_count', 0)}, "
+        f"deep_vision={kb_stats.get('deep_vision_chunks', 0)})"
+    )
 
 
 # Request/Response Models
@@ -408,6 +412,25 @@ async def serve_dashboard():
     return FileResponse(dashboard_path, media_type="text/html")
 
 
+def _knowledge_base_stats() -> Dict:
+    """Return lightweight KB diagnostics for local/cloud parity checks."""
+    stats = {
+        "use_cloud_storage": config.USE_CLOUD_STORAGE,
+        "vector_db_path": str(config.VECTOR_DB_PATH),
+    }
+    if not search_agent or not search_agent.vector_store or not search_agent.vector_store.vectorstore:
+        stats["status"] = "not_initialized"
+        return stats
+
+    collection = search_agent.vector_store.vectorstore._collection
+    all_docs = collection.get(include=[])
+    stats["chunk_count"] = len(all_docs.get("ids", []))
+    merged = collection.get(where={"deep_vision_merged": "true"}, include=[])
+    stats["deep_vision_chunks"] = len(merged.get("ids", []))
+    stats["status"] = "ready"
+    return stats
+
+
 @app.get("/health", tags=["Health"])
 async def health_check():
     """Health check endpoint."""
@@ -415,7 +438,8 @@ async def health_check():
         "status": "healthy",
         "timestamp": datetime.utcnow().isoformat(),
         "vector_store": "operational" if vector_store else "not initialized",
-        "search_agent": "operational" if search_agent else "not initialized"
+        "search_agent": "operational" if search_agent else "not initialized",
+        "knowledge_base": _knowledge_base_stats(),
     }
 
 

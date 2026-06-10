@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM",
+      "pdf_file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "topology_file": "enhanced_topology_55-0273_EdwardsOC_As_BuiltWM.json",
+      "unique_elements": 680,
+      "total_relationships": 51,
+      "pages_analyzed": 64,
+      "source": "deep_vision"
+    },
+    {
+      "project_name": "55-1119_GoldenwestOc_As_BuiltWM",
+      "pdf_file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "topology_file": "enhanced_topology_55-1119_GoldenwestOc_As_BuiltWM.json",
+      "unique_elements": 729,
+      "total_relationships": 40,
+      "pages_analyzed": 75,
+      "source": "deep_vision"
+    },
+    {
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
+      "pdf_file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "topology_file": "enhanced_topology_55-1121_MagnoliaOc_As_BuiltWM.json",
+      "unique_elements": 699,
+      "total_relationships": 36,
+      "pages_analyzed": 67,
+      "source": "deep_vision"
+    },
+    {
+      "project_name": "55-1127_WestminsterOC_As_Built",
+      "pdf_file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "topology_file": "enhanced_topology_55-1127_WestminsterOC_As_Built.json",
+      "unique_elements": 681,
+      "total_relationships": 55,
+      "pages_analyzed": 69,
+      "source": "deep_vision"
+    },
+    {
+      "project_name": "Fresno 180 Ramp",
+      "pdf_file_name": "Fresno 180 Ramp.pdf",
+      "topology_file": "enhanced_topology_Fresno 180 Ramp.json",
+      "unique_elements": 145,
+      "total_relationships": 83,
+      "pages_analyzed": 27,
+      "source": "deep_vision"
+    }
+  ],
+  "source": "deep_vision"
+}
