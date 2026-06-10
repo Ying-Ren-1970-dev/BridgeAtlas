@@ -3,8 +3,8 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Load environment variables (.env should win over stale shell env in local dev)
+load_dotenv(override=True)
 
 # Environment
 ENVIRONMENT = os.getenv("ENVIRONMENT", "development")  # development, production

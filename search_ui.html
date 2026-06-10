@@ -710,6 +710,7 @@
 
         .thumbnail-wrapper {
             width: 100%;
+            min-height: 140px;
             height: auto;
             background: #1f3142;
             border-radius: 8px;
@@ -977,8 +978,8 @@
         }
 
         .thumbnail-loading {
-            width: 150px;
-            height: 200px;
+            width: 100%;
+            min-height: 140px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -986,6 +987,8 @@
             border-radius: 8px;
             color: #8fa3b8;
             font-size: 12px;
+            text-align: center;
+            padding: 12px;
         }
 
         .result-card-text {
@@ -1810,12 +1813,17 @@
             const topologyHTML = topologyTags.length
                 ? `<div class="thumbnail-topology">${topologyTags.map(tag => `<span class="thumbnail-topology-tag" title="${escapeHtml(tag)}">${escapeHtml(tag)}</span>`).join('')}</div>`
                 : '';
+            const modalArgs = `${JSON.stringify(result.pdf_file_name)}, ${result.page_number}, ${JSON.stringify(result.project_name)}`;
+            const thumbUrl = `${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail`;
             return `
-                <div class="thumbnail-item" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
+                <div class="thumbnail-item" onclick="openPageModal(${modalArgs})" title="Click to view full page">
                     <div class="thumbnail-wrapper">
-                        <img src="${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail" 
+                        <div class="thumbnail-loading">Loading preview...</div>
+                        <img src="${thumbUrl}"
                              alt="Page ${result.page_number} thumbnail"
-                             onerror="this.style.display='none'">
+                             loading="eager"
+                             onload="this.previousElementSibling?.remove()"
+                             onerror="this.onerror=null; this.previousElementSibling?.remove(); this.replaceWith(Object.assign(document.createElement('div'), {className:'thumbnail-loading', textContent:'No preview'}));">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
                     ${topologyHTML}

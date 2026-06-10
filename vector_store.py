@@ -10,6 +10,7 @@ from langchain_chroma import Chroma
 import config
 from enriched_metadata_loader import EnrichedMetadataLoader
 from enhanced_topology_loader import EnhancedTopologyLoader
+from title_block_catalog import TitleBlockCatalog
 
 
 class VectorStore:
@@ -91,6 +92,8 @@ class VectorStore:
             if enriched_metadata:
                 enriched_count += 1
                 print(f"  ✓ Loaded enriched metadata for {file_name} ({len(enriched_metadata)} pages)")
+
+            sheet_catalog = TitleBlockCatalog.build_for_project(file_name)
             
             for chunk in pdf_data['chunks']:
                 chunk_text = chunk['text']
@@ -121,6 +124,12 @@ class VectorStore:
                     enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
                     if enriched_text:
                         chunk_text = f"{chunk_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
+                elif sheet_catalog and page_num in sheet_catalog:
+                    sheet_record = sheet_catalog[page_num]
+                    chunk_metadata.update(TitleBlockCatalog.get_metadata_fields(sheet_record))
+                    category_text = TitleBlockCatalog.extract_searchable_text(sheet_record)
+                    if category_text:
+                        chunk_text = f"{chunk_text}\n\n[SHEET CATEGORY]\n{category_text}"
                 
                 texts.append(chunk_text)
                 metadatas.append(chunk_metadata)
@@ -623,6 +632,123 @@ class VectorStore:
             file_name = f"{pdf_stem}.pdf"
             print(f"\nMerging deep vision topology for {file_name}...")
             total_updated += self.merge_deep_vision_topology(file_name)
+
+        print(f"\nTotal chunks updated across all projects: {total_updated}")
+        return total_updated
+
+    def merge_sheet_categories(self, file_name: str) -> int:
+        """
+        Merge per-sheet title block categories into existing vector chunks.
+
+        Uses enriched title blocks when available and deep-vision topology for
+        all remaining pages so every sheet has a category.
+        """
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        try:
+            catalog = TitleBlockCatalog.build_for_project(file_name)
+            if not catalog:
+                print(f"  No title block catalog available for {file_name}")
+                return 0
+
+            print(f"  Loaded sheet category catalog ({len(catalog)} pages)")
+
+            collection = self.vectorstore._collection
+            results = collection.get(
+                where={"file_name": file_name},
+                include=["metadatas", "documents"],
+            )
+
+            if not results["ids"]:
+                print(f"  No existing documents found for {file_name}")
+                return 0
+
+            updated_texts = []
+            updated_metadatas = []
+            ids_to_update = []
+            merged_count = 0
+
+            for doc_id, doc_text, doc_metadata in zip(
+                results["ids"], results["documents"], results["metadatas"]
+            ):
+                page_num = doc_metadata.get("page")
+                if not page_num or int(page_num) not in catalog:
+                    continue
+
+                record = catalog[int(page_num)]
+                needs_pdf_notes = bool(record.get("pdf_text_excerpt")) and "[GENERAL NOTES TEXT]" not in doc_text
+                if doc_metadata.get("sheet_category_merged") == "true" and not needs_pdf_notes:
+                    continue
+
+                category_text = TitleBlockCatalog.extract_searchable_text(record)
+                if not category_text:
+                    continue
+
+                updated_metadata = doc_metadata.copy()
+                updated_metadata.update(TitleBlockCatalog.get_metadata_fields(record))
+                if record.get("pdf_text_excerpt"):
+                    updated_metadata["general_notes_text_merged"] = "true"
+                updated_text = doc_text
+                has_enriched_block = "[ENRICHED METADATA]" in doc_text
+                if "[SHEET CATEGORY]" not in doc_text and not has_enriched_block:
+                    updated_text = f"{doc_text}\n\n[SHEET CATEGORY]\n{category_text}"
+                elif needs_pdf_notes and "[SHEET CATEGORY]" in doc_text:
+                    updated_text = f"{doc_text}\n\n[SHEET CATEGORY]\n{category_text}"
+
+                if needs_pdf_notes and record.get("pdf_text_excerpt"):
+                    updated_text = (
+                        f"{updated_text}\n\n[GENERAL NOTES TEXT]\n{record['pdf_text_excerpt']}"
+                    )
+
+                updated_texts.append(updated_text)
+                updated_metadatas.append(updated_metadata)
+                ids_to_update.append(doc_id)
+                if updated_text != doc_text or needs_pdf_notes:
+                    merged_count += 1
+
+            if not ids_to_update:
+                print("  All chunks already have sheet categories")
+                return 0
+
+            batch_size = 100
+            total_updated = 0
+            for i in range(0, len(ids_to_update), batch_size):
+                batch_ids = ids_to_update[i : i + batch_size]
+                batch_texts = updated_texts[i : i + batch_size]
+                batch_metadatas = updated_metadatas[i : i + batch_size]
+                batch_embeddings = self.embeddings.embed_documents(batch_texts)
+                collection.update(
+                    ids=batch_ids,
+                    embeddings=batch_embeddings,
+                    documents=batch_texts,
+                    metadatas=batch_metadatas,
+                )
+                total_updated += len(batch_ids)
+
+            print(
+                f"  Updated {total_updated} chunks with sheet categories "
+                f"({merged_count} categorized chunks)"
+            )
+            return total_updated
+
+        except Exception as e:
+            print(f"  Error merging sheet categories for {file_name}: {str(e)}")
+            raise
+
+    def merge_all_sheet_categories(self) -> int:
+        """Merge sheet categories for every deep-vision topology project."""
+        topology_files = EnhancedTopologyLoader.list_deep_vision_topology_files()
+        if not topology_files:
+            print("No deep vision topology files found in data/")
+            return 0
+
+        total_updated = 0
+        for topology_file in topology_files:
+            pdf_stem = topology_file.stem.replace("enhanced_topology_", "", 1)
+            file_name = f"{pdf_stem}.pdf"
+            print(f"\nMerging sheet categories for {file_name}...")
+            total_updated += self.merge_sheet_categories(file_name)
 
         print(f"\nTotal chunks updated across all projects: {total_updated}")
         return total_updated

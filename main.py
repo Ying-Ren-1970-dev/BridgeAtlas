@@ -668,6 +668,51 @@ class LibrarianApp:
         print(f"Successfully merged {success_count} files")
         print(f"Total chunks updated: {total_updated}")
 
+    def merge_sheet_categories(self):
+        """
+        Merge per-sheet title block categories into the vector knowledge base.
+
+        Every sheet receives a category from enriched title blocks (when present)
+        or deep-vision topology detail names for remaining pages.
+        """
+        print("=" * 60)
+        print("MERGING SHEET CATEGORIES INTO KNOWLEDGE BASE")
+        print("=" * 60)
+        print("(Title block category on every sheet)")
+
+        self.vector_store.initialize_vectorstore()
+
+        from enhanced_topology_loader import EnhancedTopologyLoader
+
+        topology_files = EnhancedTopologyLoader.list_deep_vision_topology_files()
+        if not topology_files:
+            print("\nNo deep vision topology files found in data/")
+            return
+
+        print(f"\nFound {len(topology_files)} projects")
+
+        total_updated = 0
+        success_count = 0
+
+        for topology_file in topology_files:
+            file_name = topology_file.stem.replace("enhanced_topology_", "") + ".pdf"
+            print(f"\nProcessing: {file_name}")
+            try:
+                updated = self.vector_store.merge_sheet_categories(file_name)
+                total_updated += updated
+                if updated > 0:
+                    success_count += 1
+            except Exception as e:
+                print(f"  Error: {str(e)}")
+                continue
+
+        print("\n" + "=" * 60)
+        print("SHEET CATEGORY MERGE COMPLETE")
+        print("=" * 60)
+        print(f"Processed {len(topology_files)} files")
+        print(f"Successfully merged {success_count} files")
+        print(f"Total chunks updated: {total_updated}")
+
     def train_search_classifications(self):
         """
         Build training artifact for project/page/detail classification taxonomy.
@@ -707,6 +752,7 @@ def main():
         print("  python main.py build-graphs      - Build detail connectivity graphs from enriched metadata (NO API calls)")
         print("  python main.py build-enhanced-topology - Build enhanced topology for all enriched projects (NO API calls)")
         print("  python main.py merge-deep-vision  - Merge deep vision topology into vector knowledge base")
+        print("  python main.py merge-sheet-categories - Add title block category to every sheet")
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py search <query>    - Search knowledge base")
@@ -764,6 +810,9 @@ def main():
 
     elif command == 'merge-deep-vision':
         app.merge_deep_vision_topology()
+
+    elif command == 'merge-sheet-categories':
+        app.merge_sheet_categories()
     
     elif command == 'index-details':
         app.index_detail_nodes()

@@ -17,6 +17,7 @@ import re
 from collections import Counter
 
 from search_agent import SearchAgent
+from langchain_core.documents import Document
 from vector_store import VectorStore
 from metadata_manager import MetadataManager
 from storage_adapter import storage
@@ -185,11 +186,17 @@ def _build_feedback_pages_pdf(
 async def startup_event():
     """Initialize search components on startup."""
     global search_agent, vector_store, metadata_manager, analysis_engine
+
+    # Reload retrieval modules so code edits outside api.py are picked up on restart.
+    import importlib
+    import search_agent as search_agent_module
+
+    importlib.reload(search_agent_module)
     
     # Sync vector database from cloud storage in production
     storage.sync_vector_db_from_cloud()
     
-    search_agent = SearchAgent()
+    search_agent = search_agent_module.SearchAgent()
     vector_store = search_agent.vector_store
     metadata_manager = MetadataManager()
     analysis_engine = AnalysisEngine()
@@ -669,9 +676,130 @@ async def search(request: SearchRequest):
                     found_elements.append(element)
             return found_elements
         
+        def _prefer_general_notes_pages(
+            page_results: List[SearchResult],
+            query_text: str,
+            sheet_types: Dict[Tuple[str, int], str],
+        ) -> List[SearchResult]:
+            """Keep one consistent general-notes page per project for reference queries."""
+            if not search_agent or not page_results:
+                return page_results
+            if not search_agent._is_general_notes_reference_query(query_text):
+                return page_results
+
+            by_project: Dict[str, List[SearchResult]] = {}
+            for item in page_results:
+                by_project.setdefault(item.pdf_file_name, []).append(item)
+
+            trimmed: List[SearchResult] = []
+            for project_items in by_project.values():
+                general_note_items = [
+                    item
+                    for item in project_items
+                    if sheet_types.get((item.pdf_file_name, item.page_number)) == "general_note"
+                    or "general note" in item.content_sample.lower()
+                    or "standard plan" in item.content_sample.lower()
+                    or "caltrans" in item.content_sample.lower()
+                    or "index to plans" in item.content_sample.lower()
+                    or "[general notes text]" in item.content_sample.lower()
+                ]
+                if general_note_items:
+                    trimmed.append(
+                        min(general_note_items, key=lambda item: item.relevance_score)
+                    )
+                else:
+                    trimmed.append(
+                        min(project_items, key=lambda item: item.relevance_score)
+                    )
+
+            trimmed.sort(key=lambda item: item.relevance_score)
+            return trimmed
+
+        def _inject_missing_general_notes_projects(
+            page_results: List[SearchResult],
+            query_text: str,
+            sheet_types: Dict[Tuple[str, int], str],
+        ) -> List[SearchResult]:
+            """Backfill general-notes hits for projects missing from ranked results."""
+            if not search_agent or not vector_store:
+                return page_results
+            if not search_agent._is_general_notes_reference_query(query_text):
+                return page_results
+
+            present_files = {item.pdf_file_name for item in page_results}
+            target_files = set(metadata_manager.get_all_projects().keys()) - present_files
+            if not target_files:
+                return page_results
+
+            anchor_score = (
+                min(item.relevance_score for item in page_results)
+                if page_results
+                else 0.0
+            )
+            keyword_candidates = vector_store.get_keyword_search_candidates(
+                limit=config.HYBRID_KEYWORD_CANDIDATE_LIMIT
+            )
+
+            best_by_file: Dict[str, tuple] = {}
+            for item in keyword_candidates:
+                metadata = item.get("metadata", {}) or {}
+                file_name = str(metadata.get("file_name") or "")
+                if file_name not in target_files:
+                    continue
+
+                doc = Document(page_content=item.get("content", ""), metadata=metadata)
+                if not search_agent._is_general_notes_page(doc):
+                    continue
+
+                strength = search_agent._general_notes_match_strength(doc, query_text)
+                if strength <= 0:
+                    continue
+
+                page_number = metadata.get("page")
+                current = best_by_file.get(file_name)
+                if not current or strength > current[0]:
+                    best_by_file[file_name] = (
+                        strength,
+                        page_number,
+                        item.get("content", ""),
+                        str(metadata.get("plan_sheet_type") or ""),
+                    )
+
+            augmented = list(page_results)
+            for file_name, (strength, page_number, content, sheet_type) in best_by_file.items():
+                if page_number is None:
+                    continue
+                project_meta = metadata_manager.get_project_metadata(file_name) or {}
+                score = anchor_score
+                if strength >= 5:
+                    score = 0.0
+                elif strength >= 3:
+                    score = min(score, 0.05)
+
+                sheet_types[(file_name, int(page_number))] = sheet_type
+                augmented.append(
+                    SearchResult(
+                        pdf_file_name=file_name,
+                        project_name=project_meta.get("project_name", file_name.replace(".pdf", "")),
+                        page_number=int(page_number),
+                        relevance_score=round(score, 3),
+                        topology_elements=extract_topology(content),
+                        content_sample=content[:500]
+                        .replace("[TEXT CONTENT]", "")
+                        .replace("[DRAWING ANALYSIS]", "")
+                        .strip(),
+                        has_vision_analysis="[DRAWING ANALYSIS]" in content
+                        or "[TEXT CONTENT]" in content,
+                    )
+                )
+
+            augmented.sort(key=lambda item: item.relevance_score)
+            return augmented
+
         # Build detailed results - convert project results to page-level results
         results = []
         projects_dict = {}
+        chunk_sheet_types: Dict[Tuple[str, int], str] = {}
         
         for project_result in search_results.get('results', []):
             file_name = project_result.get('file_name', '')
@@ -692,6 +820,8 @@ async def search(request: SearchRequest):
                     
                 content = chunk.get('content', '')
                 score = chunk.get('score', 1.0)
+                sheet_type = str(chunk.get('plan_sheet_type') or '')
+                chunk_sheet_types[(file_name, int(page_num))] = sheet_type
                 
                 # Keep the best (lowest) score and longest content for each page
                 if page_num not in page_data or score < page_data[page_num]['score']:
@@ -699,7 +829,8 @@ async def search(request: SearchRequest):
                         'content': content,
                         'score': score,
                         'has_vision': '[DRAWING ANALYSIS]' in content or '[TEXT CONTENT]' in content,
-                        'topology': extract_topology(content)
+                        'topology': extract_topology(content),
+                        'plan_sheet_type': sheet_type,
                     }
             
             # Create a result entry for EACH page with its specific data
@@ -736,6 +867,10 @@ async def search(request: SearchRequest):
             best_score = min(r.relevance_score for r in results)
             threshold = best_score + effective_threshold
             results = [r for r in results if r.relevance_score <= threshold]
+            results = _inject_missing_general_notes_projects(
+                results, request.query, chunk_sheet_types
+            )
+            results = _prefer_general_notes_pages(results, request.query, chunk_sheet_types)
         
         # Build project summaries
         project_summaries = []
@@ -957,8 +1092,13 @@ async def get_pdf_page_image(
         img_bytes = pix.tobytes("png")
         doc.close()
         
-        # Return as streaming response
-        return StreamingResponse(BytesIO(img_bytes), media_type="image/png")
+        from fastapi.responses import Response
+
+        return Response(
+            content=img_bytes,
+            media_type="image/png",
+            headers={"Cache-Control": "public, max-age=3600"},
+        )
         
     except HTTPException:
         raise
@@ -983,5 +1123,6 @@ if __name__ == "__main__":
         host="0.0.0.0",
         port=8000,
         reload=True,
+        reload_includes=["*.py"],
         log_level="info"
     )

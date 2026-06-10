@@ -75,6 +75,10 @@ class SearchAgent:
                 "abutment footing",
                 "general plan",
                 "rebar detail",
+                "caltrans standard plan",
+                "standard plan reference",
+                "general note",
+                "general notes",
             ]
         )
         avoid_expansion = looks_like_identifier_query or (has_specific_phrase and token_count <= 6) or (token_count == 1)
@@ -176,7 +180,23 @@ class SearchAgent:
                     ["pile", "piles", "shaft", "shafts"],
                 ],
             },
+            {
+                "name": "general_plan",
+                "trigger_groups": [["general plan", "general plans"]],
+                "required_groups": [["general plan", "general plans"]],
+            },
         ]
+
+        search_results = self._apply_title_block_boost(search_results, normalized_query)
+        search_results = self._apply_general_notes_reference_boost(
+            search_results, normalized_query
+        )
+        search_results = self._ensure_per_project_general_notes_coverage(
+            search_results,
+            normalized_query,
+            keyword_candidates,
+            scoped_file_names,
+        )
 
         for rule in intent_rules:
             is_triggered = all(
@@ -310,20 +330,7 @@ class SearchAgent:
         if re.search(pattern, content):
             return True
 
-        metadata = getattr(doc, "metadata", {}) or {}
-        metadata_blob = " ".join(
-            str(metadata.get(field, ""))
-            for field in [
-                "file_name",
-                "project_name",
-                "enriched_project_name",
-                "plan_sheet_title",
-                "plan_sheet_type",
-                "detail_intents",
-                "detail_types",
-                "structural_elements",
-            ]
-        ).lower()
+        metadata_blob = self._metadata_search_blob(getattr(doc, "metadata", {}) or {})
         return bool(re.search(pattern, metadata_blob))
 
     def _query_matches_variant(self, query_tokens: Set[str], variant: str) -> bool:
@@ -339,6 +346,264 @@ class SearchAgent:
         if not variant_tokens:
             return False
         return all(self._doc_contains_query_token(doc, token) for token in variant_tokens)
+
+    def _metadata_search_blob(self, metadata: Dict) -> str:
+        """Flatten searchable metadata fields for title-block and intent matching."""
+        return " ".join(
+            str(metadata.get(field, ""))
+            for field in [
+                "file_name",
+                "project_name",
+                "enriched_project_name",
+                "plan_primary_type",
+                "plan_sheet_title",
+                "plan_sheet_number",
+                "plan_sheet_type",
+                "detail_intents",
+                "detail_types",
+                "structural_elements",
+            ]
+        ).lower()
+
+    def _doc_matches_title_block_phrase(self, doc: Document, phrase: str) -> bool:
+        """Return True when a title-block phrase appears in metadata or enriched text."""
+        phrase = (phrase or "").strip().lower()
+        if not phrase:
+            return False
+
+        metadata_blob = self._metadata_search_blob(getattr(doc, "metadata", {}) or {})
+        if phrase in metadata_blob:
+            return True
+
+        content = str(getattr(doc, "page_content", "") or "").lower()
+        if phrase in content:
+            return True
+        if "[enriched metadata]" in content:
+            enriched = content.split("[enriched metadata]", 1)[-1]
+            if phrase in enriched:
+                return True
+        if "[sheet category]" in content:
+            category = content.split("[sheet category]", 1)[-1]
+            if phrase in category:
+                return True
+        if "[general notes text]" in content:
+            notes = content.split("[general notes text]", 1)[-1]
+            if phrase in notes:
+                return True
+        return False
+
+    def _doc_search_blob(self, doc: Document) -> str:
+        """Combine chunk text and metadata for phrase matching."""
+        content = str(getattr(doc, "page_content", "") or "").lower()
+        metadata_blob = self._metadata_search_blob(getattr(doc, "metadata", {}) or {})
+        return f"{content} {metadata_blob}".strip()
+
+    GENERAL_NOTES_QUERY_GROUPS: List[List[str]] = [
+        ["caltrans"],
+        ["standard", "plan"],
+        ["general", "note"],
+        ["general", "notes"],
+        ["seismic", "design"],
+        ["plan", "symbol"],
+        ["abbreviation"],
+        ["ars", "curve"],
+        ["aashto"],
+        ["lrfd"],
+    ]
+
+    GENERAL_NOTES_PHRASES: List[str] = [
+        "ars curve",
+        "design ars curve",
+        "curve design ars",
+        "damping design ars curve",
+        "caltrans seismic design criteria",
+        "standard plan",
+        "standard plans",
+        "standard plan sheet",
+        "plan symbols",
+        "general notes",
+        "general note",
+        "index to plans",
+    ]
+
+    def _query_token_set(self, query: str) -> Set[str]:
+        return set(self._tokenize_for_keyword_search(self._normalize_query_text(query)))
+
+    def _is_general_notes_reference_query(self, query: str) -> bool:
+        """Detect queries that target content typically found on general-notes sheets."""
+        query_tokens = self._query_token_set(query)
+        if not query_tokens:
+            return False
+
+        for group in self.GENERAL_NOTES_QUERY_GROUPS:
+            group_tokens = set()
+            for term in group:
+                group_tokens.update(self._tokenize_for_keyword_search(term))
+            if group_tokens and group_tokens.issubset(query_tokens):
+                return True
+        return False
+
+    def _is_general_notes_page(self, doc: Document) -> bool:
+        metadata = getattr(doc, "metadata", {}) or {}
+        if str(metadata.get("plan_sheet_type") or "") == "general_note":
+            return True
+
+        blob = self._doc_search_blob(doc)
+        if "[general notes text]" in blob:
+            return True
+        return any(
+            marker in blob
+            for marker in (
+                "sheet_type:general_note",
+                "general notes",
+                "index to plans",
+            )
+        )
+
+    def _general_notes_match_strength(self, doc: Document, query: str) -> int:
+        """Score how strongly a chunk matches a general-notes reference query."""
+        blob = self._doc_search_blob(doc)
+        if not blob:
+            return 0
+
+        strength = 0
+        query_lower = (query or "").lower()
+        for phrase in self.GENERAL_NOTES_PHRASES:
+            if phrase in query_lower and phrase in blob:
+                strength += 3
+
+        if "ars" in query_lower and "curve" in query_lower:
+            if re.search(r"ars.{0,30}curve|curve.{0,30}ars", blob):
+                strength += 3
+
+        query_tokens = [
+            token
+            for token in self._tokenize_for_keyword_search(query)
+            if len(token) >= 4 or token in {"ars", "sdc"}
+        ]
+        token_hits = sum(1 for token in query_tokens if self._doc_contains_query_token(doc, token))
+        strength += token_hits
+
+        if self._is_general_notes_page(doc) and token_hits >= 2:
+            strength += 2
+        return strength
+
+    def _apply_general_notes_reference_boost(
+        self, search_results: List[tuple], query: str
+    ) -> List[tuple]:
+        """
+        Boost general-notes pages for standard-sheet reference queries so each
+        project survives tight relevance filters.
+        """
+        if not self._is_general_notes_reference_query(query):
+            return search_results
+
+        boosted = []
+        for doc, score in search_results:
+            adjusted = score
+            match_strength = self._general_notes_match_strength(doc, query)
+            is_general_notes_page = self._is_general_notes_page(doc)
+
+            if match_strength >= 5:
+                adjusted = min(adjusted, max(0.0, score - 0.9))
+            elif match_strength >= 3 and is_general_notes_page:
+                adjusted = min(adjusted, max(0.0, score - 0.85))
+            elif is_general_notes_page and match_strength >= 1:
+                adjusted = min(adjusted, max(0.0, score - 0.75))
+
+            boosted.append((doc, adjusted))
+
+        boosted.sort(key=lambda item: item[1])
+        return boosted
+
+    def _ensure_per_project_general_notes_coverage(
+        self,
+        search_results: List[tuple],
+        query: str,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """
+        Ensure each indexed project contributes a general-notes hit for
+        reference-style queries when matching content exists.
+        """
+        if not self._is_general_notes_reference_query(query):
+            return search_results
+
+        target_projects = scoped_file_names or set(self.metadata_manager.get_all_projects().keys())
+        if not target_projects:
+            return search_results
+
+        present_projects = {
+            str(doc.metadata.get("file_name") or "")
+            for doc, _ in search_results
+            if doc.metadata.get("file_name")
+        }
+        anchor_score = min(score for _, score in search_results) if search_results else 0.0
+
+        best_by_project: Dict[str, tuple] = {}
+        for item in keyword_candidates:
+            metadata = item.get("metadata", {}) or {}
+            file_name = str(metadata.get("file_name") or "")
+            if file_name not in target_projects:
+                continue
+
+            doc = Document(page_content=item.get("content", ""), metadata=metadata)
+            if not self._is_general_notes_page(doc):
+                continue
+
+            strength = self._general_notes_match_strength(doc, query)
+            if strength <= 0:
+                continue
+
+            current = best_by_project.get(file_name)
+            if not current or strength > current[0]:
+                best_by_project[file_name] = (strength, doc)
+
+        augmented = list(search_results)
+        for file_name, (strength, doc) in best_by_project.items():
+            if file_name in present_projects:
+                continue
+            score = anchor_score
+            if strength >= 5:
+                score = 0.0
+            elif strength >= 3:
+                score = min(score, 0.05)
+            augmented.append((doc, score))
+
+        augmented.sort(key=lambda item: item[1])
+        return augmented
+
+    def _apply_title_block_boost(self, search_results: List[tuple], query: str) -> List[tuple]:
+        """
+        Boost pages whose title-block metadata matches sheet-type queries.
+
+        Distance scores are lower-is-better, so matching title blocks receive a
+        strong score reduction to survive tight relevance filters.
+        """
+        query_lower = (query or "").lower()
+        phrase_boosts = []
+        if "general plan" in query_lower:
+            phrase_boosts.append(("general plan", 0.9))
+        if "general note" in query_lower:
+            phrase_boosts.append(("general note", 0.75))
+        if "foundation plan" in query_lower:
+            phrase_boosts.append(("foundation plan", 0.8))
+
+        if not phrase_boosts:
+            return search_results
+
+        boosted = []
+        for doc, score in search_results:
+            adjusted = score
+            for phrase, boost in phrase_boosts:
+                if self._doc_matches_title_block_phrase(doc, phrase):
+                    adjusted = min(adjusted, max(0.0, score - boost))
+                    break
+            boosted.append((doc, adjusted))
+
+        boosted.sort(key=lambda item: item[1])
+        return boosted
 
     def _feedback_store_path(self) -> str:
         return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback.jsonl")
@@ -512,6 +777,28 @@ class SearchAgent:
             query_phrases.update({"r/c box girder", "rc box girder"})
         if "reinforcement" in query_lower:
             query_phrases.update({"rebar detail", "reinforcing steel"})
+        if "general plan" in query_lower:
+            query_phrases.update({"general plan", "general plans", "general plan no"})
+        if "ars curve" in query_lower or ("ars" in query_lower and "curve" in query_lower):
+            query_phrases.update(
+                {
+                    "ars curve",
+                    "design ars curve",
+                    "curve design ars",
+                    "design ars",
+                    "damping design ars",
+                }
+            )
+        if "caltrans" in query_lower or "standard plan" in query_lower:
+            query_phrases.update(
+                {
+                    "caltrans",
+                    "standard plan",
+                    "standard plans",
+                    "caltrans seismic design criteria",
+                    "standard plan sheet",
+                }
+            )
 
         tokenized_docs = []
         doc_freq = Counter()
@@ -572,19 +859,12 @@ class SearchAgent:
                     score += 10.0 * detail_title_hits
 
             # Metadata-aware bonus improves identifier lookup (project numbers, sheet titles, engineer names).
-            metadata_text = " ".join(
+            metadata_text = self._metadata_search_blob(candidates[idx].get("metadata", {}) or {})
+            metadata_text += " " + " ".join(
                 str(candidates[idx].get("metadata", {}).get(field, ""))
                 for field in [
-                    "file_name",
-                    "project_name",
-                    "enriched_project_name",
                     "enriched_project_number",
-                    "plan_sheet_title",
-                    "plan_sheet_type",
                     "enriched_engineer_on_record",
-                    "structural_elements",
-                    "detail_intents",
-                    "detail_types",
                 ]
             ).lower()
             if metadata_text:
@@ -691,6 +971,7 @@ class SearchAgent:
                     'content': doc.page_content,
                     'page': page,
                     'score': score,
+                    'plan_sheet_type': doc.metadata.get('plan_sheet_type', ''),
                 })
                 
                 # Track best (lowest) score

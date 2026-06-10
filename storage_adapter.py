@@ -2,8 +2,9 @@
 import hashlib
 import os
 import shutil
+import threading
 from pathlib import Path
-from typing import BinaryIO, List, Optional
+from typing import BinaryIO, Dict, List, Optional
 import tempfile
 import config
 
@@ -13,6 +14,9 @@ class StorageAdapter:
     Unified storage adapter that works with both local filesystem and Google Cloud Storage.
     Automatically uses GCS in production, local files in development.
     """
+
+    _download_locks: Dict[str, threading.Lock] = {}
+    _download_lock_guard = threading.Lock()
     
     def __init__(self):
         """Initialize the storage adapter based on environment configuration."""
@@ -138,6 +142,12 @@ class StorageAdapter:
             with open(file_path, 'rb') as f:
                 return f.read()
     
+    def _get_download_lock(self, filename: str) -> threading.Lock:
+        with self._download_lock_guard:
+            if filename not in self._download_locks:
+                self._download_locks[filename] = threading.Lock()
+            return self._download_locks[filename]
+
     def pdf_exists(self, filename: str) -> bool:
         """
         Check if a PDF file exists in storage.
@@ -148,11 +158,12 @@ class StorageAdapter:
         Returns:
             True if file exists, False otherwise
         """
+        if self._resolve_local_pdf_path(filename) is not None:
+            return True
         if self.use_gcs:
             blob = self.bucket_pdfs.blob(filename)
             return blob.exists()
-        else:
-            return self._resolve_local_pdf_path(filename) is not None
+        return False
     
     def get_pdf_temp_path(self, filename: str) -> str:
         """
@@ -165,22 +176,22 @@ class StorageAdapter:
         Returns:
             Local file path (temporary if downloaded from GCS)
         """
+        file_path = self._resolve_local_pdf_path(filename)
+        if file_path:
+            return str(file_path)
+
         if self.use_gcs:
-            # Download to temporary file
             blob = self.bucket_pdfs.blob(filename)
             temp_dir = tempfile.gettempdir()
             temp_path = os.path.join(temp_dir, f"librarian_{filename}")
-            
-            # Download if not already cached
-            if not os.path.exists(temp_path):
-                blob.download_to_filename(temp_path)
-            
+
+            with self._get_download_lock(filename):
+                if not os.path.exists(temp_path):
+                    blob.download_to_filename(temp_path)
+
             return temp_path
-        else:
-            file_path = self._resolve_local_pdf_path(filename)
-            if not file_path:
-                raise FileNotFoundError(filename)
-            return str(file_path)
+
+        raise FileNotFoundError(filename)
     
     def upload_pdf(self, filename: str, content: bytes):
         """
