@@ -139,7 +139,7 @@ gcloud run deploy $SERVICE_NAME `
     --min-instances 0 `
     --max-instances 10 `
     --timeout 300 `
-    --set-env-vars "ENVIRONMENT=production,GCS_BUCKET_PDFS=$BUCKET_PDFS,GCS_BUCKET_VECTORS=$BUCKET_VECTOR" `
+    --set-env-vars "ENVIRONMENT=production,USE_CLOUD_STORAGE=true,GCP_PROJECT_ID=$PROJECT_ID,GCS_BUCKET_PDFS=$BUCKET_PDFS,GCS_BUCKET_VECTORS=$BUCKET_VECTOR" `
     --set-secrets "OPENAI_API_KEY=openai-api-key:latest"
 
 # Get the service URL

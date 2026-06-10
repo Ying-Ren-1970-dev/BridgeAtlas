@@ -9,6 +9,7 @@ from langchain_chroma import Chroma
 
 import config
 from enriched_metadata_loader import EnrichedMetadataLoader
+from enhanced_topology_loader import EnhancedTopologyLoader
 
 
 class VectorStore:
@@ -507,3 +508,121 @@ class VectorStore:
         except Exception as e:
             print(f"  Error enriching documents for {file_name}: {str(e)}")
             raise
+
+    def merge_deep_vision_topology(self, file_name: str) -> int:
+        """
+        Merge deep-vision enhanced topology into existing vector chunks.
+
+        Appends a [DEEP VISION TOPOLOGY] block and topology metadata fields
+        without removing existing PDF text or enriched metadata.
+        """
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        try:
+            topology_data = EnhancedTopologyLoader.load_topology(
+                file_name, require_deep_vision=True
+            )
+            if not topology_data:
+                print(f"  No deep vision topology found for {file_name}")
+                return 0
+
+            page_map = EnhancedTopologyLoader.get_page_data(topology_data)
+            if not page_map:
+                print(f"  Enhanced topology has no page data for {file_name}")
+                return 0
+
+            print(
+                f"  Loaded deep vision topology "
+                f"({topology_data.get('pages_analyzed', len(page_map))} pages)"
+            )
+
+            collection = self.vectorstore._collection
+            results = collection.get(
+                where={"file_name": file_name},
+                include=["metadatas", "documents"],
+            )
+
+            if not results["ids"]:
+                print(f"  No existing documents found for {file_name}")
+                return 0
+
+            print(f"  Found {len(results['ids'])} existing chunks")
+
+            updated_texts = []
+            updated_metadatas = []
+            ids_to_update = []
+            merged_count = 0
+
+            for doc_id, doc_text, doc_metadata in zip(
+                results["ids"], results["documents"], results["metadatas"]
+            ):
+                if "[DEEP VISION TOPOLOGY]" in doc_text:
+                    continue
+
+                page_num = doc_metadata.get("page")
+                if not page_num or int(page_num) not in page_map:
+                    continue
+
+                page_topology = page_map[int(page_num)]
+                topology_text = EnhancedTopologyLoader.extract_searchable_text(page_topology)
+                if not topology_text:
+                    continue
+
+                updated_metadata = doc_metadata.copy()
+                topology_fields = EnhancedTopologyLoader.get_metadata_fields(page_topology)
+                updated_metadata.update(topology_fields)
+                updated_text = (
+                    f"{doc_text}\n\n[DEEP VISION TOPOLOGY]\n{topology_text}"
+                )
+
+                updated_texts.append(updated_text)
+                updated_metadatas.append(updated_metadata)
+                ids_to_update.append(doc_id)
+                merged_count += 1
+
+            if not ids_to_update:
+                print("  All chunks already merged or no matching pages")
+                return 0
+
+            batch_size = 100
+            total_updated = 0
+            for i in range(0, len(ids_to_update), batch_size):
+                batch_ids = ids_to_update[i : i + batch_size]
+                batch_texts = updated_texts[i : i + batch_size]
+                batch_metadatas = updated_metadatas[i : i + batch_size]
+                batch_embeddings = self.embeddings.embed_documents(batch_texts)
+                collection.update(
+                    ids=batch_ids,
+                    embeddings=batch_embeddings,
+                    documents=batch_texts,
+                    metadatas=batch_metadatas,
+                )
+                total_updated += len(batch_ids)
+
+            print(
+                f"  Updated {total_updated} chunks in place with deep vision topology "
+                f"({merged_count} chunks with topology text)"
+            )
+            return total_updated
+
+        except Exception as e:
+            print(f"  Error merging deep vision topology for {file_name}: {str(e)}")
+            raise
+
+    def merge_all_deep_vision_topology(self) -> int:
+        """Merge deep-vision topology for every enhanced_topology_*.json file."""
+        topology_files = EnhancedTopologyLoader.list_deep_vision_topology_files()
+        if not topology_files:
+            print("No deep vision topology files found in data/")
+            return 0
+
+        total_updated = 0
+        for topology_file in topology_files:
+            pdf_stem = topology_file.stem.replace("enhanced_topology_", "", 1)
+            file_name = f"{pdf_stem}.pdf"
+            print(f"\nMerging deep vision topology for {file_name}...")
+            total_updated += self.merge_deep_vision_topology(file_name)
+
+        print(f"\nTotal chunks updated across all projects: {total_updated}")
+        return total_updated

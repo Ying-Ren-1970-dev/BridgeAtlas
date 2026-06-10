@@ -60,6 +60,65 @@
             color: var(--text-secondary);
         }
 
+        .api-status {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 14px;
+            font-size: 0.9rem;
+        }
+
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: rgba(35, 56, 77, 0.75);
+            color: var(--text-secondary);
+        }
+
+        .status-pill.ok {
+            border-color: rgba(57, 192, 127, 0.45);
+            color: #9fe8c3;
+        }
+
+        .status-pill.warn {
+            border-color: rgba(255, 193, 7, 0.45);
+            color: #ffe08a;
+        }
+
+        .status-pill.error {
+            border-color: rgba(255, 99, 99, 0.45);
+            color: #ffb3b3;
+        }
+
+        .thumbnail-topology {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 6px;
+            padding: 0 4px 6px;
+            justify-content: center;
+        }
+
+        .thumbnail-topology-tag {
+            font-size: 10px;
+            line-height: 1.2;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background: rgba(97, 165, 255, 0.18);
+            color: #b9d7ff;
+            border: 1px solid rgba(97, 165, 255, 0.35);
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
         .search-box {
             background: var(--panel-bg);
             border-radius: 18px;
@@ -919,7 +978,12 @@
         <!-- Header -->
         <div class="header">
             <h1>🏗️ Librarian Agent</h1>
-            <p>Search structural engineering plans across all projects with AI-powered semantic search</p>
+            <p>Search structural engineering plans across all indexed projects with AI-powered semantic search</p>
+            <div class="api-status" id="apiStatus">
+                <span class="status-pill" id="apiModePill">Connecting...</span>
+                <span class="status-pill" id="apiHealthPill">API: checking</span>
+                <span class="status-pill" id="projectCountPill">Projects: --</span>
+            </div>
         </div>
 
         <!-- Search Box -->
@@ -1032,28 +1096,11 @@
                 </div>
 
                 <!-- Project Info -->
-                <div class="project-info">
-                    <h3>📄 Mar Vista POC Project</h3>
-                    <div class="info-row">
-                        <div class="info-item">
-                            <span class="info-label">File:</span>
-                            <span id="projectFile"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Total Pages:</span>
-                            <span id="projectTotalPages"></span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">Categories:</span>
-                            <span id="projectCategories"></span>
-                        </div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-item" style="width: 100%;">
-                            <span class="info-label">Relevant Pages:</span>
-                        </div>
-                    </div>
-                    <div class="pages-list" id="pagesList"></div>
+                <div class="project-info" id="projectInfo">
+                    <h3>📚 Indexed Projects</h3>
+                    <p style="color: var(--text-secondary); margin-top: 8px;">
+                        Run a search to see matching pages across all projects in the knowledge base.
+                    </p>
                 </div>
             </div>
 
@@ -1063,16 +1110,67 @@
     </div>
 
     <script>
-        const IS_LOCAL_HOST = ['localhost', '127.0.0.1'].includes(window.location.hostname) || window.location.protocol === 'file:';
+        const IS_FILE_PROTOCOL = window.location.protocol === 'file:';
+        const IS_LOCAL_HOST = ['localhost', '127.0.0.1'].includes(window.location.hostname) || IS_FILE_PROTOCOL;
+        const CLOUD_API_URL = 'https://librarian-716133050580.us-central1.run.app';
         const API_URL = IS_LOCAL_HOST
-            ? 'http://localhost:8000'
-            : 'https://librarian-716133050580.us-central1.run.app';
+            ? (IS_FILE_PROTOCOL ? 'http://localhost:8000' : window.location.origin)
+            : (window.location.origin.includes('run.app') ? window.location.origin : CLOUD_API_URL);
         // Optional scope used by feedback/export endpoints. Empty means global scope.
         const ACTIVE_PROJECT_SCOPE = '';
         
         // Store current search results for download
         let currentSearchResults = null;
         let currentSearchQuery = '';
+        let indexedProjectCount = 0;
+
+        function setStatusPill(elementId, text, state = '') {
+            const pill = document.getElementById(elementId);
+            if (!pill) return;
+            pill.textContent = text;
+            pill.classList.remove('ok', 'warn', 'error');
+            if (state) {
+                pill.classList.add(state);
+            }
+        }
+
+        async function initializeApiStatus() {
+            setStatusPill(
+                'apiModePill',
+                IS_LOCAL_HOST ? `Local UI → ${API_URL}` : `Cloud UI → ${API_URL}`,
+                IS_LOCAL_HOST ? 'warn' : 'ok'
+            );
+
+            try {
+                const healthResponse = await fetch(`${API_URL}/health`, { method: 'GET' });
+                if (!healthResponse.ok) {
+                    throw new Error(`health ${healthResponse.status}`);
+                }
+                const health = await healthResponse.json();
+                const vectorState = health.vector_store || 'unknown';
+                setStatusPill('apiHealthPill', `API: healthy (${vectorState})`, 'ok');
+            } catch (error) {
+                setStatusPill(
+                    'apiHealthPill',
+                    IS_LOCAL_HOST ? 'API: offline (run python api.py)' : `API: offline (${error.message})`,
+                    'error'
+                );
+            }
+
+            try {
+                const projectsResponse = await fetch(`${API_URL}/projects`, { method: 'GET' });
+                if (!projectsResponse.ok) {
+                    throw new Error(`projects ${projectsResponse.status}`);
+                }
+                const projectsData = await projectsResponse.json();
+                indexedProjectCount = projectsData.total_projects || (projectsData.projects || []).length || 0;
+                setStatusPill('projectCountPill', `Projects indexed: ${indexedProjectCount}`, indexedProjectCount > 0 ? 'ok' : 'warn');
+            } catch (error) {
+                setStatusPill('projectCountPill', 'Projects indexed: unavailable', 'warn');
+            }
+        }
+
+        initializeApiStatus();
 
         // Enter always runs RUN QUERY (performSearch); Shift+Enter inserts a newline.
         document.getElementById('searchInput').addEventListener('keydown', function(e) {
@@ -1118,7 +1216,7 @@
             try {
                 const requestBody = {
                     query: query,
-                    k: 20
+                    k: 50
                 };
 
                 if (selectedRelevance !== 'auto') {
@@ -1384,6 +1482,10 @@
 
         function createThumbnailItem(result, query) {
             const encodedFileName = encodeURIComponent(result.pdf_file_name);
+            const topologyTags = (result.topology_elements || []).slice(0, 3);
+            const topologyHTML = topologyTags.length
+                ? `<div class="thumbnail-topology">${topologyTags.map(tag => `<span class="thumbnail-topology-tag" title="${escapeHtml(tag)}">${escapeHtml(tag)}</span>`).join('')}</div>`
+                : '';
             return `
                 <div class="thumbnail-item" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
                     <div class="thumbnail-wrapper">
@@ -1392,6 +1494,7 @@
                              onerror="this.style.display='none'">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                    ${topologyHTML}
                     <div class="feedback-actions" onclick="event.stopPropagation()">
                         <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'best')">Best</button>
                         <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'relevant')">Relevant</button>
@@ -1544,7 +1647,7 @@
                 <div class="no-results">
                     <div class="no-results-icon">🔍</div>
                     <h3>No results found</h3>
-                    <p>No matching pages found for "${query}" in the Mar Vista POC project.</p>
+                    <p>No matching pages found for "${escapeHtml(query)}" across ${indexedProjectCount || 'indexed'} projects.</p>
                     <p style="margin-top: 15px; color: #999;">Try different keywords or check the quick search suggestions above.</p>
                 </div>
             `;
