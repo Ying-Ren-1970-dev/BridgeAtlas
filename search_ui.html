@@ -119,23 +119,26 @@
             white-space: nowrap;
         }
 
-        .search-box {
+        .search-box,
+        .chat-box {
             background: var(--panel-bg);
             border-radius: 18px;
-            padding: 18px 24px 24px 24px;
+            padding: 16px 20px 20px;
             box-shadow: 0 10px 28px rgba(7, 11, 18, 0.35);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             border: 1.5px solid var(--border);
         }
 
-        .chat-prompt {
+        .section-label {
             display: block;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--text-secondary);
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            letter-spacing: 0.03em;
         }
 
-        .search-input-container {
+        .search-input-container,
+        .chat-input-container {
             display: flex;
             align-items: flex-end;
             gap: 10px;
@@ -143,16 +146,16 @@
             background: var(--panel-soft);
             border-radius: 12px;
             border: 1.5px solid var(--border);
-            padding: 10px 16px;
+            padding: 8px 12px;
             box-shadow: inset 0 1px 2px rgba(6, 11, 18, 0.45);
         }
 
         #searchInput {
             flex: 1;
-            padding: 12px 14px;
-            font-size: 17px;
+            padding: 8px 10px;
+            font-size: 15px;
             border: none;
-            border-radius: 12px;
+            border-radius: 10px;
             outline: none;
             background: #1f3142;
             color: var(--text-primary);
@@ -161,34 +164,55 @@
             unicode-bidi: plaintext;
             font-family: 'Roboto Mono', 'Consolas', monospace;
             box-shadow: inset 0 1px 4px rgba(6, 11, 18, 0.45);
-            margin-right: 8px;
             resize: none;
             line-height: 1.35;
-            min-height: calc(1.35em * 5 + 24px);
-            max-height: calc(1.35em * 5 + 24px);
+            min-height: calc(1.35em * 2 + 16px);
+            max-height: calc(1.35em * 2 + 16px);
             overflow-y: auto;
         }
 
-        #searchInput:focus {
+        #chatInput {
+            flex: 1;
+            padding: 12px 14px;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            background: #1f3142;
+            color: var(--text-primary);
+            direction: ltr;
+            text-align: left;
+            unicode-bidi: plaintext;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: inset 0 1px 4px rgba(6, 11, 18, 0.45);
+            resize: vertical;
+            line-height: 1.45;
+            min-height: calc(1.45em * 4 + 24px);
+            max-height: 220px;
+        }
+
+        #searchInput:focus,
+        #chatInput:focus {
             background: #23384b;
             color: #fff;
             box-shadow: 0 0 0 2px rgba(97, 165, 255, 0.5);
         }
 
         #searchBtn,
-        #analyzeBtn {
-            padding: 14px 24px;
-            font-size: 14px;
+        #chatAskBtn {
+            padding: 10px 18px;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
             color: #ffffff;
             border: 1px solid rgba(255, 255, 255, 0.18);
-            border-radius: 12px;
+            border-radius: 10px;
             cursor: pointer;
             transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
             font-family: 'Roboto Mono', 'Consolas', monospace;
             backdrop-filter: blur(2px);
+            white-space: nowrap;
         }
 
         #searchBtn {
@@ -196,13 +220,13 @@
             box-shadow: 0 6px 16px rgba(18, 62, 112, 0.35);
         }
 
-        #analyzeBtn {
+        #chatAskBtn {
             background: linear-gradient(135deg, #1f7a55 0%, #3ebf84 100%);
             box-shadow: 0 6px 16px rgba(14, 66, 47, 0.32);
         }
 
         #searchBtn:hover:not(:disabled),
-        #analyzeBtn:hover:not(:disabled) {
+        #chatAskBtn:hover:not(:disabled) {
             transform: translateY(-2px);
             filter: brightness(1.05);
         }
@@ -211,16 +235,149 @@
             box-shadow: 0 10px 26px rgba(18, 62, 112, 0.48);
         }
 
-        #analyzeBtn:hover:not(:disabled) {
+        #chatAskBtn:hover:not(:disabled) {
             box-shadow: 0 10px 26px rgba(14, 66, 47, 0.42);
         }
 
         #searchBtn:disabled,
-        #analyzeBtn:disabled {
+        #chatAskBtn:disabled {
             opacity: 0.58;
             cursor: not-allowed;
             transform: none;
             filter: none;
+        }
+
+        .chat-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .chat-tool-btn {
+            padding: 7px 12px;
+            font-size: 13px;
+            background: #2a425a;
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .chat-tool-btn:hover {
+            background: var(--accent-strong);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        .chat-hint {
+            font-size: 12px;
+            color: var(--text-secondary);
+            opacity: 0.85;
+        }
+
+        .chat-attachments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+            min-height: 0;
+        }
+
+        .chat-attachment {
+            position: relative;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: #1f3142;
+            padding: 6px;
+            max-width: 140px;
+        }
+
+        .chat-attachment img {
+            display: block;
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .chat-attachment-name {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .chat-attachment-remove {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            width: 22px;
+            height: 22px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.65);
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .chat-messages {
+            max-height: 280px;
+            overflow-y: auto;
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: rgba(15, 24, 34, 0.55);
+            display: none;
+        }
+
+        .chat-messages.has-messages {
+            display: block;
+        }
+
+        .chat-message {
+            margin-bottom: 12px;
+            padding: 10px 12px;
+            border-radius: 10px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .chat-message.user {
+            background: rgba(97, 165, 255, 0.15);
+            border: 1px solid rgba(97, 165, 255, 0.25);
+            color: var(--text-primary);
+        }
+
+        .chat-message.assistant {
+            background: rgba(57, 192, 127, 0.12);
+            border: 1px solid rgba(57, 192, 127, 0.25);
+            color: #d7f5e6;
+        }
+
+        .chat-message-role {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            opacity: 0.75;
+            margin-bottom: 4px;
+        }
+
+        .relevance-option.hybrid-option {
+            margin-left: auto;
+        }
+
+        .relevance-option.hybrid-option label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .quick-searches {
@@ -263,6 +420,7 @@
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .relevance-option {
@@ -936,11 +1094,18 @@
                 font-size: 1.8em;
             }
 
-            .search-input-container {
+            .search-input-container,
+            .chat-input-container {
                 flex-direction: column;
             }
 
-            #searchBtn {
+            #searchBtn,
+            #chatAskBtn {
+                width: 100%;
+            }
+
+            .relevance-option.hybrid-option {
+                margin-left: 0;
                 width: 100%;
             }
 
@@ -986,23 +1151,20 @@
             </div>
         </div>
 
-        <!-- Search Box -->
+        <!-- Search Box (compact) -->
         <div class="search-box">
-            <div class="chat-prompt">Help me find the plans and details</div>
+            <span class="section-label">Plan search</span>
             <div class="search-input-container">
                 <textarea 
                     id="searchInput" 
-                    rows="5"
+                    rows="2"
                     dir="ltr"
-                    placeholder="Search for Caltrans isolated shear key for project dated 2020 and later..."
+                    placeholder="Search plans and details (e.g. CIDH pile, shear key)..."
                     autocomplete="off"
                     spellcheck="true"
                 ></textarea>
                 <button id="searchBtn" onclick="performSearch()">
                     RUN QUERY
-                </button>
-                <button id="analyzeBtn" onclick="performAnalysis()">
-                    ANALYZE
                 </button>
             </div>
             <div class="quick-searches">
@@ -1017,20 +1179,15 @@
                 <button class="quick-search-btn" onclick="quickSearch('Retaining Wall')">Retaining Wall</button>
             </div>
 
-            <!-- Relevance Filter -->
             <div class="relevance-filter">
-                <label class="relevance-label">🎯 Search Precision:</label>
+                <label class="relevance-label">Search precision</label>
                 <div class="relevance-options">
-                    <div class="relevance-option">
-                        <input type="radio" id="rel-adaptive" name="relevance" value="auto" checked>
-                        <label for="rel-adaptive">Adaptive (Recommended)</label>
-                    </div>
                     <div class="relevance-option">
                         <input type="radio" id="rel-exact" name="relevance" value="0.0">
                         <label for="rel-exact">Exact Match Only</label>
                     </div>
                     <div class="relevance-option">
-                        <input type="radio" id="rel-high" name="relevance" value="0.15">
+                        <input type="radio" id="rel-high" name="relevance" value="0.15" checked>
                         <label for="rel-high">High Relevance</label>
                     </div>
                     <div class="relevance-option">
@@ -1041,17 +1198,52 @@
                         <input type="radio" id="rel-all" name="relevance" value="1.0">
                         <label for="rel-all">All Results</label>
                     </div>
+                    <div class="relevance-option">
+                        <input type="radio" id="rel-adaptive" name="relevance" value="auto">
+                        <label for="rel-adaptive">Adaptive</label>
+                    </div>
+                    <div class="relevance-option hybrid-option">
+                        <label for="hybridSearchToggle">
+                            <input type="checkbox" id="hybridSearchToggle" checked>
+                            Hybrid search
+                        </label>
+                    </div>
                 </div>
                 <div class="relevance-help">
-                    "Adaptive" uses backend defaults (hybrid=1.0, vector-only=0.5). Pick a fixed mode only if you need manual control.
+                    High Relevance is the default. Hybrid combines vector + keyword ranking (toggle at end).
                 </div>
+            </div>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="chat-box">
+            <span class="section-label">Ask the librarian</span>
+            <div id="chatMessages" class="chat-messages"></div>
+            <div id="chatAttachments" class="chat-attachments"></div>
+            <div class="chat-toolbar">
+                <button type="button" class="chat-tool-btn" onclick="document.getElementById('chatFileInput').click()">Attach file</button>
+                <span class="chat-hint">Paste a screenshot with Ctrl+V in the chat box</span>
+                <input type="file" id="chatFileInput" multiple accept="image/*,.pdf,.png,.jpg,.jpeg,.webp,.gif" style="display:none">
+            </div>
+            <div class="chat-input-container">
+                <textarea
+                    id="chatInput"
+                    rows="4"
+                    dir="ltr"
+                    placeholder="Ask a question about the plans, attach a file, or paste a screenshot..."
+                    autocomplete="off"
+                    spellcheck="true"
+                ></textarea>
+                <button id="chatAskBtn" onclick="performChatAsk()">
+                    ASK
+                </button>
             </div>
         </div>
 
         <!-- Loading Indicator -->
         <div id="loading" class="loading" style="display: none;">
             <div class="spinner"></div>
-            <div>Searching through structural plans...</div>
+            <div>Working on your request...</div>
         </div>
 
         <!-- Error Message -->
@@ -1123,6 +1315,106 @@
         let currentSearchResults = null;
         let currentSearchQuery = '';
         let indexedProjectCount = 0;
+        let chatAttachments = [];
+        let chatAttachmentCounter = 0;
+
+        function getHybridSearchEnabled() {
+            return document.getElementById('hybridSearchToggle').checked;
+        }
+
+        function getRelevanceThreshold() {
+            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
+            if (selectedRelevance === 'auto') {
+                return null;
+            }
+            return parseFloat(selectedRelevance);
+        }
+
+        function setActionButtonsDisabled(disabled) {
+            document.getElementById('searchBtn').disabled = disabled;
+            document.getElementById('chatAskBtn').disabled = disabled;
+        }
+
+        function addChatAttachment(file) {
+            if (!file) return;
+            const attachmentId = `att-${++chatAttachmentCounter}`;
+            const isImage = file.type.startsWith('image/');
+            const attachment = {
+                id: attachmentId,
+                file,
+                name: file.name || (isImage ? 'screenshot.png' : 'attachment'),
+                isImage,
+                previewUrl: isImage ? URL.createObjectURL(file) : null,
+            };
+            chatAttachments.push(attachment);
+            renderChatAttachments();
+        }
+
+        function removeChatAttachment(attachmentId) {
+            const attachment = chatAttachments.find(item => item.id === attachmentId);
+            if (attachment && attachment.previewUrl) {
+                URL.revokeObjectURL(attachment.previewUrl);
+            }
+            chatAttachments = chatAttachments.filter(item => item.id !== attachmentId);
+            renderChatAttachments();
+        }
+
+        function renderChatAttachments() {
+            const container = document.getElementById('chatAttachments');
+            if (!chatAttachments.length) {
+                container.innerHTML = '';
+                return;
+            }
+
+            container.innerHTML = chatAttachments.map(attachment => {
+                const preview = attachment.isImage
+                    ? `<img src="${attachment.previewUrl}" alt="${escapeHtml(attachment.name)}">`
+                    : `<div class="chat-attachment-name" style="padding:24px 8px;text-align:center;">PDF / File</div>`;
+                return `
+                    <div class="chat-attachment">
+                        <button type="button" class="chat-attachment-remove" onclick="removeChatAttachment('${attachment.id}')" title="Remove attachment">×</button>
+                        ${preview}
+                        <div class="chat-attachment-name">${escapeHtml(attachment.name)}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function buildChatQuery(baseQuery) {
+            let query = baseQuery.trim();
+            if (!chatAttachments.length) {
+                return query;
+            }
+
+            const attachmentSummary = chatAttachments
+                .map(attachment => `${attachment.name}${attachment.isImage ? ' (screenshot/image)' : ''}`)
+                .join(', ');
+            const attachmentNote = `User attached: ${attachmentSummary}. Use this context when interpreting the question.`;
+            return query ? `${query}\n\n${attachmentNote}` : attachmentNote;
+        }
+
+        function appendChatMessage(role, text) {
+            const container = document.getElementById('chatMessages');
+            const message = document.createElement('div');
+            message.className = `chat-message ${role}`;
+            message.innerHTML = `
+                <div class="chat-message-role">${role === 'user' ? 'You' : 'Librarian'}</div>
+                <div>${escapeHtml(text).replace(/\n/g, '<br>')}</div>
+            `;
+            container.appendChild(message);
+            container.classList.add('has-messages');
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function clearChatAttachments() {
+            chatAttachments.forEach(attachment => {
+                if (attachment.previewUrl) {
+                    URL.revokeObjectURL(attachment.previewUrl);
+                }
+            });
+            chatAttachments = [];
+            renderChatAttachments();
+        }
 
         function setStatusPill(elementId, text, state = '') {
             const pill = document.getElementById(elementId);
@@ -1172,12 +1464,43 @@
 
         initializeApiStatus();
 
-        // Enter always runs RUN QUERY (performSearch); Shift+Enter inserts a newline.
         document.getElementById('searchInput').addEventListener('keydown', function(e) {
             if (e.key === 'Enter' && !e.shiftKey) {
                 e.preventDefault();
                 performSearch();
             }
+        });
+
+        document.getElementById('chatInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                performChatAsk();
+            }
+        });
+
+        document.getElementById('chatInput').addEventListener('paste', function(e) {
+            const items = e.clipboardData && e.clipboardData.items ? Array.from(e.clipboardData.items) : [];
+            const imageItems = items.filter(item => item.type.startsWith('image/'));
+            if (!imageItems.length) {
+                return;
+            }
+
+            e.preventDefault();
+            imageItems.forEach((item, index) => {
+                const file = item.getAsFile();
+                if (!file) return;
+                const stampedFile = new File(
+                    [file],
+                    file.name && file.name !== 'image.png' ? file.name : `screenshot-${Date.now()}-${index + 1}.png`,
+                    { type: file.type || 'image/png' }
+                );
+                addChatAttachment(stampedFile);
+            });
+        });
+
+        document.getElementById('chatFileInput').addEventListener('change', function(e) {
+            Array.from(e.target.files || []).forEach(file => addChatAttachment(file));
+            e.target.value = '';
         });
 
         function quickSearch(query) {
@@ -1202,25 +1525,22 @@
                 return;
             }
 
-            // Keep threshold optional so backend adaptive defaults can apply.
-            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
-
-            // Show loading, hide results and errors
             document.getElementById('loading').style.display = 'block';
             document.getElementById('resultsContainer').style.display = 'none';
             document.getElementById('analysisContainer').style.display = 'none';
             document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('searchBtn').disabled = true;
-            document.getElementById('analyzeBtn').disabled = true;
+            setActionButtonsDisabled(true);
 
             try {
                 const requestBody = {
                     query: query,
-                    k: 50
+                    k: 50,
+                    use_hybrid_search: getHybridSearchEnabled(),
                 };
 
-                if (selectedRelevance !== 'auto') {
-                    requestBody.relevance_threshold = parseFloat(selectedRelevance);
+                const relevanceThreshold = getRelevanceThreshold();
+                if (relevanceThreshold !== null) {
+                    requestBody.relevance_threshold = relevanceThreshold;
                 }
 
                 const response = await fetch(`${API_URL}/search`, {
@@ -1243,36 +1563,38 @@
                 showError(`Failed to perform search: ${error.message}. Make sure the API server is running at ${API_URL}`);
             } finally {
                 document.getElementById('loading').style.display = 'none';
-                document.getElementById('searchBtn').disabled = false;
-                document.getElementById('analyzeBtn').disabled = false;
+                setActionButtonsDisabled(false);
             }
         }
 
-        async function performAnalysis() {
-            const query = document.getElementById('searchInput').value.trim();
+        async function performChatAsk() {
+            const rawQuery = document.getElementById('chatInput').value.trim();
 
-            if (!query) {
-                alert('Please enter a query to analyze');
+            if (!rawQuery && !chatAttachments.length) {
+                alert('Enter a question, attach a file, or paste a screenshot');
                 return;
             }
 
-            const selectedRelevance = document.querySelector('input[name="relevance"]:checked').value;
+            const query = buildChatQuery(rawQuery);
+            const displayQuery = rawQuery || `Attached ${chatAttachments.length} file(s)`;
+            appendChatMessage('user', displayQuery);
+
             document.getElementById('loading').style.display = 'block';
             document.getElementById('resultsContainer').style.display = 'none';
             document.getElementById('analysisContainer').style.display = 'none';
             document.getElementById('errorMessage').style.display = 'none';
-            document.getElementById('searchBtn').disabled = true;
-            document.getElementById('analyzeBtn').disabled = true;
+            setActionButtonsDisabled(true);
 
             try {
                 const requestBody = {
                     query: query,
                     k: 40,
-                    use_hybrid_search: true
+                    use_hybrid_search: getHybridSearchEnabled(),
                 };
 
-                if (selectedRelevance !== 'auto') {
-                    requestBody.relevance_threshold = parseFloat(selectedRelevance);
+                const relevanceThreshold = getRelevanceThreshold();
+                if (relevanceThreshold !== null) {
+                    requestBody.relevance_threshold = relevanceThreshold;
                 }
 
                 const response = await fetch(`${API_URL}/analyze`, {
@@ -1289,13 +1611,15 @@
 
                 const data = await response.json();
                 displayAnalysis(data);
+                appendChatMessage('assistant', data.answer || data.search_summary || 'Analysis complete.');
+                document.getElementById('chatInput').value = '';
+                clearChatAttachments();
             } catch (error) {
-                console.error('Analysis error:', error);
-                showError(`Failed to perform analysis: ${error.message}. If deployed API is older, redeploy backend with /analyze.`);
+                console.error('Chat ask error:', error);
+                showError(`Failed to get an answer: ${error.message}. Make sure the API server is running at ${API_URL}`);
             } finally {
                 document.getElementById('loading').style.display = 'none';
-                document.getElementById('searchBtn').disabled = false;
-                document.getElementById('analyzeBtn').disabled = false;
+                setActionButtonsDisabled(false);
             }
         }
 
