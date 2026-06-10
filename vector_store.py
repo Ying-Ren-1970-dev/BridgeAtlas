@@ -563,10 +563,15 @@ class VectorStore:
             ids_to_update = []
             merged_count = 0
 
+            sheet_catalog = TitleBlockCatalog.build_for_project(file_name)
+
             for doc_id, doc_text, doc_metadata in zip(
                 results["ids"], results["documents"], results["metadatas"]
             ):
-                if "[DEEP VISION TOPOLOGY]" in doc_text:
+                if (
+                    doc_metadata.get("layered_topology_version")
+                    == EnhancedTopologyLoader.LAYERED_TOPOLOGY_VERSION
+                ):
                     continue
 
                 page_num = doc_metadata.get("page")
@@ -574,16 +579,26 @@ class VectorStore:
                     continue
 
                 page_topology = page_map[int(page_num)]
-                topology_text = EnhancedTopologyLoader.extract_searchable_text(page_topology)
+                sheet_record = sheet_catalog.get(int(page_num))
+                topology_text = EnhancedTopologyLoader.extract_layered_topology_text(
+                    topology_data,
+                    int(page_num),
+                    page_topology,
+                    sheet_record=sheet_record,
+                )
                 if not topology_text:
                     continue
 
                 updated_metadata = doc_metadata.copy()
-                topology_fields = EnhancedTopologyLoader.get_metadata_fields(page_topology)
-                updated_metadata.update(topology_fields)
-                updated_text = (
-                    f"{doc_text}\n\n[DEEP VISION TOPOLOGY]\n{topology_text}"
+                topology_fields = EnhancedTopologyLoader.get_metadata_fields(
+                    page_topology,
+                    topology_data=topology_data,
+                    page_num=int(page_num),
+                    sheet_record=sheet_record,
                 )
+                updated_metadata.update(topology_fields)
+                base_text = EnhancedTopologyLoader.strip_topology_blocks(doc_text)
+                updated_text = f"{base_text}\n\n{topology_text}"
 
                 updated_texts.append(updated_text)
                 updated_metadatas.append(updated_metadata)

@@ -668,13 +668,62 @@ async def search(request: SearchRequest):
         }
         
         def extract_topology(content: str) -> List[str]:
-            """Extract topology elements from content."""
+            """Extract topology elements from layered topology blocks and content."""
             content_lower = content.lower()
             found_elements = []
+
+            layered_markers = (
+                "[topology project]",
+                "[topology sheet]",
+                "[topology detail]",
+                "[topology cross references]",
+                "[search classification]",
+                "[deep vision topology]",
+            )
+            for marker in layered_markers:
+                if marker in content_lower:
+                    section = content_lower.split(marker, 1)[-1]
+                    for element, keywords in topology_keywords.items():
+                        if any(kw in section for kw in keywords):
+                            found_elements.append(element)
+
             for element, keywords in topology_keywords.items():
                 if any(kw in content_lower for kw in keywords):
                     found_elements.append(element)
-            return found_elements
+
+            project_labels = []
+            for label, prefix in (
+                ("Bridge Type", "bridge type:"),
+                ("Structure Type", "structure type:"),
+                ("Superstructure", "superstructure:"),
+                ("Foundation", "foundation:"),
+            ):
+                if prefix in content_lower:
+                    project_labels.append(label)
+
+            if "[search classification]" in content_lower:
+                section = content_lower.split("[search classification]", 1)[-1]
+                for canonical_prefix in (
+                    "bridge type:",
+                    "superstructure:",
+                    "foundation:",
+                    "page labels:",
+                ):
+                    if canonical_prefix in section:
+                        value = section.split(canonical_prefix, 1)[-1].split("|", 1)[0].strip()
+                        if value and value not in project_labels:
+                            project_labels.append(value.title() if len(value) < 40 else value[:40])
+            found_elements.extend(project_labels)
+
+            deduped = []
+            seen = set()
+            for item in found_elements:
+                key = item.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
+                deduped.append(item)
+            return deduped[:8]
         
         def _prefer_general_notes_pages(
             page_results: List[SearchResult],

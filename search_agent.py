@@ -73,6 +73,10 @@ class SearchAgent:
                 "truss bridge",
                 "steel truss",
                 "abutment footing",
+                "abutment pile detail",
+                "abutment pile",
+                "pile detail",
+                "abutment detail",
                 "general plan",
                 "rebar detail",
                 "caltrans standard plan",
@@ -188,15 +192,37 @@ class SearchAgent:
         ]
 
         search_results = self._apply_title_block_boost(search_results, normalized_query)
+        search_results = self._apply_detail_intent_boost(search_results, normalized_query)
         search_results = self._apply_general_notes_reference_boost(
             search_results, normalized_query
         )
+        search_results = self._apply_topology_layer_boost(search_results, normalized_query)
         search_results = self._ensure_per_project_general_notes_coverage(
             search_results,
             normalized_query,
             keyword_candidates,
             scoped_file_names,
         )
+        search_results = self._ensure_per_project_detail_intent_coverage(
+            search_results,
+            normalized_query,
+            keyword_candidates,
+            scoped_file_names,
+        )
+        if self._is_detail_intent_query(normalized_query):
+            page_strength = self._page_detail_intent_strength(search_results, normalized_query)
+            search_results = [
+                (doc, score)
+                for doc, score in search_results
+                if page_strength.get(
+                    (
+                        str(doc.metadata.get("file_name") or ""),
+                        int(doc.metadata.get("page") or 0),
+                    ),
+                    0,
+                )
+                > -6
+            ]
 
         for rule in intent_rules:
             is_triggered = all(
@@ -362,8 +388,274 @@ class SearchAgent:
                 "detail_intents",
                 "detail_types",
                 "structural_elements",
+                "topology_structure_type",
+                "topology_bridge_type",
+                "topology_superstructure_type",
+                "topology_foundation_type",
+                "topology_sheet_category",
+                "topology_sheet_title",
+                "topology_cross_references",
+                "topology_elements",
+                "search_classification_project_labels",
+                "search_classification_page_labels",
+                "search_classification_detail_labels",
+                "search_classification_referenced_sheets",
             ]
         ).lower()
+
+    PILE_DETAIL_POSITIVE_PHRASES: List[str] = [
+        "pile (type a) detail",
+        "steel pipe pile detail",
+        "steel pipe pile (type a) detail",
+        '24" dia steel pipe pile',
+        '24"o steel pipe pile',
+        "driven steel pipe pile",
+    ]
+
+    PILE_DETAIL_NEGATIVE_PHRASES: List[str] = [
+        "footing plan",
+        "section k-k",
+        "section l-l",
+    ]
+
+    ABUTMENT_DETAIL_SHEET_PHRASES: List[str] = [
+        "abutment details no",
+        "abutment detail no",
+        "abutment details no.",
+    ]
+
+    def _strip_search_blocks_for_intent(self, content: str) -> str:
+        """Prefer visible sheet text over merged topology blocks for intent matching."""
+        text = content or ""
+        lower = text.lower()
+        cut_at = len(text)
+        for marker in (
+            "[topology project]",
+            "[topology sheet]",
+            "[topology detail]",
+            "[topology cross references]",
+            "[search classification]",
+            "[deep vision topology]",
+        ):
+            idx = lower.find(marker)
+            if idx != -1:
+                cut_at = min(cut_at, idx)
+        return text[:cut_at]
+
+    def _visible_sheet_text(self, doc: Document) -> str:
+        return self._strip_search_blocks_for_intent(
+            str(getattr(doc, "page_content", "") or "")
+        ).lower()
+
+    def _is_detail_intent_query(self, query: str) -> bool:
+        query_tokens = self._query_token_set(query)
+        if not query_tokens:
+            return False
+        has_detail = bool(query_tokens & {"detail", "details"})
+        structural_tokens = {
+            "abutment",
+            "pile",
+            "piles",
+            "footing",
+            "girder",
+            "cidh",
+            "bent",
+            "pier",
+            "cap",
+            "rebar",
+            "reinforcement",
+            "shaft",
+        }
+        return has_detail and bool(query_tokens & structural_tokens)
+
+    def _detail_intent_match_strength(self, doc: Document, query: str) -> int:
+        """Score how strongly a chunk matches a detail-sheet lookup query."""
+        query_lower = (query or "").lower()
+        query_tokens = self._query_token_set(query)
+        visible = self._visible_sheet_text(doc)
+        metadata = getattr(doc, "metadata", {}) or {}
+        sheet_title = str(
+            metadata.get("topology_sheet_title")
+            or metadata.get("plan_sheet_title")
+            or ""
+        ).lower()
+        plan_type = str(
+            metadata.get("plan_primary_type")
+            or metadata.get("topology_sheet_category")
+            or ""
+        ).lower()
+
+        strength = 0
+        has_explicit_pile_detail = any(
+            phrase in visible for phrase in self.PILE_DETAIL_POSITIVE_PHRASES
+        )
+
+        if {"abutment", "pile"} & query_tokens or "abutment pile" in query_lower:
+            if has_explicit_pile_detail:
+                strength += 12
+
+            for phrase in self.PILE_DETAIL_NEGATIVE_PHRASES:
+                if phrase in visible:
+                    strength -= 8
+
+            if "abutment" in query_tokens:
+                if re.search(r"abutment details no\.?\s*\d", visible):
+                    strength += 7
+                for phrase in self.ABUTMENT_DETAIL_SHEET_PHRASES:
+                    if phrase in visible:
+                        strength += 3
+
+        if {"pile", "detail"} <= query_tokens or {"pile", "details"} <= query_tokens:
+            if "footing plan" in visible and not has_explicit_pile_detail:
+                strength -= 12
+            if "abutment detail" in sheet_title and "footing plan" in visible:
+                strength -= 10
+            if ("abutment detail" in sheet_title or "abutment details" in sheet_title):
+                if not has_explicit_pile_detail:
+                    strength -= 10
+
+        if "detail" in query_tokens and "section" not in query_tokens:
+            if "section" in sheet_title or plan_type == "section":
+                strength -= 8
+            if any(token in visible for token in ("section k-k", "section l-l")):
+                strength -= 8
+
+        if "pile" in query_tokens:
+            if "steel pipe pile" in visible:
+                strength += 2
+            if "footing plan" in visible and not has_explicit_pile_detail:
+                strength -= 8
+
+        key_tokens = [
+            token
+            for token in query_tokens
+            if token in {"abutment", "pile", "piles", "detail", "details", "footing", "steel", "pipe"}
+        ]
+        strength += sum(1 for token in key_tokens if token in visible)
+
+        return strength
+
+    def _page_detail_intent_strength(self, search_results: List[tuple], query: str) -> Dict[tuple, int]:
+        """Aggregate chunk signals to a page-level detail intent score."""
+        page_positive: Dict[tuple, int] = {}
+        page_negative: Dict[tuple, int] = {}
+
+        for doc, _ in search_results:
+            metadata = getattr(doc, "metadata", {}) or {}
+            file_name = metadata.get("file_name")
+            page_num = metadata.get("page")
+            if file_name is None or page_num is None:
+                continue
+
+            key = (str(file_name), int(page_num))
+            strength = self._detail_intent_match_strength(doc, query)
+            if strength >= 0:
+                page_positive[key] = max(page_positive.get(key, 0), strength)
+            else:
+                page_negative[key] = min(page_negative.get(key, 0), strength)
+
+        combined: Dict[tuple, int] = {}
+        keys = set(page_positive) | set(page_negative)
+        for key in keys:
+            combined[key] = page_positive.get(key, 0) + page_negative.get(key, 0)
+        return combined
+
+    def _apply_detail_intent_boost(self, search_results: List[tuple], query: str) -> List[tuple]:
+        """Boost dedicated detail sheets and demote section/footing pages for detail queries."""
+        if not self._is_detail_intent_query(query):
+            return search_results
+
+        page_strength = self._page_detail_intent_strength(search_results, query)
+
+        boosted = []
+        for doc, score in search_results:
+            adjusted = score
+            metadata = getattr(doc, "metadata", {}) or {}
+            key = (str(metadata.get("file_name") or ""), int(metadata.get("page") or 0))
+            strength = page_strength.get(key, self._detail_intent_match_strength(doc, query))
+
+            if strength >= 14:
+                adjusted = min(adjusted, max(0.0, score - 0.95))
+            elif strength >= 9:
+                adjusted = min(adjusted, max(0.0, score - 0.88))
+            elif strength >= 5:
+                adjusted = min(adjusted, max(0.0, score - 0.78))
+            elif strength >= 2:
+                adjusted = min(adjusted, max(0.0, score - 0.55))
+            elif strength <= -6:
+                adjusted = max(adjusted, score + 0.65)
+
+            boosted.append((doc, adjusted))
+
+        boosted.sort(key=lambda item: item[1])
+        return boosted
+
+    def _ensure_per_project_detail_intent_coverage(
+        self,
+        search_results: List[tuple],
+        query: str,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """Backfill the strongest detail-sheet hit for each project on detail-intent queries."""
+        if not self._is_detail_intent_query(query):
+            return search_results
+
+        target_projects = scoped_file_names or set(self.metadata_manager.get_all_projects().keys())
+        if not target_projects:
+            return search_results
+
+        present_pages = {
+            (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            for doc, _ in search_results
+            if doc.metadata.get("file_name") and doc.metadata.get("page") is not None
+        }
+        anchor_score = min(score for _, score in search_results) if search_results else 0.0
+
+        page_positive: Dict[tuple, int] = {}
+        page_negative: Dict[tuple, int] = {}
+        page_docs: Dict[tuple, Document] = {}
+        for item in keyword_candidates:
+            metadata = item.get("metadata", {}) or {}
+            file_name = str(metadata.get("file_name") or "")
+            page_num = metadata.get("page")
+            if file_name not in target_projects or page_num is None:
+                continue
+
+            doc = Document(page_content=item.get("content", ""), metadata=metadata)
+            page_key = (file_name, int(page_num))
+            page_docs[page_key] = doc
+            strength = self._detail_intent_match_strength(doc, query)
+            if strength >= 0:
+                page_positive[page_key] = max(page_positive.get(page_key, 0), strength)
+            else:
+                page_negative[page_key] = min(page_negative.get(page_key, 0), strength)
+
+        best_by_page: Dict[tuple, tuple] = {}
+        for page_key, doc in page_docs.items():
+            strength = page_positive.get(page_key, 0) + page_negative.get(page_key, 0)
+            if strength < 5:
+                continue
+            best_by_page[page_key] = (strength, doc)
+
+        augmented = list(search_results)
+        for (file_name, page_num), (strength, doc) in best_by_page.items():
+            if (file_name, page_num) in present_pages:
+                continue
+            score = anchor_score
+            if strength >= 10:
+                score = 0.0
+            elif strength >= 7:
+                score = min(score, 0.02)
+            elif strength >= 4:
+                score = min(score, 0.08)
+            augmented.append((doc, score))
+
+        augmented.sort(key=lambda item: item[1])
+        return augmented
 
     def _doc_matches_title_block_phrase(self, doc: Document, phrase: str) -> bool:
         """Return True when a title-block phrase appears in metadata or enriched text."""
@@ -390,6 +682,18 @@ class SearchAgent:
             notes = content.split("[general notes text]", 1)[-1]
             if phrase in notes:
                 return True
+        for marker in (
+            "[topology project]",
+            "[topology sheet]",
+            "[topology detail]",
+            "[topology cross references]",
+            "[search classification]",
+            "[deep vision topology]",
+        ):
+            if marker in content:
+                section = content.split(marker, 1)[-1]
+                if phrase in section:
+                    return True
         return False
 
     def _doc_search_blob(self, doc: Document) -> str:
@@ -487,6 +791,50 @@ class SearchAgent:
         if self._is_general_notes_page(doc) and token_hits >= 2:
             strength += 2
         return strength
+
+    def _apply_topology_layer_boost(self, search_results: List[tuple], query: str) -> List[tuple]:
+        """Boost chunks with layered topology evidence for structure/bridge queries."""
+        query_lower = (query or "").lower()
+        triggers = (
+            "bridge",
+            "structure type",
+            "type of bridge",
+            "box girder",
+            "superstructure",
+            "substructure",
+            "foundation system",
+            "cross reference",
+        )
+        if not any(token in query_lower for token in triggers):
+            return search_results
+
+        boosted = []
+        for doc, score in search_results:
+            adjusted = score
+            blob = self._doc_search_blob(doc)
+            has_project_layer = "[topology project]" in blob
+            has_detail_layer = "[topology detail]" in blob
+            has_cross_refs = "[topology cross references]" in blob
+            has_classification = "[search classification]" in blob
+            token_hits = sum(
+                1
+                for token in self._get_query_tokens(query)
+                if self._doc_contains_query_token(doc, token)
+            )
+
+            if has_classification and token_hits >= 1:
+                adjusted = min(adjusted, max(0.0, score - 0.85))
+            elif has_project_layer and token_hits >= 1:
+                adjusted = min(adjusted, max(0.0, score - 0.8))
+            elif has_detail_layer and token_hits >= 2:
+                adjusted = min(adjusted, max(0.0, score - 0.7))
+            elif has_cross_refs and "reference" in query_lower:
+                adjusted = min(adjusted, max(0.0, score - 0.65))
+
+            boosted.append((doc, adjusted))
+
+        boosted.sort(key=lambda item: item[1])
+        return boosted
 
     def _apply_general_notes_reference_boost(
         self, search_results: List[tuple], query: str
@@ -797,6 +1145,18 @@ class SearchAgent:
                     "standard plans",
                     "caltrans seismic design criteria",
                     "standard plan sheet",
+                }
+            )
+        if "abutment" in query_lower and "pile" in query_lower:
+            query_phrases.update(
+                {
+                    "abutment pile",
+                    "pile detail",
+                    "steel pipe pile detail",
+                    "steel pipe pile",
+                    "abutment details",
+                    "abutment details no",
+                    "pile (type a) detail",
                 }
             )
 
