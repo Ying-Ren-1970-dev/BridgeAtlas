@@ -54,7 +54,7 @@ class SearchAgent:
             use_query_expansion: Whether to expand query with engineering synonyms (default: True)
             generate_summary: Override for summary generation (default from config)
             use_hybrid_search: Override for hybrid retrieval (default from config)
-            project_scope: Optional project/file substring scope (e.g., "mar vista")
+            project_scope: Optional project/file substring scope (e.g., "goldenwest")
             
         Returns:
             Dictionary containing search results and metadata
@@ -278,6 +278,16 @@ class SearchAgent:
                 scoped_file_names,
             )
 
+        search_results = self._apply_exact_feedback_filters(search_results, query)
+        search_results = self._prioritize_exact_feedback_best_pages(search_results, query)
+        search_results = self._filter_weak_unlabeled_detail_results(search_results, query)
+        search_results = self._ensure_missing_feedback_best_pages(
+            search_results,
+            query,
+            keyword_candidates,
+            scoped_file_names,
+        )
+
         sheet_level_query = self._parse_sheet_level_query(query)
 
         if project_descriptor:
@@ -288,23 +298,14 @@ class SearchAgent:
                 scoped_file_names,
             )
         elif sheet_level_query:
-            search_results = [
-                (doc, score)
-                for doc, score in search_results
-                if not self._is_project_overview_page(doc)
-            ]
             search_results = self._apply_sheet_intent_ranking(
                 search_results,
                 sheet_level_query,
                 keyword_candidates,
                 scoped_file_names,
             )
-        elif self._parse_sheet_intents(query):
-            search_results = [
-                (doc, score)
-                for doc, score in search_results
-                if not self._is_project_overview_page(doc)
-            ]
+
+        search_results = self._filter_project_overview_pages(search_results, query)
         
         # Organize results by project
         projects_data = self._organize_results_by_project(search_results)
@@ -389,6 +390,12 @@ class SearchAgent:
         ]
         for pattern, replacement in replacements:
             q = re.sub(pattern, replacement, q)
+        return re.sub(r"\s+", " ", q).strip()
+
+    def _canonical_feedback_query(self, query: str) -> str:
+        """Canonical form for feedback lookup (detail/details, normalized casing)."""
+        q = self._normalize_query_text(query)
+        q = re.sub(r"\bdetails\b", "detail", q)
         return re.sub(r"\s+", " ", q).strip()
 
     def _extract_detail_titles(self, text: str) -> List[str]:
@@ -497,6 +504,20 @@ class SearchAgent:
         "abutment details no.",
     ]
 
+    SHEAR_KEY_POSITIVE_PHRASES: List[str] = [
+        "shear key detail",
+        "steel shear key",
+        "pipe pin",
+        "shear key (",
+    ]
+
+    SHEAR_KEY_NEGATIVE_PHRASES: List[str] = [
+        "shear key reinforcement not shown",
+        "shear key not shown",
+        "shear key - see",
+        "shear key, see",
+    ]
+
     def _strip_search_blocks_for_intent(self, content: str) -> str:
         """Prefer visible sheet text over merged topology blocks for intent matching."""
         text = content or ""
@@ -525,6 +546,8 @@ class SearchAgent:
         if not query_tokens:
             return False
         has_detail = bool(query_tokens & {"detail", "details"})
+        if has_detail and {"shear", "key"} <= query_tokens:
+            return True
         structural_tokens = {
             "abutment",
             "pile",
@@ -562,6 +585,28 @@ class SearchAgent:
         has_explicit_pile_detail = any(
             phrase in visible for phrase in self.PILE_DETAIL_POSITIVE_PHRASES
         )
+
+        if {"shear", "key"} <= query_tokens or "shear key" in query_lower:
+            has_dedicated_shear_key_sheet = any(
+                phrase in visible for phrase in self.SHEAR_KEY_POSITIVE_PHRASES
+            )
+            if has_dedicated_shear_key_sheet:
+                strength += 14
+            if "shear key" in sheet_title:
+                strength += 10
+            elif "shear key" in visible and "detail" in visible and not has_dedicated_shear_key_sheet:
+                strength += 2
+            for phrase in self.SHEAR_KEY_NEGATIVE_PHRASES:
+                if phrase in visible:
+                    strength -= 12
+            if (
+                "abutment" in sheet_title
+                and "shear key" not in sheet_title
+                and not has_dedicated_shear_key_sheet
+            ):
+                strength -= 8
+            if "general plan" in sheet_title or "index to plans" in sheet_title:
+                strength -= 10
 
         if {"abutment", "pile"} & query_tokens or "abutment pile" in query_lower:
             if has_explicit_pile_detail:
@@ -707,10 +752,16 @@ class SearchAgent:
             else:
                 page_negative[page_key] = min(page_negative.get(page_key, 0), strength)
 
+        exact_labels = self._load_exact_feedback_labels(query)
+        has_exact_best_labels = any(
+            label == "best" for label, _weight in exact_labels.values()
+        )
+        min_backfill_strength = 10 if has_exact_best_labels else 5
+
         best_by_page: Dict[tuple, tuple] = {}
         for page_key, doc in page_docs.items():
             strength = page_positive.get(page_key, 0) + page_negative.get(page_key, 0)
-            if strength < 5:
+            if strength < min_backfill_strength:
                 continue
             best_by_page[page_key] = (strength, doc)
 
@@ -880,6 +931,33 @@ class SearchAgent:
             except Exception:
                 pass
         return "[project profile]" in self._doc_search_blob(doc)
+
+    def _is_project_overview_query(self, query: str) -> bool:
+        """Queries that should intentionally surface synthesized project profiles."""
+        q = re.sub(r"\s+", " ", str(query or "").strip().lower())
+        markers = (
+            "project profile",
+            "project overview",
+            "design intent",
+            "bridge layout",
+            "describe ",
+            "what type of bridge",
+            "span count",
+            "how many span",
+        )
+        return any(marker in q for marker in markers)
+
+    def _filter_project_overview_pages(
+        self, search_results: List[tuple], query: str
+    ) -> List[tuple]:
+        """Drop page-0 project profile chunks unless the query asks for project context."""
+        if self._is_project_overview_query(query):
+            return search_results
+        return [
+            (doc, score)
+            for doc, score in search_results
+            if not self._is_project_overview_page(doc)
+        ]
 
     def _parse_sheet_intents(self, query: str) -> List[str]:
         """Detect sheet-level lookup intents layered on top of project filters."""
@@ -1366,10 +1444,10 @@ class SearchAgent:
             )
 
             if has_project_profile:
-                if self._parse_sheet_intents(query):
-                    adjusted = max(adjusted, score + 1.5)
-                elif token_hits >= 1:
+                if self._is_project_overview_query(query) and token_hits >= 1:
                     adjusted = min(adjusted, max(0.0, score - 0.92))
+                elif not self._is_project_overview_query(query):
+                    adjusted = max(adjusted, score + 2.0)
             elif has_classification and token_hits >= 1:
                 adjusted = min(adjusted, max(0.0, score - 0.85))
             elif has_project_layer and token_hits >= 1:
@@ -1501,6 +1579,12 @@ class SearchAgent:
         boosted.sort(key=lambda item: item[1])
         return boosted
 
+    def _active_pdf_file_names(self) -> Set[str]:
+        return self.metadata_manager.get_active_pdf_file_names()
+
+    def _is_active_feedback_file(self, file_name: str) -> bool:
+        return bool(file_name) and file_name in self._active_pdf_file_names()
+
     def _feedback_store_path(self) -> str:
         return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback.jsonl")
 
@@ -1540,20 +1624,26 @@ class SearchAgent:
 
     def _feedback_source_weights(self, query: str, project_scope: Optional[str]) -> Dict[str, float]:
         """Exact and generalized query weights for feedback lookup."""
-        query_key = self._normalize_query_text(query)
+        query_key = self._canonical_feedback_query(query)
         feedback_sources = {query_key: 1.0}
 
         model = self._load_feedback_model()
-        for related_query, similarity in model.get("related_queries", {}).get(query_key, {}).items():
-            feedback_sources[related_query] = max(
-                feedback_sources.get(related_query, 0.0),
-                0.65 * float(similarity),
-            )
+        related_lookup_keys = {query_key}
+        if query_key.endswith(" detail"):
+            related_lookup_keys.add(query_key.replace(" detail", " details"))
+        for lookup_key in related_lookup_keys:
+            for related_query, similarity in model.get("related_queries", {}).get(lookup_key, {}).items():
+                canonical_related = self._canonical_feedback_query(related_query)
+                feedback_sources[canonical_related] = max(
+                    feedback_sources.get(canonical_related, 0.0),
+                    0.65 * float(similarity),
+                )
 
         similar_queries = self._find_similar_queries_in_feedback(query, project_scope)
         for sim_query, similarity_score in similar_queries.items():
-            feedback_sources[sim_query] = max(
-                feedback_sources.get(sim_query, 0.0),
+            canonical_similar = self._canonical_feedback_query(sim_query)
+            feedback_sources[canonical_similar] = max(
+                feedback_sources.get(canonical_similar, 0.0),
                 0.55 * similarity_score,
             )
 
@@ -1574,7 +1664,7 @@ class SearchAgent:
         if not os.path.exists(path):
             return {}
 
-        query_key = self._normalize_query_text(query)
+        query_key = self._canonical_feedback_query(query)
         query_tokens = self._get_query_tokens(query)
         if not query_tokens:
             return {}
@@ -1595,7 +1685,7 @@ class SearchAgent:
                         continue
 
                     record_query = str(record.get("query", ""))
-                    normalized_record_query = self._normalize_query_text(record_query)
+                    normalized_record_query = self._canonical_feedback_query(record_query)
                     if normalized_record_query == query_key:
                         continue
                     if normalized_record_query in seen_queries:
@@ -1647,15 +1737,20 @@ class SearchAgent:
                     except Exception:
                         continue
 
-                    record_query = self._normalize_query_text(str(record.get("query", "")))
-                    weight = feedback_sources.get(record_query)
+                    record_query = str(record.get("query", ""))
+                    weight = feedback_sources.get(self._canonical_feedback_query(record_query))
                     if weight is None:
                         continue
 
                     file_name = str(record.get("pdf_file_name", "")).strip()
                     page_number = record.get("page_number")
                     label = str(record.get("feedback", "")).strip().lower()
-                    if not file_name or page_number is None or label not in self._feedback_label_delta():
+                    if (
+                        not file_name
+                        or not self._is_active_feedback_file(file_name)
+                        or page_number is None
+                        or label not in self._feedback_label_delta()
+                    ):
                         continue
 
                     try:
@@ -1663,7 +1758,11 @@ class SearchAgent:
                     except Exception:
                         continue
 
-                    latest[(file_name, page_number)] = (label, weight)
+                    key = (file_name, page_number)
+                    current = latest.get(key)
+                    if current is not None and weight < current[1]:
+                        continue
+                    latest[key] = (label, weight)
         except Exception:
             return {}
 
@@ -1690,20 +1789,200 @@ class SearchAgent:
     def _load_positive_feedback_pages(
         self, query: str, project_scope: Optional[str]
     ) -> Dict[tuple, str]:
-        """Return latest best/relevant pages for this query and related queries."""
-        feedback_sources = self._feedback_source_weights(query, project_scope)
-        latest_labels = self._iter_latest_feedback_labels(feedback_sources)
+        """Return best/relevant pages labeled on the exact query (not related queries)."""
         return {
             key: label
-            for key, (label, _weight) in latest_labels.items()
+            for key, (label, _weight) in self._load_exact_feedback_labels(query).items()
             if label in {"best", "relevant"}
         }
+
+    def _load_exact_feedback_labels(self, query: str) -> Dict[tuple, tuple]:
+        """Return latest labels for the exact canonical query only."""
+        query_key = self._canonical_feedback_query(query)
+        if not query_key:
+            return {}
+
+        path = self._feedback_store_path()
+        if not os.path.exists(path):
+            return {}
+
+        latest: Dict[tuple, tuple] = {}
+        try:
+            with open(path, "r", encoding="utf-8") as handle:
+                for line in handle:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except Exception:
+                        continue
+
+                    if self._canonical_feedback_query(str(record.get("query", ""))) != query_key:
+                        continue
+
+                    file_name = str(record.get("pdf_file_name", "")).strip()
+                    page_number = record.get("page_number")
+                    label = str(record.get("feedback", "")).strip().lower()
+                    if (
+                        not file_name
+                        or not self._is_active_feedback_file(file_name)
+                        or page_number is None
+                        or label not in self._feedback_label_delta()
+                    ):
+                        continue
+
+                    try:
+                        page_number = int(page_number)
+                    except Exception:
+                        continue
+
+                    latest[(file_name, page_number)] = (label, 1.0)
+        except Exception:
+            return {}
+
+        return latest
+
+    def _apply_exact_feedback_filters(
+        self, search_results: List[tuple], query: str
+    ) -> List[tuple]:
+        """Drop pages the engineer marked irrelevant on this exact query."""
+        exact_labels = self._load_exact_feedback_labels(query)
+        if not exact_labels:
+            return search_results
+
+        irrelevant_pages = {
+            key
+            for key, (label, _weight) in exact_labels.items()
+            if label == "irrelevant"
+        }
+        if not irrelevant_pages:
+            return search_results
+
+        return [
+            (doc, score)
+            for doc, score in search_results
+            if (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            not in irrelevant_pages
+        ]
+
+    def _prioritize_exact_feedback_best_pages(
+        self, search_results: List[tuple], query: str
+    ) -> List[tuple]:
+        """
+        When the engineer labeled Best pages for this exact query, keep only those
+        pages per project instead of every incidental shear-key mention.
+        """
+        if not self._is_detail_intent_query(query):
+            return search_results
+
+        exact_labels = self._load_exact_feedback_labels(query)
+        best_by_file: Dict[str, Set[int]] = defaultdict(set)
+        for (file_name, page_number), (label, _weight) in exact_labels.items():
+            if label == "best":
+                best_by_file[file_name].add(page_number)
+
+        if not best_by_file:
+            return search_results
+
+        prioritized: List[tuple] = []
+        remainder: List[tuple] = []
+        for doc, score in search_results:
+            file_name = str(doc.metadata.get("file_name") or "")
+            page_number = int(doc.metadata.get("page") or 0)
+            if file_name in best_by_file:
+                if page_number in best_by_file[file_name]:
+                    prioritized.append((doc, score - 0.25))
+                continue
+            remainder.append((doc, score))
+
+        if not prioritized:
+            return search_results
+
+        prioritized.sort(key=lambda item: item[1])
+        remainder.sort(key=lambda item: item[1])
+        return prioritized + remainder
+
+    def _filter_weak_unlabeled_detail_results(
+        self, search_results: List[tuple], query: str
+    ) -> List[tuple]:
+        """
+        When engineers labeled Best pages for this query, drop unlabeled projects
+        that only have incidental keyword mentions (e.g. abutment notes).
+        """
+        if not self._is_detail_intent_query(query):
+            return search_results
+
+        exact_labels = self._load_exact_feedback_labels(query)
+        best_by_file: Dict[str, Set[int]] = defaultdict(set)
+        for (file_name, page_number), (label, _weight) in exact_labels.items():
+            if label == "best":
+                best_by_file[file_name].add(page_number)
+
+        if len(best_by_file) < 2:
+            return search_results
+
+        filtered: List[tuple] = []
+        for doc, score in search_results:
+            file_name = str(doc.metadata.get("file_name") or "")
+            page_number = int(doc.metadata.get("page") or 0)
+            if file_name in best_by_file:
+                if page_number in best_by_file[file_name]:
+                    filtered.append((doc, score))
+                continue
+
+            strength = self._detail_intent_match_strength(doc, query)
+            if strength >= 9:
+                filtered.append((doc, score))
+
+        return filtered if filtered else search_results
+
+    def _feedback_placeholder_document(self, file_name: str, page_number: int) -> Document:
+        """Minimal chunk so engineer-labeled pages still appear when PDF/index is missing."""
+        return Document(
+            page_content=(
+                f"[engineer feedback best page]\n"
+                f"file: {file_name}\n"
+                f"page: {page_number}"
+            ),
+            metadata={"file_name": file_name, "page": page_number},
+        )
+
+    def _load_page_document_from_pdf(
+        self, file_name: str, page_number: int
+    ) -> Optional[Document]:
+        """Load page text directly from storage when the vector index has no chunk."""
+        try:
+            from storage_adapter import storage
+            import fitz
+
+            if not storage.pdf_exists(file_name):
+                return None
+
+            pdf_path = storage.get_pdf_temp_path(file_name)
+            with fitz.open(pdf_path) as pdf:
+                if page_number < 1 or page_number > pdf.page_count:
+                    return None
+                text = pdf[page_number - 1].get_text() or ""
+                if not text.strip():
+                    return None
+                return Document(
+                    page_content=text,
+                    metadata={"file_name": file_name, "page": page_number},
+                )
+        except Exception:
+            return None
 
     def _resolve_feedback_page_document(
         self,
         file_name: str,
         page_number: int,
         keyword_candidates: List[Dict],
+        *,
+        allow_placeholder: bool = False,
     ) -> Optional[Document]:
         for item in keyword_candidates:
             metadata = item.get("metadata", {}) or {}
@@ -1719,9 +1998,79 @@ class SearchAgent:
             return Document(page_content=item.get("content", ""), metadata=metadata)
 
         chunk = self.vector_store.get_page_chunk(file_name, page_number)
-        if not chunk:
-            return None
-        return Document(page_content=chunk.get("content", ""), metadata=chunk.get("metadata", {}))
+        if chunk:
+            return Document(
+                page_content=chunk.get("content", ""),
+                metadata=chunk.get("metadata", {}),
+            )
+
+        pdf_doc = self._load_page_document_from_pdf(file_name, page_number)
+        if pdf_doc:
+            return pdf_doc
+
+        if allow_placeholder:
+            return self._feedback_placeholder_document(file_name, page_number)
+        return None
+
+    def _ensure_missing_feedback_best_pages(
+        self,
+        search_results: List[tuple],
+        query: str,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """Backfill every engineer Best page for this query, even if retrieval missed it."""
+        if not self._is_detail_intent_query(query):
+            return search_results
+
+        exact_labels = self._load_exact_feedback_labels(query)
+        best_pages = sorted(
+            {
+                (file_name, page_number)
+                for (file_name, page_number), (label, _weight) in exact_labels.items()
+                if label == "best"
+            }
+        )
+        if not best_pages:
+            return search_results
+
+        present_pages = {
+            (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            for doc, _ in search_results
+            if doc.metadata.get("file_name") is not None and doc.metadata.get("page") is not None
+        }
+
+        augmented = list(search_results)
+        injected = 0
+        for file_name, page_number in best_pages:
+            if scoped_file_names and file_name not in scoped_file_names:
+                continue
+            if (file_name, page_number) in present_pages:
+                continue
+
+            doc = self._resolve_feedback_page_document(
+                file_name,
+                page_number,
+                keyword_candidates,
+                allow_placeholder=True,
+            )
+            if not doc:
+                continue
+
+            augmented.append((doc, 0.0))
+            present_pages.add((file_name, page_number))
+            injected += 1
+
+        if injected:
+            logger.info(
+                f"Backfilled {injected} missing engineer Best page(s) for '{query}'"
+            )
+
+        augmented.sort(key=lambda item: item[1])
+        return augmented
 
     def _inject_feedback_labeled_pages(
         self,
@@ -1753,7 +2102,10 @@ class SearchAgent:
                 continue
 
             doc = self._resolve_feedback_page_document(
-                file_name, page_number, keyword_candidates
+                file_name,
+                page_number,
+                keyword_candidates,
+                allow_placeholder=(label == "best"),
             )
             if not doc:
                 continue
@@ -2037,9 +2389,23 @@ class SearchAgent:
                 if score < projects[file_name]['best_score']:
                     projects[file_name]['best_score'] = score
         
-        # Convert sets to sorted lists
+        # Order pages by best (lowest) relevance score per page
         for file_name in projects:
-            projects[file_name]['pages'] = sorted(list(projects[file_name]['pages']))
+            page_best_scores: Dict = {}
+            for chunk in projects[file_name]['chunks']:
+                page = chunk.get('page')
+                score = chunk.get('score', float('inf'))
+                if page is None:
+                    continue
+                if page not in page_best_scores or score < page_best_scores[page]:
+                    page_best_scores[page] = score
+            projects[file_name]['pages'] = sorted(
+                page_best_scores.keys(),
+                key=lambda page: page_best_scores[page],
+            )
+            projects[file_name]['chunks'].sort(
+                key=lambda chunk: (chunk.get('score', float('inf')), chunk.get('page', 0))
+            )
         
         return dict(projects)
     

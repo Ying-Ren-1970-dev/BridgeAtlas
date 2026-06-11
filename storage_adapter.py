@@ -320,7 +320,77 @@ class StorageAdapter:
                 )
             print(f"Verified chroma.sqlite3 checksum in cloud ({uploaded_chroma_hash[:12]}...)")
 
+        self.sync_app_data_to_cloud()
         print("✓ Vector database and metadata synced to cloud")
+
+    def sync_app_data_to_cloud(self):
+        """Sync feedback labels and project profiles used by search ranking."""
+        if not self.use_gcs:
+            return
+
+        uploads = [
+            (config.DATA_FOLDER / "feedback" / "search_feedback.jsonl", "feedback/search_feedback.jsonl"),
+            (config.DATA_FOLDER / "feedback" / "search_feedback_model.json", "feedback/search_feedback_model.json"),
+            (config.DATA_FOLDER / "project_profiles" / "manifest.json", "project_profiles/manifest.json"),
+        ]
+        desired_blobs = set()
+
+        for local_path, blob_name in uploads:
+            if not local_path.exists():
+                continue
+            desired_blobs.add(blob_name)
+            blob = self.bucket_vectors.blob(blob_name)
+            blob.upload_from_filename(str(local_path))
+            print(f"Uploaded app data: {blob_name}")
+
+        profiles_dir = config.DATA_FOLDER / "project_profiles"
+        if profiles_dir.exists():
+            for profile_path in profiles_dir.glob("profile_*.json"):
+                blob_name = f"project_profiles/{profile_path.name}"
+                desired_blobs.add(blob_name)
+                blob = self.bucket_vectors.blob(blob_name)
+                blob.upload_from_filename(str(profile_path))
+                print(f"Uploaded app data: {blob_name}")
+
+        existing = {
+            blob.name
+            for blob in self.bucket_vectors.list_blobs(prefix="feedback/")
+        } | {
+            blob.name
+            for blob in self.bucket_vectors.list_blobs(prefix="project_profiles/")
+        }
+        for blob_name in existing - desired_blobs:
+            self.bucket_vectors.blob(blob_name).delete()
+            print(f"Deleted stale app data object: {blob_name}")
+
+        print("✓ Feedback and project profiles synced to cloud")
+
+    def sync_app_data_from_cloud(self):
+        """Restore feedback labels and project profiles on Cloud Run startup."""
+        if not self.use_gcs:
+            return
+
+        downloaded = 0
+        for blob in self.bucket_vectors.list_blobs(prefix="feedback/"):
+            if blob.name.endswith("/"):
+                continue
+            local_path = config.DATA_FOLDER / blob.name
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            blob.download_to_filename(str(local_path))
+            downloaded += 1
+            print(f"✓ Synced app data: {blob.name}")
+
+        for blob in self.bucket_vectors.list_blobs(prefix="project_profiles/"):
+            if blob.name.endswith("/"):
+                continue
+            local_path = config.DATA_FOLDER / blob.name
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            blob.download_to_filename(str(local_path))
+            downloaded += 1
+            print(f"✓ Synced app data: {blob.name}")
+
+        if downloaded:
+            print(f"✓ App data synced from cloud ({downloaded} file(s))")
 
     def sync_pdfs_to_cloud(self):
         """
@@ -417,6 +487,31 @@ class StorageAdapter:
             )
         else:
             print("✓ Vector database synced from cloud")
+
+        self.sync_app_data_from_cloud()
+
+
+def cloud_sync_configured() -> bool:
+    """Return True when GCS bucket settings are present for sync-cloud."""
+    return bool(config.GCS_BUCKET_PDFS and config.GCS_BUCKET_VECTORS and config.GCS_PROJECT_ID)
+
+
+def storage_for_cloud_sync() -> StorageAdapter:
+    """
+    Build a GCS-enabled storage adapter for the sync-cloud CLI.
+
+    Local .env often keeps USE_CLOUD_STORAGE=false while still defining bucket
+    names. This helper enables cloud sync for the command without changing the
+    global development storage instance.
+    """
+    if not cloud_sync_configured():
+        raise RuntimeError(
+            "Cloud sync requires GCS_BUCKET_PDFS, GCS_BUCKET_VECTORS, and GCP_PROJECT_ID."
+        )
+
+    os.environ["USE_CLOUD_STORAGE"] = "true"
+    config.USE_CLOUD_STORAGE = True
+    return StorageAdapter()
 
 
 # Global instance

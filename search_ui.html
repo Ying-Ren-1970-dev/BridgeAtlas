@@ -1043,33 +1043,36 @@
             min-width: 0;
         }
 
+        body.modal-open {
+            overflow: hidden;
+        }
+
         /* Modal Styles */
         .modal-overlay {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            inset: 0;
             background: rgba(0, 0, 0, 0.9);
             z-index: 10000;
-            justify-content: center;
-            align-items: center;
+            overflow-y: auto;
             padding: 20px;
         }
 
         .modal-overlay.active {
-            display: flex;
+            display: block;
         }
 
         .modal-content {
             position: relative;
-            max-width: 95%;
-            max-height: 95%;
+            width: fit-content;
+            max-width: min(95vw, 1400px);
+            margin: 0 auto 40px;
             background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
         }
 
         .modal-header {
@@ -1079,6 +1082,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            flex-shrink: 0;
         }
 
         .modal-title {
@@ -1108,11 +1115,10 @@
 
         .modal-body {
             padding: 20px;
-            max-height: calc(95vh - 100px);
-            overflow: auto;
+            overflow: visible;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             background: #1f3142;
         }
 
@@ -1220,12 +1226,11 @@
             <div class="quick-searches">
                 <span style="color: var(--text-secondary); font-size: 14px; margin-right: 10px;">Quick searches:</span>
                 <button class="quick-search-btn" onclick="quickSearch('CIP Box Girder Typical Section Reinforcement Details')">CIP Box Girder Typical Section Reinforcement Details</button>
-                <button class="quick-search-btn" onclick="quickSearch('Shear Key details')">Shear Key details</button>
+                <button class="quick-search-btn" onclick="quickSearch('shear key detail')">Shear key detail</button>
                 <button class="quick-search-btn" onclick="quickSearch('CIDH Pile Reinforcement Details')">CIDH Pile Reinforcement Details</button>
                 <button class="quick-search-btn" onclick="quickSearch('ARS Curve')">ARS Curve</button>
                 <button class="quick-search-btn" onclick="quickSearch('Chain link fence details')">Chain link fence details</button>
                 <button class="quick-search-btn" onclick="quickSearch('LOTB')">LOTB</button>
-                <button class="quick-search-btn" onclick="quickSearch('Railroad')">Railroad</button>
                 <button class="quick-search-btn" onclick="quickSearch('Retaining Wall')">Retaining Wall</button>
             </div>
 
@@ -1260,7 +1265,7 @@
                     </div>
                     <div class="relevance-option hybrid-option">
                         <label for="expandForFeedbackToggle">
-                            <input type="checkbox" id="expandForFeedbackToggle" checked>
+                            <input type="checkbox" id="expandForFeedbackToggle">
                             Show borderline pages for feedback
                         </label>
                     </div>
@@ -1360,7 +1365,7 @@
     <script>
         const IS_FILE_PROTOCOL = window.location.protocol === 'file:';
         const IS_LOCAL_HOST = ['localhost', '127.0.0.1'].includes(window.location.hostname) || IS_FILE_PROTOCOL;
-        const CLOUD_API_URL = 'https://librarian-716133050580.us-central1.run.app';
+        const CLOUD_API_URL = 'https://librarian-czwgfoksfa-uc.a.run.app';
         const API_URL = IS_LOCAL_HOST
             ? (IS_FILE_PROTOCOL ? 'http://localhost:8000' : window.location.origin)
             : (window.location.origin.includes('run.app') ? window.location.origin : CLOUD_API_URL);
@@ -1388,7 +1393,7 @@
 
         function getExpandForFeedbackEnabled() {
             const toggle = document.getElementById('expandForFeedbackToggle');
-            return toggle ? toggle.checked : true;
+            return toggle ? toggle.checked : false;
         }
 
         function setActionButtonsDisabled(disabled) {
@@ -1848,8 +1853,13 @@
             let resultsHTML = '';
             
             Object.values(projectGroups).forEach(project => {
-                const primary = project.results.filter(r => (r.match_tier || 'primary') === 'primary');
-                const review = project.results.filter(r => r.match_tier === 'review');
+                const byScore = (a, b) => (a.relevance_score ?? 0) - (b.relevance_score ?? 0);
+                const primary = project.results
+                    .filter(r => (r.match_tier || 'primary') === 'primary')
+                    .sort(byScore);
+                const review = project.results
+                    .filter(r => r.match_tier === 'review')
+                    .sort(byScore);
                 resultsHTML += `
                     <div class="project-section" style="margin-bottom: 40px;">
                         <div class="project-section-header">
@@ -2277,6 +2287,8 @@
             modalTitle.textContent = `${projectName} - Page ${pageNumber}`;
             modalBody.innerHTML = '<div class="modal-loading"><div class="modal-loading-spinner"></div>Loading full page...</div>';
             modal.classList.add('active');
+            document.body.classList.add('modal-open');
+            modal.scrollTop = 0;
             modalOpenedAt = Date.now();
 
             const img = new Image();
@@ -2295,6 +2307,7 @@
         function closePageModal() {
             const modal = document.getElementById('pageModal');
             modal.classList.remove('active');
+            document.body.classList.remove('modal-open');
         }
 
         function activatePagePreview(target, event) {

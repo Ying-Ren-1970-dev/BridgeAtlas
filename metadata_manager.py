@@ -74,6 +74,10 @@ class MetadataManager:
     def get_all_projects(self) -> Dict:
         """Get all project metadata."""
         return self.metadata['projects']
+
+    def get_active_pdf_file_names(self) -> set:
+        """PDF file names currently in the indexed project library."""
+        return set(self.metadata['projects'].keys())
     
     def delete_project(self, file_name: str):
         """Delete metadata for a specific project."""

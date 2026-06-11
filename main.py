@@ -13,8 +13,9 @@ from page_classifier import PageClassifier
 from enriched_metadata_graph_builder import GraphIntegrationManager
 from classification_training import SearchClassificationTrainer
 from search_feedback_learner import learn_from_feedback
+from feedback_cleanup import purge_legacy_feedback
 from project_profile_builder import ProjectProfileBuilder
-from storage_adapter import storage
+from storage_adapter import cloud_sync_configured, storage, storage_for_cloud_sync
 
 
 class LibrarianApp:
@@ -223,17 +224,19 @@ class LibrarianApp:
 
     def sync_cloud(self):
         """Sync the current local vector store and metadata to cloud storage."""
-        if not storage.use_gcs:
-            print("\nCloud sync is currently disabled.")
-            print("Please set the following environment variables before running this command:")
-            print("  USE_CLOUD_STORAGE=true")
+        if not cloud_sync_configured():
+            print("\nCloud sync is not configured.")
+            print("Set these in .env (USE_CLOUD_STORAGE can stay false locally):")
             print("  GCS_BUCKET_PDFS=<your-pdf-bucket>")
             print("  GCS_BUCKET_VECTORS=<your-vector-bucket>")
             print("  GCP_PROJECT_ID=<your-gcp-project-id>")
             return
 
         print("\nSyncing local knowledge base to cloud storage...")
-        storage.sync_vector_db_to_cloud()
+        if not storage.use_gcs:
+            print("  (Enabling cloud sync for this command; local USE_CLOUD_STORAGE=false is OK)")
+        cloud_storage = storage_for_cloud_sync()
+        cloud_storage.sync_vector_db_to_cloud()
 
     def search(
         self,
@@ -759,6 +762,20 @@ class LibrarianApp:
         print(f"Output directory: {result.get('profiles_dir')}")
         print(f"Manifest: {result.get('manifest_path')}")
 
+    def purge_legacy_feedback(self, rebuild_model: bool = True):
+        """Remove feedback rows for PDFs that are no longer in the active project library."""
+        print("=" * 60)
+        print("PURGING LEGACY SEARCH FEEDBACK")
+        print("=" * 60)
+
+        result = purge_legacy_feedback(metadata_manager=self.metadata_manager)
+        print(f"\n✓ Active indexed projects: {result.get('active_projects', 0)}")
+        print(f"✓ Feedback rows kept: {result.get('kept', 0)}")
+        print(f"✓ Legacy feedback rows removed: {result.get('removed', 0)}")
+
+        if rebuild_model:
+            self.learn_from_search_feedback()
+
     def learn_from_search_feedback(self, sync_terms: bool = True):
         """Build feedback model from engineer labels and sync learned terminology."""
         print("=" * 60)
@@ -800,9 +817,10 @@ def main():
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py learn-from-feedback - Build feedback model from search-result labels")
+        print("  python main.py purge-legacy-feedback - Drop feedback for retired/non-indexed projects")
         print("  python main.py build-project-profiles - Build project overview profiles for search")
         print("  python main.py search <query>    - Search knowledge base")
-        print("  python main.py sync-cloud        - Push local vector store and metadata to cloud storage")
+        print("  python main.py sync-cloud        - Push vectors, metadata, feedback, and profiles to GCS")
         print("  python main.py clean-excluded    - Remove excluded projects from index and metadata")
         print("  python main.py list              - List all projects")
         print("  python main.py stats             - Show statistics")
@@ -868,6 +886,9 @@ def main():
 
     elif command == 'learn-from-feedback':
         app.learn_from_search_feedback()
+
+    elif command == 'purge-legacy-feedback':
+        app.purge_legacy_feedback()
 
     elif command == 'build-project-profiles':
         app.build_project_profiles()

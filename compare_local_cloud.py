@@ -3,7 +3,7 @@ import json
 import requests
 
 LOCAL = "http://localhost:8000"
-CLOUD = "https://librarian-716133050580.us-central1.run.app"
+CLOUD = "https://librarian-czwgfoksfa-uc.a.run.app"
 QUERIES = ["CIDH pile", "abutment", "ARS Curve", "CIP Box Girder"]
 PAYLOAD = {"k": 50, "use_hybrid_search": True}
 

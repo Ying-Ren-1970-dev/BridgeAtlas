@@ -2,7 +2,7 @@ import urllib.request
 import json
 
 # Test search endpoint on cloud
-url = 'https://librarian-716133050580.us-central1.run.app/search'
+url = 'https://librarian-czwgfoksfa-uc.a.run.app/search'
 body = json.dumps({'query': 'CIDH pile detail', 'k': 5}).encode()
 req = urllib.request.Request(url, data=body, headers={'Content-Type': 'application/json'})
 

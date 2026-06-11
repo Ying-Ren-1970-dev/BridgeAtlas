@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse, FileResponse
 from pydantic import BaseModel, Field
-from typing import List, Optional, Dict, Tuple
+from typing import List, Optional, Dict, Tuple, Set
 import uvicorn
 from datetime import datetime
 import fitz  # PyMuPDF
@@ -14,7 +14,7 @@ from io import BytesIO
 import os
 import json
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 
 from search_agent import SearchAgent
 from langchain_core.documents import Document
@@ -24,6 +24,7 @@ from storage_adapter import storage
 from engineering_terminology import EngineeringTerminology
 import config
 from analysis_engine import AnalysisEngine
+from feedback_cleanup import active_pdf_file_names, is_active_feedback_file
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -71,6 +72,7 @@ def _append_feedback_record(record: dict):
 
 def _read_feedback_records(limit: Optional[int] = None) -> List[dict]:
     _ensure_feedback_store()
+    allowed_files = active_pdf_file_names(metadata_manager) if metadata_manager else active_pdf_file_names()
     records: List[dict] = []
     with open(SEARCH_FEEDBACK_FILE, "r", encoding="utf-8") as f:
         for line in f:
@@ -78,16 +80,22 @@ def _read_feedback_records(limit: Optional[int] = None) -> List[dict]:
             if not line:
                 continue
             try:
-                records.append(json.loads(line))
+                record = json.loads(line)
             except Exception:
                 continue
+            file_name = str(record.get("pdf_file_name", "")).strip()
+            if file_name not in allowed_files:
+                continue
+            records.append(record)
     if limit is not None and limit > 0:
         return records[-limit:]
     return records
 
 
 def _normalize_text(value: Optional[str]) -> str:
-    return re.sub(r"\s+", " ", str(value or "").strip().lower())
+    q = re.sub(r"\s+", " ", str(value or "").strip().lower())
+    q = re.sub(r"\bdetails\b", "detail", q)
+    return re.sub(r"\s+", " ", q).strip()
 
 
 def _slugify(value: str) -> str:
@@ -193,7 +201,7 @@ async def startup_event():
 
     importlib.reload(search_agent_module)
     
-    # Sync vector database from cloud storage in production
+    # Sync vector database and search tuning data from cloud storage in production
     storage.sync_vector_db_from_cloud()
     
     search_agent = search_agent_module.SearchAgent()
@@ -214,7 +222,7 @@ class SearchRequest(BaseModel):
     query: str = Field(..., description="Search query text (keywords, phrases, or questions)", example="steel shear key")
     k: int = Field(default=50, ge=1, le=100, description="Number of results to return (1-100)")
     relevance_threshold: Optional[float] = Field(default=None, ge=0.0, le=2.0, description="Optional max score difference from best result. If omitted, mode-specific defaults are used (hybrid=2.0, vector-only=0.5)")
-    project_scope: Optional[str] = Field(default=None, description="Optional project/file scope, e.g. 'mar vista', to restrict retrieval")
+    project_scope: Optional[str] = Field(default=None, description="Optional project/file scope, e.g. 'goldenwest', to restrict retrieval")
     generate_summary: bool = Field(default=False, description="Whether to generate an LLM summary for this request")
     use_hybrid_search: bool = Field(default=True, description="Whether to use hybrid retrieval (vector + keyword BM25-style fusion)")
     expand_for_feedback: bool = Field(
@@ -228,7 +236,7 @@ class SearchRequest(BaseModel):
                 "query": "steel shear key",
                 "k": 50,
                 "relevance_threshold": 2.0,
-                "project_scope": "mar vista",
+                "project_scope": "goldenwest",
                 "generate_summary": False,
                 "use_hybrid_search": True
             }
@@ -266,9 +274,9 @@ class SearchResult(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
-                "project_name": "Mar Vista POC",
-                "page_number": 11,
+                "pdf_file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+                "project_name": "Goldenwest OC",
+                "page_number": 21,
                 "relevance_score": 0.85,
                 "match_tier": "primary",
                 "topology_elements": ["Pipe Pin (Steel Shear Key)", "Abutment", "Bearing Pad"],
@@ -292,14 +300,14 @@ class ProjectSummary(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "pdf_file_name": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
-                "project_name": "Mar Vista POC",
-                "phase": "100% Final",
+                "pdf_file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+                "project_name": "Goldenwest OC",
+                "phase": "As-Built",
                 "engineer_of_record": "Example Engineering Inc.",
-                "date": "2021-11-18",
-                "categories": ["Bridges", "Retaining Walls"],
-                "relevant_pages": [5, 10, 11, 18],
-                "total_pages": 42
+                "date": "2024-01-01",
+                "categories": ["Bridges"],
+                "relevant_pages": [21],
+                "total_pages": 64
             }
         }
 
@@ -322,7 +330,7 @@ class SearchResponse(BaseModel):
                 "projects_found": 3,
                 "results": [],
                 "project_summaries": [],
-                "search_summary": "Found steel shear key details in Mar Vista project...",
+                "search_summary": "Found steel shear key details across indexed OC bridge projects...",
                 "timestamp": "2026-05-10T22:00:00Z"
             }
         }
@@ -531,11 +539,18 @@ async def submit_search_result_feedback(request: SearchResultFeedbackRequest):
     if label not in allowed:
         raise HTTPException(status_code=400, detail=f"feedback must be one of: {sorted(allowed)}")
 
+    pdf_file_name = request.pdf_file_name.strip()
+    if not is_active_feedback_file(pdf_file_name):
+        raise HTTPException(
+            status_code=400,
+            detail=f"Feedback is only accepted for active indexed projects. '{pdf_file_name}' is not in the current library.",
+        )
+
     record = {
         "timestamp": datetime.utcnow().isoformat(),
         "query": request.query.strip(),
         "project_scope": (request.project_scope or "").strip() or None,
-        "pdf_file_name": request.pdf_file_name.strip(),
+        "pdf_file_name": pdf_file_name,
         "page_number": request.page_number,
         "feedback": label,
         "note": (request.note or "").strip() or None,
@@ -628,9 +643,9 @@ async def export_relevant_best_feedback_pdf(
 @app.post("/search", response_model=SearchResponse, tags=["Search"])
 async def search(request: SearchRequest):
     """
-    Search for structural engineering content in the Mar Vista POC project.
+    Search for structural engineering content across the indexed OC bridge project library.
     
-    **Project Filter:** Results are limited to "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf"
+    **Project scope:** Optional `project_scope` narrows retrieval to one active project.
     
     **Parameters:**
     - **query**: Search text (keywords, phrases, technical terms, or natural language questions)
@@ -774,6 +789,47 @@ async def search(request: SearchRequest):
             trimmed.sort(key=lambda item: item.relevance_score)
             return trimmed
 
+        def _apply_exact_feedback_page_filters(
+            page_results: List[SearchResult],
+            query_text: str,
+            *,
+            expand_for_feedback: bool,
+        ) -> List[SearchResult]:
+            """Honor engineer labels: drop irrelevant pages and prefer Best-only per project."""
+            if not search_agent or not page_results:
+                return page_results
+
+            exact_labels = search_agent._load_exact_feedback_labels(query_text)
+            if not exact_labels:
+                return page_results
+
+            irrelevant_pages = {
+                key
+                for key, (label, _weight) in exact_labels.items()
+                if label == "irrelevant"
+            }
+            best_by_file: Dict[str, Set[int]] = defaultdict(set)
+            for (file_name, page_number), (label, _weight) in exact_labels.items():
+                if label == "best":
+                    best_by_file[file_name].add(page_number)
+
+            filtered: List[SearchResult] = []
+            for entry in page_results:
+                page_key = (entry.pdf_file_name, entry.page_number)
+                if page_key in irrelevant_pages:
+                    continue
+                if (
+                    best_by_file
+                    and search_agent._is_detail_intent_query(query_text)
+                    and not expand_for_feedback
+                    and entry.pdf_file_name in best_by_file
+                    and entry.page_number not in best_by_file[entry.pdf_file_name]
+                ):
+                    continue
+                filtered.append(entry)
+
+            return filtered if filtered else page_results
+
         def _inject_missing_general_notes_projects(
             page_results: List[SearchResult],
             query_text: str,
@@ -894,6 +950,12 @@ async def search(request: SearchRequest):
             
             # Create a result entry for EACH page with its specific data
             for page_num, data in page_data.items():
+                if (
+                    page_num == 0
+                    and search_agent
+                    and not search_agent._is_project_overview_query(request.query)
+                ):
+                    continue
                 result_entry = SearchResult(
                     pdf_file_name=file_name,
                     project_name=project_name,
@@ -949,8 +1011,22 @@ async def search(request: SearchRequest):
             )
             if not request.expand_for_feedback:
                 results = _prefer_general_notes_pages(results, request.query, chunk_sheet_types)
+
+        results = _apply_exact_feedback_page_filters(
+            results,
+            request.query,
+            expand_for_feedback=request.expand_for_feedback,
+        )
+
+        results.sort(key=lambda item: item.relevance_score)
         
         # Build project summaries
+        page_order_by_file: Dict[str, List[int]] = {}
+        for entry in results:
+            pages = page_order_by_file.setdefault(entry.pdf_file_name, [])
+            if entry.page_number not in pages:
+                pages.append(entry.page_number)
+
         project_summaries = []
         for file_name, data in projects_dict.items():
             metadata = data['metadata']
@@ -962,7 +1038,7 @@ async def search(request: SearchRequest):
                     engineer_of_record=metadata.get('engineer_of_record'),
                     date=metadata.get('date'),
                     categories=metadata.get('categories', []),
-                    relevant_pages=sorted(list(data['pages'])),
+                    relevant_pages=page_order_by_file.get(file_name, sorted(list(data['pages']))),
                     total_pages=metadata.get('total_pages', 0)
                 )
                 project_summaries.append(summary)
@@ -1073,7 +1149,7 @@ async def get_project_details(file_name: str):
     Get detailed information about a specific project.
     
     **Parameters:**
-    - **file_name**: The PDF file name (e.g., "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf")
+    - **file_name**: The PDF file name (e.g., "55-1119_GoldenwestOc_As_BuiltWM.pdf")
     """
     if not metadata_manager:
         raise HTTPException(status_code=503, detail="Metadata manager not initialized")

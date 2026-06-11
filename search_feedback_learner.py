@@ -9,6 +9,7 @@ from datetime import datetime
 from typing import Dict, List, Optional, Set, Tuple
 
 from engineering_terminology import EngineeringTerminology
+from feedback_cleanup import active_pdf_file_names
 
 DEFAULT_ACRONYM_EXPANSIONS = {
     "LOTB": "log of test boring",
@@ -27,7 +28,9 @@ class SearchFeedbackLearner:
 
     @staticmethod
     def _normalize_query(query: str) -> str:
-        return re.sub(r"\s+", " ", str(query or "").strip().lower())
+        q = re.sub(r"\s+", " ", str(query or "").strip().lower())
+        q = re.sub(r"\bdetails\b", "detail", q)
+        return re.sub(r"\s+", " ", q).strip()
 
     @staticmethod
     def _query_tokens(query: str) -> Set[str]:
@@ -45,6 +48,7 @@ class SearchFeedbackLearner:
         """
         latest: Dict[Tuple[str, str, int], dict] = {}
         raw_count = 0
+        active_files = active_pdf_file_names()
 
         if not os.path.exists(self.feedback_path):
             return {}, 0
@@ -64,6 +68,9 @@ class SearchFeedbackLearner:
                 file_name = str(record.get("pdf_file_name", "")).strip()
                 label = str(record.get("feedback", "")).strip().lower()
                 page_number = record.get("page_number")
+
+                if file_name not in active_files:
+                    continue
 
                 if not query_key or not file_name or page_number is None or label not in {
                     "best",
@@ -137,7 +144,7 @@ class SearchFeedbackLearner:
                 contains = query_a in query_b or query_b in query_a
                 min_overlap = 1 if min(len(tokens_a), len(tokens_b)) <= 3 else 2
                 score = 0.0
-                if page_similarity >= 0.25:
+                if page_similarity >= 0.5:
                     score = max(score, 0.55 + 0.35 * page_similarity)
                 if contains and (overlap >= 1 or shared_pages):
                     score = max(score, 0.75)

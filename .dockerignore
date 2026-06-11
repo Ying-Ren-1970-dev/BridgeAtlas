@@ -23,6 +23,9 @@ htmlcov/
 
 # Local data
 vector_db/
+.env
+.env.*
+!.env.example
 
 # Logs
 *.log
