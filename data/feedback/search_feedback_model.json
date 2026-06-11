@@ -1,0 +1,3529 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:58:09.869717",
+  "source_records": 548,
+  "query_count": 40,
+  "label_counts": {
+    "best": 130,
+    "relevant": 47,
+    "irrelevant": 327
+  },
+  "queries": {
+    "test query": {
+      "best": [],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": "smoke test",
+          "timestamp": "2026-05-14T19:31:08.403115"
+        }
+      ],
+      "irrelevant": []
+    },
+    "lotb": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T19:38:56.845586"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 69,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:04.825727"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 68,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:05.407867"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:06.791782"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 65,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:08.961689"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:10.320429"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 66,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:12.046656"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 65,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:17.284474"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:18.743193"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:19.779406"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:21.900518"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:23.129958"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 74,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:27.123793"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 73,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:28.612570"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:38.703700"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 59,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:39.283379"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 58,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:40.518314"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 61,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:41.447696"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 60,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:42.982975"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:43.911909"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:45.910123"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": "less relevant",
+          "timestamp": "2026-05-14T19:33:46.380605"
+        }
+      ]
+    },
+    "chain link fence details": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T19:40:57.903154"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-05-14T19:40:58.523451"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:35.822641"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:54.778728"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:55.750802"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:09.452996"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:12.411062"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:15.631244"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:30.161200"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:40.638794"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:52.125784"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:03.030134"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:06.883199"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:11.089034"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:21.571780"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:19.252659"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:39.404250"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:41.802230"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:42.904978"
+        }
+      ]
+    },
+    "shear key details": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T19:52:11.207584"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T22:08:37.339201"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-10T22:08:47.020426"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T22:08:48.329361"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T22:08:39.052931"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-10T21:17:29.789487"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T19:52:21.264051"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:08.527537"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:17:22.319650"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T21:17:30.434928"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:42.178916"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:43.149062"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:44.236410"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:45.468626"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:48.444952"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:47.086974"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:46.457306"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-10T21:15:27.612529"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T21:15:28.411517"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T21:15:58.397479"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:15.331508"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:30.744750"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:33.257381"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:42.196563"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T21:16:53.872571"
+        }
+      ]
+    },
+    "deck drain": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:01.393813"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:02.655112"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:04.894141"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:18.360183"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:26.849057"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:31.285262"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:33.183901"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:39.615238"
+        }
+      ]
+    },
+    "i girder": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:12.205097"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:26.133292"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:12.576793"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:30.814770"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:32.083702"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:33.168802"
+        }
+      ]
+    },
+    "camber diagram": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:57.539473"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:01.169956"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:01.948590"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:03.663069"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:05.999579"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:09.801471"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:11.328118"
+        }
+      ]
+    },
+    "general plan of mar vista": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:31.471629"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:32.365330"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:34.928184"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:36.398459"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:49.503045"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:51.116333"
+        }
+      ]
+    },
+    "cidh pile": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:31.629269"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:37.401732"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:28.762292"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:31.448253"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:43.690498"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:50.934979"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:46.199684"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:17.215175"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:38.387098"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:39.201352"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-16T17:13:19.679556"
+        }
+      ]
+    },
+    "slab bridge reinforcement details": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:39.700204"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:46.117996"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:33.652561"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:35.158877"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:37.075115"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:40.802506"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:49.675979"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:50.910021"
+        }
+      ]
+    },
+    "cip box girder reinforcement details": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:13.239902"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:15.419462"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:31.268149"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:18.253481"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:19.689003"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:20.669342"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:21.185400"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:24.073345"
+        }
+      ]
+    },
+    "u shape retaining wall": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:54.838992"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:00.012907"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:05.916309"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:08.068790"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:11.525788"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:03.721489"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:19.129567"
+        }
+      ],
+      "irrelevant": []
+    },
+    "superstructure typical sections": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:08:52.066492"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:08:54.848911"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:19.367452"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T20:10:33.545104"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:03.559383"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:05.183254"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:07.484329"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:11.273729"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:13.576834"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:14.335132"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:10:51.864444"
+        }
+      ]
+    },
+    "general plan": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:32.310880"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:33.098213"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:48.494015"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:53.927081"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:58.552186"
+        }
+      ]
+    },
+    "pile cap for 24\" cidh pile": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:47.689991"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:36.117768"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:36.564868"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:46.298320"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:02.251899"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:02.623007"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:07.697723"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:09.308107"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:10.593335"
+        }
+      ]
+    },
+    "spiral reinforcement": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:36.451411"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:39.453755"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:51.957241"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:56.997430"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:58.589754"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:59.482220"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:16:01.538417"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:16:02.483410"
+        }
+      ]
+    },
+    "soffit vent hole": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:37.306606"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:38.415539"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:42.931863"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:44.681158"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:45.328537"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:46.887952"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:48.889849"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:49.896103"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:50.790581"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:51.463016"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:53.955829"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:56.047016"
+        }
+      ]
+    },
+    "concrete box girder": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:35.599123"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:40.026364"
+        },
+        {
+          "file": "3112 Beale AFB-Four Bridges - 03-25.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:43.902528"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "retaining wall caltrans type 7 typical section": {
+      "best": [
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:36.300247"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:42.910341"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:53.075086"
+        }
+      ]
+    },
+    "architectural treatment": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:19.851574"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:21.416954"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:34.452477"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:35.224943"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:23.455830"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:44.692571"
+        },
+        {
+          "file": "30%_Elk Grove Station Structure Plan Set.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:33.289277"
+        }
+      ]
+    },
+    "steel truss bridge general plan": {
+      "best": [
+        {
+          "file": "30%_Elk Grove Station Structure Plan Set.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:51.081262"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:59.057034"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:04.873188"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:05.484200"
+        },
+        {
+          "file": "3112 Beale AFB-Four Bridges - 03-25.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:08.817895"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:12.317122"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:15.468604"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:16.220850"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:18.451687"
+        }
+      ]
+    },
+    "drilled shaft detail": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:46.950822"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:31.603457"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:44.702304"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:56.460385"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:59.771214"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:26.603681"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:43.196553"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-15T00:13:13.193340"
+        }
+      ]
+    },
+    "drilled shaft": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-15T04:28:02.622907"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-15T04:28:17.324059"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-15T04:29:08.460350"
+        }
+      ]
+    },
+    "cip box girder typical section reinforcement details": {
+      "best": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T23:53:46.502266"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T23:53:47.335556"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:09.623819"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:10.579816"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T21:18:34.159825"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:57.872074"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:59.011394"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:26.934323"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:30.747239"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:18:37.709018"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T21:18:40.014440"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T21:18:43.588723"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T23:55:14.579465"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T23:55:00.546712"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:51.042007"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T23:53:38.165395"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:35.749119"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:32.839943"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T23:55:11.046254"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T23:55:22.958477"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T23:53:11.091750"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T23:53:22.724419"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:48.489334"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:22.245312"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T23:54:46.261709"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-10T23:55:07.327021"
+        }
+      ]
+    },
+    "ars curve": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:07.987065"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:19.805392"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:26.990716"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:34.346826"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 58,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:09.993168"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:11.852089"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 63,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:13.103942"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:17.249374"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:22.863392"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:24.821212"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:29.614810"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 65,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:30.786123"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:31.527659"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:35.312244"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T21:19:36.293580"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-06-10T22:43:47.206453"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-06-10T22:43:48.509935"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T22:43:49.442212"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T22:43:53.307213"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T22:43:54.969519"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:22.832176"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:23.610828"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 60,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:24.703034"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:25.783309"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:26.845157"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 59,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:28.566780"
+        }
+      ]
+    },
+    "retaining wall": {
+      "best": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T21:20:34.067126"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T21:20:51.522487"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 54,
+          "note": null,
+          "timestamp": "2026-06-10T21:21:07.513134"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-06-10T21:21:15.951321"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "wingwall": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-10T21:21:46.649147"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T21:22:00.569267"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T21:22:10.199418"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 51,
+          "note": null,
+          "timestamp": "2026-06-10T21:22:27.342128"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:21:54.669432"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-10T21:22:19.506067"
+        }
+      ]
+    },
+    "cidh pile details": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T21:22:53.679129"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:03.050221"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:09.726192"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:13.302960"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:16.605234"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:22.125691"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:30.907129"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:32.356698"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:35.340189"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:36.219930"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:38.202304"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:45.186941"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:49.175600"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-06-10T21:23:51.058689"
+        }
+      ]
+    },
+    "ps/pt p-jack": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T21:26:37.709601"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:26:52.913141"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T21:26:55.990970"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:00.845220"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:02.164000"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:06.647265"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 41,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:09.238486"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:15.141178"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:17.887528"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:26.633221"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:34.008119"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 60,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:36.223984"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:37.252168"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:40.450541"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 41,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:41.630468"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 37,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:42.652632"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:45.733884"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:47.716268"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:50.041410"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 52,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:51.069958"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:52.134839"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:53.291228"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:55.411590"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 43,
+          "note": null,
+          "timestamp": "2026-06-10T21:27:56.549420"
+        }
+      ]
+    },
+    "abutment reinforcement": {
+      "best": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T21:28:27.422158"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T21:28:51.830160"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:01.571861"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:13.818523"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:32.553726"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:33.712575"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:34.813501"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:41.660624"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:43.920733"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:46.504611"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T21:30:04.961802"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:09.460103"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:11.200753"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:55.920360"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T21:30:03.151757"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T21:28:39.515650"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T21:28:40.661125"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 41,
+          "note": null,
+          "timestamp": "2026-06-10T21:28:49.749170"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:31.127741"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:36.683980"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:38.203340"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:45.583794"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T21:29:50.888537"
+        }
+      ]
+    },
+    "girder layout": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:30:49.916013"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:08.408505"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:14.585596"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:20.634564"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:25.253687"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:50.440646"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:00.880062"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:02.674076"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:27.912103"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:30:51.692428"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T21:30:54.877902"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:12.990998"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:16.855844"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:22.130923"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:32.200006"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-10T21:31:42.788911"
+        }
+      ]
+    },
+    "bridge removal": {
+      "best": [
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-10T21:32:40.516040"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-10T21:32:53.414128"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-06-10T21:32:54.919040"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T21:32:56.047032"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-06-10T21:33:13.317562"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "barrier detail": {
+      "best": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:03.393573"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:04.468679"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 66,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:05.709351"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:15.459465"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 56,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:18.828528"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:40.997459"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:58.788600"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 61,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:07.846632"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:08.724826"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:22.121866"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:32.678717"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:38.657650"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:39.521994"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:44.949074"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:55.411779"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:34:52.224109"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T21:35:20.363493"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T21:35:21.729554"
+        }
+      ]
+    },
+    "column reinforcement": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:23.024608"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:24.422468"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:27.310381"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:36.642720"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:39.172165"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:19.214591"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:22.568837"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:29.151685"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:35.732250"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:40.181405"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:58.120084"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:38:16.479630"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T21:38:10.069442"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:54.620726"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:51.410008"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:31.808898"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T21:36:58.242742"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:06.328379"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:15.606044"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:20.587777"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:37.534442"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:38.528122"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T21:37:42.091619"
+        }
+      ]
+    },
+    "plastic hinge detail": {
+      "best": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T21:42:13.284171"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:09.717732"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:15.540026"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:16.691710"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 55,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:18.071672"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 43,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:19.620633"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:20.500883"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:22.421563"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 37,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:24.806153"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:25.884365"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 41,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:28.165164"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:28.994427"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:37.814614"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:42.025167"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 52,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:51.787783"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:52.445485"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:53.752962"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:55.512291"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 61,
+          "note": null,
+          "timestamp": "2026-06-10T21:41:57.918274"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T21:42:15.209719"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-10T21:42:16.605031"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 51,
+          "note": null,
+          "timestamp": "2026-06-10T21:42:18.678149"
+        }
+      ]
+    },
+    "prestress": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:11:51.188187"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "p jack": {
+      "best": [
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T22:12:42.177937"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T22:12:52.749419"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T22:13:15.116113"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:13:15.790333"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "spread footing reinforcement": {
+      "best": [],
+      "relevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:13.797061"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:27.063728"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:06.971243"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:08.031879"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:09.264567"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:10.972741"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:15.922253"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:17.187244"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:18.399518"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:20.656503"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:21.474264"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:23.407864"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:36.701351"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:39.749969"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:41.995258"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:46.956026"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T22:21:52.607416"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:01.957438"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:14.004576"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:17.521365"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:20.240286"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:30.543312"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:46.404573"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:47.561483"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:48.506776"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:49.151646"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:50.020448"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:50.858797"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:52.940212"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:56.325100"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T22:22:59.891565"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:01.202920"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:16.887996"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:17.860451"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:25.228991"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:25.939571"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:28.208073"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 41,
+          "note": null,
+          "timestamp": "2026-06-10T22:23:29.511875"
+        }
+      ]
+    },
+    "spread footing": {
+      "best": [
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-06-10T22:24:28.675191"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "prestress duct detail": {
+      "best": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T22:44:47.987351"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 51,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:03.344620"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:03.961372"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 46,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:16.061584"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:17.384917"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:20.448583"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:23.721394"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 44,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:24.992398"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:27.110485"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:28.825877"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 54,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:33.861031"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:40.185434"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 66,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:41.153449"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:42.617351"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-10T22:45:43.482488"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:07.325829"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:08.470823"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:10.530429"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:11.974715"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:14.481365"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:17.313992"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:18.346215"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:19.056167"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:22.006188"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:26.528821"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 56,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:27.545682"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:35.342866"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:35.880532"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:37.938805"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:38.844321"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 52,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:40.232649"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:41.299620"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:48.030050"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:49.099383"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T22:46:56.927824"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:07.350109"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:08.621298"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:09.744401"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:11.343752"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:12.060648"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:13.740752"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:17.704538"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:18.725116"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:19.940112"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:21.840152"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 54,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:22.713544"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-06-10T22:47:31.646161"
+        }
+      ]
+    }
+  },
+  "related_queries": {
+    "test query": {
+      "general plan of mar vista": 0.7250000000000001,
+      "general plan": 0.7250000000000001,
+      "concrete box girder": 0.6666666666666667
+    },
+    "general plan of mar vista": {
+      "test query": 0.7250000000000001,
+      "general plan": 0.9,
+      "concrete box girder": 0.7833333333333333,
+      "steel truss bridge general plan": 0.5642857142857143
+    },
+    "general plan": {
+      "test query": 0.7250000000000001,
+      "general plan of mar vista": 0.9,
+      "concrete box girder": 0.7833333333333333,
+      "steel truss bridge general plan": 0.75
+    },
+    "concrete box girder": {
+      "test query": 0.6666666666666667,
+      "i girder": 0.5833333333333334,
+      "general plan of mar vista": 0.7833333333333333,
+      "cip box girder reinforcement details": 0.5833333333333334,
+      "general plan": 0.7833333333333333,
+      "cip box girder typical section reinforcement details": 0.55,
+      "girder layout": 0.55
+    },
+    "chain link fence details": {
+      "shear key details": 0.5166666666666667,
+      "cidh pile details": 0.5166666666666667
+    },
+    "shear key details": {
+      "chain link fence details": 0.5166666666666667,
+      "slab bridge reinforcement details": 0.5166666666666667,
+      "cip box girder reinforcement details": 0.5071428571428571,
+      "cip box girder typical section reinforcement details": 0.49444444444444446,
+      "cidh pile details": 0.53
+    },
+    "cidh pile details": {
+      "chain link fence details": 0.5166666666666667,
+      "shear key details": 0.53,
+      "cidh pile": 0.75,
+      "slab bridge reinforcement details": 0.5166666666666667,
+      "cip box girder reinforcement details": 0.5071428571428571,
+      "pile cap for 24\" cidh pile": 0.6100000000000001,
+      "cip box girder typical section reinforcement details": 0.49444444444444446
+    },
+    "slab bridge reinforcement details": {
+      "shear key details": 0.5166666666666667,
+      "cip box girder reinforcement details": 0.5642857142857143,
+      "spiral reinforcement": 0.53,
+      "cip box girder typical section reinforcement details": 0.5388888888888889,
+      "cidh pile details": 0.5166666666666667,
+      "abutment reinforcement": 0.53,
+      "bridge removal": 0.53,
+      "column reinforcement": 0.53,
+      "spread footing reinforcement": 0.5166666666666667
+    },
+    "cip box girder reinforcement details": {
+      "shear key details": 0.5071428571428571,
+      "i girder": 0.53,
+      "camber diagram": 0.6666666666666667,
+      "slab bridge reinforcement details": 0.5642857142857143,
+      "spiral reinforcement": 0.5166666666666667,
+      "concrete box girder": 0.5833333333333334,
+      "cip box girder typical section reinforcement details": 0.7357142857142858,
+      "cidh pile details": 0.5071428571428571,
+      "abutment reinforcement": 0.5166666666666667,
+      "girder layout": 0.5166666666666667,
+      "column reinforcement": 0.5166666666666667,
+      "spread footing reinforcement": 0.5071428571428571
+    },
+    "cip box girder typical section reinforcement details": {
+      "shear key details": 0.49444444444444446,
+      "i girder": 0.5071428571428571,
+      "slab bridge reinforcement details": 0.5388888888888889,
+      "cip box girder reinforcement details": 0.7357142857142858,
+      "superstructure typical sections": 0.49444444444444446,
+      "spiral reinforcement": 0.5,
+      "concrete box girder": 0.55,
+      "retaining wall caltrans type 7 typical section": 0.5227272727272727,
+      "cidh pile details": 0.49444444444444446,
+      "abutment reinforcement": 0.5,
+      "girder layout": 0.6735294117647059,
+      "column reinforcement": 0.5,
+      "spread footing reinforcement": 0.49444444444444446
+    },
+    "i girder": {
+      "cip box girder reinforcement details": 0.53,
+      "concrete box girder": 0.5833333333333334,
+      "cip box girder typical section reinforcement details": 0.5071428571428571,
+      "girder layout": 0.65
+    },
+    "girder layout": {
+      "i girder": 0.65,
+      "cip box girder reinforcement details": 0.5166666666666667,
+      "concrete box girder": 0.55,
+      "cip box girder typical section reinforcement details": 0.6735294117647059,
+      "p jack": 0.655
+    },
+    "camber diagram": {
+      "cip box girder reinforcement details": 0.6666666666666667
+    },
+    "steel truss bridge general plan": {
+      "general plan of mar vista": 0.5642857142857143,
+      "general plan": 0.75,
+      "bridge removal": 0.5166666666666667
+    },
+    "cidh pile": {
+      "pile cap for 24\" cidh pile": 0.75,
+      "cidh pile details": 0.75
+    },
+    "pile cap for 24\" cidh pile": {
+      "cidh pile": 0.75,
+      "cidh pile details": 0.6100000000000001
+    },
+    "spiral reinforcement": {
+      "slab bridge reinforcement details": 0.53,
+      "cip box girder reinforcement details": 0.5166666666666667,
+      "superstructure typical sections": 0.6375000000000001,
+      "cip box girder typical section reinforcement details": 0.5,
+      "abutment reinforcement": 0.5833333333333334,
+      "column reinforcement": 0.5833333333333334,
+      "spread footing reinforcement": 0.55
+    },
+    "abutment reinforcement": {
+      "slab bridge reinforcement details": 0.53,
+      "cip box girder reinforcement details": 0.5166666666666667,
+      "spiral reinforcement": 0.5833333333333334,
+      "cip box girder typical section reinforcement details": 0.5,
+      "column reinforcement": 0.5833333333333334,
+      "spread footing reinforcement": 0.55
+    },
+    "bridge removal": {
+      "slab bridge reinforcement details": 0.53,
+      "steel truss bridge general plan": 0.5166666666666667
+    },
+    "column reinforcement": {
+      "slab bridge reinforcement details": 0.53,
+      "cip box girder reinforcement details": 0.5166666666666667,
+      "spiral reinforcement": 0.5833333333333334,
+      "cip box girder typical section reinforcement details": 0.5,
+      "abutment reinforcement": 0.5833333333333334,
+      "spread footing reinforcement": 0.55
+    },
+    "spread footing reinforcement": {
+      "slab bridge reinforcement details": 0.5166666666666667,
+      "cip box girder reinforcement details": 0.5071428571428571,
+      "spiral reinforcement": 0.55,
+      "cip box girder typical section reinforcement details": 0.49444444444444446,
+      "abutment reinforcement": 0.55,
+      "column reinforcement": 0.55,
+      "spread footing": 0.75
+    },
+    "u shape retaining wall": {
+      "retaining wall caltrans type 7 typical section": 0.5642857142857143,
+      "retaining wall": 0.75
+    },
+    "retaining wall caltrans type 7 typical section": {
+      "u shape retaining wall": 0.5642857142857143,
+      "superstructure typical sections": 0.5,
+      "cip box girder typical section reinforcement details": 0.5227272727272727,
+      "retaining wall": 0.75
+    },
+    "retaining wall": {
+      "u shape retaining wall": 0.75,
+      "retaining wall caltrans type 7 typical section": 0.75
+    },
+    "superstructure typical sections": {
+      "spiral reinforcement": 0.6375000000000001,
+      "retaining wall caltrans type 7 typical section": 0.5,
+      "cip box girder typical section reinforcement details": 0.49444444444444446
+    },
+    "drilled shaft detail": {
+      "drilled shaft": 0.75,
+      "barrier detail": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress duct detail": 0.53
+    },
+    "drilled shaft": {
+      "drilled shaft detail": 0.75
+    },
+    "barrier detail": {
+      "drilled shaft detail": 0.55,
+      "plastic hinge detail": 0.55,
+      "prestress duct detail": 0.55
+    },
+    "plastic hinge detail": {
+      "drilled shaft detail": 0.53,
+      "barrier detail": 0.55,
+      "prestress duct detail": 0.53
+    },
+    "prestress duct detail": {
+      "drilled shaft detail": 0.53,
+      "barrier detail": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress": 0.75
+    },
+    "p jack": {
+      "girder layout": 0.655
+    },
+    "prestress": {
+      "prestress duct detail": 0.75
+    },
+    "spread footing": {
+      "spread footing reinforcement": 0.75
+    }
+  },
+  "acronym_queries": [
+    "lotb",
+    "p jack"
+  ]
+}

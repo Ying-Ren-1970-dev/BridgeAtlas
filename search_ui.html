@@ -718,6 +718,8 @@
             box-shadow: 0 2px 8px rgba(5, 12, 20, 0.45);
             transition: box-shadow 0.2s;
             position: relative;
+            cursor: zoom-in;
+            user-select: none;
         }
 
         .thumbnail-item:hover .thumbnail-wrapper {
@@ -787,6 +789,50 @@
             font-size: 11px;
             color: #9cc6f2;
             text-align: center;
+        }
+
+        .results-tier-header {
+            margin: 8px 0 14px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.92em;
+            color: #dbe8f4;
+        }
+
+        .results-tier-header.primary-tier {
+            background: rgba(63, 141, 244, 0.12);
+            border: 1px solid rgba(63, 141, 244, 0.35);
+        }
+
+        .results-tier-header.review-tier {
+            background: rgba(255, 193, 7, 0.1);
+            border: 1px solid rgba(255, 193, 7, 0.35);
+            margin-top: 18px;
+        }
+
+        .thumbnail-item.review-tier-item .thumbnail-wrapper {
+            box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.45);
+        }
+
+        .match-tier-badge {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+
+        .match-tier-badge.primary {
+            background: rgba(63, 141, 244, 0.2);
+            color: #9cc6f2;
+        }
+
+        .match-tier-badge.review {
+            background: rgba(255, 193, 7, 0.2);
+            color: #ffd76a;
         }
 
         .thumbnail-score {
@@ -958,12 +1004,13 @@
         .page-thumbnail {
             flex-shrink: 0;
             width: 150px;
-            cursor: pointer;
+            cursor: zoom-in;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(5, 11, 18, 0.35);
             transition: transform 0.2s, box-shadow 0.2s;
             background: #1f3142;
+            user-select: none;
         }
 
         .page-thumbnail:hover {
@@ -1211,9 +1258,15 @@
                             Hybrid search
                         </label>
                     </div>
+                    <div class="relevance-option hybrid-option">
+                        <label for="expandForFeedbackToggle">
+                            <input type="checkbox" id="expandForFeedbackToggle" checked>
+                            Show borderline pages for feedback
+                        </label>
+                    </div>
                 </div>
                 <div class="relevance-help">
-                    High Relevance is the default. Hybrid combines vector + keyword ranking (toggle at end).
+                    High Relevance is the default. Enable borderline pages to label relevant sheets that sit just outside the strict cutoff.
                 </div>
             </div>
         </div>
@@ -1331,6 +1384,11 @@
                 return null;
             }
             return parseFloat(selectedRelevance);
+        }
+
+        function getExpandForFeedbackEnabled() {
+            const toggle = document.getElementById('expandForFeedbackToggle');
+            return toggle ? toggle.checked : true;
         }
 
         function setActionButtonsDisabled(disabled) {
@@ -1537,8 +1595,9 @@
             try {
                 const requestBody = {
                     query: query,
-                    k: 50,
+                    k: getExpandForFeedbackEnabled() ? 100 : 50,
                     use_hybrid_search: getHybridSearchEnabled(),
+                    expand_for_feedback: getExpandForFeedbackEnabled(),
                 };
 
                 const relevanceThreshold = getRelevanceThreshold();
@@ -1710,10 +1769,16 @@
             // Update summary
             document.getElementById('searchQuery').textContent = `"${data.query}"`;
             
+            const primaryResults = data.results.filter(r => (r.match_tier || 'primary') === 'primary');
+            const reviewResults = data.results.filter(r => r.match_tier === 'review');
+
             // Get unique pages and projects
             const uniquePages = [...new Set(data.results.map(r => r.page_number))];
             const uniqueProjects = [...new Set(data.results.map(r => r.pdf_file_name || r.project_name || 'Unknown Project'))];
-            document.getElementById('summaryCounts').textContent = `${uniqueProjects.length} Projects • ${uniquePages.length} Pages`;
+            const countLabel = reviewResults.length
+                ? `${uniqueProjects.length} Projects • ${uniquePages.length} Pages (${primaryResults.length} top + ${reviewResults.length} to review)`
+                : `${uniqueProjects.length} Projects • ${uniquePages.length} Pages`;
+            document.getElementById('summaryCounts').textContent = countLabel;
 
             // Group results by project
             const projectGroups = {};
@@ -1783,15 +1848,26 @@
             let resultsHTML = '';
             
             Object.values(projectGroups).forEach(project => {
+                const primary = project.results.filter(r => (r.match_tier || 'primary') === 'primary');
+                const review = project.results.filter(r => r.match_tier === 'review');
                 resultsHTML += `
                     <div class="project-section" style="margin-bottom: 40px;">
                         <div class="project-section-header">
                             <h2 class="project-section-title">📄 ${project.name}</h2>
                             <p class="project-section-subtitle">${project.results.length} results from this project</p>
                         </div>
-                        <div class="thumbnail-grid">
-                            ${project.results.map(result => createThumbnailItem(result, data.query)).join('')}
-                        </div>
+                        ${primary.length ? `
+                            <div class="results-tier-header primary-tier">Top matches (${primary.length})</div>
+                            <div class="thumbnail-grid">
+                                ${primary.map(result => createThumbnailItem(result, data.query)).join('')}
+                            </div>
+                        ` : ''}
+                        ${review.length ? `
+                            <div class="results-tier-header review-tier">Also review for feedback (${review.length}) — label Best / Relevant / Irrelevant</div>
+                            <div class="thumbnail-grid">
+                                ${review.map(result => createThumbnailItem(result, data.query)).join('')}
+                            </div>
+                        ` : ''}
                     </div>
                 `;
             });
@@ -1813,19 +1889,30 @@
             const topologyHTML = topologyTags.length
                 ? `<div class="thumbnail-topology">${topologyTags.map(tag => `<span class="thumbnail-topology-tag" title="${escapeHtml(tag)}">${escapeHtml(tag)}</span>`).join('')}</div>`
                 : '';
-            const modalArgs = `${JSON.stringify(result.pdf_file_name)}, ${result.page_number}, ${JSON.stringify(result.project_name)}`;
+            const matchTier = result.match_tier || 'primary';
+            const tierClass = matchTier === 'review' ? 'review-tier-item' : '';
+            const tierBadge = matchTier === 'review'
+                ? '<span class="match-tier-badge review">Review</span>'
+                : '<span class="match-tier-badge primary">Top match</span>';
             const thumbUrl = `${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail`;
             return `
-                <div class="thumbnail-item" onclick="openPageModal(${modalArgs})" title="Click to view full page">
-                    <div class="thumbnail-wrapper">
+                <div class="thumbnail-item ${tierClass}">
+                    <div class="thumbnail-wrapper"
+                         data-page-preview
+                         data-pdf-file="${escapeHtml(result.pdf_file_name)}"
+                         data-page="${result.page_number}"
+                         data-project="${escapeHtml(result.project_name)}"
+                         title="Click or double-click to enlarge">
                         <div class="thumbnail-loading">Loading preview...</div>
                         <img src="${thumbUrl}"
                              alt="Page ${result.page_number} thumbnail"
                              loading="eager"
+                             draggable="false"
                              onload="this.previousElementSibling?.remove()"
                              onerror="this.onerror=null; this.previousElementSibling?.remove(); this.replaceWith(Object.assign(document.createElement('div'), {className:'thumbnail-loading', textContent:'No preview'}));">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                    ${tierBadge}
                     ${topologyHTML}
                     <div class="feedback-actions" onclick="event.stopPropagation()">
                         <button class="feedback-btn" type="button" onclick="submitResultFeedback(event, this, '${encodedFileName}', ${result.page_number}, 'best')">Best</button>
@@ -1934,8 +2021,14 @@
                     </div>
                     
                     <div class="result-card-content">
-                        <div class="page-thumbnail" onclick="openPageModal('${result.pdf_file_name}', ${result.page_number}, '${result.project_name}')" title="Click to view full page">
-                            <img src="${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail" 
+                        <div class="page-thumbnail"
+                             data-page-preview
+                             data-pdf-file="${escapeHtml(result.pdf_file_name)}"
+                             data-page="${result.page_number}"
+                             data-project="${escapeHtml(result.project_name)}"
+                             title="Click or double-click to enlarge">
+                            <img src="${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail"
+                                 draggable="false" 
                                  alt="Page ${result.page_number} thumbnail"
                                  onerror="this.parentElement.innerHTML='<div class=\"thumbnail-loading\">No preview</div>'">
                         </div>
@@ -2174,17 +2267,21 @@
         }
 
         // Modal functions
+        let modalOpenedAt = 0;
+
         function openPageModal(fileName, pageNumber, projectName) {
             const modal = document.getElementById('pageModal');
             const modalTitle = document.getElementById('modalTitle');
             const modalBody = document.getElementById('modalBody');
-            
+
             modalTitle.textContent = `${projectName} - Page ${pageNumber}`;
             modalBody.innerHTML = '<div class="modal-loading"><div class="modal-loading-spinner"></div>Loading full page...</div>';
             modal.classList.add('active');
-            
-            // Load full-size image
+            modalOpenedAt = Date.now();
+
             const img = new Image();
+            img.alt = `Page ${pageNumber}`;
+            img.draggable = false;
             img.onload = function() {
                 modalBody.innerHTML = '';
                 modalBody.appendChild(img);
@@ -2200,16 +2297,54 @@
             modal.classList.remove('active');
         }
 
-        // Close modal on outside click
+        function activatePagePreview(target, event) {
+            if (!target) {
+                return;
+            }
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+
+            const fileName = target.dataset.pdfFile;
+            const pageNumber = parseInt(target.dataset.page, 10);
+            const projectName = target.dataset.project || fileName;
+            if (!fileName || Number.isNaN(pageNumber)) {
+                return;
+            }
+            openPageModal(fileName, pageNumber, projectName);
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('pageModal');
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closePageModal();
+
+            document.addEventListener('dblclick', function(e) {
+                const preview = e.target.closest('[data-page-preview]');
+                if (!preview) {
+                    return;
                 }
+                activatePagePreview(preview, e);
             });
-            
-            // Close on Escape key
+
+            document.addEventListener('click', function(e) {
+                const preview = e.target.closest('[data-page-preview]');
+                if (!preview) {
+                    return;
+                }
+                activatePagePreview(preview, e);
+            });
+
+            modal.addEventListener('click', function(e) {
+                if (e.target !== modal) {
+                    return;
+                }
+                // Ignore the second click of a double-click (it would close immediately).
+                if (Date.now() - modalOpenedAt < 450) {
+                    return;
+                }
+                closePageModal();
+            });
+
             document.addEventListener('keydown', function(e) {
                 if (e.key === 'Escape') {
                     closePageModal();

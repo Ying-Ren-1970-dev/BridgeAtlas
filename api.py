@@ -217,6 +217,10 @@ class SearchRequest(BaseModel):
     project_scope: Optional[str] = Field(default=None, description="Optional project/file scope, e.g. 'mar vista', to restrict retrieval")
     generate_summary: bool = Field(default=False, description="Whether to generate an LLM summary for this request")
     use_hybrid_search: bool = Field(default=True, description="Whether to use hybrid retrieval (vector + keyword BM25-style fusion)")
+    expand_for_feedback: bool = Field(
+        default=False,
+        description="Include additional borderline pages so engineers can label relevant results beyond the strict cutoff",
+    )
     
     class Config:
         json_schema_extra = {
@@ -254,6 +258,10 @@ class SearchResult(BaseModel):
     topology_elements: List[str] = Field(..., description="Structural topology elements found in this content")
     content_sample: str = Field(..., description="Sample of the relevant content")
     has_vision_analysis: bool = Field(..., description="Whether this page was analyzed using GPT-4 Vision")
+    match_tier: str = Field(
+        default="primary",
+        description="primary = within strict relevance cutoff; review = borderline page shown for feedback labeling",
+    )
     
     class Config:
         json_schema_extra = {
@@ -262,6 +270,7 @@ class SearchResult(BaseModel):
                 "project_name": "Mar Vista POC",
                 "page_number": 11,
                 "relevance_score": 0.85,
+                "match_tier": "primary",
                 "topology_elements": ["Pipe Pin (Steel Shear Key)", "Abutment", "Bearing Pad"],
                 "content_sample": "Pipe Pin Detail: Includes cover pipe, standard pipe...",
                 "has_vision_analysis": True
@@ -642,10 +651,11 @@ async def search(request: SearchRequest):
         raise HTTPException(status_code=503, detail="Search agent not initialized")
     
     try:
-        # Execute search
+        # Execute search (pull more candidates when labeling feedback on borderline pages)
+        search_k = max(request.k, 100) if request.expand_for_feedback else request.k
         search_results = search_agent.search(
             query=request.query,
-            k=request.k,
+            k=search_k,
             generate_summary=request.generate_summary,
             use_hybrid_search=request.use_hybrid_search,
             project_scope=request.project_scope,
@@ -891,7 +901,8 @@ async def search(request: SearchRequest):
                     relevance_score=round(data['score'], 3),
                     topology_elements=data['topology'],
                     content_sample=data['content'][:500].replace('[TEXT CONTENT]', '').replace('[DRAWING ANALYSIS]', '').strip(),
-                    has_vision_analysis=data['has_vision']
+                    has_vision_analysis=data['has_vision'],
+                    match_tier="primary",
                 )
                 results.append(result_entry)
                 
@@ -905,21 +916,39 @@ async def search(request: SearchRequest):
         
         # Apply relevance threshold filter (adaptive default if not explicitly provided)
         if results:
-            effective_threshold = request.relevance_threshold
-            if effective_threshold is None:
-                effective_threshold = (
+            strict_threshold = request.relevance_threshold
+            if strict_threshold is None:
+                strict_threshold = (
                     config.HYBRID_DEFAULT_RELEVANCE_THRESHOLD
                     if request.use_hybrid_search
                     else config.VECTOR_DEFAULT_RELEVANCE_THRESHOLD
                 )
 
             best_score = min(r.relevance_score for r in results)
-            threshold = best_score + effective_threshold
-            results = [r for r in results if r.relevance_score <= threshold]
+            strict_cutoff = best_score + strict_threshold
+            review_cutoff = best_score + max(strict_threshold, 1.0) if request.expand_for_feedback else strict_cutoff
+
+            if request.expand_for_feedback:
+                filtered: List[SearchResult] = []
+                seen_pages = set()
+                for entry in sorted(results, key=lambda item: item.relevance_score):
+                    page_key = (entry.pdf_file_name, entry.page_number)
+                    if page_key in seen_pages:
+                        continue
+                    if entry.relevance_score > review_cutoff:
+                        continue
+                    seen_pages.add(page_key)
+                    tier = "primary" if entry.relevance_score <= strict_cutoff else "review"
+                    filtered.append(entry.model_copy(update={"match_tier": tier}))
+                results = filtered
+            else:
+                results = [r for r in results if r.relevance_score <= strict_cutoff]
+
             results = _inject_missing_general_notes_projects(
                 results, request.query, chunk_sheet_types
             )
-            results = _prefer_general_notes_pages(results, request.query, chunk_sheet_types)
+            if not request.expand_for_feedback:
+                results = _prefer_general_notes_pages(results, request.query, chunk_sheet_types)
         
         # Build project summaries
         project_summaries = []
@@ -1059,6 +1088,26 @@ async def get_project_details(file_name: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to get project details: {str(e)}")
+
+
+@app.get("/projects/{file_name}/profile", tags=["Projects"])
+async def get_project_profile(file_name: str):
+    """Return the saved project overview profile (layout, narrative, design intent)."""
+    try:
+        from project_profile_builder import ProjectProfileBuilder
+
+        profiles = ProjectProfileBuilder.load_all_profiles()
+        profile = profiles.get(file_name)
+        if not profile:
+            raise HTTPException(
+                status_code=404,
+                detail=f"No project profile found for {file_name}. Run build-project-profiles first.",
+            )
+        return profile
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to load project profile: {str(e)}")
 
 
 @app.get("/categories", tags=["Categories"])

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:26.206847",
+  "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+  "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
+  "source_pages": [
+    1,
+    2
+  ],
+  "topology_version": "6",
+  "structured": {
+    "span_count": 2,
+    "interior_bents": [
+      2
+    ],
+    "bridge_type": "CIP Concrete Box Girder",
+    "structure_type": "bridge",
+    "superstructure": "CIP Concrete Box Girder",
+    "foundation_system": "Steel pipe",
+    "concrete_box_girder": true,
+    "is_bridge": true
+  },
+  "narrative": "The Magnolia Overcrossing project involves the construction of a bridge designed as a Cast-In-Place (CIP) Concrete Box Girder structure. The bridge spans two sections, supported by abutments at each end and an interior bent. The use of a concrete box girder system suggests a focus on durability and load distribution, typical for overcrossings that need to accommodate significant traffic loads. The bridge's foundation consists of steel pipe piles, providing robust support for the superstructure.\n\nThe design intent appears to focus on ensuring structural integrity and longevity, given the use of CIP concrete and steel pipe foundations. The layout indicates a straightforward span configuration, likely chosen to efficiently manage the site constraints and traffic flow. The bridge's design also includes retaining walls, which are constructed using Caltrans cast-in-place concrete, further emphasizing the project's commitment to stability and durability.",
+  "design_intent": [
+    "Durable CIP Concrete Box Girder for load distribution",
+    "Steel pipe piles for strong foundational support",
+    "Two-span layout for efficient site management",
+    "Caltrans retaining walls for enhanced stability",
+    "Focus on longevity and structural integrity"
+  ],
+  "key_sheets": [
+    {
+      "page": 1,
+      "title": "GENERAL PLAN NO. 1",
+      "role": "general plan layout"
+    },
+    {
+      "page": 2,
+      "title": "GENERAL PLAN NO. 1",
+      "role": "general plan layout"
+    }
+  ],
+  "evidence": [
+    "Inferred span count (from GP layout): 2",
+    "Concrete box girder: True",
+    "Interior bents on GP: [2]",
+    "General Plan > structure type > bridge > Superstructure > CIP Concrete Box Girder"
+  ],
+  "uncertainties": []
+}

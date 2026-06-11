@@ -14,6 +14,8 @@ import config
 from vector_store import VectorStore
 from metadata_manager import MetadataManager
 from engineering_terminology import expand_query
+from project_layout import collect_layout_signals
+from project_profile_builder import ProjectProfileBuilder
 
 logger = logging.getLogger(__name__)
 
@@ -60,6 +62,7 @@ class SearchAgent:
         print(f"\nSearching for: '{query}'")
 
         normalized_query = self._normalize_query_text(query)
+        project_descriptor = self._parse_project_descriptor_query(query)
 
         # Identifier-like queries (project numbers, sheet IDs) are brittle; avoid broad synonym drift.
         looks_like_identifier_query = bool(re.search(r"\d", normalized_query) and ("-" in normalized_query or "/" in normalized_query))
@@ -77,6 +80,8 @@ class SearchAgent:
                 "abutment pile",
                 "pile detail",
                 "abutment detail",
+                "p jack",
+                "plastic hinge",
                 "general plan",
                 "rebar detail",
                 "caltrans standard plan",
@@ -85,7 +90,18 @@ class SearchAgent:
                 "general notes",
             ]
         )
-        avoid_expansion = looks_like_identifier_query or (has_specific_phrase and token_count <= 6) or (token_count == 1)
+        feedback_model = self._load_feedback_model()
+        learned_acronym_queries = {
+            self._normalize_query_text(item)
+            for item in feedback_model.get("acronym_queries", [])
+        }
+        avoid_expansion = (
+            looks_like_identifier_query
+            or (has_specific_phrase and token_count <= 6)
+            or (token_count == 1)
+            or normalized_query in learned_acronym_queries
+            or project_descriptor is not None
+        )
         
         # Expand query with engineering terminology synonyms
         expanded_query = normalized_query
@@ -244,7 +260,51 @@ class SearchAgent:
         # Apply engineer-in-the-loop feedback boosts/penalties for this exact query/scope.
         feedback_adjustments = self._load_feedback_adjustments(query, project_scope)
         if feedback_adjustments:
+            search_results = self._filter_strong_irrelevant_feedback(
+                search_results, feedback_adjustments
+            )
             search_results = self._apply_feedback_adjustments(search_results, feedback_adjustments)
+
+        positive_feedback_pages = self._load_positive_feedback_pages(query, project_scope)
+        gp_only_descriptor = (
+            project_descriptor is not None
+            and not project_descriptor.get("sheet_intents")
+        )
+        if positive_feedback_pages and not gp_only_descriptor:
+            search_results = self._inject_feedback_labeled_pages(
+                search_results,
+                positive_feedback_pages,
+                keyword_candidates,
+                scoped_file_names,
+            )
+
+        sheet_level_query = self._parse_sheet_level_query(query)
+
+        if project_descriptor:
+            search_results = self._apply_project_descriptor_ranking(
+                search_results,
+                project_descriptor,
+                keyword_candidates,
+                scoped_file_names,
+            )
+        elif sheet_level_query:
+            search_results = [
+                (doc, score)
+                for doc, score in search_results
+                if not self._is_project_overview_page(doc)
+            ]
+            search_results = self._apply_sheet_intent_ranking(
+                search_results,
+                sheet_level_query,
+                keyword_candidates,
+                scoped_file_names,
+            )
+        elif self._parse_sheet_intents(query):
+            search_results = [
+                (doc, score)
+                for doc, score in search_results
+                if not self._is_project_overview_page(doc)
+            ]
         
         # Organize results by project
         projects_data = self._organize_results_by_project(search_results)
@@ -253,7 +313,20 @@ class SearchAgent:
         enriched_results = self._enrich_with_metadata(projects_data)
         
         should_generate_summary = config.GENERATE_SEARCH_SUMMARY if generate_summary is None else generate_summary
-        if should_generate_summary:
+        if (
+            not enriched_results
+            and project_descriptor
+            and project_descriptor.get("sheet_intents")
+        ):
+            span_count = project_descriptor.get("span_count")
+            sheet_label = ", ".join(
+                intent.replace("_", " ") for intent in project_descriptor.get("sheet_intents", [])
+            )
+            summary = (
+                f"No {span_count}-span bridge projects with matching {sheet_label} sheets "
+                "were found in the library."
+            )
+        elif should_generate_summary:
             summary = self._generate_search_summary(query, enriched_results)
         else:
             summary = f"Found {len(enriched_results)} relevant project(s)."
@@ -792,6 +865,472 @@ class SearchAgent:
             strength += 2
         return strength
 
+    def _is_project_overview_page(self, doc: Document) -> bool:
+        """Detect synthesized project-profile chunks stored at page 0."""
+        metadata = getattr(doc, "metadata", {}) or {}
+        if str(metadata.get("index_level") or "") == "project_overview":
+            return True
+        if str(metadata.get("plan_sheet_type") or "") == "project_overview":
+            return True
+        page = metadata.get("page")
+        if page is not None:
+            try:
+                if int(page) == 0:
+                    return True
+            except Exception:
+                pass
+        return "[project profile]" in self._doc_search_blob(doc)
+
+    def _parse_sheet_intents(self, query: str) -> List[str]:
+        """Detect sheet-level lookup intents layered on top of project filters."""
+        q = re.sub(r"\s+", " ", str(query or "").strip().lower())
+        intents: List[str] = []
+        if re.search(r"\btypical\s+sections?\b", q):
+            intents.append("typical_section")
+        if re.search(r"\bgeneral\s+plans?\b", q):
+            intents.append("general_plan")
+        if re.search(r"\b(reinforcement|rebar)\s+details?\b", q) or (
+            "reinforcement" in q and "detail" in q
+        ):
+            intents.append("reinforcement_detail")
+        if re.search(r"\bgirder\s+details?\b", q):
+            intents.append("girder_detail")
+        if re.search(r"\babutment\s+details?\b", q):
+            intents.append("abutment_detail")
+        return intents
+
+    def _parse_sheet_level_query(self, query: str) -> Optional[Dict]:
+        """Parse sheet-level lookups without an explicit span filter."""
+        sheet_intents = self._parse_sheet_intents(query)
+        if not sheet_intents:
+            return None
+
+        q = re.sub(r"\s+", " ", str(query or "").strip().lower())
+        return {
+            "sheet_intents": sheet_intents,
+            "wants_concrete": any(
+                token in q for token in ("concrete", "cip", "box girder", "r/c", "rc")
+            ),
+            "wants_bridge": "bridge" in q,
+        }
+
+    def _apply_sheet_intent_ranking(
+        self,
+        search_results: List[tuple],
+        descriptor: Dict,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """Rank sheet-level lookups within matching bridge projects."""
+        target_files = scoped_file_names or set(self.metadata_manager.get_all_projects().keys())
+        if not target_files:
+            return search_results
+
+        profiles = self._build_project_descriptor_profiles(keyword_candidates, target_files)
+        if descriptor.get("wants_concrete"):
+            matching_files = {
+                file_name for file_name, profile in profiles.items() if profile.get("concrete")
+            }
+        elif descriptor.get("wants_bridge"):
+            matching_files = {
+                file_name for file_name, profile in profiles.items() if profile.get("bridge")
+            }
+        else:
+            matching_files = set(target_files)
+
+        if not matching_files:
+            matching_files = set(target_files)
+
+        return self._apply_layered_project_sheet_ranking(
+            search_results,
+            descriptor,
+            keyword_candidates,
+            scoped_file_names,
+            matching_files,
+            profiles,
+        )
+
+    def _parse_project_descriptor_query(self, query: str) -> Optional[Dict]:
+        """
+        Detect layered bridge lookups like '3 span concrete bridge' or
+        'CIP box girder typical section for 4 span bridge'.
+        Parsed from the raw query so normalization does not strip key terms.
+        """
+        q = re.sub(r"\s+", " ", str(query or "").strip().lower())
+        q = q.replace("cocnrete", "concrete")
+        match = re.search(r"\b(\d+)\s*[-]?\s*span", q)
+        if not match:
+            return None
+
+        span_count = int(match.group(1))
+        wants_concrete = any(
+            token in q for token in ("concrete", "cip", "box girder", "r/c", "rc")
+        )
+        wants_bridge = "bridge" in q
+        sheet_intents = self._parse_sheet_intents(q)
+        if not wants_bridge and not wants_concrete and not sheet_intents:
+            return None
+
+        return {
+            "span_count": span_count,
+            "wants_concrete": wants_concrete,
+            "wants_bridge": wants_bridge,
+            "sheet_intents": sheet_intents,
+        }
+
+    def _is_general_plan_sheet(self, doc: Document) -> bool:
+        metadata = getattr(doc, "metadata", {}) or {}
+        if str(metadata.get("plan_sheet_type") or "") == "general_plan":
+            return True
+        blob = self._doc_search_blob(doc)
+        return any(
+            marker in blob
+            for marker in (
+                "general plan no",
+                "sheet category: general_plan",
+                "plan type: general plan",
+            )
+        )
+
+    def _saved_profile_to_descriptor(self, saved: Dict) -> Dict:
+        structured = saved.get("structured") or {}
+        source_pages = saved.get("source_pages") or []
+        gp_page = source_pages[0] if source_pages else None
+        gp_doc = None
+        if gp_page is not None:
+            chunk = self.vector_store.get_page_chunk(saved.get("file_name", ""), int(gp_page))
+            if chunk:
+                gp_doc = Document(page_content=chunk.get("content", ""), metadata=chunk.get("metadata", {}))
+
+        return {
+            "span_count": structured.get("span_count"),
+            "concrete": structured.get("concrete_box_girder"),
+            "bridge": structured.get("is_bridge"),
+            "gp_page": gp_page,
+            "gp_doc": gp_doc,
+            "narrative": saved.get("narrative", ""),
+            "saved_profile": True,
+        }
+
+    def _build_project_descriptor_profiles(
+        self,
+        keyword_candidates: List[Dict],
+        target_files: Set[str],
+    ) -> Dict[str, Dict]:
+        """Use saved project profiles when available, else layout signals from GP."""
+        profiles: Dict[str, Dict] = {}
+        saved_profiles = ProjectProfileBuilder.load_all_profiles()
+
+        for file_name in target_files:
+            if file_name in saved_profiles:
+                profiles[file_name] = self._saved_profile_to_descriptor(saved_profiles[file_name])
+                continue
+
+            layout = collect_layout_signals(file_name, self.vector_store, keyword_candidates)
+            gp_doc = None
+            if layout.get("gp_page") is not None:
+                chunk = self.vector_store.get_page_chunk(file_name, int(layout["gp_page"]))
+                if chunk:
+                    gp_doc = Document(page_content=chunk.get("content", ""), metadata=chunk.get("metadata", {}))
+
+            profiles[file_name] = {
+                "span_count": layout.get("span_count"),
+                "concrete": layout.get("concrete"),
+                "bridge": layout.get("bridge"),
+                "gp_page": layout.get("gp_page"),
+                "gp_doc": gp_doc,
+            }
+
+        return profiles
+
+    def _project_matches_descriptor(self, profile: Dict, descriptor: Dict) -> bool:
+        span_count = profile.get("span_count")
+        if span_count is None or span_count != descriptor.get("span_count"):
+            return False
+        if descriptor.get("wants_concrete") and not profile.get("concrete"):
+            return False
+        if descriptor.get("wants_bridge") and descriptor.get("wants_concrete"):
+            return bool(profile.get("bridge"))
+        return True
+
+    def _is_typical_section_sheet(self, doc: Document) -> bool:
+        metadata = getattr(doc, "metadata", {}) or {}
+        title = str(
+            metadata.get("topology_sheet_title")
+            or metadata.get("plan_sheet_title")
+            or ""
+        ).lower()
+        primary = str(metadata.get("plan_primary_type") or "").lower()
+        blob = self._metadata_search_blob(metadata)
+        if "typical section" in title or "typical section" in primary:
+            return True
+        if "typical section" in blob:
+            return True
+        return "typical section" in self._visible_sheet_text(doc)[:2500]
+
+    def _sheet_intent_match_strength(self, doc: Document, descriptor: Dict) -> int:
+        """Score how strongly a page matches layered sheet-level query intent."""
+        intents = descriptor.get("sheet_intents") or []
+        if not intents:
+            return 0
+
+        metadata = getattr(doc, "metadata", {}) or {}
+        title = str(
+            metadata.get("topology_sheet_title")
+            or metadata.get("plan_sheet_title")
+            or ""
+        ).lower()
+        primary = str(metadata.get("plan_primary_type") or "").lower()
+        blob = self._metadata_search_blob(metadata)
+        visible = self._visible_sheet_text(doc)
+        strength = 0
+
+        if "typical_section" in intents:
+            if (
+                self._is_general_plan_sheet(doc)
+                or "index to plans" in title
+                or primary == "index to plans"
+            ):
+                strength -= 20
+            elif "typical section" in title:
+                strength += 14
+                if re.search(r"typical section\s+no\.?\s*\d", title):
+                    strength += 3
+                if "stage 1" in title or "stage 2" in title:
+                    strength += 2
+                if "partial" in title:
+                    strength -= 4
+            elif primary == "typical section" or "typical section" in primary:
+                strength += 12
+            elif "typical section" in blob or "typical section" in visible[:2500]:
+                strength += 4
+                if "partial typical section" in blob:
+                    strength -= 3
+
+            if "reinforcement" in title and "typical section" not in title:
+                strength -= 10
+            if "girder layout" in title:
+                strength -= 10
+
+            if descriptor.get("wants_concrete"):
+                cip_markers = (
+                    "cip",
+                    "box girder",
+                    "conc box girder",
+                    "concrete box girder",
+                    "cip/ps",
+                )
+                if any(marker in blob or marker in visible for marker in cip_markers):
+                    strength += 3
+
+        if "general_plan" in intents and self._is_general_plan_sheet(doc):
+            strength += 12
+
+        if "reinforcement_detail" in intents:
+            if any(
+                phrase in title
+                for phrase in (
+                    "reinforcement",
+                    "reinf detail",
+                    "rebar",
+                    "girder details",
+                )
+            ):
+                strength += 10
+            if "reinforcement" in blob or "rebar" in blob:
+                strength += 4
+
+        if "girder_detail" in intents:
+            if "girder detail" in title:
+                strength += 10
+            elif "girder details" in title:
+                strength += 8
+
+        if "abutment_detail" in intents:
+            if "abutment detail" in title:
+                strength += 10
+
+        span_count = descriptor.get("span_count")
+        if span_count is not None:
+            span_range = re.search(r"spans?\s+(\d+)\s+thru(?:ugh)?\s+(\d+)", title)
+            if span_range:
+                upper = int(span_range.group(2))
+                if upper > span_count + 1:
+                    strength -= 6
+
+        return strength
+
+    def _apply_layered_project_sheet_ranking(
+        self,
+        search_results: List[tuple],
+        descriptor: Dict,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+        matching_files: Set[str],
+        profiles: Dict[str, Dict],
+    ) -> List[tuple]:
+        """
+        Layer 1: matching projects by span/material.
+        Layer 2: typical section / detail sheets inside those projects.
+        """
+        if not matching_files:
+            return []
+
+        page_docs: Dict[tuple, Document] = {}
+        page_strength: Dict[tuple, int] = {}
+
+        def consider_doc(doc: Document) -> None:
+            metadata = getattr(doc, "metadata", {}) or {}
+            file_name = str(metadata.get("file_name") or "")
+            page_num = metadata.get("page")
+            if file_name not in matching_files or page_num is None:
+                return
+
+            profile = profiles.get(file_name, {})
+            if descriptor.get("wants_concrete") and not profile.get("concrete"):
+                return
+
+            if self._is_project_overview_page(doc):
+                return
+
+            strength = self._sheet_intent_match_strength(doc, descriptor)
+            intents = descriptor.get("sheet_intents") or []
+            if "typical_section" in intents and "reinforcement_detail" in intents:
+                min_strength = 10
+            elif "typical_section" in intents:
+                min_strength = 12
+            else:
+                min_strength = 8
+            if strength < min_strength:
+                return
+
+            page_key = (file_name, int(page_num))
+            if strength > page_strength.get(page_key, 0):
+                page_strength[page_key] = strength
+                page_docs[page_key] = doc
+
+        for doc, _ in search_results:
+            consider_doc(doc)
+
+        for item in keyword_candidates:
+            metadata = item.get("metadata", {}) or {}
+            doc = Document(page_content=item.get("content", ""), metadata=metadata)
+            consider_doc(doc)
+
+        if not page_strength:
+            return []
+
+        sheets_by_file: Dict[str, List[tuple]] = defaultdict(list)
+        for page_key, strength in page_strength.items():
+            sheets_by_file[page_key[0]].append((strength, page_docs[page_key]))
+
+        finalized: List[tuple] = []
+        for file_name in sorted(matching_files):
+            ranked = sorted(
+                sheets_by_file.get(file_name, []),
+                key=lambda item: (-item[0], item[1].metadata.get("page", 0)),
+            )
+            dedicated = [
+                (strength, doc)
+                for strength, doc in ranked
+                if strength >= 12
+                and "typical section"
+                in str(
+                    doc.metadata.get("plan_sheet_title")
+                    or doc.metadata.get("topology_sheet_title")
+                    or doc.metadata.get("plan_primary_type")
+                    or ""
+                ).lower()
+            ] if "typical_section" in (descriptor.get("sheet_intents") or []) else ranked
+            chosen = dedicated or ranked
+            for strength, doc in chosen[:3]:
+                finalized.append((doc, 0.0 - (strength / 100.0)))
+
+        finalized.sort(key=lambda item: item[1])
+        return finalized
+
+    def _apply_project_descriptor_ranking(
+        self,
+        search_results: List[tuple],
+        descriptor: Dict,
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """
+        Rank layered bridge lookups: project filter first, then sheet intent.
+        Falls back to GP No. 1 when no sheet intent is present.
+        """
+        target_files = scoped_file_names or set(self.metadata_manager.get_all_projects().keys())
+        if not target_files:
+            return search_results
+
+        profiles = self._build_project_descriptor_profiles(keyword_candidates, target_files)
+        matching_files = {
+            file_name
+            for file_name, profile in profiles.items()
+            if self._project_matches_descriptor(profile, descriptor)
+        }
+
+        if matching_files:
+            logger.info(
+                "Project descriptor match for span=%s: %s",
+                descriptor.get("span_count"),
+                ", ".join(sorted(matching_files)),
+            )
+
+        if descriptor.get("sheet_intents"):
+            return self._apply_layered_project_sheet_ranking(
+                search_results,
+                descriptor,
+                keyword_candidates,
+                scoped_file_names,
+                matching_files,
+                profiles,
+            )
+
+        present_pages = {
+            (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            for doc, _ in search_results
+            if doc.metadata.get("file_name") and doc.metadata.get("page") is not None
+        }
+
+        filtered: List[tuple] = []
+        for doc, score in search_results:
+            file_name = str(doc.metadata.get("file_name") or "")
+            if file_name not in matching_files:
+                continue
+            if not self._is_general_plan_sheet(doc):
+                continue
+            filtered.append((doc, min(score, 0.0)))
+
+        for file_name in matching_files:
+            profile = profiles.get(file_name, {})
+            gp_doc = profile.get("gp_doc")
+            gp_page = profile.get("gp_page")
+            if not gp_doc or gp_page is None:
+                continue
+            if (file_name, int(gp_page)) in present_pages:
+                continue
+            filtered.append((gp_doc, 0.0))
+
+        best_gp_by_file: Dict[str, tuple] = {}
+        for doc, score in filtered:
+            file_name = str(doc.metadata.get("file_name") or "")
+            page_number = int(doc.metadata.get("page") or 0)
+            current = best_gp_by_file.get(file_name)
+            if not current or page_number < current[0]:
+                best_gp_by_file[file_name] = (page_number, doc, score)
+
+        if not matching_files:
+            return []
+
+        finalized = [(doc, score) for _, doc, score in best_gp_by_file.values()]
+        finalized.sort(key=lambda item: item[1])
+        return finalized
+
     def _apply_topology_layer_boost(self, search_results: List[tuple], query: str) -> List[tuple]:
         """Boost chunks with layered topology evidence for structure/bridge queries."""
         query_lower = (query or "").lower()
@@ -804,6 +1343,9 @@ class SearchAgent:
             "substructure",
             "foundation system",
             "cross reference",
+            "span",
+            "project profile",
+            "design intent",
         )
         if not any(token in query_lower for token in triggers):
             return search_results
@@ -816,13 +1358,19 @@ class SearchAgent:
             has_detail_layer = "[topology detail]" in blob
             has_cross_refs = "[topology cross references]" in blob
             has_classification = "[search classification]" in blob
+            has_project_profile = "[project profile]" in blob
             token_hits = sum(
                 1
                 for token in self._get_query_tokens(query)
                 if self._doc_contains_query_token(doc, token)
             )
 
-            if has_classification and token_hits >= 1:
+            if has_project_profile:
+                if self._parse_sheet_intents(query):
+                    adjusted = max(adjusted, score + 1.5)
+                elif token_hits >= 1:
+                    adjusted = min(adjusted, max(0.0, score - 0.92))
+            elif has_classification and token_hits >= 1:
                 adjusted = min(adjusted, max(0.0, score - 0.85))
             elif has_project_layer and token_hits >= 1:
                 adjusted = min(adjusted, max(0.0, score - 0.8))
@@ -956,6 +1504,19 @@ class SearchAgent:
     def _feedback_store_path(self) -> str:
         return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback.jsonl")
 
+    def _feedback_model_path(self) -> str:
+        return os.path.join(os.path.dirname(__file__), "data", "feedback", "search_feedback_model.json")
+
+    def _load_feedback_model(self) -> Dict:
+        path = self._feedback_model_path()
+        if not os.path.exists(path):
+            return {}
+        try:
+            with open(path, "r", encoding="utf-8") as handle:
+                return json.load(handle)
+        except Exception:
+            return {}
+
     def _normalize_scope(self, value: Optional[str]) -> str:
         return re.sub(r"\s+", " ", str(value or "").strip().lower())
 
@@ -970,21 +1531,57 @@ class SearchAgent:
                 tokens.add(token)
         return tokens
 
+    def _feedback_label_delta(self) -> Dict[str, float]:
+        return {
+            "best": -0.95,
+            "relevant": -0.75,
+            "irrelevant": 0.85,
+        }
+
+    def _feedback_source_weights(self, query: str, project_scope: Optional[str]) -> Dict[str, float]:
+        """Exact and generalized query weights for feedback lookup."""
+        query_key = self._normalize_query_text(query)
+        feedback_sources = {query_key: 1.0}
+
+        model = self._load_feedback_model()
+        for related_query, similarity in model.get("related_queries", {}).get(query_key, {}).items():
+            feedback_sources[related_query] = max(
+                feedback_sources.get(related_query, 0.0),
+                0.65 * float(similarity),
+            )
+
+        similar_queries = self._find_similar_queries_in_feedback(query, project_scope)
+        for sim_query, similarity_score in similar_queries.items():
+            feedback_sources[sim_query] = max(
+                feedback_sources.get(sim_query, 0.0),
+                0.55 * similarity_score,
+            )
+
+        if len(feedback_sources) > 1:
+            logger.info(
+                f"Feedback generalization for '{query}': "
+                f"using {len(feedback_sources) - 1} related query source(s)"
+            )
+
+        return feedback_sources
+
     def _find_similar_queries_in_feedback(self, query: str, project_scope: Optional[str]) -> Dict[str, float]:
         """
         Find queries in feedback store that are similar to the given query.
         Returns dict of {normalized_query: similarity_score (0.0-1.0)}.
-        Similarity is based on token overlap (at least 2 significant tokens).
         """
         path = self._feedback_store_path()
         if not os.path.exists(path):
             return {}
 
+        query_key = self._normalize_query_text(query)
         query_tokens = self._get_query_tokens(query)
         if not query_tokens:
             return {}
 
+        min_overlap = 1 if len(query_tokens) <= 3 else 2
         similar_queries: Dict[str, float] = {}
+        seen_queries: Set[str] = set()
 
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -997,21 +1594,27 @@ class SearchAgent:
                     except Exception:
                         continue
 
-                    # Feedback is GLOBAL - applies across all projects
                     record_query = str(record.get("query", ""))
                     normalized_record_query = self._normalize_query_text(record_query)
-
-                    # Skip exact match query (already handled with full weight)
-                    if normalized_record_query == self._normalize_query_text(query):
+                    if normalized_record_query == query_key:
                         continue
+                    if normalized_record_query in seen_queries:
+                        continue
+                    seen_queries.add(normalized_record_query)
 
                     record_tokens = self._get_query_tokens(record_query)
                     if not record_tokens:
                         continue
 
                     overlap = len(query_tokens & record_tokens)
-                    if overlap >= 2:
+                    contains = query_key in normalized_record_query or normalized_record_query in query_key
+                    similarity = 0.0
+                    if contains and overlap >= 1:
+                        similarity = 0.8
+                    elif overlap >= min_overlap:
                         similarity = overlap / len(query_tokens | record_tokens)
+
+                    if similarity > 0.0:
                         similar_queries[normalized_record_query] = max(
                             similar_queries.get(normalized_record_query, 0.0),
                             similarity,
@@ -1021,36 +1624,18 @@ class SearchAgent:
 
         return similar_queries
 
-    def _load_feedback_adjustments(self, query: str, project_scope: Optional[str]) -> Dict[tuple, float]:
+    def _iter_latest_feedback_labels(
+        self, feedback_sources: Dict[str, float]
+    ) -> Dict[tuple, tuple]:
         """
-        Load page-level score adjustments from recorded engineer feedback.
-        Includes exact query matches and generalized feedback from similar queries.
-        Feedback is GLOBAL across projects; project_scope is kept for compatibility.
+        Latest label per (file, page) across matching feedback queries.
+        Returns {(file, page): (label, weight)}.
         """
         path = self._feedback_store_path()
         if not os.path.exists(path):
             return {}
 
-        query_key = self._normalize_query_text(query)
-        adjustments: Dict[tuple, float] = defaultdict(float)
-
-        label_delta = {
-            "best": -0.35,
-            "relevant": -0.20,
-            "irrelevant": 0.35,
-        }
-
-        feedback_sources = {query_key: 1.0}
-        similar_queries = self._find_similar_queries_in_feedback(query, project_scope)
-        for sim_query, similarity_score in similar_queries.items():
-            feedback_sources[sim_query] = 0.5 * similarity_score
-
-        if similar_queries:
-            logger.info(
-                f"Feedback generalization for '{query}': "
-                f"found {len(similar_queries)} similar queries with token overlap"
-            )
-
+        latest: Dict[tuple, tuple] = {}
         try:
             with open(path, "r", encoding="utf-8") as f:
                 for line in f:
@@ -1063,13 +1648,14 @@ class SearchAgent:
                         continue
 
                     record_query = self._normalize_query_text(str(record.get("query", "")))
-                    if record_query not in feedback_sources:
+                    weight = feedback_sources.get(record_query)
+                    if weight is None:
                         continue
 
                     file_name = str(record.get("pdf_file_name", "")).strip()
                     page_number = record.get("page_number")
                     label = str(record.get("feedback", "")).strip().lower()
-                    if not file_name or page_number is None or label not in label_delta:
+                    if not file_name or page_number is None or label not in self._feedback_label_delta():
                         continue
 
                     try:
@@ -1077,16 +1663,129 @@ class SearchAgent:
                     except Exception:
                         continue
 
-                    key = (file_name, page_number)
-                    weight = feedback_sources[record_query]
-                    adjustments[key] += weight * label_delta[label]
+                    latest[(file_name, page_number)] = (label, weight)
         except Exception:
             return {}
 
-        for key in list(adjustments.keys()):
-            adjustments[key] = max(-1.0, min(1.0, adjustments[key]))
+        return latest
 
-        return dict(adjustments)
+    def _load_feedback_adjustments(self, query: str, project_scope: Optional[str]) -> Dict[tuple, float]:
+        """
+        Load page-level score adjustments from recorded engineer feedback.
+        Includes exact query matches and generalized feedback from similar queries.
+        Feedback is GLOBAL across projects; project_scope is kept for compatibility.
+        """
+        feedback_sources = self._feedback_source_weights(query, project_scope)
+        latest_labels = self._iter_latest_feedback_labels(feedback_sources)
+        if not latest_labels:
+            return {}
+
+        label_delta = self._feedback_label_delta()
+        adjustments: Dict[tuple, float] = {}
+        for key, (label, weight) in latest_labels.items():
+            adjustments[key] = max(-1.0, min(1.0, weight * label_delta[label]))
+
+        return adjustments
+
+    def _load_positive_feedback_pages(
+        self, query: str, project_scope: Optional[str]
+    ) -> Dict[tuple, str]:
+        """Return latest best/relevant pages for this query and related queries."""
+        feedback_sources = self._feedback_source_weights(query, project_scope)
+        latest_labels = self._iter_latest_feedback_labels(feedback_sources)
+        return {
+            key: label
+            for key, (label, _weight) in latest_labels.items()
+            if label in {"best", "relevant"}
+        }
+
+    def _resolve_feedback_page_document(
+        self,
+        file_name: str,
+        page_number: int,
+        keyword_candidates: List[Dict],
+    ) -> Optional[Document]:
+        for item in keyword_candidates:
+            metadata = item.get("metadata", {}) or {}
+            if str(metadata.get("file_name") or "") != file_name:
+                continue
+            page = metadata.get("page")
+            try:
+                page = int(page)
+            except Exception:
+                continue
+            if page != page_number:
+                continue
+            return Document(page_content=item.get("content", ""), metadata=metadata)
+
+        chunk = self.vector_store.get_page_chunk(file_name, page_number)
+        if not chunk:
+            return None
+        return Document(page_content=chunk.get("content", ""), metadata=chunk.get("metadata", {}))
+
+    def _inject_feedback_labeled_pages(
+        self,
+        search_results: List[tuple],
+        positive_pages: Dict[tuple, str],
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """Ensure engineer-labeled best/relevant pages appear in ranked results."""
+        if not positive_pages:
+            return search_results
+
+        present_pages = {
+            (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            for doc, _ in search_results
+            if doc.metadata.get("file_name") and doc.metadata.get("page") is not None
+        }
+        anchor_score = min(score for _, score in search_results) if search_results else 0.08
+
+        augmented = list(search_results)
+        injected = 0
+        for (file_name, page_number), label in positive_pages.items():
+            if scoped_file_names and file_name not in scoped_file_names:
+                continue
+            if (file_name, page_number) in present_pages:
+                continue
+
+            doc = self._resolve_feedback_page_document(
+                file_name, page_number, keyword_candidates
+            )
+            if not doc:
+                continue
+
+            score = 0.0 if label == "best" else min(anchor_score, 0.03)
+            augmented.append((doc, score))
+            injected += 1
+
+        if injected:
+            logger.info(f"Injected {injected} feedback-labeled page(s) into search results")
+
+        augmented.sort(key=lambda item: item[1])
+        return augmented
+
+    def _filter_strong_irrelevant_feedback(
+        self, search_results: List[tuple], adjustments: Dict[tuple, float]
+    ) -> List[tuple]:
+        """Drop pages with strong irrelevant feedback before rescoring survivors."""
+        filtered = []
+        for doc, score in search_results:
+            file_name = str(doc.metadata.get("file_name", "")).strip()
+            page_number = doc.metadata.get("page")
+            try:
+                page_number = int(page_number)
+            except Exception:
+                page_number = None
+
+            delta = adjustments.get((file_name, page_number), 0.0)
+            if delta >= 0.55:
+                continue
+            filtered.append((doc, score))
+        return filtered
 
     def _apply_feedback_adjustments(self, search_results: List[tuple], adjustments: Dict[tuple, float]) -> List[tuple]:
         """Apply page-level distance adjustments (lower is better)."""
@@ -1100,7 +1799,7 @@ class SearchAgent:
                 page_number = None
 
             delta = adjustments.get((file_name, page_number), 0.0)
-            rescored.append((doc, max(0.0, score + delta)))
+            rescored.append((doc, score + delta))
 
         rescored.sort(key=lambda x: x[1])
         return rescored

@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:22.347074",
+  "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+  "project_name": "55-1119_GoldenwestOc_As_BuiltWM",
+  "source_pages": [
+    1,
+    2
+  ],
+  "topology_version": "6",
+  "structured": {
+    "span_count": 2,
+    "interior_bents": [],
+    "bridge_type": "CIP Concrete Box Girder",
+    "structure_type": "bridge",
+    "superstructure": "CIP Concrete Box Girder",
+    "foundation_system": "Steel pipe",
+    "concrete_box_girder": true,
+    "is_bridge": true
+  },
+  "narrative": "The Goldenwest Overcrossing project involves the construction of a bridge located in Huntington Beach, California. The bridge is designed as a Cast-In-Place (CIP) Concrete Box Girder structure, which is a common choice for overcrossings due to its durability and ability to handle significant loads. The bridge spans across a roadway with a total of two spans, as indicated by the general plan layout. The absence of interior bents suggests a straightforward design, likely intended to minimize construction complexity and maintenance needs.\n\nThe structural system comprises abutments at each end, supported by steel pipe foundations. This choice of foundation is suitable for the soil conditions and load requirements of the area. The bridge's design includes various retaining walls, such as Caltrans Cast in Place Concrete Types 1, 2, and 7, which are used to manage soil and provide stability to the surrounding infrastructure. The bridge's layout and structural components indicate a focus on long-term performance and resilience, typical of infrastructure projects managed by the State of California Department of Transportation.",
+  "design_intent": [
+    "Designed to minimize maintenance with no interior bents.",
+    "CIP Concrete Box Girder chosen for durability and load capacity.",
+    "Steel pipe foundations selected for soil compatibility.",
+    "Retaining walls used for stability and soil management.",
+    "Focus on long-term performance and resilience."
+  ],
+  "key_sheets": [
+    {
+      "page": 1,
+      "title": "GENERAL PLAN NO. 1",
+      "role": "general plan layout"
+    },
+    {
+      "page": 2,
+      "title": "GENERAL PLAN NO. 1",
+      "role": "general plan layout"
+    }
+  ],
+  "evidence": [
+    "Span count inferred from GP layout: 2",
+    "Concrete box girder confirmed as bridge type",
+    "General Plan pages 1 and 2 indicate bridge structure"
+  ],
+  "uncertainties": []
+}

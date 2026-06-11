@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:29.394166",
+  "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+  "project_name": "55-1127_WestminsterOC_As_Built",
+  "source_pages": [
+    1,
+    2
+  ],
+  "topology_version": "6",
+  "structured": {
+    "span_count": 2,
+    "interior_bents": [],
+    "bridge_type": "CIP Concrete Box Girder",
+    "structure_type": "bridge",
+    "superstructure": "CIP Concrete Box Girder",
+    "foundation_system": "Steel pipe",
+    "concrete_box_girder": true,
+    "is_bridge": true
+  },
+  "narrative": "The Westminster Overcrossing project involves the construction of a two-span bridge using a cast-in-place (CIP) concrete box girder structural system. The bridge is designed to span a roadway, providing a durable and efficient crossing solution. The absence of interior bents suggests a clean and straightforward design, likely aimed at minimizing disruption to the underlying traffic and simplifying construction logistics.\n\nThe bridge's substructure consists of abutments supported by steel pipe foundations, indicating a focus on stability and load distribution. The use of CIP concrete box girders for the superstructure is a common choice for its strength and adaptability, allowing for a seamless integration with the surrounding infrastructure. The design intent appears to prioritize longevity and low maintenance, typical of infrastructure projects managed by the State of California Department of Transportation.",
+  "design_intent": [
+    "Minimize traffic disruption with a two-span design",
+    "Utilize CIP concrete box girders for strength and durability",
+    "Employ steel pipe foundations for robust support",
+    "Simplify construction with a straightforward span layout",
+    "Ensure low maintenance and long-term performance"
+  ],
+  "key_sheets": [
+    {
+      "page": 1,
+      "title": "GENERAL PLAN NO. 1",
+      "role": "general plan layout"
+    },
+    {
+      "page": 2,
+      "title": "GENERAL PLAN NO. 2",
+      "role": "general plan layout"
+    }
+  ],
+  "evidence": [
+    "Inferred span count from GP layout: 2",
+    "Concrete box girder: True",
+    "General Plan Page 1 and 2 confirm bridge type and layout"
+  ],
+  "uncertainties": []
+}

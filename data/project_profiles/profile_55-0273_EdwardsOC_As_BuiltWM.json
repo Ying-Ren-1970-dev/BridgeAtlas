@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:16.348837",
+  "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+  "project_name": "55-0273_EdwardsOC_As_BuiltWM",
+  "source_pages": [
+    1,
+    2
+  ],
+  "topology_version": "6",
+  "structured": {
+    "span_count": 2,
+    "interior_bents": [
+      2
+    ],
+    "bridge_type": "CIP Concrete Box Girder",
+    "structure_type": "bridge",
+    "superstructure": "CIP Concrete Box Girder",
+    "foundation_system": "Steel pipe",
+    "concrete_box_girder": true,
+    "is_bridge": true
+  },
+  "narrative": "The Edwards Overcrossing project involves the construction of a two-span bridge utilizing a cast-in-place (CIP) concrete box girder design. This structural system is supported by abutments at either end and an interior bent, providing stability and load distribution across the spans. The bridge is designed to facilitate vehicular traffic over an existing roadway, enhancing connectivity and transportation efficiency in the area. The use of concrete box girders suggests a focus on durability and reduced maintenance, which are critical for long-term infrastructure projects.\n\nThe bridge's foundation system employs steel pipe piles, indicating a need to address specific geotechnical conditions, such as soil stability or load-bearing capacity. This foundation choice supports the substantial weight of the concrete superstructure and ensures the bridge's resilience against environmental factors. The design intent appears to prioritize both structural integrity and longevity, reflecting a comprehensive approach to modern bridge engineering.",
+  "design_intent": [
+    "Two-span design for efficient load distribution",
+    "CIP concrete box girder for durability and reduced maintenance",
+    "Steel pipe foundation to address geotechnical conditions",
+    "Interior bent to provide additional structural support",
+    "Focus on long-term resilience and structural integrity"
+  ],
+  "key_sheets": [
+    {
+      "page": 1,
+      "title": "GENERAL PLAN No. 1",
+      "role": "general plan layout"
+    },
+    {
+      "page": 2,
+      "title": "GENERAL PLAN No. 1",
+      "role": "general plan layout"
+    }
+  ],
+  "evidence": [
+    "Inferred span count from GP layout: 2",
+    "Concrete box girder: True",
+    "Interior bents on GP: [2]",
+    "General Plan pages: [1, 2]"
+  ],
+  "uncertainties": []
+}

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:32.875703",
+  "project_count": 5,
+  "projects": [
+    {
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "project_name": "55-0273_EdwardsOC_As_BuiltWM",
+      "span_count": 2,
+      "bridge_type": "CIP Concrete Box Girder",
+      "profile_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\data\\project_profiles\\profile_55-0273_EdwardsOC_As_BuiltWM.json"
+    },
+    {
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "project_name": "55-1119_GoldenwestOc_As_BuiltWM",
+      "span_count": 2,
+      "bridge_type": "CIP Concrete Box Girder",
+      "profile_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\data\\project_profiles\\profile_55-1119_GoldenwestOc_As_BuiltWM.json"
+    },
+    {
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "project_name": "55-1121_MagnoliaOc_As_BuiltWM",
+      "span_count": 2,
+      "bridge_type": "CIP Concrete Box Girder",
+      "profile_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\data\\project_profiles\\profile_55-1121_MagnoliaOc_As_BuiltWM.json"
+    },
+    {
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "project_name": "55-1127_WestminsterOC_As_Built",
+      "span_count": 2,
+      "bridge_type": "CIP Concrete Box Girder",
+      "profile_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\data\\project_profiles\\profile_55-1127_WestminsterOC_As_Built.json"
+    },
+    {
+      "file_name": "Fresno 180 Ramp.pdf",
+      "project_name": "Fresno 180 Ramp",
+      "span_count": 3,
+      "bridge_type": "Girder, Girder-to-slab connection, Not specified",
+      "profile_path": "C:\\Users\\alexl\\Desktop\\xttribute\\Librarian\\data\\project_profiles\\profile_Fresno 180 Ramp.json"
+    }
+  ]
+}

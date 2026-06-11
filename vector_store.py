@@ -363,6 +363,38 @@ class VectorStore:
         except Exception as e:
             print(f"Error getting keyword candidates: {str(e)}")
             return []
+
+    def get_page_chunk(self, file_name: str, page_number: int) -> Optional[Dict]:
+        """Fetch a single indexed chunk for an exact file/page pair."""
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        try:
+            collection = self.vectorstore._collection
+            results = collection.get(
+                where={
+                    "$and": [
+                        {"file_name": file_name},
+                        {"page": int(page_number)},
+                    ]
+                },
+                include=["documents", "metadatas"],
+                limit=1,
+            )
+            ids = results.get("ids") or []
+            docs = results.get("documents") or []
+            metas = results.get("metadatas") or []
+            if not ids or not docs:
+                return None
+
+            return {
+                "id": ids[0],
+                "content": docs[0],
+                "metadata": metas[0] or {},
+            }
+        except Exception as e:
+            print(f"Error getting page chunk for {file_name} p{page_number}: {str(e)}")
+            return None
     
     def get_collection_info(self) -> Dict:
         """Get information about the current collection."""
@@ -633,6 +665,55 @@ class VectorStore:
         except Exception as e:
             print(f"  Error merging deep vision topology for {file_name}: {str(e)}")
             raise
+
+    def merge_project_profile(self, file_name: str, profile: Dict) -> bool:
+        """
+        Add or replace a single project-overview chunk for cross-project search.
+        """
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        from project_profile_builder import ProjectProfileBuilder
+
+        try:
+            collection = self.vectorstore._collection
+            existing = collection.get(
+                where={
+                    "$and": [
+                        {"file_name": file_name},
+                        {"index_level": "project_overview"},
+                    ]
+                },
+                include=["metadatas"],
+            )
+            if existing.get("ids"):
+                collection.delete(ids=existing["ids"])
+
+            structured = profile.get("structured") or {}
+            project_meta = profile.get("project_name", "")
+            profile_text = ProjectProfileBuilder.profile_to_search_text(profile)
+
+            metadata = {
+                "file_name": file_name,
+                "project_name": project_meta,
+                "page": 0,
+                "chunk_id": 0,
+                "index_level": "project_overview",
+                "profile_version": str(profile.get("version", 1)),
+                "span_count": structured.get("span_count"),
+                "bridge_type": structured.get("bridge_type") or "",
+                "structure_type": structured.get("structure_type") or "",
+                "concrete_box_girder": str(bool(structured.get("concrete_box_girder"))).lower(),
+                "plan_sheet_type": "project_overview",
+                "plan_primary_type": "Project Overview",
+                "topology_source": "project_profile",
+            }
+
+            self.vectorstore.add_texts(texts=[profile_text], metadatas=[metadata])
+            return True
+        except Exception as e:
+            print(f"  Error merging project profile for {file_name}: {str(e)}")
+            return False
 
     def merge_all_deep_vision_topology(self) -> int:
         """Merge deep-vision topology for every enhanced_topology_*.json file."""

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "built_at": "2026-06-10T23:47:32.611586",
+  "file_name": "Fresno 180 Ramp.pdf",
+  "project_name": "Fresno 180 Ramp",
+  "source_pages": [
+    1
+  ],
+  "topology_version": "6",
+  "structured": {
+    "span_count": 3,
+    "interior_bents": [
+      5,
+      10
+    ],
+    "bridge_type": "Girder, Girder-to-slab connection, Not specified",
+    "structure_type": "retaining wall",
+    "superstructure": "Concrete Slab, Girder, Girder-to-slab connection, Not specified",
+    "foundation_system": "CIDH pile - drilled shaft",
+    "concrete_box_girder": true,
+    "is_bridge": true
+  },
+  "narrative": "The Fresno 180 Ramp project involves the construction of a bridge with a three-span layout, as indicated by the general plan layout. The bridge is designed as a concrete box girder structure, which is a common choice for its strength and durability. The interior bents are located at Bent 5 and Bent 10, providing support for the spans. The superstructure consists of concrete slabs and girders, with connections to the substructure through columns and bearing pads. The foundation system utilizes Cast-In-Drilled-Hole (CIDH) piles, specifically Type I and II shafts, to ensure stability and load transfer to the ground.\n\nThe design intent appears to focus on providing a robust and durable bridge structure capable of handling significant loads. The use of concrete box girders suggests an emphasis on minimizing maintenance while maximizing the lifespan of the bridge. The inclusion of CIDH piles as the foundation system indicates a need for deep foundations, likely due to soil conditions or load requirements. The bridge's layout and structural system are designed to efficiently manage both vertical and lateral loads, ensuring safety and performance over time.",
+  "design_intent": [
+    "Concrete box girders for durability and reduced maintenance",
+    "Three-span layout for efficient load distribution",
+    "CIDH piles for deep foundation stability",
+    "Interior bents at strategic locations for support",
+    "Robust design to handle significant loads"
+  ],
+  "key_sheets": [
+    {
+      "page": 1,
+      "title": "GENERAL PLAN",
+      "role": "general plan layout"
+    }
+  ],
+  "evidence": [
+    "Inferred span count from GP layout: 3",
+    "Concrete box girder: True",
+    "Interior bents on GP: [5, 10]"
+  ],
+  "uncertainties": []
+}

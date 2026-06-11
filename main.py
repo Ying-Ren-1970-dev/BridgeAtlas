@@ -12,6 +12,8 @@ from search_agent import SearchAgent
 from page_classifier import PageClassifier
 from enriched_metadata_graph_builder import GraphIntegrationManager
 from classification_training import SearchClassificationTrainer
+from search_feedback_learner import learn_from_feedback
+from project_profile_builder import ProjectProfileBuilder
 from storage_adapter import storage
 
 
@@ -736,6 +738,48 @@ class LibrarianApp:
         print(f"  Page labels: {stats.get('page_labels', 0)}")
         print(f"  Output: {trainer.cache_file}")
 
+    def build_project_profiles(self, merge_to_vector_store: bool = True):
+        """
+        Build LLM-synthesized project profiles from GP sheets and topology,
+        then merge project-overview chunks into the vector knowledge base.
+        """
+        print("=" * 60)
+        print("BUILDING PROJECT PROFILES")
+        print("=" * 60)
+        print("(GP layout + topology summary + design narrative)")
+
+        builder = ProjectProfileBuilder()
+        result = builder.run(self.vector_store, merge_to_vector_store=merge_to_vector_store)
+
+        print("\n" + "=" * 60)
+        print("PROJECT PROFILES COMPLETE")
+        print("=" * 60)
+        print(f"Profiles built: {result.get('profile_count', 0)}")
+        print(f"Merged to vector store: {result.get('merged_count', 0)}")
+        print(f"Output directory: {result.get('profiles_dir')}")
+        print(f"Manifest: {result.get('manifest_path')}")
+
+    def learn_from_search_feedback(self, sync_terms: bool = True):
+        """Build feedback model from engineer labels and sync learned terminology."""
+        print("=" * 60)
+        print("LEARNING FROM SEARCH FEEDBACK")
+        print("=" * 60)
+
+        result = learn_from_feedback(sync_terms=sync_terms)
+
+        print("\n✓ Feedback model generated")
+        print(f"  Model: {result.get('model_path')}")
+        print(f"  Source records: {result.get('source_records', 0)}")
+        print(f"  Unique queries: {result.get('query_count', 0)}")
+        print(f"  Label counts: {result.get('label_counts', {})}")
+        print(f"  Related query links: {result.get('related_query_links', 0)}")
+
+        synced = result.get("terminology_synced") or []
+        if synced:
+            print("\n✓ Terminology synced from feedback acronyms:")
+            for item in synced:
+                print(f"  - {item}")
+
 
 def main():
     """Main entry point for the application."""
@@ -755,6 +799,8 @@ def main():
         print("  python main.py merge-sheet-categories - Add title block category to every sheet")
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
+        print("  python main.py learn-from-feedback - Build feedback model from search-result labels")
+        print("  python main.py build-project-profiles - Build project overview profiles for search")
         print("  python main.py search <query>    - Search knowledge base")
         print("  python main.py sync-cloud        - Push local vector store and metadata to cloud storage")
         print("  python main.py clean-excluded    - Remove excluded projects from index and metadata")
@@ -819,6 +865,12 @@ def main():
 
     elif command == 'train-classifications':
         app.train_search_classifications()
+
+    elif command == 'learn-from-feedback':
+        app.learn_from_search_feedback()
+
+    elif command == 'build-project-profiles':
+        app.build_project_profiles()
     
     elif command == 'search':
         if len(sys.argv) < 3:
