@@ -17,6 +17,11 @@ from title_block_catalog import TitleBlockCatalog
 
 class VectorStore:
     """Manages vector embeddings and semantic search using ChromaDB."""
+
+    @staticmethod
+    def is_drawing_region_chunk(doc_text: str, doc_metadata: Optional[Dict] = None) -> bool:
+        """True when a chunk was produced by drawing-region rechunking."""
+        return "[DRAWING REGION CHUNK]" in (doc_text or "")
     
     def __init__(self):
         """Initialize the vector store."""
@@ -535,6 +540,8 @@ class VectorStore:
             for i, (doc_id, doc_text, doc_metadata) in enumerate(
                 zip(results['ids'], results['documents'], results['metadatas'])
             ):
+                if self.is_drawing_region_chunk(doc_text, doc_metadata):
+                    continue
                 page_num = doc_metadata.get('page')
                 
                 # Check if text already has enrichment (skip if already enriched)
@@ -653,6 +660,8 @@ class VectorStore:
             for doc_id, doc_text, doc_metadata in zip(
                 results["ids"], results["documents"], results["metadatas"]
             ):
+                if self.is_drawing_region_chunk(doc_text, doc_metadata):
+                    continue
                 if (
                     doc_metadata.get("layered_topology_version")
                     == EnhancedTopologyLoader.LAYERED_TOPOLOGY_VERSION
@@ -821,6 +830,8 @@ class VectorStore:
             for doc_id, doc_text, doc_metadata in zip(
                 results["ids"], results["documents"], results["metadatas"]
             ):
+                if self.is_drawing_region_chunk(doc_text, doc_metadata):
+                    continue
                 page_num = doc_metadata.get("page")
                 if not page_num or int(page_num) not in catalog:
                     continue

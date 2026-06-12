@@ -2,6 +2,7 @@
 from pathlib import Path
 from typing import Optional
 import json
+from datetime import datetime, timezone
 
 import config
 from pdf_processor import PDFProcessor
@@ -24,6 +25,11 @@ from chunk_inspector import (
 )
 from drawing_chunk_training import DrawingChunkTrainer
 from drawing_region_chunker import DrawingChunkApplicator
+from drawing_chunk_auto_train import (
+    DrawingChunkAutoTrainer,
+    AutoTrainRunReport,
+    VALIDATION_REPORT_PATH,
+)
 
 
 class LibrarianApp:
@@ -734,6 +740,226 @@ class LibrarianApp:
         model = trainer.train(use_cache=use_cache)
         return model
 
+    def _resolve_pdf_path(self, file_name: str) -> Optional[Path]:
+        """Resolve an indexed PDF file name to a local path."""
+        project = self.metadata_manager.get_project_metadata(file_name)
+        if project:
+            file_path = Path(project.get("file_path", ""))
+            if file_path.exists():
+                return file_path
+        candidate = config.PROJECTS_FOLDER / file_name
+        if candidate.exists():
+            return candidate
+        try:
+            resolved = storage._resolve_local_pdf_path(file_name)
+            return Path(resolved) if resolved else None
+        except Exception:
+            return None
+
+    def _merge_cad_for_files(self, file_names: list) -> int:
+        """Merge CAD drawing knowledge for specific PDFs only."""
+        total = 0
+        for name in file_names:
+            print(f"\nMerging CAD drawing knowledge: {name}")
+            total += self.vector_store.merge_cad_drawing_knowledge(name)
+        return total
+
+    def auto_train_rechunk(
+        self,
+        file_name: Optional[str] = None,
+        *,
+        validate: bool = True,
+        rechunk_retries: int = 1,
+        force_refresh_vision: bool = False,
+        sync_cloud: bool = False,
+        cad: bool = True,
+        verbose: bool = False,
+    ) -> AutoTrainRunReport:
+        """Train vision on annotated pages, rechunk, validate, and optionally sync."""
+        from chunk_inspector import resolve_file_name
+
+        if file_name:
+            resolved = resolve_file_name(file_name)
+            if not resolved:
+                print(f"Error: No indexed PDF matches '{file_name}'")
+                return AutoTrainRunReport(
+                    trained_at="",
+                    vision_passed=0,
+                    vision_total=0,
+                    vision_ready=False,
+                )
+            targets = [resolved]
+        else:
+            targets = sorted(self.metadata_manager.get_active_pdf_file_names())
+
+        self.vector_store.initialize_vectorstore()
+        auto_trainer = DrawingChunkAutoTrainer()
+        report = auto_trainer.run_pipeline_training(
+            targets,
+            self.vector_store,
+            auto_train_vision=True,
+            validate=validate,
+            rechunk_retries=rechunk_retries,
+            force_refresh_vision=force_refresh_vision,
+            verbose=verbose,
+        )
+
+        if cad:
+            self._merge_cad_for_files(targets)
+
+        if sync_cloud and cloud_sync_configured():
+            print("\nSaving to cloud after auto-train rechunk...")
+            storage_for_cloud_sync().sync_vector_db_to_cloud()
+
+        return report
+
+    def process_pdf_pipeline(
+        self,
+        file_name: Optional[str] = None,
+        *,
+        ingest: bool = True,
+        enrich: bool = True,
+        rechunk: bool = True,
+        auto_train: bool = True,
+        validate_rechunk: bool = True,
+        rechunk_retries: int = 1,
+        cad: bool = True,
+        topology: bool = False,
+        sync_cloud: bool = False,
+        force_refresh_vision: bool = False,
+    ) -> int:
+        """
+        Run the full Librarian PDF processing pipeline per project.
+
+        Recommended order (avoids metadata bleed on drawing-region chunks):
+          ingest -> enrich -> rechunk -> cad -> topology (optional) -> sync
+
+        Saves vector index and metadata after each project.
+        """
+        from chunk_inspector import resolve_file_name
+
+        if file_name:
+            resolved = resolve_file_name(file_name)
+            if not resolved:
+                print(f"Error: No indexed PDF matches '{file_name}'")
+                return 0
+            targets = [resolved]
+        else:
+            targets = sorted(self.metadata_manager.get_active_pdf_file_names())
+
+        if not targets:
+            print("No active PDFs to process.")
+            return 0
+
+        auto_trainer = DrawingChunkAutoTrainer() if rechunk else None
+        vision_model = None
+        if rechunk and auto_train:
+            vision_model = auto_trainer.run_vision_training(
+                use_cache=not force_refresh_vision,
+                force_refresh=force_refresh_vision,
+            )
+            if not vision_model.ready_for_apply:
+                print(
+                    f"Warning: vision training passed {vision_model.passed_examples}/"
+                    f"{vision_model.total_examples} examples; continuing."
+                )
+        elif rechunk:
+            vision_model = DrawingChunkTrainer.load_model()
+            if not vision_model:
+                print("Warning: No drawing chunk model; skipping rechunk stage.")
+                print("  Run with auto-train enabled or: python main.py train-drawing-chunks")
+                rechunk = False
+                auto_trainer = None
+
+        self.vector_store.initialize_vectorstore()
+        total_chunks = 0
+        file_validations = []
+
+        print("=" * 60)
+        print("LIBRARIAN PDF PROCESSING PIPELINE")
+        print("=" * 60)
+        print(f"Projects: {len(targets)}")
+        print(
+            "Stages: "
+            + ", ".join(
+                stage
+                for stage, enabled in [
+                    ("ingest", ingest),
+                    ("enrich", enrich),
+                    ("auto-train", rechunk and auto_train),
+                    ("rechunk+validate", rechunk and validate_rechunk),
+                    ("rechunk", rechunk and not validate_rechunk),
+                    ("cad", cad),
+                    ("topology", topology),
+                    ("sync", sync_cloud),
+                ]
+                if enabled
+            )
+        )
+
+        for resolved in targets:
+            print(f"\n{'=' * 60}")
+            print(f"Pipeline: {resolved}")
+            print(f"{'=' * 60}")
+
+            pdf_path = self._resolve_pdf_path(resolved)
+            if ingest:
+                if not pdf_path or not pdf_path.exists():
+                    print(f"  Skip ingest: PDF not found for {resolved}")
+                else:
+                    self.update_file(pdf_path)
+
+            if enrich:
+                if not pdf_path or not pdf_path.exists():
+                    print(f"  Skip enrich: PDF not found for {resolved}")
+                else:
+                    self.enrich_metadata(pdf_path)
+
+            if rechunk and auto_trainer:
+                added, validation = auto_trainer.apply_with_validation(
+                    file_name=resolved,
+                    vector_store=self.vector_store,
+                    max_retries=rechunk_retries,
+                    force_refresh=force_refresh_vision,
+                    validate=validate_rechunk,
+                )
+                total_chunks += added
+                file_validations.append(validation)
+
+            if cad:
+                self._merge_cad_for_files([resolved])
+
+            if topology:
+                updated = self.vector_store.merge_deep_vision_topology(resolved)
+                print(f"  Topology merge: {updated} chunks updated")
+
+            if sync_cloud and cloud_sync_configured():
+                print(f"  Saving {resolved} to cloud...")
+                storage_for_cloud_sync().sync_vector_db_to_cloud()
+
+        if file_validations and validate_rechunk:
+            model = vision_model or DrawingChunkTrainer.load_model()
+            report = AutoTrainRunReport(
+                trained_at=datetime.now(timezone.utc).isoformat(),
+                vision_passed=model.passed_examples if model else 0,
+                vision_total=model.total_examples if model else 0,
+                vision_ready=model.ready_for_apply if model else False,
+                files=file_validations,
+            )
+            VALIDATION_REPORT_PATH.write_text(
+                json.dumps(report.to_dict(), indent=2),
+                encoding="utf-8",
+            )
+            DrawingChunkAutoTrainer._print_summary(report)
+
+        print("\n" + "=" * 60)
+        print("PDF PROCESSING PIPELINE COMPLETE")
+        print("=" * 60)
+        print(f"Projects processed: {len(targets)}")
+        if rechunk:
+            print(f"Region chunks indexed: {total_chunks}")
+        return total_chunks
+
     def apply_drawing_chunks(
         self,
         file_name: Optional[str] = None,
@@ -754,6 +980,8 @@ class LibrarianApp:
 
         applicator = DrawingChunkApplicator()
         self.vector_store.initialize_vectorstore()
+        processed_files: list = []
+        total = 0
         if file_name:
             from chunk_inspector import resolve_file_name
 
@@ -768,16 +996,27 @@ class LibrarianApp:
                 force_refresh=force_refresh,
                 training_pages_only=training_pages_only,
             )
+            processed_files = [resolved]
         else:
-            total = applicator.apply_all(
-                vector_store=self.vector_store,
-                use_cache=use_cache,
-                force_refresh=force_refresh,
-                training_pages_only=training_pages_only,
-            )
+            for resolved in sorted(self.metadata_manager.get_active_pdf_file_names()):
+                if training_pages_only:
+                    from drawing_chunk_examples import TRAINING_EXAMPLES
 
-        print("\nMerging CAD drawing knowledge into re-chunked documents...")
-        self.merge_cad_drawing_knowledge()
+                    if not any(ex["file_name"] == resolved for ex in TRAINING_EXAMPLES):
+                        continue
+                print(f"\nApplying drawing-region chunking: {resolved}")
+                total += applicator.apply_file(
+                    file_name=resolved,
+                    vector_store=self.vector_store,
+                    use_cache=use_cache,
+                    force_refresh=force_refresh,
+                    training_pages_only=training_pages_only,
+                )
+                processed_files.append(resolved)
+
+        if processed_files:
+            print("\nMerging CAD drawing knowledge into re-chunked documents...")
+            self._merge_cad_for_files(processed_files)
         print(f"\nDrawing-region chunk apply complete: {total} chunks indexed")
         return total
 
@@ -910,6 +1149,12 @@ def main():
     if len(sys.argv) < 2:
         print("Usage:")
         print("  python main.py build [--clear]   - Build knowledge base from scratch")
+        print("  python main.py process-pipeline [--file <pdf>] [--no-ingest] [--no-enrich] [--no-rechunk]")
+        print("      [--no-auto-train] [--no-validate-rechunk] [--rechunk-retries N]")
+        print("      [--no-cad] [--topology] [--sync-cloud] [--force-refresh]")
+        print("      - Full per-PDF pipeline: ingest -> enrich -> auto-train -> rechunk -> validate -> cad")
+        print("  python main.py auto-train-rechunk [--file <pdf>] [--rechunk-retries N] [--sync-cloud]")
+        print("      - Vision train + rechunk + inspect training pages (no ingest/enrich)")
         print("  python main.py update <file>     - Update a specific file (re-process with Vision)")
         print("  python main.py enrich <file>     - Enrich single file with page classification & title blocks")
         print("  python main.py enrich-kb         - Add enrichment to ALL existing documents (NO API calls)")
@@ -940,6 +1185,52 @@ def main():
     if command == 'build':
         clear = '--clear' in sys.argv
         app.build_knowledge_base(clear_existing=clear)
+
+    elif command == 'process-pipeline':
+        file_name = None
+        if '--file' in sys.argv:
+            idx = sys.argv.index('--file')
+            if idx + 1 < len(sys.argv):
+                file_name = sys.argv[idx + 1]
+        rechunk_retries = 1
+        if '--rechunk-retries' in sys.argv:
+            idx = sys.argv.index('--rechunk-retries')
+            if idx + 1 < len(sys.argv):
+                rechunk_retries = max(0, int(sys.argv[idx + 1]))
+        app.process_pdf_pipeline(
+            file_name=file_name,
+            ingest='--no-ingest' not in sys.argv,
+            enrich='--no-enrich' not in sys.argv,
+            rechunk='--no-rechunk' not in sys.argv,
+            auto_train='--no-auto-train' not in sys.argv,
+            validate_rechunk='--no-validate-rechunk' not in sys.argv,
+            rechunk_retries=rechunk_retries,
+            cad='--no-cad' not in sys.argv,
+            topology='--topology' in sys.argv,
+            sync_cloud='--sync-cloud' in sys.argv,
+            force_refresh_vision='--force-refresh' in sys.argv,
+        )
+
+    elif command == 'auto-train-rechunk':
+        file_name = None
+        if '--file' in sys.argv:
+            idx = sys.argv.index('--file')
+            if idx + 1 < len(sys.argv):
+                file_name = sys.argv[idx + 1]
+        rechunk_retries = 1
+        if '--rechunk-retries' in sys.argv:
+            idx = sys.argv.index('--rechunk-retries')
+            if idx + 1 < len(sys.argv):
+                rechunk_retries = max(0, int(sys.argv[idx + 1]))
+        app.auto_train_rechunk(
+            file_name=file_name,
+            validate='--no-validate' not in sys.argv,
+            rechunk_retries=rechunk_retries,
+            force_refresh_vision='--force-refresh' in sys.argv,
+            sync_cloud='--sync-cloud' in sys.argv,
+            cad='--no-cad' not in sys.argv,
+            verbose='--verbose' in sys.argv,
+        )
     
     elif command == 'update':
         if len(sys.argv) < 3:

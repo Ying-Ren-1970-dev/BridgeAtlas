@@ -1,0 +1,99 @@
+{
+  "trained_at": "2026-06-12T09:08:09.725729+00:00",
+  "vision_passed": 4,
+  "vision_total": 6,
+  "vision_ready": true,
+  "all_training_pages_passed": false,
+  "files": [
+    {
+      "file_name": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+      "has_training_pages": false,
+      "pages_passed": 0,
+      "pages_total": 0,
+      "passed": true,
+      "pages": []
+    },
+    {
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "has_training_pages": true,
+      "pages_passed": 0,
+      "pages_total": 1,
+      "passed": false,
+      "pages": [
+        {
+          "example_id": "westminster_abutment_3_layout",
+          "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 11,
+          "passed": false,
+          "chunk_count": 3,
+          "expected_count": 3,
+          "mixed_chunks": 3,
+          "missing_labels": []
+        }
+      ]
+    },
+    {
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "has_training_pages": true,
+      "pages_passed": 0,
+      "pages_total": 1,
+      "passed": false,
+      "pages": [
+        {
+          "example_id": "magnolia_bent_layout_1",
+          "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 10,
+          "passed": false,
+          "chunk_count": 2,
+          "expected_count": 4,
+          "mixed_chunks": 0,
+          "missing_labels": [
+            "PLAN STAGE 1",
+            "ELEVATION STAGE 1",
+            "SECTION B-B",
+            "SECTION A-A"
+          ]
+        }
+      ]
+    },
+    {
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "has_training_pages": true,
+      "pages_passed": 0,
+      "pages_total": 3,
+      "passed": false,
+      "pages": [
+        {
+          "example_id": "goldenwest_abutment_details_2",
+          "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 17,
+          "passed": false,
+          "chunk_count": 5,
+          "expected_count": 5,
+          "mixed_chunks": 1,
+          "missing_labels": []
+        },
+        {
+          "example_id": "goldenwest_abutment_details_6",
+          "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 21,
+          "passed": false,
+          "chunk_count": 7,
+          "expected_count": 7,
+          "mixed_chunks": 6,
+          "missing_labels": []
+        },
+        {
+          "example_id": "goldenwest_chain_link_railing_details_1",
+          "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 61,
+          "passed": false,
+          "chunk_count": 10,
+          "expected_count": 6,
+          "mixed_chunks": 10,
+          "missing_labels": []
+        }
+      ]
+    }
+  ]
+}

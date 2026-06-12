@@ -304,6 +304,7 @@ class SearchAgent:
                 project_descriptor,
                 keyword_candidates,
                 scoped_file_names,
+                query=query,
             )
         elif sheet_level_query:
             search_results = self._apply_sheet_intent_ranking(
@@ -311,6 +312,7 @@ class SearchAgent:
                 sheet_level_query,
                 keyword_candidates,
                 scoped_file_names,
+                query=query,
             )
 
         search_results = self._filter_project_overview_pages(search_results, query)
@@ -1037,6 +1039,7 @@ class SearchAgent:
         descriptor: Dict,
         keyword_candidates: List[Dict],
         scoped_file_names: Set[str],
+        query: Optional[str] = None,
     ) -> List[tuple]:
         """Rank sheet-level lookups within matching bridge projects."""
         target_files = scoped_file_names or set(self.metadata_manager.get_all_projects().keys())
@@ -1065,6 +1068,7 @@ class SearchAgent:
             scoped_file_names,
             matching_files,
             profiles,
+            query=query,
         )
 
     def _parse_project_descriptor_query(self, query: str) -> Optional[Dict]:
@@ -1277,6 +1281,78 @@ class SearchAgent:
 
         return strength
 
+    def _preserve_engineer_best_pages_for_sheet_ranking(
+        self,
+        query: Optional[str],
+        ranked_results: List[tuple],
+        search_results: List[tuple],
+        keyword_candidates: List[Dict],
+        scoped_file_names: Set[str],
+    ) -> List[tuple]:
+        """Keep exact-query Best labels even when sheet-intent strength is below threshold."""
+        if not query or not self._is_detail_intent_query(query):
+            return ranked_results
+
+        exact_labels = self._load_exact_feedback_labels(query)
+        best_pages = sorted(
+            {
+                (file_name, page_number)
+                for (file_name, page_number), (label, _weight) in exact_labels.items()
+                if label == "best"
+            }
+        )
+        if not best_pages:
+            return ranked_results
+
+        present_pages = {
+            (
+                str(doc.metadata.get("file_name") or ""),
+                int(doc.metadata.get("page") or 0),
+            )
+            for doc, _ in ranked_results
+            if doc.metadata.get("file_name") is not None and doc.metadata.get("page") is not None
+        }
+        docs_by_page: Dict[tuple, Document] = {}
+        for doc, _ in search_results:
+            file_name = str(doc.metadata.get("file_name") or "")
+            page_number = doc.metadata.get("page")
+            if not file_name or page_number is None:
+                continue
+            docs_by_page[(file_name, int(page_number))] = doc
+
+        augmented = list(ranked_results)
+        injected = 0
+        for file_name, page_number in best_pages:
+            if scoped_file_names and file_name not in scoped_file_names:
+                continue
+            if (file_name, page_number) in present_pages:
+                continue
+
+            doc = docs_by_page.get((file_name, page_number))
+            if not doc:
+                doc = self._resolve_feedback_page_document(
+                    file_name,
+                    page_number,
+                    keyword_candidates,
+                    allow_placeholder=True,
+                )
+            if not doc:
+                continue
+
+            augmented.append((doc, -0.99))
+            present_pages.add((file_name, page_number))
+            injected += 1
+
+        if injected:
+            logger.info(
+                "Preserved %s engineer Best page(s) through sheet-intent ranking for '%s'",
+                injected,
+                query,
+            )
+
+        augmented.sort(key=lambda item: item[1])
+        return augmented
+
     def _apply_layered_project_sheet_ranking(
         self,
         search_results: List[tuple],
@@ -1285,6 +1361,7 @@ class SearchAgent:
         scoped_file_names: Set[str],
         matching_files: Set[str],
         profiles: Dict[str, Dict],
+        query: Optional[str] = None,
     ) -> List[tuple]:
         """
         Layer 1: matching projects by span/material.
@@ -1335,7 +1412,13 @@ class SearchAgent:
             consider_doc(doc)
 
         if not page_strength:
-            return []
+            return self._preserve_engineer_best_pages_for_sheet_ranking(
+                query,
+                [],
+                search_results,
+                keyword_candidates,
+                scoped_file_names,
+            )
 
         sheets_by_file: Dict[str, List[tuple]] = defaultdict(list)
         for page_key, strength in page_strength.items():
@@ -1364,7 +1447,13 @@ class SearchAgent:
                 finalized.append((doc, 0.0 - (strength / 100.0)))
 
         finalized.sort(key=lambda item: item[1])
-        return finalized
+        return self._preserve_engineer_best_pages_for_sheet_ranking(
+            query,
+            finalized,
+            search_results,
+            keyword_candidates,
+            scoped_file_names,
+        )
 
     def _apply_project_descriptor_ranking(
         self,
@@ -1372,6 +1461,7 @@ class SearchAgent:
         descriptor: Dict,
         keyword_candidates: List[Dict],
         scoped_file_names: Set[str],
+        query: Optional[str] = None,
     ) -> List[tuple]:
         """
         Rank layered bridge lookups: project filter first, then sheet intent.
@@ -1403,6 +1493,7 @@ class SearchAgent:
                 scoped_file_names,
                 matching_files,
                 profiles,
+                query=query,
             )
 
         present_pages = {

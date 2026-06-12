@@ -41,6 +41,20 @@ Red-box boundaries in training examples are approximate; leader-line text belong
 
 ---
 
+For the full multi-layer ingest workflow (enrich, rechunk, CAD, topology, cloud save), see [PDF_PROCESSING_PIPELINE.md](PDF_PROCESSING_PIPELINE.md).
+
+Quick one-shot (auto-trains vision, rechunks, validates training pages):
+
+```bash
+python main.py process-pipeline --no-ingest --no-enrich --file MyProject --sync-cloud
+python main.py auto-train-rechunk --file MyProject --sync-cloud
+```
+
+Auto-train module: `drawing_chunk_auto_train.py`  
+Validation report: `data/training/rechunk_validation_report.json`
+
+---
+
 ## Workflow for a new project
 
 ### 1. Add training examples (recommended)

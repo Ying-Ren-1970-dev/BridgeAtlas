@@ -10,6 +10,7 @@ A RAG (Retrieval Augmented Generation) powered knowledge base system for searchi
 - **Metadata Extraction**: Extracts project name, phase, engineer of record, dates, and more
 - **Page-Level Results**: Returns specific page numbers within PDFs that are relevant to searches
 - **Drawing-Region Chunking**: One vector chunk per labeled CAD drawing (plan, section, detail, etc.) — see [DRAWING_REGION_CHUNKING.md](DRAWING_REGION_CHUNKING.md)
+- **Full PDF Pipeline**: Ingest → enrich → rechunk → CAD layers with contamination guards — see [PDF_PROCESSING_PIPELINE.md](PDF_PROCESSING_PIPELINE.md)
 - **Interactive CLI**: User-friendly command-line interface for searching and managing the knowledge base
 
 ## Project Structure

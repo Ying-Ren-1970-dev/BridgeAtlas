@@ -7,8 +7,8 @@
       "scale": "1:20",
       "description": "Cross-sectional view showing structural details of the bent.",
       "leader_text": [
-        "#11 CONC. 17",
-        "SEE DETAIL 'A'"
+        "#11 BARS",
+        "STIRRUP PATTERNS"
       ],
       "cross_references": []
     },
@@ -17,10 +17,10 @@
       "view_type": "section",
       "is_precise": true,
       "scale": "1:20",
-      "description": "Cross-sectional view showing reinforcement details.",
+      "description": "Cross-sectional view showing additional structural details of the bent.",
       "leader_text": [
-        "#11 CONC. 17",
-        "SEE DETAIL 'B'"
+        "#11 BARS",
+        "STIRRUP PATTERNS"
       ],
       "cross_references": []
     },
@@ -31,8 +31,8 @@
       "scale": "1:20",
       "description": "Top view layout of the bent structure.",
       "leader_text": [
-        "EDGE OF DECK",
-        "SEE DETAIL 'C'"
+        "EDGE OF BENT",
+        "Y-Y LINE"
       ],
       "cross_references": []
     },
@@ -41,10 +41,10 @@
       "view_type": "elevation",
       "is_precise": true,
       "scale": "1:20",
-      "description": "Side view showing elevation details of the bent.",
+      "description": "Side view elevation of the bent structure.",
       "leader_text": [
         "STIRRUP PATTERNS",
-        "SEE DETAIL 'D'"
+        "#11 BARS"
       ],
       "cross_references": []
     }
