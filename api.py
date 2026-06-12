@@ -266,6 +266,18 @@ class SearchResult(BaseModel):
     topology_elements: List[str] = Field(..., description="Structural topology elements found in this content")
     content_sample: str = Field(..., description="Sample of the relevant content")
     has_vision_analysis: bool = Field(..., description="Whether this page was analyzed using GPT-4 Vision")
+    drawing_label: Optional[str] = Field(
+        default=None,
+        description="Drawing-region label when the hit is a per-drawing chunk (e.g. DETAIL 1, SECTION A-A)",
+    )
+    drawing_view: Optional[str] = Field(
+        default=None,
+        description="CAD view type for drawing-region chunks (plan, detail, section, etc.)",
+    )
+    chunk_id: Optional[int] = Field(
+        default=None,
+        description="Chunk index within the page when drawing-region chunking is active",
+    )
     match_tier: str = Field(
         default="primary",
         description="primary = within strict relevance cutoff; review = borderline page shown for feedback labeling",
@@ -436,6 +448,42 @@ async def serve_dashboard():
     return FileResponse(dashboard_path, media_type="text/html")
 
 
+def _project_chunk_stats() -> Dict[str, Dict]:
+    """Return per-PDF chunk counts and drawing-region chunking mode."""
+    if not search_agent or not search_agent.vector_store or not search_agent.vector_store.vectorstore:
+        return {}
+
+    collection = search_agent.vector_store.vectorstore._collection
+    all_docs = collection.get(include=["metadatas", "documents"])
+    stats: Dict[str, Dict] = {}
+    for meta, document in zip(
+        all_docs.get("metadatas", []),
+        all_docs.get("documents", []),
+    ):
+        file_name = str(meta.get("file_name") or "")
+        if not file_name:
+            continue
+        entry = stats.setdefault(
+            file_name,
+            {"chunk_count": 0, "region_chunks": 0},
+        )
+        entry["chunk_count"] += 1
+        if "[DRAWING REGION CHUNK]" in (document or ""):
+            entry["region_chunks"] += 1
+
+    for file_name, entry in stats.items():
+        total = entry["chunk_count"]
+        region = entry["region_chunks"]
+        if region == 0:
+            mode = "page_level"
+        elif region >= total * 0.5:
+            mode = "drawing_region"
+        else:
+            mode = "mixed"
+        entry["chunking_mode"] = mode
+    return stats
+
+
 def _knowledge_base_stats() -> Dict:
     """Return lightweight KB diagnostics for local/cloud parity checks."""
     stats = {
@@ -451,6 +499,16 @@ def _knowledge_base_stats() -> Dict:
     stats["chunk_count"] = len(all_docs.get("ids", []))
     merged = collection.get(where={"deep_vision_merged": "true"}, include=[])
     stats["deep_vision_chunks"] = len(merged.get("ids", []))
+
+    project_stats = _project_chunk_stats()
+    stats["region_chunk_count"] = sum(item["region_chunks"] for item in project_stats.values())
+    stats["drawing_region_projects"] = sum(
+        1 for item in project_stats.values() if item["chunking_mode"] == "drawing_region"
+    )
+    stats["page_level_projects"] = sum(
+        1 for item in project_stats.values() if item["chunking_mode"] == "page_level"
+    )
+    stats["projects"] = project_stats
     stats["status"] = "ready"
     return stats
 
@@ -926,55 +984,53 @@ async def search(request: SearchRequest):
             # Get chunks with page-specific content and scores
             chunks = project_result.get('chunks', [])
             
-            # Group chunks by page and keep the best score per page
-            page_data = {}
             for chunk in chunks:
                 page_num = chunk.get('page')
                 if page_num is None:
                     continue
-                    
+
                 content = chunk.get('content', '')
                 score = chunk.get('score', 1.0)
                 sheet_type = str(chunk.get('plan_sheet_type') or '')
                 chunk_sheet_types[(file_name, int(page_num))] = sheet_type
-                
-                # Keep the best (lowest) score and longest content for each page
-                if page_num not in page_data or score < page_data[page_num]['score']:
-                    page_data[page_num] = {
-                        'content': content,
-                        'score': score,
-                        'has_vision': '[DRAWING ANALYSIS]' in content or '[TEXT CONTENT]' in content,
-                        'topology': extract_topology(content),
-                        'plan_sheet_type': sheet_type,
-                    }
-            
-            # Create a result entry for EACH page with its specific data
-            for page_num, data in page_data.items():
+                drawing_label = str(chunk.get('drawing_label') or '').strip() or None
+                drawing_view = str(chunk.get('drawing_view') or '').strip() or None
+                chunk_id = chunk.get('chunk_id')
+                chunk_id = int(chunk_id) if chunk_id is not None else None
+
                 if (
                     page_num == 0
                     and search_agent
                     and not search_agent._is_project_overview_query(request.query)
                 ):
                     continue
+
                 result_entry = SearchResult(
                     pdf_file_name=file_name,
                     project_name=project_name,
-                    page_number=page_num,
-                    relevance_score=round(data['score'], 3),
-                    topology_elements=data['topology'],
-                    content_sample=data['content'][:500].replace('[TEXT CONTENT]', '').replace('[DRAWING ANALYSIS]', '').strip(),
-                    has_vision_analysis=data['has_vision'],
+                    page_number=int(page_num),
+                    relevance_score=round(score, 3),
+                    topology_elements=extract_topology(content),
+                    content_sample=content[:500]
+                    .replace('[TEXT CONTENT]', '')
+                    .replace('[DRAWING ANALYSIS]', '')
+                    .replace('[DRAWING REGION CHUNK]', '')
+                    .strip(),
+                    has_vision_analysis='[DRAWING ANALYSIS]' in content
+                    or '[TEXT CONTENT]' in content,
+                    drawing_label=drawing_label,
+                    drawing_view=drawing_view,
+                    chunk_id=chunk_id,
                     match_tier="primary",
                 )
                 results.append(result_entry)
-                
-                # Build project summary tracking
+
                 if file_name not in projects_dict:
                     projects_dict[file_name] = {
                         'metadata': metadata,
                         'pages': set()
                     }
-                projects_dict[file_name]['pages'].add(page_num)
+                projects_dict[file_name]['pages'].add(int(page_num))
         
         # Apply relevance threshold filter (adaptive default if not explicitly provided)
         if results:
@@ -992,14 +1048,19 @@ async def search(request: SearchRequest):
 
             if request.expand_for_feedback:
                 filtered: List[SearchResult] = []
-                seen_pages = set()
+                seen_hits = set()
                 for entry in sorted(results, key=lambda item: item.relevance_score):
-                    page_key = (entry.pdf_file_name, entry.page_number)
-                    if page_key in seen_pages:
+                    hit_key = (
+                        entry.pdf_file_name,
+                        entry.page_number,
+                        entry.drawing_label or "",
+                        entry.chunk_id if entry.chunk_id is not None else -1,
+                    )
+                    if hit_key in seen_hits:
                         continue
                     if entry.relevance_score > review_cutoff:
                         continue
-                    seen_pages.add(page_key)
+                    seen_hits.add(hit_key)
                     tier = "primary" if entry.relevance_score <= strict_cutoff else "review"
                     filtered.append(entry.model_copy(update={"match_tier": tier}))
                 results = filtered
@@ -1124,8 +1185,13 @@ async def list_projects():
     
     try:
         all_projects = metadata_manager.get_all_projects()
+        chunk_stats = _project_chunk_stats()
         return {
             "total_projects": len(all_projects),
+            "total_chunks": sum(item["chunk_count"] for item in chunk_stats.values()),
+            "drawing_region_projects": sum(
+                1 for item in chunk_stats.values() if item.get("chunking_mode") == "drawing_region"
+            ),
             "projects": [
                 {
                     "pdf_file_name": proj['file_name'],
@@ -1134,7 +1200,10 @@ async def list_projects():
                     "engineer_of_record": proj.get('engineer_of_record'),
                     "categories": proj.get('categories', []),
                     "total_pages": proj['total_pages'],
-                    "indexed_at": proj['indexed_at']
+                    "indexed_at": proj['indexed_at'],
+                    "chunk_count": chunk_stats.get(proj['file_name'], {}).get("chunk_count", 0),
+                    "region_chunks": chunk_stats.get(proj['file_name'], {}).get("region_chunks", 0),
+                    "chunking_mode": chunk_stats.get(proj['file_name'], {}).get("chunking_mode", "unknown"),
                 }
                 for proj in all_projects.values()
             ]

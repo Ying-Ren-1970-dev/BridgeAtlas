@@ -1,16 +1,493 @@
 {
   "version": 1,
-  "built_at": "2026-06-11T05:57:14.810357",
-  "source_records": 493,
-  "query_count": 23,
+  "built_at": "2026-06-11T05:01:29.445915",
+  "source_records": 680,
+  "query_count": 43,
   "label_counts": {
-    "best": 110,
-    "relevant": 47,
-    "irrelevant": 294
+    "best": 148,
+    "relevant": 62,
+    "irrelevant": 411
   },
   "queries": {
+    "test query": {
+      "best": [],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": "smoke test",
+          "timestamp": "2026-05-14T19:31:08.403115"
+        }
+      ],
+      "irrelevant": []
+    },
+    "lotb": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T19:38:56.845586"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 69,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:04.825727"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 68,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:05.407867"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:06.791782"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 65,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:08.961689"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:10.320429"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 66,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:12.046656"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 65,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:17.284474"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:18.743193"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 67,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:19.779406"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:21.900518"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:23.129958"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 74,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:27.123793"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 73,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:28.612570"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:38.703700"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 59,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:39.283379"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 58,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:40.518314"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 61,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:41.447696"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 60,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:42.982975"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 64,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:43.911909"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-10T21:25:45.910123"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": "less relevant",
+          "timestamp": "2026-05-14T19:33:46.380605"
+        }
+      ]
+    },
+    "chain link fence detail": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T19:40:57.903154"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 31,
+          "note": null,
+          "timestamp": "2026-05-14T19:40:58.523451"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:35.822641"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 62,
+          "note": null,
+          "timestamp": "2026-06-11T02:49:59.514125"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 61,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:00.862256"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 56,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:20.632203"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 55,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:45.480774"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:54.855977"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 52,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:00.350401"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:02.232083"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 63,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:03.430522"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:07.237257"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:10.439157"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 44,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:32.209868"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 47,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:33.621799"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 57,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:39.855535"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 45,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:41.360803"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 53,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:43.761581"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 46,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:56.865158"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 44,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:57.866271"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 43,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:05.670470"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 44,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:07.894749"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:54.778728"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:55.750802"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:09.452996"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:12.411062"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-05-14T19:41:15.631244"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:30.161200"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:40.638794"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T22:14:52.125784"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:03.030134"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:06.883199"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:11.089034"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:21.571780"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:19.252659"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:39.404250"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:41.802230"
+        },
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T22:15:42.904978"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-06-11T02:49:47.119537"
+        },
+        {
+          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-06-11T02:49:53.392229"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:14.040351"
+        },
+        {
+          "file": "Fresno 180 Ramp.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:16.204917"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 20,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:18.306815"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:40.253012"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:46.404957"
+        },
+        {
+          "file": "55-1127_WestminsterOC_As_Built.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:47.410262"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:51.649130"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:52.610733"
+        },
+        {
+          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-06-11T02:50:59.130341"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:04.326430"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 50,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:06.850562"
+        },
+        {
+          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-06-11T02:51:22.803821"
+        }
+      ]
+    },
     "shear key detail": {
       "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T19:52:11.207584"
+        },
         {
           "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
           "page": 21,
@@ -44,6 +521,12 @@
       ],
       "relevant": [
         {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T19:52:21.264051"
+        },
+        {
           "file": "Fresno 180 Ramp.pdf",
           "page": 13,
           "note": null,
@@ -51,6 +534,48 @@
         }
       ],
       "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:42.178916"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:43.149062"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:44.236410"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:45.468626"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:48.444952"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:47.086974"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:37:46.457306"
+        },
         {
           "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
           "page": 19,
@@ -170,6 +695,974 @@
           "page": 33,
           "note": null,
           "timestamp": "2026-06-11T02:48:34.233453"
+        }
+      ]
+    },
+    "deck drain": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:01.393813"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:02.655112"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:04.894141"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:18.360183"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:26.849057"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:31.285262"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:33.183901"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T19:55:39.615238"
+        }
+      ]
+    },
+    "i girder": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:12.205097"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:26.133292"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:12.576793"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:30.814770"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:32.083702"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:33.168802"
+        }
+      ]
+    },
+    "camber diagram": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T19:59:57.539473"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:01.169956"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 33,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:01.948590"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:03.663069"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:05.999579"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:09.801471"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:11.328118"
+        }
+      ]
+    },
+    "general plan of mar vista": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:31.471629"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:32.365330"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:34.928184"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:36.398459"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:49.503045"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T20:00:51.116333"
+        }
+      ]
+    },
+    "cidh pile": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:31.629269"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:37.401732"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:28.762292"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:31.448253"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:43.690498"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:50.934979"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:01:46.199684"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:17.215175"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 13,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:38.387098"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 35,
+          "note": null,
+          "timestamp": "2026-05-14T20:04:39.201352"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-16T17:13:19.679556"
+        }
+      ]
+    },
+    "slab bridge reinforcement detail": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:39.700204"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 18,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:46.117996"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:33.652561"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:35.158877"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:37.075115"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:40.802506"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:49.675979"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T20:05:50.910021"
+        }
+      ]
+    },
+    "cip box girder reinforcement detail": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:13.239902"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:15.419462"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:31.268149"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:18.253481"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:19.689003"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:20.669342"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:21.185400"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:24.073345"
+        }
+      ]
+    },
+    "u shape retaining wall": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:06:54.838992"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:00.012907"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:05.916309"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:08.068790"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:11.525788"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:03.721489"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-05-14T20:07:19.129567"
+        }
+      ],
+      "irrelevant": []
+    },
+    "superstructure typical sections": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T20:08:52.066492"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:08:54.848911"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:19.367452"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T20:10:33.545104"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 34,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:03.559383"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:05.183254"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 19,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:07.484329"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 42,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:11.273729"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 36,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:13.576834"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-05-14T20:09:14.335132"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:10:51.864444"
+        }
+      ]
+    },
+    "general plan": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:32.310880"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:33.098213"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:48.494015"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 40,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:53.927081"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:12:58.552186"
+        }
+      ]
+    },
+    "pile cap for 24\" cidh pile": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:47.689991"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 3,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:36.117768"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:36.564868"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T20:13:46.298320"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:02.251899"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:02.623007"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:07.697723"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:09.308107"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T20:14:10.593335"
+        }
+      ]
+    },
+    "spiral reinforcement": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 16,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:36.451411"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:39.453755"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:51.957241"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 28,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:56.997430"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:58.589754"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:15:59.482220"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:16:01.538417"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:16:02.483410"
+        }
+      ]
+    },
+    "soffit vent hole": {
+      "best": [],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 32,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:37.306606"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 17,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:38.415539"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 24,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:42.931863"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 12,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:44.681158"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 22,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:45.328537"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:46.887952"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:48.889849"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 29,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:49.896103"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 15,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:50.790581"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 10,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:51.463016"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 14,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:53.955829"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T20:22:56.047016"
+        }
+      ]
+    },
+    "concrete box girder": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:35.599123"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:40.026364"
+        },
+        {
+          "file": "3112 Beale AFB-Four Bridges - 03-25.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:16:43.902528"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": []
+    },
+    "retaining wall caltrans type 7 typical section": {
+      "best": [
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 5,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:36.300247"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:42.910341"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 23,
+          "note": null,
+          "timestamp": "2026-05-14T22:18:53.075086"
+        }
+      ]
+    },
+    "architectural treatment": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 38,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:19.851574"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 39,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:21.416954"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:34.452477"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 6,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:35.224943"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 30,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:23.455830"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-14T22:19:44.692571"
+        },
+        {
+          "file": "30%_Elk Grove Station Structure Plan Set.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:33.289277"
+        }
+      ]
+    },
+    "steel truss bridge general plan": {
+      "best": [
+        {
+          "file": "30%_Elk Grove Station Structure Plan Set.pdf",
+          "page": 4,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:51.081262"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Laguna Creek Plan.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:20:59.057034"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:04.873188"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:05.484200"
+        },
+        {
+          "file": "3112 Beale AFB-Four Bridges - 03-25.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:08.817895"
+        },
+        {
+          "file": "Santiago Rd OC RW 100% Signed.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:12.317122"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 2,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:15.468604"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:16.220850"
+        },
+        {
+          "file": "Sports Park.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-14T22:21:18.451687"
+        }
+      ]
+    },
+    "drilled shaft detail": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 21,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:46.950822"
+        }
+      ],
+      "relevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 7,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:31.603457"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:44.702304"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 1,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:56.460385"
+        },
+        {
+          "file": "Austin Rd OH - Plans - Final Submittal_.pdf",
+          "page": 11,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:59.771214"
+        }
+      ],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 26,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:26.603681"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 27,
+          "note": null,
+          "timestamp": "2026-05-15T00:12:43.196553"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-15T00:13:13.193340"
+        }
+      ]
+    },
+    "drilled shaft": {
+      "best": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 9,
+          "note": null,
+          "timestamp": "2026-05-15T04:28:02.622907"
+        },
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 8,
+          "note": null,
+          "timestamp": "2026-05-15T04:28:17.324059"
+        }
+      ],
+      "relevant": [],
+      "irrelevant": [
+        {
+          "file": "Mar Vista POC 100%_CheckPrint_20211118 Complete.pdf",
+          "page": 25,
+          "note": null,
+          "timestamp": "2026-05-15T04:29:08.460350"
         }
       ]
     },
@@ -737,132 +2230,6 @@
           "timestamp": "2026-06-10T21:23:51.058689"
         }
       ]
-    },
-    "lotb": {
-      "best": [
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 69,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:04.825727"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 68,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:05.407867"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 67,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:06.791782"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 65,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:08.961689"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 64,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:10.320429"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 66,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:12.046656"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 65,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:17.284474"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 64,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:18.743193"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 67,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:19.779406"
-        },
-        {
-          "file": "Fresno 180 Ramp.pdf",
-          "page": 23,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:21.900518"
-        },
-        {
-          "file": "Fresno 180 Ramp.pdf",
-          "page": 27,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:23.129958"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 74,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:27.123793"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 73,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:28.612570"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 62,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:38.703700"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 59,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:39.283379"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 58,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:40.518314"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 61,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:41.447696"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 60,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:42.982975"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 64,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:43.911909"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 57,
-          "note": null,
-          "timestamp": "2026-06-10T21:25:45.910123"
-        }
-      ],
-      "relevant": [],
-      "irrelevant": []
     },
     "ps/pt p-jack": {
       "best": [],
@@ -2357,212 +3724,6 @@
         }
       ]
     },
-    "chain link fence detail": {
-      "best": [
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 62,
-          "note": null,
-          "timestamp": "2026-06-11T02:49:59.514125"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 61,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:00.862256"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 56,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:20.632203"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 55,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:45.480774"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 53,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:54.855977"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 52,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:00.350401"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 53,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:02.232083"
-        }
-      ],
-      "relevant": [
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 63,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:03.430522"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 53,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:07.237257"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 39,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:10.439157"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 44,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:32.209868"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 47,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:33.621799"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 57,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:39.855535"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 45,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:41.360803"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 53,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:43.761581"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 46,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:56.865158"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 44,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:57.866271"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 43,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:05.670470"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 44,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:07.894749"
-        }
-      ],
-      "irrelevant": [
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 21,
-          "note": null,
-          "timestamp": "2026-06-11T02:49:47.119537"
-        },
-        {
-          "file": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
-          "page": 42,
-          "note": null,
-          "timestamp": "2026-06-11T02:49:53.392229"
-        },
-        {
-          "file": "Fresno 180 Ramp.pdf",
-          "page": 9,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:14.040351"
-        },
-        {
-          "file": "Fresno 180 Ramp.pdf",
-          "page": 6,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:16.204917"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 20,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:18.306815"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 40,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:40.253012"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 3,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:46.404957"
-        },
-        {
-          "file": "55-1127_WestminsterOC_As_Built.pdf",
-          "page": 7,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:47.410262"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 38,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:51.649130"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 19,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:52.610733"
-        },
-        {
-          "file": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
-          "page": 35,
-          "note": null,
-          "timestamp": "2026-06-11T02:50:59.130341"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 36,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:04.326430"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 50,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:06.850562"
-        },
-        {
-          "file": "55-0273_EdwardsOC_As_BuiltWM.pdf",
-          "page": 18,
-          "note": null,
-          "timestamp": "2026-06-11T02:51:22.803821"
-        }
-      ]
-    },
     "concrete column reinforcement": {
       "best": [
         {
@@ -2879,18 +4040,176 @@
     }
   },
   "related_queries": {
+    "test query": {
+      "general plan of mar vista": 0.7250000000000001,
+      "general plan": 0.7250000000000001
+    },
+    "general plan of mar vista": {
+      "test query": 0.7250000000000001,
+      "general plan": 0.9,
+      "concrete box girder": 0.7833333333333333,
+      "steel truss bridge general plan": 0.5642857142857143
+    },
+    "general plan": {
+      "test query": 0.7250000000000001,
+      "general plan of mar vista": 0.9,
+      "concrete box girder": 0.7833333333333333,
+      "steel truss bridge general plan": 0.75
+    },
+    "chain link fence detail": {
+      "shear key detail": 0.5166666666666667,
+      "drilled shaft detail": 0.5166666666666667,
+      "cidh pile detail": 0.5166666666666667,
+      "barrier detail": 0.53,
+      "plastic hinge detail": 0.5166666666666667,
+      "prestress duct detail": 0.5166666666666667,
+      "oblonged column detail": 0.5166666666666667
+    },
     "shear key detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "drilled shaft detail": 0.53,
       "cip box girder typical section reinforcement detail": 0.49444444444444446,
       "cidh pile detail": 0.53,
       "barrier detail": 0.55,
       "plastic hinge detail": 0.53,
       "prestress duct detail": 0.53,
       "cidh pile reinforcement detail": 0.5166666666666667,
-      "chain link fence detail": 0.5166666666666667,
       "oblonged column detail": 0.53
+    },
+    "drilled shaft detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "shear key detail": 0.53,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "drilled shaft": 0.75,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446,
+      "cidh pile detail": 0.53,
+      "barrier detail": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress duct detail": 0.53,
+      "cidh pile reinforcement detail": 0.5166666666666667,
+      "oblonged column detail": 0.53
+    },
+    "cidh pile detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "shear key detail": 0.53,
+      "cidh pile": 0.75,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "pile cap for 24\" cidh pile": 0.6100000000000001,
+      "drilled shaft detail": 0.53,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446,
+      "barrier detail": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress duct detail": 0.53,
+      "cidh pile reinforcement detail": 0.75,
+      "oblonged column detail": 0.53
+    },
+    "barrier detail": {
+      "chain link fence detail": 0.53,
+      "shear key detail": 0.55,
+      "slab bridge reinforcement detail": 0.53,
+      "cip box girder reinforcement detail": 0.5166666666666667,
+      "drilled shaft detail": 0.55,
+      "cip box girder typical section reinforcement detail": 0.5,
+      "cidh pile detail": 0.55,
+      "plastic hinge detail": 0.55,
+      "prestress duct detail": 0.55,
+      "cidh pile reinforcement detail": 0.53,
+      "oblonged column detail": 0.55
+    },
+    "plastic hinge detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "shear key detail": 0.53,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "drilled shaft detail": 0.53,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446,
+      "cidh pile detail": 0.53,
+      "barrier detail": 0.55,
+      "prestress duct detail": 0.53,
+      "cidh pile reinforcement detail": 0.5166666666666667,
+      "oblonged column detail": 0.53
+    },
+    "prestress duct detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "shear key detail": 0.53,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "drilled shaft detail": 0.53,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446,
+      "cidh pile detail": 0.53,
+      "barrier detail": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress": 0.75,
+      "cidh pile reinforcement detail": 0.5166666666666667,
+      "oblonged column detail": 0.53
+    },
+    "oblonged column detail": {
+      "chain link fence detail": 0.5166666666666667,
+      "shear key detail": 0.53,
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "drilled shaft detail": 0.53,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446,
+      "cidh pile detail": 0.53,
+      "barrier detail": 0.55,
+      "column reinforcement": 0.55,
+      "plastic hinge detail": 0.53,
+      "prestress duct detail": 0.53,
+      "cidh pile reinforcement detail": 0.5166666666666667,
+      "concrete column reinforcement": 0.53
+    },
+    "slab bridge reinforcement detail": {
+      "shear key detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5642857142857143,
+      "spiral reinforcement": 0.53,
+      "drilled shaft detail": 0.5166666666666667,
+      "cip box girder typical section reinforcement detail": 0.5388888888888889,
+      "cidh pile detail": 0.5166666666666667,
+      "abutment reinforcement": 0.53,
+      "bridge removal": 0.53,
+      "barrier detail": 0.53,
+      "column reinforcement": 0.53,
+      "plastic hinge detail": 0.5166666666666667,
+      "spread footing reinforcement": 0.5166666666666667,
+      "prestress duct detail": 0.5166666666666667,
+      "cidh pile reinforcement detail": 0.5833333333333334,
+      "concrete column reinforcement": 0.5166666666666667,
+      "oblonged column detail": 0.5166666666666667
+    },
+    "cip box girder reinforcement detail": {
+      "shear key detail": 0.5071428571428571,
+      "i girder": 0.53,
+      "slab bridge reinforcement detail": 0.5642857142857143,
+      "spiral reinforcement": 0.5166666666666667,
+      "concrete box girder": 0.5833333333333334,
+      "drilled shaft detail": 0.5071428571428571,
+      "cip box girder typical section reinforcement detail": 0.7357142857142858,
+      "cidh pile detail": 0.5071428571428571,
+      "abutment reinforcement": 0.5166666666666667,
+      "girder layout": 0.5166666666666667,
+      "barrier detail": 0.5166666666666667,
+      "column reinforcement": 0.5166666666666667,
+      "plastic hinge detail": 0.5071428571428571,
+      "spread footing reinforcement": 0.5071428571428571,
+      "prestress duct detail": 0.5071428571428571,
+      "cidh pile reinforcement detail": 0.5642857142857143,
+      "concrete column reinforcement": 0.5071428571428571,
+      "oblonged column detail": 0.5071428571428571
     },
     "cip box girder typical section reinforcement detail": {
       "shear key detail": 0.49444444444444446,
+      "i girder": 0.5071428571428571,
+      "slab bridge reinforcement detail": 0.5388888888888889,
+      "cip box girder reinforcement detail": 0.7357142857142858,
+      "superstructure typical sections": 0.49444444444444446,
+      "spiral reinforcement": 0.5,
+      "concrete box girder": 0.55,
+      "retaining wall caltrans type 7 typical section": 0.5227272727272727,
+      "drilled shaft detail": 0.49444444444444446,
       "cidh pile detail": 0.49444444444444446,
       "abutment reinforcement": 0.5,
       "girder layout": 0.5,
@@ -2903,49 +4222,14 @@
       "concrete column reinforcement": 0.49444444444444446,
       "oblonged column detail": 0.49444444444444446
     },
-    "cidh pile detail": {
-      "shear key detail": 0.53,
-      "cip box girder typical section reinforcement detail": 0.49444444444444446,
-      "barrier detail": 0.55,
-      "plastic hinge detail": 0.53,
-      "prestress duct detail": 0.53,
-      "cidh pile reinforcement detail": 0.75,
-      "chain link fence detail": 0.5166666666666667,
-      "oblonged column detail": 0.53
-    },
-    "barrier detail": {
-      "shear key detail": 0.55,
-      "cip box girder typical section reinforcement detail": 0.5,
-      "cidh pile detail": 0.55,
-      "plastic hinge detail": 0.55,
-      "prestress duct detail": 0.55,
-      "cidh pile reinforcement detail": 0.53,
-      "chain link fence detail": 0.53,
-      "oblonged column detail": 0.55
-    },
-    "plastic hinge detail": {
-      "shear key detail": 0.53,
-      "cip box girder typical section reinforcement detail": 0.49444444444444446,
-      "cidh pile detail": 0.53,
-      "barrier detail": 0.55,
-      "prestress duct detail": 0.53,
-      "cidh pile reinforcement detail": 0.5166666666666667,
-      "chain link fence detail": 0.5166666666666667,
-      "oblonged column detail": 0.53
-    },
-    "prestress duct detail": {
-      "shear key detail": 0.53,
-      "cip box girder typical section reinforcement detail": 0.49444444444444446,
-      "cidh pile detail": 0.53,
-      "barrier detail": 0.55,
-      "plastic hinge detail": 0.53,
-      "prestress": 0.75,
-      "cidh pile reinforcement detail": 0.5166666666666667,
-      "chain link fence detail": 0.5166666666666667,
-      "oblonged column detail": 0.53
-    },
     "cidh pile reinforcement detail": {
       "shear key detail": 0.5166666666666667,
+      "cidh pile": 0.75,
+      "slab bridge reinforcement detail": 0.5833333333333334,
+      "cip box girder reinforcement detail": 0.5642857142857143,
+      "pile cap for 24\" cidh pile": 0.5833333333333334,
+      "spiral reinforcement": 0.53,
+      "drilled shaft detail": 0.5166666666666667,
       "cip box girder typical section reinforcement detail": 0.5388888888888889,
       "cidh pile detail": 0.75,
       "abutment reinforcement": 0.53,
@@ -2957,37 +4241,70 @@
       "concrete column reinforcement": 0.5166666666666667,
       "oblonged column detail": 0.5166666666666667
     },
-    "chain link fence detail": {
-      "shear key detail": 0.5166666666666667,
-      "cidh pile detail": 0.5166666666666667,
-      "barrier detail": 0.53,
-      "plastic hinge detail": 0.5166666666666667,
-      "prestress duct detail": 0.5166666666666667,
-      "oblonged column detail": 0.5166666666666667
+    "i girder": {
+      "cip box girder reinforcement detail": 0.53,
+      "concrete box girder": 0.5833333333333334,
+      "cip box girder typical section reinforcement detail": 0.5071428571428571,
+      "girder layout": 0.65
     },
-    "oblonged column detail": {
-      "shear key detail": 0.53,
-      "cip box girder typical section reinforcement detail": 0.49444444444444446,
-      "cidh pile detail": 0.53,
-      "barrier detail": 0.55,
-      "column reinforcement": 0.55,
-      "plastic hinge detail": 0.53,
-      "prestress duct detail": 0.53,
-      "cidh pile reinforcement detail": 0.5166666666666667,
-      "chain link fence detail": 0.5166666666666667,
+    "concrete box girder": {
+      "i girder": 0.5833333333333334,
+      "general plan of mar vista": 0.7833333333333333,
+      "cip box girder reinforcement detail": 0.5833333333333334,
+      "general plan": 0.7833333333333333,
+      "cip box girder typical section reinforcement detail": 0.55,
+      "girder layout": 0.55,
       "concrete column reinforcement": 0.53
     },
+    "girder layout": {
+      "i girder": 0.65,
+      "cip box girder reinforcement detail": 0.5166666666666667,
+      "concrete box girder": 0.55,
+      "cip box girder typical section reinforcement detail": 0.5
+    },
+    "steel truss bridge general plan": {
+      "general plan of mar vista": 0.5642857142857143,
+      "general plan": 0.75,
+      "bridge removal": 0.5166666666666667
+    },
+    "cidh pile": {
+      "pile cap for 24\" cidh pile": 0.75,
+      "cidh pile detail": 0.75,
+      "cidh pile reinforcement detail": 0.75
+    },
+    "pile cap for 24\" cidh pile": {
+      "cidh pile": 0.75,
+      "cidh pile detail": 0.6100000000000001,
+      "cidh pile reinforcement detail": 0.5833333333333334
+    },
+    "spiral reinforcement": {
+      "slab bridge reinforcement detail": 0.53,
+      "cip box girder reinforcement detail": 0.5166666666666667,
+      "cip box girder typical section reinforcement detail": 0.5,
+      "abutment reinforcement": 0.5833333333333334,
+      "column reinforcement": 0.5833333333333334,
+      "spread footing reinforcement": 0.55,
+      "cidh pile reinforcement detail": 0.53,
+      "concrete column reinforcement": 0.55
+    },
     "abutment reinforcement": {
+      "slab bridge reinforcement detail": 0.53,
+      "cip box girder reinforcement detail": 0.5166666666666667,
+      "spiral reinforcement": 0.5833333333333334,
       "cip box girder typical section reinforcement detail": 0.5,
       "column reinforcement": 0.5833333333333334,
       "spread footing reinforcement": 0.55,
       "cidh pile reinforcement detail": 0.53,
       "concrete column reinforcement": 0.55
     },
-    "girder layout": {
-      "cip box girder typical section reinforcement detail": 0.5
+    "bridge removal": {
+      "slab bridge reinforcement detail": 0.53,
+      "steel truss bridge general plan": 0.5166666666666667
     },
     "column reinforcement": {
+      "slab bridge reinforcement detail": 0.53,
+      "cip box girder reinforcement detail": 0.5166666666666667,
+      "spiral reinforcement": 0.5833333333333334,
       "cip box girder typical section reinforcement detail": 0.5,
       "abutment reinforcement": 0.5833333333333334,
       "spread footing reinforcement": 0.55,
@@ -2996,6 +4313,9 @@
       "oblonged column detail": 0.55
     },
     "spread footing reinforcement": {
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "spiral reinforcement": 0.55,
       "cip box girder typical section reinforcement detail": 0.49444444444444446,
       "abutment reinforcement": 0.55,
       "column reinforcement": 0.55,
@@ -3004,12 +4324,37 @@
       "concrete column reinforcement": 0.53
     },
     "concrete column reinforcement": {
+      "slab bridge reinforcement detail": 0.5166666666666667,
+      "cip box girder reinforcement detail": 0.5071428571428571,
+      "spiral reinforcement": 0.55,
+      "concrete box girder": 0.53,
       "cip box girder typical section reinforcement detail": 0.49444444444444446,
       "abutment reinforcement": 0.55,
       "column reinforcement": 0.7710526315789474,
       "spread footing reinforcement": 0.53,
       "cidh pile reinforcement detail": 0.5166666666666667,
       "oblonged column detail": 0.53
+    },
+    "u shape retaining wall": {
+      "retaining wall caltrans type 7 typical section": 0.5642857142857143,
+      "retaining wall": 0.75
+    },
+    "retaining wall caltrans type 7 typical section": {
+      "u shape retaining wall": 0.5642857142857143,
+      "superstructure typical sections": 0.5,
+      "cip box girder typical section reinforcement detail": 0.5227272727272727,
+      "retaining wall": 0.75
+    },
+    "retaining wall": {
+      "u shape retaining wall": 0.75,
+      "retaining wall caltrans type 7 typical section": 0.75
+    },
+    "superstructure typical sections": {
+      "retaining wall caltrans type 7 typical section": 0.5,
+      "cip box girder typical section reinforcement detail": 0.49444444444444446
+    },
+    "drilled shaft": {
+      "drilled shaft detail": 0.75
     },
     "prestress": {
       "prestress duct detail": 0.75

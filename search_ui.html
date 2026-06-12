@@ -638,6 +638,57 @@
             color: var(--text-primary);
         }
 
+        .indexed-projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .indexed-projects-table th,
+        .indexed-projects-table td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .indexed-projects-table th {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .chunk-mode-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        .chunk-mode-badge.region {
+            background: rgba(57, 192, 127, 0.18);
+            color: #9fe8c3;
+            border: 1px solid rgba(57, 192, 127, 0.35);
+        }
+
+        .chunk-mode-badge.page {
+            background: rgba(97, 165, 255, 0.15);
+            color: #b9d7ff;
+            border: 1px solid rgba(97, 165, 255, 0.3);
+        }
+
+        .thumbnail-drawing-label {
+            font-size: 11px;
+            color: #9fe8c3;
+            text-align: center;
+            margin-top: 2px;
+            padding: 0 6px;
+            line-height: 1.3;
+            max-height: 2.6em;
+            overflow: hidden;
+        }
+
         .project-name-label {
             color: var(--accent);
             font-weight: 700;
@@ -1199,11 +1250,12 @@
         <!-- Header -->
         <div class="header">
             <h1>🏗️ Librarian Agent</h1>
-            <p>Search structural engineering plans across all indexed projects with AI-powered semantic search</p>
+            <p>Search drawing-region chunks across indexed OC bridge projects with AI-powered semantic search</p>
             <div class="api-status" id="apiStatus">
                 <span class="status-pill" id="apiModePill">Connecting...</span>
                 <span class="status-pill" id="apiHealthPill">API: checking</span>
                 <span class="status-pill" id="projectCountPill">Projects: --</span>
+                <span class="status-pill" id="chunkCountPill">Chunks: --</span>
             </div>
         </div>
 
@@ -1351,9 +1403,9 @@
                 <!-- Project Info -->
                 <div class="project-info" id="projectInfo">
                     <h3>📚 Indexed Projects</h3>
-                    <p style="color: var(--text-secondary); margin-top: 8px;">
-                        Run a search to see matching pages across all projects in the knowledge base.
-                    </p>
+                    <div id="indexedProjectsList" style="color: var(--text-secondary); margin-top: 8px;">
+                        Loading knowledge base status...
+                    </div>
                 </div>
             </div>
 
@@ -1376,8 +1428,72 @@
         let currentSearchResults = null;
         let currentSearchQuery = '';
         let indexedProjectCount = 0;
+        let indexedProjectsData = [];
+        let knowledgeBaseStats = null;
         let chatAttachments = [];
         let chatAttachmentCounter = 0;
+
+        function formatChunkingMode(mode) {
+            if (mode === 'drawing_region') {
+                return { label: 'Drawing regions', className: 'region' };
+            }
+            if (mode === 'page_level') {
+                return { label: 'Page-level', className: 'page' };
+            }
+            return { label: mode || 'Unknown', className: 'page' };
+        }
+
+        function renderIndexedProjectsList(projectsData) {
+            const container = document.getElementById('indexedProjectsList');
+            if (!container) {
+                return;
+            }
+
+            const projects = (projectsData && projectsData.projects) || [];
+            if (!projects.length) {
+                container.innerHTML = '<p>No indexed projects found. Run a search after building the knowledge base.</p>';
+                return;
+            }
+
+            const totalChunks = projectsData.total_chunks
+                || projects.reduce((sum, proj) => sum + (proj.chunk_count || 0), 0);
+            const regionProjects = projectsData.drawing_region_projects
+                || projects.filter(proj => proj.chunking_mode === 'drawing_region').length;
+
+            container.innerHTML = `
+                <p style="margin-bottom: 10px;">
+                    ${projects.length} projects · ${totalChunks.toLocaleString()} chunks
+                    · ${regionProjects} with drawing-region chunking
+                </p>
+                <table class="indexed-projects-table">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Chunks</th>
+                            <th>Pages</th>
+                            <th>Indexing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${projects.map(proj => {
+                            const mode = formatChunkingMode(proj.chunking_mode);
+                            const shortName = (proj.project_name || proj.pdf_file_name || '').replace(/\.pdf$/i, '');
+                            return `
+                                <tr>
+                                    <td title="${escapeHtml(proj.pdf_file_name)}">${escapeHtml(shortName)}</td>
+                                    <td>${proj.chunk_count || 0}</td>
+                                    <td>${proj.total_pages || 0}</td>
+                                    <td><span class="chunk-mode-badge ${mode.className}">${mode.label}</span></td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    </tbody>
+                </table>
+                <p style="margin-top: 10px; font-size: 12px;">
+                    Run a search to see matching drawing regions and pages.
+                </p>
+            `;
+        }
 
         function getHybridSearchEnabled() {
             return document.getElementById('hybridSearchToggle').checked;
@@ -1507,12 +1623,24 @@
                 const health = await healthResponse.json();
                 const vectorState = health.vector_store || 'unknown';
                 setStatusPill('apiHealthPill', `API: healthy (${vectorState})`, 'ok');
+                knowledgeBaseStats = health.knowledge_base || null;
+                const chunkCount = knowledgeBaseStats && knowledgeBaseStats.chunk_count;
+                const regionCount = knowledgeBaseStats && knowledgeBaseStats.region_chunk_count;
+                if (chunkCount != null) {
+                    const regionLabel = regionCount != null
+                        ? `${chunkCount.toLocaleString()} chunks (${regionCount.toLocaleString()} regions)`
+                        : `${chunkCount.toLocaleString()} chunks`;
+                    setStatusPill('chunkCountPill', regionLabel, 'ok');
+                } else {
+                    setStatusPill('chunkCountPill', 'Chunks: unavailable', 'warn');
+                }
             } catch (error) {
                 setStatusPill(
                     'apiHealthPill',
                     IS_LOCAL_HOST ? 'API: offline (run python api.py)' : `API: offline (${error.message})`,
                     'error'
                 );
+                setStatusPill('chunkCountPill', 'Chunks: unavailable', 'warn');
             }
 
             try {
@@ -1521,10 +1649,16 @@
                     throw new Error(`projects ${projectsResponse.status}`);
                 }
                 const projectsData = await projectsResponse.json();
+                indexedProjectsData = projectsData;
                 indexedProjectCount = projectsData.total_projects || (projectsData.projects || []).length || 0;
                 setStatusPill('projectCountPill', `Projects indexed: ${indexedProjectCount}`, indexedProjectCount > 0 ? 'ok' : 'warn');
+                renderIndexedProjectsList(projectsData);
             } catch (error) {
                 setStatusPill('projectCountPill', 'Projects indexed: unavailable', 'warn');
+                const container = document.getElementById('indexedProjectsList');
+                if (container) {
+                    container.innerHTML = '<p>Could not load indexed project list. Start the API with <code>python api.py</code>.</p>';
+                }
             }
         }
 
@@ -1780,9 +1914,13 @@
             // Get unique pages and projects
             const uniquePages = [...new Set(data.results.map(r => r.page_number))];
             const uniqueProjects = [...new Set(data.results.map(r => r.pdf_file_name || r.project_name || 'Unknown Project'))];
+            const regionHits = data.results.filter(r => r.drawing_label).length;
+            const hitLabel = regionHits
+                ? `${data.results.length} hits (${regionHits} drawing regions)`
+                : `${data.results.length} hits`;
             const countLabel = reviewResults.length
-                ? `${uniqueProjects.length} Projects • ${uniquePages.length} Pages (${primaryResults.length} top + ${reviewResults.length} to review)`
-                : `${uniqueProjects.length} Projects • ${uniquePages.length} Pages`;
+                ? `${uniqueProjects.length} Projects • ${uniquePages.length} Pages • ${hitLabel} (${primaryResults.length} top + ${reviewResults.length} to review)`
+                : `${uniqueProjects.length} Projects • ${uniquePages.length} Pages • ${hitLabel}`;
             document.getElementById('summaryCounts').textContent = countLabel;
 
             // Group results by project
@@ -1905,6 +2043,9 @@
                 ? '<span class="match-tier-badge review">Review</span>'
                 : '<span class="match-tier-badge primary">Top match</span>';
             const thumbUrl = `${API_URL}/pdf-page/${encodeURIComponent(result.pdf_file_name)}/${result.page_number}?size=thumbnail`;
+            const drawingLabelHTML = result.drawing_label
+                ? `<div class="thumbnail-drawing-label" title="${escapeHtml(result.drawing_label)}">${escapeHtml(result.drawing_label)}</div>`
+                : '';
             return `
                 <div class="thumbnail-item ${tierClass}">
                     <div class="thumbnail-wrapper"
@@ -1922,6 +2063,7 @@
                              onerror="this.onerror=null; this.previousElementSibling?.remove(); this.replaceWith(Object.assign(document.createElement('div'), {className:'thumbnail-loading', textContent:'No preview'}));">
                     </div>
                     <div class="thumbnail-page-number">Page ${result.page_number}</div>
+                    ${drawingLabelHTML}
                     ${tierBadge}
                     ${topologyHTML}
                     <div class="feedback-actions" onclick="event.stopPropagation()">

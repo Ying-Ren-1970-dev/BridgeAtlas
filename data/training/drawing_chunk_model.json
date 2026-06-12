@@ -1,0 +1,721 @@
+{
+  "version": 1,
+  "trained_at": "2026-06-11T07:51:28.986177+00:00",
+  "examples": [
+    {
+      "id": "goldenwest_abutment_details_2",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 17,
+      "sheet_title": "ABUTMENT DETAILS No. 2",
+      "sheet_group": "abutment",
+      "expected_chunks": [
+        {
+          "label": "SECTION B-B",
+          "view_type": "section"
+        },
+        {
+          "label": "JOINT PROTECTION DETAIL",
+          "view_type": "detail"
+        },
+        {
+          "label": "24\" \u00f8 STEEL PIPE PILE ELEVATION",
+          "view_type": "elevation"
+        },
+        {
+          "label": "SECTION Y-Y",
+          "view_type": "section"
+        },
+        {
+          "label": "AS BUILT SECTION Y-Y",
+          "view_type": "section"
+        }
+      ]
+    },
+    {
+      "id": "goldenwest_abutment_details_6",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 21,
+      "sheet_title": "ABUTMENT DETAILS No. 6",
+      "sheet_group": "abutment",
+      "expected_chunks": [
+        {
+          "label": "DETAIL 1",
+          "view_type": "detail"
+        },
+        {
+          "label": "DETAIL 2",
+          "view_type": "detail"
+        },
+        {
+          "label": "DETAIL 3",
+          "view_type": "detail"
+        },
+        {
+          "label": "SECTION A-A",
+          "view_type": "section"
+        },
+        {
+          "label": "SECTION B-B",
+          "view_type": "section"
+        },
+        {
+          "label": "SECTION C-C",
+          "view_type": "section"
+        },
+        {
+          "label": "DETAIL 5",
+          "view_type": "detail"
+        }
+      ]
+    },
+    {
+      "id": "goldenwest_chain_link_railing_details_1",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 61,
+      "sheet_title": "CHAIN LINK RAILING TYPE 2 (Mod) DETAILS No. 1",
+      "sheet_group": "barrier",
+      "expected_chunks": [
+        {
+          "label": "TYPICAL SECTION",
+          "view_type": "section"
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation"
+        },
+        {
+          "label": "TYPICAL DETAILS",
+          "view_type": "detail"
+        },
+        {
+          "label": "TOP CABLE ANCHORAGE DETAIL",
+          "view_type": "detail"
+        },
+        {
+          "label": "POST ANCHORAGE DETAIL",
+          "view_type": "detail"
+        },
+        {
+          "label": "DETAIL 1",
+          "view_type": "detail"
+        }
+      ]
+    },
+    {
+      "id": "westminster_abutment_3_layout",
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "page": 11,
+      "sheet_title": "ABUTMENT 3 LAYOUT",
+      "sheet_group": "abutment",
+      "expected_chunks": [
+        {
+          "label": "AS BUILT",
+          "view_type": "as_built"
+        },
+        {
+          "label": "PLAN",
+          "view_type": "plan"
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation"
+        }
+      ]
+    },
+    {
+      "id": "magnolia_bent_layout_1",
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "page": 10,
+      "sheet_title": "BENT LAYOUT No. 1",
+      "sheet_group": "bent",
+      "expected_chunks": [
+        {
+          "label": "PLAN STAGE 1",
+          "view_type": "plan"
+        },
+        {
+          "label": "ELEVATION STAGE 1",
+          "view_type": "elevation"
+        },
+        {
+          "label": "SECTION B-B",
+          "view_type": "section"
+        },
+        {
+          "label": "SECTION A-A",
+          "view_type": "section"
+        }
+      ]
+    },
+    {
+      "id": "fresno_bent_details_2",
+      "file_name": "Fresno 180 Ramp.pdf",
+      "page": 12,
+      "sheet_title": "BENT DETAILS NO. 2",
+      "sheet_group": "bent",
+      "expected_chunks": [
+        {
+          "label": "SECTION A-A",
+          "view_type": "section"
+        },
+        {
+          "label": "SECTION B-B",
+          "view_type": "section"
+        },
+        {
+          "label": "BENT CAP CAMBER DIAGRAM",
+          "view_type": "diagram"
+        },
+        {
+          "label": "PLAN",
+          "view_type": "plan"
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation"
+        }
+      ]
+    }
+  ],
+  "training_results": [
+    {
+      "example_id": "goldenwest_abutment_details_2",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 17,
+      "expected_count": 5,
+      "detected_count": 5,
+      "matched_labels": [
+        "SECTION B-B",
+        "JOINT PROTECTION DETAIL",
+        "24\" \u00d8 STEEL PIPE PILE ELEVATION",
+        "SECTION Y-Y",
+        "AS BUILT SECTION Y-Y"
+      ],
+      "missing_labels": [],
+      "extra_labels": [],
+      "passed": true,
+      "detected_chunks": [
+        {
+          "label": "SECTION B-B",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "3/8\" = 1'-0\"",
+          "description": "Cross-section view showing structural details of the abutment.",
+          "leader_text": [
+            "SEE NOTE A",
+            "SEE NOTE E",
+            "SEE NOTE C"
+          ],
+          "cross_references": [
+            "SEE \"JOINT PROTECTION DETAIL\"",
+            "SEE \"GIRDER DETAILS\" SHEET FOR END DIAPHRAGM DETAIL"
+          ]
+        },
+        {
+          "label": "JOINT PROTECTION DETAIL",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "No Scale",
+          "description": "Detail view of the joint protection system.",
+          "leader_text": [
+            "3\" BONDING ON SMOOTH FINISH",
+            "1/4\" x 1'-0\" NEOPRENE STRIP"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "SECTION Y-Y",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "3/4\" = 1'-0\"",
+          "description": "Section view showing details of the steel pipe pile.",
+          "leader_text": [
+            "PP 24 x 1/2",
+            "#8 BARS, TOTAL 8 (EPOXY COATED)"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "24\" \u00f8 STEEL PIPE PILE ELEVATION",
+          "view_type": "elevation",
+          "is_precise": true,
+          "scale": "3/4\" = 1'-0\"",
+          "description": "Elevation view of the steel pipe pile.",
+          "leader_text": [
+            "2\" \u00f8 HOLES, TYP",
+            "#8 BARS, TOTAL 8 SPACED RADIALY"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "AS BUILT SECTION Y-Y",
+          "view_type": "as_built",
+          "is_precise": true,
+          "scale": "3/4\" = 1'-0\"",
+          "description": "As-built section view of the steel pipe pile.",
+          "leader_text": [
+            "2\" \u00f8 HOLES EQUALLY SPACED AROUND PILE - TOTAL 2"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "example_id": "goldenwest_abutment_details_6",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 21,
+      "expected_count": 7,
+      "detected_count": 7,
+      "matched_labels": [
+        "DETAIL 1",
+        "DETAIL 2",
+        "DETAIL 3",
+        "SECTION A-A",
+        "SECTION B-B",
+        "SECTION C-C",
+        "DETAIL 5"
+      ],
+      "missing_labels": [],
+      "extra_labels": [],
+      "passed": true,
+      "detected_chunks": [
+        {
+          "label": "DETAIL 1",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+          "leader_text": [
+            "#5 Tof 4",
+            "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "DETAIL 2",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+          "leader_text": [
+            "#5 Tof 4",
+            "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "DETAIL 3",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+          "leader_text": [
+            "#5 Tof 4",
+            "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "SECTION A-A",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Section view showing reinforcement and shear key details.",
+          "leader_text": [
+            "#5",
+            "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "SECTION B-B",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Section view showing reinforcement and shear key details.",
+          "leader_text": [
+            "#5",
+            "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "SECTION C-C",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "1/2\" = 1'-0\"",
+          "description": "Section view showing reinforcement and shear key details.",
+          "leader_text": [
+            "#5",
+            "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "DETAIL 5",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail showing abutment seat and edge of concrete.",
+          "leader_text": [
+            "EDGE OF CONCRETE",
+            "ABUT SEAT"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "example_id": "goldenwest_chain_link_railing_details_1",
+      "file_name": "55-1119_GoldenwestOc_As_BuiltWM.pdf",
+      "page": 61,
+      "expected_count": 6,
+      "detected_count": 10,
+      "matched_labels": [
+        "TYPICAL SECTION",
+        "ELEVATION",
+        "TYPICAL DETAILS",
+        "TOP CABLE ANCHORAGE DETAIL",
+        "POST ANCHORAGE DETAIL",
+        "DETAIL 1"
+      ],
+      "missing_labels": [],
+      "extra_labels": [
+        "END POST",
+        "INTERMEDIATE PANELS",
+        "ELECTROLER PANEL",
+        "EXPANSION JOINT",
+        "ALTERNATIVE DETAILS"
+      ],
+      "passed": true,
+      "detected_chunks": [
+        {
+          "label": "TYPICAL SECTION",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Shows a typical section of the chain link railing.",
+          "leader_text": [
+            "INSIDE (PEDESTRIAN SIDE)",
+            "OUTSIDE"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "END POST",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail of the end post structure.",
+          "leader_text": [
+            "PIPE 3\" Std",
+            "TENSION BAR BANDS"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "INTERMEDIATE PANELS",
+          "view_type": "elevation",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Elevation view of the intermediate panels.",
+          "leader_text": [
+            "PIPE 2\" Std, Typ",
+            "1/2\" \u00d8 TENSION Bar, Typ"
+          ],
+          "cross_references": [
+            "SEE \"TOP CABLE ANCHORAGE DETAIL\""
+          ]
+        },
+        {
+          "label": "ELECTROLER PANEL",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail of the electroler panel.",
+          "leader_text": [
+            "ELECTROLER (WHERE SHOWN)"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "EXPANSION JOINT",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail of the expansion joint.",
+          "leader_text": [
+            "BARRIER, DECK",
+            "EYEBOLT, Typ"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "TYPICAL DETAILS",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Typical details of the railing components.",
+          "leader_text": [
+            "DRIVEN FIT",
+            "PIPE 3\" Std SLEEVE SLIDING"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "ALTERNATIVE DETAILS",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Alternative details for the railing components.",
+          "leader_text": [
+            "\u00d8 BOLTS",
+            "PIPE 3\" Std"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "TOP CABLE ANCHORAGE DETAIL",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail of the top cable anchorage.",
+          "leader_text": [
+            "3/8\" GALV CABLE",
+            "TIE CABLE TO PIPE"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "POST ANCHORAGE DETAIL",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Detail of the post anchorage.",
+          "leader_text": [
+            "PIPE 3\" Std",
+            "CONCRETE BARRIER"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "DETAIL 1",
+          "view_type": "detail",
+          "is_precise": true,
+          "scale": "NO SCALE",
+          "description": "Specific detail labeled as Detail 1.",
+          "leader_text": [
+            "PIPE 2\" Std",
+            "2-\u00d84 x 2'-6\""
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "example_id": "westminster_abutment_3_layout",
+      "file_name": "55-1127_WestminsterOC_As_Built.pdf",
+      "page": 11,
+      "expected_count": 3,
+      "detected_count": 3,
+      "matched_labels": [
+        "AS BUILT",
+        "PLAN",
+        "ELEVATION"
+      ],
+      "missing_labels": [],
+      "extra_labels": [],
+      "passed": true,
+      "detected_chunks": [
+        {
+          "label": "AS BUILT",
+          "view_type": "as_built",
+          "is_precise": true,
+          "scale": "",
+          "description": "Shows the as-built corrections for the structure.",
+          "leader_text": [
+            "1'-0\"",
+            "STAGE 1 REMOVAL",
+            "STAGE 2 REMOVAL",
+            "STAGE 1 CONSTRUCTION",
+            "STAGE 2 CONSTRUCTION"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "PLAN",
+          "view_type": "plan",
+          "is_precise": true,
+          "scale": "1/8\" = 1'-0\"",
+          "description": "Plan view of the abutment layout showing construction stages and utilities.",
+          "leader_text": [
+            "STAGE 1 CONSTRUCTION",
+            "STAGE 2 CONSTRUCTION",
+            "FUTURE IRRIGATION LINE OPENING/CASING",
+            "2\"-6\" FUTURE UTILITY OPENING WITH 10\" CASING",
+            "EXPANDED POLYSTYRENE"
+          ],
+          "cross_references": [
+            "DETAIL 1",
+            "DETAIL 2",
+            "see NOTE D"
+          ]
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation",
+          "is_precise": true,
+          "scale": "1/8\" = 1'-0\"",
+          "description": "Elevation view of the abutment showing structural details and utilities.",
+          "leader_text": [
+            "DRIVEN STEEL PIPE PILE, Typ",
+            "TOP OF CONE BARRIER TYPE 60D (Mod 1)",
+            "4\" WEEP HOLE, Typ"
+          ],
+          "cross_references": [
+            "see NOTE F",
+            "see NOTE G"
+          ]
+        }
+      ]
+    },
+    {
+      "example_id": "magnolia_bent_layout_1",
+      "file_name": "55-1121_MagnoliaOc_As_BuiltWM.pdf",
+      "page": 10,
+      "expected_count": 4,
+      "detected_count": 3,
+      "matched_labels": [
+        "PLAN STAGE 1",
+        "ELEVATION STAGE 1"
+      ],
+      "missing_labels": [
+        "SECTION B-B",
+        "SECTION A-A"
+      ],
+      "extra_labels": [
+        "STAGE 1 CONSTRUCTION"
+      ],
+      "passed": false,
+      "detected_chunks": [
+        {
+          "label": "STAGE 1 CONSTRUCTION",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "",
+          "description": "Section view showing stage 1 construction details including deck drain pipe and utility openings.",
+          "leader_text": [
+            "DECK DRAIN PIPE SEE NOTE F",
+            "CURTAIN WALL SEE NOTE K",
+            "EXPANDED POLYSTYRENE SAME THICKNESS AS BRG PAD",
+            "FUTURE UTILITY OPENING"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "PLAN",
+          "view_type": "plan",
+          "is_precise": true,
+          "scale": "3/8\" = 1'-0\"",
+          "description": "Plan view showing layout of abutment with details on utilities and construction stages.",
+          "leader_text": [
+            "DETAIL 1, SEE NOTE F",
+            "DETAIL 2, SEE NOTE F",
+            "DETAIL 3, SEE NOTE F",
+            "WATER LINE OPENING"
+          ],
+          "cross_references": [
+            "DETAIL 1",
+            "DETAIL 2",
+            "DETAIL 3"
+          ]
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation",
+          "is_precise": true,
+          "scale": "3/8\" = 1'-0\"",
+          "description": "Elevation view showing the abutment structure with details on deck drain pipe and architectural treatment.",
+          "leader_text": [
+            "DECK DRAIN PIPE",
+            "EXPANSION JOINT SEE NOTE E",
+            "ARCHITECTURAL TREATMENT, SEE NOTE F"
+          ],
+          "cross_references": []
+        }
+      ]
+    },
+    {
+      "example_id": "fresno_bent_details_2",
+      "file_name": "Fresno 180 Ramp.pdf",
+      "page": 12,
+      "expected_count": 5,
+      "detected_count": 4,
+      "matched_labels": [
+        "SECTION A-A",
+        "SECTION B-B",
+        "PLAN",
+        "ELEVATION"
+      ],
+      "missing_labels": [
+        "BENT CAP CAMBER DIAGRAM"
+      ],
+      "extra_labels": [],
+      "passed": false,
+      "detected_chunks": [
+        {
+          "label": "SECTION A-A",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "1:20",
+          "description": "Cross-sectional view showing structural details of the bent.",
+          "leader_text": [
+            "#11 CONC. 17",
+            "SEE DETAIL 'A'"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "SECTION B-B",
+          "view_type": "section",
+          "is_precise": true,
+          "scale": "1:20",
+          "description": "Cross-sectional view showing reinforcement details.",
+          "leader_text": [
+            "#11 CONC. 17",
+            "SEE DETAIL 'B'"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "PLAN - BENT 2&4",
+          "view_type": "plan",
+          "is_precise": true,
+          "scale": "1:20",
+          "description": "Top view layout of the bent structure.",
+          "leader_text": [
+            "EDGE OF DECK",
+            "SEE DETAIL 'C'"
+          ],
+          "cross_references": []
+        },
+        {
+          "label": "ELEVATION",
+          "view_type": "elevation",
+          "is_precise": true,
+          "scale": "1:20",
+          "description": "Side view showing elevation details of the bent.",
+          "leader_text": [
+            "STIRRUP PATTERNS",
+            "SEE DETAIL 'D'"
+          ],
+          "cross_references": []
+        }
+      ]
+    }
+  ],
+  "passed_examples": 4,
+  "total_examples": 6,
+  "ready_for_apply": false,
+  "prompt_version": "drawing-region-v1"
+}

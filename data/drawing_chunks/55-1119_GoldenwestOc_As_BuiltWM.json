@@ -1,0 +1,3814 @@
+{
+  "17": [
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Cross-section view showing structural details of the abutment.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE NOTE E",
+        "SEE NOTE C"
+      ],
+      "cross_references": [
+        "SEE \"JOINT PROTECTION DETAIL\"",
+        "SEE \"GIRDER DETAILS\" SHEET FOR END DIAPHRAGM DETAIL"
+      ]
+    },
+    {
+      "label": "JOINT PROTECTION DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "No Scale",
+      "description": "Detail view of the joint protection system.",
+      "leader_text": [
+        "3\" BONDING ON SMOOTH FINISH",
+        "1/4\" x 1'-0\" NEOPRENE STRIP"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION Y-Y",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view showing details of the steel pipe pile.",
+      "leader_text": [
+        "PP 24 x 1/2",
+        "#8 BARS, TOTAL 8 (EPOXY COATED)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "24\" \u00f8 STEEL PIPE PILE ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Elevation view of the steel pipe pile.",
+      "leader_text": [
+        "2\" \u00f8 HOLES, TYP",
+        "#8 BARS, TOTAL 8 SPACED RADIALY"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "AS BUILT SECTION Y-Y",
+      "view_type": "as_built",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "As-built section view of the steel pipe pile.",
+      "leader_text": [
+        "2\" \u00f8 HOLES EQUALLY SPACED AROUND PILE - TOTAL 2"
+      ],
+      "cross_references": []
+    }
+  ],
+  "21": [
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+      "leader_text": [
+        "#5 Tof 4",
+        "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+      "leader_text": [
+        "#5 Tof 4",
+        "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 3",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section detail showing reinforcement and polystyrene placement.",
+      "leader_text": [
+        "#5 Tof 4",
+        "2-#10 Bx 8'-0\" BUNDLED 8\" BUNDLES @ CENTER OF SHEAR KEY"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view showing reinforcement and shear key details.",
+      "leader_text": [
+        "#5",
+        "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view showing reinforcement and shear key details.",
+      "leader_text": [
+        "#5",
+        "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view showing reinforcement and shear key details.",
+      "leader_text": [
+        "#5",
+        "2-#10 BUNDLED Tof 14 (7 BUNDLES)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 5",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail showing abutment seat and edge of concrete.",
+      "leader_text": [
+        "EDGE OF CONCRETE",
+        "ABUT SEAT"
+      ],
+      "cross_references": []
+    }
+  ],
+  "61": [
+    {
+      "label": "TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Shows a typical section of the chain link railing.",
+      "leader_text": [
+        "INSIDE (PEDESTRIAN SIDE)",
+        "OUTSIDE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "END POST",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the end post structure.",
+      "leader_text": [
+        "PIPE 3\" Std",
+        "TENSION BAR BANDS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "INTERMEDIATE PANELS",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Elevation view of the intermediate panels.",
+      "leader_text": [
+        "PIPE 2\" Std, Typ",
+        "1/2\" \u00d8 TENSION Bar, Typ"
+      ],
+      "cross_references": [
+        "SEE \"TOP CABLE ANCHORAGE DETAIL\""
+      ]
+    },
+    {
+      "label": "ELECTROLER PANEL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the electroler panel.",
+      "leader_text": [
+        "ELECTROLER (WHERE SHOWN)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "EXPANSION JOINT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the expansion joint.",
+      "leader_text": [
+        "BARRIER, DECK",
+        "EYEBOLT, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL DETAILS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Typical details of the railing components.",
+      "leader_text": [
+        "DRIVEN FIT",
+        "PIPE 3\" Std SLEEVE SLIDING"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ALTERNATIVE DETAILS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Alternative details for the railing components.",
+      "leader_text": [
+        "\u00d8 BOLTS",
+        "PIPE 3\" Std"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TOP CABLE ANCHORAGE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the top cable anchorage.",
+      "leader_text": [
+        "3/8\" GALV CABLE",
+        "TIE CABLE TO PIPE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "POST ANCHORAGE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the post anchorage.",
+      "leader_text": [
+        "PIPE 3\" Std",
+        "CONCRETE BARRIER"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Specific detail labeled as Detail 1.",
+      "leader_text": [
+        "PIPE 2\" Std",
+        "2-\u00d84 x 2'-6\""
+      ],
+      "cross_references": []
+    }
+  ],
+  "1": [
+    {
+      "label": "PROFILE GRADE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Profile view showing the grade along the 'GWL' line with various structural elements and notes.",
+      "leader_text": [
+        "TRAFFIC SIGNAL SEE NOTE",
+        "STREET ID SIGN Typ. (Tot 4)",
+        "24\" STEEL PIPE PILE, ABUTMENTS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Elevation view showing the layout of the structure with reference points and various structural elements.",
+      "leader_text": [
+        "VEHICLE & PEDESTAL LOOP DET.",
+        "SEE NOTE F"
+      ],
+      "cross_references": [
+        "SEE 'GENERAL PLAN No. 2' SHEET FOR PERMANENT REFERENCE POINTS."
+      ]
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Plan view showing the top layout of the structure with dimensions and notes.",
+      "leader_text": [
+        "SEE NOTE F",
+        "TOP OF SLOPE"
+      ],
+      "cross_references": []
+    }
+  ],
+  "2": [
+    {
+      "label": "TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 10'",
+      "description": "Shows a cross-sectional view of the bridge structure including lanes, columns, and girders.",
+      "leader_text": [
+        "CIP/PS Conc Box Girder",
+        "7'-0\" SQUARE COLUMN, Typ",
+        "HP STEEL PILE, Typ",
+        "PROFILE GRADE RAISED MEDIAN, SEE NOTE E",
+        "3'-0\" CLOSURE POUR",
+        "4 LANES @ 12'-0\" = 48'-0\"",
+        "STAGE 1 CONSTRUCTION",
+        "STAGE 2 CONSTRUCTION"
+      ],
+      "cross_references": [
+        "SEE NOTE E",
+        "SEE GENERAL PLAN No. 1",
+        "SEE \"BRIDGE REMOVAL\" SHEET",
+        "SEE \"STAGE 1 CONSTRUCTION\" SHEET",
+        "SEE \"UTILITY OPENING DETAILS\" SHEET",
+        "SEE \"FOUNDATION PLAN\" SHEET"
+      ]
+    }
+  ],
+  "3": [
+    {
+      "label": "LOW EXPANSIVE MATERIAL ZONE FOR NEW FILL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail showing the low expansive material zone for new fill, including pavement, approach slab, and abutment.",
+      "leader_text": [
+        "LIMIT OF PRELOADING",
+        "ABUTMENT",
+        "PAVEMENT",
+        "APPROACH SLAB",
+        "LOW EXPANSIVE MATERIAL",
+        "SEE NOTE B",
+        "FG"
+      ],
+      "cross_references": []
+    }
+  ],
+  "4": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Plan view showing deck contours with labeled intervals and structure approach.",
+      "leader_text": [
+        "104+00 STRUCTURE APPROACH",
+        "EDGE OF DECK",
+        "BENT 2",
+        "Brg Abut 1",
+        "Brg Abut 3",
+        "GW LINE"
+      ],
+      "cross_references": []
+    }
+  ],
+  "5": [
+    {
+      "label": "SUPERSTRUCTURE SOFFIT PARABOLIC DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the parabolic detail of the superstructure soffit with labeled sections and dimensions.",
+      "leader_text": [
+        "Constant structure depth",
+        "160.0' Parabolic soffit, d=8'-3\" to 10'-3\"",
+        "Constant structure depth",
+        "SEE NOTE C"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Displays the plan view of the soffit contours with contour lines and labeled points.",
+      "leader_text": [
+        "EDGE OF SOFFIT",
+        "GW LINE",
+        "SEE NOTE C"
+      ],
+      "cross_references": []
+    }
+  ],
+  "6": [
+    {
+      "label": "TYPICAL SECTION - STAGE 1",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 10'",
+      "description": "Shows the typical section for Stage 1 construction, including traffic lanes and structure details.",
+      "leader_text": [
+        "54'-8\" STAGE 1 CONSTRUCTION",
+        "66'-0\" STAGE 1 TRAFFIC",
+        "PROFILE GRADE",
+        "2%"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL SECTION - STAGE 2",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 10'",
+      "description": "Illustrates the typical section for Stage 2 construction, detailing traffic lanes and structural components.",
+      "leader_text": [
+        "42'-0\" STAGE 2 TRAFFIC",
+        "77'-10\u00bd\" Min, 97'-4\u00be\" Max STAGE 2 CONSTRUCTION",
+        "PROFILE GRADE",
+        "2%"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL SECTION - FINAL",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 10'",
+      "description": "Depicts the final typical section, including median and traffic lanes.",
+      "leader_text": [
+        "63'-8\"",
+        "68'-10\u00bd\" Min, 88'-4\u00be\" Max",
+        "PROFILE GRADE",
+        "2%"
+      ],
+      "cross_references": []
+    }
+  ],
+  "7": [
+    {
+      "label": "EXISTING FOUNDATION PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the existing foundation layout with bent and abutment locations.",
+      "leader_text": [
+        "SEE NOTE D",
+        "SEE NOTE C",
+        "SEE NOTES B AND C"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "EXISTING DECK PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the existing deck layout with bent and abutment locations.",
+      "leader_text": [
+        "SEE NOTE D",
+        "EDGE OF DECK (REPLACEMENT)"
+      ],
+      "cross_references": []
+    }
+  ],
+  "8": [
+    {
+      "label": "EXISTING PARTIAL DECK PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the existing partial deck plan with removal areas and dimensions.",
+      "leader_text": [
+        "MEASURED ALONG WW LINE",
+        "MEASURED ALONG WL LINE",
+        "REMOVE TYPE 2 BARRIER RAILING",
+        "LIMITS OF OVERHANG AND BARRIER RAILING REMOVAL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "EXISTING ABUTMENT 1 FOOTING REMOVAL",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Details the removal of the existing abutment 1 footing.",
+      "leader_text": [
+        "FOOTING SAWCUT LINE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "WINGWALL ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view of the wingwall showing removal limits.",
+      "leader_text": [
+        "LIMITS OF EXIST' WINGWALL REMOVAL",
+        "WINGWALL SAWCUT LINE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Section view A-A showing construction stages and removal details.",
+      "leader_text": [
+        "REMOVE EXIST' BARRIER AND OVERHANG",
+        "CLOSURE POUR",
+        "SAWCUT LINE"
+      ],
+      "cross_references": []
+    }
+  ],
+  "9": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Foundation plan showing layout of existing and new structures, utility lines, and construction stages.",
+      "leader_text": [
+        "BENT 2 (Exist'n)",
+        "BENT 3 (Exist'n)",
+        "BENT 4 (Exist'n)",
+        "Temp SHORING",
+        "Exist FOOTING AND PILES, Typ",
+        "SEE NOTE C"
+      ],
+      "cross_references": [
+        "see BRIDGE REMOVAL PLAN sheet",
+        "see UTILITY PLANS",
+        "see RETAINING WALL PLANS",
+        "see GENERAL PLAN No. 1 sheet"
+      ]
+    }
+  ],
+  "10": [
+    {
+      "label": "PILE DATA TABLE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Table showing pile data including location, pile type, nominal resistance, design elevation, specified tip elevation, and required nominal driving resistance.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "WING WALL PILE DATA TABLE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Table detailing wing wall pile data with location, pile type, nominal resistance, design elevation, specified tip elevation, and required nominal driving resistance.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "SPREAD FOOTING DATA TABLE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Table providing spread footing data including support location, permissible net bearing resistance, and extreme event nominal bearing resistance.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "BENCHMARK",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Benchmark data including coordinates, elevation, and description.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "11": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Cross-sectional view showing structural details and dimensions.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE NOTE D"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Cross-sectional view showing structural details and dimensions.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE NOTE D"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 20'",
+      "description": "Top view layout showing the arrangement of structures and excavation limits.",
+      "leader_text": [
+        "LIMIT OF OVEREXCAVATION AND REPLACEMENT",
+        "STAGE CONST JT",
+        "Temp SHORING"
+      ],
+      "cross_references": [
+        "SEE NOTE A",
+        "SEE NOTE D",
+        "WING WALL DETAILS No. 1 sheet"
+      ]
+    }
+  ],
+  "12": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the layout of the abutment with dimensions and construction stages.",
+      "leader_text": [
+        "SEE NOTE E",
+        "SEE NOTE N",
+        "SEE NOTE M",
+        "SEE NOTE L",
+        "SEE NOTE I"
+      ],
+      "cross_references": [
+        "DETAIL 1",
+        "DETAIL 2",
+        "DETAIL 3",
+        "DETAIL 4",
+        "DETAIL 5"
+      ]
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1\" = 7'-0\"",
+      "description": "Elevation view showing the vertical profile and details of the abutment.",
+      "leader_text": [
+        "SEE NOTE N",
+        "SEE NOTE L",
+        "SEE NOTE I"
+      ],
+      "cross_references": [
+        "DETAIL 1",
+        "DETAIL 2",
+        "DETAIL 3",
+        "DETAIL 4",
+        "DETAIL 5"
+      ]
+    }
+  ],
+  "13": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view showing the layout of abutment 3 with various construction stages and details.",
+      "leader_text": [
+        "SEE NOTE O",
+        "SEE NOTE C",
+        "SEE NOTE E",
+        "SEE NOTE F",
+        "SEE NOTE G",
+        "SEE NOTE H",
+        "SEE NOTE J",
+        "SEE NOTE K",
+        "SEE NOTE L",
+        "SEE NOTE M",
+        "SEE NOTE N"
+      ],
+      "cross_references": [
+        "DETAIL 1",
+        "DETAIL 2",
+        "DETAIL 3",
+        "DETAIL 4",
+        "DETAIL 5"
+      ]
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Elevation view showing the vertical profile of abutment 3 with construction details.",
+      "leader_text": [
+        "SEE NOTE E",
+        "SEE NOTE N",
+        "SEE NOTE M"
+      ],
+      "cross_references": [
+        "DETAIL 3",
+        "DETAIL 4",
+        "DETAIL 5"
+      ]
+    }
+  ],
+  "14": [
+    {
+      "label": "ABUTMENT 1 FOOTING PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of the footing layout for Abutment 1, showing pile locations and spacing.",
+      "leader_text": [
+        "SEE NOTE A",
+        "REMOVE EXIST FOOTING AND CUT EXIST PILES"
+      ],
+      "cross_references": [
+        "see ABUTMENT DETAILS No. 2"
+      ]
+    },
+    {
+      "label": "ABUTMENT 3 FOOTING PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of the footing layout for Abutment 3, showing pile locations and spacing.",
+      "leader_text": [
+        "SEE NOTE A",
+        "REMOVE EXIST FOOTING AND CUT EXIST PILES"
+      ],
+      "cross_references": [
+        "see ABUTMENT DETAILS No. 2"
+      ]
+    }
+  ],
+  "15": [
+    {
+      "label": "PLAN - ABUTMENT 1",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Plan view of Abutment 1 showing reinforcement details.",
+      "leader_text": [
+        "ADDITIONAL #7 @ 6 TOP & BOTTOM",
+        "TOP MAT #7 @ 6 BOTTOM MAT #10 @ 6",
+        "STAGE 1 CONSTRUCTION",
+        "STAGE 2 CONSTRUCTION"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - ABUTMENT 3",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Plan view of Abutment 3 showing reinforcement details.",
+      "leader_text": [
+        "ADDITIONAL #7 @ 6 TOP & BOTTOM",
+        "TOP MAT #7 @ 6 BOTTOM MAT #10 @ 6",
+        "STAGE 1 CONSTRUCTION",
+        "STAGE 2 CONSTRUCTION"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 5",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail view showing specific reinforcement and coupler details.",
+      "leader_text": [
+        "MECH COUPLER PERMITTED",
+        "Const Jt"
+      ],
+      "cross_references": [
+        "see ABUTMENT DETAILS No. 4"
+      ]
+    }
+  ],
+  "16": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Cross-sectional view of the abutment showing various construction details.",
+      "leader_text": [
+        "JOINT SEAL",
+        "ASSEMBLY BLOCKOUT",
+        "STRUCTURE APPROACH",
+        "GEOCOMPOSITE DRAIN",
+        "Conc. BARRIER TYPE 60D",
+        "SEE NOTE"
+      ],
+      "cross_references": [
+        "SEE 'JOINT PROTECTION DETAIL' ON 'ABUTMENT DETAILS No. 2' SHEET",
+        "SEE 'GIRDER DETAILS' SHEET FOR END DIAPHRAGM DETAIL",
+        "SEE NOTE B",
+        "SEE DETAIL 1"
+      ]
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detailed view of the abutment face and expansion joint filler.",
+      "leader_text": [
+        "EXPANDED POLYSTYRENE",
+        "\u00bd\" EXPANSION JOINT FILLER",
+        "GALVANIZED SHEET METAL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the layout of the abutment and bearing pad.",
+      "leader_text": [
+        "Brg PAD SEE NOTE",
+        "LEVEL SEAT"
+      ],
+      "cross_references": [
+        "SEE NOTE B"
+      ]
+    },
+    {
+      "label": "SECTION X-X",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Cross-sectional view of the bearing pad detail.",
+      "leader_text": [
+        "EXPANDED POLYSTYRENE SAME THICKNESS AS BEARING PAD",
+        "LEVEL SEAT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BEARING PAD DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the bearing pad showing material and placement.",
+      "leader_text": [
+        "Brg PAD",
+        "EXPANDED POLYSTYRENE SAME THICKNESS AS BEARING PAD"
+      ],
+      "cross_references": []
+    }
+  ],
+  "18": [
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section showing abutment details with expansion joints and reinforcement.",
+      "leader_text": [
+        "SEE NOTE C",
+        "EXPANSION JOINT",
+        "SMOOTH Const Jt",
+        "Abut BACKWALL Reinf"
+      ],
+      "cross_references": [
+        "SEE NOTE D",
+        "see ABUTMENT DETAILS No. 6"
+      ]
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section showing face of abutment with reinforcement and chamfer details.",
+      "leader_text": [
+        "SEE NOTE C",
+        "EXPANSION JOINT",
+        "FACE OF ABUTMENT",
+        "6\" CHAMFER"
+      ],
+      "cross_references": [
+        "SEE NOTE D",
+        "see ABUTMENT DETAILS No. 6"
+      ]
+    }
+  ],
+  "19": [
+    {
+      "label": "SECTION G-G",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "TYP FOOTING REINF PLACEMENT DETAIL",
+      "leader_text": [
+        "TOP OF Ftg",
+        "BOTTOM OF Ftg",
+        "Abut Ftg TOP Longit'l Bars",
+        "Abut Ftg BOTTOM Longit'l Bars",
+        "RETURN WALL ADDITIONAL TOP TRANSV BARS (SKEWED)",
+        "RETURN WALL ADDITIONAL BOTTOM Longit'l BARS (SKEWED)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "RETURN WALL ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of the return wall with reinforcement details.",
+      "leader_text": [
+        "#6 @ 12 OUTSIDE FACE",
+        "#6 DOWELS OUTSIDE FACE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Section view showing shear key and reinforcement details.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE NOTE E",
+        "TOP OF ABUTMENT",
+        "#6 @ 12",
+        "#9 @ 12",
+        "#6 @ 9'-0\" o/c"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 4",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail view of reinforcement and backwall.",
+      "leader_text": [
+        "SMOOTH UNBONDED Cons't. Typ (TERMINATE ABOVE BASE OF SHEAR KEY)",
+        "BACKWALL (Reinf NOT SHOWN FOR CLARITY)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION Y-Y",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view showing bundled reinforcement details.",
+      "leader_text": [
+        "SEE \"SHEAR KEY NOTE\"",
+        "2-#6 BUNDLED (6 BUNDLES)"
+      ],
+      "cross_references": []
+    }
+  ],
+  "20": [
+    {
+      "label": "CURTAIN WALL ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Elevation view of the curtain wall showing reinforcement and architectural treatment.",
+      "leader_text": [
+        "#6 @ 12 OUTSIDE FACE",
+        "2\" EXPANDED POLYSTYRENE",
+        "STRUCTURE APPROACH SLAB",
+        "ARCHITECTURAL TREATMENT"
+      ],
+      "cross_references": [
+        "see ABUTMENT DETAILS No. 1"
+      ]
+    },
+    {
+      "label": "SECTION L-L",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Section view showing the structure approach slab and reinforcement details.",
+      "leader_text": [
+        "SEE NOTE E",
+        "#6 @ 12",
+        "2\" EXPANDED POLYSTYRENE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION M-M",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view detailing the expansion joint and shear key.",
+      "leader_text": [
+        "SHEAR KEY NOT SHOWN FOR CLARITY, SEE NOTE D",
+        "#6 @ 12",
+        "EXPANSION JOINT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION N-N",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view showing the neoprene strip and reinforcement details.",
+      "leader_text": [
+        "1/4\" x 2\"-0\" NEOPRENE STRIP",
+        "#6 @ 12",
+        "EXPANSION JOINT"
+      ],
+      "cross_references": []
+    }
+  ],
+  "22": [
+    {
+      "label": "ELEVATION (LOOKING WEST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Elevation view showing structural details and dimensions for the wing wall.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE NOTE E",
+        "SEE NOTE C",
+        "SEE NOTE G",
+        "SEE NOTE D",
+        "SEE NOTE F"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - ABUTMENT 1",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of Abutment 1 showing layout and dimensions.",
+      "leader_text": [
+        "WW LOL",
+        "Brg Abut 1"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - ABUTMENT 3",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of Abutment 3 showing layout and dimensions.",
+      "leader_text": [
+        "WW LOL",
+        "Brg Abut 3"
+      ],
+      "cross_references": []
+    }
+  ],
+  "23": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Vertical section showing the construction details of the wing wall with traffic signal pole and fence post.",
+      "leader_text": [
+        "TRAFFIC SIGNAL POLE",
+        "FENCE POST",
+        "WW LOL",
+        "Const Jt",
+        "#6 TIES",
+        "CONSTRUCTION EASEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Plan view showing the layout of the pole and surrounding elements.",
+      "leader_text": [
+        "TRAFFIC SIGNAL POLE",
+        "BASE OF CURB",
+        "TOP OF CURB",
+        "FENCE POST",
+        "ANCHOR",
+        "FACE OF CONC BARRIER TYPE 736SW",
+        "WW LOL"
+      ],
+      "cross_references": [
+        "SECTION B-B"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section showing the details of the concrete barrier and pole.",
+      "leader_text": [
+        "POLE",
+        "3\" Min NON-SHRINK GROUT",
+        "TOP OF CONCRETE BARRIER",
+        "BARRIER Horiz Reinf"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "POLE PILASTER",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail of the pole pilaster with reinforcement specifications.",
+      "leader_text": [
+        "SIGNAL POLE = PILASTER",
+        "Ref WALL Reinf"
+      ],
+      "cross_references": []
+    }
+  ],
+  "24": [
+    {
+      "label": "ELEVATION (LOOKING EAST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Elevation view showing the structure approach slab and expansion joints.",
+      "leader_text": [
+        "SEE NOTE C",
+        "SEE NOTE D",
+        "SEE NOTE A",
+        "SEE NOTE E",
+        "SEE NOTE G"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION (LOOKING EAST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/16\" = 1'-0\"",
+      "description": "Elevation view showing the structure approach slab and expansion joints.",
+      "leader_text": [
+        "SEE NOTE C",
+        "SEE NOTE A"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - ABUTMENT 3",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of Abutment 3 showing layout and architectural treatment.",
+      "leader_text": [
+        "ARCHITECTURAL TREATMENT SEE NOTE A",
+        "WW LOL = RW952 LOL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - ABUTMENT 1",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of Abutment 1 showing layout and architectural treatment.",
+      "leader_text": [
+        "ARCHITECTURAL TREATMENT SEE NOTE A",
+        "EDGE OF BRIDGE DECK"
+      ],
+      "cross_references": []
+    }
+  ],
+  "25": [
+    {
+      "label": "TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Shows a typical section of the wall with dimensions and reinforcement details.",
+      "leader_text": [
+        "SEE NOTE J",
+        "SEE NOTE C",
+        "SEE NOTE F"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "APPROXIMATE WALL OFFSET VALUES",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Provides offset values for the wall construction.",
+      "leader_text": [
+        "SEE TABLE A FOR OFFSET"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "WALL DRAINAGE DETAILS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Details for wall drainage including drain placement and specifications.",
+      "leader_text": [
+        "SEE 'DRAIN OUTLET' DETAIL ON STRUCTURE APPROACH DRAINAGE DETAILS SHEET"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "STEEL PIPE PILE ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view of the steel pipe pile with reinforcement details.",
+      "leader_text": [
+        "SEE NOTE F"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view of the wall with height and spacing details.",
+      "leader_text": [
+        "SEE TABLE FOR SPACING"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION Y-Y",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Section view Y-Y showing circular reinforcement details.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "26": [
+    {
+      "label": "PLAN STAGE 1",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Plan view showing the layout of the bent structure with reinforcement details.",
+      "leader_text": [
+        "EDGE OF DECK",
+        "OUTSIDE FACE OF EXTERIOR GIRDER",
+        "CLOSURE POUR",
+        "#11 Tot 52 (26 BUNDLES)",
+        "UTILITY OPENING, Typ",
+        "STIRRUPS SPACING, SEE NOTE F"
+      ],
+      "cross_references": [
+        "SEE NOTE W",
+        "SEE NOTE K",
+        "SEE NOTE L"
+      ]
+    },
+    {
+      "label": "ELEVATION STAGE 1",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Elevation view showing the vertical arrangement and reinforcement of the bent structure.",
+      "leader_text": [
+        "C COLUMN 1",
+        "C COLUMN 2",
+        "12\" STEEL PIPE CASING FOR OIL LINE SEE NOTE L",
+        "14\" STEEL PIPE CASING FOR OIL LINE SEE NOTE E",
+        "HP 18 x 181 PILES, Typ SEE NOTE B"
+      ],
+      "cross_references": [
+        "SEE NOTE G",
+        "SEE NOTE K"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view of the bent structure showing reinforcement and construction details.",
+      "leader_text": [
+        "ROUGHEN SURFACE TO 1/4\" AMPLITUDE",
+        "B7-10",
+        "U-7"
+      ],
+      "cross_references": [
+        "SEE NOTE F"
+      ]
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view showing details of the bent cap and reinforcement.",
+      "leader_text": [
+        "#8 HOOPS (BUNDLED) SEE NOTE",
+        "C COLUMN = C Ftg"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view showing the architectural treatment and reinforcement of the bent cap.",
+      "leader_text": [
+        "#5 SPIRAL (GALVANIZED)",
+        "2-#10 BUNDLED DOWELS TO #14 (GALVANIZED)"
+      ],
+      "cross_references": []
+    }
+  ],
+  "27": [
+    {
+      "label": "PLAN STAGE 2",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Top view layout of the bent structure showing columns and utility openings.",
+      "leader_text": [
+        "SEE NOTE N, Typ",
+        "UTILITY OPENING, B7-10, Typ",
+        "SEE NOTE H",
+        "UTILITY OPENING FOR WATER LINE SEE NOTE M"
+      ],
+      "cross_references": [
+        "SEE BENT DETAILS No. 3 sheet",
+        "SEE NOTE B"
+      ]
+    },
+    {
+      "label": "ELEVATION STAGE 2",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Side view elevation of the bent structure showing column details and reinforcement.",
+      "leader_text": [
+        "SEE NOTE L",
+        "SEE NOTE M",
+        "SEE NOTE H",
+        "HP 18 x 181 PILES, Typ"
+      ],
+      "cross_references": [
+        "SEE BENT DETAILS No. 3 sheet",
+        "SEE NOTE B"
+      ]
+    }
+  ],
+  "28": [
+    {
+      "label": "ELEVATION (TYPICAL ALL FOOTING)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Elevation view showing typical footing details with reinforcement and expansion joint filler.",
+      "leader_text": [
+        "2-#10 BUNDLED (7 BUNDLES)",
+        "ROUGHEN SURFACE TO 1/4\" AMPLITUDE",
+        "#5 SPIRAL @ 4\" PITCH (GALVANIZED) SEE NOTE D",
+        "2-#8 HOOPS BUNDLED",
+        "#8 @ 6",
+        "#6 @ 12 BOTH WAYS HOOP AROUND BOTTOM MATS",
+        "#7 Tof 4 EACH SIDE, Typ",
+        "#5 EMBED Typ",
+        "#14 @ 6 TOP LAYER WITH #3 BOTTOM LAYER SPACED 2' APART"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the layout of steel pile anchor.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view showing steel pile anchor details.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "BENT 2 STAGE 1 - PILE LAYOUT",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Layout showing the arrangement of piles and columns for Bent 2 Stage 1.",
+      "leader_text": [
+        "COLUMN 1 = F Ftg",
+        "COLUMN 2 = F Ftg",
+        "ALL STEEL PILES, STRONG AXIS AS SHOWN, Typ",
+        "TOP MAT #8 @ 6 EACH WAY",
+        "8 #8 @ 3 AND #14 @ 6, SEE ELEVATION",
+        "Conc FOOTING, Typ",
+        "3 SPACES @ 5'-2\" = 15'-6\"",
+        "3 SPACES @ 5'-2\" = 15'-6\"",
+        "28'-2 1/4\"",
+        "1'-6\" CHAMFER",
+        "\"GW\" LINE"
+      ],
+      "cross_references": [
+        "see FOUNDATION PLAN sheet"
+      ]
+    }
+  ],
+  "29": [
+    {
+      "label": "BENT 2 STAGE 2 - PILE LAYOUT",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "1\" = 10'",
+      "description": "Layout showing the arrangement of piles for Bent 2 in Stage 2, including dimensions and pile locations.",
+      "leader_text": [
+        "SEE \"NOTE A\", Typ",
+        "CONCRETE FOOTING, Typ",
+        "TOP MAT #10 MAX TRANSVERSE",
+        "3 SPACES @ 5'-2\" = 15'-6\" Typ",
+        "4'-0\" Typ"
+      ],
+      "cross_references": [
+        "see BENT DETAILS No. 1 sheet",
+        "see FOUNDATION PLAN sheet"
+      ]
+    }
+  ],
+  "30": [
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view of Bent 2 showing reinforcement and construction details.",
+      "leader_text": [
+        "SEE NOTE F",
+        "SEE NOTE G",
+        "SEE NOTE H",
+        "#9 Tof 11, SEE NOTE G",
+        "#4 J-DOWELS, SEE 'DETAIL 1' AND NOTE D",
+        "#6 CROSS TIES",
+        "#8 Const Tof 10 ea FACE ADJUST SPACING TO CLEAR UTILITY OPENING"
+      ],
+      "cross_references": [
+        "SEE 'SECTION D-D'"
+      ]
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view of Bent 2 with soffit reinforcement and construction details.",
+      "leader_text": [
+        "SEE NOTE F",
+        "#11 Tot 52 STAGE 1 (26 BUNDLES)",
+        "#11 Tot 56 STAGE 2 (28 BUNDLES)",
+        "#5 12, Typ",
+        "#8 Cont 10 ea FACE",
+        "#11 2, Typ"
+      ],
+      "cross_references": [
+        "SEE 'SECTION C-C'"
+      ]
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Detail view showing the limit of J-Dowels and cross ties for Bent 2.",
+      "leader_text": [
+        "LIMIT OF J-DOWELS & Add'l #6 CROSS TIES SEE NOTE D"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BAR PLACEMENT DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Detail view showing the bar placement for column main reinforcement.",
+      "leader_text": [
+        "#11 BOTTOM MAIN Reinf",
+        "COLUMN MAIN Reinf",
+        "FACE OF COLUMN FACE OF BENT CAP, Typ",
+        "COLUMN HOOP Reinf"
+      ],
+      "cross_references": []
+    }
+  ],
+  "31": [
+    {
+      "label": "TYPICAL SECTION (STAGE 1 CONSTRUCTION)",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Shows a cross-sectional view of the construction stage 1, including dimensions and reinforcement details.",
+      "leader_text": [
+        "2'-0\" TO 4'-0\" VAR",
+        "SEE NOTE E",
+        "ADDITIONAL TOP REINFORCEMENT",
+        "BARRIER Reinf",
+        "#5 Tot 2",
+        "#6 OR [STIRRUPS, Typ]",
+        "DECK CLOSURE POUR"
+      ],
+      "cross_references": [
+        "SEE \"TYPICAL SECTION NO. 1 SUPPLEMENTAL NO. 1\" SHEET FOR AS BUILT CHANGES.",
+        "SEE NOTE E",
+        "SEE NOTE C"
+      ]
+    },
+    {
+      "label": "PARTIAL TYPICAL SECTION (STAGE 1 CONSTRUCTION)",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Displays a partial cross-sectional view of the construction stage 1, focusing on specific reinforcement and structural details.",
+      "leader_text": [
+        "#10 Cont Tot 4",
+        "8-#5 Cont, Typ",
+        "6\" EMBEDMENT INTO DECK, Typ",
+        "ADDITIONAL REINFORCEMENT"
+      ],
+      "cross_references": [
+        "SEE NOTE E",
+        "SEE \"TYPICAL SECTION NO. 2\" SHEET FOR DETAILS"
+      ]
+    }
+  ],
+  "32": [
+    {
+      "label": "TYPICAL CLOSURE POUR",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail of typical closure pour section.",
+      "leader_text": [
+        "6\"+",
+        "6\"+"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "CLOSURE POUR AT END DIAPHRAGMS & BENT DIAPHRAGMS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail of closure pour at end diaphragms and bent diaphragms.",
+      "leader_text": [
+        "\u00f87",
+        "\u00f86, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "AS BUILT PART TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "\u00bd\" = 1'-0\"",
+      "description": "As built part typical section showing reinforcement and closure pour girders.",
+      "leader_text": [
+        "#6 STIRRUPS",
+        "TYPICAL EXT & CLOSURE POUR GIRDERS",
+        "TOP MAT MIDBAY **",
+        "BOT MAT STEM FACE **",
+        "#5 CONT ADDITIONAL TYP",
+        "#10 CONT PER PLAN"
+      ],
+      "cross_references": []
+    }
+  ],
+  "33": [
+    {
+      "label": "TYPICAL SECTION (STAGE 2 CONSTRUCTION)",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Shows the typical section for stage 2 construction with girder and deck details.",
+      "leader_text": [
+        "RAISED MEDIAN, SEE NOTE N",
+        "DECK CLOSURE POUR",
+        "9 VARIABLE SPACING (FOR SPACING SEE \"GIRDER LAYOUT No. 2\" SHEET)"
+      ],
+      "cross_references": [
+        "SEE NOTE N",
+        "SEE \"GIRDER LAYOUT No. 2\" SHEET"
+      ]
+    },
+    {
+      "label": "PARTIAL TYPICAL SECTION (STAGE 2 CONSTRUCTION)",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Displays a partial view of the typical section for stage 2 construction with reinforcement and barrier details.",
+      "leader_text": [
+        "SEE NOTE",
+        "SEE NOTE B",
+        "SEE NOTE E"
+      ],
+      "cross_references": [
+        "SEE NOTE",
+        "SEE NOTE B",
+        "SEE NOTE E",
+        "SEE \"TYPICAL SECTION No. 1\" SHEET FOR DETAILS"
+      ]
+    }
+  ],
+  "34": [
+    {
+      "label": "CAMBER DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Diagram showing the camber profile of the girders.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN (STAGE 1 CONSTRUCTION)",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Plan view of the girder layout for stage 1 construction.",
+      "leader_text": [
+        "DECK DRAINAGE, Typ",
+        "EDGE OF CLOSURE POUR",
+        "INFLECTION POINT",
+        "CENTER OF GRAVITY OF PRESTRESSING FORCE IS PARABOLIC BETWEEN POINTS SHOWN"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "LONGITUDINAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Longitudinal section showing the profile and details of the girders.",
+      "leader_text": [
+        "SEE NOTE 8",
+        "16'-0\" SOFFIT FLARE",
+        "EXTERIOR GIRDER #6 STIRRUPS",
+        "INTERIOR GIRDER #6 STIRRUPS"
+      ],
+      "cross_references": []
+    }
+  ],
+  "35": [
+    {
+      "label": "CAMBER DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "",
+      "description": "Diagram showing the camber profile of girders.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN (STAGE 2 CONSTRUCTION)",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view of the girder layout for stage 2 construction.",
+      "leader_text": [
+        "GIRDER, Typ",
+        "CW LINE",
+        "DECK DRAINAGE",
+        "EDGE OF CLOSURE POUR",
+        "SOFFIT OPENING, Typ",
+        "GRADED SOFFIT OPENING, SEE NOTE C"
+      ],
+      "cross_references": [
+        "SEE DETAIL"
+      ]
+    },
+    {
+      "label": "LONGITUDINAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Longitudinal section showing the profile and details of the girders.",
+      "leader_text": [
+        "CENTER OF GRAVITY OF PRESTRESSING FORCE BETWEEN POINTS SHOWN",
+        "SOFFIT FLARE",
+        "NOTE B",
+        "EXTERIOR GIRDER",
+        "INTERIOR GIRDER"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail view of the exterior girder and related components.",
+      "leader_text": [
+        "EXTERIOR GIRDER",
+        "INTERIOR GIRDER",
+        "STIRRUPS"
+      ],
+      "cross_references": []
+    }
+  ],
+  "36": [
+    {
+      "label": "OBTUSE CORNER DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Detail of the obtuse corner showing reinforcement and dimensions.",
+      "leader_text": [
+        "EXTEND TOP TRANSVERSE BARS",
+        "BACK FACE OF END DIAPHRAGM",
+        "INSIDE FACE OF END DIAPHRAGM"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ACUTE CORNER DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Detail of the acute corner showing reinforcement and dimensions.",
+      "leader_text": [
+        "EXTEND TOP TRANSVERSE BARS",
+        "BACK FACE OF END DIAPHRAGM",
+        "INSIDE FACE OF END DIAPHRAGM"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "CLOSURE POUR REINF DETAIL AT END DIAPHRAGM",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Detail of the closure pour reinforcement at the end diaphragm.",
+      "leader_text": [
+        "EXTEND TOP TRANSVERSE BARS",
+        "BACK FACE OF END DIAPHRAGM",
+        "LIMIT OF BLOCKOUT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "END DIAPHRAGM DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail of the end diaphragm showing reinforcement and dimensions.",
+      "leader_text": [
+        "TRANSVERSE DECK REINF",
+        "PRESTRESS ANCHORAGE RECESS AND GRILLAGE",
+        "CONTINUE SOFFIT SLAB LONGITUDINAL REINF INTO DIAPHRAGM"
+      ],
+      "cross_references": [
+        "SEE NOTE 6",
+        "SEE NOTE E"
+      ]
+    }
+  ],
+  "37": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Plan view showing the layout of the deck reinforcement with labeled dimensions and notes.",
+      "leader_text": [
+        "EDGE OF CLOSURE POUR",
+        "#10 X 30'-0\" T\u00d8 3 PER BAY SEE NOTE A",
+        "#10 X 60'-0\" T\u00d8 6 PER BAY SEE NOTE A",
+        "EDGE OF DECK",
+        "Brg Abut 1",
+        "GIRDER, Typ",
+        "BENT 2",
+        "Brg Abut 3"
+      ],
+      "cross_references": []
+    }
+  ],
+  "38": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Plan view showing the layout of girders and closure pours.",
+      "leader_text": [
+        "EDGE OF CLOSURE POUR",
+        "#10 x 60'-0\" TYP 4 PER BAY SEE NOTE A",
+        "EDGE OF EXTERIOR GIRDER",
+        "GIRDER, Typ",
+        "Brg Abut 1",
+        "Brg Abut 3",
+        "BENT 2"
+      ],
+      "cross_references": []
+    }
+  ],
+  "39": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-section of the barrier showing reinforcement and construction details.",
+      "leader_text": [
+        "CHAIN LINK RAILING TYPE 2 (Mod Typ)",
+        "1\" CHAMFER, Typ",
+        "#5 Cont, Tot 12",
+        "DECK Reinf",
+        "TOP OF ROADWAY SURFACE",
+        "SEE NOTE 7"
+      ],
+      "cross_references": [
+        "SEE GENERAL PLAN No. 1 SHEET",
+        "SEE NOTE 7"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-section showing wall and curb details.",
+      "leader_text": [
+        "FOR REINFORCING NOT SHOWN SEE SECTION A-A",
+        "SEE CURB DETAILS",
+        "TOP OF ROADWAY SURFACE"
+      ],
+      "cross_references": [
+        "SEE GENERAL PLAN No. 1 SHEET"
+      ]
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view of the barrier showing limits and joint details.",
+      "leader_text": [
+        "FOR CHAIN LINK RAILING, SEE NOTE 10",
+        "FOR ELECTROLIER, SEE NOTE 5",
+        "OPEN JOINT TO MATCH DECK JOINT WIDTH",
+        "FOR TUBULAR RAILING DETAILS, SEE NOTE 10"
+      ],
+      "cross_references": [
+        "SEE NOTE 5",
+        "SEE NOTE 10"
+      ]
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Plan view showing the layout of the barrier and joint locations.",
+      "leader_text": [
+        "CHAIN LINK RAILING TYPE 2 (Mod) AND TUBULAR RAILING NOT SHOWN FOR CLARITY",
+        "SEE NOTE 8",
+        "SEE UTILITY DUCT EXPANSION JOINT DETAIL"
+      ],
+      "cross_references": [
+        "SEE NOTE 8"
+      ]
+    }
+  ],
+  "40": [
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view showing reinforcing details at the return wall with structure approach.",
+      "leader_text": [
+        "SEE NOTE 2",
+        "STRUCTURE APPROACH, SEE NOTE 3"
+      ],
+      "cross_references": [
+        "SEE SECTION C-C",
+        "SEE ABUTMENT DETAILS No. 4 SHEET"
+      ]
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view showing reinforcing details at the wing wall without approach slab.",
+      "leader_text": [
+        "SEE NOTE 2",
+        "FOR DIMENSIONS AND REINFORCING NOT SHOWN SEE SECTION C-C"
+      ],
+      "cross_references": [
+        "SEE SECTION C-C"
+      ]
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view showing pedestal details with pull box.",
+      "leader_text": [
+        "SEE STD PLAN ES-6B FOR ELECTROLER MOUNTING DETAILS"
+      ],
+      "cross_references": [
+        "SEE SECTION C-C"
+      ]
+    },
+    {
+      "label": "SECTION F-F",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view showing pedestal details.",
+      "leader_text": [
+        "FOR DIMENSIONS AND REINFORCING NOT SHOWN SEE SECTION C-C"
+      ],
+      "cross_references": [
+        "SEE SECTION C-C"
+      ]
+    },
+    {
+      "label": "PEDESTAL PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "No scale",
+      "description": "Plan view showing pedestal layout with pull box and reinforcing details.",
+      "leader_text": [
+        "FUTURE ELECTROLER",
+        "#5 TOTAL 2, EXTEND BEYOND PULL BOX A MIN OF 2 EACH SIDE"
+      ],
+      "cross_references": [
+        "SEE SECTION C-C"
+      ]
+    },
+    {
+      "label": "UTILITY DUCT EXPANSION JOINT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1\u00bd\" = 1'-0\"",
+      "description": "Detail showing utility duct expansion joint.",
+      "leader_text": [
+        "FORM VOID AREA BY WRAPPING DUCT WITH 15 LB BUILDING PAPER OR EQUAL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "CURB DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1\u00bd\" = 1'-0\"",
+      "description": "Detail showing curb construction with reinforcing.",
+      "leader_text": [
+        "#4 @ 16 MIN 6\" EMBEDMENT INTO DECK, TYP"
+      ],
+      "cross_references": []
+    }
+  ],
+  "41": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "3\" = 1'-0\"",
+      "description": "Plan view showing the layout of the steel edge member and barrier arrangement.",
+      "leader_text": [
+        "4\u00bd\" STAGGERED ON CENTER, Typ",
+        "3\" Min. MOX, Typ",
+        "SKEW > 20\u00b0"
+      ],
+      "cross_references": [
+        "SEE NOTE 7"
+      ]
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3\" = 1'-0\"",
+      "description": "Section view showing the steel barrier and joint details.",
+      "leader_text": [
+        "STEEL R BARRIER \u00be\" x 8\u00bd\" x 18\"",
+        "1\u00bd\"\u00f8 HOLE FOR COUNTERSUNK \u00be\"\u00f8 ANCHOR BOLTS"
+      ],
+      "cross_references": [
+        "SEE NOTE 6"
+      ]
+    },
+    {
+      "label": "BARRIER DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3\" = 1'-0\"",
+      "description": "Detail view of the barrier showing high side and low side configurations.",
+      "leader_text": [
+        "STEEL R BARRIER \u00be\" x 8\u00bd\" x 18\"",
+        "STEEL EDGE MEMBER"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SIDEWALK DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3\" = 1'-0\"",
+      "description": "Detail view of the sidewalk showing the steel barrier and edge member.",
+      "leader_text": [
+        "STEEL R BARRIER \u00be\" x 6\u00bd\" x 18\"",
+        "STEEL EDGE MEMBER"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SCHEMATIC STEEL EDGE MEMBER",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Schematic diagram of the steel edge member.",
+      "leader_text": [],
+      "cross_references": [
+        "SEE NOTE 7"
+      ]
+    },
+    {
+      "label": "SCHEMATIC FIELD WELD DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Schematic detail of the field weld.",
+      "leader_text": [
+        "NOTE: SHADED AREAS TO BE WELDED"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SCHEMATIC SHOP WELD DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Schematic detail of the shop weld.",
+      "leader_text": [
+        "GRIND FLUSH SURFACE ONLY"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3\" = 1'-0\"",
+      "description": "Section view showing the steel barrier and anchorage details.",
+      "leader_text": [
+        "STEEL R BARRIER \u00be\" x 6\u00bd\" x 18\"",
+        "BAR 2\" x \u00bd\" x 6\" CENTERED w/ BOLTS"
+      ],
+      "cross_references": [
+        "SEE NOTE 10"
+      ]
+    }
+  ],
+  "42": [
+    {
+      "label": "PLAN SKEW 20\u00b0",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Plan view showing the layout with a skew of 20 degrees.",
+      "leader_text": [
+        "TOP OF BARRIER OR CURB",
+        "OPEN JOINT TO MATCH DECK JOINT WIDTH",
+        "DIRECTION OF TRAFFIC"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Section view showing the cross-section of the structure.",
+      "leader_text": [
+        "SEE 'DETAIL B'",
+        "TOP OF BARRIER",
+        "TOP OF SIDEWALK OR DECK"
+      ],
+      "cross_references": [
+        "DETAIL B"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Section view showing another cross-section of the structure.",
+      "leader_text": [
+        "CHAIN LINK FENCE",
+        "CONCRETE BARRIER",
+        "SEE 'DETAIL C'"
+      ],
+      "cross_references": [
+        "DETAIL C"
+      ]
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Elevation view showing the side view of the structure.",
+      "leader_text": [
+        "OPEN JOINT TO MATCH DECK JOINT WIDTH",
+        "TOP OF BARRIER",
+        "TOP OF DECK"
+      ],
+      "cross_references": [
+        "DETAIL A"
+      ]
+    },
+    {
+      "label": "DETAIL A",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail view showing taper edge of steel plate.",
+      "leader_text": [
+        "TAPER CONCRETE",
+        "TAPER EDGE OF STEEL PLATE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL B",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail view showing a 1/4\" gap.",
+      "leader_text": [
+        "1/4\" GAP Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL C",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail view showing steel edge member.",
+      "leader_text": [
+        "1/4\" GAP Typ",
+        "STEEL EDGE MEMBER NOT SHOWN FOR CLARITY"
+      ],
+      "cross_references": []
+    }
+  ],
+  "43": [
+    {
+      "label": "DECK DRAIN PIPE AND OIL LINE DETAIL AT ABUTMENT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Shows the layout and connections of the deck drain pipe and oil line at the abutment.",
+      "leader_text": [
+        "SEE PIPE BLOCKOUT DETAIL",
+        "FOR DECK DRAIN INLET LOCATIONS, SEE 'DECK DRAIN PLAN'"
+      ],
+      "cross_references": [
+        "DECK DRAIN DETAILS No. 2"
+      ]
+    },
+    {
+      "label": "SECTION H-H",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Cross-sectional view showing the deck drain pipe and wall reinforcement.",
+      "leader_text": [
+        "BEND REINFORCING TO AVOID PIPES",
+        "OPTIONAL Const Jt"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PIPE BLOCKOUT DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the pipe blockout in the abutment return wall.",
+      "leader_text": [
+        "R=18\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 20'",
+      "description": "Plan view showing the layout of the deck drain system and connections.",
+      "leader_text": [
+        "CONNECT TO DRAINAGE SYSTEM",
+        "C Brg Abut 1"
+      ],
+      "cross_references": [
+        "DECK DRAIN DETAILS No. 2"
+      ]
+    }
+  ],
+  "44": [
+    {
+      "label": "DECK DRAIN PIPE DETAIL AT ABUTMENT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Shows the layout and components of the deck drain pipe at the abutment.",
+      "leader_text": [
+        "FOR DECK DRAIN INLET LOCATIONS, SEE 'DECK DRAIN PLAN'",
+        "NOTE: FOR DECK DRAIN 105+14.00, 17.00' RT OF 'GW' LINE ONLY."
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PIPE HANGER DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Illustrates the pipe hanger assembly and its components.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "DECK DRAIN OUTLET PIPE SUPPORT DETAIL (AT ABUTMENT)",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1\u00bd\" = 1'-0\"",
+      "description": "Details the support structure for the deck drain outlet pipe at the abutment.",
+      "leader_text": [
+        "NOTE: PROVIDE EVERY 15'-0\"."
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Cross-sectional view of the deck drain outlet pipe support.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "RAISED MEDIAN CURB LAYOUT",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "1\" = 30'",
+      "description": "Layout of the raised median curb along the roadway.",
+      "leader_text": [
+        "RAISED MEDIAN CURB SEE 'ROADWAY PLANS'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Specific detail of a section of the median curb.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Cross-sectional view of the raised median curb.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "45": [
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view of the concrete pipe support details.",
+      "leader_text": [
+        "PIPE CLAMP & SUPPORT",
+        "PIPE PROTECTION",
+        "BRIDGE SOFFIT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view showing the top of pipe support pedestal.",
+      "leader_text": [
+        "PIPE CLAMP",
+        "GALVANIZED STEEL",
+        "ANCHOR BOLT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PROFILE ALONG WATER LINE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Profile view along the water line with notes.",
+      "leader_text": [
+        "PIPE SUPPORT, Typ",
+        "PIPE"
+      ],
+      "cross_references": [
+        "ORDER LAYOUT No. 2 sheet",
+        "UTILITY PLAN U-WW-2"
+      ]
+    },
+    {
+      "label": "DIRT STOP DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail of the dirt stop installation.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "GRATE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Grate detail with bar specifications.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view of the soffit opening.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view showing the soffit opening.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view of the grated soffit access opening detail.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "46": [
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the elevation view of the concrete pipe support details.",
+      "leader_text": [
+        "PIPE CLAMP",
+        "PIPE CASING",
+        "PIPE PROTECTION SHIELD",
+        "ATTACH PIPE CRADLE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view A-A of the concrete pipe support details.",
+      "leader_text": [
+        "PIPE SUPPORT PEDESTAL",
+        "TOP OF PIPE SUPPORT",
+        "PIPE SUPPORT, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PROFILE ALONG OIL LINE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Profile view along the oil line showing pipe support.",
+      "leader_text": [
+        "PIPE SUPPORT, Typ",
+        "TOP OF PIPE SUPPORT",
+        "PIPE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PIPE SUPPORT INSTALLATION AT ABUTMENT AND BENT CAP",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Installation details of pipe support at abutment and bent cap.",
+      "leader_text": [
+        "PIPE SUPPORT, Typ",
+        "BENT 2",
+        "PIPE CASING",
+        "SOFFIT ACCESS OPENING"
+      ],
+      "cross_references": [
+        "SEE 'CONCRETE PIPE SUPPORT DETAIL' THIS SHEET",
+        "SEE 'OIL LINES DETAILS SUPPLEMENTAL NO. 1' SHEET FOR AS BUILT CHANGES"
+      ]
+    }
+  ],
+  "47": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Top view showing the arrangement of the roller stand, pipe clamp, and other components.",
+      "leader_text": [
+        "CONC SUPPORT",
+        "ANGLE IRON (NOT SHOWN)",
+        "TEFLON SLIDE PLATE (BONDED TO BASE PLATE)",
+        "1/2\" BASE PLATE",
+        "CASING"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "N.T.S.",
+      "description": "Cross-sectional view showing the details of the pipe clamp, roller stand, and related components.",
+      "leader_text": [
+        "Steel plate should cover the entire concrete support at 4'-10\" x 1\"",
+        "3\" clearance, measured from anchor rod to edge of support.",
+        "2\"x2\" - W2.0 x W2.0 WWF or Equivalent",
+        "Varies 3\" min to 4'10\" Max",
+        "J Bar Dowels"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "N.T.S.",
+      "description": "Cross-sectional view showing the details of the pipe clamp with insulator and related components.",
+      "leader_text": [
+        "3/16\" Fillet weld",
+        "3/16\" Fillet Weld - 2\" long @ 6\" Centers",
+        "Angle iron thickness of 1/4\"",
+        "1-1/2\"x1-1/2\" ANGLE IRON",
+        "7/8\" diameter Galv anchor with 5\" embedment (to be drilled and epoxied)"
+      ],
+      "cross_references": []
+    }
+  ],
+  "48": [
+    {
+      "label": "TYPICAL CONDUITS SUPPORT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the typical support structure for conduits with dimensions and materials.",
+      "leader_text": [
+        "NON-METALLIC CONDUITS SPACER",
+        "CONCRETE BASE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Cross-sectional view of the pipe support showing dimensions and materials.",
+      "leader_text": [
+        "PIPE SUPPORT",
+        "Conc BASE",
+        "EPOXY ADHESIVE TOP OF SOFFIT SLAB"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PIPE SUPPORT INSTALLATION NEAR ABUTMENT AND BENT CAP",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "",
+      "description": "Layout showing the installation of pipe support near abutment and bent cap with related notes.",
+      "leader_text": [
+        "SEE \"DECK DRAIN DETAILS No. 1 SHEET\"",
+        "SOFFIT ACCESS OPENING, SEE \"GIRDER LAYOUT\" SHEETS",
+        "SEE \"TYPICAL CONDUITS SUPPORT\" DETAIL THIS SHEET"
+      ],
+      "cross_references": [
+        "DECK DRAIN DETAILS No. 1",
+        "GIRDER LAYOUT"
+      ]
+    }
+  ],
+  "49": [
+    {
+      "label": "AT ABUTMENT 3",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view showing utility openings at Abutment 3 with dimensions and notes.",
+      "leader_text": [
+        "3'-0\"",
+        "2'-5\"",
+        "GIRDER, Typ",
+        "SEE NOTE C"
+      ],
+      "cross_references": []
+    }
+  ],
+  "50": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing layout of the structure approach slab and related elements.",
+      "leader_text": [
+        "SEE 'APPROACH SLAB TRANSVERSE JOINT' TABLE",
+        "SEE 'APPROACH SLAB TRANSVERSE JOINT' TABLE",
+        "SEE NOTE 1",
+        "SEE 'ABUTMENT TIE DETAILS'",
+        "SEE 'DETAIL A'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL A",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "No Scale",
+      "description": "Detail view of the approach slab transverse joint.",
+      "leader_text": [
+        "SEE 'APPROACH SLAB TRANSVERSE JOINT' TABLE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "END STAGGER DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail showing staggered end of the structure approach.",
+      "leader_text": [
+        "SEE 'DETAIL B'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view A-A showing cross-section of the structure approach.",
+      "leader_text": [
+        "SEE NOTE 1",
+        "SEE NOTE 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Section view B-B showing cross-section of the structure approach.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "EDGE ANGLE PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view of the edge angle for the structure approach.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "LONGITUDINAL CONSTRUCTION JOINT ALTERNATIVES",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail showing alternatives for longitudinal construction joints.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "BAR CHAIR DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail of bar chair placement for reinforcement.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "ABUTMENT TIE DETAILS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "3/4\" = 1'-0\"",
+      "description": "Detail showing abutment tie configurations.",
+      "leader_text": [
+        "SEE NOTE 1",
+        "SEE NOTE 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL B",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail view of the edge angle and related elements.",
+      "leader_text": [
+        "SEE NOTE 3"
+      ],
+      "cross_references": []
+    }
+  ],
+  "51": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the layout of the structure approach with labeled components like wingwall, return wall, and drainage pipes.",
+      "leader_text": [
+        "3\" SLOTTED PLASTIC PIPE, Typ",
+        "WEEP HOLE, Typ SEE NOTE 1",
+        "TOP OF SLOPE",
+        "CURTAIN WALL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view showing the structure approach type N with details of the wall and drainage components.",
+      "leader_text": [
+        "3\" SLOTTED PLASTIC PIPE",
+        "GEOCOMPOSITE DRAIN",
+        "3\" PLASTIC PIPE",
+        "SEE \"DRAINAGE DETAILS\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view detailing the end of the structure approach slab and drainage components.",
+      "leader_text": [
+        "3\" UNSLOTTED PLASTIC PIPE",
+        "TEE CONNECTION"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "",
+      "description": "Section view showing the approach slab type N with geocomposite drain and slotted plastic pipe.",
+      "leader_text": [
+        "3\" SLOTTED PLASTIC PIPE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DRAIN PROTECTION DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Detail view showing the drain protection with and without footing, including geocomposite drain and filter fabric.",
+      "leader_text": [
+        "GEOCOMPOSITE DRAIN",
+        "3\" SLOTTED PLASTIC PIPE",
+        "FILTER FABRIC"
+      ],
+      "cross_references": []
+    }
+  ],
+  "52": [
+    {
+      "label": "WING WALL ELEVATION (LOOKING WEST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of the wing wall showing architectural treatments and structural elements.",
+      "leader_text": [
+        "MONUMENT",
+        "RSP 811-SP",
+        "TUBULAR HAND RAILING",
+        "1/2\" Exp Jt FILLER",
+        "TRAFFIC SIGNAL POLE SEE NOTE A",
+        "END POST AT TRAFFIC POLE",
+        "TOP OF BARRIER TYPE 732SB (Mod)",
+        "CHAIN LINK RAILING TYPE 2 (Mod)"
+      ],
+      "cross_references": [
+        "see ELECTRICAL PLANS",
+        "see MINIMUM DETAILS No. 2 sheet",
+        "see ARCHITECTURAL PANEL DETAILS sheets"
+      ]
+    }
+  ],
+  "53": [
+    {
+      "label": "WING WALL ELEVATION (LOOKING WEST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of the wing wall with architectural treatment details.",
+      "leader_text": [
+        "CHAIN LINK RAILING TYPE 2 (Mod)",
+        "1/2\" Exp Jt FILLER",
+        "TOP OF BARRIER TYPE 732SM (Mod)",
+        "MONUMENT",
+        "TUBULAR HAND RAILING",
+        "PLASTER"
+      ],
+      "cross_references": [
+        "see ARCHITECTURAL PANEL DETAILS sheets"
+      ]
+    }
+  ],
+  "54": [
+    {
+      "label": "WING WALL ELEVATION (LOOKING EAST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of the wing wall with architectural treatment details.",
+      "leader_text": [
+        "TUBULAR HAND RAILING",
+        "MONUMENT",
+        "CHAIN LINK RAILING TYPE 2 (Mod)",
+        "TOP OF BARRIER TYPE 732SW (Mod)",
+        "1/4\" Exp Jt FILLER",
+        "PILASTER",
+        "FG"
+      ],
+      "cross_references": [
+        "see ARCHITECTURAL PANEL DETAILS sheets"
+      ]
+    }
+  ],
+  "55": [
+    {
+      "label": "WING WALL ELEVATION (LOOKING EAST)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of the wing wall with architectural treatment details.",
+      "leader_text": [
+        "CHAIN LINK RAILING TYPE 2 (Mod)",
+        "1/2\" Exp Jt FILLER",
+        "TOP OF BARRIER TYPE 732SM (Mod)",
+        "TUBULAR HAND RAILING",
+        "MONUMENT",
+        "FG"
+      ],
+      "cross_references": [
+        "see ARCHITECTURAL PANEL DETAILS sheets"
+      ]
+    }
+  ],
+  "56": [
+    {
+      "label": "PILASTER ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "3/8\" = 1'-0\"",
+      "description": "Elevation view of the pilaster with detailed textures and dimensions.",
+      "leader_text": [
+        "SEE NOTE A",
+        "SEE \"DETAIL 1\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\u00bd\" = 1'-0\"",
+      "description": "Section view showing the structure face and texture details.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "\u00be\" = 1'-0\"",
+      "description": "Detail view of the sign panel with expansion anchor and lettering specifications.",
+      "leader_text": [
+        "\u00d8 EXPANSION ANCHOR, Typ",
+        "BOLTS CENTERED IN SIGN PANEL BETWEEN LETTERS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL SIGN LAYOUT",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Layout of the typical sign with dimensions and material specifications.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "57": [
+    {
+      "label": "ELEVATION - ABUTMENT 3",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Elevation view of Abutment 3 showing structural details.",
+      "leader_text": [
+        "DETAIL 2 SEE NOTE B",
+        "Approx 0G"
+      ],
+      "cross_references": [
+        "DETAIL 2",
+        "see ARCHITECTURAL TREATMENT DETAIL No. 7 sheet"
+      ]
+    },
+    {
+      "label": "ELEVATION - ABUTMENT 1",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/8\" = 1'-0\"",
+      "description": "Elevation view of Abutment 1 showing structural details.",
+      "leader_text": [
+        "DETAIL 1 SEE NOTE A",
+        "Approx 0G",
+        "FG"
+      ],
+      "cross_references": [
+        "DETAIL 1",
+        "see ARCHITECTURAL TREATMENT DETAIL No. 7 sheet"
+      ]
+    }
+  ],
+  "58": [
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Shows a detailed view of the architectural treatment pattern with dimensions and texture specifications.",
+      "leader_text": [
+        "3\" WIDE SMOOTH BAND, Typ",
+        "1 1/2\" WIDE x 1/2\" DEEP GROOVE, Typ",
+        "FRACTURED LIMESTONE TEXTURE, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Illustrates another section of the architectural treatment pattern with repeating dimensions and texture details.",
+      "leader_text": [
+        "3\" WIDE SMOOTH BAND, Typ",
+        "1 1/2\" WIDE x 1/2\" DEEP GROOVE, Typ",
+        "FRACTURED LIMESTONE TEXTURE, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION Y-Y",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view showing the face of the abutment with texture and groove details.",
+      "leader_text": [
+        "FRACTURED LIMESTONE TEXTURE, Typ",
+        "FACE OF ABUTMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION X-X",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Cross-sectional view detailing the architectural treatment with texture and groove specifications.",
+      "leader_text": [
+        "FRACTURED LIMESTONE TEXTURE, Typ",
+        "FACE OF ABUTMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION Z-Z",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Section view showing additional architectural treatment details with texture and groove specifications.",
+      "leader_text": [
+        "FRACTURED LIMESTONE TEXTURE, Typ"
+      ],
+      "cross_references": []
+    }
+  ],
+  "59": [
+    {
+      "label": "COLUMN ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Elevation view of the column showing standard repeating pattern and dimensions.",
+      "leader_text": [
+        "7'-0\"",
+        "STANDARD REPEATING PATTERN",
+        "TOP OF COLUMN",
+        "SEE DETAIL 1"
+      ],
+      "cross_references": [
+        "SEE DETAIL 1"
+      ]
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view A-A showing dimensions and texture details.",
+      "leader_text": [
+        "1 1/4\" DEEP FRACTURED LIMESTONE TEXTURE, Typ",
+        "SEE DETAIL 2"
+      ],
+      "cross_references": [
+        "SEE DETAIL 2"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view B-B showing groove and band details.",
+      "leader_text": [
+        "1\" DEEP GROOVE",
+        "3\" WIDE SMOOTH BAND, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail view showing fractured limestone texture and groove details.",
+      "leader_text": [
+        "1 1/2\" WIDE x 1\" DEEP GROOVE, Typ",
+        "FRACTURED LIMESTONE TEXTURE, Typ"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail view showing texture and typical dimensions.",
+      "leader_text": [
+        "1 1/4\" Typ",
+        "FRACTURE LIMESTONE TEXTURE, Typ"
+      ],
+      "cross_references": []
+    }
+  ],
+  "60": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Cross-sectional view of the concrete barrier showing dimensions and textures.",
+      "leader_text": [
+        "Conc BARRIER TYPE 7325B (Mod)",
+        "1\" MAX FRACTURED RIB",
+        "SEE NOTE A"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ARCHITECTURAL TREATMENT ON CONCRETE BARRIER TYPE 7325W (Mod)",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Elevation view of the architectural treatment on the concrete barrier, detailing textures and dimensions.",
+      "leader_text": [
+        "1/8\" DEEP DEPRESSED, SMOOTH TEXTURE, Typ",
+        "TOP OF BARRIER",
+        "BOTTOM OF BARRIER HEAD",
+        "TOP EDGE OF DECK OVERHANG",
+        "FRACTURED RIB TEXTURE (Max 1\" RELIEF)",
+        "BOTTOM EDGE OF DECK OVERHANG",
+        "2\" WIDE x 1/16\" DEEP RAISED BAND SMOOTH TEXTURE, Typ"
+      ],
+      "cross_references": []
+    }
+  ],
+  "62": [
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Elevation view of the chain link railing with overlapping fabric placement.",
+      "leader_text": [
+        "LIMITS OF OVERLAPPING FABRIC PLACEMENT AREA, Typ",
+        "TOP OF Conc BARRIER OR GROUND"
+      ],
+      "cross_references": [
+        "SECTION X-X"
+      ]
+    },
+    {
+      "label": "SECTION X-X",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Section view showing the post pocket and fabric attachment details.",
+      "leader_text": [
+        "1\"x1\" BLACK VINYL COATED FABRIC SEE NOTE C",
+        "1\"x1\" BLACK VINYL COATED FABRIC SEE NOTE A"
+      ],
+      "cross_references": [
+        "ELEVATION"
+      ]
+    },
+    {
+      "label": "OVERLAPPING FABRIC PLACEMENT DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "6\" = 1'-0\"",
+      "description": "Detail of the overlapping fabric placement on the chain link railing.",
+      "leader_text": [
+        "1\"x1\" BLACK VINYL COATED FABRIC (OUTSIDE)"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BOTTOM ANCHORAGE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Detail of the bottom anchorage with tension wire and turnbuckle.",
+      "leader_text": [
+        "WELDED EYEBOLT TO POST",
+        "7 Ga TENSION WIRE"
+      ],
+      "cross_references": []
+    }
+  ],
+  "63": [
+    {
+      "label": "EXTERIOR ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Shows the exterior elevation of the monument with dimensions and notes.",
+      "leader_text": [
+        "SEE NOTE D",
+        "MONUMENT CAP SEE NOTE C",
+        "TOP OF WINGWALL (Const Jt)"
+      ],
+      "cross_references": [
+        "SEE \"MONUMENT DETAILS No. 1\""
+      ]
+    },
+    {
+      "label": "INTERIOR ELEVATION (SIDEWALK SIDE)",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Shows the interior elevation of the monument on the sidewalk side with dimensions and notes.",
+      "leader_text": [
+        "SEE NOTE D",
+        "MONUMENT CAP SEE NOTE C",
+        "TOP OF SIDEWALK AT BASE OF CONC BARRIER SEE NOTE A"
+      ],
+      "cross_references": [
+        "SEE \"MONUMENT DETAILS No. 1\""
+      ]
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Plan view of the monument showing layout and dimensions.",
+      "leader_text": [
+        "MONUMENT CAP SEE NOTE C",
+        "4\" CHAMFER Typ"
+      ],
+      "cross_references": [
+        "SEE \"MONUMENT DETAILS No. 1\""
+      ]
+    }
+  ],
+  "64": [
+    {
+      "label": "MONUMENT CONNECTION DETAILS",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the connection details for a monument, including anchor bolts and stainless steel plate.",
+      "leader_text": [
+        "1/4\" x 3\" STAINLESS STEEL ANCHOR BOLT, TYP",
+        "STAINLESS STEEL PLATE."
+      ],
+      "cross_references": [
+        "SEE NOTE B"
+      ]
+    },
+    {
+      "label": "STAINLESS STEEL PLATE LAYOUT",
+      "view_type": "layout",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Layout of the stainless steel plate with dimensions and spacing details.",
+      "leader_text": [
+        "1/4\" x 3\" STAINLESS STEEL EXPANSION ANCHOR BOLT, TYP",
+        "SPACES AT 2'-8\" = 5'-4\""
+      ],
+      "cross_references": [
+        "SEE NOTE B"
+      ]
+    }
+  ],
+  "65": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Cross-sectional view showing the face of monument and architectural treatment.",
+      "leader_text": [
+        "TOP OF CONCRETE BARRIER (BEYOND) SEE NOTE B",
+        "OUTSIDE FACE OF Conc BARRIER",
+        "Const Jt",
+        "SEE NOTE F",
+        "TOP OF ROADWAY SURFACE",
+        "-1.5%",
+        "FACE OF MONUMENT",
+        "WINGWALL LOL",
+        "ARCHITECTURAL TREATMENT"
+      ],
+      "cross_references": [
+        "see MONUMENT DETAILS No. 1 sheet"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Cross-sectional view showing the outside face of concrete barrier and monument details.",
+      "leader_text": [
+        "TOP OF CONCRETE BARRIER (BEYOND) SEE NOTE B",
+        "OUTSIDE FACE OF Conc BARRIER",
+        "Const Jt",
+        "SEE NOTE F",
+        "TOP OF ROADWAY SURFACE",
+        "-1.5%",
+        "FACE OF MONUMENT",
+        "WINGWALL LOL",
+        "ARCHITECTURAL TREATMENT"
+      ],
+      "cross_references": [
+        "see MONUMENT DETAILS No. 1 sheet"
+      ]
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Cross-sectional view showing the face of monument and architectural treatment.",
+      "leader_text": [
+        "TOP OF CONCRETE BARRIER (BEYOND) SEE NOTE B",
+        "OUTSIDE FACE OF Conc BARRIER",
+        "Const Jt",
+        "SEE NOTE F",
+        "TOP OF ROADWAY SURFACE",
+        "-1.5%",
+        "FACE OF MONUMENT",
+        "WINGWALL LOL",
+        "ARCHITECTURAL TREATMENT"
+      ],
+      "cross_references": [
+        "see MONUMENT DETAILS No. 1 sheet"
+      ]
+    }
+  ],
+  "66": [
+    {
+      "label": "MONUMENT CAP Reinf DETAIL (CIP)",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1\u00bd\" = 1'-0\"",
+      "description": "Detail of the monument cap reinforcement for cast-in-place construction.",
+      "leader_text": [
+        "#4 Tot 2",
+        "#4 @ 12"
+      ],
+      "cross_references": [
+        "SEE NOTE C"
+      ]
+    },
+    {
+      "label": "MONUMENT CAP Reinf DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Detail of the monument cap reinforcement.",
+      "leader_text": [
+        "#4 @ 12 Max",
+        "SEE NOTE G"
+      ],
+      "cross_references": [
+        "SEE NOTE C",
+        "SEE NOTE G"
+      ]
+    },
+    {
+      "label": "SECTION Thru MONUMENT",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Section view through the monument showing reinforcement and dimensions.",
+      "leader_text": [
+        "4\" WIDE KEY WAY",
+        "OPTIONAL Const Jt"
+      ],
+      "cross_references": [
+        "SEE NOTE H",
+        "SEE NOTE E"
+      ]
+    },
+    {
+      "label": "MONUMENT Reinf PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Plan view of the monument reinforcement.",
+      "leader_text": [
+        "#4 Tot 2, Typ",
+        "#4 @ 12, Typ"
+      ],
+      "cross_references": [
+        "SEE NOTES F & G, Typ"
+      ]
+    }
+  ],
+  "67": [
+    {
+      "label": "AS BUILT SECTION Thru MONUMENT",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\" = 1'-0\"",
+      "description": "Technical section view through the monument showing construction details and reinforcement.",
+      "leader_text": [
+        "SEE 'MONUMENT CAP Reinf DETAIL'",
+        "TOP OF CIP Conc MONUMENT",
+        "4\" WIDE KEY WAY SEE NOTES D & G",
+        "#6 @ 6 EMBEDDED 3'-0\" BELOW Const Jt",
+        "#4 @ 12 Max EACH FACE",
+        "#6 x 9'-0\" EMBEDDED 3'-6\" BELOW Const Jt",
+        "CONCRETE BARRIER SEE 7/52A (Mod) SEE NOTE 1",
+        "TOP OF ROADWAY SURFACE",
+        "WALL VERTICAL Reinf AT THE MONUMENT"
+      ],
+      "cross_references": [
+        "SEE 7/52A (Mod)",
+        "SEE NOTE 1"
+      ]
+    }
+  ],
+  "68": [
+    {
+      "label": "PANEL-66",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-66 with hummingbird and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-67",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-67 with hummingbird and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-68",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-68 with hummingbird and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-69",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-69 with sculpted flower and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-70",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-70 with leaf pattern and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-71",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-71 with sculpted flower and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-72",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-72 with sculpted flower and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-73",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-73 with sculpted flower and smooth texture.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section A-A showing the profile of the panel with hummingbird wing and head.",
+      "leader_text": [
+        "Hummingbird Wing",
+        "Hummingbird Head",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section B-B showing the profile of the panel with hummingbird and chiseled limestone.",
+      "leader_text": [
+        "Hummingbird",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section C-C showing the profile of the panel with sculpted flower.",
+      "leader_text": [
+        "Sculpted Flower",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section D-D showing the edge of leaf detail.",
+      "leader_text": [
+        "Edge of Leaf"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section E-E showing the profile of the panel with sculpted flower.",
+      "leader_text": [
+        "Sculpted Flower",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION F-F",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section F-F showing the profile of the panel with sculpted flower.",
+      "leader_text": [
+        "Sculpted Flower",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION G-G",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section G-G showing the profile of the panel with sculpted flower.",
+      "leader_text": [
+        "Sculpted Flower",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION H-H",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section H-H showing the profile of the panel with sculpted flower.",
+      "leader_text": [
+        "Sculpted Flower",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    }
+  ],
+  "69": [
+    {
+      "label": "PANEL-74",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-74 with beveled edge and hummingbird texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Hummingbird Smooth Texture",
+        "Background Chiseled Limestone"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-75",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-75 with beveled edge and hummingbird texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Hummingbird Smooth Texture",
+        "Background Chiseled Limestone"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-76",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-76 with beveled edge and hummingbird texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Hummingbird Smooth Texture",
+        "Background Chiseled Limestone"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-97",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-97 with fractured rib texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Fractured Rib Texture"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-100",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-100 with leaf texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Leaf Light Sandblast"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PANEL-102",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\"=1'-0\"",
+      "description": "Detail of Panel-102 with leaf texture.",
+      "leader_text": [
+        "Beveled Edge without Linework",
+        "Leaf Light Sandblast"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION I-I",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section I-I showing chiseled limestone and hummingbird beak.",
+      "leader_text": [
+        "Chiseled Limestone",
+        "Hummingbird Beak"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION J-J",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section J-J showing chiseled limestone and hummingbird wing.",
+      "leader_text": [
+        "Chiseled Limestone",
+        "Hummingbird Wing"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION K-K",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section K-K showing hummingbird wing.",
+      "leader_text": [
+        "Hummingbird Wing"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION L-L",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section L-L showing fractured rib texture.",
+      "leader_text": [
+        "Fractured Rib Texture"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION M-M",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section M-M showing chiseled limestone.",
+      "leader_text": [
+        "Chiseled Limestone"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION N-N",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1\"=1'-0\"",
+      "description": "Section N-N showing edge of leaf and backface of panel.",
+      "leader_text": [
+        "Edge of Leaf",
+        "Backface of Panel"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "FRACTURED RIB TEXTURE",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "No Scale",
+      "description": "Detail of fractured rib texture.",
+      "leader_text": [
+        "2\" Depth Max",
+        "Fractured Surface"
+      ],
+      "cross_references": []
+    }
+  ],
+  "70": [
+    {
+      "label": "HUMMINGBIRD ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "",
+      "description": "Elevation view showing decorative panels with hummingbird and floral designs.",
+      "leader_text": [
+        "Panel 66",
+        "Panel 68",
+        "Panel 67",
+        "Panel 71",
+        "Panel 70",
+        "Panel 75",
+        "Panel 76",
+        "Panel 74",
+        "Panel 97",
+        "Panel 72",
+        "Panel 69",
+        "Panel 73",
+        "Panel 102"
+      ],
+      "cross_references": []
+    }
+  ],
+  "71": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 50'",
+      "description": "Plan view showing the layout of test borings with labeled points and lines.",
+      "leader_text": [
+        "CPT-17-3703",
+        "CPT-17-3701",
+        "CPT-17-3702",
+        "SCPT-17-3706",
+        "R-17-3708",
+        "GW LINE",
+        "CPT-17-3704",
+        "CPT-17-3707",
+        "CPT-17-3705",
+        "CPT-17-3706"
+      ],
+      "cross_references": []
+    }
+  ],
+  "72": [
+    {
+      "label": "PROFILE VIEW",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "HORIZONTAL SCALE 1\"=20', VERTICAL SCALE 1\"=10'",
+      "description": "Graphical representation of soil test results along a horizontal alignment, showing friction ratio and tip bearing.",
+      "leader_text": [
+        "CPT-17-3701",
+        "CPT-17-3702",
+        "CPT-17-3703",
+        "Terminated at Elev -70.9'",
+        "Terminated at Elev -54.2'",
+        "Terminated at Elev -96.4'"
+      ],
+      "cross_references": [
+        "FOR PLAN VIEW, SEE \"LOG OF TEST BORINGS\" SHEET 1 OF 5"
+      ]
+    }
+  ],
+  "73": [
+    {
+      "label": "PROFILE VIEW",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "Vertical Scale 1\"=10', Horizontal Scale 1\"=20'",
+      "description": "Profile view showing log of test borings with friction ratio and tip bearing data.",
+      "leader_text": [
+        "31.5'",
+        "31.6'",
+        "55.6'",
+        "Terminated at Elev -50.6'",
+        "Terminated at Elev -53.5'",
+        "Terminated at Elev -60.1'"
+      ],
+      "cross_references": [
+        "For plan view, see 'LOG OF TEST BORINGS' SHEET 1 OF 5"
+      ]
+    }
+  ],
+  "74": [
+    {
+      "label": "PROFILE VIEW",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "VERTICAL SCALE 1\"=10' HORIZONTAL SCALE 1\"=20'",
+      "description": "Profile view showing soil layers and test boring data with depth measurements and soil descriptions.",
+      "leader_text": [
+        "11.53' Rt Sta 109+52.94",
+        "CPT-17-3707",
+        "CPT-17-3708",
+        "Terminated at Elev -54.0'",
+        "Terminated at Elev -95.2'"
+      ],
+      "cross_references": [
+        "FOR PLAN VIEW, SEE 'LOG OF TEST BORINGS' SHEET 1 OF 5"
+      ]
+    }
+  ],
+  "75": [
+    {
+      "label": "LOG OF TEST BORINGS",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Log of test borings showing boring locations, depths, and soil classifications.",
+      "leader_text": [
+        "Boring Station",
+        "Offset from CL F-405",
+        "Elevation",
+        "Classification of Materials"
+      ],
+      "cross_references": []
+    }
+  ],
+  "0": [
+    {
+      "label": "LOG OF TEST BORINGS",
+      "view_type": "as_built",
+      "is_precise": true,
+      "scale": "",
+      "description": "Log of test borings showing boring locations, depths, and soil profiles.",
+      "leader_text": [
+        "Boring Station",
+        "Offset from CL F-1405",
+        "Elevation",
+        "Depth"
+      ],
+      "cross_references": []
+    }
+  ]
+}

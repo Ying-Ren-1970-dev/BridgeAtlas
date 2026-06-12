@@ -1,0 +1,1315 @@
+{
+  "12": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing structural details of the bent.",
+      "leader_text": [
+        "#11 CONC. 17",
+        "SEE DETAIL 'A'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing reinforcement details.",
+      "leader_text": [
+        "#11 CONC. 17",
+        "SEE DETAIL 'B'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN - BENT 2&4",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Top view layout of the bent structure.",
+      "leader_text": [
+        "EDGE OF DECK",
+        "SEE DETAIL 'C'"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Side view showing elevation details of the bent.",
+      "leader_text": [
+        "STIRRUP PATTERNS",
+        "SEE DETAIL 'D'"
+      ],
+      "cross_references": []
+    }
+  ],
+  "1": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing structural details of the overcrossing.",
+      "leader_text": [
+        "TYPICAL SECTION",
+        "SEE DETAIL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing additional structural details of the overcrossing.",
+      "leader_text": [
+        "TYPICAL SECTION",
+        "SEE DETAIL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PROFILE GRADE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "1:100",
+      "description": "Profile view showing the grade line of the overcrossing.",
+      "leader_text": [
+        "GRADE LINE",
+        "ELEVATION"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:100",
+      "description": "Elevation view showing the side view of the overcrossing.",
+      "leader_text": [
+        "ELEVATION MARKS",
+        "SEE DETAIL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:100",
+      "description": "Plan view showing the top view layout of the overcrossing.",
+      "leader_text": [
+        "PLAN MARKS",
+        "SEE DETAIL"
+      ],
+      "cross_references": []
+    }
+  ],
+  "2": [
+    {
+      "label": "CONCRETE STRENGTH AND TYPE LIMITS",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Diagram showing concrete strength and type limits with a graphical representation.",
+      "leader_text": [],
+      "cross_references": []
+    },
+    {
+      "label": "ARB DESIGN CURVE",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "",
+      "description": "Graphical design curve for ARB with various parameters.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "3": [
+    {
+      "label": "CAMBER DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "SCALE: NONE",
+      "description": "Diagram showing camber details for the structure.",
+      "leader_text": [
+        "-0.0700",
+        "-0.1070",
+        "-0.0700"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SUPER ELEVATION DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "SCALE: NONE",
+      "description": "Diagram illustrating the super elevation details.",
+      "leader_text": [
+        "5.00% RT SHOULDER",
+        "2.00% LT SHOULDER"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "SCALE: 1\"=20'",
+      "description": "Plan view of the deck contours.",
+      "leader_text": [
+        "SECTION 1",
+        "SECTION 2",
+        "SECTION 3",
+        "SECTION 4"
+      ],
+      "cross_references": []
+    }
+  ],
+  "4": [
+    {
+      "label": "OVER EXCAVATION DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "",
+      "description": "Diagram showing the over excavation details for the foundation.",
+      "leader_text": [
+        "SEE NOTE 2",
+        "SEE NOTE 3"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "FOUNDATION PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1\" = 20'",
+      "description": "Plan view of the foundation layout with contour lines and footing locations.",
+      "leader_text": [
+        "ELEV. 97.5",
+        "ELEV. 98.0",
+        "ELEV. 98.5"
+      ],
+      "cross_references": []
+    }
+  ],
+  "5": [
+    {
+      "label": "ABUTMENT 1 PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:50",
+      "description": "Plan view of Abutment 1 showing layout and dimensions.",
+      "leader_text": [
+        "3'-0\"",
+        "2'-6\"",
+        "4'-0\"",
+        "TYPICAL",
+        "SEE DETAIL 5"
+      ],
+      "cross_references": [
+        "SEE DETAIL 5"
+      ]
+    },
+    {
+      "label": "WINGWALL 1 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:50",
+      "description": "Elevation view of Wingwall 1 with structural details.",
+      "leader_text": [
+        "4\" DRAIN PIPE",
+        "SEE DETAIL 7",
+        "TYPICAL REINFORCEMENT"
+      ],
+      "cross_references": [
+        "SEE DETAIL 7"
+      ]
+    },
+    {
+      "label": "WINGWALL 2 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:50",
+      "description": "Elevation view of Wingwall 2 with structural details.",
+      "leader_text": [
+        "4\" DRAIN PIPE",
+        "SEE DETAIL 7",
+        "TYPICAL REINFORCEMENT"
+      ],
+      "cross_references": [
+        "SEE DETAIL 7"
+      ]
+    }
+  ],
+  "6": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the abutment structure with detailed dimensions and annotations.",
+      "leader_text": [
+        "4'-0\" BEARING",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION B-B",
+        "SECTION C-C"
+      ]
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the abutment structure with reinforcement details.",
+      "leader_text": [
+        "REINFORCEMENT",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION A-A",
+        "SECTION C-C"
+      ]
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the abutment structure with specific focus on the foundation.",
+      "leader_text": [
+        "FOUNDATION DETAIL",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION A-A",
+        "SECTION B-B"
+      ]
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the abutment structure with emphasis on the shear key.",
+      "leader_text": [
+        "SHEAR KEY DETAIL",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION A-A",
+        "SECTION B-B"
+      ]
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the abutment structure with detailed reinforcement layout.",
+      "leader_text": [
+        "REINFORCEMENT LAYOUT",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION A-A",
+        "SECTION B-B"
+      ]
+    },
+    {
+      "label": "SHEAR KEY DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detailed view of the shear key with reinforcement and dimension annotations.",
+      "leader_text": [
+        "REINFORCEMENT DETAIL",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": [
+        "SECTION D-D"
+      ]
+    }
+  ],
+  "7": [
+    {
+      "label": "SECTION I-I",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "9\" MIN",
+        "3\" MIN",
+        "1'-6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION G-G",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "9\" MIN",
+        "3\" MIN",
+        "1'-6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION F-F",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "9\" MIN",
+        "3\" MIN",
+        "1'-6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detailed view of a specific structural component.",
+      "leader_text": [
+        "1/2\" DIA",
+        "3/4\" DIA"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detailed view of a specific structural component.",
+      "leader_text": [
+        "1/2\" DIA",
+        "3/4\" DIA"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 3",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detailed view of a specific structural component.",
+      "leader_text": [
+        "1/2\" DIA",
+        "3/4\" DIA"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "RIPPED TEXTURE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail showing the texture pattern on the surface.",
+      "leader_text": [
+        "RIPPED TEXTURE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BEARING PAD DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail of the bearing pad used in the structure.",
+      "leader_text": [
+        "BEARING PAD"
+      ],
+      "cross_references": []
+    }
+  ],
+  "8": [
+    {
+      "label": "WINGWALL 4 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Elevation view of Wingwall 4 showing structural details and dimensions.",
+      "leader_text": [
+        "TOP OF WALL",
+        "REINFORCEMENT",
+        "CONCRETE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "WINGWALL 3 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Elevation view of Wingwall 3 showing structural details and dimensions.",
+      "leader_text": [
+        "TOP OF WALL",
+        "REINFORCEMENT",
+        "CONCRETE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ABUTMENT 5 PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Plan view of Abutment 5 showing layout and dimensions.",
+      "leader_text": [
+        "FOOTING",
+        "REINFORCEMENT",
+        "ANCHOR"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION A-A",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Elevation view A-A showing structural details and dimensions.",
+      "leader_text": [
+        "TOP OF WALL",
+        "REINFORCEMENT",
+        "CONCRETE"
+      ],
+      "cross_references": [
+        "SEE DETAIL"
+      ]
+    }
+  ],
+  "9": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "4 - #11 BARS",
+        "2 - #8 BARS",
+        "1'-6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing additional structural details of the abutment.",
+      "leader_text": [
+        "#5 @ 12\" O.C.",
+        "2 - #8 BARS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing reinforcement details.",
+      "leader_text": [
+        "2 - #8 BARS",
+        "1'-6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SHEAR KEY DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:1-1/2",
+      "description": "Detailed view of the shear key structure.",
+      "leader_text": [
+        "#5 @ 12\" O.C.",
+        "2 - #8 BARS"
+      ],
+      "cross_references": []
+    }
+  ],
+  "10": [
+    {
+      "label": "SECTION H-H",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "2'-0\" MIN",
+        "SEE NOTE 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION G-G",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "2'-0\" MIN",
+        "SEE NOTE 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION F-F",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "2'-0\" MIN",
+        "SEE NOTE 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION X-X",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cross-sectional view showing structural details of the abutment.",
+      "leader_text": [
+        "SEE NOTE 3"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "RIPPED TEXTURE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail view showing the ripped texture of the abutment surface.",
+      "leader_text": [
+        "SEE NOTE 4"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BEARING PAD DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail view showing the bearing pad installation.",
+      "leader_text": [
+        "SEE NOTE 5"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail view showing specific structural component.",
+      "leader_text": [
+        "SEE NOTE 6"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail view showing specific structural component.",
+      "leader_text": [
+        "SEE NOTE 7"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 3",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail view showing specific structural component.",
+      "leader_text": [
+        "SEE NOTE 8"
+      ],
+      "cross_references": []
+    }
+  ],
+  "11": [
+    {
+      "label": "BENT 2 AND 4 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Elevation view of Bent 2 and 4 showing structural details and dimensions.",
+      "leader_text": [
+        "TOP LINE",
+        "COLUMN CENTERLINE",
+        "MAIN COLUMN REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "FOOTING PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Plan view of the footing showing layout and reinforcement details.",
+      "leader_text": [
+        "COLUMN CENTERLINE",
+        "FOOTING REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Section view A-A showing cross-sectional details of the structure.",
+      "leader_text": [
+        "COLUMN REINFORCEMENT",
+        "SECTION A-A"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Section view B-B showing cross-sectional details of the structure.",
+      "leader_text": [
+        "COLUMN REINFORCEMENT",
+        "SECTION B-B"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Section view C-C showing cross-sectional details of the structure.",
+      "leader_text": [
+        "COLUMN REINFORCEMENT",
+        "SECTION C-C"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "FLARE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail view of the flare showing specific construction details.",
+      "leader_text": [
+        "FLARE DIMENSIONS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "HOOP DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail view of the hoop showing reinforcement details.",
+      "leader_text": [
+        "HOOP REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SPLICE DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail view of the splice showing connection details.",
+      "leader_text": [
+        "SPLICE REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "AS BUILT DETAIL 1",
+      "view_type": "as_built",
+      "is_precise": true,
+      "scale": "",
+      "description": "As-built detail showing modifications and final construction notes.",
+      "leader_text": [],
+      "cross_references": []
+    }
+  ],
+  "13": [
+    {
+      "label": "BENT 3 ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Elevation view of Bent 3 showing column and reinforcement details.",
+      "leader_text": [
+        "COLUMN",
+        "REINFORCEMENT",
+        "EDGE OF COLUMN"
+      ],
+      "cross_references": [
+        "see SECTION B-B",
+        "see SECTION A-A"
+      ]
+    },
+    {
+      "label": "FOOTING PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1/4\" = 1'-0\"",
+      "description": "Plan view of the footing layout for Bent 3.",
+      "leader_text": [
+        "COLUMN",
+        "REINFORCEMENT"
+      ],
+      "cross_references": [
+        "see SECTION C-C"
+      ]
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view A-A showing cross-section of the column.",
+      "leader_text": [
+        "COLUMN",
+        "REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view B-B showing cross-section of the column.",
+      "leader_text": [
+        "COLUMN",
+        "REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view C-C showing cross-section of the footing.",
+      "leader_text": [
+        "COLUMN",
+        "REINFORCEMENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION D-D",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Section view D-D showing cross-section of the column pin detail.",
+      "leader_text": [
+        "COLUMN",
+        "PIN DETAIL"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "COLUMN PIN DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1/2\" = 1'-0\"",
+      "description": "Detail view of the column pin connection.",
+      "leader_text": [
+        "PIN",
+        "COLUMN"
+      ],
+      "cross_references": []
+    }
+  ],
+  "14": [
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing the internal structure and dimensions of the bent.",
+      "leader_text": [
+        "COMPRESSIVE JOINT MATERIAL",
+        "TOP OF BENT",
+        "BOTTOM OF BENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION B-B",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Cross-sectional view detailing the bent's structural components and reinforcements.",
+      "leader_text": [
+        "COMPRESSIVE JOINT MATERIAL",
+        "TOP OF BENT",
+        "BOTTOM OF BENT"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Top view layout of the bent showing the arrangement of structural elements.",
+      "leader_text": [
+        "TOP OF BENT",
+        "BENT LINE",
+        "CENTERLINE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ELEVATION",
+      "view_type": "elevation",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Side view elevation showing the height and vertical alignment of the bent.",
+      "leader_text": [
+        "TOP OF BENT",
+        "BOTTOM OF BENT",
+        "BENT LINE"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BENT CAP CAMBER DIAGRAM",
+      "view_type": "diagram",
+      "is_precise": true,
+      "scale": "",
+      "description": "Diagram illustrating the camber specifications for the bent cap.",
+      "leader_text": [
+        "CAMBER AT MIDSPAN",
+        "CAMBER AT ENDS"
+      ],
+      "cross_references": []
+    }
+  ],
+  "15": [
+    {
+      "label": "TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Shows a cross-sectional view of the structure with dimensions and material specifications.",
+      "leader_text": [
+        "TYP. 2 LAYERS",
+        "LEVEL 2",
+        "LEVEL 1"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "PART TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detailed section of a part of the structure, highlighting specific construction details.",
+      "leader_text": [
+        "USE 1 1/2\" TRANSVERSE",
+        "SEE SHEET 2 OF 2"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 1",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Close-up detail of a specific structural element.",
+      "leader_text": [
+        "1 1/2\" RADIUS"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL 2",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "NO SCALE",
+      "description": "Another close-up detail of a different structural element.",
+      "leader_text": [
+        "3/4\" RADIUS"
+      ],
+      "cross_references": []
+    }
+  ],
+  "16": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:100",
+      "description": "Top view layout of the girder arrangement for the connector overcrossing.",
+      "leader_text": [
+        "EDGE OF DECK",
+        "CENTER LINE OF ROADWAY",
+        "SEE TYPICAL SECTION",
+        "EDGE OF SLAB"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL SECTION",
+      "view_type": "section",
+      "is_precise": false,
+      "scale": "1:20",
+      "description": "Cross-sectional view showing typical girder and slab arrangement.",
+      "leader_text": [
+        "SEE TYPICAL SECTION",
+        "EDGE OF DECK",
+        "EDGE OF SLAB"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detailed view of the girder connection and reinforcement.",
+      "leader_text": [
+        "SEE DETAIL",
+        "REINFORCEMENT DETAIL"
+      ],
+      "cross_references": []
+    }
+  ],
+  "17": [
+    {
+      "label": "LONGITUDINAL SECTION",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:50",
+      "description": "A detailed longitudinal section of the connector overcrossing.",
+      "leader_text": [
+        "10' - 0\"",
+        "5' - 0\"",
+        "3' - 0\"",
+        "2' - 0\"",
+        "1' - 6\""
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "END DIAPHRAGM",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Detail of the end diaphragm structure.",
+      "leader_text": [
+        "1\" = 1'-0\"",
+        "3/4\" = 1'-0\"",
+        "1/2\" = 1'-0\""
+      ],
+      "cross_references": []
+    }
+  ],
+  "18": [
+    {
+      "label": "TOP AND BOTTOM ADDITIONAL LONGITUDINAL REINFORCEMENT",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "SCALE 1:20",
+      "description": "Technical drawing showing the top and bottom additional longitudinal reinforcement details for girders.",
+      "leader_text": [
+        "EDGE OF SLAB",
+        "BOTTOM STEEL",
+        "TOP STEEL",
+        "SEE DETAIL 'A'"
+      ],
+      "cross_references": []
+    }
+  ],
+  "19": [
+    {
+      "label": "PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "1:20",
+      "description": "Plan view of the structure approach showing layout and dimensions.",
+      "leader_text": [
+        "SEE NOTE 1",
+        "SEE NOTE 2"
+      ],
+      "cross_references": [
+        "SECTION A-A"
+      ]
+    },
+    {
+      "label": "SECTION A-A",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Section view A-A showing cross-sectional details of the structure.",
+      "leader_text": [
+        "SEE NOTE 3"
+      ],
+      "cross_references": [
+        "PLAN"
+      ]
+    },
+    {
+      "label": "DETAIL A",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail view A showing specific construction details.",
+      "leader_text": [
+        "SEE NOTE 4"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL B",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail view B showing specific construction details.",
+      "leader_text": [
+        "SEE NOTE 5"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Section view C-C showing cross-sectional details of the structure.",
+      "leader_text": [
+        "SEE NOTE 6"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "BAR CHAIR DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail of the bar chair used in the structure.",
+      "leader_text": [
+        "SEE NOTE 7"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SEAT TYPE A DETAIL",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:5",
+      "description": "Detail of seat type A used in the structure.",
+      "leader_text": [
+        "SEE NOTE 8"
+      ],
+      "cross_references": []
+    }
+  ],
+  "20": [
+    {
+      "label": "SECTION C-C",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Retaining wall wingwall drainage detail with geocomposite drain.",
+      "leader_text": [
+        "GEOCOMPOSITE DRAIN",
+        "TOP OF FOOTING"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION E-E",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Drainage detail with footing, showing geocomposite drain and pipe.",
+      "leader_text": [
+        "GEOCOMPOSITE DRAIN",
+        "TOP OF FOOTING"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION F-F",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Cantilever wingwall section with geocomposite drain.",
+      "leader_text": [
+        "GEOCOMPOSITE DRAIN"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "SECTION H-H",
+      "view_type": "section",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Drainage detail without footing, showing geocomposite drain.",
+      "leader_text": [
+        "GEOCOMPOSITE DRAIN"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "TYPICAL PLAN",
+      "view_type": "plan",
+      "is_precise": false,
+      "scale": "1:20",
+      "description": "Plan view of drainage system limits.",
+      "leader_text": [
+        "PLAN LIMITS OF DRAINAGE SYSTEM"
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DETAIL B",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "1:10",
+      "description": "Detail of pipe connection to drainage system.",
+      "leader_text": [
+        "PIPE CONNECTION"
+      ],
+      "cross_references": []
+    }
+  ],
+  "21": [
+    {
+      "label": "BORING PLAN",
+      "view_type": "plan",
+      "is_precise": true,
+      "scale": "",
+      "description": "Plan view showing the layout of boring locations along the site.",
+      "leader_text": [
+        "B-1",
+        "B-2",
+        "B-3",
+        "B-4",
+        "B-5",
+        "B-6"
+      ],
+      "cross_references": []
+    }
+  ],
+  "22": [
+    {
+      "label": "PROFILE",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "Graphical representation of the subsurface conditions along a specific alignment, showing soil layers and test boring results.",
+      "leader_text": [
+        "FOR PLAN VIEW SEE LOG OF TEST BORINGS 1 OF 7",
+        "Elevation",
+        "Depth",
+        "Soil Type"
+      ],
+      "cross_references": []
+    }
+  ],
+  "23": [
+    {
+      "label": "LOG OF TEST BORINGS",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "A detailed log showing the results and specifications of test borings conducted for the project.",
+      "leader_text": [
+        "Elevation",
+        "Depth",
+        "Soil Type",
+        "Water Level"
+      ],
+      "cross_references": [
+        "FOR PLAN VIEW SEE LOG OF TEST BORINGS 1 OF 7"
+      ]
+    }
+  ],
+  "24": [
+    {
+      "label": "LOG OF TEST BORINGS",
+      "view_type": "other",
+      "is_precise": true,
+      "scale": "",
+      "description": "A detailed log showing the test borings with depth measurements and soil descriptions.",
+      "leader_text": [
+        "Boring No. BH-6",
+        "Depth to water",
+        "Sample No.",
+        "Blow Count"
+      ],
+      "cross_references": [
+        "FOR PLAN VIEW SEE LOG OF TEST BORINGS 7 OF 7"
+      ]
+    }
+  ],
+  "25": [
+    {
+      "label": "CONE PENETRATION TEST BORING",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Shows the cone penetration test results with depth and resistance data.",
+      "leader_text": [
+        "Approx. elev. 17.0",
+        "No recovery below 17.0 ft."
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "DYNAMIC CONE PENETRATION TEST BORING",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Illustrates the dynamic cone penetration test results with depth and resistance data.",
+      "leader_text": [
+        "Approx. elev. 17.0",
+        "No recovery below 17.0 ft."
+      ],
+      "cross_references": []
+    },
+    {
+      "label": "ROTARY BORING",
+      "view_type": "detail",
+      "is_precise": true,
+      "scale": "",
+      "description": "Details the rotary boring method with soil and rock descriptions.",
+      "leader_text": [
+        "Approx. elev. 17.0",
+        "No recovery below 17.0 ft."
+      ],
+      "cross_references": []
+    }
+  ],
+  "26": [],
+  "27": []
+}

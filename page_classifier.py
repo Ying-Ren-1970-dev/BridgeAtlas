@@ -119,8 +119,27 @@ Extract the following and return as JSON:
       "has_tables": true/false,
       "has_diagrams": true/false,
       "structural_elements": ["list of elements: abutment, bent, column, footing, CIDH pile, etc."],
-      "detail_types": ["list of detail types shown"],
+      "detail_types": ["list of drawing types on sheet: plan, elevation, layout, detail, section, diagram, etc."],
       "grid_references": ["bent numbers, abutment numbers, station numbers if shown"]
+    },
+    "cad_drawing": {
+      "sheet_views": ["plan, elevation, layout, detail, section, diagram - types present on this sheet"],
+      "sheet_group": "structural group name if shown (abutment, bent, girder, pier, etc.)",
+      "sheet_group_number": "sheet number within the group (e.g. 1 for Layout No. 1)",
+      "sheet_group_role": "layout | details | plan | elevation | section",
+      "drawing_chunks": [
+        {
+          "label": "exact visible title e.g. SECTION A-A, DETAIL 1, BENT CAP CAMBER DIAGRAM, TYPICAL SECTION",
+          "view_type": "plan | elevation | layout | detail | section | view | diagram | as_built | other-from-label",
+          "is_precise": true,
+          "cross_references": ["DETAIL 5", "SECTION B-B", "see ABUTMENT DETAILS No. 1"],
+          "leader_text": ["dimension or note text whose leader arrowhead points into this drawing"]
+        }
+      ],
+      "section_cuts": ["SECTION A-A", "SECTION B-B"],
+      "view_refs": ["VIEW A-A", "VIEW B-B"],
+      "detail_callouts": ["DETAIL 1", "DETAIL 2"],
+      "cross_reference_notes": ["notes that reference other sheets, details, sections, or views"]
     }
   }
 }
@@ -130,6 +149,15 @@ IMPORTANT:
 - Extract exact text from title block - don't infer or guess
 - If information is not visible, use null for that field
 - For structural_elements, list all visible elements (piles, footings, columns, beams, walls, caps, shear keys, etc.)
+- Each red-box drawing region is one chunk; classify from its visible label
+- Chunk boundaries are approximate guides; assign leader-line text to the chunk where the arrowhead points
+- Common types: plan, elevation, layout, detail, section. View is rare (only when labeled VIEW A-A)
+- Also use label-derived types such as diagram (e.g. BENT CAP CAMBER DIAGRAM)
+- Imprecise labels like TYPICAL SECTION or TYPICAL DETAILS map to section or detail
+- Named details without numbers (e.g. JOINT PROTECTION DETAIL) are detail with is_precise=false
+- Extract section cuts (A-A, B-B), views (View A-A), and detail callouts (Detail 1, Detail 2)
+- Note cross-references in sheet notes that point to other sheets or off-sheet details/sections/views
+- Identify sheet groups (abutment, bent, girder, etc.) and the sheet number within that group
 - Be precise with sheet numbers and titles
 
 Return ONLY the JSON, no other text."""

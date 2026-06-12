@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional
 import config
+from cad_drawing_knowledge import CadDrawingKnowledge
 
 
 class EnrichedMetadataLoader:
@@ -211,6 +212,19 @@ class EnrichedMetadataLoader:
                 sheet_title, detail_types, primary_type=primary_type
             )
             searchable_parts.append(f"Sheet Type: {sheet_type}")
+
+        cad_fields = CadDrawingKnowledge.build_page_context(page_metadata)
+        if cad_fields.get("cad_sheet_views"):
+            searchable_parts.append(f"CAD Sheet Views: {cad_fields['cad_sheet_views']}")
+        if cad_fields.get("cad_sheet_group"):
+            group_bits = [cad_fields["cad_sheet_group"]]
+            if cad_fields.get("cad_sheet_group_role"):
+                group_bits.append(cad_fields["cad_sheet_group_role"])
+            if cad_fields.get("cad_sheet_group_index"):
+                group_bits.append(f"sheet {cad_fields['cad_sheet_group_index']}")
+            searchable_parts.append(f"CAD Sheet Group: {' '.join(group_bits)}")
+        if cad_fields.get("cad_cross_reference_summary"):
+            searchable_parts.append(cad_fields["cad_cross_reference_summary"])
         
         return ' | '.join(searchable_parts)
     
@@ -277,5 +291,7 @@ class EnrichedMetadataLoader:
         fields['plan_sheet_type'] = EnrichedMetadataLoader.classify_sheet_type(
             sheet_title, detail_types, primary_type=primary_type
         )
+
+        fields.update(CadDrawingKnowledge.build_page_context(page_metadata))
         
         return fields

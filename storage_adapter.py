@@ -31,7 +31,7 @@ class StorageAdapter:
                 self.gcs_client = storage.Client(project=config.GCS_PROJECT_ID)
                 self.bucket_pdfs = self.gcs_client.bucket(config.GCS_BUCKET_PDFS)
                 self.bucket_vectors = self.gcs_client.bucket(config.GCS_BUCKET_VECTORS)
-                print(f"✓ Cloud Storage initialized: {config.GCS_BUCKET_PDFS}")
+                print(f"OK: Cloud Storage initialized: {config.GCS_BUCKET_PDFS}")
             except Exception as e:
                 print(f"Warning: Could not initialize Cloud Storage: {e}")
                 print("Falling back to local filesystem")
@@ -321,7 +321,7 @@ class StorageAdapter:
             print(f"Verified chroma.sqlite3 checksum in cloud ({uploaded_chroma_hash[:12]}...)")
 
         self.sync_app_data_to_cloud()
-        print("✓ Vector database and metadata synced to cloud")
+        print("OK: Vector database and metadata synced to cloud")
 
     def sync_app_data_to_cloud(self):
         """Sync feedback labels and project profiles used by search ranking."""
@@ -363,7 +363,7 @@ class StorageAdapter:
             self.bucket_vectors.blob(blob_name).delete()
             print(f"Deleted stale app data object: {blob_name}")
 
-        print("✓ Feedback and project profiles synced to cloud")
+        print("OK: Feedback and project profiles synced to cloud")
 
     def sync_app_data_from_cloud(self):
         """Restore feedback labels and project profiles on Cloud Run startup."""
@@ -378,7 +378,7 @@ class StorageAdapter:
             local_path.parent.mkdir(parents=True, exist_ok=True)
             blob.download_to_filename(str(local_path))
             downloaded += 1
-            print(f"✓ Synced app data: {blob.name}")
+            print(f"OK: Synced app data: {blob.name}")
 
         for blob in self.bucket_vectors.list_blobs(prefix="project_profiles/"):
             if blob.name.endswith("/"):
@@ -387,10 +387,10 @@ class StorageAdapter:
             local_path.parent.mkdir(parents=True, exist_ok=True)
             blob.download_to_filename(str(local_path))
             downloaded += 1
-            print(f"✓ Synced app data: {blob.name}")
+            print(f"OK: Synced app data: {blob.name}")
 
         if downloaded:
-            print(f"✓ App data synced from cloud ({downloaded} file(s))")
+            print(f"OK: App data synced from cloud ({downloaded} file(s))")
 
     def sync_pdfs_to_cloud(self):
         """
@@ -449,7 +449,7 @@ class StorageAdapter:
             self.bucket_pdfs.blob(blob_name).delete()
             print(f"Deleted stale PDF object: {blob_name}")
 
-        print("✓ PDFs synced to cloud")
+        print("OK: PDFs synced to cloud")
 
     def sync_vector_db_from_cloud(self):
         """
@@ -472,7 +472,7 @@ class StorageAdapter:
             if blob.name == "metadata_db.json":
                 # Download to correct location
                 blob.download_to_filename(str(config.METADATA_DB_PATH))
-                print("✓ Metadata database synced")
+                print("OK: Metadata database synced")
                 continue
                 
             local_path = vector_db_path / blob.name
@@ -482,11 +482,11 @@ class StorageAdapter:
         chroma_path = vector_db_path / "chroma.sqlite3"
         if chroma_path.exists():
             print(
-                f"✓ Vector database synced from cloud "
+                f"OK: Vector database synced from cloud "
                 f"(chroma.sqlite3 sha256={self._sha256(chroma_path)[:12]}...)"
             )
         else:
-            print("✓ Vector database synced from cloud")
+            print("OK: Vector database synced from cloud")
 
         self.sync_app_data_from_cloud()
 

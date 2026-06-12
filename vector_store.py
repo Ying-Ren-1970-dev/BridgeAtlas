@@ -1,6 +1,7 @@
 """Vector store module for embedding and semantic search."""
 from typing import List, Dict, Optional
 import json
+import time
 from pathlib import Path
 import chromadb
 from chromadb.config import Settings
@@ -9,6 +10,7 @@ from langchain_chroma import Chroma
 
 import config
 from enriched_metadata_loader import EnrichedMetadataLoader
+from cad_drawing_knowledge import CadDrawingKnowledge
 from enhanced_topology_loader import EnhancedTopologyLoader
 from title_block_catalog import TitleBlockCatalog
 
@@ -27,6 +29,23 @@ class VectorStore:
         self.collection_name = "librarian_documents"
         
         self.vectorstore = None
+
+    def _embed_documents_with_retry(self, texts: List[str], max_retries: int = 8):
+        """Embed documents with backoff on OpenAI rate limits."""
+        for attempt in range(max_retries):
+            try:
+                return self.embeddings.embed_documents(texts)
+            except Exception as e:
+                is_rate_limit = (
+                    getattr(e, "status_code", None) == 429
+                    or "rate_limit" in str(e).lower()
+                    or "429" in str(e)
+                )
+                if not is_rate_limit or attempt == max_retries - 1:
+                    raise
+                wait = min(2 ** attempt, 60)
+                print(f"  Rate limit hit, retrying in {wait}s...")
+                time.sleep(wait)
     
     def initialize_vectorstore(self):
         """Initialize or load existing vectorstore."""
@@ -91,7 +110,7 @@ class VectorStore:
             enriched_metadata = EnrichedMetadataLoader.load_enriched_metadata(file_name)
             if enriched_metadata:
                 enriched_count += 1
-                print(f"  ✓ Loaded enriched metadata for {file_name} ({len(enriched_metadata)} pages)")
+                print(f"  Loaded enriched metadata for {file_name} ({len(enriched_metadata)} pages)")
 
             sheet_catalog = TitleBlockCatalog.build_for_project(file_name)
             
@@ -111,25 +130,48 @@ class VectorStore:
                     'date': pdf_metadata.get('date', ''),
                     'total_pages': pdf_data['total_pages'],
                 }
-                
-                # Merge enriched metadata if available for this page
-                if enriched_metadata and page_num in enriched_metadata:
-                    page_enriched = enriched_metadata[page_num]
-                    
-                    # Get enriched metadata fields
-                    enriched_fields = EnrichedMetadataLoader.get_metadata_fields(page_enriched)
-                    chunk_metadata.update(enriched_fields)
-                    
-                    # Append searchable text from enriched metadata
-                    enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
-                    if enriched_text:
-                        chunk_text = f"{chunk_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
-                elif sheet_catalog and page_num in sheet_catalog:
-                    sheet_record = sheet_catalog[page_num]
-                    chunk_metadata.update(TitleBlockCatalog.get_metadata_fields(sheet_record))
-                    category_text = TitleBlockCatalog.extract_searchable_text(sheet_record)
-                    if category_text:
-                        chunk_text = f"{chunk_text}\n\n[SHEET CATEGORY]\n{category_text}"
+                explicit_label = str(chunk['drawing_label']) if chunk.get('drawing_label') else None
+                is_region_chunk = (
+                    "[DRAWING REGION CHUNK]" in chunk_text or bool(explicit_label)
+                )
+
+                if explicit_label:
+                    chunk_metadata['cad_drawing_label'] = explicit_label
+                if chunk.get('drawing_view_type'):
+                    chunk_metadata['cad_drawing_view'] = str(chunk['drawing_view_type'])
+                if chunk.get('drawing_precise') is not None:
+                    chunk_metadata['cad_drawing_precise'] = (
+                        "true" if chunk.get('drawing_precise') else "false"
+                    )
+
+                page_enriched = (
+                    enriched_metadata.get(page_num)
+                    if enriched_metadata and page_num in enriched_metadata
+                    else None
+                )
+
+                # Page-level enriched text bleeds labels across drawing-region chunks.
+                if not is_region_chunk:
+                    if page_enriched:
+                        enriched_fields = EnrichedMetadataLoader.get_metadata_fields(page_enriched)
+                        chunk_metadata.update(enriched_fields)
+                        enriched_text = EnrichedMetadataLoader.extract_searchable_text(page_enriched)
+                        if enriched_text:
+                            chunk_text = f"{chunk_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
+                    elif sheet_catalog and page_num in sheet_catalog:
+                        sheet_record = sheet_catalog[page_num]
+                        chunk_metadata.update(TitleBlockCatalog.get_metadata_fields(sheet_record))
+                        category_text = TitleBlockCatalog.extract_searchable_text(sheet_record)
+                        if category_text:
+                            chunk_text = f"{chunk_text}\n\n[SHEET CATEGORY]\n{category_text}"
+
+                cad_fields, cad_text = CadDrawingKnowledge.build_chunk_fields(
+                    chunk_text,
+                    page_enriched,
+                    explicit_label=explicit_label,
+                )
+                chunk_metadata.update(cad_fields)
+                chunk_text = CadDrawingKnowledge.append_to_chunk_text(chunk_text, cad_text)
                 
                 texts.append(chunk_text)
                 metadatas.append(chunk_metadata)
@@ -154,7 +196,7 @@ class VectorStore:
         
         print(f"\nTotal chunks added to vector store: {total_added}")
         if enriched_count > 0:
-            print(f"✓ {enriched_count} files enriched with metadata")
+            print(f"{enriched_count} files enriched with metadata")
         return total_added
     
     def similarity_search(
@@ -516,6 +558,17 @@ class VectorStore:
                     if enriched_text:
                         updated_text = f"{doc_text}\n\n[ENRICHED METADATA]\n{enriched_text}"
                         enriched_count += 1
+
+                page_enriched = (
+                    enriched_metadata.get(int(page_num))
+                    if page_num and enriched_metadata and int(page_num) in enriched_metadata
+                    else None
+                )
+                cad_fields, cad_text = CadDrawingKnowledge.build_chunk_fields(
+                    updated_text, page_enriched
+                )
+                updated_metadata.update(cad_fields)
+                updated_text = CadDrawingKnowledge.append_to_chunk_text(updated_text, cad_text)
                 
                 updated_texts.append(updated_text)
                 updated_metadatas.append(updated_metadata)
@@ -647,7 +700,7 @@ class VectorStore:
                 batch_ids = ids_to_update[i : i + batch_size]
                 batch_texts = updated_texts[i : i + batch_size]
                 batch_metadatas = updated_metadatas[i : i + batch_size]
-                batch_embeddings = self.embeddings.embed_documents(batch_texts)
+                batch_embeddings = self._embed_documents_with_retry(batch_texts)
                 collection.update(
                     ids=batch_ids,
                     embeddings=batch_embeddings,
@@ -813,7 +866,7 @@ class VectorStore:
                 batch_ids = ids_to_update[i : i + batch_size]
                 batch_texts = updated_texts[i : i + batch_size]
                 batch_metadatas = updated_metadatas[i : i + batch_size]
-                batch_embeddings = self.embeddings.embed_documents(batch_texts)
+                batch_embeddings = self._embed_documents_with_retry(batch_texts)
                 collection.update(
                     ids=batch_ids,
                     embeddings=batch_embeddings,
@@ -831,6 +884,91 @@ class VectorStore:
         except Exception as e:
             print(f"  Error merging sheet categories for {file_name}: {str(e)}")
             raise
+
+    def merge_cad_drawing_knowledge(self, file_name: str) -> int:
+        """Classify CAD drawing views and cross-references for every chunk in a project."""
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        try:
+            enriched_metadata = EnrichedMetadataLoader.load_enriched_metadata(file_name)
+            collection = self.vectorstore._collection
+            results = collection.get(
+                where={"file_name": file_name},
+                include=["metadatas", "documents"],
+            )
+            if not results["ids"]:
+                print(f"  No existing documents found for {file_name}")
+                return 0
+
+            updated_texts = []
+            updated_metadatas = []
+            ids_to_update = []
+            merged_count = 0
+
+            for doc_id, doc_text, doc_metadata in zip(
+                results["ids"], results["documents"], results["metadatas"]
+            ):
+                page_num = doc_metadata.get("page")
+                page_enriched = None
+                if page_num is not None and enriched_metadata:
+                    page_enriched = enriched_metadata.get(int(page_num))
+
+                explicit_label = doc_metadata.get("cad_drawing_label") or None
+                cad_fields, cad_text = CadDrawingKnowledge.build_chunk_fields(
+                    doc_text,
+                    page_enriched,
+                    explicit_label=explicit_label,
+                )
+                updated_metadata = doc_metadata.copy()
+                updated_metadata.update(cad_fields)
+                updated_text = CadDrawingKnowledge.append_to_chunk_text(doc_text, cad_text)
+
+                updated_texts.append(updated_text)
+                updated_metadatas.append(updated_metadata)
+                ids_to_update.append(doc_id)
+                merged_count += 1
+
+            if not ids_to_update:
+                print("  All chunks already have CAD drawing knowledge")
+                return 0
+
+            batch_size = 100
+            total_updated = 0
+            for i in range(0, len(ids_to_update), batch_size):
+                batch_ids = ids_to_update[i : i + batch_size]
+                batch_texts = updated_texts[i : i + batch_size]
+                batch_metadatas = updated_metadatas[i : i + batch_size]
+                batch_embeddings = self._embed_documents_with_retry(batch_texts)
+                collection.update(
+                    ids=batch_ids,
+                    embeddings=batch_embeddings,
+                    documents=batch_texts,
+                    metadatas=batch_metadatas,
+                )
+                total_updated += len(batch_ids)
+
+            print(
+                f"  Updated {total_updated} chunks with CAD drawing knowledge "
+                f"({merged_count} classified chunks)"
+            )
+            return total_updated
+        except Exception as e:
+            print(f"  Error merging CAD drawing knowledge for {file_name}: {str(e)}")
+            raise
+
+    def merge_all_cad_drawing_knowledge(self) -> int:
+        """Apply CAD view classification and cross-reference metadata to all indexed projects."""
+        if not self.vectorstore:
+            self.initialize_vectorstore()
+
+        from metadata_manager import MetadataManager
+
+        total = 0
+        for file_name in MetadataManager().get_active_pdf_file_names():
+            print(f"\nMerging CAD drawing knowledge: {file_name}")
+            total += self.merge_cad_drawing_knowledge(file_name)
+        return total
 
     def merge_all_sheet_categories(self) -> int:
         """Merge sheet categories for every deep-vision topology project."""

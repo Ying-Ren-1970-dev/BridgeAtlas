@@ -14,6 +14,7 @@ import config
 from vector_store import VectorStore
 from metadata_manager import MetadataManager
 from engineering_terminology import expand_query
+from cad_drawing_knowledge import CadDrawingKnowledge
 from project_layout import collect_layout_signals
 from project_profile_builder import ProjectProfileBuilder
 
@@ -105,8 +106,15 @@ class SearchAgent:
         
         # Expand query with engineering terminology synonyms
         expanded_query = normalized_query
+        if self._is_detail_intent_query(normalized_query):
+            detail_section_query = CadDrawingKnowledge.expand_detail_section_query(
+                normalized_query
+            )
+            if detail_section_query != normalized_query:
+                expanded_query = detail_section_query
+                print(f"Detail/section expanded query: '{expanded_query}'")
         if use_query_expansion and not avoid_expansion:
-            expanded_terms = expand_query(normalized_query, max_expansions=3)
+            expanded_terms = expand_query(expanded_query, max_expansions=3)
             if len(expanded_terms) > 1:
                 # Combine terms for semantic search (embedding will handle similarity)
                 expanded_query = " ".join(expanded_terms)
@@ -465,6 +473,22 @@ class SearchAgent:
                 "plan_sheet_title",
                 "plan_sheet_number",
                 "plan_sheet_type",
+                "cad_drawing_view",
+                "cad_drawing_label",
+                "cad_drawing_category",
+                "cad_drawing_precise",
+                "cad_search_view_types",
+                "cad_leader_attribution",
+                "cad_sheet_views",
+                "cad_sheet_group",
+                "cad_sheet_group_role",
+                "cad_sheet_group_index",
+                "cad_section_cuts",
+                "cad_detail_callouts",
+                "cad_view_refs",
+                "cad_sheet_refs",
+                "cad_note_refs",
+                "cad_cross_reference_summary",
                 "detail_intents",
                 "detail_types",
                 "structural_elements",
@@ -632,11 +656,26 @@ class SearchAgent:
                 if not has_explicit_pile_detail:
                     strength -= 10
 
-        if "detail" in query_tokens and "section" not in query_tokens:
-            if "section" in sheet_title or plan_type == "section":
-                strength -= 8
-            if any(token in visible for token in ("section k-k", "section l-l")):
-                strength -= 8
+        component_tokens = {
+            token
+            for token in query_tokens
+            if token not in CadDrawingKnowledge._QUERY_STOPWORDS
+            and len(token) > 2
+        }
+        cad_view = str(metadata.get("cad_drawing_view") or "").lower()
+        cad_search_views = {
+            part.strip().lower()
+            for part in str(metadata.get("cad_search_view_types") or "").split(",")
+            if part.strip()
+        }
+
+        if "detail" in query_tokens and component_tokens:
+            component_hits = sum(1 for token in component_tokens if token in visible)
+            if cad_view == "section" or "section" in cad_search_views:
+                strength += 6
+                strength += min(component_hits * 2, 8)
+            elif cad_view == "detail" or "detail" in cad_search_views:
+                strength += min(component_hits, 4)
 
         if "pile" in query_tokens:
             if "steel pipe pile" in visible:
@@ -2383,6 +2422,17 @@ class SearchAgent:
                     'page': page,
                     'score': score,
                     'plan_sheet_type': doc.metadata.get('plan_sheet_type', ''),
+                    'chunk_id': doc.metadata.get('chunk_id', 0),
+                    'drawing_label': (
+                        doc.metadata.get('cad_drawing_label', '') or ''
+                        if '[DRAWING REGION CHUNK]' in (doc.page_content or '')
+                        else ''
+                    ),
+                    'drawing_view': (
+                        doc.metadata.get('cad_drawing_view', '') or ''
+                        if '[DRAWING REGION CHUNK]' in (doc.page_content or '')
+                        else ''
+                    ),
                 })
                 
                 # Track best (lowest) score

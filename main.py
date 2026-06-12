@@ -16,6 +16,14 @@ from search_feedback_learner import learn_from_feedback
 from feedback_cleanup import purge_legacy_feedback
 from project_profile_builder import ProjectProfileBuilder
 from storage_adapter import cloud_sync_configured, storage, storage_for_cloud_sync
+from chunk_inspector import (
+    format_report,
+    inspect_page_chunks,
+    parse_inspect_chunks_args,
+    parse_labels_arg,
+)
+from drawing_chunk_training import DrawingChunkTrainer
+from drawing_region_chunker import DrawingChunkApplicator
 
 
 class LibrarianApp:
@@ -718,6 +726,101 @@ class LibrarianApp:
         print(f"Successfully merged {success_count} files")
         print(f"Total chunks updated: {total_updated}")
 
+    def train_drawing_chunks(self, use_cache: bool = True):
+        """Auto-train drawing-region chunk detection on 6 annotated example sheets."""
+        self.vector_store.initialize_vectorstore()
+        trainer = DrawingChunkTrainer()
+        trainer.baseline_index_report(collection=self.vector_store.vectorstore._collection)
+        model = trainer.train(use_cache=use_cache)
+        return model
+
+    def apply_drawing_chunks(
+        self,
+        file_name: Optional[str] = None,
+        use_cache: bool = True,
+        force_refresh: bool = False,
+        training_pages_only: bool = False,
+    ):
+        """Apply trained drawing-region chunking to one file or all indexed PDFs."""
+        model = DrawingChunkTrainer.load_model()
+        if not model:
+            print("Error: No drawing chunk model found. Run: python main.py train-drawing-chunks")
+            return 0
+        if not model.ready_for_apply:
+            print(
+                f"Warning: training only passed {model.passed_examples}/{model.total_examples} "
+                "examples; applying anyway."
+            )
+
+        applicator = DrawingChunkApplicator()
+        self.vector_store.initialize_vectorstore()
+        if file_name:
+            from chunk_inspector import resolve_file_name
+
+            resolved = resolve_file_name(file_name)
+            if not resolved:
+                print(f"Error: No indexed PDF matches '{file_name}'")
+                return 0
+            total = applicator.apply_file(
+                file_name=resolved,
+                vector_store=self.vector_store,
+                use_cache=use_cache,
+                force_refresh=force_refresh,
+                training_pages_only=training_pages_only,
+            )
+        else:
+            total = applicator.apply_all(
+                vector_store=self.vector_store,
+                use_cache=use_cache,
+                force_refresh=force_refresh,
+                training_pages_only=training_pages_only,
+            )
+
+        print("\nMerging CAD drawing knowledge into re-chunked documents...")
+        self.merge_cad_drawing_knowledge()
+        print(f"\nDrawing-region chunk apply complete: {total} chunks indexed")
+        return total
+
+    def inspect_chunks(
+        self,
+        file_name: str,
+        page: int,
+        expected_labels=None,
+        verbose: bool = False,
+        show_text: bool = False,
+    ):
+        """Print a pass/fail chunk inspection report for one PDF page."""
+        self.vector_store.initialize_vectorstore()
+        collection = self.vector_store.vectorstore._collection
+        report = inspect_page_chunks(
+            file_name=file_name,
+            page=page,
+            expected_labels=expected_labels,
+            verbose=verbose,
+            show_text=show_text,
+            collection=collection,
+        )
+        print(format_report(report, show_text=show_text))
+        return report
+
+    def merge_cad_drawing_knowledge(self):
+        """
+        Classify each chunk as plan/elevation/layout/detail/section/view and
+        extract section cuts, views, detail callouts, and sheet-group metadata.
+        """
+        print("=" * 60)
+        print("MERGING CAD DRAWING KNOWLEDGE INTO KNOWLEDGE BASE")
+        print("=" * 60)
+        print("(Per-chunk CAD view classification and cross-reference metadata)")
+
+        self.vector_store.initialize_vectorstore()
+        total_updated = self.vector_store.merge_all_cad_drawing_knowledge()
+
+        print("\n" + "=" * 60)
+        print("CAD DRAWING KNOWLEDGE MERGE COMPLETE")
+        print("=" * 60)
+        print(f"Total chunks updated: {total_updated}")
+
     def train_search_classifications(self):
         """
         Build training artifact for project/page/detail classification taxonomy.
@@ -814,6 +917,11 @@ def main():
         print("  python main.py build-enhanced-topology - Build enhanced topology for all enriched projects (NO API calls)")
         print("  python main.py merge-deep-vision  - Merge deep vision topology into vector knowledge base")
         print("  python main.py merge-sheet-categories - Add title block category to every sheet")
+        print("  python main.py merge-cad-knowledge     - Classify CAD views and cross-references per chunk")
+        print("  python main.py inspect-chunks --file <pdf> --page <n> [--labels \"A,B\"] [--verbose] [--show-text]")
+        print("  python main.py train-drawing-chunks   - Train on 6 annotated example sheets (vision)")
+        print("  python main.py apply-drawing-chunks   - Apply drawing-region chunking to all indexed PDFs")
+        print("  python main.py apply-drawing-chunks --file <pdf> [--training-only] [--force-refresh]")
         print("  python main.py index-details     - Index detail nodes in vectors for cross-project search")
         print("  python main.py train-classifications - Build project/page/detail classification training artifact")
         print("  python main.py learn-from-feedback - Build feedback model from search-result labels")
@@ -877,6 +985,45 @@ def main():
 
     elif command == 'merge-sheet-categories':
         app.merge_sheet_categories()
+
+    elif command == 'merge-cad-knowledge':
+        app.merge_cad_drawing_knowledge()
+
+    elif command == 'train-drawing-chunks':
+        app.train_drawing_chunks(use_cache='--force-refresh' not in sys.argv)
+
+    elif command == 'apply-drawing-chunks':
+        args = parse_inspect_chunks_args(sys.argv[2:])
+        file_arg = args.get("file_name")
+        if not file_arg:
+            for index, token in enumerate(sys.argv[2:]):
+                if token == "--file" and index + 1 < len(sys.argv[2:]):
+                    file_arg = sys.argv[2:][index + 1]
+                    break
+        app.apply_drawing_chunks(
+            file_name=file_arg,
+            use_cache='--force-refresh' not in sys.argv,
+            force_refresh='--force-refresh' in sys.argv,
+            training_pages_only='--training-only' in sys.argv,
+        )
+
+    elif command == 'inspect-chunks':
+        args = parse_inspect_chunks_args(sys.argv[2:])
+        if not args["file_name"] or args["page"] is None:
+            print("Error: inspect-chunks requires --file <pdf> and --page <number>")
+            print('Example: python main.py inspect-chunks --file Goldenwest --page 17')
+            return
+        labels = parse_labels_arg(args["labels"]) if args["labels"] else None
+        try:
+            app.inspect_chunks(
+                file_name=args["file_name"],
+                page=args["page"],
+                expected_labels=labels,
+                verbose=args["verbose"],
+                show_text=args["show_text"],
+            )
+        except ValueError as exc:
+            print(f"Error: {exc}")
     
     elif command == 'index-details':
         app.index_detail_nodes()
